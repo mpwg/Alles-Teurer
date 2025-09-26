@@ -5,40 +5,40 @@
 //  Created by Matthias Wallner-Géhri on 26.09.25.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @MainActor
 @Observable
 final class ContentViewModel {
     private let modelContext: ModelContext
     var selectedProductName: String?
-    
+
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
     }
-    
+
     func uniqueProductNames(from items: [Rechnungszeile]) -> [String] {
         Array(Set(items.map { $0.Name })).sorted()
     }
-    
+
     func items(for productName: String, from allItems: [Rechnungszeile]) -> [Rechnungszeile] {
         allItems.filter { $0.Name == productName }
-            .sorted { $0.Datum > $1.Datum } // Most recent first
+            .sorted { $0.Datum > $1.Datum }  // Most recent first
     }
-    
+
     func addItem() {
         let newItem = Rechnungszeile(
-            Name: "Name", 
-            Price: 1.23, 
-            Category: "Category", 
-            Shop: "Shop", 
+            Name: "Name",
+            Price: 1.23,
+            Category: "Category",
+            Shop: "Shop",
             Datum: Date.now,
             NormalizedName: "Name",
             PricePerUnit: 2.34
         )
         modelContext.insert(newItem)
-        
+
         do {
             try modelContext.save()
         } catch {
@@ -46,12 +46,12 @@ final class ContentViewModel {
             print("Failed to save item: \(error)")
         }
     }
-    
+
     func deleteItems(_ items: [Rechnungszeile]) {
         for item in items {
             modelContext.delete(item)
         }
-        
+
         do {
             try modelContext.save()
         } catch {
@@ -59,7 +59,7 @@ final class ContentViewModel {
             print("Failed to delete items: \(error)")
         }
     }
-    
+
     func generateTestData() {
         let testItems: [(String, String, Decimal)] = [
             ("Vollmilch 1L", "Milchprodukte", Decimal(1.29)),
@@ -81,27 +81,30 @@ final class ContentViewModel {
             ("Leberwurst 100g", "Fleisch & Wurst", Decimal(2.69)),
             ("Topfen 250g", "Milchprodukte", Decimal(1.89)),
             ("Knödelbrot", "Backwaren", Decimal(1.99)),
-            ("Paprika rot 1kg", "Gemüse", Decimal(3.99))
+            ("Paprika rot 1kg", "Gemüse", Decimal(3.99)),
         ]
-        
-        let austrianShops = ["Billa", "Spar", "Merkur", "Interspar", "Hofer", "Penny", "MPreis", "Nah&Frisch"]
-        
+
+        let austrianShops = [
+            "Billa", "Spar", "Merkur", "Interspar", "Hofer", "Penny", "MPreis", "Nah&Frisch",
+        ]
+
         // Generate 15-25 random items with some duplicates for better testing
         let numberOfItems = Int.random(in: 15...25)
-        
+
         for _ in 0..<numberOfItems {
             let randomItem = testItems.randomElement()!
             let randomShop = austrianShops.randomElement()!
-            
+
             // Generate random date within last 90 days
             let randomDays = Int.random(in: 0...90)
-            let randomDate = Calendar.current.date(byAdding: .day, value: -randomDays, to: Date.now) ?? Date.now
-            
+            let randomDate =
+                Calendar.current.date(byAdding: .day, value: -randomDays, to: Date.now) ?? Date.now
+
             // Add some price variation (±20%)
             let basePrice = randomItem.2
             let variation = Decimal(Double.random(in: 0.8...1.2))
             let finalPrice = (basePrice * variation).rounded(2)
-            
+
             let newItem = Rechnungszeile(
                 Name: randomItem.0,
                 Price: finalPrice,
@@ -111,10 +114,10 @@ final class ContentViewModel {
                 NormalizedName: randomItem.0,
                 PricePerUnit: finalPrice
             )
-            
+
             modelContext.insert(newItem)
         }
-        
+
         do {
             try modelContext.save()
         } catch {
@@ -124,8 +127,8 @@ final class ContentViewModel {
 }
 
 // Extension to help with decimal rounding
-private extension Decimal {
-    func rounded(_ scale: Int) -> Decimal {
+extension Decimal {
+    fileprivate func rounded(_ scale: Int) -> Decimal {
         var result = Decimal()
         var value = self
         NSDecimalRound(&result, &value, scale, .bankers)

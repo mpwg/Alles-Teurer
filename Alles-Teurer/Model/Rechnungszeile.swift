@@ -18,8 +18,11 @@ final class Rechnungszeile: Identifiable {
     var id: UUID
     var NormalizedName: String
     var PricePerUnit: Decimal
-    
-    init(Name: String, Price: Decimal, Category: String, Shop: String, Datum: Date, NormalizedName: String = "", PricePerUnit: Decimal = 0) {
+
+    init(
+        Name: String, Price: Decimal, Category: String, Shop: String, Datum: Date,
+        NormalizedName: String = "", PricePerUnit: Decimal = 0
+    ) {
         self.Name = Name
         self.Price = Price
         self.Category = Category
@@ -29,5 +32,5 @@ final class Rechnungszeile: Identifiable {
         self.PricePerUnit = PricePerUnit
         self.id = UUID()
     }
-    
+
 }
