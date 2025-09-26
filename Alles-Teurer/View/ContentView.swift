@@ -60,6 +60,16 @@ struct ContentView: View {
         }
         .navigationTitle("Rechnungen")
         .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    Task {
+                        await viewModel?.generateTestData()
+                    }
+                } label: {
+                    Label("Testdaten", systemImage: "doc.badge.plus")
+                }
+                .disabled(viewModel?.isLoading == true)
+            }
             ToolbarItem(placement: .primaryAction) {
                 Button("Bearbeiten") {
                     toggleEditMode()
