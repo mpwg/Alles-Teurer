@@ -51,7 +51,7 @@ final class ContentViewModel {
         isLoading = false
     }
 
-    func addItem() {
+    func addItem() async {
         let newItem = Rechnungszeile(
             Name: "Name",
             Price: 1.23,
@@ -65,8 +65,9 @@ final class ContentViewModel {
 
         do {
             try modelContext.save()
+            await loadItems()  // Refresh the data
         } catch {
-            // Handle save error - in a production app, you might want to show an alert
+            errorMessage = "Failed to save item: \(error.localizedDescription)"
             print("Failed to save item: \(error)")
         }
     }

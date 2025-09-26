@@ -5,60 +5,84 @@ struct AddItemView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
 
-    @State private var name = ""
-    @State private var priceText = ""
-    @State private var category = ""
-    @State private var shop = ""
-    @State private var datum = Date()
-
-    @State private var showingAlert = false
-    @State private var alertMessage = ""
-
-    private var isFormValid: Bool {
-        !name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-            && !priceText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-            && !shop.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-            && Decimal(string: priceText.replacingOccurrences(of: ",", with: ".")) != nil
-    }
+    @State private var viewModel: AddItemViewModel?
 
     var body: some View {
         NavigationStack {
-            Form {
-                Section("Produktinformationen") {
-                    TextField("Produktname", text: $name)
-                        .accessibilityLabel("Produktname eingeben")
+            Group {
+                if let viewModel = viewModel {
+                    Form {
+                        Section("Produktinformationen") {
+                            TextField(
+                                "Produktname",
+                                text: Binding(
+                                    get: { viewModel.name },
+                                    set: { viewModel.name = $0 }
+                                )
+                            )
+                            .accessibilityLabel("Produktname eingeben")
 
-                    TextField("Kategorie (optional)", text: $category)
-                        .accessibilityLabel("Kategorie eingeben, optional")
-                }
+                            TextField(
+                                "Kategorie (optional)",
+                                text: Binding(
+                                    get: { viewModel.category },
+                                    set: { viewModel.category = $0 }
+                                )
+                            )
+                            .accessibilityLabel("Kategorie eingeben, optional")
+                        }
 
-                Section("Einkaufsinformationen") {
-                    TextField("Geschäft", text: $shop)
-                        .accessibilityLabel("Geschäftsname eingeben")
+                        Section("Einkaufsinformationen") {
+                            TextField(
+                                "Geschäft",
+                                text: Binding(
+                                    get: { viewModel.shop },
+                                    set: { viewModel.shop = $0 }
+                                )
+                            )
+                            .accessibilityLabel("Geschäftsname eingeben")
 
-                    HStack {
-                        TextField("Preis", text: $priceText)
-                            .keyboardType(.decimalPad)
-                            .accessibilityLabel("Preis eingeben")
+                            HStack {
+                                TextField(
+                                    "Preis",
+                                    text: Binding(
+                                        get: { viewModel.priceText },
+                                        set: { viewModel.priceText = $0 }
+                                    )
+                                )
+                                .keyboardType(.decimalPad)
+                                .accessibilityLabel("Preis eingeben")
 
-                        Text("€")
-                            .foregroundStyle(.secondary)
-                            .accessibilityHidden(true)
+                                Text("€")
+                                    .foregroundStyle(.secondary)
+                                    .accessibilityHidden(true)
+                            }
+
+                            DatePicker(
+                                "Datum",
+                                selection: Binding(
+                                    get: { viewModel.datum },
+                                    set: { viewModel.datum = $0 }
+                                ), displayedComponents: .date
+                            )
+                            .accessibilityLabel("Einkaufsdatum auswählen")
+                        }
+
+                        Section {
+                            Button("Speichern") {
+                                saveItem()
+                            }
+                            .disabled(!viewModel.isFormValid || viewModel.isLoading)
+                            .accessibilityLabel("Eintrag speichern")
+                            .accessibilityHint(
+                                viewModel.isFormValid
+                                    ? "Eintrag wird gespeichert"
+                                    : "Bitte alle Pflichtfelder ausfüllen")
+                        }
                     }
-
-                    DatePicker("Datum", selection: $datum, displayedComponents: .date)
-                        .accessibilityLabel("Einkaufsdatum auswählen")
-                }
-
-                Section {
-                    Button("Speichern") {
-                        saveItem()
-                    }
-                    .disabled(!isFormValid)
-                    .accessibilityLabel("Eintrag speichern")
-                    .accessibilityHint(
-                        isFormValid
-                            ? "Eintrag wird gespeichert" : "Bitte alle Pflichtfelder ausfüllen")
+                    .disabled(viewModel.isLoading)
+                } else {
+                    ProgressView("Initialisierung...")
                 }
             }
             .navigationTitle("Neuer Eintrag")
@@ -69,57 +93,41 @@ struct AddItemView: View {
                         dismiss()
                     }
                     .accessibilityLabel("Eingabe abbrechen")
+                    .disabled(viewModel?.isLoading ?? true)
                 }
 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Speichern") {
                         saveItem()
                     }
-                    .disabled(!isFormValid)
+                    .disabled(!(viewModel?.isFormValid ?? false) || (viewModel?.isLoading ?? true))
                     .fontWeight(.semibold)
                     .accessibilityLabel("Eintrag speichern")
                 }
             }
-            .alert("Fehler", isPresented: $showingAlert) {
-                Button("OK") {}
+            .task {
+                if viewModel == nil {
+                    viewModel = AddItemViewModel(modelContext: modelContext)
+                }
+            }
+            .alert("Fehler", isPresented: .constant(viewModel?.showingAlert ?? false)) {
+                Button("OK") {
+                    viewModel?.dismissAlert()
+                }
             } message: {
-                Text(alertMessage)
+                if let viewModel = viewModel {
+                    Text(viewModel.alertMessage)
+                }
             }
         }
     }
 
     private func saveItem() {
-        let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
-        let trimmedShop = shop.trimmingCharacters(in: .whitespacesAndNewlines)
-        let trimmedCategory = category.trimmingCharacters(in: .whitespacesAndNewlines)
-
-        // Preis parsen (Komma durch Punkt ersetzen für Decimal)
-        let normalizedPriceText = priceText.replacingOccurrences(of: ",", with: ".")
-        guard let price = Decimal(string: normalizedPriceText) else {
-            alertMessage = "Bitte geben Sie einen gültigen Preis ein."
-            showingAlert = true
-            return
+        Task {
+            if let viewModel = viewModel, await viewModel.saveItem() {
+                dismiss()
+            }
         }
-
-        guard price > 0 else {
-            alertMessage = "Der Preis muss größer als 0 sein."
-            showingAlert = true
-            return
-        }
-
-        let newItem = Rechnungszeile(
-            Name: trimmedName,
-            Price: price,
-            Category: trimmedCategory,
-            Shop: trimmedShop,
-            Datum: datum
-        )
-
-        withAnimation {
-            modelContext.insert(newItem)
-        }
-
-        dismiss()
     }
 }
 

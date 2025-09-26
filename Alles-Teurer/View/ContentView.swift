@@ -10,12 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Rechnungszeile]
-
+    @State private var viewModel: ContentViewModel?
     @State private var showingAddSheet = false
 
     private var groupedItems: [String: [Rechnungszeile]] {
-        Dictionary(grouping: items, by: { $0.Name })
+        guard let viewModel = viewModel else { return [:] }
+        return Dictionary(grouping: viewModel.items, by: { $0.Name })
     }
 
     private var sortedProductNames: [String] {
@@ -24,22 +24,40 @@ struct ContentView: View {
 
     var body: some View {
         NavigationSplitView {
-            List {
-                ForEach(sortedProductNames, id: \.self) { productName in
-                    NavigationLink(
-                        destination: ProductDetailView(
-                            productName: productName,
-                            items: groupedItems[productName] ?? [],
-                            onDelete: deleteItems
+            Group {
+                if let viewModel = viewModel {
+                    if viewModel.isLoading {
+                        ProgressView("Daten werden geladen...")
+                    } else if viewModel.items.isEmpty {
+                        ContentUnavailableView(
+                            "Noch keine Einkäufe",
+                            systemImage: "cart",
+                            description: Text(
+                                "Fügen Sie Ihren ersten Einkauf hinzu, um die Preisentwicklung zu verfolgen."
+                            )
                         )
-                    ) {
-                        ProductRowView(
-                            productName: productName,
-                            items: groupedItems[productName] ?? []
-                        )
+                    } else {
+                        List {
+                            ForEach(sortedProductNames, id: \.self) { productName in
+                                NavigationLink(
+                                    destination: ProductDetailView(
+                                        productName: productName,
+                                        items: groupedItems[productName] ?? [],
+                                        onDelete: deleteItems
+                                    )
+                                ) {
+                                    ProductRowView(
+                                        productName: productName,
+                                        items: groupedItems[productName] ?? []
+                                    )
+                                }
+                            }
+                            .onDelete(perform: deleteProductGroup)
+                        }
                     }
+                } else {
+                    ProgressView("Initialisierung...")
                 }
-                .onDelete(perform: deleteProductGroup)
             }
             .navigationTitle("Alles Teurer")
             .toolbar {
@@ -51,7 +69,7 @@ struct ContentView: View {
                 }
 
                 ToolbarItem(placement: .navigationBarLeading) {
-                    if !items.isEmpty {
+                    if let viewModel = viewModel, !viewModel.items.isEmpty {
                         EditButton()
                     }
                 }
@@ -59,15 +77,18 @@ struct ContentView: View {
             .sheet(isPresented: $showingAddSheet) {
                 AddItemView()
             }
-            .overlay {
-                if items.isEmpty {
-                    ContentUnavailableView(
-                        "Noch keine Einkäufe",
-                        systemImage: "cart",
-                        description: Text(
-                            "Fügen Sie Ihren ersten Einkauf hinzu, um die Preisentwicklung zu verfolgen."
-                        )
-                    )
+            .task {
+                if viewModel == nil {
+                    viewModel = ContentViewModel(modelContext: modelContext)
+                }
+            }
+            .alert("Fehler", isPresented: .constant(viewModel?.errorMessage != nil)) {
+                Button("OK") {
+                    viewModel?.errorMessage = nil
+                }
+            } message: {
+                if let errorMessage = viewModel?.errorMessage {
+                    Text(errorMessage)
                 }
             }
         } detail: {
@@ -81,36 +102,21 @@ struct ContentView: View {
     }
 
     private func addItem() {
-        withAnimation {
-            let newItem = Rechnungszeile(
-                Name: "Neues Produkt",
-                Price: 1.23,
-                Category: "Kategorie",
-                Shop: "Geschäft",
-                Datum: Date.now
-            )
-            modelContext.insert(newItem)
+        Task {
+            await viewModel?.addItem()
         }
     }
 
     private func deleteItems(_ itemsToDelete: [Rechnungszeile]) async {
-        await MainActor.run {
-            withAnimation {
-                for item in itemsToDelete {
-                    modelContext.delete(item)
-                }
-            }
-        }
+        await viewModel?.deleteItems(itemsToDelete)
     }
 
     private func deleteProductGroup(offsets: IndexSet) {
-        withAnimation {
+        Task {
             for index in offsets {
                 let productName = sortedProductNames[index]
                 if let itemsToDelete = groupedItems[productName] {
-                    for item in itemsToDelete {
-                        modelContext.delete(item)
-                    }
+                    await viewModel?.deleteItems(itemsToDelete)
                 }
             }
         }
