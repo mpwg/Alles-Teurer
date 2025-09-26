@@ -10,161 +10,76 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @State private var viewModel: ContentViewModel?
-    @State private var showingAddSheet = false
+    @Query private var items: [Rechnungszeile]
 
-    private var groupedItems: [String: [Rechnungszeile]] {
-        guard let viewModel = viewModel else { return [:] }
-        return Dictionary(grouping: viewModel.items, by: { $0.Name })
-    }
+    // Computed properties for price analysis
+    private var priceAnalysis: (highest: Rechnungszeile?, lowest: Rechnungszeile?) {
+        guard !items.isEmpty else { return (nil, nil) }
 
-    private var sortedProductNames: [String] {
-        groupedItems.keys.sorted()
+        let highest = items.max { $0.Price < $1.Price }
+        let lowest = items.min { $0.Price < $1.Price }
+
+        return (highest, lowest)
     }
 
     var body: some View {
         NavigationSplitView {
-            Group {
-                if let viewModel = viewModel {
-                    if viewModel.isLoading {
-                        ProgressView("Daten werden geladen...")
-                    } else if viewModel.items.isEmpty {
-                        ContentUnavailableView(
-                            "Noch keine Einkäufe",
-                            systemImage: "cart",
-                            description: Text(
-                                "Fügen Sie Ihren ersten Einkauf hinzu, um die Preisentwicklung zu verfolgen."
-                            )
-                        )
-                    } else {
-                        List {
-                            ForEach(sortedProductNames, id: \.self) { productName in
-                                NavigationLink(
-                                    destination: ProductDetailView(
-                                        productName: productName,
-                                        items: groupedItems[productName] ?? [],
-                                        onDelete: deleteItems
-                                    )
-                                ) {
-                                    ProductRowView(
-                                        productName: productName,
-                                        items: groupedItems[productName] ?? []
-                                    )
-                                }
-                            }
-                            .onDelete(perform: deleteProductGroup)
-                        }
-                    }
-                } else {
-                    ProgressView("Initialisierung...")
+            List {
+                ForEach(items) { item in
+                    RechnungszeileRow(
+                        item: item,
+                        isHighestPrice: priceAnalysis.highest?.id == item.id,
+                        isLowestPrice: priceAnalysis.lowest?.id == item.id
+                    )
                 }
+                .onDelete(perform: deleteItems)
             }
-            .navigationTitle("Alles Teurer")
+            .navigationTitle("Rechnungen")
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: { showingAddSheet = true }) {
-                        Image(systemName: "plus")
-                            .accessibilityLabel("Neuen Eintrag hinzufügen")
+                ToolbarItem(placement: .primaryAction) {
+                    Button("Bearbeiten") {
+                        // Handle edit mode toggle - Mac Catalyst compatible
+                        // This is a placeholder for edit functionality
                     }
                 }
-
-                ToolbarItemGroup(placement: .navigationBarLeading) {
-                    if let viewModel = viewModel {
-                        Menu {
-                            Button("Test-Daten hinzufügen") {
-                                Task {
-                                    await viewModel.generateTestData()
-                                }
-                            }
-
-                            if !viewModel.items.isEmpty {
-                                Divider()
-
-                                Button("Alle Daten löschen", role: .destructive) {
-                                    Task {
-                                        await viewModel.deleteAllItems()
-                                    }
-                                }
-                            }
-                        } label: {
-                            Image(systemName: "ellipsis.circle")
-                                .accessibilityLabel("Datenoptionen")
-                        }
-
-                        if !viewModel.items.isEmpty {
-                            EditButton()
-                        }
+                ToolbarItem {
+                    Button(action: addItem) {
+                        Label("Artikel hinzufügen", systemImage: "plus")
                     }
-                }
-            }
-            .sheet(isPresented: $showingAddSheet) {
-                AddItemView()
-            }
-            .task {
-                // Delay initialization slightly to ensure scene is fully set up
-                await Task.yield()
-                if viewModel == nil {
-                    viewModel = ContentViewModel(modelContext: modelContext)
-                }
-            }
-            .alert("Fehler", isPresented: .constant(viewModel?.errorMessage != nil)) {
-                Button("OK") {
-                    viewModel?.errorMessage = nil
-                }
-            } message: {
-                if let errorMessage = viewModel?.errorMessage {
-                    Text(errorMessage)
                 }
             }
         } detail: {
-            ContentUnavailableView(
-                "Produkt auswählen",
-                systemImage: "arrow.left",
-                description: Text(
-                    "Wählen Sie ein Produkt aus der Liste aus, um die Details zu sehen.")
-            )
+            Text("Wählen Sie einen Artikel aus")
         }
     }
 
     private func addItem() {
-        Task {
-            await viewModel?.addItem()
+        withAnimation {
+            let newItem = Rechnungszeile(
+                Name: "Neuer Artikel",
+                Price: Decimal(1.99),
+                Category: "Kategorie",
+                Shop: "Geschäft",
+                Datum: Date.now
+            )
+            modelContext.insert(newItem)
         }
     }
 
-    private func deleteItems(_ itemsToDelete: [Rechnungszeile]) async {
-        await viewModel?.deleteItems(itemsToDelete)
-    }
-
-    private func deleteProductGroup(offsets: IndexSet) {
-        Task {
+    private func deleteItems(offsets: IndexSet) {
+        withAnimation {
             for index in offsets {
-                let productName = sortedProductNames[index]
-                if let itemsToDelete = groupedItems[productName] {
-                    await viewModel?.deleteItems(itemsToDelete)
-                }
+                modelContext.delete(items[index])
             }
         }
     }
 }
 
-#Preview("Mit Daten") {
-    let config = ModelConfiguration(isStoredInMemoryOnly: true)
-    let container = try! ModelContainer(for: Rechnungszeile.self, configurations: config)
 
-    // Sample-Daten hinzufügen
-    for item in SampleData.sampleRechnungszeilen {
-        container.mainContext.insert(item)
-    }
 
-    return ContentView()
-        .modelContainer(container)
-}
 
-#Preview("Leer") {
-    let config = ModelConfiguration(isStoredInMemoryOnly: true)
-    let container = try! ModelContainer(for: Rechnungszeile.self, configurations: config)
 
-    return ContentView()
-        .modelContainer(container)
+#Preview {
+    ContentView()
+        .modelContainer(for: Rechnungszeile.self, inMemory: true)
 }

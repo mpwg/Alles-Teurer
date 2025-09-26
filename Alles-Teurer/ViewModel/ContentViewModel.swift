@@ -34,6 +34,16 @@ final class ContentViewModel {
             .sorted { $0.Datum > $1.Datum }  // Most recent first
     }
 
+    // Price analysis for highlighting highest and lowest prices
+    var priceAnalysis: (highest: Rechnungszeile?, lowest: Rechnungszeile?) {
+        guard !items.isEmpty else { return (nil, nil) }
+
+        let highest = items.max { $0.Price < $1.Price }
+        let lowest = items.min { $0.Price < $1.Price }
+
+        return (highest, lowest)
+    }
+
     func loadItems() async {
         isLoading = true
         errorMessage = nil

@@ -6,6 +6,49 @@ struct AddItemView: View {
     @Environment(\.dismiss) private var dismiss
 
     @State private var viewModel: AddItemViewModel?
+    
+    // Computed properties for bindings to simplify expressions
+    private var nameBinding: Binding<String> {
+        Binding(
+            get: { viewModel?.name ?? "" },
+            set: { viewModel?.name = $0 }
+        )
+    }
+    
+    private var categoryBinding: Binding<String> {
+        Binding(
+            get: { viewModel?.category ?? "" },
+            set: { viewModel?.category = $0 }
+        )
+    }
+    
+    private var shopBinding: Binding<String> {
+        Binding(
+            get: { viewModel?.shop ?? "" },
+            set: { viewModel?.shop = $0 }
+        )
+    }
+    
+    private var priceBinding: Binding<String> {
+        Binding(
+            get: { viewModel?.priceText ?? "" },
+            set: { viewModel?.priceText = $0 }
+        )
+    }
+    
+    private var dateBinding: Binding<Date> {
+        Binding(
+            get: { viewModel?.datum ?? Date() },
+            set: { viewModel?.datum = $0 }
+        )
+    }
+    
+    private var showingAlertBinding: Binding<Bool> {
+        Binding(
+            get: { viewModel?.showingAlert ?? false },
+            set: { _ in viewModel?.dismissAlert() }
+        )
+    }
 
     var body: some View {
         NavigationStack {
@@ -13,59 +56,28 @@ struct AddItemView: View {
                 if let viewModel = viewModel {
                     Form {
                         Section("Produktinformationen") {
-                            TextField(
-                                "Produktname",
-                                text: Binding(
-                                    get: { viewModel.name },
-                                    set: { viewModel.name = $0 }
-                                )
-                            )
-                            .accessibilityLabel("Produktname eingeben")
+                            TextField("Produktname", text: nameBinding)
+                                .accessibilityLabel("Produktname eingeben")
 
-                            TextField(
-                                "Kategorie (optional)",
-                                text: Binding(
-                                    get: { viewModel.category },
-                                    set: { viewModel.category = $0 }
-                                )
-                            )
-                            .accessibilityLabel("Kategorie eingeben, optional")
+                            TextField("Kategorie (optional)", text: categoryBinding)
+                                .accessibilityLabel("Kategorie eingeben, optional")
                         }
 
                         Section("Einkaufsinformationen") {
-                            TextField(
-                                "Geschäft",
-                                text: Binding(
-                                    get: { viewModel.shop },
-                                    set: { viewModel.shop = $0 }
-                                )
-                            )
-                            .accessibilityLabel("Geschäftsname eingeben")
+                            TextField("Geschäft", text: shopBinding)
+                                .accessibilityLabel("Geschäftsname eingeben")
 
                             HStack {
-                                TextField(
-                                    "Preis",
-                                    text: Binding(
-                                        get: { viewModel.priceText },
-                                        set: { viewModel.priceText = $0 }
-                                    )
-                                )
-                                .keyboardType(.decimalPad)
-                                .accessibilityLabel("Preis eingeben")
+                                TextField("Preis", text: priceBinding)
+                                    .accessibilityLabel("Preis eingeben")
 
                                 Text("€")
                                     .foregroundStyle(.secondary)
                                     .accessibilityHidden(true)
                             }
 
-                            DatePicker(
-                                "Datum",
-                                selection: Binding(
-                                    get: { viewModel.datum },
-                                    set: { viewModel.datum = $0 }
-                                ), displayedComponents: .date
-                            )
-                            .accessibilityLabel("Einkaufsdatum auswählen")
+                            DatePicker("Datum", selection: dateBinding, displayedComponents: .date)
+                                .accessibilityLabel("Einkaufsdatum auswählen")
                         }
 
                         Section {
@@ -86,9 +98,8 @@ struct AddItemView: View {
                 }
             }
             .navigationTitle("Neuer Eintrag")
-            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
+                ToolbarItem(placement: .cancellationAction) {
                     Button("Abbrechen") {
                         dismiss()
                     }
@@ -96,7 +107,7 @@ struct AddItemView: View {
                     .disabled(viewModel?.isLoading ?? true)
                 }
 
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItem(placement: .primaryAction) {
                     Button("Speichern") {
                         saveItem()
                     }
@@ -110,14 +121,12 @@ struct AddItemView: View {
                     viewModel = AddItemViewModel(modelContext: modelContext)
                 }
             }
-            .alert("Fehler", isPresented: .constant(viewModel?.showingAlert ?? false)) {
+            .alert("Fehler", isPresented: showingAlertBinding) {
                 Button("OK") {
                     viewModel?.dismissAlert()
                 }
             } message: {
-                if let viewModel = viewModel {
-                    Text(viewModel.alertMessage)
-                }
+                Text(viewModel?.alertMessage ?? "Unbekannter Fehler")
             }
         }
     }

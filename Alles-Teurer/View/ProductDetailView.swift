@@ -58,10 +58,9 @@ struct ProductDetailView: View {
             }
         }
         .navigationTitle(productName)
-        .navigationBarTitleDisplayMode(.large)
         .toolbar {
-            // Use ToolbarItemGroup to properly group items
-            ToolbarItemGroup(placement: .navigationBarTrailing) {
+            // Use ToolbarItemGroup for Mac Catalyst compatibility
+            ToolbarItemGroup(placement: .primaryAction) {
                 if let viewModel = viewModel {
                     Menu {
                         Picker(
@@ -102,7 +101,10 @@ struct ProductDetailView: View {
                     }
 
                     if !items.isEmpty {
-                        EditButton()
+                        Button("Bearbeiten") {
+                            // Handle edit mode toggle - Mac Catalyst compatible
+                            // This is a placeholder for edit functionality
+                        }
                     }
                 }
             }
