@@ -12,11 +12,13 @@ import SwiftUI
 @MainActor
 @Observable
 final class ContentViewModel {
-    private let modelContext: ModelContext
+    let modelContext: ModelContext
     var selectedProductName: String?
     var items: [Rechnungszeile] = []
     var isLoading = false
     var errorMessage: String?
+    var showingAddSheet = false
+    var editMode: EditMode = .inactive
 
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
@@ -66,6 +68,7 @@ final class ContentViewModel {
     }
 
     func addItem() async {
+        // This method is now a placeholder for quick-add (could be expanded)
         let newItem = Rechnungszeile(
             Name: "Name",
             Price: 1.23,
@@ -76,28 +79,28 @@ final class ContentViewModel {
             PricePerUnit: 2.34
         )
         modelContext.insert(newItem)
-
         do {
             try modelContext.save()
-            await loadItems()  // Refresh the data
+            await loadItems()
         } catch {
             errorMessage = "Failed to save item: \(error.localizedDescription)"
             print("Failed to save item: \(error)")
         }
+        showingAddSheet = false
     }
 
     func deleteItems(_ items: [Rechnungszeile]) async {
         for item in items {
             modelContext.delete(item)
         }
-
         do {
             try modelContext.save()
-            await loadItems()  // Refresh the data
+            await loadItems()
         } catch {
             errorMessage = "Failed to delete items: \(error.localizedDescription)"
             print("Failed to delete items: \(error)")
         }
+        editMode = .inactive
     }
 
     func deleteAllItems() async {
