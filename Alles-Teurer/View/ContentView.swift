@@ -13,8 +13,7 @@ struct ContentView: View {
     @Query private var items: [Rechnungszeile]
 
     @State private var viewModel: ContentViewModel?
-    @State private var isGeneratingTestData = false
-    @State private var showTestDataAlert = false
+
 
     var body: some View {
         NavigationSplitView {
@@ -28,10 +27,7 @@ struct ContentView: View {
                     ),
                     onGenerateTestData: {
                         print("Test data generation triggered from empty state")
-                        isGeneratingTestData = true
                         generateTestDataDirectly()
-                        isGeneratingTestData = false
-                        showTestDataAlert = true
                     }
                 )
                 .navigationTitle("Produkte")
@@ -40,10 +36,7 @@ struct ContentView: View {
 
                             Button("Test Daten") {
                                 print("Test Daten button tapped")
-                                isGeneratingTestData = true
                                 generateTestDataDirectly()
-                                isGeneratingTestData = false
-                                showTestDataAlert = true
                                 print("Test data generation completed")
                         }
                     }
@@ -77,14 +70,7 @@ struct ContentView: View {
                 viewModel = ContentViewModel(modelContext: modelContext)
             }
         }
-        .alert("Test Daten generiert!", isPresented: $showTestDataAlert) {
-            Button("OK") {}
-        } message: {
-            Text(
-                "Testdaten wurden erfolgreich erstellt. Sie können nun die Produkte in der Liste sehen."
-            )
-        }
-    }
+     }
 
     private func generateTestDataDirectly() {
         print("generateTestDataDirectly() started")
