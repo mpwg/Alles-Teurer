@@ -5,11 +5,10 @@
 //  Created by Matthias Wallner-Géhri on 26.09.25.
 //
 
-
 import SwiftData
 import SwiftUI
 
- struct ItemRowView: View {
+struct ItemRowView: View {
     let item: Rechnungszeile
     let priceRange: (min: Decimal, max: Decimal)?
     let currencyFormatter: NumberFormatter
@@ -35,25 +34,33 @@ import SwiftUI
                             .accessibilityLabel(priceHighlight.accessibilityLabel)
                     }
 
-                    Text(currencyFormatter.string(from: item.Price as NSNumber) ?? "€0,00")
+                    Text(currencyFormatter.string(from: item.Price as NSNumber) ?? "€?,??")
                         .font(.headline)
                         .foregroundColor(priceHighlight.color)
                 }
 
                 Spacer()
 
+                Image(systemName: "calendar")
                 Text(item.Datum.formatted(date: .abbreviated, time: .omitted))
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
 
             HStack {
+                Image(systemName: "storefront")
                 Text(item.Shop)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                
+                
+                Text("(\(item.Name))")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
 
                 Spacer()
 
+                
                 Text(item.Category)
                     .font(.caption)
                     .padding(.horizontal, 8)
@@ -76,5 +83,95 @@ import SwiftUI
 
         return
             "Eintrag vom \(dateString), \(priceString)\(highlightString), gekauft bei \(item.Shop), Kategorie \(item.Category)"
+    }
+}
+
+#Preview("Standard Item") {
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .currency
+    formatter.currencyCode = "EUR"
+    formatter.locale = Locale(identifier: "de_AT")
+
+    let sampleItem = Rechnungszeile(
+        Name: "Milch 1L",
+        Price: 1.49,
+        Category: "Lebensmittel",
+        Shop: "Billa",
+        Datum: Date()
+    )
+
+    return ItemRowView(
+        item: sampleItem,
+        priceRange: nil,
+        currencyFormatter: formatter
+    )
+    .padding()
+}
+
+#Preview("Cheapest Item") {
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .currency
+    formatter.currencyCode = "EUR"
+    formatter.locale = Locale(identifier: "de_AT")
+
+    let cheapItem = Rechnungszeile(
+        Name: "Milch 1L",
+        Price: 1.29,
+        Category: "Lebensmittel",
+        Shop: "Hofer",
+        Datum: Calendar.current.date(byAdding: .day, value: -2, to: Date()) ?? Date()
+    )
+
+    return ItemRowView(
+        item: cheapItem,
+        priceRange: (min: 1.29, max: 1.89),
+        currencyFormatter: formatter
+    )
+    .padding()
+}
+
+#Preview("Most Expensive Item") {
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .currency
+    formatter.currencyCode = "EUR"
+    formatter.locale = Locale(identifier: "de_AT")
+
+    let expensiveItem = Rechnungszeile(
+        Name: "Bio-Milch 1L",
+        Price: 1.89,
+        Category: "Bio-Lebensmittel",
+        Shop: "Merkur",
+        Datum: Calendar.current.date(byAdding: .day, value: -1, to: Date()) ?? Date()
+    )
+
+    return ItemRowView(
+        item: expensiveItem,
+        priceRange: (min: 1.29, max: 1.89),
+        currencyFormatter: formatter
+    )
+    .padding()
+}
+
+#Preview("All States in List") {
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .currency
+    formatter.currencyCode = "EUR"
+    formatter.locale = Locale(identifier: "de_AT")
+
+    let items = [
+        Rechnungszeile(
+            Name: "Milch 1L", Price: 1.29, Category: "Lebensmittel", Shop: "Hofer", Datum: Date()),
+        Rechnungszeile(
+            Name: "Milch 1L", Price: 1.49, Category: "Lebensmittel", Shop: "Billa", Datum: Date()),
+        Rechnungszeile(
+            Name: "Bio-Milch 1L", Price: 1.89, Category: "Bio", Shop: "Merkur", Datum: Date()),
+    ]
+
+    return List(items, id: \.id) { item in
+        ItemRowView(
+            item: item,
+            priceRange: (min: 1.29, max: 1.89),
+            currencyFormatter: formatter
+        )
     }
 }

@@ -9,6 +9,16 @@
 import SwiftData
 import SwiftUI
 
-enum SortOrder {
-    case forward, reverse
+enum SortOrder: String, CaseIterable {
+    case forward = "forward"
+    case reverse = "reverse"
+
+    var displayName: String {
+        switch self {
+        case .forward:
+            return "Aufsteigend"
+        case .reverse:
+            return "Absteigend"
+        }
+    }
 }

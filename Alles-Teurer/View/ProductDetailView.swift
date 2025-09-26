@@ -112,10 +112,22 @@ struct ProductDetailView: View {
     }
 }
 
+#Preview("Mit Einträgen") {
+    NavigationStack {
+        ProductDetailView(
+            productName: "Milch",
+            items: SampleData.sampleRechnungszeilen,
+            onDelete: { _ in }
+        )
+    }
+}
 
-
- 
-
- 
-
-
+#Preview("Leer") {
+    NavigationStack {
+        ProductDetailView(
+            productName: "Brot",
+            items: [],
+            onDelete: { _ in }
+        )
+    }
+}
