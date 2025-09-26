@@ -68,9 +68,32 @@ struct ContentView: View {
                     }
                 }
 
-                ToolbarItem(placement: .navigationBarLeading) {
-                    if let viewModel = viewModel, !viewModel.items.isEmpty {
-                        EditButton()
+                ToolbarItemGroup(placement: .navigationBarLeading) {
+                    if let viewModel = viewModel {
+                        Menu {
+                            Button("Test-Daten hinzufügen") {
+                                Task {
+                                    await viewModel.generateTestData()
+                                }
+                            }
+
+                            if !viewModel.items.isEmpty {
+                                Divider()
+
+                                Button("Alle Daten löschen", role: .destructive) {
+                                    Task {
+                                        await viewModel.deleteAllItems()
+                                    }
+                                }
+                            }
+                        } label: {
+                            Image(systemName: "ellipsis.circle")
+                                .accessibilityLabel("Datenoptionen")
+                        }
+
+                        if !viewModel.items.isEmpty {
+                            EditButton()
+                        }
                     }
                 }
             }

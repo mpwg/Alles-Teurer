@@ -86,6 +86,29 @@ final class ContentViewModel {
         }
     }
 
+    func deleteAllItems() async {
+        isLoading = true
+        errorMessage = nil
+
+        do {
+            // Fetch all items and delete them
+            let descriptor = FetchDescriptor<Rechnungszeile>()
+            let allItems = try modelContext.fetch(descriptor)
+
+            for item in allItems {
+                modelContext.delete(item)
+            }
+
+            try modelContext.save()
+            await loadItems()  // Refresh the data
+        } catch {
+            errorMessage = "Failed to delete all items: \(error.localizedDescription)"
+            print("Failed to delete all items: \(error)")
+        }
+
+        isLoading = false
+    }
+
     func generateTestData() async {
         isLoading = true
         errorMessage = nil
