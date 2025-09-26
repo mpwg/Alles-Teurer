@@ -16,10 +16,17 @@ struct ScanReceiptView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Fertig") {
+                    Button("Fertig", systemImage: "checkmark") {
                         dismiss()
                     }
                 }
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Abrechen", systemImage: "xmark") {
+                        dismiss()
+                    }
+                    .foregroundColor(.red)
+                }
+ 
             }
         }
     }
