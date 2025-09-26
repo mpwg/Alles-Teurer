@@ -44,9 +44,11 @@ struct PhotoPickerView: UIViewControllerRepresentable {
                   provider.canLoadObject(ofClass: UIImage.self) else { return }
             
             provider.loadObject(ofClass: UIImage.self) { @Sendable image, error in
+                // Capture the image outside of MainActor context to avoid data race
+                let capturedImage = image as? UIImage
                 Task { @MainActor in
-                    if let image = image as? UIImage {
-                        self.parent.onImageSelected(image)
+                    if let loadedImage = capturedImage {
+                        self.parent.onImageSelected(loadedImage)
                     }
                 }
             }
