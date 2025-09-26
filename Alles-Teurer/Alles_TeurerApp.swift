@@ -11,13 +11,16 @@ import SwiftData
 @main
 struct Alles_TeurerApp: App {
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Rechnungszeile.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        
+        let modelConfiguration = ModelConfiguration(
+            isStoredInMemoryOnly: false,
+            
+        )
 
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            let container = try ModelContainer(
+            )
+            return container
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }

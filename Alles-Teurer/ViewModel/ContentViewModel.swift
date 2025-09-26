@@ -12,9 +12,19 @@ import SwiftData
 @Observable
 final class ContentViewModel {
     private let modelContext: ModelContext
+    var selectedProductName: String?
     
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
+    }
+    
+    func uniqueProductNames(from items: [Rechnungszeile]) -> [String] {
+        Array(Set(items.map { $0.Name })).sorted()
+    }
+    
+    func items(for productName: String, from allItems: [Rechnungszeile]) -> [Rechnungszeile] {
+        allItems.filter { $0.Name == productName }
+            .sorted { $0.Datum > $1.Datum } // Most recent first
     }
     
     func addItem() {
@@ -23,7 +33,9 @@ final class ContentViewModel {
             Price: 1.23, 
             Category: "Category", 
             Shop: "Shop", 
-            Datum: Date.now
+            Datum: Date.now,
+            NormalizedName: "Name",
+            PricePerUnit: 2.34
         )
         modelContext.insert(newItem)
         
@@ -35,9 +47,9 @@ final class ContentViewModel {
         }
     }
     
-    func deleteItems(at offsets: IndexSet, from items: [Rechnungszeile]) {
-        for index in offsets {
-            modelContext.delete(items[index])
+    func deleteItems(_ items: [Rechnungszeile]) {
+        for item in items {
+            modelContext.delete(item)
         }
         
         do {
@@ -74,15 +86,15 @@ final class ContentViewModel {
         
         let austrianShops = ["Billa", "Spar", "Merkur", "Interspar", "Hofer", "Penny", "MPreis", "Nah&Frisch"]
         
-        // Generate 5-10 random items
-        let numberOfItems = Int.random(in: 5...10)
+        // Generate 15-25 random items with some duplicates for better testing
+        let numberOfItems = Int.random(in: 15...25)
         
         for _ in 0..<numberOfItems {
             let randomItem = testItems.randomElement()!
             let randomShop = austrianShops.randomElement()!
             
-            // Generate random date within last 30 days
-            let randomDays = Int.random(in: 0...30)
+            // Generate random date within last 90 days
+            let randomDays = Int.random(in: 0...90)
             let randomDate = Calendar.current.date(byAdding: .day, value: -randomDays, to: Date.now) ?? Date.now
             
             // Add some price variation (±20%)
@@ -95,7 +107,9 @@ final class ContentViewModel {
                 Price: finalPrice,
                 Category: randomItem.1,
                 Shop: randomShop,
-                Datum: randomDate
+                Datum: randomDate,
+                NormalizedName: randomItem.0,
+                PricePerUnit: finalPrice
             )
             
             modelContext.insert(newItem)

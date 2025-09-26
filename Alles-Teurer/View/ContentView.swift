@@ -11,138 +11,140 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Rechnungszeile]
-    @State private var viewModel: ContentViewModel
     
-    init() {
-        // ViewModel will be initialized in the view's body using the environment
-        _viewModel = State(wrappedValue: ContentViewModel(modelContext: ModelContext(try! ModelContainer(for: Rechnungszeile.self))))
-    }
-
+    @State private var viewModel: ContentViewModel?
+    
     var body: some View {
         NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        ItemDetailView(item: item)
-                    } label: {
-                        ItemRowView(item: item)
+            // Master: List of unique product names
+            if let viewModel = viewModel {
+                ProductNamesListView(
+                    productNames: viewModel.uniqueProductNames(from: items),
+                    selectedProductName: Binding(
+                        get: { viewModel.selectedProductName },
+                        set: { viewModel.selectedProductName = $0 }
+                    )
+                )
+                .navigationTitle("Produkte")
+                .toolbar {
+                    ToolbarItemGroup(placement: .primaryAction) {
+                        Button("Test Daten", action: viewModel.generateTestData)
+                        Button("Hinzufügen", action: viewModel.addItem)
                     }
                 }
-                .onDelete { offsets in
-                    withAnimation {
-                        viewModel.deleteItems(at: offsets, from: items)
-                    }
-                }
+            } else {
+                ProgressView("Loading...")
+                    .navigationTitle("Produkte")
             }
-            .navigationTitle("Rechnungen")
-#if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-#endif
-            .toolbar {
-#if os(iOS)
+        } detail: {
+            // Detail: List of all items for selected product
+            if let viewModel = viewModel,
+               let selectedName = viewModel.selectedProductName {
+                ProductDetailView(
+                    productName: selectedName,
+                    items: viewModel.items(for: selectedName, from: items),
+                    onDelete: viewModel.deleteItems
+                )
+            } else {
+                ContentUnavailableView(
+                    "Kein Produkt ausgewählt",
+                    systemImage: "list.bullet.rectangle",
+                    description: Text("Wählen Sie ein Produkt aus der Liste, um Details anzuzeigen.")
+                )
+            }
+        }
+        .onAppear {
+            // Initialize viewModel with the actual modelContext when view appears
+            if viewModel == nil {
+                viewModel = ContentViewModel(modelContext: modelContext)
+            }
+        }
+    }
+}
+
+struct ProductNamesListView: View {
+    let productNames: [String]
+    @Binding var selectedProductName: String?
+    
+    var body: some View {
+        List(productNames, id: \.self, selection: $selectedProductName) { productName in
+            Text(productName)
+                .accessibilityLabel("Produkt: \(productName)")
+        }
+        .listStyle(.sidebar)
+    }
+}
+
+struct ProductDetailView: View {
+    let productName: String
+    let items: [Rechnungszeile]
+    let onDelete: ([Rechnungszeile]) -> Void
+    
+    private let currencyFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencyCode = "EUR"
+        formatter.locale = Locale(identifier: "de_AT")
+        return formatter
+    }()
+    
+    var body: some View {
+        List {
+            ForEach(items) { item in
+                VStack(alignment: .leading, spacing: 4) {
+                    HStack {
+                        Text(currencyFormatter.string(from: item.Price as NSDecimalNumber) ?? "€0,00")
+                            .font(.headline)
+                            .foregroundColor(.primary)
+                        
+                        Spacer()
+                        
+                        Text(item.Datum.formatted(date: .abbreviated, time: .omitted))
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
+                    
+                    HStack {
+                        Text(item.Shop)
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                        
+                        Spacer()
+                        
+                        Text(item.Category)
+                            .font(.caption)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 2)
+                            .background(Color.secondary.opacity(0.2))
+                            .clipShape(Capsule())
+                    }
+                }
+                .padding(.vertical, 2)
+                .accessibilityLabel("Eintrag vom \(item.Datum.formatted(date: .abbreviated, time: .omitted)), \(currencyFormatter.string(from: item.Price as NSDecimalNumber) ?? "unbekannter Preis"), gekauft bei \(item.Shop)")
+            }
+            .onDelete { indexSet in
+                let itemsToDelete = indexSet.map { items[$0] }
+                onDelete(itemsToDelete)
+            }
+        }
+        .navigationTitle(productName)
+        .navigationBarTitleDisplayMode(.large)
+        .toolbar {
+            if !items.isEmpty {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
                 }
-#endif
-                ToolbarItem {
-                    Button(action: {
-                        withAnimation {
-                            viewModel.addItem()
-                        }
-                    }) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                    .accessibilityLabel("Neue Rechnung hinzufügen")
-                }
-                
-                ToolbarItem {
-                    Button(action: {
-                        withAnimation {
-                            viewModel.generateTestData()
-                        }
-                    }) {
-                        Label("Test Data", systemImage: "testtube.2")
-                    }
-                    .accessibilityLabel("Testdaten generieren")
-                }
-            }
-        } detail: {
-            Text("Wählen Sie eine Rechnung aus")
-                .foregroundStyle(.secondary)
-        }
-        .onAppear {
-            // Reinitialize viewModel with the actual modelContext from environment
-            viewModel = ContentViewModel(modelContext: modelContext)
-        }
-    }
-}
-
-struct ItemRowView: View {
-    let item: Rechnungszeile
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            HStack {
-                Text(item.Name)
-                    .font(.headline)
-                Spacer()
-                Text(item.Price, format: .currency(code: "EUR"))
-                    .font(.subheadline)
-                    .fontWeight(.medium)
-            }
-            
-            HStack {
-                Text(item.Shop)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                Spacer()
-                Text(item.Datum, format: Date.FormatStyle(date: .abbreviated, time: .omitted))
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
             }
         }
-        .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(item.Name), \(item.Price.formatted(.currency(code: "EUR"))), \(item.Shop), \(item.Datum.formatted(date: .abbreviated, time: .omitted))")
-    }
-}
-
-struct ItemDetailView: View {
-    let item: Rechnungszeile
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Text(item.Name)
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            
-            DetailRowView(label: "Preis", value: item.Price.formatted(.currency(code: "EUR")))
-            DetailRowView(label: "Kategorie", value: item.Category)
-            DetailRowView(label: "Geschäft", value: item.Shop)
-            DetailRowView(label: "Datum", value: item.Datum.formatted(date: .complete, time: .shortened))
-            
-            Spacer()
+        .overlay {
+            if items.isEmpty {
+                ContentUnavailableView(
+                    "Keine Einträge",
+                    systemImage: "cart",
+                    description: Text("Für dieses Produkt wurden noch keine Einkäufe erfasst.")
+                )
+            }
         }
-        .padding()
-        .navigationTitle("Rechnung Details")
-        .navigationBarTitleDisplayMode(.inline)
-    }
-}
-
-struct DetailRowView: View {
-    let label: String
-    let value: String
-    
-    var body: some View {
-        HStack {
-            Text(label)
-                .font(.headline)
-                .foregroundStyle(.secondary)
-            Spacer()
-            Text(value)
-                .font(.body)
-        }
-        .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(label): \(value)")
     }
 }
 
