@@ -207,88 +207,8 @@ struct ScanReceiptView: View {
     }
 }
 
-// MARK: - Photo Picker
-struct PhotoPickerView: UIViewControllerRepresentable {
-    let onImageSelected: (UIImage) -> Void
-    
-    func makeUIViewController(context: Context) -> PHPickerViewController {
-        var configuration = PHPickerConfiguration()
-        configuration.filter = .images
-        configuration.selectionLimit = 1
-        
-        let picker = PHPickerViewController(configuration: configuration)
-        picker.delegate = context.coordinator
-        return picker
-    }
-    
-    func updateUIViewController(_ uiViewController: PHPickerViewController, context: Context) {}
-    
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-    
-    class Coordinator: NSObject, PHPickerViewControllerDelegate {
-        let parent: PhotoPickerView
-        
-        init(_ parent: PhotoPickerView) {
-            self.parent = parent
-        }
-        
-        func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
-            picker.dismiss(animated: true)
-            
-            guard let provider = results.first?.itemProvider,
-                  provider.canLoadObject(ofClass: UIImage.self) else { return }
-            
-            provider.loadObject(ofClass: UIImage.self) { image, error in
-                DispatchQueue.main.async {
-                    if let image = image as? UIImage {
-                        self.parent.onImageSelected(image)
-                    }
-                }
-            }
-        }
-    }
-}
 
-// MARK: - Camera View
-struct CameraView: UIViewControllerRepresentable {
-    let onImageSelected: (UIImage) -> Void
-    
-    func makeUIViewController(context: Context) -> UIImagePickerController {
-        let picker = UIImagePickerController()
-        picker.delegate = context.coordinator
-        picker.sourceType = .camera
-        picker.cameraCaptureMode = .photo
-        return picker
-    }
-    
-    func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
-    
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-    
-    class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-        let parent: CameraView
-        
-        init(_ parent: CameraView) {
-            self.parent = parent
-        }
-        
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            picker.dismiss(animated: true)
-            
-            if let image = info[.originalImage] as? UIImage {
-                parent.onImageSelected(image)
-            }
-        }
-        
-        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            picker.dismiss(animated: true)
-        }
-    }
-}
+
 
 #Preview {
     ScanReceiptView()
