@@ -37,5 +37,9 @@
 			<string>UIInterfaceOrientationLandscapeLeft</string>
 			<string>UIInterfaceOrientationLandscapeRight</string>
 		</array>
+		<key>NSCameraUsageDescription</key>
+		<string>Diese App benötigt Zugriff auf die Kamera, um Rechnungen zu fotografieren und den Text zu erkennen.</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>Diese App benötigt Zugriff auf Ihre Fotobibliothek, um Rechnungsbilder auszuwählen und den Text zu erkennen.</string>
 	</dict>
 </plist>
