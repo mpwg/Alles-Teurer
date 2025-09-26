@@ -56,9 +56,11 @@ struct ContentView: View {
         .sheet(isPresented: showingAddSheetBinding) {
             AddItemView()
         }
-        .sheet(isPresented: showingScanSheetBinding) {
+        .fullScreenCover(isPresented: showingScanSheetBinding) {
             ScanReceiptView()
+            
         }
+        
     }
     
         @ViewBuilder
