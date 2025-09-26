@@ -26,6 +26,13 @@ struct ContentView: View {
             set: { viewModel?.editMode = $0 }
         )
     }
+    
+    private var showingScanSheetBinding: Binding<Bool> {
+        Binding(
+            get: { viewModel?.showingScanSheet ?? false },
+            set: { viewModel?.showingScanSheet = $0 }
+        )
+    }
 
     var body: some View {
         NavigationSplitView {
@@ -45,53 +52,70 @@ struct ContentView: View {
         } message: {
             Text(viewModel?.errorMessage ?? "Unbekannter Fehler")
         }
-    }
-    
-    @ViewBuilder
-    private var mainContent: some View {
-        Group {
-            if let viewModel = viewModel {
-                productList(viewModel: viewModel)
-            } else if viewModel?.isLoading == true {
-                ProgressView("Laden...")
-            } else {
-                ProgressView("Initialisierung...")
-            }
-        }
-        .navigationTitle("Rechnungen")
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button {
-                    Task {
-                        await viewModel?.generateTestData()
-                    }
-                } label: {
-                    Label("Testdaten", systemImage: "doc.badge.plus")
-                }
-                .disabled(viewModel?.isLoading == true)
-            }
-            ToolbarItem(placement: .primaryAction) {
-                Button("Bearbeiten") {
-                    toggleEditMode()
-                }
-            }
-            ToolbarItem {
-                Button {
-                    viewModel?.showingAddSheet = true
-                } label: {
-                    Label("Artikel hinzufügen", systemImage: "plus")
-                }
-                .disabled(viewModel?.isLoading == true)
-            }
-        }
-        .environment(\.editMode, editModeBinding)
         .sheet(isPresented: showingAddSheetBinding) {
             AddItemView()
-                .onDisappear {
-                    Task {
-                        await viewModel?.loadItems()
+        }
+        .sheet(isPresented: showingScanSheetBinding) {
+            ScanReceiptView()
+        }
+    }
+    
+        @ViewBuilder
+    private var mainContent: some View {
+        if let viewModel = viewModel {
+            ZStack(alignment: .bottomTrailing) {
+                List(selection: .constant(nil as Rechnungszeile?)) {
+                    ForEach(viewModel.items) { item in
+                        NavigationLink(value: item) {
+                            RechnungszeileRow(
+                                item: item,
+                                isHighestPrice: false,
+                                isLowestPrice: false
+                            )
+                        }
+                    }
+                    .onDelete(perform: deleteItems)
+                }
+                .environment(\.editMode, editModeBinding)
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button("Bearbeiten") {
+                            viewModel.editMode = viewModel.editMode == .active ? .inactive : .active
+                        }
+                    }
+                    
+                    ToolbarItemGroup(placement: .topBarTrailing) {
+                        Button("Testdaten generieren") {
+                            Task {
+                                await viewModel.generateTestData()
+                            }
+                        }
+                        
+                        Button {
+                            viewModel.showingAddSheet = true
+                        } label: {
+                            Image(systemName: "plus")
+                        }
                     }
                 }
+                
+                // Floating Scan Button
+                Button {
+                    viewModel.showingScanSheet = true
+                } label: {
+                    Image(systemName: "qrcode.viewfinder")
+                        .font(.title2)
+                        .foregroundColor(.white)
+                        .frame(width: 56, height: 56)
+                        .background(Color.accentColor)
+                        .clipShape(Circle())
+                        .shadow(radius: 4)
+                }
+                .padding(.trailing, 20)
+                .padding(.bottom, 20)
+            }
+        } else {
+            ContentUnavailableView("Loading...", systemImage: "clock")
         }
     }
     
@@ -153,6 +177,14 @@ struct ContentView: View {
     private func toggleEditMode() {
         withAnimation {
             viewModel?.editMode = viewModel?.editMode == .active ? .inactive : .active
+        }
+    }
+    
+    private func deleteItems(offsets: IndexSet) {
+        guard let viewModel = viewModel else { return }
+        let itemsToDelete = offsets.map { viewModel.items[$0] }
+        Task {
+            await viewModel.deleteItems(itemsToDelete)
         }
     }
     
