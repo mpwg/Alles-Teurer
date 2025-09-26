@@ -100,7 +100,7 @@ struct ProductDetailView: View {
                             .accessibilityLabel("Sortieroptionen")
                             .accessibilityHint("Sortierung und Reihenfolge der Einträge ändern")
                     }
-                    
+
                     if !items.isEmpty {
                         EditButton()
                     }
