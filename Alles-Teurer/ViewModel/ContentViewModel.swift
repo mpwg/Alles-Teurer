@@ -14,18 +14,41 @@ import SwiftUI
 final class ContentViewModel {
     private let modelContext: ModelContext
     var selectedProductName: String?
+    var items: [Rechnungszeile] = []
+    var isLoading = false
+    var errorMessage: String?
 
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
+        Task {
+            await loadItems()
+        }
     }
 
-    func uniqueProductNames(from items: [Rechnungszeile]) -> [String] {
-        Array(Set(items.map { $0.Name })).sorted()
+    var uniqueProductNames: [String] {
+        Array(Set(items.map { $0.NormalizedName })).sorted()
     }
 
-    func items(for productName: String, from allItems: [Rechnungszeile]) -> [Rechnungszeile] {
-        allItems.filter { $0.Name == productName }
+    func items(for productName: String) -> [Rechnungszeile] {
+        items.filter { $0.Name == productName }
             .sorted { $0.Datum > $1.Datum }  // Most recent first
+    }
+
+    func loadItems() async {
+        isLoading = true
+        errorMessage = nil
+
+        do {
+            let descriptor = FetchDescriptor<Rechnungszeile>(
+                sortBy: [SortDescriptor(\.Datum, order: .reverse)]
+            )
+            items = try modelContext.fetch(descriptor)
+        } catch {
+            errorMessage = "Failed to load items: \(error.localizedDescription)"
+            print("Failed to load items: \(error)")
+        }
+
+        isLoading = false
     }
 
     func addItem() {
@@ -48,20 +71,23 @@ final class ContentViewModel {
         }
     }
 
-    func deleteItems(_ items: [Rechnungszeile]) {
+    func deleteItems(_ items: [Rechnungszeile]) async {
         for item in items {
             modelContext.delete(item)
         }
 
         do {
             try modelContext.save()
+            await loadItems()  // Refresh the data
         } catch {
-            // Handle save error
+            errorMessage = "Failed to delete items: \(error.localizedDescription)"
             print("Failed to delete items: \(error)")
         }
     }
 
-    func generateTestData() {
+    func generateTestData() async {
+        isLoading = true
+        errorMessage = nil
         print("generateTestData() started")
         let testItems: [(String, String, Decimal)] = [
             ("Vollmilch 1L", "Milchprodukte", Decimal(1.29)),
@@ -122,9 +148,13 @@ final class ContentViewModel {
 
         do {
             try modelContext.save()
+            await loadItems()  // Refresh the data
         } catch {
+            errorMessage = "Failed to save test data: \(error.localizedDescription)"
             print("Failed to save test data: \(error)")
         }
+
+        isLoading = false
     }
 }
 
