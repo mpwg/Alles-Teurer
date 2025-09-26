@@ -11,6 +11,7 @@ struct ScanReceiptView: View {
     @State private var showingCamera = false
     
     var body: some View {
+        NavigationView {
             VStack(spacing: 20) {
                 // Action buttons with better spacing
                 actionButtons
@@ -45,13 +46,15 @@ struct ScanReceiptView: View {
                     .accessibilityLabel("Scan zurücksetzen")
                 }
             }
-            .fullScreenCover(isPresented: $showingImagePicker) {
+            .sheet(isPresented: $showingImagePicker) {
                 PhotoPickerView(onImageSelected: viewModel.processImage)
+                    .presentationDetents([.large])
             }
-            .fullScreenCover(isPresented: $showingCamera) {
+            .sheet(isPresented: $showingCamera) {
                 CameraView(onImageSelected: viewModel.processImage)
+                    .presentationDetents([.large])
             }
-        
+        }
     }
     
     // MARK: - View Components
@@ -154,9 +157,7 @@ struct ScanReceiptView: View {
                     Spacer()
                     
                     Button("Speichern") {
-                        Task {
-                            await saveReceiptItem()
-                        }
+                        saveReceiptItem()
                     }
                     .buttonStyle(.borderedProminent)
                     .controlSize(.regular)
@@ -251,8 +252,8 @@ struct ScanReceiptView: View {
     
     // MARK: - Actions
     
-    private func saveReceiptItem() async {
-        let receiptItem = await viewModel.createRechnungszeile(from: viewModel.extractedText)
+    private func saveReceiptItem() {
+        let receiptItem = viewModel.createRechnungszeile(from: viewModel.extractedText)
         
         withAnimation {
             modelContext.insert(receiptItem)
