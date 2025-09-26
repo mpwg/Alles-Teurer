@@ -28,6 +28,10 @@ final class ContentViewModel {
     var uniqueProductNames: [String] {
         Array(Set(items.map { $0.NormalizedName })).sorted()
     }
+    
+    var productGroups: [String: [Rechnungszeile]] {
+        Dictionary(grouping: items) { $0.NormalizedName }
+    }
 
     func items(for productName: String) -> [Rechnungszeile] {
         items.filter { $0.Name == productName }
