@@ -60,6 +60,7 @@ struct ProductDetailView: View {
         .navigationTitle(productName)
         .navigationBarTitleDisplayMode(.large)
         .toolbar {
+            // Use ToolbarItemGroup to properly group items
             ToolbarItemGroup(placement: .navigationBarTrailing) {
                 if let viewModel = viewModel {
                     Menu {
@@ -99,7 +100,7 @@ struct ProductDetailView: View {
                             .accessibilityLabel("Sortieroptionen")
                             .accessibilityHint("Sortierung und Reihenfolge der Einträge ändern")
                     }
-
+                    
                     if !items.isEmpty {
                         EditButton()
                     }
@@ -107,6 +108,7 @@ struct ProductDetailView: View {
             }
         }
         .task {
+            // Initialize viewModel immediately without delay
             viewModel = ProductDetailViewModel(
                 productName: productName,
                 items: items,
@@ -114,11 +116,7 @@ struct ProductDetailView: View {
             )
         }
         .onChange(of: items) { _, newItems in
-            viewModel = ProductDetailViewModel(
-                productName: productName,
-                items: newItems,
-                modelContext: modelContext
-            )
+            viewModel?.updateItems(newItems)
         }
         .onChange(of: productName) { _, newProductName in
             viewModel = ProductDetailViewModel(

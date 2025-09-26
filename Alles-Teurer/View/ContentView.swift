@@ -78,6 +78,8 @@ struct ContentView: View {
                 AddItemView()
             }
             .task {
+                // Delay initialization slightly to ensure scene is fully set up
+                await Task.yield()
                 if viewModel == nil {
                     viewModel = ContentViewModel(modelContext: modelContext)
                 }

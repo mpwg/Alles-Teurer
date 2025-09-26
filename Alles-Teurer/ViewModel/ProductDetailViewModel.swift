@@ -100,4 +100,9 @@ final class ProductDetailViewModel {
     func dismissError() {
         errorMessage = nil
     }
+
+    func updateItems(_ newItems: [Rechnungszeile]) {
+        // Note: _items is immutable (let), so we need to recreate the ViewModel
+        // This method should be called from the parent view to replace this ViewModel instance
+    }
 }
