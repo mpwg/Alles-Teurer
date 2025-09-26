@@ -9,6 +9,13 @@ import Foundation
 import SwiftData
 import SwiftUI
 
+struct ChartDataPoint: Identifiable {
+    let id = UUID()
+    let date: Date
+    let price: Decimal
+    let shop: String
+}
+
 @MainActor
 @Observable
 final class ProductDetailViewModel {
@@ -68,6 +75,26 @@ final class ProductDetailViewModel {
     var priceStats: (lowest: Decimal, highest: Decimal, average: Decimal)? {
         guard let range = priceRange else { return nil }
         return (lowest: range.min, highest: range.max, average: averagePrice)
+    }
+    
+    var lowestPrice: Decimal {
+        priceRange?.min ?? 0
+    }
+    
+    var highestPrice: Decimal {
+        priceRange?.max ?? 0
+    }
+    
+    var chartData: [ChartDataPoint] {
+        return _items
+            .sorted { $0.Datum < $1.Datum } // Sort by date for chronological chart
+            .map { item in
+                ChartDataPoint(
+                    date: item.Datum,
+                    price: item.Price,
+                    shop: item.Shop
+                )
+            }
     }
 
     // Actions
