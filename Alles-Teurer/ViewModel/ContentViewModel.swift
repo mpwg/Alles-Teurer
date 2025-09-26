@@ -5,6 +5,7 @@
 //  Created by Matthias Wallner-Géhri on 26.09.25.
 //
 
+import Foundation
 import SwiftData
 import SwiftUI
 
@@ -61,6 +62,7 @@ final class ContentViewModel {
     }
 
     func generateTestData() {
+        print("generateTestData() started")
         let testItems: [(String, String, Decimal)] = [
             ("Vollmilch 1L", "Milchprodukte", Decimal(1.29)),
             ("Semmel 6 Stück", "Backwaren", Decimal(2.40)),
