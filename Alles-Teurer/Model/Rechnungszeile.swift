@@ -21,7 +21,7 @@ final class Rechnungszeile: Identifiable {
 
     init(
         Name: String, Price: Decimal, Category: String, Shop: String, Datum: Date,
-        NormalizedName: String = "", PricePerUnit: Decimal = 0
+        NormalizedName:String, PricePerUnit: Decimal = 0
     ) {
         self.Name = Name
         self.Price = Price

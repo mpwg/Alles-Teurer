@@ -128,8 +128,28 @@ final class ScanReceiptViewModel {
             Price: 0.00,
             Category: "Gescannt", 
             Shop: "Unbekannter Shop",
-            Datum: Date.now
+            Datum: Date.now,
+            NormalizedName: "Keines",
+ 
         )
+    }
+    
+    // MARK: - Import Methods
+    
+    func importExtractedRechnungszeilen(to modelContext: ModelContext) {
+        logger.info("Importing \(self.extractedRechnungszeilen.count) Rechnungszeilen to database")
+        
+        for rechnungszeile in self.extractedRechnungszeilen {
+            modelContext.insert(rechnungszeile)
+        }
+        
+        do {
+            try modelContext.save()
+            logger.info("Successfully imported all Rechnungszeilen")
+        } catch {
+            logger.error("Failed to save Rechnungszeilen: \(error)")
+            self.handleError("Fehler beim Speichern: \(error.localizedDescription)")
+        }
     }
     
     // MARK: - Private Methods

@@ -37,7 +37,7 @@ final class ContentViewModel {
     }
 
     func items(for productName: String) -> [Rechnungszeile] {
-        items.filter { $0.Name == productName }
+        items.filter { $0.NormalizedName == productName }
             .sorted { $0.Datum > $1.Datum }  // Most recent first
     }
 
