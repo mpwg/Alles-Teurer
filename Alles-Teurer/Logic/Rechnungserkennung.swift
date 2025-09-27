@@ -10,6 +10,7 @@ import Vision
 import UIKit
 import OSLog
 import FoundationModels
+import SwiftData
 
 /// Service for recognizing receipt data from images using Apple's Foundation Models
 @MainActor
@@ -18,6 +19,13 @@ final class Rechnungserkennung {
     // MARK: - Properties
     private let logger = Logger(subsystem: "com.alles-teurer.app", category: "Rechnungserkennung")
     private let systemModel = SystemLanguageModel.default
+    private let modelContext: ModelContext?
+    
+    // MARK: - Initialization
+    
+    init(modelContext: ModelContext? = nil) {
+        self.modelContext = modelContext
+    }
     
     // MARK: - Public Methods
     
@@ -41,17 +49,30 @@ final class Rechnungserkennung {
         let receiptData = try await parseReceiptWithFoundationModels(extractedText)
         logger.info("Successfully parsed receipt with \(receiptData.lineItems.count) line items")
         
-        // Step 3: Convert to Rechnungszeile objects
-        let rechnungszeilen = receiptData.lineItems.map { item in
-            Rechnungszeile(
+        // Step 3: Load existing normalized names for LLM context
+        let existingNormalizedNames = await getExistingNormalizedNames()
+        
+        // Step 4: Convert to Rechnungszeile objects with LLM-only normalization
+        var rechnungszeilen: [Rechnungszeile] = []
+        
+        for item in receiptData.lineItems {
+            // Use LLM exclusively for normalization with context from existing data
+            let normalizedName = await normalizeProductNameWithLLM(
+                item.productName, 
+                existingNormalizedNames: existingNormalizedNames
+            )
+            
+            let rechnungszeile = Rechnungszeile(
                 Name: item.productName,
                 Price: item.price,
                 Category: item.category,
                 Shop: receiptData.shopName,
                 Datum: receiptData.date,
-                NormalizedName: normalizeProductName(item.productName),
+                NormalizedName: normalizedName,
                 PricePerUnit: item.pricePerUnit ?? item.price
             )
+            
+            rechnungszeilen.append(rechnungszeile)
         }
         
         logger.info("Created \(rechnungszeilen.count) Rechnungszeile objects")
@@ -184,17 +205,116 @@ final class Rechnungserkennung {
     
     // MARK: - Helper Methods
     
-    private func normalizeProductName(_ name: String) -> String {
-        // Normalize product names for better matching
-        return name
-            .lowercased()
-            .replacingOccurrences(of: "ä", with: "ae")
-            .replacingOccurrences(of: "ö", with: "oe")
-            .replacingOccurrences(of: "ü", with: "ue")
-            .replacingOccurrences(of: "ß", with: "ss")
-            .components(separatedBy: .punctuationCharacters)
-            .joined(separator: " ")
-            .trimmingCharacters(in: .whitespaces)
+    /// Retrieves existing normalized product names from the database for LLM context
+    internal func getExistingNormalizedNames() async -> Set<String> {
+        guard let modelContext = modelContext else {
+            logger.warning("No ModelContext available, using default product types only")
+            return Set()
+        }
+        
+        do {
+            let descriptor = FetchDescriptor<Rechnungszeile>()
+            let allItems = try modelContext.fetch(descriptor)
+            
+            let normalizedNames = Set(allItems.compactMap { item in
+                let normalized = item.NormalizedName.trimmingCharacters(in: .whitespacesAndNewlines)
+                return normalized.isEmpty ? nil : normalized
+            })
+            
+            logger.info("Loaded \(normalizedNames.count) existing normalized names from database")
+            return normalizedNames
+        } catch {
+            logger.error("Failed to load existing normalized names: \(error)")
+            return Set()
+        }
+    }
+    
+    /// Returns the 20 most common food product types in Austrian/German supermarkets
+    internal func getCommonProductTypes() -> [String] {
+        return [
+            "Milch", "Brot", "Joghurt", "Käse", "Butter", "Eier", 
+            "Äpfel", "Bananen", "Erdäpfel", "Paradeiser", "Gurken", "Paprika",
+            "Fleisch", "Wurst", "Faschiertes", "Hähnchen", 
+            "Nudeln", "Reis", "Zucker", "Mehl"
+        ]
+    }
+    
+    /// Uses LLM exclusively to normalize product names with context from existing data
+    internal func normalizeProductNameWithLLM(
+        _ productName: String, 
+        existingNormalizedNames: Set<String>
+    ) async -> String {
+        // Skip LLM processing for very short or empty names
+        guard !productName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
+              productName.count > 2 else {
+            return productName
+        }
+        
+        do {
+            // Combine common product types with existing normalized names for context
+            let commonTypes = getCommonProductTypes()
+            let existingNames = Array(existingNormalizedNames).sorted()
+            let allExamples = (commonTypes + existingNames).prefix(50) // Limit to avoid token overflow
+            
+            let examplesList = allExamples.joined(separator: ", ")
+            
+            let instructions = """
+            Du bist ein Experte für Produktnormalisierung in österreichischen und deutschen Supermärkten.
+            
+            Deine Aufgabe ist es, aus spezifischen Produktnamen generische, konsistente und vergleichbare Produktnamen zu erstellen.
+            
+            WICHTIGE REGELN:
+            - Entferne ALLE Markennamen (Ja natürlich, Clever, SPAR, BILLA, Hofer, etc.)
+            - Entferne ALLE Mengenangaben (kg, g, ml, l, Stück, Pack, etc.)
+            - Entferne Packungsarten (Dose, Flasche, Becher, Tüte, etc.)
+            - Entferne Qualitäts-/Herkunftsangaben (Bio, Premium, Österreichisch, etc.)
+            - Behalte nur den essentiellen Produkttyp
+            - Verwende österreichische Begriffe: "Topfen" (nicht Quark), "Paradeiser" (nicht Tomaten), "Erdäpfel" (nicht Kartoffeln)
+            - Verwende einheitliche Schreibweise: erste Buchstabe groß, Rest klein
+            - Bevorzuge bereits verwendete Begriffe für Konsistenz
+            
+            BEREITS VERWENDETE NORMALISIERTE NAMEN (verwende diese wenn möglich):
+            \(examplesList)
+            
+            ANTWORTFORMAT:
+            Antworte nur mit dem normalisierten Produktnamen, ohne Anführungszeichen oder Erklärungen.
+            
+            BEISPIELE:
+            "Ja natürlich Bio Joghurt Natur 500g" → "Joghurt"
+            "Clever Erdäpfel mehlig 2kg" → "Erdäpfel"
+            "SPAR Premium Grana Padano gerieben" → "Grana Padano"
+            "Bio Faschiertes gemischt 500g" → "Faschiertes"
+            "DKIH Paprika rot 1 Stk." → "Paprika"
+            """
+            
+            let session = LanguageModelSession(instructions: instructions)
+            
+            let prompt = "Normalisiere: \(productName)"
+            
+            let response = try await session.respond(to: prompt)
+            let normalizedName = response.content
+                .trimmingCharacters(in: .whitespacesAndNewlines)
+                .replacingOccurrences(of: "\"", with: "")
+                .replacingOccurrences(of: "→", with: "")
+                .replacingOccurrences(of: "Normalisiert:", with: "")
+                .trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            // Validate the result
+            guard !normalizedName.isEmpty,
+                  normalizedName.count > 1,
+                  !normalizedName.contains("normalisiere"),
+                  !normalizedName.contains("→") else {
+                logger.warning("LLM normalization failed for: \(productName), using original")
+                return productName
+            }
+            
+            logger.info("LLM normalized '\(productName)' → '\(normalizedName)'")
+            return normalizedName
+            
+        } catch {
+            logger.error("LLM normalization failed for '\(productName)': \(error)")
+            return productName // Fallback to original name
+        }
     }
 }
 
