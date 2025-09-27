@@ -45,30 +45,24 @@ final class Rechnungserkennung {
         let extractedText = try await extractTextFromImage(image)
         logger.info("Extracted text length: \(extractedText.count) characters")
         
-        // Step 2: Use Foundation Models to parse structured data
-        let receiptData = try await parseReceiptWithFoundationModels(extractedText)
-        logger.info("Successfully parsed receipt with \(receiptData.lineItems.count) line items")
-        
-        // Step 3: Load existing normalized names for LLM context
+        // Step 2: Load existing normalized names for LLM context
         let existingNormalizedNames = await getExistingNormalizedNames()
         
-        // Step 4: Convert to Rechnungszeile objects with LLM-only normalization
+        // Step 3: Use Foundation Models to parse structured data AND normalize names in one step
+        let receiptData = try await parseReceiptWithFoundationModels(extractedText, existingNormalizedNames: existingNormalizedNames)
+        logger.info("Successfully parsed receipt with \(receiptData.lineItems.count) line items")
+        
+        // Step 4: Convert to Rechnungszeile objects (normalization already done)
         var rechnungszeilen: [Rechnungszeile] = []
         
         for item in receiptData.lineItems {
-            // Use LLM exclusively for normalization with context from existing data
-            let normalizedName = await normalizeProductNameWithLLM(
-                item.productName, 
-                existingNormalizedNames: existingNormalizedNames
-            )
-            
             let rechnungszeile = Rechnungszeile(
                 Name: item.productName,
                 Price: item.price,
                 Category: item.category,
                 Shop: receiptData.shopName,
                 Datum: receiptData.date,
-                NormalizedName: normalizedName,
+                NormalizedName: item.normalizedName,
                 PricePerUnit: item.pricePerUnit ?? item.price
             )
             
@@ -123,15 +117,22 @@ final class Rechnungserkennung {
     
     // MARK: - Private Methods - Foundation Models
     
-    private func parseReceiptWithFoundationModels(_ text: String) async throws -> ParsedReceiptData {
-        logger.info("Using Foundation Models to parse receipt data")
+    private func parseReceiptWithFoundationModels(_ text: String, existingNormalizedNames: Set<String>) async throws -> ParsedReceiptData {
+        logger.info("Using Foundation Models to parse receipt data with integrated normalization")
         
-        // Create structured instructions for the model
+        // Combine common product types with existing normalized names for context
+        let commonTypes = getCommonProductTypes()
+        let existingNames = Array(existingNormalizedNames).sorted()
+        let allExamples = (commonTypes + existingNames).prefix(50) // Limit to avoid token overflow
+        let examplesList = allExamples.joined(separator: ", ")
+        
+        // Create comprehensive instructions for parsing AND normalization
         let instructions = """
-        Du bist ein Experte für die Analyse von deutschen Kassenbons und Rechnungen. 
-        Deine Aufgabe ist es, strukturierte Daten aus Rechnungstexten zu extrahieren.
+        Du bist ein Experte für die Analyse von deutschen Kassenbons und Rechnungen mit Spezialisierung auf Produktnormalisierung.
         
-        Befolge diese Regeln:
+        Deine Aufgabe ist es, strukturierte Daten aus Rechnungstexten zu extrahieren UND gleichzeitig die Produktnamen zu normalisieren.
+        
+        EXTRAKTION - Befolge diese Regeln:
         - Extrahiere ALLE Produkte/Artikel aus der Rechnung
         - Ignoriere Rabatte, Pfand und Gesamtsummen
         - Verwende deutsche Produktnamen wie sie auf der Rechnung stehen
@@ -139,68 +140,45 @@ final class Rechnungserkennung {
         - Extrahiere Einzelpreise, nicht Gesamtsummen
         - Behandle Mengenangaben (kg, Stk, etc.) korrekt
         
-        Antworte ausschließlich mit gültigem JSON ohne zusätzlichen Text.
+        NORMALISIERUNG - Für jeden Produktnamen:
+        - Entferne ALLE Markennamen (Ja natürlich, Clever, SPAR, BILLA, Hofer, etc.)
+        - Entferne ALLE Mengenangaben (kg, g, ml, l, Stück, Pack, etc.)
+        - Entferne Packungsarten (Dose, Flasche, Becher, Tüte, etc.)
+        - Entferne Qualitäts-/Herkunftsangaben (Bio, Premium, Österreichisch, etc.)
+        - Behalte nur den essentiellen Produkttyp
+        - Verwende österreichische Begriffe: "Topfen" (nicht Quark), "Paradeiser" (nicht Tomaten), "Erdäpfel" (nicht Kartoffeln)
+        - Verwende einheitliche Schreibweise: erste Buchstabe groß, Rest klein
+        - Bevorzuge bereits verwendete Begriffe für Konsistenz
+        
+        BEREITS VERWENDETE NORMALISIERTE NAMEN (verwende diese wenn möglich):
+        \(examplesList)
+        
+        BEISPIELE für Normalisierung:
+        "Ja natürlich Bio Joghurt Natur 500g" → "Joghurt"
+        "Clever Erdäpfel mehlig 2kg" → "Erdäpfel"
+        "SPAR Premium Grana Padano gerieben" → "Grana Padano"
+        "Bio Faschiertes gemischt 500g" → "Faschiertes"
+        "DKIH Paprika rot 1 Stk." → "Paprika"
         """
         
         let session = LanguageModelSession(instructions: instructions)
         
         // Create the parsing prompt
         let prompt = """
-        Analysiere diese deutsche Rechnung und extrahiere alle Informationen als JSON:
+        Analysiere diese deutsche Rechnung und extrahiere alle Informationen.
+        Für jedes Produkt gib sowohl den Original-Namen als auch den normalisierten Namen an:
 
         \(text)
-
-        Erstelle JSON mit folgender Struktur:
-        {
-          "shopName": "Name des Geschäfts",
-          "date": "YYYY-MM-DD",
-          "lineItems": [
-            {
-              "productName": "Exakter Produktname",
-              "price": 1.23,
-              "category": "Kategorie (Lebensmittel/Drogerie/etc.)",
-              "quantity": "Menge falls angegeben",
-              "pricePerUnit": 1.23
-            }
-          ]
-        }
         """
         
         do {
-            let response = try await session.respond(to: prompt)
-            return try parseJSONResponse(response.content)
+            // Use guided generation to get structured data directly
+            let response = try await session.respond(to: prompt, generating: ParsedReceiptData.self)
+            return response.content
         } catch {
-            logger.error("Foundation Models parsing failed: \(error)")
+            logger.error("Foundation Models parsing with normalization failed: \(error)")
             throw RechnungserkennungError.foundationModelsError(error)
         }
-    }
-    
-    private func parseJSONResponse(_ response: String) throws -> ParsedReceiptData {
-        // Clean the response to extract JSON
-        let cleanedResponse = extractJSONFromResponse(response)
-        
-        guard let data = cleanedResponse.data(using: .utf8) else {
-            throw RechnungserkennungError.invalidJSONResponse
-        }
-        
-        do {
-            return try JSONDecoder().decode(ParsedReceiptData.self, from: data)
-        } catch {
-            logger.error("JSON parsing failed: \(error)")
-            logger.error("Response was: \(cleanedResponse)")
-            throw RechnungserkennungError.jsonDecodingFailed(error)
-        }
-    }
-    
-    private func extractJSONFromResponse(_ response: String) -> String {
-        // Look for JSON content between { and }
-        if let startIndex = response.firstIndex(of: "{"),
-           let endIndex = response.lastIndex(of: "}") {
-            return String(response[startIndex...endIndex])
-        }
-        
-        // If no braces found, return the original response
-        return response
     }
     
     // MARK: - Helper Methods
@@ -238,142 +216,57 @@ final class Rechnungserkennung {
             "Nudeln", "Reis", "Zucker", "Mehl"
         ]
     }
-    
-    /// Uses LLM exclusively to normalize product names with context from existing data
-    internal func normalizeProductNameWithLLM(
-        _ productName: String, 
-        existingNormalizedNames: Set<String>
-    ) async -> String {
-        // Skip LLM processing for very short or empty names
-        guard !productName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
-              productName.count > 2 else {
-            return productName
-        }
-        
-        do {
-            // Combine common product types with existing normalized names for context
-            let commonTypes = getCommonProductTypes()
-            let existingNames = Array(existingNormalizedNames).sorted()
-            let allExamples = (commonTypes + existingNames).prefix(50) // Limit to avoid token overflow
-            
-            let examplesList = allExamples.joined(separator: ", ")
-            
-            let instructions = """
-            Du bist ein Experte für Produktnormalisierung in österreichischen und deutschen Supermärkten.
-            
-            Deine Aufgabe ist es, aus spezifischen Produktnamen generische, konsistente und vergleichbare Produktnamen zu erstellen.
-            
-            WICHTIGE REGELN:
-            - Entferne ALLE Markennamen (Ja natürlich, Clever, SPAR, BILLA, Hofer, etc.)
-            - Entferne ALLE Mengenangaben (kg, g, ml, l, Stück, Pack, etc.)
-            - Entferne Packungsarten (Dose, Flasche, Becher, Tüte, etc.)
-            - Entferne Qualitäts-/Herkunftsangaben (Bio, Premium, Österreichisch, etc.)
-            - Behalte nur den essentiellen Produkttyp
-            - Verwende österreichische Begriffe: "Topfen" (nicht Quark), "Paradeiser" (nicht Tomaten), "Erdäpfel" (nicht Kartoffeln)
-            - Verwende einheitliche Schreibweise: erste Buchstabe groß, Rest klein
-            - Bevorzuge bereits verwendete Begriffe für Konsistenz
-            
-            BEREITS VERWENDETE NORMALISIERTE NAMEN (verwende diese wenn möglich):
-            \(examplesList)
-            
-            ANTWORTFORMAT:
-            Antworte nur mit dem normalisierten Produktnamen, ohne Anführungszeichen oder Erklärungen.
-            
-            BEISPIELE:
-            "Ja natürlich Bio Joghurt Natur 500g" → "Joghurt"
-            "Clever Erdäpfel mehlig 2kg" → "Erdäpfel"
-            "SPAR Premium Grana Padano gerieben" → "Grana Padano"
-            "Bio Faschiertes gemischt 500g" → "Faschiertes"
-            "DKIH Paprika rot 1 Stk." → "Paprika"
-            """
-            
-            let session = LanguageModelSession(instructions: instructions)
-            
-            let prompt = "Normalisiere: \(productName)"
-            
-            let response = try await session.respond(to: prompt)
-            let normalizedName = response.content
-                .trimmingCharacters(in: .whitespacesAndNewlines)
-                .replacingOccurrences(of: "\"", with: "")
-                .replacingOccurrences(of: "→", with: "")
-                .replacingOccurrences(of: "Normalisiert:", with: "")
-                .trimmingCharacters(in: .whitespacesAndNewlines)
-            
-            // Validate the result
-            guard !normalizedName.isEmpty,
-                  normalizedName.count > 1,
-                  !normalizedName.contains("normalisiere"),
-                  !normalizedName.contains("→") else {
-                logger.warning("LLM normalization failed for: \(productName), using original")
-                return productName
-            }
-            
-            logger.info("LLM normalized '\(productName)' → '\(normalizedName)'")
-            return normalizedName
-            
-        } catch {
-            logger.error("LLM normalization failed for '\(productName)': \(error)")
-            return productName // Fallback to original name
-        }
-    }
 }
 
-// MARK: - Data Models
+/// MARK: - Data Models
 
-struct ParsedReceiptData: Codable {
+@Generable(description: "Structured receipt data with shop information and line items")
+struct ParsedReceiptData {
+    @Guide(description: "Name des Geschäfts/Supermarkts")
     let shopName: String
-    let date: Date
+    
+    @Guide(description: "Datum der Rechnung im Format YYYY-MM-DD")
+    let dateString: String
+    
+    @Guide(description: "Liste aller Produkte auf der Rechnung", .maximumCount(50))
     let lineItems: [ReceiptLineItem]
     
-    enum CodingKeys: String, CodingKey {
-        case shopName, date, lineItems
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        shopName = try container.decode(String.self, forKey: .shopName)
-        lineItems = try container.decode([ReceiptLineItem].self, forKey: .lineItems)
-        
-        // Handle date parsing from string
-        let dateString = try container.decode(String.self, forKey: .date)
+    // Computed property to convert dateString to Date
+    var date: Date {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
-        if let parsedDate = formatter.date(from: dateString) {
-            date = parsedDate
-        } else {
-            // Fallback to current date if parsing fails
-            date = Date()
-        }
+        return formatter.date(from: dateString) ?? Date()
     }
 }
 
-struct ReceiptLineItem: Codable {
+@Generable(description: "Individual product line item from receipt with normalized name")
+struct ReceiptLineItem {
+    @Guide(description: "Exakter Produktname wie auf der Rechnung")
     let productName: String
-    let price: Decimal
-    let category: String
-    let quantity: String?
-    let pricePerUnit: Decimal?
     
-    enum CodingKeys: String, CodingKey {
-        case productName, price, category, quantity, pricePerUnit
+    @Guide(description: "Normalisierter Produktname ohne Marke, Menge und Packung")
+    let normalizedName: String
+    
+    @Guide(description: "Preis des Produkts als Dezimalzahl")
+    let priceDouble: Double
+    
+    @Guide(description: "Produktkategorie (Lebensmittel, Drogerie, etc.)")
+    let category: String
+    
+    @Guide(description: "Menge falls angegeben (optional)")
+    let quantity: String?
+    
+    @Guide(description: "Preis pro Einheit falls anders als Gesamtpreis (optional)")
+    let pricePerUnitDouble: Double?
+    
+    // Computed properties to convert Double to Decimal
+    var price: Decimal {
+        return Decimal(priceDouble)
     }
     
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        productName = try container.decode(String.self, forKey: .productName)
-        category = try container.decode(String.self, forKey: .category)
-        quantity = try container.decodeIfPresent(String.self, forKey: .quantity)
-        
-        // Handle price parsing from Double
-        let priceDouble = try container.decode(Double.self, forKey: .price)
-        price = Decimal(priceDouble)
-        
-        // Handle optional pricePerUnit
-        if let pricePerUnitDouble = try container.decodeIfPresent(Double.self, forKey: .pricePerUnit) {
-            pricePerUnit = Decimal(pricePerUnitDouble)
-        } else {
-            pricePerUnit = nil
-        }
+    var pricePerUnit: Decimal? {
+        guard let pricePerUnitDouble = pricePerUnitDouble else { return nil }
+        return Decimal(pricePerUnitDouble)
     }
 }
 
