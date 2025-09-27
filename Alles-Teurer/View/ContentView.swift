@@ -8,11 +8,14 @@
 
 import SwiftData
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var viewModel: ContentViewModel?
     @State private var selectedProduct: String?
+    @State private var showingExportSheet = false
+    @State private var csvData: Data?
     
     private var showingAddSheetBinding: Binding<Bool> {
         Binding(
@@ -60,6 +63,20 @@ struct ContentView: View {
             ScanReceiptView()
             
         }
+        .fileExporter(
+            isPresented: $showingExportSheet,
+            document: CSVDocument(data: csvData ?? Data()),
+            contentType: .commaSeparatedText,
+            defaultFilename: viewModel?.generateCSVFilename() ?? "export.csv"
+        ) { result in
+            switch result {
+            case .success(let url):
+                print("CSV exported to: \(url)")
+            case .failure(let error):
+                print("Export failed: \(error)")
+                viewModel?.errorMessage = "Export fehlgeschlagen: \(error.localizedDescription)"
+            }
+        }
         
     }
     
@@ -98,6 +115,15 @@ struct ContentView: View {
                     
                     Button ("Rechnung scannen", systemImage: "qrcode.viewfinder"){
                         viewModel.showingScanSheet = true
+                    }
+                    
+                    Button("CSV Export", systemImage: "square.and.arrow.up") {
+                        Task {
+                            csvData = await viewModel.exportCSV()
+                            if csvData != nil {
+                                showingExportSheet = true
+                            }
+                        }
                     }
                 }
             }
@@ -185,5 +211,25 @@ struct ContentView: View {
             await viewModel.deleteItems(itemsToDelete)
             selectedProduct = nil
         }
+    }
+}
+
+// MARK: - CSV Document Support
+
+struct CSVDocument: FileDocument {
+    static var readableContentTypes: [UTType] { [.commaSeparatedText] }
+    
+    var data: Data
+    
+    init(data: Data) {
+        self.data = data
+    }
+    
+    init(configuration: ReadConfiguration) throws {
+        data = configuration.file.regularFileContents ?? Data()
+    }
+    
+    func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
+        return FileWrapper(regularFileWithContents: data)
     }
 }
