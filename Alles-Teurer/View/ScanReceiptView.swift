@@ -157,7 +157,7 @@ struct ScanReceiptView: View {
                     Spacer()
                     
                     Button("Speichern") {
-                        saveReceiptItem()
+                        //saveReceiptItem()
                     }
                     .buttonStyle(.borderedProminent)
                     .controlSize(.regular)
@@ -252,28 +252,7 @@ struct ScanReceiptView: View {
     
     // MARK: - Actions
     
-    private func saveReceiptItem() {
-        let receiptItem = viewModel.createRechnungszeile(from: viewModel.extractedText)
-        
-        withAnimation {
-            modelContext.insert(receiptItem)
-            
-            do {
-                try modelContext.save()
-                
-                // Show success feedback
-                let impactFeedback = UIImpactFeedbackGenerator(style: .medium)
-                impactFeedback.impactOccurred()
-                
-                // Reset for next scan
-                viewModel.reset()
-                
-            } catch {
-                viewModel.errorMessage = "Fehler beim Speichern: \(error.localizedDescription)"
-                viewModel.scanState = .error
-            }
-        }
-    }
+  
 }
 
 #Preview {
