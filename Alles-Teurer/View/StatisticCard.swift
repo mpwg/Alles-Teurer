@@ -32,7 +32,7 @@ struct StatisticCard: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 12)
-       // .background(Color(.windowBackgroundColor))
+        .background(Color(.systemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }

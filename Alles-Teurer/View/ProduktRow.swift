@@ -9,18 +9,10 @@
 import SwiftData
 import SwiftUI
 
-struct RechnungszeileRow: View {
+struct ProduktRow: View {
     let item: Rechnungszeile
     let isHighestPrice: Bool
     let isLowestPrice: Bool
-
-    private var priceFormatter: NumberFormatter {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.currencyCode = "EUR"
-        formatter.locale = Locale(identifier: "de_AT")
-        return formatter
-    }
 
     var body: some View {
         HStack {
@@ -70,7 +62,7 @@ struct RechnungszeileRow: View {
 
                     Spacer()
 
-                    Text(priceFormatter.string(from: item.Price as NSDecimalNumber) ?? "€0,00")
+                    Text(CurrencyFormatter.format(item.Price))
                         .font(.headline)
                         .fontWeight(.semibold)
                         .foregroundColor(.primary)
@@ -80,7 +72,7 @@ struct RechnungszeileRow: View {
         .padding(.vertical, 2)
         .accessibilityElement(children: .combine)
         .accessibilityLabel(
-            "\(item.NormalizedName), \(item.Category), \(item.Shop), \(priceFormatter.string(from: item.Price as NSDecimalNumber) ?? "€0,00")"
+            "\(item.NormalizedName), \(item.Category), \(item.Shop), \(CurrencyFormatter.format(item.Price))"
         )
         .accessibilityHint(accessibilityHint)
     }

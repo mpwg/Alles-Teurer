@@ -1,7 +1,7 @@
 import SwiftData
 import SwiftUI
 
-struct AddItemView: View {
+struct AddRechnungszeileView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
 
@@ -144,6 +144,6 @@ struct AddItemView: View {
     let config = ModelConfiguration(isStoredInMemoryOnly: true)
     let container = try! ModelContainer(for: Rechnungszeile.self, configurations: config)
 
-    return AddItemView()
+    return AddRechnungszeileView()
         .modelContainer(container)
 }

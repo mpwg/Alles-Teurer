@@ -16,27 +16,6 @@ struct ContentView: View {
     @State private var selectedProduct: String?
     @State private var showingExportSheet = false
     @State private var csvData: Data?
-    
-    private var showingAddSheetBinding: Binding<Bool> {
-        Binding(
-            get: { viewModel?.showingAddSheet ?? false },
-            set: { viewModel?.showingAddSheet = $0 }
-        )
-    }
-    
-    private var editModeBinding: Binding<EditMode> {
-        Binding(
-            get: { viewModel?.editMode ?? .inactive },
-            set: { viewModel?.editMode = $0 }
-        )
-    }
-    
-    private var showingScanSheetBinding: Binding<Bool> {
-        Binding(
-            get: { viewModel?.showingScanSheet ?? false },
-            set: { viewModel?.showingScanSheet = $0 }
-        )
-    }
 
     var body: some View {
         NavigationSplitView {
@@ -56,12 +35,17 @@ struct ContentView: View {
         } message: {
             Text(viewModel?.errorMessage ?? "Unbekannter Fehler")
         }
-        .sheet(isPresented: showingAddSheetBinding) {
-            AddItemView()
+        .sheet(isPresented: Binding(
+            get: { viewModel?.showingAddSheet ?? false },
+            set: { viewModel?.showingAddSheet = $0 }
+        )) {
+            AddRechnungszeileView()
         }
-        .fullScreenCover(isPresented: showingScanSheetBinding) {
+        .fullScreenCover(isPresented: Binding(
+            get: { viewModel?.showingScanSheet ?? false },
+            set: { viewModel?.showingScanSheet = $0 }
+        )) {
             ScanReceiptView()
-            
         }
         .fileExporter(
             isPresented: $showingExportSheet,
@@ -85,7 +69,10 @@ struct ContentView: View {
         if let viewModel = viewModel {
             ZStack {
                 productList(viewModel: viewModel)
-                .environment(\.editMode, editModeBinding)
+                .environment(\.editMode, Binding(
+                    get: { viewModel.editMode },
+                    set: { viewModel.editMode = $0 }
+                ))
             }
             .toolbar {
                 ToolbarItemGroup {
@@ -153,7 +140,7 @@ struct ContentView: View {
     private func productRow(productName: String, viewModel: ContentViewModel) -> some View {
         if let items = viewModel.productGroups[productName],
            let latestItem = items.max(by: { $0.Datum < $1.Datum }) {
-            RechnungszeileRow(
+            ProduktRow(
                 item: latestItem,
                 isHighestPrice: viewModel.priceAnalysis.highest?.id == latestItem.id,
                 isLowestPrice: viewModel.priceAnalysis.lowest?.id == latestItem.id
