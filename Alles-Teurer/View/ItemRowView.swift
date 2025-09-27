@@ -33,10 +33,16 @@ struct ItemRowView: View {
                             .foregroundColor(priceHighlight.color)
                             .accessibilityLabel(priceHighlight.accessibilityLabel)
                     }
+                    HStack {
+                        
+                        Text(currencyFormatter.string(from: item.Price as NSNumber) ?? "€?,??")
+                            .font(.headline)
+                            .foregroundColor(priceHighlight.color)
+                        Text("\(item.NormalizedName)")
+                            .font(.headline)
+                            .foregroundColor(.primary)
 
-                    Text(currencyFormatter.string(from: item.Price as NSNumber) ?? "€?,??")
-                        .font(.headline)
-                        .foregroundColor(priceHighlight.color)
+                    }
                 }
 
                 Spacer()
@@ -97,7 +103,10 @@ struct ItemRowView: View {
         Price: 1.49,
         Category: "Lebensmittel",
         Shop: "Billa",
-        Datum: Date()
+        Datum: Date(),
+        NormalizedName: "Milch",
+
+        
     )
 
     return ItemRowView(
@@ -119,7 +128,9 @@ struct ItemRowView: View {
         Price: 1.29,
         Category: "Lebensmittel",
         Shop: "Hofer",
-        Datum: Calendar.current.date(byAdding: .day, value: -2, to: Date()) ?? Date()
+        Datum: Calendar.current.date(byAdding: .day, value: -2, to: Date()) ?? Date(),
+        NormalizedName: "Milch",
+
     )
 
     return ItemRowView(
@@ -141,7 +152,9 @@ struct ItemRowView: View {
         Price: 1.89,
         Category: "Bio-Lebensmittel",
         Shop: "Merkur",
-        Datum: Calendar.current.date(byAdding: .day, value: -1, to: Date()) ?? Date()
+        Datum: Calendar.current.date(byAdding: .day, value: -1, to: Date()) ?? Date(),
+        NormalizedName: "Milch",
+
     )
 
     return ItemRowView(
@@ -160,11 +173,14 @@ struct ItemRowView: View {
 
     let items = [
         Rechnungszeile(
-            Name: "Milch 1L", Price: 1.29, Category: "Lebensmittel", Shop: "Hofer", Datum: Date()),
+            Name: "Milch 1L", Price: 1.29, Category: "Lebensmittel", Shop: "Hofer", Datum: Date(),           NormalizedName: "Milch",
+        ),
         Rechnungszeile(
-            Name: "Milch 1L", Price: 1.49, Category: "Lebensmittel", Shop: "Billa", Datum: Date()),
+            Name: "Milch 1L", Price: 1.49, Category: "Lebensmittel", Shop: "Billa", Datum: Date(),           NormalizedName: "Milch",
+        ),
         Rechnungszeile(
-            Name: "Bio-Milch 1L", Price: 1.89, Category: "Bio", Shop: "Merkur", Datum: Date()),
+            Name: "Bio-Milch 1L", Price: 1.89, Category: "Bio", Shop: "Merkur", Datum: Date(),           NormalizedName: "Milch",
+        ),
     ]
 
     return List(items, id: \.id) { item in

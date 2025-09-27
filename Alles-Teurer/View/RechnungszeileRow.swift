@@ -27,7 +27,7 @@ struct RechnungszeileRow: View {
             VStack(alignment: .leading, spacing: 4) {
                 // Product name with price indicators
                 HStack {
-                    Text(item.Name)
+                    Text(item.NormalizedName)
                         .font(.headline)
                         .foregroundColor(.primary)
 
@@ -80,7 +80,7 @@ struct RechnungszeileRow: View {
         .padding(.vertical, 2)
         .accessibilityElement(children: .combine)
         .accessibilityLabel(
-            "\(item.Name), \(item.Category), \(item.Shop), \(priceFormatter.string(from: item.Price as NSDecimalNumber) ?? "€0,00")"
+            "\(item.NormalizedName), \(item.Category), \(item.Shop), \(priceFormatter.string(from: item.Price as NSDecimalNumber) ?? "€0,00")"
         )
         .accessibilityHint(accessibilityHint)
     }
