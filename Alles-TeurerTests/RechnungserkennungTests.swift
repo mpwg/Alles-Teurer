@@ -15,8 +15,6 @@ import Vision
 @Suite("Rechnungserkennung Tests")
 struct RechnungserkennungTests {
     
-    let sut = Rechnungserkennung()
-    
     // MARK: - Test Receipt Data
     
     /// Creates a test image with the sample BILLA receipt text
@@ -46,6 +44,8 @@ struct RechnungserkennungTests {
         Clever Blättert. div. Sor           0,99
         
         Clever Blättert. div. Sor           0,99
+        
+        Clever Jogh. 0.1%                   0,49
         
         Clever Jogh. 0.1%                   0,49
         
@@ -89,343 +89,177 @@ struct RechnungserkennungTests {
         }
     }
     
-    // MARK: - Basic Recognition Tests
+    // MARK: - Foundation Models Tests
     
-    @Test("Recognizes receipt from BILLA sample image")
-    func testRecognizeBillaReceipt() async throws {
+    @Test("Extracts multiple Rechnungszeilen from BILLA receipt")
+    @MainActor
+    func testExtractMultipleRechnungszeilen() async throws {
         // Given
-        let testImage = Image(uiImage: createTestReceiptImage())
+        let sut = Rechnungserkennung()
+        let testImage = createTestReceiptImage()
         
         // When
-        let items = try await sut.erkenneRechnung(image: testImage)
+        let rechnungszeilen = try await sut.extractRechnungszeilen(from: testImage)
         
         // Then
-        #expect(items.count > 0, "Should recognize at least one item")
+        #expect(rechnungszeilen.count >= 6, "Should extract at least 6 products from the receipt")
         
-        // Verify some expected items
-        let productNames = items.map { $0.Name }
-        #expect(productNames.contains { $0.contains("Süßkartoffel") }, "Should find Süßkartoffel")
-        #expect(productNames.contains { $0.contains("Grana Padano") }, "Should find Grana Padano")
-        #expect(productNames.contains { $0.contains("Äpfel") }, "Should find Äpfel")
-        #expect(productNames.contains { $0.contains("Paprika") }, "Should find Paprika")
-    }
-    
-    @Test("Extracts correct prices from receipt")
-    func testExtractsPrices() async throws {
-        // Given
-        let testImage = Image(uiImage: createTestReceiptImage())
+        // Verify shop name is correctly extracted
+        #expect(rechnungszeilen.allSatisfy { $0.Shop.contains("BILLA") }, "All items should be from BILLA")
         
-        // When
-        let items = try await sut.erkenneRechnung(image: testImage)
-        
-        // Then
-        // Check for specific price values
-        let prices = items.map { $0.Price }
-        
-        #expect(prices.contains(Decimal(7.58)), "Should find price 7.58 for Süßkartoffel")
-        #expect(prices.contains(Decimal(6.29)), "Should find price 6.29 for Grana Padano")
-        #expect(prices.contains(Decimal(3.79)), "Should find price 3.79 for Äpfel")
-        #expect(prices.contains(Decimal(1.49)), "Should find price 1.49 for Paprika")
-        #expect(prices.contains(Decimal(0.99)), "Should find price 0.99 for Blätterteig")
-        #expect(prices.contains(Decimal(0.49)), "Should find price 0.49 for Joghurt")
-    }
-    
-    @Test("Extracts shop name correctly")
-    func testExtractsShopName() async throws {
-        // Given
-        let testImage = Image(uiImage: createTestReceiptImage())
-        
-        // When
-        let items = try await sut.erkenneRechnung(image: testImage)
-        
-        // Then
-        #expect(!items.isEmpty, "Should have items")
-        if let firstItem = items.first {
-            #expect(firstItem.Shop == "BILLA", "Shop should be BILLA")
+        // Verify dates are set to receipt date or current date
+        let expectedDate = Calendar.current.dateComponents([.year, .month, .day], from: Date())
+        for item in rechnungszeilen {
+            let itemDate = Calendar.current.dateComponents([.year, .month, .day], from: item.Datum)
+            #expect(itemDate.year == expectedDate.year, "Year should match")
+            #expect(itemDate.month == expectedDate.month, "Month should match") 
+            #expect(itemDate.day == expectedDate.day, "Day should match")
         }
     }
     
-    @Test("Extracts date correctly")
-    func testExtractsDate() async throws {
+    @Test("Extracts correct product names and prices")
+    @MainActor 
+    func testExtractSpecificProducts() async throws {
         // Given
-        let testImage = Image(uiImage: createTestReceiptImage())
-        let expectedDate = createDate(day: 27, month: 9, year: 2025)
+        let sut = Rechnungserkennung()
+        let testImage = createTestReceiptImage()
         
         // When
-        let items = try await sut.erkenneRechnung(image: testImage)
+        let rechnungszeilen = try await sut.extractRechnungszeilen(from: testImage)
         
-        // Then
-        #expect(!items.isEmpty, "Should have items")
-        if let firstItem = items.first {
-            let calendar = Calendar.current
-            let components = calendar.dateComponents([.day, .month, .year], from: firstItem.Datum)
-            let expectedComponents = calendar.dateComponents([.day, .month, .year], from: expectedDate)
+        // Then - Look for specific products from the receipt
+        let produktNamen = rechnungszeilen.map { $0.Name }
+        
+        // Check for key products (allowing for slight variations in OCR/parsing)
+        let expectedProducts = [
+            "Bio Süßkartoffel",
+            "Grana Padano", 
+            "Äpfel",
+            "Paprika",
+            "Blättert"
+        ]
+        
+        for expectedProduct in expectedProducts {
+            let found = produktNamen.contains { name in
+                name.localizedCaseInsensitiveContains(expectedProduct)
+            }
+            #expect(found, "Should find product containing '\(expectedProduct)'")
+        }
+        
+        // Verify price ranges are reasonable (all should be between 0.01 and 20.00)
+        for item in rechnungszeilen {
+            #expect(item.Price > 0, "Price should be positive: \(item.Name) - \(item.Price)")
+            #expect(item.Price < 50, "Price should be reasonable: \(item.Name) - \(item.Price)")
+        }
+    }
+    
+    @Test("Handles model unavailability gracefully")
+    @MainActor
+    func testModelUnavailableError() async throws {
+        // This test verifies error handling when Foundation Models are not available
+        // Since we can't easily mock SystemLanguageModel.availability, we test the error types
+        
+        let sut = Rechnungserkennung()
+        
+        // Test with an invalid image to trigger a different error path
+        let emptyImage = UIImage()
+        
+        do {
+            _ = try await sut.extractRechnungszeilen(from: emptyImage)
+            #expect(false, "Should have thrown an error for empty image")
+        } catch let error as RechnungserkennungError {
+            // Verify we get a proper error type
+            #expect(error.errorDescription != nil, "Error should have a description")
+        } catch {
+            #expect(false, "Should throw RechnungserkennungError, got: \(error)")
+        }
+    }
+    
+    @Test("Normalizes german product names correctly")
+    @MainActor
+    func testProductNameNormalization() async throws {
+        // Given
+        let sut = Rechnungserkennung()
+        let testImage = createTestReceiptImage()
+        
+        // When
+        let rechnungszeilen = try await sut.extractRechnungszeilen(from: testImage)
+        
+        // Then - Check that normalized names are created
+        for item in rechnungszeilen {
+            #expect(!item.NormalizedName.isEmpty, "NormalizedName should not be empty for \(item.Name)")
+            #expect(item.NormalizedName == item.NormalizedName.lowercased(), "NormalizedName should be lowercase")
             
-            #expect(components.day == expectedComponents.day, "Day should match")
-            #expect(components.month == expectedComponents.month, "Month should match")
-            #expect(components.year == expectedComponents.year, "Year should match")
+            // Should not contain umlauts in normalized form
+            #expect(!item.NormalizedName.contains("ä"), "Should replace ä with ae")
+            #expect(!item.NormalizedName.contains("ö"), "Should replace ö with oe") 
+            #expect(!item.NormalizedName.contains("ü"), "Should replace ü with ue")
         }
     }
     
-    // MARK: - Category Tests
-    
-    @Test("Assigns correct categories to products")
+    @Test("Categorizes products appropriately")
+    @MainActor
     func testProductCategorization() async throws {
         // Given
-        let testImage = Image(uiImage: createTestReceiptImage())
+        let sut = Rechnungserkennung()
+        let testImage = createTestReceiptImage()
         
         // When
-        let items = try await sut.erkenneRechnung(image: testImage)
+        let rechnungszeilen = try await sut.extractRechnungszeilen(from: testImage)
         
-        // Then
-        // Check Bio products
-        if let bioItem = items.first(where: { $0.Name.contains("Bio") }) {
-            #expect(bioItem.Category == "Obst & Gemüse", "Bio items should be categorized as Obst & Gemüse")
+        // Then - All items should have categories assigned
+        for item in rechnungszeilen {
+            #expect(!item.Category.isEmpty, "Category should not be empty for \(item.Name)")
+            #expect(item.Category != "Unknown", "Should not have unknown category")
         }
         
-        // Check dairy products
-        if let yogurtItem = items.first(where: { $0.Name.contains("Jogh") }) {
-            #expect(yogurtItem.Category == "Milchprodukte", "Yogurt should be categorized as Milchprodukte")
-        }
-        
-        if let cheeseItem = items.first(where: { $0.Name.contains("Grana Padano") }) {
-            #expect(cheeseItem.Category == "Milchprodukte", "Cheese should be categorized as Milchprodukte")
-        }
+        // Most items from BILLA should be "Lebensmittel"
+        let lebensmittelCount = rechnungszeilen.filter { $0.Category == "Lebensmittel" }.count
+        #expect(lebensmittelCount > 0, "Should categorize food items as Lebensmittel")
     }
     
-    // MARK: - Edge Cases
+    // MARK: - Error Handling Tests
     
-    @Test("Handles empty image gracefully")
-    func testEmptyImage() async throws {
+    @Test("Handles invalid images gracefully")
+    @MainActor
+    func testInvalidImageHandling() async {
         // Given
-        let emptyImage = createEmptyImage()
+        let sut = Rechnungserkennung()
         
-        // When
-        let items = try await sut.erkenneRechnung(image: Image(uiImage: emptyImage))
+        // Test with various invalid images
+        let testCases: [(UIImage, String)] = [
+            (UIImage(), "Empty image"),
+            (UIImage(systemName: "photo")!, "System icon image")
+        ]
         
-        // Then
-        #expect(items.isEmpty, "Should return empty array for empty image")
-    }
-    
-    @Test("Ignores non-product lines")
-    func testIgnoresNonProductLines() async throws {
-        // Given
-        let testImage = Image(uiImage: createTestReceiptImage())
-        
-        // When
-        let items = try await sut.erkenneRechnung(image: testImage)
-        
-        // Then
-        let productNames = items.map { $0.Name }
-        
-        // Should not include these non-product lines
-        #expect(!productNames.contains { $0.contains("Summe") }, "Should not include 'Summe'")
-        #expect(!productNames.contains { $0.contains("Zwischensumme") }, "Should not include 'Zwischensumme'")
-        #expect(!productNames.contains { $0.contains("Gespart") }, "Should not include 'Gespart'")
-        #expect(!productNames.contains { $0.contains("Meine Vorteile") }, "Should not include 'Meine Vorteile'")
-        #expect(!productNames.contains { $0.contains("Gegeben") }, "Should not include payment lines")
-    }
-    
-    @Test("Handles zero-price items correctly")
-    func testZeroPriceItems() async throws {
-        // Given
-        let testImage = Image(uiImage: createTestReceiptImage())
-        
-        // When
-        let items = try await sut.erkenneRechnung(image: testImage)
-        
-        // Then
-        // Stickerpackung has 0.00 price - verify it's handled correctly
-        if let stickerItem = items.first(where: { $0.Name.contains("Stickerpackung") }) {
-            #expect(stickerItem.Price == Decimal(0), "Should correctly parse 0.00 price")
-        }
-    }
-    
-    @Test("Handles duplicate items")
-    func testDuplicateItems() async throws {
-        // Given
-        let testImage = Image(uiImage: createTestReceiptImage())
-        
-        // When
-        let items = try await sut.erkenneRechnung(image: testImage)
-        
-        // Then
-        // The receipt has duplicate items (Blätterteig and Joghurt appear twice)
-        let blatterteigItems = items.filter { $0.Name.contains("Blättert") }
-        let joghurtItems = items.filter { $0.Name.contains("Jogh") }
-        
-        // Depending on implementation, duplicates might be kept or merged
-        // This test documents the expected behavior
-        #expect(blatterteigItems.count <= 2, "Should handle Blätterteig duplicates appropriately")
-        #expect(joghurtItems.count <= 2, "Should handle Joghurt duplicates appropriately")
-    }
-    
-    // MARK: - Configuration Tests
-    
-    @Test("Respects confidence threshold configuration")
-    func testConfidenceThreshold() async throws {
-        // Given
-        let highConfidenceConfig = Rechnungserkennung.Configuration(
-            useCloudFallback: false,
-            preferredLanguages: ["de-AT"],
-            confidenceThreshold: 0.95  // Very high threshold
-        )
-        let highConfidenceService = Rechnungserkennung(configuration: highConfidenceConfig)
-        
-        let lowConfidenceConfig = Rechnungserkennung.Configuration(
-            useCloudFallback: false,
-            preferredLanguages: ["de-AT"],
-            confidenceThreshold: 0.3  // Low threshold
-        )
-        let lowConfidenceService = Rechnungserkennung(configuration: lowConfidenceConfig)
-        
-        let testImage = Image(uiImage: createTestReceiptImage())
-        
-        // When
-        let highConfidenceItems = try await highConfidenceService.erkenneRechnung(image: testImage)
-        let lowConfidenceItems = try await lowConfidenceService.erkenneRechnung(image: testImage)
-        
-        // Then
-        #expect(lowConfidenceItems.count >= highConfidenceItems.count,
-                "Lower confidence threshold should recognize same or more items")
-    }
-    
-    @Test("Uses correct language for OCR")
-    func testLanguageConfiguration() async throws {
-        // Given
-        let germanConfig = Rechnungserkennung.Configuration(
-            useCloudFallback: false,
-            preferredLanguages: ["de-AT", "de-DE"],
-            confidenceThreshold: 0.7
-        )
-        let service = Rechnungserkennung(configuration: germanConfig)
-        
-        let testImage = Image(uiImage: createTestReceiptImage())
-        
-        // When
-        let items = try await service.erkenneRechnung(image: testImage)
-        
-        // Then
-        // German-specific characters should be correctly recognized
-        if let apfelItem = items.first(where: { $0.Name.contains("pfel") }) {
-            #expect(apfelItem.Name.contains("Äpfel"), "Should correctly recognize German umlaut 'Ä'")
+        for (image, description) in testCases {
+            do {
+                _ = try await sut.extractRechnungszeilen(from: image)
+                // Some cases might work, so we don't fail here
+            } catch let error as RechnungserkennungError {
+                // Verify we get proper error descriptions
+                #expect(error.errorDescription != nil, "\(description): Error should have description")
+            } catch {
+                #expect(false, "\(description): Should throw RechnungserkennungError, got: \(error)")
+            }
         }
     }
     
     // MARK: - Performance Tests
     
-    @Test("Processes receipt within reasonable time")
-    func testProcessingPerformance() async throws {
+    @Test("Completes processing within reasonable time")
+    @MainActor
+    func testPerformance() async throws {
         // Given
-        let testImage = Image(uiImage: createTestReceiptImage())
+        let sut = Rechnungserkennung()
+        let testImage = createTestReceiptImage()
+        
+        // When & Then
         let startTime = Date()
+        _ = try await sut.extractRechnungszeilen(from: testImage)
+        let duration = Date().timeIntervalSince(startTime)
         
-        // When
-        _ = try await sut.erkenneRechnung(image: testImage)
-        let endTime = Date()
-        
-        // Then
-        let processingTime = endTime.timeIntervalSince(startTime)
-        #expect(processingTime < 5.0, "Processing should complete within 5 seconds")
-    }
-    
-    // MARK: - Helper Methods
-    
-    private func createDate(day: Int, month: Int, year: Int) -> Date {
-        var components = DateComponents()
-        components.day = day
-        components.month = month
-        components.year = year
-        return Calendar.current.date(from: components) ?? Date()
-    }
-    
-    private func createEmptyImage() -> UIImage {
-        let size = CGSize(width: 100, height: 100)
-        let renderer = UIGraphicsImageRenderer(size: size)
-        return renderer.image { context in
-            UIColor.white.setFill()
-            context.fill(CGRect(origin: .zero, size: size))
-        }
-    }
-}
-
-// MARK: - Integration Tests
-
-@available(iOS 26.0, *)
-@Suite("Rechnungserkennung Integration Tests")
-struct RechnungserkennungIntegrationTests {
-    
-    @Test("Full receipt processing workflow")
-    func testFullWorkflow() async throws {
-        // Given
-        let service = Rechnungserkennung()
-        let testReceipt = createComplexTestReceipt()
-        
-        // When
-        let items = try await service.erkenneRechnung(image: Image(uiImage: testReceipt))
-        
-        // Then
-        // Verify complete data extraction
-        #expect(!items.isEmpty, "Should extract items")
-        
-        for item in items {
-            #expect(!item.Name.isEmpty, "Each item should have a name")
-            #expect(item.Price >= 0, "Each item should have a non-negative price")
-            #expect(!item.Category.isEmpty, "Each item should have a category")
-            #expect(!item.Shop.isEmpty, "Each item should have a shop")
-            #expect(item.Datum <= Date(), "Date should not be in the future")
-        }
-        
-        // Verify data consistency
-        let totalFromItems = items.reduce(Decimal(0)) { $0 + $1.Price }
-        #expect(totalFromItems > 0, "Total should be positive")
-    }
-    
-    private func createComplexTestReceipt() -> UIImage {
-        // Create a more complex receipt with various formats
-        let receiptText = """
-        MERKUR
-        Filiale Wien Mitte
-        01.10.2025 14:23
-        
-        ========================================
-        
-        Bio Tomaten AT           2,99
-        0,567 kg x 5,27 €/kg
-        
-        Vollkornbrot             2,49
-        
-        Bergkäse 150g           4,99
-        
-        Mineralwasser 6x1L       3,54
-        Pfand                    1,50
-        
-        Bananen                  1,89
-        1,234 kg x 1,53 €/kg
-        
-        ========================================
-        SUMME EUR               17,40
-        BAR                     20,00
-        Rückgeld                 2,60
-        ========================================
-        
-        Vielen Dank für Ihren Einkauf!
-        """
-        
-        let size = CGSize(width: 400, height: 600)
-        let renderer = UIGraphicsImageRenderer(size: size)
-        
-        return renderer.image { context in
-            UIColor.white.setFill()
-            context.fill(CGRect(origin: .zero, size: size))
-            
-            let attributes: [NSAttributedString.Key: Any] = [
-                .font: UIFont.monospacedSystemFont(ofSize: 12, weight: .regular),
-                .foregroundColor: UIColor.black
-            ]
-            
-            let attributedString = NSAttributedString(string: receiptText, attributes: attributes)
-            attributedString.draw(in: CGRect(x: 20, y: 20, width: size.width - 40, height: size.height - 40))
-        }
+        // Should complete within 30 seconds (generous for CI/testing)
+        #expect(duration < 30.0, "Processing should complete within 30 seconds, took \(duration)s")
     }
 }

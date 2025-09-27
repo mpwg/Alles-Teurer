@@ -139,28 +139,56 @@ struct ScanReceiptView: View {
             }
             
         case .success:
-            if !viewModel.extractedText.isEmpty {
-                HStack(spacing: 12) {
-                    Image(systemName: "checkmark.circle.fill")
-                        .font(.title2)
-                        .foregroundStyle(.green)
-                    
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("Text erfolgreich erkannt")
-                            .font(.headline)
+            if !viewModel.extractedRechnungszeilen.isEmpty {
+                VStack(spacing: 12) {
+                    HStack(spacing: 12) {
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.title2)
                             .foregroundStyle(.green)
-                        Text("\(viewModel.extractedText.count) Zeichen erkannt")
+                        
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("Rechnung erfolgreich erkannt")
+                                .font(.headline)
+                                .foregroundStyle(.green)
+                            Text("\(viewModel.extractedRechnungszeilen.count) Artikel gefunden")
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
+                        }
+                        
+                        Spacer()
+                        
+                        Button("Alle Speichern") {
+                            saveReceiptItems()
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .controlSize(.regular)
+                    }
+                    
+                    // Show preview of extracted items
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("Erkannte Artikel:")
                             .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                            .fontWeight(.medium)
+                        
+                        ForEach(viewModel.extractedRechnungszeilen.prefix(3), id: \.id) { item in
+                            HStack {
+                                Text(item.Name)
+                                    .font(.caption)
+                                    .lineLimit(1)
+                                Spacer()
+                                Text("\(item.Price.formatted(.currency(code: "EUR")))")
+                                    .font(.caption)
+                                    .fontWeight(.medium)
+                            }
+                        }
+                        
+                        if viewModel.extractedRechnungszeilen.count > 3 {
+                            Text("... und \(viewModel.extractedRechnungszeilen.count - 3) weitere")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
                     }
-                    
-                    Spacer()
-                    
-                    Button("Speichern") {
-                        //saveReceiptItem()
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .controlSize(.regular)
+                    .padding(.top, 8)
                 }
                 .padding(16)
                 .frame(maxWidth: .infinity)
@@ -252,7 +280,35 @@ struct ScanReceiptView: View {
     
     // MARK: - Actions
     
-  
+    private func saveReceiptItems() {
+        guard !viewModel.extractedRechnungszeilen.isEmpty else {
+            viewModel.errorMessage = "Keine Rechnungszeilen zum Speichern gefunden"
+            viewModel.scanState = .error
+            return
+        }
+        
+        withAnimation {
+            // Save all extracted line items
+            for rechnungszeile in viewModel.extractedRechnungszeilen {
+                modelContext.insert(rechnungszeile)
+            }
+            
+            do {
+                try modelContext.save()
+                
+                // Show success feedback
+                let impactFeedback = UIImpactFeedbackGenerator(style: .medium)
+                impactFeedback.impactOccurred()
+                
+                // Reset for next scan
+                viewModel.reset()
+                
+            } catch {
+                viewModel.errorMessage = "Fehler beim Speichern: \(error.localizedDescription)"
+                viewModel.scanState = .error
+            }
+        }
+    }
 }
 
 #Preview {
