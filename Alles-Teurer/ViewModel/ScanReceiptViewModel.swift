@@ -51,8 +51,13 @@ final class ScanReceiptViewModel {
         errorMessage = nil
         
         do {
+            // Convert UIImage to CGImage
+            guard let cgImage = image.cgImage else {
+                throw RechnungserkennungError.invalidImage
+            }
+            
             // Extract all receipt line items using Foundation Models
-            let rechnungszeilen = try await rechnungserkennung.extractRechnungszeilen(from: image)
+            let rechnungszeilen = try await rechnungserkennung.extractRechnungszeilen(from: cgImage)
             
             // Also extract raw text for display purposes
             extractedText = try await extractTextForDisplay(image)

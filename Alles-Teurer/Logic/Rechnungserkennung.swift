@@ -7,7 +7,6 @@
 
 import Foundation
 import Vision
-import UIKit
 import OSLog
 import FoundationModels
 import SwiftData
@@ -30,10 +29,10 @@ final class Rechnungserkennung {
     // MARK: - Public Methods
     
     /// Extracts receipt line items from an image using Foundation Models
-    /// - Parameter image: The receipt image to process
+    /// - Parameter cgImage: The receipt CGImage to process
     /// - Returns: Array of extracted Rechnungszeile objects
     /// - Throws: RechnungserkennungError for various failure cases
-    func extractRechnungszeilen(from image: UIImage) async throws -> [Rechnungszeile] {
+    func extractRechnungszeilen(from cgImage: CGImage) async throws -> [Rechnungszeile] {
         logger.info("Starting receipt recognition process")
         
         // Check if Foundation Models are available
@@ -42,7 +41,7 @@ final class Rechnungserkennung {
         }
         
         // Step 1: Extract text from image using Vision Framework
-        let extractedText = try await extractTextFromImage(image)
+        let extractedText = try await extractTextFromImage(cgImage)
         logger.info("Extracted text length: \(extractedText.count) characters")
         
         // Step 2: Load existing normalized names for LLM context
@@ -75,11 +74,7 @@ final class Rechnungserkennung {
     
     // MARK: - Private Methods - Vision Framework
     
-    private func extractTextFromImage(_ image: UIImage) async throws -> String {
-        guard let cgImage = image.cgImage else {
-            throw RechnungserkennungError.invalidImage
-        }
-        
+    private func extractTextFromImage(_ cgImage: CGImage) async throws -> String {
         return try await withCheckedThrowingContinuation { continuation in
             let request = VNRecognizeTextRequest { request, error in
                 if let error = error {

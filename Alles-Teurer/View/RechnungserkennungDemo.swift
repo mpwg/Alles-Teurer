@@ -76,8 +76,13 @@ struct RechnungserkennungDemo: View {
             // Create a sample image (in a real implementation, this would come from camera/gallery)
             let sampleImage = createSampleReceiptImage()
             
+            // Convert UIImage to CGImage
+            guard let cgImage = sampleImage.cgImage else {
+                throw RechnungserkennungError.invalidImage
+            }
+            
             // Extract receipt line items using Foundation Models
-            let items = try await rechnungserkennung.extractRechnungszeilen(from: sampleImage)
+            let items = try await rechnungserkennung.extractRechnungszeilen(from: cgImage)
             
             extractedItems = items
         } catch let error as RechnungserkennungError {
