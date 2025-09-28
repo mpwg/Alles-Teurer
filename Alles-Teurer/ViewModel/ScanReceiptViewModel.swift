@@ -12,6 +12,7 @@ final class ScanReceiptViewModel {
     var selectedImage: UIImage?
     var extractedText: String = ""
     var extractedRechnungszeilen: [Rechnungszeile] = []
+    var selectedRechnungszeilen: Set<UUID> = []
     var scanState: ScanState = .idle
     var errorMessage: String?
     
@@ -39,6 +40,7 @@ final class ScanReceiptViewModel {
         selectedImage = nil
         extractedText = ""
         extractedRechnungszeilen = []
+        selectedRechnungszeilen = []
         scanState = .idle
         errorMessage = nil
     }
@@ -64,6 +66,9 @@ final class ScanReceiptViewModel {
             
             // Store the results
             extractedRechnungszeilen = rechnungszeilen
+            
+            // Auto-select all items by default
+            selectedRechnungszeilen = Set(rechnungszeilen.map { $0.id })
             
             logger.info("Successfully extracted \(rechnungszeilen.count) line items from receipt")
             scanState = .success
@@ -139,22 +144,64 @@ final class ScanReceiptViewModel {
         )
     }
     
+    // MARK: - Selection Methods
+    
+    func toggleSelection(for rechnungszeile: Rechnungszeile) {
+        if selectedRechnungszeilen.contains(rechnungszeile.id) {
+            selectedRechnungszeilen.remove(rechnungszeile.id)
+        } else {
+            selectedRechnungszeilen.insert(rechnungszeile.id)
+        }
+    }
+    
+    func selectAll() {
+        selectedRechnungszeilen = Set(extractedRechnungszeilen.map { $0.id })
+    }
+    
+    func deselectAll() {
+        selectedRechnungszeilen.removeAll()
+    }
+    
+    func isSelected(_ rechnungszeile: Rechnungszeile) -> Bool {
+        selectedRechnungszeilen.contains(rechnungszeile.id)
+    }
+    
+    var selectedCount: Int {
+        selectedRechnungszeilen.count
+    }
+    
+    var hasSelectedItems: Bool {
+        !selectedRechnungszeilen.isEmpty
+    }
+    
     // MARK: - Import Methods
     
-    func importExtractedRechnungszeilen(to modelContext: ModelContext) {
-        logger.info("Importing \(self.extractedRechnungszeilen.count) Rechnungszeilen to database")
+    func importSelectedRechnungszeilen(to modelContext: ModelContext) {
+        let itemsToImport = extractedRechnungszeilen.filter { selectedRechnungszeilen.contains($0.id) }
+        logger.info("Importing \(itemsToImport.count) selected Rechnungszeilen to database")
         
-        for rechnungszeile in self.extractedRechnungszeilen {
+        guard !itemsToImport.isEmpty else {
+            handleError("Keine Rechnungszeilen zum Importieren ausgewählt")
+            return
+        }
+        
+        for rechnungszeile in itemsToImport {
             modelContext.insert(rechnungszeile)
         }
         
         do {
             try modelContext.save()
-            logger.info("Successfully imported all Rechnungszeilen")
+            logger.info("Successfully imported \(itemsToImport.count) selected Rechnungszeilen")
         } catch {
             logger.error("Failed to save Rechnungszeilen: \(error)")
             self.handleError("Fehler beim Speichern: \(error.localizedDescription)")
         }
+    }
+    
+    func importExtractedRechnungszeilen(to modelContext: ModelContext) {
+        // Legacy method - import all items
+        selectAll()
+        importSelectedRechnungszeilen(to: modelContext)
     }
     
     // MARK: - Private Methods

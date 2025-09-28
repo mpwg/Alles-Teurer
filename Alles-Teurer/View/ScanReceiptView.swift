@@ -57,6 +57,17 @@ struct ScanReceiptView: View {
         }
     }
     
+    // MARK: - Computed Properties
+    
+    private var priceRangeForDetectedItems: (min: Decimal, max: Decimal)? {
+        guard !viewModel.extractedRechnungszeilen.isEmpty else { return nil }
+        
+        let prices = viewModel.extractedRechnungszeilen.map { $0.Price }
+        guard let minPrice = prices.min(), let maxPrice = prices.max() else { return nil }
+        
+        return (min: minPrice, max: maxPrice)
+    }
+    
     // MARK: - View Components
     
     @ViewBuilder
@@ -149,7 +160,7 @@ struct ScanReceiptView: View {
                         Text("Rechnung erfolgreich erkannt")
                             .font(.headline)
                             .foregroundStyle(.green)
-                        Text("\(viewModel.extractedRechnungszeilen.count) Artikel gefunden")
+                        Text("\(viewModel.extractedRechnungszeilen.count) Artikel gefunden, \(viewModel.selectedCount) ausgewählt")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                     }
@@ -169,62 +180,10 @@ struct ScanReceiptView: View {
     
     @ViewBuilder
     private var mainContent: some View {
-        if let image = viewModel.selectedImage {
+        if let _ = viewModel.selectedImage {
             ScrollView {
                 VStack(spacing: 20) {
-                    // Row 1: Picture (left) and Text (right)
-                    HStack(alignment: .top, spacing: 16) {
-                        // Left: Picture
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("Bild")
-                                .font(.headline)
-                                .accessibilityAddTraits(.isHeader)
-                            
-                            Image(uiImage: image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(maxHeight: 200)
-                                .frame(maxWidth: .infinity)
-                                .background(Color(.systemGray6))
-                                .clipShape(RoundedRectangle(cornerRadius: 12))
-                                .accessibilityLabel("Ausgewähltes Rechnungsbild")
-                        }
-                        .frame(maxWidth: .infinity)
-                        
-                        // Right: Text
-                        VStack(alignment: .leading, spacing: 8) {
-                            HStack {
-                                Text("Erkannter Text")
-                                    .font(.headline)
-                                    .accessibilityAddTraits(.isHeader)
-                                
-                                Spacer()
-                                
-                                if !viewModel.extractedText.isEmpty {
-                                    Text("\(viewModel.extractedText.count) Zeichen")
-                                        .font(.caption)
-                                        .foregroundStyle(.secondary)
-                                }
-                            }
-                            
-                            ScrollView {
-                                Text(viewModel.extractedText.isEmpty ? "Text wird erkannt..." : viewModel.extractedText)
-                                    .font(.system(.caption, design: .monospaced))
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                    .padding(8)
-                                    .background(Color(.systemGray6))
-                                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                                    .accessibilityLabel(
-                                        viewModel.extractedText.isEmpty 
-                                        ? "Text wird erkannt" 
-                                        : "Erkannter Text: \(viewModel.extractedText)"
-                                    )
-                            }
-                            .frame(height: 200)
-                        }
-                        .frame(maxWidth: .infinity)
-                    }
-                    
+                   
                     // Row 2: Detected Rechnungszeilen
                     VStack(alignment: .leading, spacing: 12) {
                         HStack {
@@ -262,44 +221,63 @@ struct ScanReceiptView: View {
                                 .background(Color(.systemGray6))
                                 .clipShape(RoundedRectangle(cornerRadius: 12))
                         } else {
-                            LazyVStack(spacing: 8) {
-                                ForEach(viewModel.extractedRechnungszeilen, id: \.id) { rechnungszeile in
-                                    HStack {
-                                        VStack(alignment: .leading, spacing: 4) {
-                                            Text(rechnungszeile.Name)
-                                                .font(.subheadline)
-                                                .fontWeight(.medium)
-                                                .lineLimit(2)
-                                            
-                                            HStack {
-                                                Text(rechnungszeile.Category)
-                                                    .font(.caption)
-                                                    .foregroundStyle(.secondary)
-                                                
-                                                Text("•")
-                                                    .font(.caption)
-                                                    .foregroundStyle(.secondary)
-                                                
-                                                Text(rechnungszeile.Shop)
-                                                    .font(.caption)
-                                                    .foregroundStyle(.secondary)
-                                            }
-                                        }
-                                        
-                                        Spacer()
-                                        
-                                        Text(rechnungszeile.Price.formatted(.currency(code: "EUR")))
-                                            .font(.subheadline)
-                                            .fontWeight(.semibold)
-                                            .foregroundStyle(.primary)
+                            VStack(spacing: 12) {
+                                // Selection controls
+                                HStack {
+                                    Button {
+                                        viewModel.selectAll()
+                                    } label: {
+                                        Text("Alle auswählen")
+                                            .font(.caption)
                                     }
-                                    .padding(12)
-                                    .background(Color(.systemBackground))
-                                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .stroke(Color(.systemGray4), lineWidth: 1)
-                                    )
+                                    .buttonStyle(.bordered)
+                                    .controlSize(.small)
+                                    
+                                    Button {
+                                        viewModel.deselectAll()
+                                    } label: {
+                                        Text("Alle abwählen")
+                                            .font(.caption)
+                                    }
+                                    .buttonStyle(.bordered)
+                                    .controlSize(.small)
+                                    
+                                    Spacer()
+                                    
+                                    Text("\(viewModel.selectedCount) von \(viewModel.extractedRechnungszeilen.count) ausgewählt")
+                                        .font(.caption)
+                                        .foregroundStyle(.secondary)
+                                }
+                                
+                                LazyVStack(spacing: 8) {
+                                    ForEach(viewModel.extractedRechnungszeilen, id: \.id) { rechnungszeile in
+                                        HStack(spacing: 12) {
+                                            Button {
+                                                viewModel.toggleSelection(for: rechnungszeile)
+                                            } label: {
+                                                Image(systemName: viewModel.isSelected(rechnungszeile) ? "checkmark.circle.fill" : "circle")
+                                                    .font(.title2)
+                                                    .foregroundStyle(viewModel.isSelected(rechnungszeile) ? .blue : .secondary)
+                                            }
+                                            .accessibilityLabel(viewModel.isSelected(rechnungszeile) ? "Abwählen" : "Auswählen")
+                                            
+                                            RechnungsZeileView(
+                                                item: rechnungszeile,
+                                                priceRange: priceRangeForDetectedItems
+                                            )
+                                        }
+                                        .padding(12)
+                                        .background(Color(.systemBackground))
+                                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 8)
+                                                .stroke(viewModel.isSelected(rechnungszeile) ? Color.blue : Color(.systemGray4), lineWidth: viewModel.isSelected(rechnungszeile) ? 2 : 1)
+                                        )
+                                        .contentShape(Rectangle())
+                                        .onTapGesture {
+                                            viewModel.toggleSelection(for: rechnungszeile)
+                                        }
+                                    }
                                 }
                             }
                             .padding(12)
@@ -307,21 +285,22 @@ struct ScanReceiptView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 12))
                         }
                         
-                        // Fertig button to import the Rechnungszeilen
+                        // Import button for selected items
                         if !viewModel.extractedRechnungszeilen.isEmpty {
                             Button {
-                                importRechnungszeilen()
+                                importSelectedRechnungszeilen()
                             } label: {
                                 HStack {
                                     Image(systemName: "square.and.arrow.down")
-                                    Text("Fertig - Alle importieren")
+                                    Text("Ausgewählte importieren (\(viewModel.selectedCount))")
                                 }
                                 .frame(maxWidth: .infinity)
                                 .padding()
                             }
                             .buttonStyle(.borderedProminent)
                             .controlSize(.large)
-                            .accessibilityLabel("Alle \(viewModel.extractedRechnungszeilen.count) Rechnungszeilen importieren")
+                            .disabled(!viewModel.hasSelectedItems)
+                            .accessibilityLabel("Ausgewählte \(viewModel.selectedCount) Rechnungszeilen importieren")
                         }
                     }
                 }
@@ -348,16 +327,16 @@ struct ScanReceiptView: View {
     
     // MARK: - Actions
     
-    private func importRechnungszeilen() {
-        guard !viewModel.extractedRechnungszeilen.isEmpty else {
-            viewModel.errorMessage = "Keine Rechnungszeilen zum Importieren gefunden"
+    private func importSelectedRechnungszeilen() {
+        guard viewModel.hasSelectedItems else {
+            viewModel.errorMessage = "Keine Rechnungszeilen zum Importieren ausgewählt"
             viewModel.scanState = .error
             return
         }
         
         withAnimation {
-            // Use ViewModel to import the extracted Rechnungszeilen
-            viewModel.importExtractedRechnungszeilen(to: modelContext)
+            // Use ViewModel to import the selected Rechnungszeilen
+            viewModel.importSelectedRechnungszeilen(to: modelContext)
             
             // Show success feedback if import was successful
             if viewModel.scanState != .error {
