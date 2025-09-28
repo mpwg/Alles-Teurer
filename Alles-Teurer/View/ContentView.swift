@@ -73,7 +73,17 @@ struct ContentView: View {
      var mainContent: some View {
         if let viewModel = viewModel {
             ZStack {
-                productList(viewModel: viewModel)
+                RechnungsZeilenListView(
+                    productGroups: createProductGroups(from: viewModel),
+                    selection: $selectedProduct,
+                    onProductDelete: { productNames in
+                        Task {
+                            let itemsToDelete = productNames.flatMap { viewModel.productGroups[$0] ?? [] }
+                            await viewModel.deleteItems(itemsToDelete)
+                            selectedProduct = nil
+                        }
+                    }
+                )
                 .environment(\.editMode, Binding(
                     get: { viewModel.editMode },
                     set: { viewModel.editMode = $0 }
@@ -124,26 +134,19 @@ struct ContentView: View {
         }
     }
     
-    @ViewBuilder
-    private func productList(viewModel: ContentViewModel) -> some View {
-        List(selection: $selectedProduct) {
-            ForEach(viewModel.uniqueProductNames, id: \.self) { productName in
-                NavigationLink(value: productName) {
-                    productRow(productName: productName, viewModel: viewModel)
-                }
-            }
-            .onDelete { indexSet in
-                deleteProducts(at: indexSet, viewModel: viewModel)
-            }
-        }
-    }
+    // MARK: - Helper Methods
     
-    @ViewBuilder
-    private func productRow(productName: String, viewModel: ContentViewModel) -> some View {
-        if let items = viewModel.productGroups[productName],
-           let latestItem = items.max(by: { $0.Datum < $1.Datum }) {
-            ProduktRow(
-                item: latestItem,
+    private func createProductGroups(from viewModel: ContentViewModel) -> [ProductGroup] {
+        return viewModel.uniqueProductNames.compactMap { productName in
+            guard let items = viewModel.productGroups[productName],
+                  let latestItem = items.max(by: { $0.Datum < $1.Datum }) else {
+                return nil
+            }
+            
+            return ProductGroup(
+                productName: productName,
+                items: items,
+                latestItem: latestItem,
                 isHighestPrice: viewModel.priceAnalysis.highest?.id == latestItem.id,
                 isLowestPrice: viewModel.priceAnalysis.lowest?.id == latestItem.id
             )
@@ -193,14 +196,7 @@ struct ContentView: View {
         }
     }
     
-    private func deleteProducts(at indexSet: IndexSet, viewModel: ContentViewModel) {
-        let productNames = indexSet.map { viewModel.uniqueProductNames[$0] }
-        let itemsToDelete = productNames.flatMap { viewModel.productGroups[$0] ?? [] }
-        Task {
-            await viewModel.deleteItems(itemsToDelete)
-            selectedProduct = nil
-        }
-    }
+
 }
 
 // MARK: - CSV Document Support

@@ -63,15 +63,17 @@ struct ScanReceiptView: View {
         }
     }
     
-    // MARK: - Computed Properties
+    // MARK: - Helper Methods
     
-    private var priceRangeForDetectedItems: (min: Decimal, max: Decimal)? {
-        guard !viewModel.extractedRechnungszeilen.isEmpty else { return nil }
-        
-        let prices = viewModel.extractedRechnungszeilen.map { $0.Price }
-        guard let minPrice = prices.min(), let maxPrice = prices.max() else { return nil }
-        
-        return (min: minPrice, max: maxPrice)
+    private func createListItems(from viewModel: ScanReceiptViewModel) -> [ListItem] {
+        return viewModel.extractedRechnungszeilen.map { rechnungszeile in
+            ListItem(
+                rechnungszeile: rechnungszeile,
+                isHighestPrice: false, // Not needed for scan view
+                isLowestPrice: false,  // Not needed for scan view
+                isSelected: viewModel.isSelected(rechnungszeile)
+            )
+        }
     }
     
     // MARK: - View Components
@@ -255,45 +257,15 @@ struct ScanReceiptView: View {
                                         .foregroundStyle(.secondary)
                                 }
                                 
-                                LazyVStack(spacing: 8) {
-                                    ForEach(viewModel.extractedRechnungszeilen, id: \.id) { rechnungszeile in
-                                        HStack(spacing: 12) {
-                                            Button {
-                                                viewModel.toggleSelection(for: rechnungszeile)
-                                            } label: {
-                                                Image(systemName: viewModel.isSelected(rechnungszeile) ? "checkmark.circle.fill" : "circle")
-                                                    .font(.title2)
-                                                    .foregroundStyle(viewModel.isSelected(rechnungszeile) ? .blue : .secondary)
-                                            }
-                                            .accessibilityLabel(viewModel.isSelected(rechnungszeile) ? "Abwählen" : "Auswählen")
-                                            
-                                            RechnungsZeileView(
-                                                item: rechnungszeile,
-                                                priceRange: priceRangeForDetectedItems
-                                            )
-                                            
-                                            Button {
-                                                selectedItemForEditing = rechnungszeile
-                                            } label: {
-                                                Image(systemName: "pencil")
-                                                    .font(.title2)
-                                                    .foregroundStyle(.orange)
-                                            }
-                                            .accessibilityLabel("Bearbeiten")
-                                        }
-                                        .padding(12)
-                                        .background(Color(.systemBackground))
-                                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 8)
-                                                .stroke(viewModel.isSelected(rechnungszeile) ? Color.blue : Color(.systemGray4), lineWidth: viewModel.isSelected(rechnungszeile) ? 2 : 1)
-                                        )
-                                        .contentShape(Rectangle())
-                                        .onTapGesture {
-                                            viewModel.toggleSelection(for: rechnungszeile)
-                                        }
+                                RechnungsZeilenListView(
+                                    individualItems: createListItems(from: viewModel),
+                                    onItemToggleSelection: { rechnungszeile in
+                                        viewModel.toggleSelection(for: rechnungszeile)
+                                    },
+                                    onItemEdit: { rechnungszeile in
+                                        selectedItemForEditing = rechnungszeile
                                     }
-                                }
+                                )
                             }
                             .padding(12)
                             .background(Color(.systemGray6))
