@@ -9,7 +9,7 @@
 import SwiftData
 import SwiftUI
 
-struct RechnungszeileRow: View {
+struct ProduktRow: View {
     let item: Rechnungszeile
     let isHighestPrice: Bool
     let isLowestPrice: Bool

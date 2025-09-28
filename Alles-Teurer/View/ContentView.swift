@@ -8,36 +8,19 @@
 
 import SwiftData
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var viewModel: ContentViewModel?
     @State private var selectedProduct: String?
-    
-    private var showingAddSheetBinding: Binding<Bool> {
-        Binding(
-            get: { viewModel?.showingAddSheet ?? false },
-            set: { viewModel?.showingAddSheet = $0 }
-        )
-    }
-    
-    private var editModeBinding: Binding<EditMode> {
-        Binding(
-            get: { viewModel?.editMode ?? .inactive },
-            set: { viewModel?.editMode = $0 }
-        )
-    }
-    
-    private var showingScanSheetBinding: Binding<Bool> {
-        Binding(
-            get: { viewModel?.showingScanSheet ?? false },
-            set: { viewModel?.showingScanSheet = $0 }
-        )
-    }
+    @State private var showingExportSheet = false
+    @State private var csvData: Data?
 
     var body: some View {
-        NavigationSplitView {
+        NavigationSplitView(columnVisibility: .constant(.all)) {
             mainContent
+            
         } detail: {
             detailContent
         }
@@ -53,12 +36,31 @@ struct ContentView: View {
         } message: {
             Text(viewModel?.errorMessage ?? "Unbekannter Fehler")
         }
-        .sheet(isPresented: showingAddSheetBinding) {
-            AddItemView()
+        .sheet(isPresented: Binding(
+            get: { viewModel?.showingAddSheet ?? false },
+            set: { viewModel?.showingAddSheet = $0 }
+        )) {
+            AddRechnungszeileView()
         }
-        .fullScreenCover(isPresented: showingScanSheetBinding) {
+        .fullScreenCover(isPresented: Binding(
+            get: { viewModel?.showingScanSheet ?? false },
+            set: { viewModel?.showingScanSheet = $0 }
+        )) {
             ScanReceiptView()
-            
+        }
+        .fileExporter(
+            isPresented: $showingExportSheet,
+            document: CSVDocument(data: csvData ?? Data()),
+            contentType: .commaSeparatedText,
+            defaultFilename: viewModel?.generateCSVFilename() ?? "export.csv"
+        ) { result in
+            switch result {
+            case .success(let url):
+                print("CSV exported to: \(url)")
+            case .failure(let error):
+                print("Export failed: \(error)")
+                viewModel?.errorMessage = "Export fehlgeschlagen: \(error.localizedDescription)"
+            }
         }
         
     }
@@ -68,7 +70,10 @@ struct ContentView: View {
         if let viewModel = viewModel {
             ZStack {
                 productList(viewModel: viewModel)
-                .environment(\.editMode, editModeBinding)
+                .environment(\.editMode, Binding(
+                    get: { viewModel.editMode },
+                    set: { viewModel.editMode = $0 }
+                ))
             }
             .toolbar {
                 ToolbarItemGroup {
@@ -99,6 +104,15 @@ struct ContentView: View {
                     Button ("Rechnung scannen", systemImage: "qrcode.viewfinder"){
                         viewModel.showingScanSheet = true
                     }
+                    
+                    Button("CSV Export", systemImage: "square.and.arrow.up") {
+                        Task {
+                            csvData = await viewModel.exportCSV()
+                            if csvData != nil {
+                                showingExportSheet = true
+                            }
+                        }
+                    }
                 }
             }
         } else {
@@ -127,7 +141,7 @@ struct ContentView: View {
     private func productRow(productName: String, viewModel: ContentViewModel) -> some View {
         if let items = viewModel.productGroups[productName],
            let latestItem = items.max(by: { $0.Datum < $1.Datum }) {
-            RechnungszeileRow(
+            ProduktRow(
                 item: latestItem,
                 isHighestPrice: viewModel.priceAnalysis.highest?.id == latestItem.id,
                 isLowestPrice: viewModel.priceAnalysis.lowest?.id == latestItem.id
@@ -185,5 +199,25 @@ struct ContentView: View {
             await viewModel.deleteItems(itemsToDelete)
             selectedProduct = nil
         }
+    }
+}
+
+// MARK: - CSV Document Support
+
+struct CSVDocument: FileDocument {
+    static var readableContentTypes: [UTType] { [.commaSeparatedText] }
+    
+    var data: Data
+    
+    init(data: Data) {
+        self.data = data
+    }
+    
+    init(configuration: ReadConfiguration) throws {
+        data = configuration.file.regularFileContents ?? Data()
+    }
+    
+    func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
+        return FileWrapper(regularFileWithContents: data)
     }
 }

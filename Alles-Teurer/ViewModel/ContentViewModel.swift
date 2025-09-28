@@ -8,6 +8,7 @@
 import Foundation
 import SwiftData
 import SwiftUI
+import UniformTypeIdentifiers
 
 @MainActor
 @Observable
@@ -197,6 +198,92 @@ final class ContentViewModel {
         }
 
         isLoading = false
+    }
+    
+    // MARK: - CSV Export
+    
+    /// Exports all Rechnungszeilen to CSV format
+    /// - Returns: CSV content as Data
+    func exportCSV() async -> Data? {
+        isLoading = true
+        errorMessage = nil
+        
+        do {
+            // Fetch all items sorted by date (newest first)
+            let descriptor = FetchDescriptor<Rechnungszeile>(
+                sortBy: [SortDescriptor(\.Datum, order: .reverse)]
+            )
+            let allItems = try modelContext.fetch(descriptor)
+            
+            // Create CSV content
+            let csvContent = generateCSVContent(from: allItems)
+            
+            isLoading = false
+            return csvContent.data(using: .utf8)
+        } catch {
+            errorMessage = "Failed to export data: \(error.localizedDescription)"
+            print("Failed to export data: \(error)")
+            isLoading = false
+            return nil
+        }
+    }
+    
+    /// Generates CSV content from Rechnungszeilen array
+    private func generateCSVContent(from items: [Rechnungszeile]) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.locale = Locale(identifier: "de_AT")
+        
+        var csvContent = ""
+        
+        // CSV Header (German column names for Austrian market)
+        csvContent += "Datum,Produktname,Normalisierter Name,Preis,Preis pro Einheit,Kategorie,Geschäft,ID\n"
+        
+        // CSV Rows
+        for item in items {
+            let formattedDate = dateFormatter.string(from: item.Datum)
+            let price = formatDecimal(item.Price)
+            let pricePerUnit = formatDecimal(item.PricePerUnit)
+            
+            // Escape quotes and commas in text fields
+            let name = escapeCSVField(item.Name)
+            let normalizedName = escapeCSVField(item.NormalizedName)
+            let category = escapeCSVField(item.Category)
+            let shop = escapeCSVField(item.Shop)
+            let id = item.id.uuidString
+            
+            csvContent += "\(formattedDate),\(name),\(normalizedName),\(price),\(pricePerUnit),\(category),\(shop),\(id)\n"
+        }
+        
+        return csvContent
+    }
+    
+    /// Formats Decimal values for CSV export (uses German number format with comma as decimal separator)
+    private func formatDecimal(_ decimal: Decimal) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.locale = Locale(identifier: "de_AT")
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 2
+        
+        return formatter.string(from: decimal as NSDecimalNumber) ?? "0,00"
+    }
+    
+    /// Escapes CSV fields containing quotes or commas
+    private func escapeCSVField(_ field: String) -> String {
+        if field.contains("\"") || field.contains(",") || field.contains("\n") {
+            return "\"\(field.replacingOccurrences(of: "\"", with: "\"\""))\""
+        }
+        return field
+    }
+    
+    /// Generates a suggested filename for the CSV export
+    func generateCSVFilename() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd_HH-mm"
+        let timestamp = dateFormatter.string(from: Date())
+        
+        return "Alles-Teurer_Export_\(timestamp).csv"
     }
 }
 

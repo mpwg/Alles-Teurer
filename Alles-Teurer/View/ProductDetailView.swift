@@ -17,13 +17,7 @@ struct ProductDetailView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var viewModel: ProductDetailViewModel?
 
-    private let currencyFormatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.currencyCode = "EUR"
-        formatter.locale = Locale(identifier: "de_AT")
-        return formatter
-    }()
+
 
     var body: some View {
         Group {
@@ -63,7 +57,7 @@ struct ProductDetailView: View {
                                             AxisTick()
                                             AxisValueLabel {
                                                 if let price = value.as(Decimal.self) {
-                                                    Text(currencyFormatter.string(from: price as NSDecimalNumber) ?? "€0,00")
+                                                    Text(CurrencyFormatter.format(price))
                                                         .font(.caption)
                                                 }
                                             }
@@ -108,21 +102,21 @@ struct ProductDetailView: View {
                                 ], spacing: 12) {
                                     StatisticCard(
                                         title: "Durchschnitt",
-                                        value: currencyFormatter.string(from: viewModel.averagePrice as NSDecimalNumber) ?? "€0,00",
+                                        value: CurrencyFormatter.format(viewModel.averagePrice),
                                         icon: "chart.bar",
                                         color: .blue
                                     )
                                     
                                     StatisticCard(
                                         title: "Niedrigster",
-                                        value: currencyFormatter.string(from: viewModel.lowestPrice as NSDecimalNumber) ?? "€0,00",
+                                        value: CurrencyFormatter.format(viewModel.lowestPrice),
                                         icon: "arrow.down.circle.fill",
                                         color: .green
                                     )
                                     
                                     StatisticCard(
                                         title: "Höchster",
-                                        value: currencyFormatter.string(from: viewModel.highestPrice as NSDecimalNumber) ?? "€0,00",
+                                        value: CurrencyFormatter.format(viewModel.highestPrice),
                                         icon: "arrow.up.circle.fill",
                                         color: .red
                                     )
@@ -139,10 +133,9 @@ struct ProductDetailView: View {
                                 
                                 LazyVStack(spacing: 8) {
                                     ForEach(viewModel.sortedItems) { item in
-                                        ItemRowView(
+                                        RechnungsZeileView(
                                             item: item,
-                                            priceRange: viewModel.priceRange,
-                                            currencyFormatter: currencyFormatter
+                                            priceRange: viewModel.priceRange
                                         )
                                         .padding(.horizontal)
                                     }

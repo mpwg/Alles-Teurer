@@ -8,7 +8,7 @@
 import SwiftData
 import SwiftUI
 
-struct ItemRowView: View {
+struct RechnungsZeileView: View {
     let item: Rechnungszeile
     let priceRange: (min: Decimal, max: Decimal)?
 
@@ -101,7 +101,7 @@ struct ItemRowView: View {
         PricePerUnit: 1.49
     )
 
-    return ItemRowView(
+    return RechnungsZeileView(
         item: sampleItem,
         priceRange: nil
     )
@@ -119,7 +119,7 @@ struct ItemRowView: View {
         PricePerUnit: 1.29
     )
 
-    return ItemRowView(
+    return RechnungsZeileView(
         item: cheapItem,
         priceRange: (min: 1.29, max: 1.89)
     )
@@ -137,7 +137,7 @@ struct ItemRowView: View {
         PricePerUnit: 1.89
     )
 
-    return ItemRowView(
+    return RechnungsZeileView(
         item: expensiveItem,
         priceRange: (min: 1.29, max: 1.89)
     )
@@ -158,7 +158,7 @@ struct ItemRowView: View {
     ]
 
     return List(items, id: \.id) { item in
-        ItemRowView(
+        RechnungsZeileView(
             item: item,
             priceRange: (min: 1.29, max: 1.89)
         )

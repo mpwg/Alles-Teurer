@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none">
+  <!-- Shopping cart frame -->
+  <g stroke="#000" stroke-width="48" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Handle -->
+    <path d="M64 192h120c28 0 52 19 60 45l133 469c10 34 41 58 76 58h505" />
+    <!-- Cart rim -->
+    <path d="M320 672h504c37 0 70-26 79-62l85-334c6-24-12-47-38-47h-121" />
+    <!-- Top edge -->
+    <path d="M287 544h536c21 0 40-14 45-34l79-311" opacity=".95"/>
+    <!-- Wheels -->
+    <circle cx="384" cy="880" r="64" fill="#000"/>
+    <circle cx="736" cy="880" r="64" fill="#000"/>
+  </g>
+
+  <!-- Price tag -->
+  <g stroke="#000" stroke-width="48" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Tag body (rounded rectangle with notch) -->
+    <path d="M571 86c-26 0-51 10-69 28L381 235a64 64 0 0 0 0 90l166 166a64 64 0 0 0 90 0l197-197c18-18 28-43 28-69V160c0-40-32-72-72-75l-168-11z"/>
+    <!-- Tag hole -->
+    <circle cx="744" cy="168" r="44" fill="#000"/>
+    <!-- Dollar sign (stylized) -->
+    <path d="M552 268c0-36 29-64 68-64 38 0 68 28 68 64M688 404c0 36-29 64-68 64-38 0-68-28-68-64" />
+    <path d="M620 196v280"/>
+  </g>
+
+  <!-- Up/Down arrows under cart -->
+  <g stroke="#000" stroke-width="48" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Down arrow (left) -->
+    <circle cx="352" cy="760" r="16" fill="#000" />
+    <path d="M352 736v176"/>
+    <path d="M296 848l56 72 56-72"/>
+    <!-- Up arrow (right) -->
+    <circle cx="800" cy="760" r="16" fill="#000" />
+    <path d="M800 912V736"/>
+    <path d="M744 800l56-72 56 72"/>
+  </g>
+</svg>
