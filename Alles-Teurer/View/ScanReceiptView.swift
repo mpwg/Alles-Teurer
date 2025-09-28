@@ -9,6 +9,7 @@ struct ScanReceiptView: View {
     @State private var viewModel = ScanReceiptViewModel()
     @State private var showingImagePicker = false
     @State private var showingCamera = false
+    @State private var selectedItemForEditing: Rechnungszeile?
     
     var body: some View {
         NavigationView {
@@ -53,6 +54,11 @@ struct ScanReceiptView: View {
             .sheet(isPresented: $showingCamera) {
                 CameraView(onImageSelected: viewModel.processImage)
                     .presentationDetents([.large])
+            }
+            .sheet(item: $selectedItemForEditing) { item in
+                EditRechnungszeileView(item: item) { updatedItem in
+                    viewModel.updateRechnungszeile(updatedItem)
+                }
             }
         }
     }
@@ -265,6 +271,15 @@ struct ScanReceiptView: View {
                                                 item: rechnungszeile,
                                                 priceRange: priceRangeForDetectedItems
                                             )
+                                            
+                                            Button {
+                                                selectedItemForEditing = rechnungszeile
+                                            } label: {
+                                                Image(systemName: "pencil")
+                                                    .font(.title2)
+                                                    .foregroundStyle(.orange)
+                                            }
+                                            .accessibilityLabel("Bearbeiten")
                                         }
                                         .padding(12)
                                         .background(Color(.systemBackground))

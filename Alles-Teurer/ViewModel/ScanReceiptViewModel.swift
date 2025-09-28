@@ -174,6 +174,18 @@ final class ScanReceiptViewModel {
         !selectedRechnungszeilen.isEmpty
     }
     
+    // MARK: - Edit Methods
+    
+    func updateRechnungszeile(_ updatedItem: Rechnungszeile) {
+        guard let index = extractedRechnungszeilen.firstIndex(where: { $0.id == updatedItem.id }) else {
+            logger.warning("Could not find item with ID \(updatedItem.id) to update")
+            return
+        }
+        
+        logger.info("Updating Rechnungszeile at index \(index): \(updatedItem.Name)")
+        extractedRechnungszeilen[index] = updatedItem
+    }
+    
     // MARK: - Import Methods
     
     func importSelectedRechnungszeilen(to modelContext: ModelContext) {

@@ -31,4 +31,37 @@ struct CurrencyFormatter {
     static func format(_ value: Double) -> String {
         return shared.string(from: NSNumber(value: value)) ?? "€?,??"
     }
+    
+    /// Converts a Decimal to string for text field display (without currency symbol)
+    /// - Parameter value: The decimal value to convert
+    /// - Returns: String representation of the decimal value
+    static func decimalToString(_ value: Decimal) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.locale = Locale(identifier: "de_AT")
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 2
+        return formatter.string(from: value as NSNumber) ?? "0,00"
+    }
+    
+    /// Converts a string to Decimal for price calculation
+    /// - Parameter string: The string to convert
+    /// - Returns: Decimal value if conversion succeeds, nil otherwise
+    static func stringToDecimal(_ string: String) -> Decimal? {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.locale = Locale(identifier: "de_AT")
+        
+        // Clean the string first - remove currency symbols and spaces
+        let cleanedString = string
+            .replacingOccurrences(of: "€", with: "")
+            .replacingOccurrences(of: " ", with: "")
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        guard let number = formatter.number(from: cleanedString) else {
+            return nil
+        }
+        
+        return Decimal(string: number.stringValue)
+    }
 }
