@@ -12,6 +12,7 @@ import UniformTypeIdentifiers
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
+    @Query(sort: \Rechnungszeile.Datum, order: .reverse) private var items: [Rechnungszeile]
     @State private var viewModel: ContentViewModel?
     @State private var selectedProduct: String?
     @State private var showingExportSheet = false
@@ -28,6 +29,9 @@ struct ContentView: View {
             if viewModel == nil {
                 viewModel = ContentViewModel(modelContext: modelContext)
             }
+        }
+        .onChange(of: items) { _, newItems in
+            viewModel?.updateItems(newItems)
         }
         .alert("Fehler", isPresented: errorAlertBinding) {
             Button("OK") {
@@ -131,9 +135,6 @@ struct ContentView: View {
             .onDelete { indexSet in
                 deleteProducts(at: indexSet, viewModel: viewModel)
             }
-        }
-        .refreshable {
-            await viewModel.loadItems()
         }
     }
     

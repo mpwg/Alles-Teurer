@@ -16,7 +16,6 @@ final class ContentViewModel {
     let modelContext: ModelContext
     var selectedProductName: String?
     var items: [Rechnungszeile] = []
-    var isLoading = false
     var errorMessage: String?
     var showingAddSheet = false
     var showingScanSheet = false
@@ -24,9 +23,10 @@ final class ContentViewModel {
 
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
-        Task {
-            await loadItems()
-        }
+    }
+    
+    func updateItems(_ newItems: [Rechnungszeile]) {
+        items = newItems
     }
 
     var uniqueProductNames: [String] {
@@ -52,22 +52,7 @@ final class ContentViewModel {
         return (highest, lowest)
     }
 
-    func loadItems() async {
-        isLoading = true
-        errorMessage = nil
 
-        do {
-            let descriptor = FetchDescriptor<Rechnungszeile>(
-                sortBy: [SortDescriptor(\.Datum, order: .reverse)]
-            )
-            items = try modelContext.fetch(descriptor)
-        } catch {
-            errorMessage = "Failed to load items: \(error.localizedDescription)"
-            print("Failed to load items: \(error)")
-        }
-
-        isLoading = false
-    }
 
     func addItem() async {
         // This method is now a placeholder for quick-add (could be expanded)
@@ -83,7 +68,7 @@ final class ContentViewModel {
         modelContext.insert(newItem)
         do {
             try modelContext.save()
-            await loadItems()
+            // Items will be automatically updated via @Query in ContentView
         } catch {
             errorMessage = "Failed to save item: \(error.localizedDescription)"
             print("Failed to save item: \(error)")
@@ -97,7 +82,7 @@ final class ContentViewModel {
         }
         do {
             try modelContext.save()
-            await loadItems()
+            // Items will be automatically updated via @Query in ContentView
         } catch {
             errorMessage = "Failed to delete items: \(error.localizedDescription)"
             print("Failed to delete items: \(error)")
@@ -106,7 +91,6 @@ final class ContentViewModel {
     }
 
     func deleteAllItems() async {
-        isLoading = true
         errorMessage = nil
 
         do {
@@ -119,17 +103,14 @@ final class ContentViewModel {
             }
 
             try modelContext.save()
-            await loadItems()  // Refresh the data
+            // Items will be automatically updated via @Query in ContentView
         } catch {
             errorMessage = "Failed to delete all items: \(error.localizedDescription)"
             print("Failed to delete all items: \(error)")
         }
-
-        isLoading = false
     }
 
     func generateTestData() async {
-        isLoading = true
         errorMessage = nil
         print("generateTestData() started")
         let testItems: [(String, String, Decimal)] = [
@@ -191,13 +172,11 @@ final class ContentViewModel {
 
         do {
             try modelContext.save()
-            await loadItems()  // Refresh the data
+            // Items will be automatically updated via @Query in ContentView
         } catch {
             errorMessage = "Failed to save test data: \(error.localizedDescription)"
             print("Failed to save test data: \(error)")
         }
-
-        isLoading = false
     }
     
     // MARK: - CSV Export
@@ -205,27 +184,11 @@ final class ContentViewModel {
     /// Exports all Rechnungszeilen to CSV format
     /// - Returns: CSV content as Data
     func exportCSV() async -> Data? {
-        isLoading = true
         errorMessage = nil
         
-        do {
-            // Fetch all items sorted by date (newest first)
-            let descriptor = FetchDescriptor<Rechnungszeile>(
-                sortBy: [SortDescriptor(\.Datum, order: .reverse)]
-            )
-            let allItems = try modelContext.fetch(descriptor)
-            
-            // Create CSV content
-            let csvContent = generateCSVContent(from: allItems)
-            
-            isLoading = false
-            return csvContent.data(using: .utf8)
-        } catch {
-            errorMessage = "Failed to export data: \(error.localizedDescription)"
-            print("Failed to export data: \(error)")
-            isLoading = false
-            return nil
-        }
+        // Use the items already provided by @Query instead of fetching again
+        let csvContent = generateCSVContent(from: items)
+        return csvContent.data(using: .utf8)
     }
     
     /// Generates CSV content from Rechnungszeilen array
