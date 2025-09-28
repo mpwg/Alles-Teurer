@@ -34,7 +34,7 @@ struct SampleData {
             Category: "Backwaren",
             Shop: "Billa",
             Datum: Calendar.current.date(byAdding: .day, value: -2, to: Date()) ?? Date(),
-            NormalizedName: "Milch",
+            NormalizedName: "Brot",
  
         ),
         Rechnungszeile(
