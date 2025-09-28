@@ -21,9 +21,46 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView(columnVisibility: .constant(.all)) {
             mainContent
+                .toolbar {
+                    ToolbarItemGroup {
+                        // Only show toolbar when there are items and data exists
+                        if let viewModel = viewModel, !items.isEmpty {
+                            Button("Alle löschen", systemImage: "trash.fill") {
+                                viewModel.showingDeleteAllConfirmation = true
+                            }
+                            .foregroundColor(.red)
+                            
+                            #if DEBUG
+                            Button("Testdaten generieren", systemImage: "testtube.2") {
+                                Task {
+                                    await viewModel.generateTestData()
+                                }
+                            }
+                            #endif
+                            
+                            Button ("hinzufügen", systemImage: "plus"){
+                                viewModel.showingAddSheet = true
+                            }
+                            
+                            Button ("Rechnung scannen", systemImage: "qrcode.viewfinder"){
+                                viewModel.showingScanSheet = true
+                            }
+                            
+                            Button("CSV Export", systemImage: "square.and.arrow.up") {
+                                Task {
+                                    csvData = await viewModel.exportCSV()
+                                    if csvData != nil {
+                                        showingExportSheet = true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             
         } detail: {
             detailContent
+            
         }
         .task {
             if viewModel == nil {
@@ -89,64 +126,86 @@ struct ContentView: View {
         @ViewBuilder
      var mainContent: some View {
         if let viewModel = viewModel {
-            ZStack {
-                RechnungsZeilenListView(
-                    productGroups: createProductGroups(from: viewModel),
-                    selection: $selectedProduct,
-                    onProductDelete: { productNames in
-                        Task {
-                            let itemsToDelete = productNames.flatMap { viewModel.productGroups[$0] ?? [] }
-                            await viewModel.deleteItems(itemsToDelete)
-                            selectedProduct = nil
+            let productGroups = createProductGroups(from: viewModel)
+            
+            if items.isEmpty {
+                // Onboarding screen when no data is stored
+                ContentUnavailableView {
+                    Label("Willkommen bei Alles Teurer", systemImage: "cart.fill")
+                } description: {
+                    VStack(spacing: 16) {
+                        Text("Beginnen Sie mit der Verfolgung Ihrer Einkäufe und beobachten Sie Preisentwicklungen.")
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(.secondary)
+                        
+                        VStack(spacing: 12) {
+                            Button {
+                                viewModel.showingScanSheet = true
+                            } label: {
+                                HStack {
+                                    Image(systemName: "qrcode.viewfinder")
+                                    Text("Rechnung scannen")
+                                }
+                                .frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .controlSize(.large)
+                            
+                            Button {
+                                viewModel.showingAddSheet = true
+                            } label: {
+                                HStack {
+                                    Image(systemName: "plus")
+                                    Text("Artikel hinzufügen")
+                                }
+                                .frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(.bordered)
+                            .controlSize(.large)
+                            
+                            #if DEBUG
+                            Button {
+                                Task {
+                                    await viewModel.generateTestData()
+                                }
+                            } label: {
+                                HStack {
+                                    Image(systemName: "testtube.2")
+                                    Text("Testdaten generieren")
+                                }
+                                .frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(.bordered)
+                            .controlSize(.regular)
+                            .foregroundColor(.orange)
+                            #endif
                         }
+                        .padding(.horizontal, 32)
                     }
-                )
-                .environment(\.editMode, Binding(
-                    get: { viewModel.editMode },
-                    set: { viewModel.editMode = $0 }
-                ))
-            }
-            .toolbar {
-                ToolbarItemGroup {
-  /*                  Button("Bearbeiten", systemImage: "plus")
-                    {
-                        viewModel.editMode = viewModel.editMode == .active ? .inactive : .active
-                    }
-    */
-                    
-                    Button("Alle löschen", systemImage: "trash.fill") {
-                        viewModel.showingDeleteAllConfirmation = true
-                    }
-                    .foregroundColor(.red)
-                    
-                    #if DEBUG
-                    Button("Testdaten generieren", systemImage: "testtube.2") {
-                        Task {
-                            await viewModel.generateTestData()
-                        }
-                    }
-                    #endif
-                    
-                    
-                    Button ("hinzufügen", systemImage: "plus"){
-                        viewModel.showingAddSheet = true
-                    }
-                    
-                    Button ("Rechnung scannen", systemImage: "qrcode.viewfinder"){
-                        viewModel.showingScanSheet = true
-                    }
-                    
-                    Button("CSV Export", systemImage: "square.and.arrow.up") {
-                        Task {
-                            csvData = await viewModel.exportCSV()
-                            if csvData != nil {
-                                showingExportSheet = true
+                } actions: {
+                    // Actions are handled in the description block above
+                }
+            } else {
+                ZStack {
+                    RechnungsZeilenListView(
+                        productGroups: productGroups,
+                        selection: $selectedProduct,
+                        onProductDelete: { productNames in
+                            Task {
+                                let itemsToDelete = productNames.flatMap { viewModel.productGroups[$0] ?? [] }
+                                await viewModel.deleteItems(itemsToDelete)
+                                selectedProduct = nil
                             }
                         }
-                    }
+                    )
+                    .environment(\.editMode, Binding(
+                        get: { viewModel.editMode },
+                        set: { viewModel.editMode = $0 }
+                    ))
                 }
             }
         } else {
+            // Loading state while ViewModel is being initialized
             ContentUnavailableView("Loading...", systemImage: "clock")
         }
     }
