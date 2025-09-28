@@ -151,7 +151,6 @@ struct ProductDetailView: View {
         }
         .navigationTitle(productName)
         .toolbar {
-            // Use ToolbarItemGroup for Mac Catalyst compatibility
             ToolbarItemGroup(placement: .primaryAction) {
                 if let viewModel = viewModel {
                     Menu {
@@ -191,13 +190,17 @@ struct ProductDetailView: View {
                             .accessibilityLabel("Sortieroptionen")
                             .accessibilityHint("Sortierung und Reihenfolge der Einträge ändern")
                     }
-
-                    if !items.isEmpty {
-                        Button("Bearbeiten") {
-                            // Handle edit mode toggle - Mac Catalyst compatible
-                            // This is a placeholder for edit functionality
-                        }
+                }
+            }
+            
+            ToolbarItemGroup(placement: .secondaryAction) {
+                if !items.isEmpty {
+                    Button("Bearbeiten", systemImage: "pencil") {
+                        // Handle edit mode toggle - Mac Catalyst compatible
+                        // This is a placeholder for edit functionality
                     }
+                    .accessibilityLabel("Einträge bearbeiten")
+                    .accessibilityHint("Einträge für dieses Produkt bearbeiten oder löschen")
                 }
             }
         }

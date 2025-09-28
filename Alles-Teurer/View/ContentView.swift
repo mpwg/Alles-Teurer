@@ -21,46 +21,8 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView(columnVisibility: .constant(.all)) {
             mainContent
-                .toolbar {
-                    ToolbarItemGroup {
-                        // Only show toolbar when there are items and data exists
-                        if let viewModel = viewModel, !items.isEmpty {
-                            Button("Alle löschen", systemImage: "trash.fill") {
-                                viewModel.showingDeleteAllConfirmation = true
-                            }
-                            .foregroundColor(.red)
-                            
-                            #if DEBUG
-                            Button("Testdaten generieren", systemImage: "testtube.2") {
-                                Task {
-                                    await viewModel.generateTestData()
-                                }
-                            }
-                            #endif
-                            
-                            Button ("hinzufügen", systemImage: "plus"){
-                                viewModel.showingAddSheet = true
-                            }
-                            
-                            Button ("Rechnung scannen", systemImage: "qrcode.viewfinder"){
-                                viewModel.showingScanSheet = true
-                            }
-                            
-                            Button("CSV Export", systemImage: "square.and.arrow.up") {
-                                Task {
-                                    csvData = await viewModel.exportCSV()
-                                    if csvData != nil {
-                                        showingExportSheet = true
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            
         } detail: {
             detailContent
-            
         }
         .task {
             if viewModel == nil {
@@ -185,6 +147,25 @@ struct ContentView: View {
                 } actions: {
                     // Actions are handled in the description block above
                 }
+                .toolbar {
+                    ToolbarItemGroup(placement: .primaryAction) {
+                        Button("Rechnung scannen", systemImage: "qrcode.viewfinder") {
+                            viewModel.showingScanSheet = true
+                        }
+                        
+                        Button("Hinzufügen", systemImage: "plus") {
+                            viewModel.showingAddSheet = true
+                        }
+                        
+                        #if DEBUG
+                        Button("Testdaten", systemImage: "testtube.2") {
+                            Task {
+                                await viewModel.generateTestData()
+                            }
+                        }
+                        #endif
+                    }
+                }
             } else {
                 ZStack {
                     RechnungsZeilenListView(
@@ -202,6 +183,41 @@ struct ContentView: View {
                         get: { viewModel.editMode },
                         set: { viewModel.editMode = $0 }
                     ))
+                }
+                .toolbar {
+                    ToolbarItemGroup(placement: .primaryAction) {
+                        Button("CSV Export", systemImage: "square.and.arrow.up") {
+                            Task {
+                                csvData = await viewModel.exportCSV()
+                                if csvData != nil {
+                                    showingExportSheet = true
+                                }
+                            }
+                        }
+                        
+                        Button("Hinzufügen", systemImage: "plus") {
+                            viewModel.showingAddSheet = true
+                        }
+                        
+                        Button("Rechnung scannen", systemImage: "qrcode.viewfinder") {
+                            viewModel.showingScanSheet = true
+                        }
+                        
+                        #if DEBUG
+                        Button("Testdaten", systemImage: "testtube.2") {
+                            Task {
+                                await viewModel.generateTestData()
+                            }
+                        }
+                        #endif
+                    }
+                    
+                    ToolbarItemGroup(placement: .secondaryAction) {
+                        Button("Alle löschen", systemImage: "trash.fill") {
+                            viewModel.showingDeleteAllConfirmation = true
+                        }
+                        .foregroundColor(.red)
+                    }
                 }
             }
         } else {
@@ -273,24 +289,4 @@ struct ContentView: View {
     }
     
 
-}
-
-// MARK: - CSV Document Support
-
-struct CSVDocument: FileDocument {
-    static var readableContentTypes: [UTType] { [.commaSeparatedText] }
-    
-    var data: Data
-    
-    init(data: Data) {
-        self.data = data
-    }
-    
-    init(configuration: ReadConfiguration) throws {
-        data = configuration.file.regularFileContents ?? Data()
-    }
-    
-    func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
-        return FileWrapper(regularFileWithContents: data)
-    }
 }

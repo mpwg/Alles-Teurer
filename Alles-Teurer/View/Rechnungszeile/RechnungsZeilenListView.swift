@@ -1,69 +1,13 @@
 //
-//  RechnungsZeilenListView.swift
+//  RechnungsZeilenListView 2.swift
 //  Alles-Teurer
 //
-//  Created by AI Assistant on 28.09.25.
+//  Created by Matthias Wallner-Géhri on 28.09.25.
 //
+
 
 import SwiftUI
 import SwiftData
-
-// MARK: - Configuration Types
-
-enum ListDisplayMode {
-    case productGroups
-    case individualItems
-}
-
-enum ListInteractionMode {
-    case navigation
-    case selection
-}
-
-struct ListConfiguration {
-    let displayMode: ListDisplayMode
-    let interactionMode: ListInteractionMode
-    let allowsEditing: Bool
-    let allowsSelection: Bool
-    let showsPriceHighlights: Bool
-    
-    static let productNavigation = ListConfiguration(
-        displayMode: .productGroups,
-        interactionMode: .navigation,
-        allowsEditing: false,
-        allowsSelection: false,
-        showsPriceHighlights: true
-    )
-    
-    static let itemSelection = ListConfiguration(
-        displayMode: .individualItems,
-        interactionMode: .selection,
-        allowsEditing: true,
-        allowsSelection: true,
-        showsPriceHighlights: true
-    )
-}
-
-// MARK: - List Data Models
-
-struct ListItem: Identifiable {
-    let id = UUID()
-    let rechnungszeile: Rechnungszeile
-    let isHighestPrice: Bool
-    let isLowestPrice: Bool
-    let isSelected: Bool
-}
-
-struct ProductGroup: Identifiable {
-    let id = UUID()
-    let productName: String
-    let items: [Rechnungszeile]
-    let latestItem: Rechnungszeile
-    let isHighestPrice: Bool
-    let isLowestPrice: Bool
-}
-
-// MARK: - Main List View
 
 struct RechnungsZeilenListView: View {
     let configuration: ListConfiguration
@@ -235,8 +179,6 @@ struct RechnungsZeilenListView: View {
         return (min: minPrice, max: maxPrice)
     }
 }
-
-// MARK: - Convenience Initializers
 
 extension RechnungsZeilenListView {
     

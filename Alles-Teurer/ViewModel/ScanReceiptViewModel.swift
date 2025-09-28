@@ -122,27 +122,7 @@ final class ScanReceiptViewModel {
         }
     }
     
-    // MARK: - Legacy Methods (for backward compatibility)
-    
-    func createRechnungszeile(from text: String) async -> Rechnungszeile {
-        logger.info("Creating single Rechnungszeile from text - consider using processImage for better results")
-        
-        // If we have extracted multiple items, return the first one
-        if let firstItem = extractedRechnungszeilen.first {
-            return firstItem
-        }
-        
-        // Fallback: create a basic Rechnungszeile from text
-        return Rechnungszeile(
-            Name: "Gescanntes Produkt",
-            Price: 0.00,
-            Category: "Gescannt", 
-            Shop: "Unbekannter Shop",
-            Datum: Date.now,
-            NormalizedName: "Keines",
- 
-        )
-    }
+  
     
     // MARK: - Selection Methods
     
