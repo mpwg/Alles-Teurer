@@ -119,11 +119,13 @@ struct ContentView: View {
                     }
                     .foregroundColor(.red)
                     
+                    #if DEBUG
                     Button("Testdaten generieren", systemImage: "testtube.2") {
                         Task {
                             await viewModel.generateTestData()
                         }
                     }
+                    #endif
                     
                     
                     Button ("hinzufügen", systemImage: "plus"){
