@@ -18,8 +18,9 @@ struct ContentView: View {
     @State private var csvData: Data?
 
     var body: some View {
-        NavigationSplitView {
+        NavigationSplitView(columnVisibility: .constant(.all)) {
             mainContent
+            
         } detail: {
             detailContent
         }
