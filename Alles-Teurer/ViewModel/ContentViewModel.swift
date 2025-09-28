@@ -19,6 +19,7 @@ final class ContentViewModel {
     var errorMessage: String?
     var showingAddSheet = false
     var showingScanSheet = false
+    var showingDeleteAllConfirmation = false
     var editMode: EditMode = .inactive
 
     init(modelContext: ModelContext) {

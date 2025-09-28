@@ -66,6 +66,23 @@ struct ContentView: View {
                 viewModel?.errorMessage = "Export fehlgeschlagen: \(error.localizedDescription)"
             }
         }
+        .confirmationDialog(
+            "Alle Artikel löschen?",
+            isPresented: Binding(
+                get: { viewModel?.showingDeleteAllConfirmation ?? false },
+                set: { viewModel?.showingDeleteAllConfirmation = $0 }
+            ),
+            titleVisibility: .visible
+        ) {
+            Button("Alle löschen", role: .destructive) {
+                Task {
+                    await viewModel?.deleteAllItems()
+                }
+            }
+            Button("Abbrechen", role: .cancel) { }
+        } message: {
+            Text("Diese Aktion kann nicht rückgängig gemacht werden. Alle gespeicherten Artikel werden unwiderruflich gelöscht.")
+        }
         
     }
     
@@ -98,9 +115,7 @@ struct ContentView: View {
     */
                     
                     Button("Alle löschen", systemImage: "trash.fill") {
-                        Task {
-                            await viewModel.deleteAllItems()
-                        }
+                        viewModel.showingDeleteAllConfirmation = true
                     }
                     .foregroundColor(.red)
                     
