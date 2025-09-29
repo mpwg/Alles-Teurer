@@ -62,7 +62,7 @@ struct RechnungszeileRow: View {
 
                     Spacer()
 
-                    Text(CurrencyFormatter.format(item.Price))
+                    Text(CurrencyFormatter.format(item.Price, currency: item.Currency))
                         .font(.headline)
                         .fontWeight(.semibold)
                         .foregroundColor(.primary)
@@ -72,7 +72,7 @@ struct RechnungszeileRow: View {
         .padding(.vertical, 2)
         .accessibilityElement(children: .combine)
         .accessibilityLabel(
-            "\(item.NormalizedName), \(item.Category), \(item.Shop), \(CurrencyFormatter.format(item.Price))"
+            "\(item.NormalizedName), \(item.Category), \(item.Shop), \(CurrencyFormatter.format(item.Price, currency: item.Currency))"
         )
         .accessibilityHint(accessibilityHint)
     }

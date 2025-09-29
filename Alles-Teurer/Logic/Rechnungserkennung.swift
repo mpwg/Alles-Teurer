@@ -62,7 +62,8 @@ final class Rechnungserkennung {
                 Shop: receiptData.shopName,
                 Datum: receiptData.date,
                 NormalizedName: item.normalizedName,
-                PricePerUnit: item.pricePerUnit ?? item.price
+                PricePerUnit: item.pricePerUnit ?? item.price,
+                Currency: item.currency
             )
             
             rechnungszeilen.append(rechnungszeile)
@@ -134,6 +135,7 @@ final class Rechnungserkennung {
         - Kategorisiere Produkte nach österreichischen/deutschen Standards
         - Extrahiere Einzelpreise, nicht Gesamtsummen
         - Behandle Mengenangaben (kg, Stk, etc.) korrekt
+        - Erkenne die Währung (EUR, USD, CHF, GBP) aus Symbolen oder Text - Standard ist EUR
         
         NORMALISIERUNG - Für jeden Produktnamen:
         - Entferne ALLE Markennamen (Ja natürlich, Clever, SPAR, BILLA, Hofer, etc.)
@@ -247,6 +249,9 @@ struct ReceiptLineItem {
     
     @Guide(description: "Produktkategorie (Lebensmittel, Drogerie, etc.)")
     let category: String
+    
+    @Guide(description: "Währungscode (EUR, USD, CHF, GBP)")
+    let currency: String
     
     @Guide(description: "Menge falls angegeben (optional)")
     let quantity: String?

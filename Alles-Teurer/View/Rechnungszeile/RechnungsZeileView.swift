@@ -34,7 +34,7 @@ struct RechnungsZeileView: View {
                     }
                     HStack {
                         
-                        Text(CurrencyFormatter.format(item.Price))
+                        Text(CurrencyFormatter.format(item.Price, currency: item.Currency))
                             .font(.headline)
                             .foregroundColor(priceHighlight.color)
                         Text("\(item.NormalizedName)")
@@ -80,7 +80,7 @@ struct RechnungsZeileView: View {
     }
 
     private var accessibilityDescription: String {
-        let priceString = CurrencyFormatter.format(item.Price)
+        let priceString = CurrencyFormatter.format(item.Price, currency: item.Currency)
         let dateString = item.Datum.formatted(date: .abbreviated, time: .omitted)
         let highlightString =
             priceHighlight != .none ? ", \(priceHighlight.accessibilityDescription)" : ""

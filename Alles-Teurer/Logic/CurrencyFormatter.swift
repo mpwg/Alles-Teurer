@@ -7,9 +7,14 @@
 
 import Foundation
 
-/// Centralized currency formatter for consistent Euro formatting throughout the app
+/// Centralized currency formatter for consistent formatting throughout the app
 struct CurrencyFormatter {
-    /// Shared formatter instance configured for Austrian Euro formatting
+    /// Common currency codes used in Austria and Europe
+    static let commonCurrencies = ["EUR", "USD", "CHF", "GBP"]
+    
+    /// Default currency for the Austrian market
+    static let defaultCurrency = "EUR"
+    /// Shared formatter instance configured for Austrian Euro formatting (default)
     static let shared: NumberFormatter = {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
@@ -18,18 +23,57 @@ struct CurrencyFormatter {
         return formatter
     }()
     
-    /// Formats a Decimal value as a currency string
+    /// Creates a formatter for the specified currency
+    /// - Parameter currencyCode: The currency code (e.g., "EUR", "USD", "CHF")
+    /// - Returns: NumberFormatter configured for the specified currency
+    static func formatter(for currencyCode: String) -> NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencyCode = currencyCode
+        formatter.locale = Locale(identifier: "de_AT") // Keep Austrian locale for consistent decimal separator
+        return formatter
+    }
+    
+    /// Formats a Decimal value as a currency string with specified currency
+    /// - Parameters:
+    ///   - value: The decimal value to format
+    ///   - currencyCode: The currency code (defaults to "EUR")
+    /// - Returns: Formatted currency string or fallback string if formatting fails
+    static func format(_ value: Decimal, currency currencyCode: String = "EUR") -> String {
+        let formatter = formatter(for: currencyCode)
+        return formatter.string(from: value as NSNumber) ?? "\(currencySymbol(for: currencyCode))?,??"
+    }
+    
+    /// Formats a Decimal value as a currency string (legacy method for backward compatibility)
     /// - Parameter value: The decimal value to format
     /// - Returns: Formatted currency string or fallback string if formatting fails
     static func format(_ value: Decimal) -> String {
-        return shared.string(from: value as NSNumber) ?? "€?,??"
+        return format(value, currency: "EUR")
     }
     
-    /// Formats a Double value as a currency string
+    /// Formats a Double value as a currency string with specified currency
+    /// - Parameters:
+    ///   - value: The double value to format
+    ///   - currencyCode: The currency code (defaults to "EUR")
+    /// - Returns: Formatted currency string or fallback string if formatting fails
+    static func format(_ value: Double, currency currencyCode: String = "EUR") -> String {
+        let formatter = formatter(for: currencyCode)
+        return formatter.string(from: NSNumber(value: value)) ?? "\(currencySymbol(for: currencyCode))?,??"
+    }
+    
+    /// Formats a Double value as a currency string (legacy method for backward compatibility)
     /// - Parameter value: The double value to format
     /// - Returns: Formatted currency string or fallback string if formatting fails
     static func format(_ value: Double) -> String {
-        return shared.string(from: NSNumber(value: value)) ?? "€?,??"
+        return format(value, currency: "EUR")
+    }
+    
+    /// Gets the currency symbol for a given currency code
+    /// - Parameter currencyCode: The currency code
+    /// - Returns: The currency symbol or the code itself if symbol not found
+    static func currencySymbol(for currencyCode: String) -> String {
+        let locale = Locale(identifier: "de_AT")
+        return locale.localizedString(forCurrencyCode: currencyCode) ?? currencyCode
     }
     
     /// Converts a Decimal to string for text field display (without currency symbol)
@@ -52,9 +96,15 @@ struct CurrencyFormatter {
         formatter.numberStyle = .decimal
         formatter.locale = Locale(identifier: "de_AT")
         
-        // Clean the string first - remove currency symbols and spaces
+        // Clean the string first - remove common currency symbols and spaces
         let cleanedString = string
             .replacingOccurrences(of: "€", with: "")
+            .replacingOccurrences(of: "$", with: "")
+            .replacingOccurrences(of: "CHF", with: "")
+            .replacingOccurrences(of: "£", with: "")
+            .replacingOccurrences(of: "USD", with: "")
+            .replacingOccurrences(of: "EUR", with: "")
+            .replacingOccurrences(of: "GBP", with: "")
             .replacingOccurrences(of: " ", with: "")
             .trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -63,5 +113,32 @@ struct CurrencyFormatter {
         }
         
         return Decimal(string: number.stringValue)
+    }
+    
+    /// Detects currency from a string (looks for currency symbols/codes)
+    /// - Parameter string: The string to analyze
+    /// - Returns: Detected currency code or nil if none found
+    static func detectCurrency(_ string: String) -> String? {
+        let uppercaseString = string.uppercased()
+        
+        // Check for currency codes first
+        for currency in commonCurrencies {
+            if uppercaseString.contains(currency) {
+                return currency
+            }
+        }
+        
+        // Check for currency symbols
+        if string.contains("€") {
+            return "EUR"
+        } else if string.contains("$") {
+            return "USD"
+        } else if string.contains("£") {
+            return "GBP"
+        } else if string.contains("CHF") {
+            return "CHF"
+        }
+        
+        return nil
     }
 }

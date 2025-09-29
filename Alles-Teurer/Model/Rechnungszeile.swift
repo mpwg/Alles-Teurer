@@ -18,10 +18,11 @@ final class Rechnungszeile: Identifiable {
     var id: UUID
     var NormalizedName: String
     var PricePerUnit: Decimal
+    var Currency: String
 
     init(
         Name: String, Price: Decimal, Category: String, Shop: String, Datum: Date,
-        NormalizedName:String, PricePerUnit: Decimal = 0
+        NormalizedName:String, PricePerUnit: Decimal = 0, Currency: String = "EUR"
     ) {
         self.Name = Name
         self.Price = Price
@@ -30,6 +31,7 @@ final class Rechnungszeile: Identifiable {
         self.Datum = Datum
         self.NormalizedName = NormalizedName
         self.PricePerUnit = PricePerUnit
+        self.Currency = Currency
         self.id = UUID()
     }
 

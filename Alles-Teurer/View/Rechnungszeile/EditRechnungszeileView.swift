@@ -11,6 +11,7 @@ struct EditRechnungszeileView: View {
     @State private var datum: Date
     @State private var normalizedName: String
     @State private var pricePerUnit: Decimal
+    @State private var currency: String
     
     let originalItem: Rechnungszeile
     let onSave: (Rechnungszeile) -> Void
@@ -30,6 +31,7 @@ struct EditRechnungszeileView: View {
         _datum = State(initialValue: item.Datum)
         _normalizedName = State(initialValue: item.NormalizedName)
         _pricePerUnit = State(initialValue: item.PricePerUnit)
+        _currency = State(initialValue: item.Currency)
     }
     
     private var isFormValid: Bool {
@@ -41,99 +43,10 @@ struct EditRechnungszeileView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section("Produktinformationen") {
-                    HStack {
-                        Text("Name")
-                        Spacer()
-                        TextField("Produktname", text: $name)
-                            .textFieldStyle(.roundedBorder)
-                            .multilineTextAlignment(.trailing)
-                    }
-                    .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Produktname")
-                    .accessibilityValue(name.isEmpty ? "Nicht angegeben" : name)
-                    
-                    HStack {
-                        Text("Normalisierter Name")
-                        Spacer()
-                        TextField("Normalisierter Name", text: $normalizedName)
-                            .textFieldStyle(.roundedBorder)
-                            .multilineTextAlignment(.trailing)
-                    }
-                    .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Normalisierter Produktname")
-                    .accessibilityValue(normalizedName.isEmpty ? "Nicht angegeben" : normalizedName)
-                    
-                    HStack {
-                        Text("Kategorie")
-                        Spacer()
-                        TextField("Kategorie", text: $category)
-                            .textFieldStyle(.roundedBorder)
-                            .multilineTextAlignment(.trailing)
-                    }
-                    .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Kategorie")
-                    .accessibilityValue(category.isEmpty ? "Nicht angegeben" : category)
-                }
-                
-                Section("Preisangaben") {
-                    HStack {
-                        Text("Preis")
-                        Spacer()
-                        TextField("0,00 €", text: $priceText)
-                            .textFieldStyle(.roundedBorder)
-                            .keyboardType(.decimalPad)
-                            .multilineTextAlignment(.trailing)
-                    }
-                    .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Preis")
-                    .accessibilityValue(priceText.isEmpty ? "Nicht angegeben" : priceText + " Euro")
-                    
-                    HStack {
-                        Text("Preis pro Einheit")
-                        Spacer()
-                        TextField("0,00 €", value: $pricePerUnit, format: .currency(code: "EUR"))
-                            .textFieldStyle(.roundedBorder)
-                            .keyboardType(.decimalPad)
-                            .multilineTextAlignment(.trailing)
-                    }
-                    .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Preis pro Einheit")
-                    .accessibilityValue("\(pricePerUnit.description) Euro pro Einheit")
-                }
-                
-                Section("Kaufinformationen") {
-                    HStack {
-                        Text("Geschäft")
-                        Spacer()
-                        TextField("Geschäft", text: $shop)
-                            .textFieldStyle(.roundedBorder)
-                            .multilineTextAlignment(.trailing)
-                    }
-                    .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Geschäft")
-                    .accessibilityValue(shop.isEmpty ? "Nicht angegeben" : shop)
-                    
-                    DatePicker("Datum", selection: $datum, displayedComponents: .date)
-                        .accessibilityLabel("Kaufdatum")
-                }
-                
-                Section {
-                    HStack {
-                        Spacer()
-                        VStack(spacing: 4) {
-                            Text("Gescannter Wert")
-                                .font(.caption)
-                                .foregroundColor(.secondary)
-                            Text("Korrigieren Sie bei Bedarf die erkannten Werte")
-                                .font(.caption2)
-                                .foregroundColor(.secondary)
-                                .multilineTextAlignment(.center)
-                        }
-                        Spacer()
-                    }
-                    .listRowBackground(Color.clear)
-                }
+                productInfoSection
+                priceSection
+                purchaseInfoSection
+                instructionSection
             }
             .navigationTitle("Eintrag bearbeiten")
             .navigationBarTitleDisplayMode(.inline)
@@ -162,6 +75,123 @@ struct EditRechnungszeileView: View {
         }
     }
     
+    private var productInfoSection: some View {
+        Section("Produktinformationen") {
+            HStack {
+                Text("Name")
+                Spacer()
+                TextField("Produktname", text: $name)
+                    .textFieldStyle(.roundedBorder)
+                    .multilineTextAlignment(.trailing)
+            }
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("Produktname")
+            .accessibilityValue(name.isEmpty ? "Nicht angegeben" : name)
+            
+            HStack {
+                Text("Normalisierter Name")
+                Spacer()
+                TextField("Normalisierter Name", text: $normalizedName)
+                    .textFieldStyle(.roundedBorder)
+                    .multilineTextAlignment(.trailing)
+            }
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("Normalisierter Produktname")
+            .accessibilityValue(normalizedName.isEmpty ? "Nicht angegeben" : normalizedName)
+            
+            HStack {
+                Text("Kategorie")
+                Spacer()
+                TextField("Kategorie", text: $category)
+                    .textFieldStyle(.roundedBorder)
+                    .multilineTextAlignment(.trailing)
+            }
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("Kategorie")
+            .accessibilityValue(category.isEmpty ? "Nicht angegeben" : category)
+        }
+    }
+    
+    private var priceSection: some View {
+        Section("Preisangaben") {
+            HStack {
+                Text("Preis")
+                Spacer()
+                TextField(CurrencyFormatter.format(Decimal(0), currency: currency), text: $priceText)
+                    .textFieldStyle(.roundedBorder)
+                    .keyboardType(.decimalPad)
+                    .multilineTextAlignment(.trailing)
+            }
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("Preis")
+            .accessibilityValue(priceText.isEmpty ? "Nicht angegeben" : priceText + " \(currency)")
+            
+            HStack {
+                Text("Währung")
+                Spacer()
+                Picker("Währung", selection: $currency) {
+                    ForEach(CurrencyFormatter.commonCurrencies, id: \.self) { currencyCode in
+                        Text("\(currencyCode) (\(CurrencyFormatter.currencySymbol(for: currencyCode)))")
+                            .tag(currencyCode)
+                    }
+                }
+                .pickerStyle(.menu)
+            }
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("Währung")
+            .accessibilityValue(currency)
+            
+            HStack {
+                Text("Preis pro Einheit")
+                Spacer()
+                TextField(CurrencyFormatter.format(Decimal(0), currency: currency), value: $pricePerUnit, format: .currency(code: currency))
+                    .textFieldStyle(.roundedBorder)
+                    .keyboardType(.decimalPad)
+                    .multilineTextAlignment(.trailing)
+            }
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("Preis pro Einheit")
+            .accessibilityValue("\(pricePerUnit.description) \(currency) pro Einheit")
+        }
+    }
+    
+    private var purchaseInfoSection: some View {
+        Section("Kaufinformationen") {
+            HStack {
+                Text("Geschäft")
+                Spacer()
+                TextField("Geschäft", text: $shop)
+                    .textFieldStyle(.roundedBorder)
+                    .multilineTextAlignment(.trailing)
+            }
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("Geschäft")
+            .accessibilityValue(shop.isEmpty ? "Nicht angegeben" : shop)
+            
+            DatePicker("Datum", selection: $datum, displayedComponents: .date)
+                .accessibilityLabel("Kaufdatum")
+        }
+    }
+    
+    private var instructionSection: some View {
+        Section {
+            HStack {
+                Spacer()
+                VStack(spacing: 4) {
+                    Text("Gescannter Wert")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                    Text("Korrigieren Sie bei Bedarf die erkannten Werte")
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
+                        .multilineTextAlignment(.center)
+                }
+                Spacer()
+            }
+            .listRowBackground(Color.clear)
+        }
+    }
+    
     private func saveChanges() {
         guard let price = CurrencyFormatter.stringToDecimal(priceText) else {
             alertMessage = "Ungültiger Preis"
@@ -177,7 +207,8 @@ struct EditRechnungszeileView: View {
             Shop: shop.trimmingCharacters(in: .whitespacesAndNewlines),
             Datum: datum,
             NormalizedName: normalizedName.trimmingCharacters(in: .whitespacesAndNewlines),
-            PricePerUnit: pricePerUnit
+            PricePerUnit: pricePerUnit,
+            Currency: currency
         )
         
         // Preserve the original ID for proper tracking

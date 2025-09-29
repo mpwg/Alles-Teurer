@@ -20,6 +20,7 @@ final class AddItemViewModel {
     var category = ""
     var shop = ""
     var datum = Date()
+    var currency = CurrencyFormatter.defaultCurrency
 
     // State management
     var isLoading = false
@@ -64,7 +65,8 @@ final class AddItemViewModel {
                 Shop: shop.trimmingCharacters(in: .whitespacesAndNewlines),
                 Datum: datum,
                 NormalizedName: name.trimmingCharacters(in: .whitespacesAndNewlines),
-                PricePerUnit: priceDecimal
+                PricePerUnit: priceDecimal,
+                Currency: currency
             )
 
             modelContext.insert(newItem)
@@ -86,6 +88,7 @@ final class AddItemViewModel {
         category = ""
         shop = ""
         datum = Date()
+        currency = CurrencyFormatter.defaultCurrency
         errorMessage = nil
     }
 

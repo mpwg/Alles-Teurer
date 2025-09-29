@@ -43,6 +43,13 @@ struct AddRechnungszeileView: View {
         )
     }
     
+    private var currencyBinding: Binding<String> {
+        Binding(
+            get: { viewModel?.currency ?? CurrencyFormatter.defaultCurrency },
+            set: { viewModel?.currency = $0 }
+        )
+    }
+    
     private var showingAlertBinding: Binding<Bool> {
         Binding(
             get: { viewModel?.showingAlert ?? false },
@@ -71,10 +78,25 @@ struct AddRechnungszeileView: View {
                                 TextField("Preis", text: priceBinding)
                                     .accessibilityLabel("Preis eingeben")
 
-                                Text("€")
+                                Text(CurrencyFormatter.currencySymbol(for: currencyBinding.wrappedValue))
                                     .foregroundStyle(.secondary)
                                     .accessibilityHidden(true)
                             }
+                            
+                            HStack {
+                                Text("Währung")
+                                Spacer()
+                                Picker("Währung", selection: currencyBinding) {
+                                    ForEach(CurrencyFormatter.commonCurrencies, id: \.self) { currencyCode in
+                                        Text("\(currencyCode) (\(CurrencyFormatter.currencySymbol(for: currencyCode)))")
+                                            .tag(currencyCode)
+                                    }
+                                }
+                                .pickerStyle(.menu)
+                            }
+                            .accessibilityElement(children: .ignore)
+                            .accessibilityLabel("Währung auswählen")
+                            .accessibilityValue(currencyBinding.wrappedValue)
 
                             DatePicker("Datum", selection: dateBinding, displayedComponents: .date)
                                 .accessibilityLabel("Einkaufsdatum auswählen")

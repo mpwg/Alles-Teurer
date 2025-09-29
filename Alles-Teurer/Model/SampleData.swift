@@ -8,7 +8,8 @@ struct SampleData {
             Category: "Milchprodukte",
             Shop: "Spar",
             Datum: Calendar.current.date(byAdding: .day, value: -1, to: Date()) ?? Date(),
-            NormalizedName: "Milch"
+            NormalizedName: "Milch",
+            Currency: "EUR"
         ),
         Rechnungszeile(
             Name: "Milch",
@@ -17,7 +18,7 @@ struct SampleData {
             Shop: "Billa",
             Datum: Calendar.current.date(byAdding: .day, value: -3, to: Date()) ?? Date(),
             NormalizedName: "Milch",
- 
+            Currency: "EUR"
         ),
         Rechnungszeile(
             Name: "Milch",
@@ -26,7 +27,7 @@ struct SampleData {
             Shop: "Hofer",
             Datum: Calendar.current.date(byAdding: .day, value: -7, to: Date()) ?? Date(),
             NormalizedName: "Milch",
- 
+            Currency: "EUR"
         ),
         Rechnungszeile(
             Name: "Brot",
@@ -35,7 +36,7 @@ struct SampleData {
             Shop: "Billa",
             Datum: Calendar.current.date(byAdding: .day, value: -2, to: Date()) ?? Date(),
             NormalizedName: "Brot",
- 
+            Currency: "EUR"
         ),
         Rechnungszeile(
             Name: "Äpfel",
@@ -44,7 +45,7 @@ struct SampleData {
             Shop: "Merkur",
             Datum: Date(),
             NormalizedName: "Apfel",
- 
+            Currency: "EUR"
         ),
     ]
 
