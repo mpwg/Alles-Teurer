@@ -45,6 +45,50 @@ struct ContentView: View {
     private var splitView: some View {
         NavigationSplitView(columnVisibility: .constant(.all)) {
             mainContent
+                .toolbar {
+                    // Unified toolbar that adapts to current state
+                    if let viewModel = viewModel {
+                        ToolbarItemGroup(placement: .primaryAction) {
+                            Button("Rechnung scannen", systemImage: "qrcode.viewfinder") {
+                                viewModel.showingScanSheet = true
+                            }
+                            
+                            Button("Hinzufügen", systemImage: "plus") {
+                                viewModel.showingAddSheet = true
+                            }
+                            
+                            // Show CSV Export only when data exists
+                            if !items.isEmpty {
+                                Button("CSV Export", systemImage: "square.and.arrow.up") {
+                                    Task {
+                                        csvData = await viewModel.exportCSV()
+                                        if csvData != nil {
+                                            showingExportSheet = true
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            #if DEBUG
+                            Button("Testdaten", systemImage: "testtube.2") {
+                                Task {
+                                    await viewModel.generateTestData()
+                                }
+                            }
+                            #endif
+                        }
+                        
+                        // Show secondary actions only when data exists
+                        if !items.isEmpty {
+                            ToolbarItemGroup(placement: .secondaryAction) {
+                                Button("Alle löschen", systemImage: "trash.fill") {
+                                    viewModel.showingDeleteAllConfirmation = true
+                                }
+                                .foregroundColor(.red)
+                            }
+                        }
+                    }
+                }
         } detail: {
             detailContent
         }
@@ -112,25 +156,6 @@ struct ContentView: View {
                 } actions: {
                     // Actions are handled in the description block above
                 }
-                .toolbar {
-                    ToolbarItemGroup(placement: .primaryAction) {
-                        Button("Rechnung scannen", systemImage: "qrcode.viewfinder") {
-                            viewModel.showingScanSheet = true
-                        }
-                        
-                        Button("Hinzufügen", systemImage: "plus") {
-                            viewModel.showingAddSheet = true
-                        }
-                        
-                        #if DEBUG
-                        Button("Testdaten", systemImage: "testtube.2") {
-                            Task {
-                                await viewModel.generateTestData()
-                            }
-                        }
-                        #endif
-                    }
-                }
             } else {
                 ZStack {
                     #if os(iOS)
@@ -179,56 +204,13 @@ struct ContentView: View {
                     set: { viewModel.editMode = $0 }
                 ))
                 #endif
-                .toolbar {
-                    ToolbarItemGroup(placement: .primaryAction) {
-                        Button("CSV Export", systemImage: "square.and.arrow.up") {
-                            Task {
-                                csvData = await viewModel.exportCSV()
-                                if csvData != nil {
-                                    showingExportSheet = true
-                                }
-                            }
-                        }
-                        
-                        Button("Hinzufügen", systemImage: "plus") {
-                            viewModel.showingAddSheet = true
-                        }
-                        
-                        Button("Rechnung scannen", systemImage: "qrcode.viewfinder") {
-                            viewModel.showingScanSheet = true
-                        }
-                        
-                        #if DEBUG
-                        Button("Testdaten", systemImage: "testtube.2") {
-                            Task {
-                                await viewModel.generateTestData()
-                            }
-                        }
-                        #endif
-                    }
-                    
-                    ToolbarItemGroup(placement: .secondaryAction) {
-                        #if os(iOS)
-                        Button(viewModel.editMode == .active ? "Fertig" : "Bearbeiten") {
-                            toggleEditMode()
-                        }
-                        #else
-                        Button(viewModel.isEditing ? "Fertig" : "Bearbeiten") {
-                            toggleEditMode()
-                        }
-                        #endif
-                        
-                        Button("Alle löschen", systemImage: "trash.fill") {
-                            viewModel.showingDeleteAllConfirmation = true
-                        }
-                        .foregroundColor(.red)
-                    }
-                }
             }
         } else {
             // Loading state while ViewModel is being initialized
             ContentUnavailableView("Loading...", systemImage: "clock")
         }
+        
+
     }
     
     // MARK: - Helper Methods

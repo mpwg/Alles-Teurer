@@ -196,27 +196,7 @@ struct ProductDetailView: View {
                     }
                 }
             }
-            
-            ToolbarItemGroup(placement: .secondaryAction) {
-                if !items.isEmpty {
-                    #if os(iOS)
-                    @Environment(\.editMode) var editMode
-                    Button(editMode?.wrappedValue == .active ? "Fertig" : "Bearbeiten", systemImage: "pencil") {
-                        withAnimation {
-                            editMode?.wrappedValue = editMode?.wrappedValue == .active ? .inactive : .active
-                        }
-                    }
-                    .accessibilityLabel("Einträge bearbeiten")
-                    .accessibilityHint("Einträge für dieses Produkt bearbeiten oder löschen")
-                    #else
-                    Button("Bearbeiten", systemImage: "pencil") {
-                        // macOS handling - could show a separate edit mode
-                    }
-                    .accessibilityLabel("Einträge bearbeiten")
-                    .accessibilityHint("Einträge für dieses Produkt bearbeiten oder löschen")
-                    #endif
-                }
-            }
+
         }
         .task {
             // Initialize viewModel immediately without delay
