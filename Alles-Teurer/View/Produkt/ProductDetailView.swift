@@ -155,48 +155,19 @@ struct ProductDetailView: View {
         }
         .navigationTitle(productName)
         .toolbar {
-            ToolbarItemGroup(placement: .primaryAction) {
-                if let viewModel = viewModel {
-                    Menu {
-                        Picker(
-                            "Sortierung",
-                            selection: Binding(
-                                get: { viewModel.sortOption },
-                                set: { viewModel.setSortOption($0) }
-                            )
-                        ) {
-                            Label("Preis", systemImage: "eurosign.circle")
-                                .tag(SortOption.price)
-                            Label("Datum", systemImage: "calendar")
-                                .tag(SortOption.date)
-                            Label("Geschäft", systemImage: "storefront")
-                                .tag(SortOption.shop)
-                        }
-                        .pickerStyle(.inline)
-
-                        Divider()
-
-                        Picker(
-                            "Reihenfolge",
-                            selection: Binding(
-                                get: { viewModel.sortOrder },
-                                set: { viewModel.setSortOrder($0) }
-                            )
-                        ) {
-                            Label("Aufsteigend", systemImage: "arrow.up")
-                                .tag(SortOrder.forward)
-                            Label("Absteigend", systemImage: "arrow.down")
-                                .tag(SortOrder.reverse)
-                        }
-                        .pickerStyle(.inline)
-                    } label: {
-                        Image(systemName: "arrow.up.arrow.down")
-                            .accessibilityLabel("Sortieroptionen")
-                            .accessibilityHint("Sortierung und Reihenfolge der Einträge ändern")
-                    }
-                }
+            if let viewModel = viewModel {
+                SortToolbar(
+                    viewModel: viewModel,
+                    sortOption: Binding(
+                        get: { viewModel.sortOption },
+                        set: { viewModel.setSortOption($0) }
+                    ),
+                    sortOrder: Binding(
+                        get: { viewModel.sortOrder },
+                        set: { viewModel.setSortOrder($0) }
+                    )
+                )
             }
-
         }
         .task {
             // Initialize viewModel immediately without delay

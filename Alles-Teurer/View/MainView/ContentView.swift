@@ -15,16 +15,72 @@ struct ContentView: View {
     @Query(sort: \Rechnungszeile.Datum, order: .reverse) private var items: [Rechnungszeile]
     @State private var viewModel: ContentViewModel?
     @State private var selectedProduct: String?
-    @State private var showingExportSheet = false
-    @State private var csvData: Data?
 
     var body: some View {
         splitView
-            .modifier(ViewModelSetupModifier(viewModel: $viewModel, items: items, modelContext: modelContext))
-            .modifier(AlertsModifier(viewModel: viewModel))
-            .modifier(SheetsModifier(viewModel: viewModel))
-            .modifier(FileExporterModifier(viewModel: viewModel, showingExportSheet: $showingExportSheet, csvData: $csvData))
-            .modifier(ConfirmationDialogModifier(viewModel: viewModel))
+            .task {
+                // Initialize ViewModel and load initial data
+                if viewModel == nil {
+                    viewModel = ContentViewModel(modelContext: modelContext)
+                }
+                // Always update with current items from @Query
+                viewModel?.updateItems(items)
+            }
+            .onChange(of: items) { _, newItems in
+                viewModel?.updateItems(newItems)
+            }
+            .alert("Fehler", isPresented: errorAlertBinding) {
+                Button("OK") { viewModel?.errorMessage = nil }
+            } message: {
+                Text(viewModel?.errorMessage ?? "")
+            }
+            .sheet(isPresented: Binding(
+                get: { viewModel?.showingAddSheet ?? false },
+                set: { _ in viewModel?.showingAddSheet = false }
+            )) {
+                NavigationStack {
+                    AddRechnungszeileView()
+                }
+            }
+            .sheet(isPresented: Binding(
+                get: { viewModel?.showingScanSheet ?? false },
+                set: { _ in viewModel?.showingScanSheet = false }
+            )) {
+                ScanReceiptView()
+            }
+            .fileExporter(
+                isPresented: Binding(
+                    get: { viewModel?.showingExportSheet ?? false },
+                    set: { _ in viewModel?.showingExportSheet = false }
+                ),
+                document: viewModel?.csvData.map { CSVDocument(data: $0) },
+                contentType: .commaSeparatedText,
+                defaultFilename: viewModel?.generateCSVFilename() ?? "export.csv"
+            ) { result in
+                switch result {
+                case .success(let url):
+                    print("CSV exported successfully to: \(url)")
+                case .failure(let error):
+                    viewModel?.errorMessage = "Export failed: \(error.localizedDescription)"
+                }
+            }
+            .confirmationDialog(
+                "Alle Einträge löschen?",
+                isPresented: Binding(
+                    get: { viewModel?.showingDeleteAllConfirmation ?? false },
+                    set: { _ in viewModel?.showingDeleteAllConfirmation = false }
+                ),
+                titleVisibility: .visible
+            ) {
+                Button("Alle löschen", role: .destructive) {
+                    Task {
+                        await viewModel?.confirmDeleteAll()
+                    }
+                }
+                Button("Abbrechen", role: .cancel) { }
+            } message: {
+                Text("Diese Aktion löscht alle gespeicherten Einträge unwiderruflich.")
+            }
             .sheet(isPresented: Binding(
                 get: { viewModel?.showingEditSheet ?? false },
                 set: { _ in viewModel?.showingEditSheet = false }
@@ -45,50 +101,7 @@ struct ContentView: View {
     private var splitView: some View {
         NavigationSplitView(columnVisibility: .constant(.all)) {
             mainContent
-                .toolbar {
-                    // Unified toolbar that adapts to current state
-                    if let viewModel = viewModel {
-                        ToolbarItemGroup(placement: .primaryAction) {
-                            Button("Rechnung scannen", systemImage: "qrcode.viewfinder") {
-                                viewModel.showingScanSheet = true
-                            }
-                            
-                            Button("Hinzufügen", systemImage: "plus") {
-                                viewModel.showingAddSheet = true
-                            }
-                            
-                            // Show CSV Export only when data exists
-                            if !items.isEmpty {
-                                Button("CSV Export", systemImage: "square.and.arrow.up") {
-                                    Task {
-                                        csvData = await viewModel.exportCSV()
-                                        if csvData != nil {
-                                            showingExportSheet = true
-                                        }
-                                    }
-                                }
-                            }
-                            
-                            #if DEBUG
-                            Button("Testdaten", systemImage: "testtube.2") {
-                                Task {
-                                    await viewModel.generateTestData()
-                                }
-                            }
-                            #endif
-                        }
-                        
-                        // Show secondary actions only when data exists
-                        if !items.isEmpty {
-                            ToolbarItemGroup(placement: .secondaryAction) {
-                                Button("Alle löschen", systemImage: "trash.fill") {
-                                    viewModel.showingDeleteAllConfirmation = true
-                                }
-                                .foregroundColor(.red)
-                            }
-                        }
-                    }
-                }
+                .standardToolbar(viewModel ?? ContentViewModel(modelContext: modelContext))
         } detail: {
             detailContent
         }

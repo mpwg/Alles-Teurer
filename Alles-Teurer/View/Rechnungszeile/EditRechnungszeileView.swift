@@ -3,42 +3,19 @@ import SwiftData
 
 struct EditRechnungszeileView: View {
     @Environment(\.dismiss) private var dismiss
+    @State private var viewModel: EditRechnungszeileViewModel
     
-    @State private var name: String
-    @State private var priceText: String
-    @State private var category: String
-    @State private var shop: String
-    @State private var datum: Date
-    @State private var normalizedName: String
-    @State private var pricePerUnit: Decimal
-    @State private var currency: String
-    
-    let originalItem: Rechnungszeile
     let onSave: (Rechnungszeile) -> Void
+    let onDelete: (() -> Void)?
     
-    @State private var showingAlert = false
-    @State private var alertMessage = ""
-    
-    init(item: Rechnungszeile, onSave: @escaping (Rechnungszeile) -> Void) {
-        self.originalItem = item
+    init(item: Rechnungszeile, onSave: @escaping (Rechnungszeile) -> Void, onDelete: (() -> Void)? = nil) {
+        let viewModel = EditRechnungszeileViewModel(item: item)
+        self._viewModel = State(initialValue: viewModel)
         self.onSave = onSave
-        
-        // Initialize state with current values
-        _name = State(initialValue: item.Name)
-        _priceText = State(initialValue: CurrencyFormatter.decimalToString(item.Price))
-        _category = State(initialValue: item.Category)
-        _shop = State(initialValue: item.Shop)
-        _datum = State(initialValue: item.Datum)
-        _normalizedName = State(initialValue: item.NormalizedName)
-        _pricePerUnit = State(initialValue: item.PricePerUnit)
-        _currency = State(initialValue: item.Currency)
+        self.onDelete = onDelete
     }
     
-    private var isFormValid: Bool {
-        !name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
-        !priceText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
-        CurrencyFormatter.stringToDecimal(priceText) != nil
-    }
+
     
     var body: some View {
         NavigationStack {
@@ -50,29 +27,37 @@ struct EditRechnungszeileView: View {
             }
             .navigationTitle("Eintrag bearbeiten")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Abbrechen") {
-                        dismiss()
-                    }
-                    .frame(minWidth: 80)
-                    .font(.system(size: 17))
-                    .accessibilityLabel("Bearbeitung abbrechen")
-                }
-                
-                ToolbarItem(placement: .primaryAction) {
-                    Button("Speichern") {
-                        saveChanges()
-                    }
-                    .disabled(!isFormValid)
-                    .fontWeight(.semibold)
-                    .accessibilityLabel("Änderungen speichern")
+            .standardToolbar(viewModel)
+            .task {
+                viewModel.onSave = onSave
+                viewModel.onCancel = { dismiss() }
+                viewModel.onDelete = {
+                    onDelete?()
+                    dismiss()
                 }
             }
-            .alert("Fehler", isPresented: $showingAlert) {
-                Button("OK") { }
+            .alert("Fehler", isPresented: Binding(
+                get: { viewModel.showingAlert },
+                set: { _ in viewModel.showingAlert = false }
+            )) {
+                Button("OK") { viewModel.showingAlert = false }
             } message: {
-                Text(alertMessage)
+                Text(viewModel.errorMessage ?? "")
+            }
+            .confirmationDialog(
+                "Eintrag löschen?",
+                isPresented: Binding(
+                    get: { viewModel.showingDeleteConfirmation },
+                    set: { _ in viewModel.showingDeleteConfirmation = false }
+                ),
+                titleVisibility: .visible
+            ) {
+                Button("Löschen", role: .destructive) {
+                    viewModel.confirmDelete()
+                }
+                Button("Abbrechen", role: .cancel) { }
+            } message: {
+                Text("Dieser Eintrag wird unwiderruflich gelöscht.")
             }
         }
     }
@@ -82,35 +67,35 @@ struct EditRechnungszeileView: View {
             HStack {
                 Text("Name")
                 Spacer()
-                TextField("Produktname", text: $name)
+                TextField("Produktname", text: $viewModel.name)
                     .textFieldStyle(.roundedBorder)
                     .multilineTextAlignment(.trailing)
             }
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("Produktname")
-            .accessibilityValue(name.isEmpty ? "Nicht angegeben" : name)
+            .accessibilityValue(viewModel.name.isEmpty ? "Nicht angegeben" : viewModel.name)
             
             HStack {
                 Text("Normalisierter Name")
                 Spacer()
-                TextField("Normalisierter Name", text: $normalizedName)
+                TextField("Normalisierter Name", text: $viewModel.normalizedName)
                     .textFieldStyle(.roundedBorder)
                     .multilineTextAlignment(.trailing)
             }
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("Normalisierter Produktname")
-            .accessibilityValue(normalizedName.isEmpty ? "Nicht angegeben" : normalizedName)
+            .accessibilityValue(viewModel.normalizedName.isEmpty ? "Nicht angegeben" : viewModel.normalizedName)
             
             HStack {
                 Text("Kategorie")
                 Spacer()
-                TextField("Kategorie", text: $category)
+                TextField("Kategorie", text: $viewModel.category)
                     .textFieldStyle(.roundedBorder)
                     .multilineTextAlignment(.trailing)
             }
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("Kategorie")
-            .accessibilityValue(category.isEmpty ? "Nicht angegeben" : category)
+            .accessibilityValue(viewModel.category.isEmpty ? "Nicht angegeben" : viewModel.category)
         }
     }
     
@@ -119,19 +104,19 @@ struct EditRechnungszeileView: View {
             HStack {
                 Text("Preis")
                 Spacer()
-                TextField(CurrencyFormatter.format(Decimal(0), currency: currency), text: $priceText)
+                TextField(CurrencyFormatter.format(Decimal(0), currency: viewModel.currency), text: $viewModel.priceText)
                     .textFieldStyle(.roundedBorder)
                     .keyboardType(.decimalPad)
                     .multilineTextAlignment(.trailing)
             }
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("Preis")
-            .accessibilityValue(priceText.isEmpty ? "Nicht angegeben" : priceText + " \(currency)")
+            .accessibilityValue(viewModel.priceText.isEmpty ? "Nicht angegeben" : viewModel.priceText + " \(viewModel.currency)")
             
             HStack {
                 Text("Währung")
                 Spacer()
-                Picker("Währung", selection: $currency) {
+                Picker("Währung", selection: $viewModel.currency) {
                     ForEach(CurrencyFormatter.commonCurrencies, id: \.self) { currencyCode in
                         Text("\(currencyCode) (\(CurrencyFormatter.currencySymbol(for: currencyCode)))")
                             .tag(currencyCode)
@@ -141,19 +126,19 @@ struct EditRechnungszeileView: View {
             }
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("Währung")
-            .accessibilityValue(currency)
+            .accessibilityValue(viewModel.currency)
             
             HStack {
                 Text("Preis pro Einheit")
                 Spacer()
-                TextField(CurrencyFormatter.format(Decimal(0), currency: currency), value: $pricePerUnit, format: .currency(code: currency))
+                TextField(CurrencyFormatter.format(Decimal(0), currency: viewModel.currency), value: $viewModel.pricePerUnit, format: .currency(code: viewModel.currency))
                     .textFieldStyle(.roundedBorder)
                     .keyboardType(.decimalPad)
                     .multilineTextAlignment(.trailing)
             }
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("Preis pro Einheit")
-            .accessibilityValue("\(pricePerUnit.description) \(currency) pro Einheit")
+            .accessibilityValue("\(viewModel.pricePerUnit.description) \(viewModel.currency) pro Einheit")
         }
     }
     
@@ -162,15 +147,15 @@ struct EditRechnungszeileView: View {
             HStack {
                 Text("Geschäft")
                 Spacer()
-                TextField("Geschäft", text: $shop)
+                TextField("Geschäft", text: $viewModel.shop)
                     .textFieldStyle(.roundedBorder)
                     .multilineTextAlignment(.trailing)
             }
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("Geschäft")
-            .accessibilityValue(shop.isEmpty ? "Nicht angegeben" : shop)
+            .accessibilityValue(viewModel.shop.isEmpty ? "Nicht angegeben" : viewModel.shop)
             
-            DatePicker("Datum", selection: $datum, displayedComponents: .date)
+            DatePicker("Datum", selection: $viewModel.datum, displayedComponents: .date)
                 .accessibilityLabel("Kaufdatum")
         }
     }
@@ -193,32 +178,7 @@ struct EditRechnungszeileView: View {
             .listRowBackground(Color.clear)
         }
     }
-    
-    private func saveChanges() {
-        guard let price = CurrencyFormatter.stringToDecimal(priceText) else {
-            alertMessage = "Ungültiger Preis"
-            showingAlert = true
-            return
-        }
-        
-        // Create updated item with preserved ID
-        let updatedItem = Rechnungszeile(
-            Name: name.trimmingCharacters(in: .whitespacesAndNewlines),
-            Price: price,
-            Category: category.trimmingCharacters(in: .whitespacesAndNewlines),
-            Shop: shop.trimmingCharacters(in: .whitespacesAndNewlines),
-            Datum: datum,
-            NormalizedName: normalizedName.trimmingCharacters(in: .whitespacesAndNewlines),
-            PricePerUnit: pricePerUnit,
-            Currency: currency
-        )
-        
-        // Preserve the original ID for proper tracking
-        updatedItem.id = originalItem.id
-        
-        onSave(updatedItem)
-        dismiss()
-    }
+
 }
 
 #Preview {
@@ -232,7 +192,9 @@ struct EditRechnungszeileView: View {
         PricePerUnit: Decimal(0.99)
     )
     
-    return EditRechnungszeileView(item: sampleItem) { _ in
+    return EditRechnungszeileView(item: sampleItem, onSave: { _ in
         print("Saved")
-    }
+    }, onDelete: {
+        print("Deleted")
+    })
 }

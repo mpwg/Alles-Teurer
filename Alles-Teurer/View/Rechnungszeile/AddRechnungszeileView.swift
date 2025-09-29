@@ -102,17 +102,7 @@ struct AddRechnungszeileView: View {
                                 .accessibilityLabel("Einkaufsdatum auswählen")
                         }
 
-                        Section {
-                            Button("Speichern") {
-                                saveItem()
-                            }
-                            .disabled(!viewModel.isFormValid || viewModel.isLoading)
-                            .accessibilityLabel("Eintrag speichern")
-                            .accessibilityHint(
-                                viewModel.isFormValid
-                                    ? "Eintrag wird gespeichert"
-                                    : "Bitte alle Pflichtfelder ausfüllen")
-                        }
+
                     }
                     .disabled(viewModel.isLoading)
                 } else {
@@ -120,27 +110,13 @@ struct AddRechnungszeileView: View {
                 }
             }
             .navigationTitle("Neuer Eintrag")
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Abbrechen") {
-                        dismiss()
-                    }
-                    .accessibilityLabel("Eingabe abbrechen")
-                    .disabled(viewModel?.isLoading ?? true)
-                }
-
-                ToolbarItem(placement: .primaryAction) {
-                    Button("Speichern") {
-                        saveItem()
-                    }
-                    .disabled(!(viewModel?.isFormValid ?? false) || (viewModel?.isLoading ?? true))
-                    .fontWeight(.semibold)
-                    .accessibilityLabel("Eintrag speichern")
-                }
-            }
+            .standardToolbar(viewModel ?? AddItemViewModel(modelContext: modelContext))
             .task {
                 if viewModel == nil {
-                    viewModel = AddItemViewModel(modelContext: modelContext)
+                    let newViewModel = AddItemViewModel(modelContext: modelContext)
+                    newViewModel.onSave = { dismiss() }
+                    newViewModel.onCancel = { dismiss() }
+                    viewModel = newViewModel
                 }
             }
             .alert("Fehler", isPresented: showingAlertBinding) {

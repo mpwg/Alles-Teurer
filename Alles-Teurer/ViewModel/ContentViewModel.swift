@@ -12,7 +12,7 @@ import UniformTypeIdentifiers
 
 @MainActor
 @Observable
-final class ContentViewModel {
+final class ContentViewModel: ListToolbarViewModelProtocol {
     let modelContext: ModelContext
     var selectedProductName: String?
     var items: [Rechnungszeile] = []
@@ -22,6 +22,9 @@ final class ContentViewModel {
     var showingDeleteAllConfirmation = false
     var showingEditSheet = false
     var itemToEdit: Rechnungszeile?
+    var csvData: Data?
+    var showingExportSheet = false
+    
     #if os(iOS)
     var editMode: EditMode = .inactive
     #else
@@ -32,6 +35,50 @@ final class ContentViewModel {
         self.modelContext = modelContext
         // Don't load data here to avoid state modification during view update
         // Data will be loaded via updateItems() called from the view
+    }
+    
+    // MARK: - ListToolbarViewModelProtocol Implementation
+    
+    var hasItems: Bool {
+        !items.isEmpty
+    }
+    
+    func addItem() async {
+        showingAddSheet = true
+    }
+    
+    func scanReceipt() async {
+        showingScanSheet = true
+    }
+    
+    func exportData() async {
+        csvData = await exportCSV()
+        if csvData != nil {
+            showingExportSheet = true
+        }
+    }
+    
+    func deleteAllItems() async {
+        showingDeleteAllConfirmation = true
+    }
+    
+    func handleToolbarAction(_ action: ToolbarAction) async {
+        switch action {
+        case .testData:
+            #if DEBUG
+            await generateTestData()
+            #endif
+        case .add:
+            await addItem()
+        case .scan:
+            await scanReceipt()
+        case .export:
+            await exportData()
+        case .deleteAll:
+            await deleteAllItems()
+        default:
+            break
+        }
     }
     
     func updateItems(_ newItems: [Rechnungszeile]) {
@@ -63,27 +110,7 @@ final class ContentViewModel {
 
 
 
-    func addItem() async {
-        // This method is now a placeholder for quick-add (could be expanded)
-        let newItem = Rechnungszeile(
-            Name: "Name",
-            Price: 1.23,
-            Category: "Category",
-            Shop: "Shop",
-            Datum: Date.now,
-            NormalizedName: "Name",
-            PricePerUnit: 2.34
-        )
-        modelContext.insert(newItem)
-        do {
-            try modelContext.save()
-            // Items will be automatically updated via @Query in ContentView
-        } catch {
-            errorMessage = "Failed to save item: \(error.localizedDescription)"
-            print("Failed to save item: \(error)")
-        }
-        showingAddSheet = false
-    }
+
 
     func deleteItems(_ items: [Rechnungszeile]) async {
         for item in items {
@@ -99,7 +126,7 @@ final class ContentViewModel {
         editMode = .inactive
     }
 
-    func deleteAllItems() async {
+    func confirmDeleteAll() async {
         errorMessage = nil
 
         do {
@@ -117,6 +144,8 @@ final class ContentViewModel {
             errorMessage = "Failed to delete all items: \(error.localizedDescription)"
             print("Failed to delete all items: \(error)")
         }
+        
+        showingDeleteAllConfirmation = false
     }
     
     func updateItem(_ updatedItem: Rechnungszeile) async {

@@ -11,7 +11,7 @@ import SwiftUI
 
 @MainActor
 @Observable
-final class AddItemViewModel {
+final class AddItemViewModel: FormToolbarViewModelProtocol {
     private let modelContext: ModelContext
 
     // Form fields
@@ -26,6 +26,10 @@ final class AddItemViewModel {
     var isLoading = false
     var errorMessage: String?
     var showingAlert = false
+    
+    // Callback for form completion
+    var onSave: (() -> Void)?
+    var onCancel: (() -> Void)?
 
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
@@ -42,6 +46,20 @@ final class AddItemViewModel {
         errorMessage ?? "Unknown error"
     }
 
+    // MARK: - FormToolbarViewModelProtocol Implementation
+    
+    func save() async -> Bool {
+        let success = await saveItem()
+        if success {
+            onSave?()
+        }
+        return success
+    }
+    
+    func cancel() {
+        onCancel?()
+    }
+    
     func saveItem() async -> Bool {
         guard isFormValid else {
             errorMessage =

@@ -18,7 +18,7 @@ struct ChartDataPoint: Identifiable {
 
 @MainActor
 @Observable
-final class ProductDetailViewModel {
+final class ProductDetailViewModel: ToolbarViewModelProtocol {
     private let modelContext: ModelContext
     private let _items: [Rechnungszeile]
 
@@ -37,6 +37,18 @@ final class ProductDetailViewModel {
         self.productName = productName
         self._items = items
         self.modelContext = modelContext
+    }
+    
+    // MARK: - ToolbarViewModelProtocol Implementation
+    
+    var toolbarConfiguration: ToolbarConfiguration {
+        // ProductDetailView uses a specialized sort toolbar, so return empty config
+        // The actual toolbar is implemented using SortToolbar component
+        ToolbarConfiguration(actions: [])
+    }
+    
+    func handleToolbarAction(_ action: ToolbarAction) async {
+        // Handle any future actions here
     }
 
     var sortedItems: [Rechnungszeile] {
