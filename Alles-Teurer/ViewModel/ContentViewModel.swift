@@ -24,6 +24,8 @@ final class ContentViewModel {
 
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
+        // Don't load data here to avoid state modification during view update
+        // Data will be loaded via updateItems() called from the view
     }
     
     func updateItems(_ newItems: [Rechnungszeile]) {

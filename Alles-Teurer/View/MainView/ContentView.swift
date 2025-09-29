@@ -19,74 +19,25 @@ struct ContentView: View {
     @State private var csvData: Data?
 
     var body: some View {
+        splitView
+            .modifier(ViewModelSetupModifier(viewModel: $viewModel, items: items, modelContext: modelContext))
+            .modifier(AlertsModifier(viewModel: viewModel))
+            .modifier(SheetsModifier(viewModel: viewModel))
+            .modifier(FileExporterModifier(viewModel: viewModel, showingExportSheet: $showingExportSheet, csvData: $csvData))
+            .modifier(ConfirmationDialogModifier(viewModel: viewModel))
+    }
+    
+    // MARK: - Split View
+    private var splitView: some View {
         NavigationSplitView(columnVisibility: .constant(.all)) {
             mainContent
         } detail: {
             detailContent
         }
-        .task {
-            if viewModel == nil {
-                viewModel = ContentViewModel(modelContext: modelContext)
-            }
-        }
-        .onChange(of: items) { _, newItems in
-            viewModel?.updateItems(newItems)
-        }
-        .alert("Fehler", isPresented: errorAlertBinding) {
-            Button("OK") {
-                viewModel?.errorMessage = nil
-            }
-        } message: {
-            Text(viewModel?.errorMessage ?? "Unbekannter Fehler")
-        }
-        .sheet(isPresented: Binding(
-            get: { viewModel?.showingAddSheet ?? false },
-            set: { viewModel?.showingAddSheet = $0 }
-        )) {
-            AddRechnungszeileView()
-        }
-        .fullScreenCover(isPresented: Binding(
-            get: { viewModel?.showingScanSheet ?? false },
-            set: { viewModel?.showingScanSheet = $0 }
-        )) {
-            ScanReceiptView()
-        }
-        .fileExporter(
-            isPresented: $showingExportSheet,
-            document: CSVDocument(data: csvData ?? Data()),
-            contentType: .commaSeparatedText,
-            defaultFilename: viewModel?.generateCSVFilename() ?? "export.csv"
-        ) { result in
-            switch result {
-            case .success(let url):
-                print("CSV exported to: \(url)")
-            case .failure(let error):
-                print("Export failed: \(error)")
-                viewModel?.errorMessage = "Export fehlgeschlagen: \(error.localizedDescription)"
-            }
-        }
-        .confirmationDialog(
-            "Alle Artikel löschen?",
-            isPresented: Binding(
-                get: { viewModel?.showingDeleteAllConfirmation ?? false },
-                set: { viewModel?.showingDeleteAllConfirmation = $0 }
-            ),
-            titleVisibility: .visible
-        ) {
-            Button("Alle löschen", role: .destructive) {
-                Task {
-                    await viewModel?.deleteAllItems()
-                }
-            }
-            Button("Abbrechen", role: .cancel) { }
-        } message: {
-            Text("Diese Aktion kann nicht rückgängig gemacht werden. Alle gespeicherten Artikel werden unwiderruflich gelöscht.")
-        }
-        
     }
     
-        @ViewBuilder
-     var mainContent: some View {
+    @ViewBuilder
+    var mainContent: some View {
         if let viewModel = viewModel {
             let productGroups = createProductGroups(from: viewModel)
             
