@@ -135,7 +135,11 @@ struct ProductDetailView: View {
                                     ForEach(viewModel.sortedItems) { item in
                                         RechnungsZeileView(
                                             item: item,
-                                            priceRange: viewModel.priceRange
+                                            priceRange: viewModel.priceRange,
+                                            onEdit: { editItem in
+                                                viewModel.showingEditSheet = true
+                                                viewModel.itemToEdit = editItem
+                                            }
                                         )
                                         .padding(.horizontal)
                                     }
@@ -195,12 +199,22 @@ struct ProductDetailView: View {
             
             ToolbarItemGroup(placement: .secondaryAction) {
                 if !items.isEmpty {
-                    Button("Bearbeiten", systemImage: "pencil") {
-                        // Handle edit mode toggle - Mac Catalyst compatible
-                        // This is a placeholder for edit functionality
+                    #if os(iOS)
+                    @Environment(\.editMode) var editMode
+                    Button(editMode?.wrappedValue == .active ? "Fertig" : "Bearbeiten", systemImage: "pencil") {
+                        withAnimation {
+                            editMode?.wrappedValue = editMode?.wrappedValue == .active ? .inactive : .active
+                        }
                     }
                     .accessibilityLabel("Einträge bearbeiten")
                     .accessibilityHint("Einträge für dieses Produkt bearbeiten oder löschen")
+                    #else
+                    Button("Bearbeiten", systemImage: "pencil") {
+                        // macOS handling - could show a separate edit mode
+                    }
+                    .accessibilityLabel("Einträge bearbeiten")
+                    .accessibilityHint("Einträge für dieses Produkt bearbeiten oder löschen")
+                    #endif
                 }
             }
         }
@@ -221,6 +235,20 @@ struct ProductDetailView: View {
                 items: items,
                 modelContext: modelContext
             )
+        }
+        .sheet(isPresented: Binding(
+            get: { viewModel?.showingEditSheet ?? false },
+            set: { _ in viewModel?.showingEditSheet = false }
+        )) {
+            if let viewModel = viewModel, let itemToEdit = viewModel.itemToEdit {
+                NavigationStack {
+                    EditRechnungszeileView(item: itemToEdit) { updatedItem in
+                        Task {
+                            await viewModel.updateItem(updatedItem)
+                        }
+                    }
+                }
+            }
         }
         .alert("Fehler", isPresented: .constant(viewModel?.errorMessage != nil)) {
             Button("OK") {

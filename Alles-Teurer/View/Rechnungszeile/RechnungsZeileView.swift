@@ -11,6 +11,13 @@ import SwiftUI
 struct RechnungsZeileView: View {
     let item: Rechnungszeile
     let priceRange: (min: Decimal, max: Decimal)?
+    let onEdit: ((Rechnungszeile) -> Void)?
+
+    init(item: Rechnungszeile, priceRange: (min: Decimal, max: Decimal)?, onEdit: ((Rechnungszeile) -> Void)? = nil) {
+        self.item = item
+        self.priceRange = priceRange
+        self.onEdit = onEdit
+    }
 
     private var priceHighlight: PriceHighlight {
         guard let range = priceRange, range.min != range.max else { return .none }
@@ -46,10 +53,24 @@ struct RechnungsZeileView: View {
 
                 Spacer()
 
-                Image(systemName: "calendar")
-                Text(item.Datum.formatted(date: .abbreviated, time: .omitted))
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                HStack(spacing: 8) {
+                    Image(systemName: "calendar")
+                    Text(item.Datum.formatted(date: .abbreviated, time: .omitted))
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                    
+                    // Edit button inside the row
+                    if let onEdit = onEdit {
+                        Button {
+                            onEdit(item)
+                        } label: {
+                            Image(systemName: "pencil")
+                                .font(.title3)
+                                .foregroundStyle(.orange)
+                        }
+                        .accessibilityLabel("Bearbeiten")
+                    }
+                }
             }
 
             HStack {

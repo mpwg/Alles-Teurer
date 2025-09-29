@@ -20,7 +20,13 @@ final class ContentViewModel {
     var showingAddSheet = false
     var showingScanSheet = false
     var showingDeleteAllConfirmation = false
+    var showingEditSheet = false
+    var itemToEdit: Rechnungszeile?
+    #if os(iOS)
     var editMode: EditMode = .inactive
+    #else
+    var isEditing: Bool = false
+    #endif
 
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
@@ -110,6 +116,20 @@ final class ContentViewModel {
         } catch {
             errorMessage = "Failed to delete all items: \(error.localizedDescription)"
             print("Failed to delete all items: \(error)")
+        }
+    }
+    
+    func updateItem(_ updatedItem: Rechnungszeile) async {
+        errorMessage = nil
+
+        do {
+            // The item is already updated in-place via SwiftData
+            try modelContext.save()
+            showingEditSheet = false
+            itemToEdit = nil
+        } catch {
+            errorMessage = "Failed to update item: \(error.localizedDescription)"
+            print("Failed to update item: \(error)")
         }
     }
 

@@ -25,6 +25,20 @@ struct ContentView: View {
             .modifier(SheetsModifier(viewModel: viewModel))
             .modifier(FileExporterModifier(viewModel: viewModel, showingExportSheet: $showingExportSheet, csvData: $csvData))
             .modifier(ConfirmationDialogModifier(viewModel: viewModel))
+            .sheet(isPresented: Binding(
+                get: { viewModel?.showingEditSheet ?? false },
+                set: { _ in viewModel?.showingEditSheet = false }
+            )) {
+                if let viewModel = viewModel, let itemToEdit = viewModel.itemToEdit {
+                    NavigationStack {
+                        EditRechnungszeileView(item: itemToEdit) { updatedItem in
+                            Task {
+                                await viewModel.updateItem(updatedItem)
+                            }
+                        }
+                    }
+                }
+            }
     }
     
     // MARK: - Split View
@@ -119,22 +133,52 @@ struct ContentView: View {
                 }
             } else {
                 ZStack {
-                    RechnungsZeilenListView(
-                        productGroups: productGroups,
-                        selection: $selectedProduct,
-                        onProductDelete: { productNames in
-                            Task {
-                                let itemsToDelete = productNames.flatMap { viewModel.productGroups[$0] ?? [] }
-                                await viewModel.deleteItems(itemsToDelete)
-                                selectedProduct = nil
-                            }
+                    #if os(iOS)
+                    let isEditingMode = viewModel.editMode == .active
+                    #else
+                    let isEditingMode = viewModel.isEditing
+                    #endif
+                    
+                    if isEditingMode {
+                        // Show individual items for editing
+                        let individualItems = viewModel.items.map { item in
+                            ListItem(
+                                rechnungszeile: item,
+                                isHighestPrice: viewModel.priceAnalysis.highest?.id == item.id,
+                                isLowestPrice: viewModel.priceAnalysis.lowest?.id == item.id,
+                                isSelected: false
+                            )
                         }
-                    )
-                    .environment(\.editMode, Binding(
-                        get: { viewModel.editMode },
-                        set: { viewModel.editMode = $0 }
-                    ))
+                        
+                        RechnungsZeilenListView(
+                            individualItems: individualItems,
+                            onItemToggleSelection: { _ in },
+                            onItemEdit: { item in
+                                viewModel.itemToEdit = item
+                                viewModel.showingEditSheet = true
+                            }
+                        )
+                    } else {
+                        // Show product groups for navigation
+                        RechnungsZeilenListView(
+                            productGroups: productGroups,
+                            selection: $selectedProduct,
+                            onProductDelete: { productNames in
+                                Task {
+                                    let itemsToDelete = productNames.flatMap { viewModel.productGroups[$0] ?? [] }
+                                    await viewModel.deleteItems(itemsToDelete)
+                                    selectedProduct = nil
+                                }
+                            }
+                        )
+                    }
                 }
+                #if os(iOS)
+                .environment(\.editMode, Binding(
+                    get: { viewModel.editMode },
+                    set: { viewModel.editMode = $0 }
+                ))
+                #endif
                 .toolbar {
                     ToolbarItemGroup(placement: .primaryAction) {
                         Button("CSV Export", systemImage: "square.and.arrow.up") {
@@ -164,6 +208,16 @@ struct ContentView: View {
                     }
                     
                     ToolbarItemGroup(placement: .secondaryAction) {
+                        #if os(iOS)
+                        Button(viewModel.editMode == .active ? "Fertig" : "Bearbeiten") {
+                            toggleEditMode()
+                        }
+                        #else
+                        Button(viewModel.isEditing ? "Fertig" : "Bearbeiten") {
+                            toggleEditMode()
+                        }
+                        #endif
+                        
                         Button("Alle löschen", systemImage: "trash.fill") {
                             viewModel.showingDeleteAllConfirmation = true
                         }
@@ -227,7 +281,11 @@ struct ContentView: View {
     
     private func toggleEditMode() {
         withAnimation {
+            #if os(iOS)
             viewModel?.editMode = viewModel?.editMode == .active ? .inactive : .active
+            #else
+            viewModel?.isEditing.toggle()
+            #endif
         }
     }
     

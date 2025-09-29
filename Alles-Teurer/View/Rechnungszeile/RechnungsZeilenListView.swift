@@ -115,16 +115,12 @@ struct RechnungsZeilenListView: View {
                 selectionButton(for: listItem)
             }
             
-            // Main item view
+            // Main item view with integrated edit button
             RechnungsZeileView(
                 item: listItem.rechnungszeile,
-                priceRange: priceRangeForItems
+                priceRange: priceRangeForItems,
+                onEdit: configuration.allowsEditing ? onItemEdit : nil
             )
-            
-            // Edit button
-            if configuration.allowsEditing {
-                editButton(for: listItem)
-            }
         }
         .padding(12)
         .background(Color(.systemBackground))
@@ -156,17 +152,7 @@ struct RechnungsZeilenListView: View {
         .accessibilityLabel(listItem.isSelected ? "Abwählen" : "Auswählen")
     }
     
-    @ViewBuilder
-    private func editButton(for listItem: ListItem) -> some View {
-        Button {
-            onItemEdit?(listItem.rechnungszeile)
-        } label: {
-            Image(systemName: "pencil")
-                .font(.title2)
-                .foregroundStyle(.orange)
-        }
-        .accessibilityLabel("Bearbeiten")
-    }
+
     
     // MARK: - Helper Properties
     

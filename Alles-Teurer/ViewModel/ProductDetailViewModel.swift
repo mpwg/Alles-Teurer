@@ -27,6 +27,8 @@ final class ProductDetailViewModel {
     var sortOrder: SortOrder = .reverse
     var isLoading = false
     var errorMessage: String?
+    var showingEditSheet = false
+    var itemToEdit: Rechnungszeile?
 
     // Computed properties
     let productName: String
@@ -131,5 +133,19 @@ final class ProductDetailViewModel {
     func updateItems(_ newItems: [Rechnungszeile]) {
         // Note: _items is immutable (let), so we need to recreate the ViewModel
         // This method should be called from the parent view to replace this ViewModel instance
+    }
+    
+    func updateItem(_ updatedItem: Rechnungszeile) async {
+        isLoading = true
+        defer { isLoading = false }
+
+        do {
+            // The item is already updated in-place via SwiftData
+            try modelContext.save()
+            showingEditSheet = false
+            itemToEdit = nil
+        } catch {
+            errorMessage = "Failed to update item: \(error.localizedDescription)"
+        }
     }
 }
