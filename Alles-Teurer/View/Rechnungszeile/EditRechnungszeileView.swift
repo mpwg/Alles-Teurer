@@ -55,6 +55,8 @@ struct EditRechnungszeileView: View {
                     Button("Abbrechen") {
                         dismiss()
                     }
+                    .frame(minWidth: 80)
+                    .font(.system(size: 17))
                     .accessibilityLabel("Bearbeitung abbrechen")
                 }
                 
