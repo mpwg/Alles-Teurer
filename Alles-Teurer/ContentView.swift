@@ -16,6 +16,7 @@ struct ContentView: View {
     @State private var selectedProduct: Product?
     @State private var showingAddPurchaseSheet = false
     @State private var showingSettings = false
+    @State private var columnVisibility = NavigationSplitViewVisibility.all
 
     var filteredProducts: [Product] {
         if searchText.isEmpty {
@@ -47,24 +48,111 @@ struct ContentView: View {
                 .border(Color.orange.opacity(0.3), width: 1)
             }
             
-            NavigationSplitView {
-            List(filteredProducts, selection: $selectedProduct) { product in
-                ProductRowView(product: product)
-                    .tag(product)
-                    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
-                        Button("Löschen", role: .destructive) {
-                            deleteProduct(product)
+            NavigationSplitView(columnVisibility: $columnVisibility) {
+            if filteredProducts.isEmpty {
+                ContentUnavailableView {
+                    if products.isEmpty {
+                        Label("Keine Produkte", systemImage: "cart")
+                    } else {
+                        Label("Keine Suchergebnisse", systemImage: "magnifyingglass")
+                    }
+                } description: {
+                    if products.isEmpty {
+                        Text("Fügen Sie Ihren ersten Einkauf hinzu oder laden Sie Beispieldaten in den Einstellungen.")
+                    } else {
+                        Text("Versuchen Sie es mit einem anderen Suchbegriff.")
+                    }
+                } actions: {
+                    if products.isEmpty {
+                        VStack(spacing: 12) {
+                            Button {
+                                showingAddPurchaseSheet = true
+                            } label: {
+                                Label("Ersten Einkauf hinzufügen", systemImage: "plus")
+                            }
+                            .buttonStyle(.borderedProminent)
+                            
+                            Button {
+                                showingSettings = true
+                            } label: {
+                                Label("Zu den Einstellungen", systemImage: "gearshape")
+                            }
+                            .buttonStyle(.bordered)
                         }
                     }
-                    .contextMenu {
-                        Button("Löschen", role: .destructive) {
-                            deleteProduct(product)
+                }
+                .navigationTitle("Alles Teurer 🛒")
+                .searchable(text: $searchText, prompt: "Produkt suchen...")
+                .toolbar {
+                    #if os(iOS)
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        HStack {
+                            Button {
+                                showingSettings = true
+                            } label: {
+                                Label("Einstellungen", systemImage: "gearshape")
+                            }
+                            
+                            Button {
+                                withAnimation {
+                                    columnVisibility = columnVisibility == .all ? .doubleColumn : .all
+                                }
+                            } label: {
+                                Label("Seitenleiste", systemImage: columnVisibility == .all ? "sidebar.right" : "sidebar.left")
+                            }
                         }
                     }
-            }
-            .navigationTitle("Alles Teurer 🛒")
-            .searchable(text: $searchText, prompt: "Produkt suchen...")
-            .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button {
+                            showingAddPurchaseSheet = true
+                        } label: {
+                            Label("Einkauf hinzufügen", systemImage: "plus")
+                        }
+                    }
+                    #else
+                    ToolbarItem(placement: .automatic) {
+                        Button {
+                            showingAddPurchaseSheet = true
+                        } label: {
+                            Label("Einkauf hinzufügen", systemImage: "plus")
+                        }
+                    }
+                    ToolbarItem(placement: .automatic) {
+                        Button {
+                            withAnimation {
+                                columnVisibility = columnVisibility == .all ? .doubleColumn : .all
+                            }
+                        } label: {
+                            Label("Seitenleiste", systemImage: columnVisibility == .all ? "sidebar.right" : "sidebar.left")
+                        }
+                    }
+                    ToolbarItem(placement: .automatic) {
+                        Button {
+                            showingSettings = true
+                        } label: {
+                            Label("Einstellungen", systemImage: "gearshape")
+                        }
+                    }
+                    #endif
+                }
+            } else {
+                List(filteredProducts, selection: $selectedProduct) { product in
+                    ProductRowView(product: product)
+                        .tag(product)
+                        .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                            Button("Löschen", role: .destructive) {
+                                deleteProduct(product)
+                            }
+                        }
+                        .contextMenu {
+                            Button("Löschen", role: .destructive) {
+                                deleteProduct(product)
+                            }
+                        }
+                }
+                .navigationTitle("Alles Teurer 🛒")
+                .searchable(text: $searchText, prompt: "Produkt suchen...")
+                .toolbar {
                 #if os(iOS)
                 ToolbarItem(placement: .navigationBarTrailing) {
                     HStack {
@@ -73,6 +161,15 @@ struct ContentView: View {
                         } label: {
                             Label("Einstellungen", systemImage: "gearshape")
                         }
+                        
+                        Button {
+                            withAnimation {
+                                columnVisibility = columnVisibility == .all ? .doubleColumn : .all
+                            }
+                        } label: {
+                            Label("Seitenleiste", systemImage: columnVisibility == .all ? "sidebar.right" : "sidebar.left")
+                        }
+                        
                         EditButton()
                     }
                 }
@@ -93,26 +190,41 @@ struct ContentView: View {
                 }
                 ToolbarItem(placement: .automatic) {
                     Button {
+                        withAnimation {
+                            columnVisibility = columnVisibility == .all ? .doubleColumn : .all
+                        }
+                    } label: {
+                        Label("Seitenleiste", systemImage: columnVisibility == .all ? "sidebar.right" : "sidebar.left")
+                    }
+                }
+                ToolbarItem(placement: .automatic) {
+                    Button {
                         showingSettings = true
                     } label: {
                         Label("Einstellungen", systemImage: "gearshape")
                     }
                 }
                 #endif
-            }
-            .onAppear {
-                if products.isEmpty {
-                    addSampleData()
                 }
             }
-        } detail: {
+        } content: {
             if let selectedProduct = selectedProduct {
                 ProductDetailView(product: selectedProduct)
             } else {
                 ContentUnavailableView {
                     Label("Produkt auswählen", systemImage: "cart")
                 } description: {
-                    Text("Wählen Sie ein Produkt aus der Liste aus, um Details und Einkaufshistorie anzuzeigen.")
+                    Text("Wählen Sie ein Produkt aus der Liste aus, um Details anzuzeigen.")
+                }
+            }
+        } detail: {
+            if let selectedProduct = selectedProduct {
+                PurchaseListView(product: selectedProduct)
+            } else {
+                ContentUnavailableView {
+                    Label("Einkaufshistorie", systemImage: "clock")
+                } description: {
+                    Text("Wählen Sie ein Produkt aus, um die Einkaufshistorie anzuzeigen.")
                 }
             }
         }
@@ -123,12 +235,6 @@ struct ContentView: View {
             SettingsView()
                 .environment(familySharingSettings)
         }
-        }
-    }
-
-    private func addSampleData() {
-        withAnimation {
-            TestData.createSampleData(in: modelContext)
         }
     }
 

@@ -97,22 +97,42 @@ struct SettingsView: View {
             Section {
                 #if os(macOS)
                 VStack(alignment: .leading, spacing: 8) {
+                    if products.isEmpty {
+                        Button("Beispieldaten hinzufügen") {
+                            addSampleData()
+                        }
+                        .buttonStyle(.bordered)
+                        .controlSize(.large)
+                    }
+                    
                     Button("Alle Daten löschen", role: .destructive) {
                         showingDeleteAllConfirmation = true
                     }
                     .buttonStyle(.borderedProminent)
                     .controlSize(.large)
+                    .disabled(products.isEmpty && purchases.isEmpty)
                 }
                 .padding(.vertical, 8)
                 #else
+                if products.isEmpty {
+                    Button("Beispieldaten hinzufügen") {
+                        addSampleData()
+                    }
+                }
+                
                 Button("Alle Daten löschen", role: .destructive) {
                     showingDeleteAllConfirmation = true
                 }
+                .disabled(products.isEmpty && purchases.isEmpty)
                 #endif
             } header: {
                 Text("Datenmanagement")
             } footer: {
-                Text("Diese Aktion löscht alle Produkte und Einkäufe unwiderruflich.")
+                if products.isEmpty {
+                    Text("Fügen Sie Beispieldaten hinzu, um die App auszuprobieren, oder löschen Sie alle vorhandenen Daten.")
+                } else {
+                    Text("Diese Aktion löscht alle Produkte und Einkäufe unwiderruflich.")
+                }
             }
             
             Section {
@@ -253,6 +273,12 @@ struct SettingsView: View {
         .task {
             // Check CloudKit availability when view appears
             cloudKitAvailable = await familySharingSettings.checkCloudKitAvailability()
+        }
+    }
+    
+    private func addSampleData() {
+        withAnimation {
+            TestData.createSampleData(in: modelContext)
         }
     }
     

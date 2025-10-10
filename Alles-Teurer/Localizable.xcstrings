@@ -34,6 +34,9 @@
     "bei %@" : {
 
     },
+    "Beispieldaten hinzufügen" : {
+
+    },
     "Bester Preis" : {
 
     },
@@ -95,10 +98,19 @@
     "Einstellungen" : {
 
     },
+    "Ersten Einkauf hinzufügen" : {
+
+    },
     "Familien-Synchronisation" : {
 
     },
     "Fertig" : {
+
+    },
+    "Fügen Sie Beispieldaten hinzu, um die App auszuprobieren, oder löschen Sie alle vorhandenen Daten." : {
+
+    },
+    "Fügen Sie Ihren ersten Einkauf hinzu oder laden Sie Beispieldaten in den Einstellungen." : {
 
     },
     "Für dieses Produkt sind noch keine Einkäufe gespeichert." : {
@@ -126,6 +138,12 @@
 
     },
     "Keine Einkäufe" : {
+
+    },
+    "Keine Produkte" : {
+
+    },
+    "Keine Suchergebnisse" : {
 
     },
     "kg" : {
@@ -221,6 +239,9 @@
     "Unterschied" : {
 
     },
+    "Versuchen Sie es mit einem anderen Suchbegriff." : {
+
+    },
     "Vorschläge aus der Datenbank:" : {
 
     },
@@ -231,6 +252,9 @@
 
     },
     "Wie das Produkt im Geschäft heißt" : {
+
+    },
+    "Zu den Einstellungen" : {
 
     }
   },
