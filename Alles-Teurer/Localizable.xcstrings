@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
+    "%@%%" : {
+
+    },
     "%lld" : {
 
     },
@@ -29,6 +32,12 @@
 
     },
     "Alles Teurer 🛒" : {
+
+    },
+    "Anzahl" : {
+
+    },
+    "Ausgaben" : {
 
     },
     "bei %@" : {
@@ -83,6 +92,12 @@
     "Diese Aktion löscht alle Produkte und Einkäufe unwiderruflich." : {
 
     },
+    "Durchschnitt" : {
+
+    },
+    "Durchschnittspreis" : {
+
+    },
     "Einheit" : {
 
     },
@@ -92,7 +107,7 @@
     "Einkäufe" : {
 
     },
-    "Einkaufshistorie & Preise" : {
+    "Einkaufshistorie" : {
 
     },
     "Einstellungen" : {
@@ -155,19 +170,25 @@
     "Lade Daten..." : {
 
     },
-    "Letzte Aktualisierung: %@" : {
-
-    },
     "Löschen" : {
 
     },
     "m" : {
 
     },
+    "Max" : {
+
+    },
     "Menge" : {
 
     },
+    "Min" : {
+
+    },
     "ml" : {
+
+    },
+    "Monat" : {
 
     },
     "Neustart erforderlich" : {
@@ -176,10 +197,16 @@
     "OK" : {
 
     },
+    "Preis" : {
+
+    },
     "Preis pro %@" : {
 
     },
     "Preis/Einheit" : {
+
+    },
+    "Preisbereich" : {
 
     },
     "Produkt" : {
@@ -209,6 +236,12 @@
     "Schließen" : {
 
     },
+    "Seitenleiste" : {
+
+    },
+    "Shop" : {
+
+    },
     "Sortieren:" : {
 
     },
@@ -236,16 +269,16 @@
     "Teuerster Preis:" : {
 
     },
-    "Unterschied" : {
-
-    },
     "Versuchen Sie es mit einem anderen Suchbegriff." : {
 
     },
     "Vorschläge aus der Datenbank:" : {
 
     },
-    "Wählen Sie ein Produkt aus der Liste aus, um Details und Einkaufshistorie anzuzeigen." : {
+    "Wählen Sie ein Produkt aus der Liste aus, um Details anzuzeigen." : {
+
+    },
+    "Wählen Sie ein Produkt aus, um die Einkaufshistorie anzuzeigen." : {
 
     },
     "Wenn aktiviert, werden Ihre Einkaufsdaten über iCloud mit Familienmitgliedern geteilt. Stellen Sie sicher, dass alle Familienmitglieder bei iCloud angemeldet sind." : {

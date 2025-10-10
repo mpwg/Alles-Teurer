@@ -228,6 +228,9 @@ struct ContentView: View {
                 }
             }
         }
+        .navigationSplitViewColumnWidth(min: 250, ideal: 300, max: 400)
+        .navigationSplitViewColumnWidth(min: 450, ideal: 550, max: 700)
+        .navigationSplitViewColumnWidth(min: 350, ideal: 450, max: 600)
         .sheet(isPresented: $showingAddPurchaseSheet) {
             AddPurchaseSheet()
         }
