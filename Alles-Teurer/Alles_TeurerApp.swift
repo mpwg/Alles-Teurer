@@ -10,23 +10,53 @@ import SwiftData
 
 @main
 struct Alles_TeurerApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
+    @State private var familySharingSettings = FamilySharingSettings.shared
+    @State private var modelContainer: ModelContainer?
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if let container = modelContainer {
+                ContentView()
+                    .environment(familySharingSettings)
+                    .modelContainer(container)
+            } else {
+                ProgressView("Lade Daten...")
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .task {
+                        await createModelContainer()
+                    }
+            }
         }
-        .modelContainer(sharedModelContainer)
+    }
+    
+    @MainActor
+    private func createModelContainer() async {
+        let schema = Schema([
+            Product.self,
+            Purchase.self,
+        ])
+        
+        // Use family sharing settings to determine configuration
+        let modelConfiguration = familySharingSettings.getModelConfiguration()
+        
+        do {
+            modelContainer = try ModelContainer(for: schema, configurations: [modelConfiguration])
+            // Clear restart required flag if container was created successfully
+            familySharingSettings.restartRequired = false
+        } catch {
+            print("Could not create ModelContainer: \(error)")
+            // Fallback to local storage if CloudKit fails
+            let fallbackConfig = ModelConfiguration(
+                schema: schema,
+                isStoredInMemoryOnly: false
+            )
+            do {
+                modelContainer = try ModelContainer(for: schema, configurations: [fallbackConfig])
+                // Disable family sharing if CloudKit setup failed
+                familySharingSettings.isFamilySharingEnabled = false
+            } catch {
+                fatalError("Could not create fallback ModelContainer: \(error)")
+            }
+        }
     }
 }
