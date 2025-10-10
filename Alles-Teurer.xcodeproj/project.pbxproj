@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,8 @@
 /* Begin PBXFrameworksBuildPhase section */
 		402A9C3B2E991EC8002EC888 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -71,14 +69,10 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			fileSystemSynchronizedGroups = (
 				402A9C402E991EC8002EC888 /* Alles-Teurer */,
 			);
 			name = "Alles-Teurer";
-			packageProductDependencies = (
-			);
 			productName = "Alles-Teurer";
 			productReference = 402A9C3E2E991EC8002EC888 /* Alles-Teurer.app */;
 			productType = "com.apple.product-type.application";
@@ -108,7 +102,7 @@
 			);
 			mainGroup = 402A9C352E991EC8002EC888;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = 402A9C3F2E991EC8002EC888 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -121,36 +115,43 @@
 /* Begin PBXResourcesBuildPhase section */
 		402A9C3C2E991EC8002EC888 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		402A9C3A2E991EC8002EC888 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		402A9C4D2E991EC9002EC888 /* Debug */ = {
+		402A9C4D2E991EC9002EC888 /* Debug configuration for PBXNativeTarget "Alles-Teurer" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Alles-Teurer/Alles-Teurer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PZV43D6HWT;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Alles-Teurer/Info.plist";
@@ -186,18 +187,29 @@
 			};
 			name = Debug;
 		};
-		402A9C4E2E991EC9002EC888 /* Release */ = {
+		402A9C4E2E991EC9002EC888 /* Release configuration for PBXNativeTarget "Alles-Teurer" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Alles-Teurer/Alles-Teurer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PZV43D6HWT;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Alles-Teurer/Info.plist";
@@ -232,7 +244,7 @@
 			};
 			name = Release;
 		};
-		402A9C4F2E991EC9002EC888 /* Debug */ = {
+		402A9C4F2E991EC9002EC888 /* Debug configuration for PBXProject "Alles-Teurer" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -294,7 +306,7 @@
 			};
 			name = Debug;
 		};
-		402A9C502E991EC9002EC888 /* Release */ = {
+		402A9C502E991EC9002EC888 /* Release configuration for PBXProject "Alles-Teurer" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -354,19 +366,17 @@
 		402A9C392E991EC8002EC888 /* Build configuration list for PBXProject "Alles-Teurer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				402A9C4F2E991EC9002EC888 /* Debug */,
-				402A9C502E991EC9002EC888 /* Release */,
+				402A9C4F2E991EC9002EC888 /* Debug configuration for PBXProject "Alles-Teurer" */,
+				402A9C502E991EC9002EC888 /* Release configuration for PBXProject "Alles-Teurer" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		402A9C4C2E991EC9002EC888 /* Build configuration list for PBXNativeTarget "Alles-Teurer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				402A9C4D2E991EC9002EC888 /* Debug */,
-				402A9C4E2E991EC9002EC888 /* Release */,
+				402A9C4D2E991EC9002EC888 /* Debug configuration for PBXNativeTarget "Alles-Teurer" */,
+				402A9C4E2E991EC9002EC888 /* Release configuration for PBXNativeTarget "Alles-Teurer" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
