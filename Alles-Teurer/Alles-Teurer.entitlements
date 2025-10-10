@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<dict>
-		<key>aps-environment</key>
-		<string>development</string>
-		<key>com.apple.application-identifier</key>
-		<string>PZV43D6HWT.eu.mpwg.Alles-Teurer</string>
-		<key>com.apple.developer.icloud-container-identifiers</key>
-		<array>
-			<string>iCloud.eu.mpwg.alles-teurer</string>
-		</array>
-		<key>com.apple.developer.icloud-services</key>
-		<array>
-			<string>CloudKit</string>
-		</array>
-		<key>com.apple.developer.team-identifier</key>
-		<string>PZV43D6HWT</string>
-	</dict>
+<dict>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.icloud-container-identifiers</key>
+	<array>
+		<string>iCloud.eu.mpwg.alles-teurer</string>
+	</array>
+	<key>com.apple.developer.icloud-services</key>
+	<array>
+		<string>CloudKit</string>
+	</array>
+</dict>
 </plist>
