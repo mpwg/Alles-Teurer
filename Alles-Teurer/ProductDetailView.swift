@@ -77,6 +77,23 @@ struct ProductDetailView: View {
         #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
         #endif
+        .toolbar {
+            #if os(iOS)
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink(destination: PurchaseListView(product: product)) {
+                    Image(systemName: "list.bullet")
+                        .accessibilityLabel("Einkaufsliste anzeigen")
+                }
+            }
+            #else
+            ToolbarItem(placement: .primaryAction) {
+                NavigationLink(destination: PurchaseListView(product: product)) {
+                    Image(systemName: "list.bullet")
+                        .accessibilityLabel("Einkaufsliste anzeigen")
+                }
+            }
+            #endif
+        }
     }
     
     private var headerSection: some View {
@@ -181,7 +198,11 @@ struct ProductDetailView: View {
                 }
             }
             .padding()
+            #if os(iOS)
+            .background(Color(.systemGray6))
+            #else
             .background(Color(NSColor.controlBackgroundColor))
+            #endif
             .cornerRadius(12)
         }
     }
@@ -221,7 +242,11 @@ struct ProductDetailView: View {
             }
         }
         .padding()
+        #if os(iOS)
+        .background(Color(.systemGray6))
+        #else
         .background(Color(NSColor.controlBackgroundColor))
+        #endif
         .cornerRadius(8)
     }
     
@@ -258,7 +283,11 @@ struct ProductDetailView: View {
                 }
             }
             .padding()
+            #if os(iOS)
+            .background(Color(.systemGray6))
+            #else
             .background(Color(NSColor.controlBackgroundColor))
+            #endif
             .cornerRadius(12)
         }
     }
@@ -284,7 +313,11 @@ struct ProductDetailView: View {
                 }
             }
             .padding()
+            #if os(iOS)
+            .background(Color(.systemGray6))
+            #else
             .background(Color(NSColor.controlBackgroundColor))
+            #endif
             .cornerRadius(12)
         }
     }
@@ -322,7 +355,11 @@ struct ProductDetailView: View {
                 }
             }
             .padding()
+            #if os(iOS)
+            .background(Color(.systemGray6))
+            #else
             .background(Color(NSColor.controlBackgroundColor))
+            #endif
             .cornerRadius(12)
         }
     }
