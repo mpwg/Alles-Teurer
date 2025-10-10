@@ -22,18 +22,45 @@ struct SettingsView: View {
     @State private var cloudKitAvailable = false
     
     var body: some View {
-        #if os(iOS)
-        NavigationView {
+        NavigationStack {
             settingsContent
         }
-        #else
-        settingsContent
+        #if os(macOS)
+        .frame(minWidth: 500, minHeight: 600)
         #endif
     }
     
     private var settingsContent: some View {
         Form {
             Section {
+                #if os(macOS)
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("Familien-Synchronisation")
+                                .font(.headline)
+                            Text("Daten mit der Familie über iCloud teilen")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
+                        Spacer()
+                        Toggle("Familien-Synchronisation", isOn: Binding(
+                            get: { familySharingSettings.isFamilySharingEnabled },
+                            set: { newValue in
+                                if newValue && !cloudKitAvailable {
+                                    showingFamilySharingAlert = true
+                                } else {
+                                    pendingFamilySharingValue = newValue
+                                    showingFamilySharingAlert = true
+                                }
+                            }
+                        ))
+                        .labelsHidden()
+                        .disabled(!cloudKitAvailable && !familySharingSettings.isFamilySharingEnabled)
+                    }
+                }
+                .padding(.vertical, 8)
+                #else
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Familien-Synchronisation")
@@ -56,6 +83,7 @@ struct SettingsView: View {
                     ))
                     .disabled(!cloudKitAvailable && !familySharingSettings.isFamilySharingEnabled)
                 }
+                #endif
             } header: {
                 Text("Synchronisation")
             } footer: {
@@ -67,9 +95,20 @@ struct SettingsView: View {
             }
             
             Section {
+                #if os(macOS)
+                VStack(alignment: .leading, spacing: 8) {
+                    Button("Alle Daten löschen", role: .destructive) {
+                        showingDeleteAllConfirmation = true
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .controlSize(.large)
+                }
+                .padding(.vertical, 8)
+                #else
                 Button("Alle Daten löschen", role: .destructive) {
                     showingDeleteAllConfirmation = true
                 }
+                #endif
             } header: {
                 Text("Datenmanagement")
             } footer: {
@@ -77,6 +116,43 @@ struct SettingsView: View {
             }
             
             Section {
+                #if os(macOS)
+                VStack(spacing: 12) {
+                    HStack {
+                        Text("Produkte")
+                            .font(.headline)
+                        Spacer()
+                        Text("\(products.count)")
+                            .foregroundColor(.secondary)
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                    }
+                    
+                    HStack {
+                        Text("Einkäufe")
+                            .font(.headline)
+                        Spacer()
+                        Text("\(purchases.count)")
+                            .foregroundColor(.secondary)
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                    }
+                    
+                    HStack {
+                        Text("Build-Typ")
+                            .font(.headline)
+                        Spacer()
+                        Text(familySharingSettings.buildTypeDescription)
+                            .foregroundColor(.secondary)
+                            .font(.subheadline)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(Color(NSColor.controlBackgroundColor))
+                            .cornerRadius(6)
+                    }
+                }
+                .padding(.vertical, 8)
+                #else
                 HStack {
                     Text("Produkte")
                     Spacer()
@@ -98,12 +174,18 @@ struct SettingsView: View {
                         .foregroundColor(.secondary)
                         .font(.caption)
                 }
+                #endif
             } header: {
                 Text("Statistiken")
             } footer: {
                 Text("Debug- und Release-Builds verwenden separate Datenbanken, um Entwicklungsdaten von Produktionsdaten zu trennen.")
             }
         }
+        #if os(macOS)
+        .formStyle(.grouped)
+        .scrollContentBackground(.hidden)
+        .background(Color(NSColor.windowBackgroundColor))
+        #endif
         .navigationTitle("Einstellungen")
         #if os(iOS)
         .navigationBarTitleDisplayMode(.large)
@@ -116,10 +198,24 @@ struct SettingsView: View {
                 }
             }
             #else
-            ToolbarItem(placement: .automatic) {
+            ToolbarItem(placement: .cancellationAction) {
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundStyle(.secondary)
+                        .font(.title2)
+                }
+                .buttonStyle(.plain)
+                .help("Schließen")
+            }
+            
+            ToolbarItem(placement: .primaryAction) {
                 Button("Fertig") {
                     dismiss()
                 }
+                .buttonStyle(.borderedProminent)
+                .keyboardShortcut(.return, modifiers: .command)
             }
             #endif
         }

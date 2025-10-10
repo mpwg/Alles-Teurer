@@ -121,6 +121,7 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showingSettings) {
             SettingsView()
+                .environment(familySharingSettings)
         }
         }
     }

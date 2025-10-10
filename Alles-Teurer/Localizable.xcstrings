@@ -1,0 +1,238 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "%lld" : {
+
+    },
+    "%lld%%" : {
+
+    },
+    "0.00" : {
+
+    },
+    "1.0" : {
+
+    },
+    "Abbrechen" : {
+
+    },
+    "Aktivieren" : {
+
+    },
+    "Alle Daten löschen" : {
+
+    },
+    "Alle Daten löschen?" : {
+
+    },
+    "Alle löschen" : {
+
+    },
+    "Alles Teurer 🛒" : {
+
+    },
+    "bei %@" : {
+
+    },
+    "Bester Preis" : {
+
+    },
+    "Bester Preis:" : {
+
+    },
+    "Build-Typ" : {
+
+    },
+    "cm" : {
+
+    },
+    "Daten mit der Familie über iCloud teilen" : {
+
+    },
+    "Datenmanagement" : {
+
+    },
+    "Datum" : {
+
+    },
+    "Deaktivieren" : {
+
+    },
+    "Debug- und Release-Builds verwenden separate Datenbanken, um Entwicklungsdaten von Produktionsdaten zu trennen." : {
+
+    },
+    "Die Familien-Synchronisation wird aktiviert. Ihre Daten werden über iCloud mit Familienmitgliedern geteilt. Die App muss neu gestartet werden, damit die Änderung wirksam wird." : {
+
+    },
+    "Die Familien-Synchronisation wird deaktiviert. Ihre Daten werden nur noch lokal gespeichert. Die App muss neu gestartet werden, damit die Änderung wirksam wird." : {
+
+    },
+    "Diese Aktion löscht alle %lld Produkte und %lld Einkäufe unwiderruflich. Diese Aktion kann nicht rückgängig gemacht werden." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Diese Aktion löscht alle %1$lld Produkte und %2$lld Einkäufe unwiderruflich. Diese Aktion kann nicht rückgängig gemacht werden."
+          }
+        }
+      }
+    },
+    "Diese Aktion löscht alle Produkte und Einkäufe unwiderruflich." : {
+
+    },
+    "Einheit" : {
+
+    },
+    "Einkauf hinzufügen" : {
+
+    },
+    "Einkäufe" : {
+
+    },
+    "Einkaufshistorie & Preise" : {
+
+    },
+    "Einstellungen" : {
+
+    },
+    "Familien-Synchronisation" : {
+
+    },
+    "Fertig" : {
+
+    },
+    "Für dieses Produkt sind noch keine Einkäufe gespeichert." : {
+
+    },
+    "g" : {
+
+    },
+    "Gesamtpreis" : {
+
+    },
+    "Geschäft" : {
+
+    },
+    "Geschäft eingeben" : {
+
+    },
+    "iCloud ist nicht verfügbar. Bitte melden Sie sich in den Systemeinstellungen bei iCloud an und versuchen Sie es erneut." : {
+
+    },
+    "iCloud ist nicht verfügbar. Melden Sie sich bei iCloud an, um Daten mit der Familie zu teilen." : {
+
+    },
+    "Kaufdatum" : {
+
+    },
+    "Keine Einkäufe" : {
+
+    },
+    "kg" : {
+
+    },
+    "l" : {
+
+    },
+    "Lade Daten..." : {
+
+    },
+    "Letzte Aktualisierung: %@" : {
+
+    },
+    "Löschen" : {
+
+    },
+    "m" : {
+
+    },
+    "Menge" : {
+
+    },
+    "ml" : {
+
+    },
+    "Neustart erforderlich" : {
+
+    },
+    "OK" : {
+
+    },
+    "Preis pro %@" : {
+
+    },
+    "Preis/Einheit" : {
+
+    },
+    "Produkt" : {
+
+    },
+    "Produkt auswählen" : {
+
+    },
+    "Produkt bearbeiten" : {
+
+    },
+    "Produkt suchen..." : {
+
+    },
+    "Produkte" : {
+
+    },
+    "Produktname" : {
+
+    },
+    "Produktname eingeben" : {
+
+    },
+    "Produktname im Geschäft" : {
+
+    },
+    "Schließen" : {
+
+    },
+    "Sortieren:" : {
+
+    },
+    "Sortierung" : {
+
+    },
+    "Später" : {
+
+    },
+    "Speichern" : {
+
+    },
+    "Statistiken" : {
+
+    },
+    "Stk" : {
+
+    },
+    "Synchronisation" : {
+
+    },
+    "Teuerster Preis" : {
+
+    },
+    "Teuerster Preis:" : {
+
+    },
+    "Unterschied" : {
+
+    },
+    "Vorschläge aus der Datenbank:" : {
+
+    },
+    "Wählen Sie ein Produkt aus der Liste aus, um Details und Einkaufshistorie anzuzeigen." : {
+
+    },
+    "Wenn aktiviert, werden Ihre Einkaufsdaten über iCloud mit Familienmitgliedern geteilt. Stellen Sie sicher, dass alle Familienmitglieder bei iCloud angemeldet sind." : {
+
+    },
+    "Wie das Produkt im Geschäft heißt" : {
+
+    }
+  },
+  "version" : "1.1"
+}
