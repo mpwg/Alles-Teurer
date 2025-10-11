@@ -5,7 +5,7 @@ alwaysApply: false
 ---
 
 # The Ultimate Swift Testing Playbook (2024 WWDC Edition, expanded with Apple docs from June 2025)
-https://developer.apple.com/xcode/swift-testing/
+<https://developer.apple.com/xcode/swift-testing/>
 
 A hands-on, comprehensive guide for migrating from XCTest to Swift Testing and mastering the new framework. This playbook integrates the latest patterns and best practices from WWDC 2024 and official Apple documentation to make your tests more powerful, expressive, and maintainable.
 
@@ -22,6 +22,7 @@ Ensure your environment is set up for a smooth, gradual migration.
 | **Enable Parallel Execution**| In your Test Plan, ensure "Use parallel execution" is enabled. Swift Testing runs tests in parallel by default, which dramatically speeds up test runs and helps surface hidden state dependencies that serial execution might miss. |
 
 ### Migration Action Items
+
 - [ ] Ensure all developer machines and CI runners are on macOS 15+ and Xcode 16+.
 - [ ] For projects supporting Linux/Windows, add the `swift-testing` SPM package to your `Package.swift`. It's bundled in Xcode and not needed for Apple platforms.
 - [ ] For **existing test targets**, you must explicitly enable the framework. In the target's **Build Settings**, find **Enable Testing Frameworks** and set its value to **Yes**. Without this, `import Testing` will fail.
@@ -39,9 +40,11 @@ Replace the entire `XCTAssert` family with two powerful, expressive macros. They
 | **`#require(expression)`**| **Hard Check.** Use for critical preconditions (e.g., unwrapping an optional). If the expression is `false` or throws, the test is immediately aborted. This prevents cascading failures from an invalid state. |
 
 ### Power Move: Visual Failure Diagnostics
+
 Unlike `XCTAssert`, which often only reports that a comparison failed, `#expect` shows you the exact values that caused the failure, directly in the IDE and logs. This visual feedback is a massive productivity boost.
 
 **Code:**
+
 ```swift
 @Test("User count meets minimum requirement")
 func testUserCount() {
@@ -52,6 +55,7 @@ func testUserCount() {
 ```
 
 **Failure Output in Xcode:**
+
 ```
 ▽ Expected expression to be true
 #expect(userCount > 10)
@@ -61,9 +65,11 @@ func testUserCount() {
 ```
 
 ### Power Move: Optional-Safe Unwrapping
+
 `#require` is the new, safer replacement for `XCTUnwrap`. It not only checks for `nil` but also unwraps the value for subsequent use.
 
 **Before: The XCTest Way**
+
 ```swift
 // In an XCTestCase subclass...
 func testFetchUser_XCTest() async throws {
@@ -73,6 +79,7 @@ func testFetchUser_XCTest() async throws {
 ```
 
 **After: The Swift Testing Way**
+
 ```swift
 @Test("Fetching a valid user succeeds")
 func testFetchUser() async throws {
@@ -105,6 +112,7 @@ Use this table as a cheat sheet when migrating your `XCTest` assertions.
 | `XCTAssertNoThrow(expr)` | `#expect(throws: Never.self) { expr }` | The explicit way to assert that no error is thrown. |
 
 ### Action Items
+
 - [ ] Run `grep -R "XCTAssert" .` to find all legacy assertions.
 - [ ] Convert `XCTUnwrap` calls to `try #require()`. This is a direct and superior replacement.
 - [ ] Convert most `XCTAssert` calls to `#expect()`. Use `#require()` only for preconditions where continuing the test makes no sense.
@@ -126,6 +134,7 @@ Swift Testing replaces `setUpWithError` and `tearDownWithError` with a more natu
 ### Practical Example: Migrating a Database Test Suite
 
 **Before: The XCTest Way**
+
 ```swift
 final class DatabaseServiceXCTests: XCTestCase {
     var sut: DatabaseService!
@@ -157,6 +166,7 @@ final class DatabaseServiceXCTests: XCTestCase {
 ```
 
 **After: The Swift Testing Way (using `class` for `deinit`)**
+
 ```swift
 @Suite final class DatabaseServiceTests {
     // Using a class here to demonstrate `deinit` for cleanup.
@@ -186,6 +196,7 @@ final class DatabaseServiceXCTests: XCTestCase {
 ```
 
 ### Action Items
+
 - [ ] Convert test classes from `XCTestCase` to `struct`s (preferred for automatic state isolation) or `final class`es.
 - [ ] Move `setUpWithError` logic into the suite's `init()`.
 - [ ] Move `tearDownWithError` logic into the suite's `deinit` (and use a `class` or `actor` if needed).
@@ -202,7 +213,7 @@ Go beyond `do/catch` with a dedicated, expressive API for validating thrown erro
 | **`#expect(throws: Error.self)`**| Basic `XCTAssertThrowsError` | Verifies that *any* error was thrown. |
 | **`#expect(throws: BrewingError.self)`** | Typed `XCTAssertThrowsError` | Ensures an error of a specific *type* is thrown. |
 | **`#expect(throws: BrewingError.outOfBeans)`**| Specific Error `XCTAssertThrowsError`| Validates a specific error *value* is thrown. |
-| **`#expect(throws: ... ) catch: { ... }`** | `do/catch` with `switch` | **Payload Introspection.** The ultimate tool for errors with associated values. It gives you a closure to inspect the thrown error. <br> ```swift #expect(throws: BrewingError.self) { try brew(beans: 0) } catch: { error in guard case let .notEnoughBeans(needed) = error else { Issue.record("Wrong error case thrown"); return } #expect(needed > 0) } ``` |
+| **`#expect(throws: ... ) catch: { ... }`** | `do/catch` with `switch` | **Payload Introspection.** The ultimate tool for errors with associated values. It gives you a closure to inspect the thrown error. <br> ```swift #expect(throws: BrewingError.self) { try brew(beans: 0) } catch: { error in guard case let .notEnoughBeans(needed) = error else { Issue.record("Wrong error case thrown"); return } #expect(needed > 0) }``` |
 | **`#expect(throws: Never.self)`** | `XCTAssertNoThrow` | Explicitly asserts that a function does *not* throw. Ideal for happy-path tests. |
 
 ---
@@ -220,6 +231,7 @@ Run a single test function with multiple argument sets to maximize coverage with
 ### Example: Migrating Repetitive Tests to a Parameterized One
 
 **Before: The XCTest Way**
+
 ```swift
 func testFlavorVanillaContainsNoNuts() {
     let flavor = Flavor.vanilla
@@ -236,6 +248,7 @@ func testFlavorChocolateContainsNoNuts() {
 ```
 
 **After: The Swift Testing Way using `zip`**
+
 ```swift
 @Test("Flavor nut content is correct", arguments: zip(
     [Flavor.vanilla, .pistachio, .chocolate],
@@ -255,7 +268,7 @@ Dynamically control which tests run based on feature flags, environment, or know
 | Trait | What It Does & How to Use It |
 |---|---|
 | **`.disabled("Reason")`** | **Unconditionally skips a test.** The test is not run, but it is still compiled. Always provide a descriptive reason for CI visibility (e.g., `"Flaky on CI, see FB12345"`). |
-| **`.enabled(if: condition)`** | **Conditionally runs a test.** The test only runs if the boolean `condition` is `true`. This is perfect for tests tied to feature flags or specific environments. <br> ```swift @Test(.enabled(if: FeatureFlags.isNewAPIEnabled)) func testNewAPI() { /* ... */ } ``` |
+| **`.enabled(if: condition)`** | **Conditionally runs a test.** The test only runs if the boolean `condition` is `true`. This is perfect for tests tied to feature flags or specific environments. <br> ```swift @Test(.enabled(if: FeatureFlags.isNewAPIEnabled)) func testNewAPI() { /* ... */ }``` |
 | **`@available(...)`** | **OS Version-Specific Tests.** Apply this attribute directly to the test function. It's better than a runtime `#available` check because it allows the test runner to know the test is skipped for platform reasons, which is cleaner in test reports. |
 
 ---
@@ -278,12 +291,15 @@ While `#expect(a == b)` works, purpose-built patterns provide sharper, more acti
 Use suites and tags to manage large and complex test bases.
 
 ### Suites and Nested Suites
+
 A `@Suite` groups related tests and can be nested for a clear hierarchy. Traits applied to a suite are inherited by all tests and nested suites within it.
 
 ### Tags for Cross-Cutting Concerns
+
 Tags associate tests with common characteristics (e.g., `.network`, `.ui`, `.regression`) regardless of their suite. This is invaluable for filtering.
 
-1.  **Define Tags in a Central File:**
+1. **Define Tags in a Central File:**
+
     ```swift
     // /Tests/Support/TestTags.swift
     import Testing
@@ -295,7 +311,9 @@ Tags associate tests with common characteristics (e.g., `.network`, `.ui`, `.reg
         @Tag static var networking: Self
     }
     ```
-2.  **Apply Tags & Filter:**
+
+2. **Apply Tags & Filter:**
+
     ```swift
     // Apply to a test or suite
     @Test("Username validation", .tags(.fast, .regression))
@@ -309,17 +327,20 @@ Tags associate tests with common characteristics (e.g., `.network`, `.ui`, `.reg
     // Filter in Xcode Test Plan
     // Add "fast" to the "Include Tags" field or "flaky" to the "Exclude Tags" field.
     ```
+
 ### Power Move: Xcode UI Integration for Tags
+
 Xcode 16 deeply integrates with tags, turning them into a powerful organizational tool.
 
--   **Grouping by Tag in Test Navigator:** In the Test Navigator (`Cmd-6`), click the tag icon at the top. This switches the view from the file hierarchy to one where tests are grouped by their tags. It's a fantastic way to visualize and run all tests related to a specific feature.
--   **Test Report Insights:** After a test run, the Test Report can automatically find patterns. Go to the **Insights** tab to see messages like **"All 7 tests with the 'networking' tag failed."** This immediately points you to systemic issues, saving significant debugging time.
+- **Grouping by Tag in Test Navigator:** In the Test Navigator (`Cmd-6`), click the tag icon at the top. This switches the view from the file hierarchy to one where tests are grouped by their tags. It's a fantastic way to visualize and run all tests related to a specific feature.
+- **Test Report Insights:** After a test run, the Test Report can automatically find patterns. Go to the **Insights** tab to see messages like **"All 7 tests with the 'networking' tag failed."** This immediately points you to systemic issues, saving significant debugging time.
 
 ---
 
 ## **9. Concurrency and Asynchronous Testing**
 
 ### Async/Await and Confirmations
+
 - **Async Tests**: Simply mark your test function `async` and use `await`.
 - **Confirmations**: To test APIs with completion handlers or that fire multiple times (like delegates or notifications), use `confirmation`.
 - **`fulfillment(of:timeout:)`**: This is the global function you `await` to pause the test until your confirmations are fulfilled or a timeout is reached.
@@ -342,6 +363,7 @@ async func testDelegateNotifications() async throws {
 ### Advanced Asynchronous Patterns
 
 #### Asserting an Event Never Happens
+
 Use a confirmation with `expectedCount: 0` to verify that a callback or delegate method is *never* called during an operation. If `fulfill()` is called on it, the test will fail.
 
 ```swift
@@ -360,6 +382,7 @@ async func testLogoutDoesNotSync() async throws {
 ```
 
 #### Bridging Legacy Completion Handlers
+
 For older asynchronous code that uses completion handlers, use `withCheckedThrowingContinuation` to wrap it in a modern `async/await` call that Swift Testing can work with.
 
 ```swift
@@ -378,6 +401,7 @@ func legacyFetch(completion: @escaping (Result<Data, Error>) -> Void) {
 ```
 
 ### Controlling Parallelism
+
 - **`.serialized`**: Apply this trait to a `@Test` or `@Suite` to force its contents to run serially (one at a time). Use this as a temporary measure for legacy tests that are not thread-safe or have hidden state dependencies. The goal should be to refactor them to run in parallel.
 - **`.timeLimit`**: A safety net to prevent hung tests from stalling CI. The more restrictive (shorter) duration wins when applied at both the suite and test level.
 
@@ -391,7 +415,7 @@ func legacyFetch(completion: @escaping (Result<Data, Error>) -> Void) {
 | **`CustomTestStringConvertible`** | Provides custom, readable descriptions for your types in test failure logs. Conform your key models to this protocol to make debugging much easier. |
 | **`.bug("JIRA-123")` Trait** | Associates a test directly with a ticket in your issue tracker. This adds invaluable context to test reports in Xcode and Xcode Cloud. |
 | **`Test.current`** | A static property (`Test.current`) that gives you runtime access to the current test's metadata, such as its name, tags, and source location. Useful for advanced custom logging. |
-| **Multiple Expectations Pattern** | Use separate `#expect()` statements for validating multiple properties. Each expectation is evaluated independently, and all failures are reported even if earlier ones fail. This provides comprehensive feedback about object state. <br><br> ```swift let user = try #require(loadUser()) #expect(user.name == "John") #expect(user.age >= 18) #expect(user.isActive) ``` |
+| **Multiple Expectations Pattern** | Use separate `#expect()` statements for validating multiple properties. Each expectation is evaluated independently, and all failures are reported even if earlier ones fail. This provides comprehensive feedback about object state. <br><br> ```swift let user = try #require(loadUser()) #expect(user.name == "John") #expect(user.age >= 18) #expect(user.isActive)``` |
 
 ---
 
@@ -399,21 +423,21 @@ func legacyFetch(completion: @escaping (Result<Data, Error>) -> Void) {
 
 A checklist of common mistakes developers make when adopting Swift Testing.
 
-1.  **Overusing `#require()`**
-    -   **The Pitfall:** Using `#require()` for every check. This makes tests brittle and hides information. If the first `#require()` fails, the rest of the test is aborted, and you won't know if other things were also broken.
-    -   **The Fix:** Use `#expect()` for most checks. Only use `#require()` for essential setup conditions where the rest of the test would be nonsensical if they failed (e.g., a non-nil SUT, a valid URL).
+1. **Overusing `#require()`**
+    - **The Pitfall:** Using `#require()` for every check. This makes tests brittle and hides information. If the first `#require()` fails, the rest of the test is aborted, and you won't know if other things were also broken.
+    - **The Fix:** Use `#expect()` for most checks. Only use `#require()` for essential setup conditions where the rest of the test would be nonsensical if they failed (e.g., a non-nil SUT, a valid URL).
 
-2.  **Forgetting State is Isolated**
-    -   **The Pitfall:** Assuming that a property modified in one test will retain its value for the next test in the same suite.
-    -   **The Fix:** Remember that a **new instance** of the suite is created for every test. This is a feature, not a bug! All shared setup must happen in `init()`. Do not rely on state carrying over between tests.
+2. **Forgetting State is Isolated**
+    - **The Pitfall:** Assuming that a property modified in one test will retain its value for the next test in the same suite.
+    - **The Fix:** Remember that a **new instance** of the suite is created for every test. This is a feature, not a bug! All shared setup must happen in `init()`. Do not rely on state carrying over between tests.
 
-3.  **Accidentally Using a Cartesian Product**
-    -   **The Pitfall:** Passing multiple collections to a parameterized test without `zip`, causing an exponential explosion of test cases (`@Test(arguments: collectionA, collectionB)`).
-    -   **The Fix:** Be deliberate. If you want one-to-one pairing, **always use `zip`**. Only use the multi-collection syntax when you explicitly want to test every possible combination.
+3. **Accidentally Using a Cartesian Product**
+    - **The Pitfall:** Passing multiple collections to a parameterized test without `zip`, causing an exponential explosion of test cases (`@Test(arguments: collectionA, collectionB)`).
+    - **The Fix:** Be deliberate. If you want one-to-one pairing, **always use `zip`**. Only use the multi-collection syntax when you explicitly want to test every possible combination.
 
-4.  **Ignoring the `.serialized` Trait for Unsafe Tests**
-    -   **The Pitfall:** Migrating old, stateful tests that are not thread-safe and seeing them fail randomly due to parallel execution.
-    -   **The Fix:** As a temporary measure, apply the `.serialized` trait to the suite containing these tests. This forces them to run one-at-a-time, restoring the old behavior. The long-term goal should be to refactor the tests to be parallel-safe and remove the trait.
+4. **Ignoring the `.serialized` Trait for Unsafe Tests**
+    - **The Pitfall:** Migrating old, stateful tests that are not thread-safe and seeing them fail randomly due to parallel execution.
+    - **The Fix:** As a temporary measure, apply the `.serialized` trait to the suite containing these tests. This forces them to run one-at-a-time, restoring the old behavior. The long-term goal should be to refactor the tests to be parallel-safe and remove the trait.
 
 ---
 
@@ -434,7 +458,9 @@ Swift Testing and XCTest can coexist in the same target, enabling an incremental
 | **Parallelism** | Opt-in, multi-process | Opt-out, in-process via Swift Concurrency. |
 
 ### What NOT to Migrate (Yet)
+
 Continue using XCTest for the following, as they are not currently supported by Swift Testing:
+
 - **UI Automation Tests** (using `XCUIApplication`)
 - **Performance Tests** (using `XCTMetric` and `measure { ... }`)
 - **Tests written in Objective-C**

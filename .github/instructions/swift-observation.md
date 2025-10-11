@@ -4,9 +4,10 @@ globs: "**/*.swift"
 alwaysApply: false
 ---
 
-# https://developer.apple.com/documentation/testing llms-full.txt
+# <https://developer.apple.com/documentation/testing> llms-full.txt
 
 ## Swift Testing Overview
+
 [Skip Navigation](https://developer.apple.com/documentation/testing#app-main)
 
 Framework
@@ -38,7 +39,6 @@ With Swift Testing you leverage powerful and expressive capabilities of the Swif
 - Categorize tests using tags.
 
 - Associate bugs directly with the tests that verify their fixes or reproduce their problems.
-
 
 #### [Related videos](https://developer.apple.com/documentation/testing\#Related-videos)
 
@@ -126,6 +126,7 @@ Annotate test functions and suites, and customize their behavior.
 Current page is Swift Testing
 
 ## Adding Tags to Tests
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/addingtags#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -246,6 +247,7 @@ Constructs a bug to track with a test.
 Current page is Adding tags to tests
 
 ## Swift Test Overview
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -272,7 +274,6 @@ An instance of this type may represent:
 - An individual test function (possibly contained within a type); or
 
 - A test function parameterized over one or more sequences of inputs.
-
 
 Two instances of this type are considered to be equal if the values of their [`id`](https://developer.apple.com/documentation/testing/test/id-swift.property) properties are equal.
 
@@ -380,6 +381,7 @@ Declare a test suite.
 Current page is Test
 
 ## Adding Comments to Tests
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/addingcomments#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -401,7 +403,6 @@ It’s often useful to add comments to code to:
 - Explain how complex code implemented
 
 - Include details which may be helpful when diagnosing issues
-
 
 Test code is no different and can benefit from explanatory code comments, but often test issues are shown in places where the source code of the test is unavailable such as in continuous integration (CI) interfaces or in log files.
 
@@ -446,7 +447,6 @@ As in normal code, comments on tests are generally most useful when they:
 
 - Provide useful information about the operation or motivation of a test
 
-
 If a test is related to a bug or issue, consider using the [`Bug`](https://developer.apple.com/documentation/testing/bug) trait instead of comments. For more information, see [Associating bugs with tests](https://developer.apple.com/documentation/testing/associatingbugs).
 
 ## [See Also](https://developer.apple.com/documentation/testing/addingcomments\#see-also)
@@ -484,6 +484,7 @@ Constructs a bug to track with a test.
 Current page is Adding comments to tests
 
 ## Organizing Test Functions
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/organizingtests#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -504,7 +505,6 @@ A test function can be added to a test suite in one of two ways:
 - By placing it in a Swift type.
 
 - By placing it in a Swift type and annotating that type with the `@Suite` attribute.
-
 
 The `@Suite` attribute isn’t required for the testing library to recognize that a type contains test functions, but adding it allows customization of a test suite’s appearance in the IDE and at the command line. If a trait such as [`tags(_:)`](https://developer.apple.com/documentation/testing/trait/tags(_:)) or [`disabled(_:sourceLocation:)`](https://developer.apple.com/documentation/testing/trait/disabled(_:sourcelocation:)) is applied to a test suite, it’s automatically inherited by the tests contained in the suite.
 
@@ -565,7 +565,6 @@ If a type contains test functions declared as instance methods, it must be possi
 - throwing or non-throwing
 
 - `private`, `fileprivate`, `internal`, `package`, or `public`
-
 
 For example:
 
@@ -641,6 +640,7 @@ Declare a test suite.
 Current page is Organizing test functions with suite types
 
 ## Custom Test Argument Encoding
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/customtestargumentencodable#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -717,6 +717,7 @@ A single test case from a parameterized [`Test`](https://developer.apple.com/doc
 Current page is CustomTestArgumentEncodable
 
 ## Defining Test Functions
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/definingtests#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -814,6 +815,7 @@ Declare a test suite.
 Current page is Defining test functions
 
 ## Interpreting Bug Identifiers
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/bugidentifiers#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -833,7 +835,6 @@ The testing library supports two distinct ways to identify a bug:
 1. A URL linking to more information about the bug; and
 
 2. A unique identifier in the bug’s associated bug-tracking system.
-
 
 A bug may have both an associated URL _and_ an associated unique identifier. It must have at least one or the other in order for the testing library to be able to interpret it correctly.
 
@@ -887,6 +888,7 @@ Constructs a bug to track with a test.
 Current page is Interpreting bug identifiers
 
 ## Limiting Test Execution Time
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/limitingexecutiontime#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -964,6 +966,7 @@ Construct a time limit trait that causes a test to time out if it runs for too l
 Current page is Limiting the running time of tests
 
 ## Test Scoping Protocol
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/testscoping#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -1020,6 +1023,7 @@ A protocol describing a trait that you can add to a test suite.
 Current page is TestScoping
 
 ## Event Confirmation Type
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/confirmation#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -1080,6 +1084,7 @@ Confirm that some event occurs during the invocation of a function.
 Current page is Confirmation
 
 ## Tag Type Overview
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/tag#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -1181,6 +1186,7 @@ A type that defines a time limit to apply to a test.
 Current page is Tag
 
 ## SuiteTrait Protocol
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/suitetrait#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -1247,6 +1253,7 @@ A protocol that tells the test runner to run custom code before or after it runs
 Current page is SuiteTrait
 
 ## Trait Protocol
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/trait#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -1401,6 +1408,7 @@ A protocol that tells the test runner to run custom code before or after it runs
 Current page is Trait
 
 ## Expectation Failed Error
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/expectationfailederror#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -1452,6 +1460,7 @@ A protocol describing types with a custom string representation when presented a
 Current page is ExpectationFailedError
 
 ## Time Limit Trait
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/timelimittrait#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -1542,6 +1551,7 @@ A type representing one or more tags applied to a test.
 Current page is TimeLimitTrait
 
 ## Swift Expectation Type
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/expectation#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -1596,6 +1606,7 @@ A protocol describing types with a custom string representation when presented a
 Current page is Expectation
 
 ## Parameterized Testing in Swift
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/parameterizedtesting#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -1727,7 +1738,6 @@ To support running selected test cases, it must be possible to deterministically
 
 4. `Identifiable`, where `ID` conforms to `Encodable`
 
-
 If any argument of a test case doesn’t meet one of the above requirements, then the overall test case cannot be run selectively.
 
 ## [See Also](https://developer.apple.com/documentation/testing/parameterizedtesting\#see-also)
@@ -1757,6 +1767,7 @@ A single test case from a parameterized [`Test`](https://developer.apple.com/doc
 Current page is Implementing parameterized tests
 
 ## Condition Trait
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/conditiontrait#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -1791,7 +1802,6 @@ To add this trait to a test, use one of the following functions:
 - [`disabled(if:_:sourceLocation:)`](https://developer.apple.com/documentation/testing/trait/disabled(if:_:sourcelocation:))
 
 - [`disabled(_:sourceLocation:_:)`](https://developer.apple.com/documentation/testing/trait/disabled(_:sourcelocation:_:))
-
 
 ## [Topics](https://developer.apple.com/documentation/testing/conditiontrait\#topics)
 
@@ -1866,6 +1876,7 @@ A type that defines a time limit to apply to a test.
 Current page is ConditionTrait
 
 ## SourceLocation in Swift
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/sourcelocation#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -1953,6 +1964,7 @@ Hashable Implementations](https://developer.apple.com/documentation/testing/sour
 Current page is SourceLocation
 
 ## Bug Reporting Structure
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/bug#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -1985,7 +1997,6 @@ To add this trait to a test, use one of the following functions:
 - [`bug(_:id:_:)`](https://developer.apple.com/documentation/testing/trait/bug(_:id:_:)-10yf5)
 
 - [`bug(_:id:_:)`](https://developer.apple.com/documentation/testing/trait/bug(_:id:_:)-3vtpl)
-
 
 ## [Topics](https://developer.apple.com/documentation/testing/bug\#topics)
 
@@ -2068,6 +2079,7 @@ A type that defines a time limit to apply to a test.
 Current page is Bug
 
 ## Swift Test Traits
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/traits#app-main)
 
 Collection
@@ -2216,6 +2228,7 @@ A type that defines a time limit to apply to a test.
 Current page is Traits
 
 ## Custom Test String
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/customteststringconvertible#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -2317,6 +2330,7 @@ A type describing an error thrown when an expectation fails during evaluation.
 Current page is CustomTestStringConvertible
 
 ## Swift Testing Issues
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/issue#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -2396,6 +2410,7 @@ CustomStringConvertible Implementations](https://developer.apple.com/documentati
 Current page is Issue
 
 ## Migrating from XCTest
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/migratingfromxctest#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -2803,7 +2818,6 @@ A test may have a known issue that sometimes or always prevents it from passing.
 
 - [`withKnownIssue(_:isIntermittent:isolation:sourceLocation:_:)`](https://developer.apple.com/documentation/testing/withknownissue(_:isintermittent:isolation:sourcelocation:_:))
 
-
 This function can be used to annotate a section of a test as having a known issue:
 
 ```
@@ -2864,13 +2878,11 @@ Additional options can be specified when calling `XCTExpectFailure()`:
 
 - [`issueMatcher`](https://developer.apple.com/documentation/xctest/xctexpectedfailure/options/3726086-issuematcher) can be set to a closure to allow marking only certain issues as known and to allow other issues to be recorded as test failures
 
-
 The testing library includes overloads of `withKnownIssue()` that take additional arguments with similar behavior:
 
 - [`withKnownIssue(_:isIntermittent:sourceLocation:_:when:matching:)`](https://developer.apple.com/documentation/testing/withknownissue(_:isintermittent:sourcelocation:_:when:matching:))
 
 - [`withKnownIssue(_:isIntermittent:isolation:sourceLocation:_:when:matching:)`](https://developer.apple.com/documentation/testing/withknownissue(_:isintermittent:isolation:sourcelocation:_:when:matching:))
-
 
 To conditionally enable known-issue matching or to match only certain kinds of issues:
 
@@ -2998,6 +3010,7 @@ Declare a test suite.
 Current page is Migrating a test from XCTest
 
 ## TestTrait Protocol
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/testtrait#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3054,6 +3067,7 @@ A protocol that tells the test runner to run custom code before or after it runs
 Current page is TestTrait
 
 ## Parallelization Trait
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/parallelizationtrait#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3140,6 +3154,7 @@ A type that defines a time limit to apply to a test.
 Current page is ParallelizationTrait
 
 ## Test Execution Control
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/parallelization#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3197,6 +3212,7 @@ A trait that serializes the test to which it is applied.
 Current page is Running tests serially or in parallel
 
 ## Enabling Tests
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/enablinganddisabling#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3279,7 +3295,6 @@ If a test is disabled because of a problem for which there is a corresponding bu
 
 - [`bug(_:id:_:)`](https://developer.apple.com/documentation/testing/trait/bug(_:id:_:)-3vtpl)
 
-
 For example, the following test cannot run due to bug number `"12345"`:
 
 ```
@@ -3346,6 +3361,7 @@ Construct a time limit trait that causes a test to time out if it runs for too l
 Current page is Enabling and disabling tests
 
 ## Testing Expectations
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/expectations#app-main)
 
 Collection
@@ -3489,6 +3505,7 @@ Highlight known issues when running tests.
 Current page is Expectations and confirmations
 
 ## Known Issue Matcher
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/knownissuematcher#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3539,6 +3556,7 @@ Invoke a function that has a known issue that is expected to occur during its ex
 Current page is KnownIssueMatcher
 
 ## Associating Bugs with Tests
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/associatingbugs#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3564,7 +3582,6 @@ To associate a bug with a test, use one of these functions:
 - [`bug(_:id:_:)`](https://developer.apple.com/documentation/testing/trait/bug(_:id:_:)-10yf5)
 
 - [`bug(_:id:_:)`](https://developer.apple.com/documentation/testing/trait/bug(_:id:_:)-3vtpl)
-
 
 The first argument to these functions is a URL representing the bug in its bug-tracking system:
 
@@ -3646,6 +3663,7 @@ Constructs a bug to track with a test.
 Current page is Associating bugs with tests
 
 ## Test Comment Structure
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/comment#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3769,6 +3787,7 @@ A type that defines a time limit to apply to a test.
 Current page is Comment
 
 ## Swift Test Time Limit
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test/timelimit#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3796,6 +3815,7 @@ If a test has more than one time limit associated with it, the value of this pro
 Current page is timeLimit
 
 ## Swift fileID Property
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/sourcelocation/fileid#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3831,6 +3851,7 @@ The name of the source file.
 Current page is fileID
 
 ## Tag() Macro
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/tag()#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3892,6 +3913,7 @@ Constructs a bug to track with a test.
 Current page is Tag()
 
 ## Swift Testing Error
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/issue/error#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3917,6 +3939,7 @@ The value of this property is non- `nil` when [`kind`](https://developer.apple.c
 Current page is error
 
 ## Test Description Property
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/customteststringconvertible/testdescription#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3952,6 +3975,7 @@ A description of this instance to use when presenting it in a test’s output.
 Current page is testDescription
 
 ## Source Location Trait
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/conditiontrait/sourcelocation#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3973,6 +3997,7 @@ var sourceLocation: SourceLocation
 Current page is sourceLocation
 
 ## Swift Testing Name Property
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test/name#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -3998,6 +4023,7 @@ The value of this property is equal to the name of the symbol to which the [`Tes
 Current page is name
 
 ## isRecursive Trait
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/suitetrait/isrecursive#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4035,6 +4061,7 @@ Whether this instance should be applied recursively to child test suites and tes
 Current page is isRecursive
 
 ## Swift fileName Property
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/sourcelocation/filename#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4074,6 +4101,7 @@ The name of the module containing the source file.
 Current page is fileName
 
 ## Developer Comments Management
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/issue/comments#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4099,6 +4127,7 @@ If no comment was supplied when the issue occurred, the value of this property i
 Current page is comments
 
 ## Source Location in Testing
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/issue/sourcelocation#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4120,6 +4149,7 @@ var sourceLocation: SourceLocation? { get set }
 Current page is sourceLocation
 
 ## Test Comments
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test/comments#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4141,6 +4171,7 @@ var comments: [Comment] { get }
 Current page is comments
 
 ## Test Duration Type
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/timelimittrait/duration#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4180,6 +4211,7 @@ Construct a time limit duration given a number of minutes.
 Current page is TimeLimitTrait.Duration
 
 ## Test Tags Overview
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test/tags#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4205,6 +4237,7 @@ Tags are associated with tests using the [`tags(_:)`](https://developer.apple.co
 Current page is tags
 
 ## Customizing Display Names
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test/displayname#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4226,6 +4259,7 @@ var displayName: String?
 Current page is displayName
 
 ## Serialized Trait
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/trait/serialized#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4269,6 +4303,7 @@ Control whether tests run serially or in parallel.
 Current page is serialized
 
 ## Swift Test Source Location
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test/sourcelocation#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4290,6 +4325,7 @@ var sourceLocation: SourceLocation
 Current page is sourceLocation
 
 ## Test Case Overview
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test/case#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4359,6 +4395,7 @@ A protocol for customizing how arguments passed to parameterized tests are encod
 Current page is Test.Case
 
 ## Tag List Overview
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/tag/list#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4450,6 +4487,7 @@ A type that defines a time limit to apply to a test.
 Current page is Tag.List
 
 ## Test Suite Indicator
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test/issuite#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4477,6 +4515,7 @@ A test suite can be declared using the [`Suite(_:_:)`](https://developer.apple.c
 Current page is isSuite
 
 ## Swift moduleName Property
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/sourcelocation/modulename#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4518,6 +4557,7 @@ The name of the source file.
 Current page is moduleName
 
 ## Swift Testing Comments
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/comment/comments#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4543,6 +4583,7 @@ The default value of this property is an empty array.
 Current page is comments
 
 ## Associated Bugs in Testing
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test/associatedbugs#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4568,6 +4609,7 @@ For information on how to associate a bug with a test, see the documentation for
 Current page is associatedBugs
 
 ## Expectation Requirement
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/expectation/isrequired#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4589,6 +4631,7 @@ var isRequired: Bool
 Current page is isRequired
 
 ## Testing Asynchronous Code
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/testing-asynchronous-code#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4694,6 +4737,7 @@ A type that can be used to confirm that an event occurs zero or more times.
 Current page is Testing asynchronous code
 
 ## Swift Testing Tags
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/tag/list/tags#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4720,6 +4764,7 @@ This preserves the list of the tags exactly as they were originally specified, i
 Current page is tags
 
 ## Current Test Case
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test/case/current#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4748,6 +4793,7 @@ If the current task is detached from a task that started running a test, or if t
 Current page is current
 
 ## Parallelization Trait
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/parallelizationtrait?changes=__2#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing?changes=__2)
@@ -4834,6 +4880,7 @@ A type that defines a time limit to apply to a test.
 Current page is ParallelizationTrait
 
 ## Condition Trait Overview
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/conditiontrait?changes=_1#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing?changes=_1)
@@ -4868,7 +4915,6 @@ To add this trait to a test, use one of the following functions:
 - [`disabled(if:_:sourceLocation:)`](https://developer.apple.com/documentation/testing/trait/disabled(if:_:sourcelocation:)?changes=_1)
 
 - [`disabled(_:sourceLocation:_:)`](https://developer.apple.com/documentation/testing/trait/disabled(_:sourcelocation:_:)?changes=_1)
-
 
 ## [Topics](https://developer.apple.com/documentation/testing/conditiontrait?changes=_1\#topics)
 
@@ -4943,6 +4989,7 @@ A type that defines a time limit to apply to a test.
 Current page is ConditionTrait
 
 ## TestScopeProvider Overview
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/comment/testscopeprovider#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -4968,6 +5015,7 @@ The default type is `Never`, which can’t be instantiated. The `scopeProvider(f
 Current page is Comment.TestScopeProvider
 
 ## Bug Identifier Overview
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/bug/id?changes=_6#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing?changes=_6)
@@ -4993,6 +5041,7 @@ For more information on how the testing library interprets bug identifiers, see 
 Current page is id
 
 ## TestScopeProvider Overview
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/timelimittrait/testscopeprovider?language=objc#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing?language=objc)
@@ -5018,6 +5067,7 @@ The default type is `Never`, which can’t be instantiated. The `scopeProvider(f
 Current page is TimeLimitTrait.TestScopeProvider
 
 ## Test Duration Limit
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/timelimittrait/timelimit?changes=_3#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing?changes=_3)
@@ -5039,6 +5089,7 @@ var timeLimit: Duration
 Current page is timeLimit
 
 ## Swift Issue Kind
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/issue/kind-swift.property#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5060,6 +5111,7 @@ var kind: Issue.Kind
 Current page is kind
 
 ## Time Limit Trait
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/trait/timelimit(_:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5139,6 +5191,7 @@ Constructs a condition trait that disables a test if its value is true.
 Current page is timeLimit(\_:)
 
 ## Swift Testing Comment
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/comment/rawvalue-swift.property#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5164,6 +5217,7 @@ To get the complete set of comments applied to a test, see [`comments`](https://
 Current page is rawValue
 
 ## isRecursive Property Overview
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/timelimittrait/isrecursive?language=objc#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing?language=objc)
@@ -5191,6 +5245,7 @@ By default, traits are not recursively applied to children.
 Current page is isRecursive
 
 ## Test Preparation Method
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/conditiontrait/prepare(for:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5224,6 +5279,7 @@ The default implementation of this method does nothing.
 Current page is prepare(for:)
 
 ## Test Preparation Method
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/trait/prepare(for:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5287,6 +5343,7 @@ The type of the test scope provider for this trait.
 Current page is prepare(for:)
 
 ## Swift Testing Tags
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/trait/tags(_:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5338,6 +5395,7 @@ The user-provided comments for this trait.
 Current page is tags(\_:)
 
 ## Swift Testing ID
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test/id-swift.property#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5359,6 +5417,7 @@ var id: Test.ID { get }
 Current page is id
 
 ## Swift Test Description
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/customteststringconvertible/testdescription-3ar66?changes=_1#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing?changes=_1)
@@ -5386,6 +5445,7 @@ Do not use this property directly. To get the test description of a value, use `
 Current page is testDescription
 
 ## Bug Tracking Method
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/trait/bug(_:_:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5466,6 +5526,7 @@ Constructs a bug to track with a test.
 Current page is bug(\_:\_:)
 
 ## Record Test Issues
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/issue/record(_:sourcelocation:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5513,6 +5574,7 @@ Use this function if, while running a test, an issue occurs that cannot be repre
 Current page is record(\_:sourceLocation:)
 
 ## Scope Provider Method
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/trait/scopeprovider(for:testcase:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5557,7 +5619,6 @@ If this trait’s type conforms to [`TestScoping`](https://developer.apple.com/d
 - If `test` represents a suite, this trait must conform to [`SuiteTrait`](https://developer.apple.com/documentation/testing/suitetrait). If the value of this suite trait’s [`isRecursive`](https://developer.apple.com/documentation/testing/suitetrait/isrecursive) property is `true`, then this method returns `nil`, and the suite trait provides its custom scope once for each test function the test suite contains. If the value of [`isRecursive`](https://developer.apple.com/documentation/testing/suitetrait/isrecursive) is `false`, this method returns `self`, and the suite trait provides its custom scope once for the entire test suite.
 
 - If `test` represents a test function, this trait also conforms to [`TestTrait`](https://developer.apple.com/documentation/testing/testtrait). If `testCase` is `nil`, this method returns `nil`; otherwise, it returns `self`. This means that by default, a trait which is applied to or inherited by a test function provides its custom scope once for each of that function’s cases.
-
 
 A trait may override this method to further customize the default behaviors above. For example, if a trait needs to provide custom test scope both once per-suite and once per-test function in that suite, it implements the method to return a non- `nil` scope provider under those conditions.
 
@@ -5604,6 +5665,7 @@ Prepare to run the test that has this trait.
 Current page is scopeProvider(for:testCase:)
 
 ## Swift Testing Expectation
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/expect(_:_:sourcelocation:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5665,6 +5727,7 @@ Unwrap an optional value or, if it is `nil`, fail and throw an error.
 Current page is expect(\_:\_:sourceLocation:)
 
 ## System Issue Kind
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/issue/kind-swift.enum/system#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5687,6 +5750,7 @@ case system
 Current page is Issue.Kind.system
 
 ## Disable Test Condition
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/trait/disabled(_:sourcelocation:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5765,6 +5829,7 @@ Construct a time limit trait that causes a test to time out if it runs for too l
 Current page is disabled(\_:sourceLocation:)
 
 ## Hashing Method
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/tag/list/hash(into:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5797,6 +5862,7 @@ Implement this method to conform to the `Hashable` protocol. The components used
 Current page is hash(into:)
 
 ## Tag Comparison Operator
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/tag/_(_:_:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5832,6 +5898,7 @@ This function is the only requirement of the `Comparable` protocol. The remainde
 Current page is <(\_:\_:)
 
 ## Test Execution Control
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/parallelization?changes=_3#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing?changes=_3)
@@ -5889,6 +5956,7 @@ A trait that serializes the test to which it is applied.
 Current page is Running tests serially or in parallel
 
 ## Scope Provider Method
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/conditiontrait/scopeprovider(for:testcase:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -5929,6 +5997,7 @@ The testing library uses this implementation of [`scopeProvider(for:testCase:)`]
 Current page is scopeProvider(for:testCase:)
 
 ## Swift Test Issues
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/issue?changes=_8#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing?changes=_8)
@@ -6008,6 +6077,7 @@ CustomStringConvertible Implementations](https://developer.apple.com/documentati
 Current page is Issue
 
 ## Confirmation Testing
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/confirmation?language=objc#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing?language=objc)
@@ -6068,6 +6138,7 @@ Confirm that some event occurs during the invocation of a function.
 Current page is Confirmation
 
 ## Parameterized Test Macro
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test(_:_:arguments:)-3rzok#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -6141,6 +6212,7 @@ A single test case from a parameterized [`Test`](https://developer.apple.com/doc
 Current page is Test(\_:\_:arguments:)
 
 ## Known Issue Function
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/withknownissue(_:isintermittent:sourcelocation:_:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -6223,6 +6295,7 @@ A function that is used to match known issues.
 Current page is withKnownIssue(\_:isIntermittent:sourceLocation:\_:)
 
 ## Event Confirmation Function
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/confirmation(_:expectedcount:sourcelocation:_:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -6284,7 +6357,6 @@ Use confirmations to check that an event occurs while a test is running in compl
 
 - As a callback that is invoked as part of a larger operation.
 
-
 To use a confirmation, pass a closure containing the work to be performed. The testing library will then pass an instance of [`Confirmation`](https://developer.apple.com/documentation/testing/confirmation) to the closure. Every time the event in question occurs, the closure should call the confirmation:
 
 ```
@@ -6317,6 +6389,7 @@ A type that can be used to confirm that an event occurs zero or more times.
 Current page is confirmation(\_:expectedCount:sourceLocation:\_:)
 
 ## Disable Test Trait
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/trait/disabled(_:sourcelocation:_:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -6394,6 +6467,7 @@ Construct a time limit trait that causes a test to time out if it runs for too l
 Current page is disabled(\_:sourceLocation:\_:)
 
 ## Test Disabling Trait
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/trait/disabled(if:_:sourcelocation:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -6471,6 +6545,7 @@ Construct a time limit trait that causes a test to time out if it runs for too l
 Current page is disabled(if:\_:sourceLocation:)
 
 ## Condition Trait Management
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/trait/enabled(if:_:sourcelocation:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -6552,6 +6627,7 @@ Construct a time limit trait that causes a test to time out if it runs for too l
 Current page is enabled(if:\_:sourceLocation:)
 
 ## Swift Testing Macro
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/require(_:_:sourcelocation:)-6w9oo#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -6615,6 +6691,7 @@ Check that an expectation has passed after a condition has been evaluated and th
 Current page is require(\_:\_:sourceLocation:)
 
 ## Parameterized Test Declaration
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test(_:_:arguments:)-8kn7a#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -6688,6 +6765,7 @@ A single test case from a parameterized [`Test`](https://developer.apple.com/doc
 Current page is Test(\_:\_:arguments:)
 
 ## Swift Testing Macro
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/require(_:_:sourcelocation:)-5l63q#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -6749,6 +6827,7 @@ Unwrap an optional value or, if it is `nil`, fail and throw an error.
 Current page is require(\_:\_:sourceLocation:)
 
 ## Condition Trait Testing
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/conditiontrait/enabled(_:sourcelocation:_:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -6794,6 +6873,7 @@ An instance of [`ConditionTrait`](https://developer.apple.com/documentation/test
 Current page is enabled(\_:sourceLocation:\_:)
 
 ## Known Issue Invocation
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/withknownissue(_:isintermittent:sourcelocation:_:when:matching:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -6890,6 +6970,7 @@ A function that is used to match known issues.
 Current page is withKnownIssue(\_:isIntermittent:sourceLocation:\_:when:matching:)
 
 ## Parameterized Testing in Swift
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test(_:_:arguments:_:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -6968,6 +7049,7 @@ A single test case from a parameterized [`Test`](https://developer.apple.com/doc
 Current page is Test(\_:\_:arguments:\_:)
 
 ## Test Declaration Macro
+
 [Skip Navigation](https://developer.apple.com/documentation/testing/test(_:_:)#app-main)
 
 - [Swift Testing](https://developer.apple.com/documentation/testing)
@@ -7030,4 +7112,3 @@ A type representing a test or suite.
 Declare a test suite.
 
 Current page is Test(\_:\_:)
-

@@ -8,7 +8,7 @@ Availability strings filtered: Yes
 Code blocks only: No
 -->
 
-# https://developer.apple.com/documentation/visionkit/
+# <https://developer.apple.com/documentation/visionkit/>
 
 Framework
 
@@ -102,7 +102,7 @@ A single document scanned in the document camera.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit
+# <https://developer.apple.com/documentation/visionkit>
 
 Framework
 
@@ -196,7 +196,7 @@ A single document scanned in the document camera.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes>
 
 - VisionKit
 - ImageAnalyzer
@@ -254,7 +254,7 @@ The types of items that the image analyzer looks for in the image.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller>
 
 - VisionKit
 - DataScannerViewController
@@ -463,7 +463,7 @@ An item that the data scanner recognizes in the camera’s live video.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype>
 
 - VisionKit
 - DataScannerViewController
@@ -520,7 +520,7 @@ The types of data that the data scanner identifies in the live video.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -756,7 +756,7 @@ This view displays a stabilized region of interest within a person’s view and 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview
+# <https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview>
 
 - VisionKit
 - ImageAnalysisOverlayView
@@ -1003,7 +1003,7 @@ This view displays a stabilized region of interest within a person’s view and 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -1095,7 +1095,7 @@ The types of interactions that a person actively performs.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/textselection
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/textselection>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -1144,7 +1144,7 @@ An option that enables all interaction types except image subjects and Visual Lo
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/datadetectors
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/datadetectors>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -1189,7 +1189,7 @@ An option that enables all interaction types except image subjects and Visual Lo
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontroller
+# <https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontroller>
 
 - VisionKit
 - VNDocumentCameraViewController
@@ -1281,7 +1281,7 @@ A single document scanned in the document camera.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -1344,7 +1344,7 @@ Returns the subject at the given point within the interaction’s image, if one 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject/image
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject/image>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -1361,7 +1361,7 @@ var image: `UIImage` { get async throws }
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/visuallookup
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/visuallookup>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -1420,7 +1420,7 @@ An option that enables all interaction types except image subjects and Visual Lo
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/enabling-live-text-interactions-with-images
+# <https://developer.apple.com/documentation/visionkit/enabling-live-text-interactions-with-images>
 
 - VisionKit
 - Enabling Live Text interactions with images
@@ -1580,7 +1580,7 @@ This view displays a stabilized region of interest within a person’s view and 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer>
 
 - VisionKit
 - ImageAnalyzer
@@ -1601,9 +1601,9 @@ Enabling Live Text interactions with images
 
 To use an `ImageAnalyzer` object, first create an `ImageAnalyzer.Configuration` object, and specify the types of items you want to find in an image. Then pass the image you want to analyze and the configuration object to an `ImageAnalyzer` object using the `analyze(_:configuration:)` or similar method. This method returns an `ImageAnalysis` object that contains all the data VisionKit needs to implement the Live Text interface.
 
-Next, show the Live Text interface. For iOS apps, set the interaction object of the view that contains the image to an instance of `ImageAnalysisInteraction` and set its `analysis` property to the `ImageAnalysis` object. To enable interactions with the image, set the interaction object’s `preferredInteractionTypes` property. To customize the Live Text interface, set the `ImageAnalysisInteraction ` object’s `delegate` property and implement the `ImageAnalysisInteractionDelegate` protocol methods.
+Next, show the Live Text interface. For iOS apps, set the interaction object of the view that contains the image to an instance of `ImageAnalysisInteraction` and set its `analysis` property to the `ImageAnalysis` object. To enable interactions with the image, set the interaction object’s `preferredInteractionTypes` property. To customize the Live Text interface, set the `ImageAnalysisInteraction` object’s `delegate` property and implement the `ImageAnalysisInteractionDelegate` protocol methods.
 
-For macOS apps, add an `ImageAnalysisOverlayView` object above the view that contains the image, and set its `analysis` property. To enable interactions with the image, set the overlay view’s `preferredInteractionTypes` property. Set the `ImageAnalysisOverlayView ` object’s `delegate` property and implement the `ImageAnalysisOverlayViewDelegate` protocol methods.
+For macOS apps, add an `ImageAnalysisOverlayView` object above the view that contains the image, and set its `analysis` property. To enable interactions with the image, set the overlay view’s `preferredInteractionTypes` property. Set the `ImageAnalysisOverlayView` object’s `delegate` property and implement the `ImageAnalysisOverlayViewDelegate` protocol methods.
 
 By default, the Live Text interface starts immediately when you show the view.
 
@@ -1690,7 +1690,7 @@ This view displays a stabilized region of interest within a person’s view and 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysis
+# <https://developer.apple.com/documentation/visionkit/imageanalysis>
 
 - VisionKit
 - ImageAnalysis
@@ -1753,7 +1753,7 @@ This view displays a stabilized region of interest within a person’s view and 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate>
 
 - VisionKit
 - ImageAnalysisInteractionDelegate
@@ -1837,7 +1837,7 @@ This view displays a stabilized region of interest within a person’s view and 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate
+# <https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate>
 
 - VisionKit
 - ImageAnalysisOverlayViewDelegate
@@ -1943,7 +1943,7 @@ This view displays a stabilized region of interest within a person’s view and 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/cameraregionview
+# <https://developer.apple.com/documentation/visionkit/cameraregionview>
 
 - VisionKit
 - CameraRegionView
@@ -2041,7 +2041,7 @@ A delegate that handles image-analysis and user-interaction callbacks for an ove
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/scanning-data-with-the-camera
+# <https://developer.apple.com/documentation/visionkit/scanning-data-with-the-camera>
 
 - VisionKit
 - Scanning data with the camera
@@ -2204,7 +2204,7 @@ let textDataType: DataScannerViewController.RecognizedDataType =
 .text(languages: ["en-US", "fr-FR", "de-DE"])
 )
 
-Then pass the data type in the `recognizedDataTypes ` parameter of the initializer when you create the `DataScannerViewController` object.
+Then pass the data type in the `recognizedDataTypes` parameter of the initializer when you create the `DataScannerViewController` object.
 
 To determine whether the data scanner view controller supports a language, check whether the array that the `DataScannerViewController` `supportedTextRecognitionLanguages` class property returns includes the language ID. For more information on language IDs, see Choosing localization regions and scripts.
 
@@ -2226,7 +2226,7 @@ An item that the data scanner recognizes in the camera’s live video.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontrollerdelegate
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontrollerdelegate>
 
 - VisionKit
 - DataScannerViewControllerDelegate
@@ -2300,7 +2300,7 @@ An item that the data scanner recognizes in the camera’s live video.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/recognizeditem
+# <https://developer.apple.com/documentation/visionkit/recognizeditem>
 
 - VisionKit
 - RecognizedItem
@@ -2381,7 +2381,7 @@ A delegate object that responds when people interact with items that the data sc
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/structuring_recognized_text_on_a_document
+# <https://developer.apple.com/documentation/visionkit/structuring_recognized_text_on_a_document>
 
 - Vision
 - Original Objective-C and Swift API
@@ -2425,7 +2425,7 @@ A request that detects and recognizes regions of text in an image.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontrollerdelegate
+# <https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontrollerdelegate>
 
 - VisionKit
 - VNDocumentCameraViewControllerDelegate
@@ -2482,7 +2482,7 @@ A single document scanned in the document camera.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/vndocumentcamerascan
+# <https://developer.apple.com/documentation/visionkit/vndocumentcamerascan>
 
 - VisionKit
 - VNDocumentCameraScan
@@ -2546,199 +2546,169 @@ A delegate protocol through which the document camera returns its scanned result
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes))
-
-
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes>))
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller)
-
-
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller>)
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype))
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype>))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction)
-
-
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction>)
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview)
-
-
+# <https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview>)
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes>))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/textselection)),
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/textselection>))
 
 ),#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/datadetectors)).
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/datadetectors>))
 
 ).#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontroller))
-
-
+# <https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontroller>))
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject)).
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject>))
 
 ).#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject/image)),
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject/image>))
 
 ),#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/visuallookup)).
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/visuallookup>))
 
 ).#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/enabling-live-text-interactions-with-images)
+# <https://developer.apple.com/documentation/visionkit/enabling-live-text-interactions-with-images>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalyzer)
-
-
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalysis)
-
-
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate)
-
-
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate)
-
-
-
----
-
-# https://developer.apple.com/documentation/visionkit/cameraregionview)
-
-
-
----
-
-# https://developer.apple.com/documentation/visionkit/scanning-data-with-the-camera)
-
-
-
----
-
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontrollerdelegate)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/recognizeditem)
-
-
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer>)
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/structuring_recognized_text_on_a_document)
+# <https://developer.apple.com/documentation/visionkit/imageanalysis>)
 
-# The page you're looking for can't be found.
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate>)
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalysisoverlayviewdelegate>)
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/cameraregionview>)
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/scanning-data-with-the-camera>)
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontrollerdelegate>)
+
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontroller)
-
-
+# <https://developer.apple.com/documentation/visionkit/recognizeditem>)
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontrollerdelegate)
+# <https://developer.apple.com/documentation/visionkit/structuring_recognized_text_on_a_document>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/vndocumentcamerascan)
-
-
+# <https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontroller>)
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/allowlongpressfordatadetectorsintextmode
+# <https://developer.apple.com/documentation/visionkit/vndocumentcameraviewcontrollerdelegate>)
 
+# The page you're looking for can't be found
 
+Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/automatic
+# <https://developer.apple.com/documentation/visionkit/vndocumentcamerascan>)
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/allowlongpressfordatadetectorsintextmode>
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/automatic>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -2787,7 +2757,7 @@ An option that enables all interaction types except image subjects and Visual Lo
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/imagesubject
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/imagesubject>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -2832,7 +2802,7 @@ An option that enables all interaction types except image subjects and Visual Lo
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/automatictextonly
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/automatictextonly>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -2877,79 +2847,77 @@ An option that presents a button for more information on any subjects the framew
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction).
-
-
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction>)
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/datadetectors))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/datadetectors>))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/allowlongpressfordatadetectorsintextmode)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/allowlongpressfordatadetectorsintextmode>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/automatic)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/datadetectors)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/automatic>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/imagesubject)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/visuallookup)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/datadetectors>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/automatictextonly)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/machinereadablecode
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/imagesubject>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/visuallookup>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/interactiontypes/automatictextonly>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/machinereadablecode>
 
 - VisionKit
 - ImageAnalyzer
@@ -2988,7 +2956,7 @@ An option that analyzes an image for subjects that the framework can look up for
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/text
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/text>
 
 - VisionKit
 - ImageAnalyzer
@@ -3017,7 +2985,7 @@ An option that analyzes an image for subjects that the framework can look up for
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/visuallookup
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/visuallookup>
 
 - VisionKit
 - ImageAnalyzer
@@ -3052,7 +3020,7 @@ An option that analyzes an image for text.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/analysistypes-set-properties-and-methods
+# <https://developer.apple.com/documentation/visionkit/analysistypes-set-properties-and-methods>
 
 Collection
 
@@ -3082,9 +3050,9 @@ A unique, underlying value for the analysis type.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/configuration/init(_:)
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/configuration/init(>_:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalyzer
@@ -3119,7 +3087,7 @@ The types of items that an image analyzer looks for in an image.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/configuration/analysistypes
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/configuration/analysistypes>
 
 - VisionKit
 - ImageAnalyzer
@@ -3152,55 +3120,53 @@ The types of items that an image analyzer looks for in an image.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/machinereadablecode)
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/machinereadablecode>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/text)
-
-
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/visuallookup)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/analysistypes-set-properties-and-methods)
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/text>)
 
-# The page you're looking for can't be found.
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/analysistypes/visuallookup>)
+
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/configuration/init(_:))
+# <https://developer.apple.com/documentation/visionkit/analysistypes-set-properties-and-methods>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/configuration/init(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/configuration/analysistypes)
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/configuration/analysistypes>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype>
 
 - VisionKit
 - DataScannerViewController
@@ -3282,9 +3248,9 @@ Creates a data type for text and information the scanner finds in text.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/hash(into:)
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/hash(into>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - DataScannerViewController
@@ -3313,9 +3279,9 @@ Returns a Boolean value indicating whether two sets have equal elements.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/==(_:_:)
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/==(>_:_:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - DataScannerViewController
@@ -3352,9 +3318,9 @@ Hashes the components of this value using the specified hasher.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/init(recognizeddatatypes:qualitylevel:recognizesmultipleitems:ishighframeratetrackingenabled:ispinchtozoomenabled:isguidanceenabled:ishighlightingenabled:)
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/init(recognizeddatatypes:qualitylevel:recognizesmultipleitems:ishighframeratetrackingenabled:ispinchtozoomenabled:isguidanceenabled:ishighlightingenabled>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - DataScannerViewController
@@ -3433,7 +3399,7 @@ A type of data that the scanner recognizes.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatypes
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatypes>
 
 - VisionKit
 - DataScannerViewController
@@ -3459,33 +3425,31 @@ A type of data that the scanner recognizes.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/text(languages:textcontenttype:))
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/text(languages:textcontenttype>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype)
-
-
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/textcontenttype>)
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/barcode(symbologies:))
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/barcode(symbologies>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/hash(into:))
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/hash(into>:))
 
 # 502 Bad Gateway
 
@@ -3495,35 +3459,35 @@ Apple
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/==(_:_:))
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatype/==(>_:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/init(recognizeddatatypes:qualitylevel:recognizesmultipleitems:ishighframeratetrackingenabled:ispinchtozoomenabled:isguidanceenabled:ishighlightingenabled:))
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/init(recognizeddatatypes:qualitylevel:recognizesmultipleitems:ishighframeratetrackingenabled:ispinchtozoomenabled:isguidanceenabled:ishighlightingenabled>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatypes)
+# <https://developer.apple.com/documentation/visionkit/datascannerviewcontroller/recognizeddatatypes>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/preferredinteractiontypes
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/preferredinteractiontypes>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -3576,9 +3540,9 @@ The types of interactions that a person actively performs.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/analyze(_:configuration:)
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/analyze(_:configuration>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalyzer
@@ -3632,7 +3596,7 @@ Returns the data for providing a Live Text interaction with an image at a URL an
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/analysis
+# <https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/analysis>
 
 - VisionKit
 - ImageAnalysisOverlayView
@@ -3677,7 +3641,7 @@ The types of interactions that a person actively performs.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/delegate
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/delegate>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -3718,9 +3682,9 @@ The types of interactions that a person actively performs.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate/contentsrect(for:)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate/contentsrect(for>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteractionDelegate
@@ -3770,9 +3734,9 @@ Provides the view controller that presents the interface objects.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/init()
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/init()>
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -3797,9 +3761,9 @@ Creates an interaction for Live Text actions with the specified delegate.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/init(_:)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/init(>_:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -3830,7 +3794,7 @@ Creates an interaction for Live Text actions with items in an image.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/analysis
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/analysis>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -3875,7 +3839,7 @@ The types of interactions that a person actively performs.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/view
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/view>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -3916,7 +3880,7 @@ The types of interactions that a person actively performs.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/activeinteractiontypes
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/activeinteractiontypes>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -3961,9 +3925,9 @@ The types of interactions that people can perform with an image.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/willmove(to:)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/willmove(to>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -3994,9 +3958,9 @@ Performs an action after the view adds or removes the interaction from its inter
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/didmove(to:)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/didmove(to>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4027,7 +3991,7 @@ Performs an action before the view adds or removes the interaction from its inte
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/text
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/text>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4066,7 +4030,7 @@ Returns a Boolean value that indicates whether the analysis detects data at the 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedtext
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedtext>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4105,7 +4069,7 @@ Returns a Boolean value that indicates whether the analysis detects data at the 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedattributedtext
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedattributedtext>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4144,9 +4108,9 @@ Returns a Boolean value that indicates whether the analysis detects data at the 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hastext(at:)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hastext(at>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4196,7 +4160,7 @@ Returns a Boolean value that indicates whether the analysis detects data at the 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasactivetextselection
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasactivetextselection>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4239,9 +4203,9 @@ Returns a Boolean value that indicates whether the analysis detects data at the 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/analysishastext(at:)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/analysishastext(at>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4291,9 +4255,9 @@ Returns a Boolean value that indicates whether the analysis detects data at the 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasdatadetector(at:)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasdatadetector(at>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4343,9 +4307,9 @@ Returns a Boolean value that indicates whether the analysis finds text at the sp
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/resettextselection()
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/resettextselection()>
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4368,7 +4332,7 @@ Sets selected text ranges.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subjects
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subjects>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4396,9 +4360,9 @@ Returns the subject at the given point within the interaction’s image, if one 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/image(for:)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/image(for>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4436,9 +4400,9 @@ Returns the subject at the given point within the interaction’s image, if one 
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject(at:)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject(at>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4472,7 +4436,7 @@ let configuration = ImageAnalyzer.Configuration()
 ...
 interaction.preferredInteractionTypes = [.imageSubject]
 ...
-let viewPoint = /* A point in view coordinates */
+let viewPoint = /*A point in view coordinates*/
 if let subjectObject = try await interaction.subject(at: viewPoint) {
 if let image = subjectObject.image {
 // Do something with the subject image.
@@ -4493,7 +4457,7 @@ Provides an image asynchronously that contains the given subjects with the backg
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/highlightedsubjects
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/highlightedsubjects>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4509,7 +4473,7 @@ All highlighted subjects in the interaction image.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/livetextbuttonvisible
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/livetextbuttonvisible>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4546,7 +4510,7 @@ A Boolean value that indicates whether the interaction highlights actionable tex
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/issupplementaryinterfacehidden
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/issupplementaryinterfacehidden>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4587,9 +4551,9 @@ A Boolean value that indicates whether the interaction highlights actionable tex
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasinteractiveitem(at:)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasinteractiveitem(at>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4633,9 +4597,9 @@ A Boolean value that indicates whether the interaction highlights actionable tex
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hassupplementaryinterface(at:)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hassupplementaryinterface(at>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4683,7 +4647,7 @@ A Boolean value that indicates whether the interaction highlights actionable tex
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectableitemshighlighted
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectableitemshighlighted>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4720,9 +4684,9 @@ Returns a Boolean value that indicates whether supplementary interface objects e
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/setsupplementaryinterfacehidden(_:animated:)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/setsupplementaryinterfacehidden(_:animated>:)
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4768,7 +4732,7 @@ The font to use for the supplementary interface.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/supplementaryinterfacecontentinsets
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/supplementaryinterfacecontentinsets>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4805,7 +4769,7 @@ The font to use for the supplementary interface.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/supplementaryinterfacefont
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/supplementaryinterfacefont>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4846,7 +4810,7 @@ The distances the edges of content are inset from the supplementary interface.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/contentsrect
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/contentsrect>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4875,9 +4839,9 @@ Informs the view that contains the image when the layout changes and the view ne
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/setcontentsrectneedsupdate()
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/setcontentsrectneedsupdate()>
 
-#app-main)
+# app-main)
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4912,7 +4876,7 @@ A rectangle, in unit coordinate space, that describes the content area of the in
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subjectunavailable
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subjectunavailable>
 
 - VisionKit
 - ImageAnalysisInteraction
@@ -4951,323 +4915,314 @@ An error that indicates the subject fails to produce an image.
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/preferredinteractiontypes)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/preferredinteractiontypes>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalyzer/analyze(_:configuration:))
+# <https://developer.apple.com/documentation/visionkit/imageanalyzer/analyze(_:configuration>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/analysis)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisoverlayview/analysis>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate>))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/delegate)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/delegate>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate/contentsrect(for:))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteractiondelegate/contentsrect(for>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/init())
-
-
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/init()>)
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/init(_:))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/init(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/analysis)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/analysis>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/view)
-
-
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/activeinteractiontypes)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/willmove(to:))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/view>)
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/activeinteractiontypes>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/willmove(to>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/didmove(to:))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/didmove(to>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/text)
-
-
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/text>)
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedtext)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedtext>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedattributedtext)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedattributedtext>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hastext(at:))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hastext(at>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasactivetextselection)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasactivetextselection>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/analysishastext(at:))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/analysishastext(at>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasdatadetector(at:))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasdatadetector(at>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedranges)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectedranges>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/resettextselection())
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/resettextselection()>)
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subjects)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subjects>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject)
-
-
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject>)
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/image(for:))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/image(for>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject(at:))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/subject(at>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/highlightedsubjects)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/highlightedsubjects>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/livetextbuttonvisible)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/issupplementaryinterfacehidden)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/livetextbuttonvisible>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasinteractiveitem(at:))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/issupplementaryinterfacehidden>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hasinteractiveitem(at>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hassupplementaryinterface(at:))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/hassupplementaryinterface(at>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectableitemshighlighted)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/selectableitemshighlighted>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/setsupplementaryinterfacehidden(_:animated:))
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/setsupplementaryinterfacehidden(_:animated>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/supplementaryinterfacecontentinsets)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/supplementaryinterfacecontentinsets>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/supplementaryinterfacefont)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/contentsrect)
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/supplementaryinterfacefont>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/setcontentsrectneedsupdate())
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/contentsrect>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/visionkit/imageanalysisinteraction/setcontentsrectneedsupdate()>)
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-

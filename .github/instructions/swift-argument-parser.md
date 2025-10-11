@@ -4,9 +4,10 @@ globs: "**/*.swift"
 alwaysApply: false
 ---
 
-# https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser llms-full.txt
+# <https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser> llms-full.txt
 
 ## Swift Argument Parser
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser#app-main)
 
 Framework
@@ -49,7 +50,6 @@ When a user executes your command, the `ArgumentParser` library parses the comma
 - [`ArgumentParser` on GitHub](https://github.com/apple/swift-argument-parser/)
 
 - [`ArgumentParser` on the Swift Forums](https://forums.swift.org/c/related-projects/argumentparser/60)
-
 
 ## [Topics](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser\#topics)
 
@@ -191,6 +191,7 @@ Current page is ArgumentParser
 |
 
 ## Customizing Completions
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/customizingcompletions#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -286,6 +287,7 @@ Current page is Customizing Completions
 |
 
 ## OptionGroup Overview
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/optiongroup#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -403,6 +405,7 @@ Current page is OptionGroup
 |
 
 ## ArgumentParser Flag
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/flag/wrappedvalue#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -427,6 +430,7 @@ Current page is wrappedValue
 |
 
 ## chooseLast Flag
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/flagexclusivity/chooselast#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -451,6 +455,7 @@ Current page is chooseLast
 |
 
 ## Exclusive Flag Usage
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/flagexclusivity/exclusive#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -475,6 +480,7 @@ Current page is exclusive
 |
 
 ## ValidationError Message
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/validationerror/message#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -499,6 +505,7 @@ Current page is message
 |
 
 ## Swift Argument Parser
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/parsablecommand/main()#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -541,6 +548,7 @@ Current page is main()
 |
 
 ## Extended Grapheme Initializer
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/argumenthelp/init(extendedgraphemeclusterliteral:)#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -567,6 +575,7 @@ Current page is init(extendedGraphemeClusterLiteral:)
 |
 
 ## ArgumentHelp Initializer
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/argumenthelp/init(stringliteral:)#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -591,6 +600,7 @@ Current page is init(stringLiteral:)
 |
 
 ## Swift run() Method
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/parsablecommand/run()-20aoy#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -615,6 +625,7 @@ Current page is run()
 |
 
 ## FlagInversion Operator
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/flaginversion/!=(_:_:)#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -639,6 +650,7 @@ Current page is !=(\_:\_:)
 |
 
 ## Argument Help Initializer
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/argumenthelp/init(_:discussion:valuename:visibility:)#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -668,6 +680,7 @@ Current page is init(\_:discussion:valueName:visibility:)
 |
 
 ## CustomStringConvertible Implementations
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/optiongroup/customstringconvertible-implementations#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -690,6 +703,7 @@ Current page is CustomStringConvertible Implementations
 |
 
 ## Grapheme Cluster Implementations
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/argumenthelp/expressiblebyextendedgraphemeclusterliteral-implementations#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -712,6 +726,7 @@ Current page is ExpressibleByExtendedGraphemeClusterLiteral Implementations
 |
 
 ## String Literal Implementations
+
 [Skip Navigation](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser/argumenthelp/expressiblebystringliteral-implementations#app-main)
 
 - [ArgumentParser](https://swiftpackageindex.com/apple/swift-argument-parser/1.5.1/documentation/argumentparser)
@@ -734,4 +749,3 @@ Current page is ExpressibleByStringLiteral Implementations
 
 |
 |
-

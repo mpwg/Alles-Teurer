@@ -8,7 +8,7 @@ Availability strings filtered: Yes
 Code blocks only: No
 -->
 
-# https://developer.apple.com/documentation/Symbols
+# <https://developer.apple.com/documentation/Symbols>
 
 Framework
 
@@ -182,7 +182,7 @@ A symbol effect that applies the DrawOn animation to symbol images.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/appear
+# <https://developer.apple.com/documentation/symbols/symboleffect/appear>
 
 - Symbols
 - SymbolEffect
@@ -226,7 +226,7 @@ An animation that replaces the opacity of variable layers in a symbol-based imag
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/bounce
+# <https://developer.apple.com/documentation/symbols/symboleffect/bounce>
 
 - Symbols
 - SymbolEffect
@@ -270,7 +270,7 @@ An animation that replaces the opacity of variable layers in a symbol-based imag
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/disappear
+# <https://developer.apple.com/documentation/symbols/symboleffect/disappear>
 
 - Symbols
 - SymbolEffect
@@ -314,7 +314,7 @@ An animation that replaces the opacity of variable layers in a symbol-based imag
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/pulse
+# <https://developer.apple.com/documentation/symbols/symboleffect/pulse>
 
 - Symbols
 - SymbolEffect
@@ -358,7 +358,7 @@ An animation that replaces the opacity of variable layers in a symbol-based imag
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/scale
+# <https://developer.apple.com/documentation/symbols/symboleffect/scale>
 
 - Symbols
 - SymbolEffect
@@ -402,7 +402,7 @@ An animation that replaces the opacity of variable layers in a symbol-based imag
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/variablecolor
+# <https://developer.apple.com/documentation/symbols/symboleffect/variablecolor>
 
 - Symbols
 - SymbolEffect
@@ -446,7 +446,7 @@ An animation that scales the layers in a symbol-based image separately or as a w
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/replace
+# <https://developer.apple.com/documentation/symbols/symboleffect/replace>
 
 - Symbols
 - SymbolEffect
@@ -474,7 +474,7 @@ A transition that applies the default animation to a symbol-based image in a con
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/automatic
+# <https://developer.apple.com/documentation/symbols/symboleffect/automatic>
 
 - Symbols
 - SymbolEffect
@@ -502,7 +502,7 @@ An animation that replaces the layers of one symbol-based image with those of an
 
 ---
 
-# https://developer.apple.com/documentation/symbols/appearsymboleffect
+# <https://developer.apple.com/documentation/symbols/appearsymboleffect>
 
 - Symbols
 - AppearSymbolEffect
@@ -602,7 +602,7 @@ A type that replaces the opacity of variable layers in a symbol-based image in a
 
 ---
 
-# https://developer.apple.com/documentation/symbols/automaticsymboleffect
+# <https://developer.apple.com/documentation/symbols/automaticsymboleffect>
 
 - Symbols
 - AutomaticSymbolEffect
@@ -678,13 +678,11 @@ A type that replaces the opacity of variable layers in a symbol-based image in a
 
 ---
 
-# https://developer.apple.com/documentation/symbols/bouncesymboleffect
-
-
+# <https://developer.apple.com/documentation/symbols/bouncesymboleffect>
 
 ---
 
-# https://developer.apple.com/documentation/symbols/disappearsymboleffect
+# <https://developer.apple.com/documentation/symbols/disappearsymboleffect>
 
 - Symbols
 - DisappearSymbolEffect
@@ -784,7 +782,7 @@ A type that replaces the opacity of variable layers in a symbol-based image in a
 
 ---
 
-# https://developer.apple.com/documentation/symbols/pulsesymboleffect
+# <https://developer.apple.com/documentation/symbols/pulsesymboleffect>
 
 - Symbols
 - PulseSymbolEffect
@@ -901,7 +899,7 @@ A type that replaces the opacity of variable layers in a symbol-based image in a
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect>
 
 - Symbols
 - ReplaceSymbolEffect
@@ -1028,7 +1026,7 @@ A type that replaces the opacity of variable layers in a symbol-based image in a
 
 ---
 
-# https://developer.apple.com/documentation/symbols/scalesymboleffect
+# <https://developer.apple.com/documentation/symbols/scalesymboleffect>
 
 - Symbols
 - ScaleSymbolEffect
@@ -1127,7 +1125,7 @@ A type that replaces the opacity of variable layers in a symbol-based image in a
 
 ---
 
-# https://developer.apple.com/documentation/symbols/variablecolorsymboleffect
+# <https://developer.apple.com/documentation/symbols/variablecolorsymboleffect>
 
 - Symbols
 - VariableColorSymbolEffect
@@ -1264,7 +1262,7 @@ A type that scales the layers in a symbol-based image separately or as a whole.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/breathesymboleffect
+# <https://developer.apple.com/documentation/symbols/breathesymboleffect>
 
 - Symbols
 - BreatheSymbolEffect
@@ -1346,7 +1344,7 @@ A type that replaces the opacity of variable layers in a symbol-based image in a
 
 ---
 
-# https://developer.apple.com/documentation/symbols/rotatesymboleffect
+# <https://developer.apple.com/documentation/symbols/rotatesymboleffect>
 
 - Symbols
 - RotateSymbolEffect
@@ -1428,7 +1426,7 @@ A type that replaces the opacity of variable layers in a symbol-based image in a
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect>
 
 - Symbols
 - WiggleSymbolEffect
@@ -1522,13 +1520,11 @@ A type that replaces the opacity of variable layers in a symbol-based image in a
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffectoptions
-
-
+# <https://developer.apple.com/documentation/symbols/symboleffectoptions>
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect
+# <https://developer.apple.com/documentation/symbols/symboleffect>
 
 - Symbols
 - SymbolEffect
@@ -1655,7 +1651,7 @@ An effect that animates a symbol in or out.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/discretesymboleffect
+# <https://developer.apple.com/documentation/symbols/discretesymboleffect>
 
 - Symbols
 - DiscreteSymbolEffect
@@ -1703,7 +1699,7 @@ An effect that animates a symbol in or out.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/indefinitesymboleffect
+# <https://developer.apple.com/documentation/symbols/indefinitesymboleffect>
 
 - Symbols
 - IndefiniteSymbolEffect
@@ -1756,7 +1752,7 @@ An effect that animates a symbol in or out.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/contenttransitionsymboleffect
+# <https://developer.apple.com/documentation/symbols/contenttransitionsymboleffect>
 
 - Symbols
 - ContentTransitionSymbolEffect
@@ -1801,7 +1797,7 @@ An effect that animates a symbol in or out.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/transitionsymboleffect
+# <https://developer.apple.com/documentation/symbols/transitionsymboleffect>
 
 - Symbols
 - TransitionSymbolEffect
@@ -1848,13 +1844,11 @@ An effect that animates between symbols or different configurations of the same 
 
 ---
 
-# https://developer.apple.com/documentation/symbols/drawoffsymboleffect
-
-
+# <https://developer.apple.com/documentation/symbols/drawoffsymboleffect>
 
 ---
 
-# https://developer.apple.com/documentation/symbols/drawonsymboleffect
+# <https://developer.apple.com/documentation/symbols/drawonsymboleffect>
 
 - Symbols
 - DrawOnSymbolEffect
@@ -1908,169 +1902,115 @@ Returns a copy of the effect requesting an animation that applies to all motion 
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/appear)
-
-
+# <https://developer.apple.com/documentation/symbols/symboleffect/appear>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/bounce)
-
-
+# <https://developer.apple.com/documentation/symbols/symboleffect/bounce>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/disappear)
-
-
+# <https://developer.apple.com/documentation/symbols/symboleffect/disappear>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/pulse)
-
-
+# <https://developer.apple.com/documentation/symbols/symboleffect/pulse>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/scale)
-
-
+# <https://developer.apple.com/documentation/symbols/symboleffect/scale>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/variablecolor)
-
-
+# <https://developer.apple.com/documentation/symbols/symboleffect/variablecolor>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/replace)
-
-
+# <https://developer.apple.com/documentation/symbols/symboleffect/replace>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect/automatic)
-
-
+# <https://developer.apple.com/documentation/symbols/symboleffect/automatic>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/appearsymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/appearsymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/automaticsymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/automaticsymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/bouncesymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/bouncesymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/disappearsymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/disappearsymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/pulsesymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/pulsesymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/scalesymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/scalesymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/variablecolorsymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/variablecolorsymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/breathesymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/breathesymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/rotatesymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/rotatesymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffectoptions)
-
-
+# <https://developer.apple.com/documentation/symbols/symboleffectoptions>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/symboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/symboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/discretesymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/discretesymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/indefinitesymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/indefinitesymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/contenttransitionsymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/contenttransitionsymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/transitionsymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/transitionsymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/drawoffsymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/drawoffsymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/drawonsymboleffect)
-
-
+# <https://developer.apple.com/documentation/symbols/drawonsymboleffect>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols
+# <https://developer.apple.com/documentation/symbols>
 
 Framework
 
@@ -2244,7 +2184,7 @@ A symbol effect that applies the DrawOn animation to symbol images.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/automaticsymboleffect/configuration
+# <https://developer.apple.com/documentation/symbols/automaticsymboleffect/configuration>
 
 - Symbols
 - AutomaticSymbolEffect
@@ -2262,15 +2202,15 @@ var configuration: SymbolEffectConfiguration { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/automaticsymboleffect/configuration)
+# <https://developer.apple.com/documentation/symbols/automaticsymboleffect/configuration>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/symbols/appearsymboleffect/down
+# <https://developer.apple.com/documentation/symbols/appearsymboleffect/down>
 
 - Symbols
 - AppearSymbolEffect
@@ -2296,13 +2236,11 @@ An effect that makes the symbol scale up as it appears.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/appearsymboleffect/up
-
-
+# <https://developer.apple.com/documentation/symbols/appearsymboleffect/up>
 
 ---
 
-# https://developer.apple.com/documentation/symbols/appearsymboleffect/bylayer
+# <https://developer.apple.com/documentation/symbols/appearsymboleffect/bylayer>
 
 - Symbols
 - AppearSymbolEffect
@@ -2328,7 +2266,7 @@ An effect that makes all layers appear simultaneously.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/appearsymboleffect/wholesymbol
+# <https://developer.apple.com/documentation/symbols/appearsymboleffect/wholesymbol>
 
 - Symbols
 - AppearSymbolEffect
@@ -2354,7 +2292,7 @@ An effect that makes each layer appear separately.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/appearsymboleffect/configuration
+# <https://developer.apple.com/documentation/symbols/appearsymboleffect/configuration>
 
 - Symbols
 - AppearSymbolEffect
@@ -2372,37 +2310,27 @@ var configuration: SymbolEffectConfiguration { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/appearsymboleffect/down)
-
-
+# <https://developer.apple.com/documentation/symbols/appearsymboleffect/down>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/appearsymboleffect/up)
-
-
+# <https://developer.apple.com/documentation/symbols/appearsymboleffect/up>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/appearsymboleffect/bylayer)
-
-
+# <https://developer.apple.com/documentation/symbols/appearsymboleffect/bylayer>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/appearsymboleffect/wholesymbol)
-
-
+# <https://developer.apple.com/documentation/symbols/appearsymboleffect/wholesymbol>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/appearsymboleffect/configuration)
-
-
+# <https://developer.apple.com/documentation/symbols/appearsymboleffect/configuration>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/disappearsymboleffect/down
+# <https://developer.apple.com/documentation/symbols/disappearsymboleffect/down>
 
 - Symbols
 - DisappearSymbolEffect
@@ -2428,7 +2356,7 @@ An effect that scales the symbol up as it disappears.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/disappearsymboleffect/up
+# <https://developer.apple.com/documentation/symbols/disappearsymboleffect/up>
 
 - Symbols
 - DisappearSymbolEffect
@@ -2454,7 +2382,7 @@ An effect that scales the symbol down as it disappears.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/disappearsymboleffect/bylayer
+# <https://developer.apple.com/documentation/symbols/disappearsymboleffect/bylayer>
 
 - Symbols
 - DisappearSymbolEffect
@@ -2480,7 +2408,7 @@ An effect that makes all layers disappear simultaneously.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/disappearsymboleffect/wholesymbol
+# <https://developer.apple.com/documentation/symbols/disappearsymboleffect/wholesymbol>
 
 - Symbols
 - DisappearSymbolEffect
@@ -2506,7 +2434,7 @@ An effect that makes each layer disappear separately.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/disappearsymboleffect/configuration
+# <https://developer.apple.com/documentation/symbols/disappearsymboleffect/configuration>
 
 - Symbols
 - DisappearSymbolEffect
@@ -2524,39 +2452,31 @@ var configuration: SymbolEffectConfiguration { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/disappearsymboleffect/down)
-
-
+# <https://developer.apple.com/documentation/symbols/disappearsymboleffect/down>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/disappearsymboleffect/up)
-
-
+# <https://developer.apple.com/documentation/symbols/disappearsymboleffect/up>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/disappearsymboleffect/bylayer)
-
-
+# <https://developer.apple.com/documentation/symbols/disappearsymboleffect/bylayer>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/disappearsymboleffect/wholesymbol)
-
-
+# <https://developer.apple.com/documentation/symbols/disappearsymboleffect/wholesymbol>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/disappearsymboleffect/configuration)
+# <https://developer.apple.com/documentation/symbols/disappearsymboleffect/configuration>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/symbols/breathesymboleffect/bylayer
+# <https://developer.apple.com/documentation/symbols/breathesymboleffect/bylayer>
 
 - Symbols
 - BreatheSymbolEffect
@@ -2572,7 +2492,7 @@ var byLayer: BreatheSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/breathesymboleffect/configuration
+# <https://developer.apple.com/documentation/symbols/breathesymboleffect/configuration>
 
 - Symbols
 - BreatheSymbolEffect
@@ -2588,7 +2508,7 @@ var configuration: SymbolEffectConfiguration { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/breathesymboleffect/plain
+# <https://developer.apple.com/documentation/symbols/breathesymboleffect/plain>
 
 - Symbols
 - BreatheSymbolEffect
@@ -2604,7 +2524,7 @@ var plain: BreatheSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/breathesymboleffect/pulse
+# <https://developer.apple.com/documentation/symbols/breathesymboleffect/pulse>
 
 - Symbols
 - BreatheSymbolEffect
@@ -2620,7 +2540,7 @@ var pulse: BreatheSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/breathesymboleffect/wholesymbol
+# <https://developer.apple.com/documentation/symbols/breathesymboleffect/wholesymbol>
 
 - Symbols
 - BreatheSymbolEffect
@@ -2636,37 +2556,27 @@ var wholeSymbol: BreatheSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/breathesymboleffect/bylayer)
-
-
+# <https://developer.apple.com/documentation/symbols/breathesymboleffect/bylayer>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/breathesymboleffect/configuration)
-
-
+# <https://developer.apple.com/documentation/symbols/breathesymboleffect/configuration>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/breathesymboleffect/plain)
-
-
+# <https://developer.apple.com/documentation/symbols/breathesymboleffect/plain>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/breathesymboleffect/pulse)
-
-
+# <https://developer.apple.com/documentation/symbols/breathesymboleffect/pulse>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/breathesymboleffect/wholesymbol)
-
-
+# <https://developer.apple.com/documentation/symbols/breathesymboleffect/wholesymbol>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/downup-swift.property
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/downup-swift.property>
 
 - Symbols
 - ReplaceSymbolEffect
@@ -2700,7 +2610,7 @@ An effect that replaces a symbol by scaling it up, and scaling a different symbo
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/offup-swift.property
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/offup-swift.property>
 
 - Symbols
 - ReplaceSymbolEffect
@@ -2734,7 +2644,7 @@ An effect that replaces a symbol by scaling it up, and scaling a different symbo
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/upup-swift.property
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/upup-swift.property>
 
 - Symbols
 - ReplaceSymbolEffect
@@ -2768,7 +2678,7 @@ An effect that replaces a symbol by removing it, and scaling a different symbol 
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/bylayer
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/bylayer>
 
 - Symbols
 - ReplaceSymbolEffect
@@ -2794,7 +2704,7 @@ An effect that replaces all layers simultaneously.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/wholesymbol
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/wholesymbol>
 
 - Symbols
 - ReplaceSymbolEffect
@@ -2820,7 +2730,7 @@ An effect that replaces each layer separately.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/configuration
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/configuration>
 
 - Symbols
 - ReplaceSymbolEffect
@@ -2838,7 +2748,7 @@ var configuration: SymbolEffectConfiguration { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/magicreplace
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/magicreplace>
 
 - Symbols
 - ReplaceSymbolEffect
@@ -2872,9 +2782,9 @@ struct MagicReplace
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/magic(fallback:)
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/magic(fallback>:)
 
-#app-main)
+# app-main)
 
 - Symbols
 - ReplaceSymbolEffect
@@ -2888,7 +2798,7 @@ Mac Catalyst
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/downup-swift.type.property
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/downup-swift.type.property>
 
 - Symbols
 - ReplaceSymbolEffect
@@ -2904,7 +2814,7 @@ static var downUp: ReplaceSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/offup-swift.type.property
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/offup-swift.type.property>
 
 - Symbols
 - ReplaceSymbolEffect
@@ -2920,7 +2830,7 @@ static var offUp: ReplaceSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/upup-swift.type.property
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/upup-swift.type.property>
 
 - Symbols
 - ReplaceSymbolEffect
@@ -2936,93 +2846,81 @@ static var upUp: ReplaceSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/downup-swift.property)
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/downup-swift.property>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/offup-swift.property)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/upup-swift.property)
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/offup-swift.property>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/bylayer)
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/upup-swift.property>)
 
+# The page you're looking for can't be found
 
-
----
-
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/wholesymbol)
-
-
+Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/configuration)
-
-
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/bylayer>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/magicreplace)
-
-
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/wholesymbol>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/magic(fallback:))
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/configuration>)
+
+---
+
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/magicreplace>)
+
+---
+
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/magic(fallback>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/downup-swift.type.property)
-
-
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/downup-swift.type.property>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/offup-swift.type.property)
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/offup-swift.type.property>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/symbols/replacesymboleffect/upup-swift.type.property)
+# <https://developer.apple.com/documentation/symbols/replacesymboleffect/upup-swift.type.property>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/symbols/scalesymboleffect/down
-
-
+# <https://developer.apple.com/documentation/symbols/scalesymboleffect/down>
 
 ---
 
-# https://developer.apple.com/documentation/symbols/scalesymboleffect/up
+# <https://developer.apple.com/documentation/symbols/scalesymboleffect/up>
 
 - Symbols
 - ScaleSymbolEffect
@@ -3048,7 +2946,7 @@ An effect that scales the symbol down.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/scalesymboleffect/bylayer
+# <https://developer.apple.com/documentation/symbols/scalesymboleffect/bylayer>
 
 - Symbols
 - ScaleSymbolEffect
@@ -3074,7 +2972,7 @@ An effect that scales all layers simultaneously.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/scalesymboleffect/wholesymbol
+# <https://developer.apple.com/documentation/symbols/scalesymboleffect/wholesymbol>
 
 - Symbols
 - ScaleSymbolEffect
@@ -3100,7 +2998,7 @@ An effect that scales each layer separately.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/scalesymboleffect/configuration
+# <https://developer.apple.com/documentation/symbols/scalesymboleffect/configuration>
 
 - Symbols
 - ScaleSymbolEffect
@@ -3118,37 +3016,27 @@ var configuration: SymbolEffectConfiguration { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/scalesymboleffect/down)
-
-
+# <https://developer.apple.com/documentation/symbols/scalesymboleffect/down>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/scalesymboleffect/up)
-
-
+# <https://developer.apple.com/documentation/symbols/scalesymboleffect/up>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/scalesymboleffect/bylayer)
-
-
+# <https://developer.apple.com/documentation/symbols/scalesymboleffect/bylayer>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/scalesymboleffect/wholesymbol)
-
-
+# <https://developer.apple.com/documentation/symbols/scalesymboleffect/wholesymbol>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/scalesymboleffect/configuration)
-
-
+# <https://developer.apple.com/documentation/symbols/scalesymboleffect/configuration>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/backward
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/backward>
 
 - Symbols
 - WiggleSymbolEffect
@@ -3164,7 +3052,7 @@ var backward: WiggleSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/bylayer
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/bylayer>
 
 - Symbols
 - WiggleSymbolEffect
@@ -3180,7 +3068,7 @@ var byLayer: WiggleSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/clockwise
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/clockwise>
 
 - Symbols
 - WiggleSymbolEffect
@@ -3196,13 +3084,11 @@ var clockwise: WiggleSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/configuration
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/configuration>
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/counterclockwise
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/counterclockwise>
 
 - Symbols
 - WiggleSymbolEffect
@@ -3218,7 +3104,7 @@ var counterClockwise: WiggleSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/down
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/down>
 
 - Symbols
 - WiggleSymbolEffect
@@ -3234,7 +3120,7 @@ var down: WiggleSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/forward
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/forward>
 
 - Symbols
 - WiggleSymbolEffect
@@ -3250,13 +3136,11 @@ var forward: WiggleSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/left
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/left>
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/right
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/right>
 
 - Symbols
 - WiggleSymbolEffect
@@ -3272,7 +3156,7 @@ var right: WiggleSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/up
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/up>
 
 - Symbols
 - WiggleSymbolEffect
@@ -3288,7 +3172,7 @@ var up: WiggleSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/wholesymbol
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/wholesymbol>
 
 - Symbols
 - WiggleSymbolEffect
@@ -3304,7 +3188,7 @@ var wholeSymbol: WiggleSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/custom(angle:)-1f09q
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/custom(angle:)-1f09q>
 
 -1f09q#app-main)
 
@@ -3320,7 +3204,7 @@ Mac Catalyst
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/custom(angle:)-cqpf
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/custom(angle:)-cqpf>
 
 -cqpf#app-main)
 
@@ -3336,95 +3220,75 @@ Mac Catalyst
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/backward)
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/backward>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/bylayer)
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/bylayer>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/clockwise)
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/clockwise>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/configuration)
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/configuration>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/counterclockwise)
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/counterclockwise>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/down)
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/down>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/forward)
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/forward>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/left)
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/left>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/right)
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/right>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/up)
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/up>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/wholesymbol)
-
-
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/wholesymbol>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/custom(angle:)-1f09q)
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/custom(angle:)-1f09q>)
 
 -1f09q)#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/symbols/wigglesymboleffect/custom(angle:)-cqpf)
+# <https://developer.apple.com/documentation/symbols/wigglesymboleffect/custom(angle:)-cqpf>)
 
 -cqpf)#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/symbols/rotatesymboleffect/bylayer
+# <https://developer.apple.com/documentation/symbols/rotatesymboleffect/bylayer>
 
 - Symbols
 - RotateSymbolEffect
@@ -3440,7 +3304,7 @@ var byLayer: RotateSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/rotatesymboleffect/clockwise
+# <https://developer.apple.com/documentation/symbols/rotatesymboleffect/clockwise>
 
 - Symbols
 - RotateSymbolEffect
@@ -3456,7 +3320,7 @@ var clockwise: RotateSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/rotatesymboleffect/configuration
+# <https://developer.apple.com/documentation/symbols/rotatesymboleffect/configuration>
 
 - Symbols
 - RotateSymbolEffect
@@ -3472,7 +3336,7 @@ var configuration: SymbolEffectConfiguration { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/rotatesymboleffect/counterclockwise
+# <https://developer.apple.com/documentation/symbols/rotatesymboleffect/counterclockwise>
 
 - Symbols
 - RotateSymbolEffect
@@ -3488,7 +3352,7 @@ var counterClockwise: RotateSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/rotatesymboleffect/wholesymbol
+# <https://developer.apple.com/documentation/symbols/rotatesymboleffect/wholesymbol>
 
 - Symbols
 - RotateSymbolEffect
@@ -3504,39 +3368,31 @@ var wholeSymbol: RotateSymbolEffect { get }
 
 ---
 
-# https://developer.apple.com/documentation/symbols/rotatesymboleffect/bylayer)
-
-
+# <https://developer.apple.com/documentation/symbols/rotatesymboleffect/bylayer>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/rotatesymboleffect/clockwise)
-
-
+# <https://developer.apple.com/documentation/symbols/rotatesymboleffect/clockwise>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/rotatesymboleffect/configuration)
-
-
+# <https://developer.apple.com/documentation/symbols/rotatesymboleffect/configuration>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/rotatesymboleffect/counterclockwise)
+# <https://developer.apple.com/documentation/symbols/rotatesymboleffect/counterclockwise>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/symbols/rotatesymboleffect/wholesymbol)
-
-
+# <https://developer.apple.com/documentation/symbols/rotatesymboleffect/wholesymbol>)
 
 ---
 
-# https://developer.apple.com/documentation/symbols/variablecolorsymboleffect/cumulative
+# <https://developer.apple.com/documentation/symbols/variablecolorsymboleffect/cumulative>
 
 - Symbols
 - VariableColorSymbolEffect
@@ -3566,7 +3422,7 @@ An effect that momentarily enables each layer of a symbol-based image in sequenc
 
 ---
 
-# https://developer.apple.com/documentation/symbols/variablecolorsymboleffect/iterative
+# <https://developer.apple.com/documentation/symbols/variablecolorsymboleffect/iterative>
 
 - Symbols
 - VariableColorSymbolEffect
@@ -3596,7 +3452,7 @@ An effect that enables each layer of a symbol-based image in sequence.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/variablecolorsymboleffect/nonreversing
+# <https://developer.apple.com/documentation/symbols/variablecolorsymboleffect/nonreversing>
 
 - Symbols
 - VariableColorSymbolEffect
@@ -3622,7 +3478,7 @@ An effect that reverses each time it repeats.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/variablecolorsymboleffect/reversing
+# <https://developer.apple.com/documentation/symbols/variablecolorsymboleffect/reversing>
 
 - Symbols
 - VariableColorSymbolEffect
@@ -3648,7 +3504,7 @@ An effect that doesn’t reverse each time it repeats.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/variablecolorsymboleffect/diminactivelayers
+# <https://developer.apple.com/documentation/symbols/variablecolorsymboleffect/diminactivelayers>
 
 - Symbols
 - VariableColorSymbolEffect
@@ -3678,7 +3534,7 @@ An effect that hides inactive layers in a symbol-based image.
 
 ---
 
-# https://developer.apple.com/documentation/symbols/variablecolorsymboleffect/hideinactivelayers
+# <https://developer.apple.com/documentation/symbols/variablecolorsymboleffect/hideinactivelayers>
 
 - Symbols
 - VariableColorSymbolEffect
@@ -3707,4 +3563,3 @@ This effect hides inactive layers completely, rather than drawing them with redu
 An effect that dims inactive layers in a symbol-based image.
 
 ---
-

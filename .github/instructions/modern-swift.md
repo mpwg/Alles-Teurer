@@ -14,6 +14,7 @@ Write idiomatic SwiftUI code following Apple's latest architectural recommendati
 ### 1. Embrace Native State Management
 
 Use SwiftUI's built-in property wrappers appropriately:
+
 - `@State` - Local, ephemeral view state
 - `@Binding` - Two-way data flow between views
 - `@Observable` - Shared state (iOS 17+)
@@ -51,6 +52,7 @@ Use SwiftUI's built-in property wrappers appropriately:
 ## Implementation Patterns
 
 ### Simple State Example
+
 ```swift
 struct CounterView: View {
     @State private var count = 0
@@ -67,6 +69,7 @@ struct CounterView: View {
 ```
 
 ### Shared State with @Observable
+
 ```swift
 @Observable
 class UserSession {
@@ -92,6 +95,7 @@ struct MyApp: App {
 ```
 
 ### Async Data Loading
+
 ```swift
 struct ProfileView: View {
     @State private var profile: Profile?
@@ -128,7 +132,8 @@ struct ProfileView: View {
 
 ## Best Practices
 
-### DO:
+### DO
+
 - Write self-contained views when possible
 - Use property wrappers as intended by Apple
 - Test logic in isolation, preview UI visually
@@ -136,7 +141,8 @@ struct ProfileView: View {
 - Keep views focused on presentation
 - Use Swift's type system for safety
 
-### DON'T:
+### DON'T
+
 - Create ViewModels for every view
 - Move state out of views unnecessarily
 - Add abstraction layers without clear benefit

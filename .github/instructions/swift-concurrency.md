@@ -24,16 +24,19 @@ Swift 6 represents a revolutionary leap in concurrent programming, introducing c
 ### Quick Start: Enable Strict Concurrency
 
 **Xcode:**
+
 ```
 Build Settings → Swift Compiler - Language → Strict Concurrency Checking → Complete
 ```
 
 **Command Line:**
+
 ```bash
 swiftc -strict-concurrency=complete -swift-version 6 MyFile.swift
 ```
 
 **Package.swift:**
+
 ```swift
 .target(
     name: "MyTarget",
@@ -47,6 +50,7 @@ swiftc -strict-concurrency=complete -swift-version 6 MyFile.swift
 ### What is Swift 6 Concurrency?
 
 Swift 6's concurrency model builds upon Swift 5.5's async/await foundation with:
+
 - **Complete data race safety** at compile time
 - **Actor isolation** enforcement
 - **Sendable protocol** requirements
@@ -146,6 +150,7 @@ func processImage(_ image: UIImage) async -> ProcessedImage {
 ### Foundation Proposals (Swift 5.5-5.10)
 
 #### SE-0302: Sendable and @Sendable
+
 Introduces the fundamental `Sendable` protocol:
 
 ```swift
@@ -164,6 +169,7 @@ struct Container<T>: Sendable where T: Sendable {
 ```
 
 #### SE-0306: Actors
+
 The actor model for protecting mutable state:
 
 ```swift
@@ -188,6 +194,7 @@ actor BankAccount {
 ```
 
 #### SE-0316: Global Actors
+
 System-wide isolation domains:
 
 ```swift
@@ -226,6 +233,7 @@ class MixedClass {
 ### Swift 6 Core Proposals
 
 #### SE-0337: Incremental Migration to Concurrency Checking
+
 Enables progressive adoption:
 
 ```swift
@@ -244,6 +252,7 @@ Enables progressive adoption:
 ```
 
 #### SE-0401: Remove Actor Isolation Inference from Property Wrappers
+
 Eliminates unexpected isolation:
 
 ```swift
@@ -267,6 +276,7 @@ struct ContentView: View {
 ```
 
 #### SE-0412: Strict Concurrency for Global Variables
+
 Global variable safety with `nonisolated(unsafe)`:
 
 ```swift
@@ -293,6 +303,7 @@ struct LegacyAPI {
 ```
 
 #### SE-0414: Region-Based Isolation
+
 Revolutionary improvement in isolation checking:
 
 ```swift
@@ -317,6 +328,7 @@ func process() async {
 ```
 
 #### SE-0420: Inheritance of Actor Isolation
+
 Dynamic isolation inheritance:
 
 ```swift
@@ -341,6 +353,7 @@ actor DataProcessor {
 ```
 
 #### SE-0430: Sending Parameter and Result Values
+
 Safe transfer without full Sendable:
 
 ```swift
@@ -360,6 +373,7 @@ extension Task where Failure == Never {
 ```
 
 #### SE-0431: @isolated(any) Function Types
+
 Isolation-agnostic function types:
 
 ```swift
@@ -374,6 +388,7 @@ struct Executor {
 ```
 
 #### SE-0434: Usability of Global-Actor-Isolated Types
+
 Improvements for global actor usage:
 
 ```swift
@@ -1151,6 +1166,7 @@ swift test -Xswiftc -sanitize=thread
 ```
 
 **When to use TSan:**
+
 - Testing legacy code with @preconcurrency imports
 - Verifying @unchecked Sendable implementations
 - Catching races in C/Objective-C interop
@@ -1272,7 +1288,7 @@ func debugPriority() async {
 | **Actor-isolated property referenced from non-isolated** | `Actor-isolated property 'items' can not be referenced from a non-isolated context` | 1. Add `await`<br>2. Move code to actor<br>3. Make property `nonisolated` |
 | **Call to main actor-isolated from non-isolated** | `Call to main actor-isolated instance method 'updateUI()' in a synchronous nonisolated context` | 1. Add `@MainActor` to caller<br>2. Use `await MainActor.run { }`<br>3. Make method `nonisolated` |
 | **Mutation of captured var** | `Mutation of captured var 'counter' in concurrently-executing code` | 1. Use actor for state<br>2. Make immutable<br>3. Use `Mutex` (Swift 6.1+) |
-| **Sendable closure captures non-Sendable** | `Capture of 'self' with non-sendable type 'ViewController?' in a `@Sendable` closure` | 1. Use `[weak self]`<br>2. Make type Sendable<br>3. Extract needed values before closure |
+| **Sendable closure captures non-Sendable** | `Capture of 'self' with non-sendable type 'ViewController?' in a`@Sendable`closure` | 1. Use `[weak self]`<br>2. Make type Sendable<br>3. Extract needed values before closure |
 
 ### Detailed Error Solutions
 
@@ -1517,6 +1533,7 @@ actor ShardedCounter {
 ### Swift 6.1 (Shipped)
 
 #### SE-0431: @isolated(any) Function Types
+
 ```swift
 // Function types that preserve isolation
 typealias IsolatedHandler = @isolated(any) () async -> Void
@@ -1537,6 +1554,7 @@ actor MyActor {
 ```
 
 #### SE-0433: Synchronous Mutual Exclusion Lock (Mutex)
+
 ```swift
 import Synchronization
 
@@ -1567,6 +1585,7 @@ private struct Stats {
 ### Swift 6.2 (In Development)
 
 #### SE-0461: Isolated Default Arguments
+
 ```swift
 // Default values can use isolation context
 @MainActor
@@ -1603,22 +1622,26 @@ Stay updated: [Swift Evolution Dashboard](https://www.swift.org/swift-evolution/
 ## Resources
 
 ### Official Documentation
+
 - [Swift.org - Concurrency](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/)
 - [Migrating to Swift 6](https://www.swift.org/migration/documentation/migrationguide/)
 - [Data Race Safety](https://www.swift.org/migration/documentation/swift-6-concurrency-migration-guide/dataracesafety/)
 
 ### Swift Evolution Proposals
+
 - [SE-0401: Remove Actor Isolation Inference](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0401-remove-property-wrapper-isolation.md)
 - [SE-0414: Region-based Isolation](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0414-region-based-isolation.md)
 - [SE-0420: Inheritance of Actor Isolation](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0420-inheritance-of-actor-isolation.md)
 - [SE-0430: Sending Parameter Values](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0430-transferring-parameters-and-results.md)
 
 ### WWDC Sessions
+
 - **WWDC 2024**: "Migrate your app to Swift 6" - Practical migration guide
 - **WWDC 2022**: "Eliminate data races using Swift Concurrency" - Foundational concepts
 - **WWDC 2021**: "Meet async/await in Swift" - Introduction to Swift concurrency
 
 ### Community Resources
+
 - [Swift Forums - Concurrency](https://forums.swift.org/c/swift-evolution/concurrency/23)
 - [Concurrency Index Thread](https://developer.apple.com/forums/thread/768776)
 - [Swift Package Index](https://swiftpackageindex.com) - Shows "Safe from data races" badge
@@ -1626,6 +1649,7 @@ Stay updated: [Swift Evolution Dashboard](https://www.swift.org/swift-evolution/
 ## Conclusion
 
 Swift 6's strict concurrency represents a paradigm shift in how we write concurrent code. By embracing:
+
 - Complete data race safety at compile time
 - Clear isolation boundaries with actors
 - Explicit Sendable requirements

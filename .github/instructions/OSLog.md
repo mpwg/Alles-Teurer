@@ -8,7 +8,7 @@ Availability strings filtered: Yes
 Code blocks only: No
 -->
 
-# https://developer.apple.com/documentation/OSLog
+# <https://developer.apple.com/documentation/OSLog>
 
 Framework
 
@@ -74,7 +74,7 @@ A representation of a point in a sequence of entries in the unified logging syst
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore
+# <https://developer.apple.com/documentation/oslog/oslogstore>
 
 - OSLog
 - OSLogStore
@@ -152,7 +152,7 @@ An enumerator that can access and list log entries.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogenumerator
+# <https://developer.apple.com/documentation/oslog/oslogenumerator>
 
 - OSLog
 - OSLogEnumerator
@@ -202,7 +202,7 @@ A set of entries from the unified logging system.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentry
+# <https://developer.apple.com/documentation/oslog/oslogentry>
 
 - OSLog
 - OSLogEntry
@@ -292,7 +292,7 @@ A protocol defining subclasses that represent entries made using a handle and a 
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryactivity
+# <https://developer.apple.com/documentation/oslog/oslogentryactivity>
 
 - OSLog
 - OSLogEntryActivity
@@ -361,7 +361,7 @@ A protocol defining subclasses that represent entries made using a handle and a 
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryboundary
+# <https://developer.apple.com/documentation/oslog/oslogentryboundary>
 
 - OSLog
 - OSLogEntryBoundary
@@ -421,7 +421,7 @@ A protocol defining subclasses that represent entries made using a handle and a 
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrylog
+# <https://developer.apple.com/documentation/oslog/oslogentrylog>
 
 - OSLog
 - OSLogEntryLog
@@ -499,7 +499,7 @@ A protocol defining subclasses that represent entries made using a handle and a 
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrysignpost
+# <https://developer.apple.com/documentation/oslog/oslogentrysignpost>
 
 - OSLog
 - OSLogEntrySignpost
@@ -587,7 +587,7 @@ A protocol defining subclasses that represent entries made using a handle and a 
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryfromprocess
+# <https://developer.apple.com/documentation/oslog/oslogentryfromprocess>
 
 - OSLog
 - OSLogEntryFromProcess
@@ -664,7 +664,7 @@ A protocol defining subclasses that represent entries made using a handle and a 
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrywithpayload
+# <https://developer.apple.com/documentation/oslog/oslogentrywithpayload>
 
 - OSLog
 - OSLogEntryWithPayload
@@ -736,7 +736,7 @@ A protocol that defines subclasses containing metadata about a process.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent>
 
 - OSLog
 - OSLogMessageComponent
@@ -836,7 +836,7 @@ A representation of a point in a sequence of entries in the unified logging syst
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogposition
+# <https://developer.apple.com/documentation/oslog/oslogposition>
 
 - OSLog
 - OSLogPosition
@@ -878,7 +878,7 @@ The message arguments for a particular entry.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslog-enumerations
+# <https://developer.apple.com/documentation/oslog/oslog-enumerations>
 
 Collection
 
@@ -897,79 +897,55 @@ API Collection
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogstore>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogenumerator)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogenumerator>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentry)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentry>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryactivity)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentryactivity>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryboundary)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentryboundary>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrylog)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentrylog>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrysignpost)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentrysignpost>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryfromprocess)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentryfromprocess>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrywithpayload)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentrywithpayload>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogposition)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogposition>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslog-enumerations)
-
-
+# <https://developer.apple.com/documentation/oslog/oslog-enumerations>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog
+# <https://developer.apple.com/documentation/oslog>
 
 Framework
 
@@ -1035,7 +1011,7 @@ A representation of a point in a sequence of entries in the unified logging syst
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogenumerator/options
+# <https://developer.apple.com/documentation/oslog/oslogenumerator/options>
 
 - OSLog
 - OSLogEnumerator
@@ -1076,13 +1052,11 @@ Tells the framework to iterate backwards.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogenumerator/options)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogenumerator/options>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentry/composedmessage
+# <https://developer.apple.com/documentation/oslog/oslogentry/composedmessage>
 
 - OSLog
 - OSLogEntry
@@ -1106,7 +1080,7 @@ The timestamp of the entry.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentry/date
+# <https://developer.apple.com/documentation/oslog/oslogentry/date>
 
 - OSLog
 - OSLogEntry
@@ -1130,7 +1104,7 @@ The fully formatted message for the entry.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentry/storecategory-swift.property
+# <https://developer.apple.com/documentation/oslog/oslogentry/storecategory-swift.property>
 
 - OSLog
 - OSLogEntry
@@ -1154,7 +1128,7 @@ A classification of how the entry was to be stored and rotated at the point when
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentry/storecategory-swift.enum
+# <https://developer.apple.com/documentation/oslog/oslogentry/storecategory-swift.enum>
 
 - OSLog
 - OSLogEntry
@@ -1237,35 +1211,29 @@ The current log entry’s storage tag.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentry/composedmessage)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentry/composedmessage>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentry/date)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentry/date>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentry/storecategory-swift.property)
+# <https://developer.apple.com/documentation/oslog/oslogentry/storecategory-swift.property>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentry/storecategory-swift.enum)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentry/storecategory-swift.enum>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/getentries(with:at:matching:)
+# <https://developer.apple.com/documentation/oslog/oslogstore/getentries(with:at:matching>:)
 
-#app-main)
+# app-main)
 
 - OSLog
 - OSLogStore
@@ -1284,9 +1252,9 @@ matching predicate: NSPredicate? = nil
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/init(url:)
+# <https://developer.apple.com/documentation/oslog/oslogstore/init(url>:)
 
-#app-main)
+# app-main)
 
 - OSLog
 - OSLogStore
@@ -1308,9 +1276,9 @@ Creates a log store representing the Mac’s local store.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/local()
+# <https://developer.apple.com/documentation/oslog/oslogstore/local()>
 
-#app-main)
+# app-main)
 
 - OSLog
 - OSLogStore
@@ -1336,9 +1304,9 @@ Creates a log store based on a log archive.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/position(date:)
+# <https://developer.apple.com/documentation/oslog/oslogstore/position(date>:)
 
-#app-main)
+# app-main)
 
 - OSLog
 - OSLogStore
@@ -1364,9 +1332,9 @@ Returns a position representing time since the last boot in the series of entrie
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/position(timeintervalsinceend:)
+# <https://developer.apple.com/documentation/oslog/oslogstore/position(timeintervalsinceend>:)
 
-#app-main)
+# app-main)
 
 - OSLog
 - OSLogStore
@@ -1388,9 +1356,9 @@ Returns a position representing time since the last boot in the series of entrie
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/position(timeintervalsincelatestboot:)
+# <https://developer.apple.com/documentation/oslog/oslogstore/position(timeintervalsincelatestboot>:)
 
-#app-main)
+# app-main)
 
 - OSLog
 - OSLogStore
@@ -1412,9 +1380,9 @@ Returns a position representing time since the end of the time range that the en
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/init()
+# <https://developer.apple.com/documentation/oslog/oslogstore/init()>
 
-#app-main)
+# app-main)
 
 - OSLog
 - OSLogStore
@@ -1436,9 +1404,9 @@ init()
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/init(scope:)
+# <https://developer.apple.com/documentation/oslog/oslogstore/init(scope>:)
 
-#app-main)
+# app-main)
 
 - OSLog
 - OSLogStore
@@ -1458,7 +1426,7 @@ convenience init(scope: OSLogStore.Scope) throws
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/scope
+# <https://developer.apple.com/documentation/oslog/oslogstore/scope>
 
 - OSLog
 - OSLogStore
@@ -1495,73 +1463,61 @@ enum Scope
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/getentries(with:at:matching:))
+# <https://developer.apple.com/documentation/oslog/oslogstore/getentries(with:at:matching>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/init(url:))
-
-
+# <https://developer.apple.com/documentation/oslog/oslogstore/init(url>:))
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/local())
-
-
+# <https://developer.apple.com/documentation/oslog/oslogstore/local()>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/position(date:))
-
-
+# <https://developer.apple.com/documentation/oslog/oslogstore/position(date>:))
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/position(timeintervalsinceend:))
+# <https://developer.apple.com/documentation/oslog/oslogstore/position(timeintervalsinceend>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/position(timeintervalsincelatestboot:))
+# <https://developer.apple.com/documentation/oslog/oslogstore/position(timeintervalsincelatestboot>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/init())
-
-
+# <https://developer.apple.com/documentation/oslog/oslogstore/init()>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/init(scope:))
-
-
+# <https://developer.apple.com/documentation/oslog/oslogstore/init(scope>:))
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogstore/scope)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogstore/scope>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrysignpost/signpostidentifier
+# <https://developer.apple.com/documentation/oslog/oslogentrysignpost/signpostidentifier>
 
 - OSLog
 - OSLogEntrySignpost
@@ -1585,7 +1541,7 @@ The signpost’s name.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrysignpost/signpostname
+# <https://developer.apple.com/documentation/oslog/oslogentrysignpost/signpostname>
 
 - OSLog
 - OSLogEntrySignpost
@@ -1609,7 +1565,7 @@ The signpost’s identifier.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrysignpost/signposttype-swift.property
+# <https://developer.apple.com/documentation/oslog/oslogentrysignpost/signposttype-swift.property>
 
 - OSLog
 - OSLogEntrySignpost
@@ -1633,7 +1589,7 @@ The available signpost types.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrysignpost/signposttype-swift.enum
+# <https://developer.apple.com/documentation/oslog/oslogentrysignpost/signposttype-swift.enum>
 
 - OSLog
 - OSLogEntrySignpost
@@ -1692,35 +1648,31 @@ The signpost’s type.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrysignpost/signpostidentifier)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentrysignpost/signpostidentifier>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrysignpost/signpostname)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentrysignpost/signpostname>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrysignpost/signposttype-swift.property)
+# <https://developer.apple.com/documentation/oslog/oslogentrysignpost/signposttype-swift.property>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrysignpost/signposttype-swift.enum)
+# <https://developer.apple.com/documentation/oslog/oslogentrysignpost/signposttype-swift.enum>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrylog/level-swift.property
+# <https://developer.apple.com/documentation/oslog/oslogentrylog/level-swift.property>
 
 - OSLog
 - OSLogEntryLog
@@ -1744,7 +1696,7 @@ The log level at which the entry was generated.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrylog/level-swift.enum
+# <https://developer.apple.com/documentation/oslog/oslogentrylog/level-swift.enum>
 
 - OSLog
 - OSLogEntryLog
@@ -1811,19 +1763,15 @@ The log level of the entry.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrylog/level-swift.property)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentrylog/level-swift.property>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrylog/level-swift.enum)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentrylog/level-swift.enum>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrywithpayload/category
+# <https://developer.apple.com/documentation/oslog/oslogentrywithpayload/category>
 
 - OSLog
 - OSLogEntryWithPayload
@@ -1861,7 +1809,7 @@ The payload’s subsystem.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrywithpayload/formatstring
+# <https://developer.apple.com/documentation/oslog/oslogentrywithpayload/formatstring>
 
 - OSLog
 - OSLogEntryWithPayload
@@ -1895,7 +1843,7 @@ The payload’s subsystem.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrywithpayload/subsystem
+# <https://developer.apple.com/documentation/oslog/oslogentrywithpayload/subsystem>
 
 - OSLog
 - OSLogEntryWithPayload
@@ -1933,31 +1881,23 @@ The payload’s format string.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrywithpayload/category)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentrywithpayload/category>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrywithpayload/components)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentrywithpayload/components>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrywithpayload/formatstring)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentrywithpayload/formatstring>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentrywithpayload/subsystem)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentrywithpayload/subsystem>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryfromprocess/activityidentifier
+# <https://developer.apple.com/documentation/oslog/oslogentryfromprocess/activityidentifier>
 
 - OSLog
 - OSLogEntryFromProcess
@@ -1995,7 +1935,7 @@ The identifier of the thread that made the entry.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryfromprocess/process
+# <https://developer.apple.com/documentation/oslog/oslogentryfromprocess/process>
 
 - OSLog
 - OSLogEntryFromProcess
@@ -2033,7 +1973,7 @@ The identifier of the thread that made the entry.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryfromprocess/processidentifier
+# <https://developer.apple.com/documentation/oslog/oslogentryfromprocess/processidentifier>
 
 - OSLog
 - OSLogEntryFromProcess
@@ -2071,7 +2011,7 @@ The identifier of the thread that made the entry.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryfromprocess/sender
+# <https://developer.apple.com/documentation/oslog/oslogentryfromprocess/sender>
 
 - OSLog
 - OSLogEntryFromProcess
@@ -2109,7 +2049,7 @@ The identifier of the thread that made the entry.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryfromprocess/threadidentifier
+# <https://developer.apple.com/documentation/oslog/oslogentryfromprocess/threadidentifier>
 
 - OSLog
 - OSLogEntryFromProcess
@@ -2147,43 +2087,39 @@ The name of the binary image that made the entry.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryfromprocess/activityidentifier)
+# <https://developer.apple.com/documentation/oslog/oslogentryfromprocess/activityidentifier>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/oslog/oslogentryfromprocess/process)
-
-
-
----
-
-# https://developer.apple.com/documentation/oslog/oslogentryfromprocess/processidentifier)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryfromprocess/sender)
-
-
+# <https://developer.apple.com/documentation/oslog/oslogentryfromprocess/process>)
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryfromprocess/threadidentifier)
+# <https://developer.apple.com/documentation/oslog/oslogentryfromprocess/processidentifier>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryactivity/parentactivityidentifier
+# <https://developer.apple.com/documentation/oslog/oslogentryfromprocess/sender>)
+
+---
+
+# <https://developer.apple.com/documentation/oslog/oslogentryfromprocess/threadidentifier>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/oslog/oslogentryactivity/parentactivityidentifier>
 
 - OSLog
 - OSLogEntryActivity
@@ -2199,15 +2135,15 @@ var parentActivityIdentifier: os_activity_id_t { get }
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogentryactivity/parentactivityidentifier)
+# <https://developer.apple.com/documentation/oslog/oslogentryactivity/parentactivityidentifier>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argument-swift.property
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argument-swift.property>
 
 - OSLog
 - OSLogMessageComponent
@@ -2239,7 +2175,7 @@ The data type corresponding to the argument provided in a message payload.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argument-swift.enum
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argument-swift.enum>
 
 - OSLog
 - OSLogMessageComponent
@@ -2299,7 +2235,7 @@ The data type corresponding to the argument provided in a message payload.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentcategory-swift.property
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentcategory-swift.property>
 
 - OSLog
 - OSLogMessageComponent
@@ -2331,7 +2267,7 @@ The data type corresponding to the argument provided in a message payload.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentcategory-swift.enum
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentcategory-swift.enum>
 
 - OSLog
 - OSLogMessageComponent
@@ -2410,7 +2346,7 @@ The type of argument that corresponds to the placeholder.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/formatsubstring
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/formatsubstring>
 
 - OSLog
 - OSLogMessageComponent
@@ -2438,7 +2374,7 @@ The placeholder text for the message component.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/placeholder
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/placeholder>
 
 - OSLog
 - OSLogMessageComponent
@@ -2466,7 +2402,7 @@ The text immediately preceding a placeholder.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentdatavalue
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentdatavalue>
 
 - OSLog
 - OSLogMessageComponent
@@ -2510,7 +2446,7 @@ The argument formatted as an unsigned 64-bit integer.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentdoublevalue
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentdoublevalue>
 
 - OSLog
 - OSLogMessageComponent
@@ -2550,7 +2486,7 @@ The argument formatted as an unsigned 64-bit integer.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentint64value
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentint64value>
 
 - OSLog
 - OSLogMessageComponent
@@ -2590,7 +2526,7 @@ The argument formatted as an unsigned 64-bit integer.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentnumbervalue
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentnumbervalue>
 
 - OSLog
 - OSLogMessageComponent
@@ -2634,7 +2570,7 @@ The argument formatted as an unsigned 64-bit integer.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentstringvalue
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentstringvalue>
 
 - OSLog
 - OSLogMessageComponent
@@ -2678,7 +2614,7 @@ The argument formatted as an unsigned 64-bit integer.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentuint64value
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentuint64value>
 
 - OSLog
 - OSLogMessageComponent
@@ -2718,97 +2654,94 @@ The argument formatted as a string.
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argument-swift.property)
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argument-swift.property>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argument-swift.enum)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentcategory-swift.property)
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argument-swift.enum>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentcategory-swift.enum)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/formatsubstring)
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentcategory-swift.property>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/placeholder)
-
-
-
----
-
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentdatavalue)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentdoublevalue)
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentcategory-swift.enum>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentint64value)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentnumbervalue)
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/formatsubstring>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentstringvalue)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentuint64value)
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/placeholder>)
 
-# The page you're looking for can't be found.
+---
+
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentdatavalue>)
+
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentdoublevalue>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentint64value>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentnumbervalue>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentstringvalue>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/oslog/oslogmessagecomponent/argumentuint64value>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---

@@ -8,7 +8,7 @@ Availability strings filtered: Yes
 Code blocks only: No
 -->
 
-# https://developer.apple.com/documentation/Charts
+# <https://developer.apple.com/documentation/Charts>
 
 Framework
 
@@ -314,7 +314,7 @@ Contextual information that you can use to determine how to best adjust how char
 
 ---
 
-# https://developer.apple.com/documentation/charts/creating-a-chart-using-swift-charts
+# <https://developer.apple.com/documentation/charts/creating-a-chart-using-swift-charts>
 
 - Swift Charts
 - Creating a chart using Swift Charts
@@ -499,7 +499,7 @@ A mechanism for grouping chart contents into a single entity.
 
 ---
 
-# https://developer.apple.com/documentation/charts/visualizing_your_app_s_data
+# <https://developer.apple.com/documentation/charts/visualizing_your_app_s_data>
 
 - Swift Charts
 - Visualizing your app’s data
@@ -542,7 +542,7 @@ A mechanism for grouping chart contents into a single entity.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chart
+# <https://developer.apple.com/documentation/charts/chart>
 
 - Swift Charts
 - Chart
@@ -663,7 +663,7 @@ A mechanism for grouping chart contents into a single entity.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent
+# <https://developer.apple.com/documentation/charts/chartcontent>
 
 - Swift Charts
 - ChartContent
@@ -881,7 +881,7 @@ A mechanism for grouping chart contents into a single entity.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontentbuilder
+# <https://developer.apple.com/documentation/charts/chartcontentbuilder>
 
 - Swift Charts
 - ChartContentBuilder
@@ -963,7 +963,7 @@ A mechanism for grouping chart contents into a single entity.
 
 ---
 
-# https://developer.apple.com/documentation/charts/plot
+# <https://developer.apple.com/documentation/charts/plot>
 
 - Swift Charts
 - Plot
@@ -1015,7 +1015,7 @@ A result builder that you use to compose the contents of a chart.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chart3d
+# <https://developer.apple.com/documentation/charts/chart3d>
 
 - Swift Charts
 - Chart3D Beta
@@ -1036,7 +1036,7 @@ For example, you can use a `SurfacePlot` to visualize a 3D surface for the funct
 
 Chart3D {
 SurfacePlot(x: "x", y: "y", z: "z") { x, z in
-sin(2 * x) * cos(2 * z)
+sin(2 *x)* cos(2 * z)
 }
 }
 
@@ -1155,7 +1155,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/charts/chart3dcontent
+# <https://developer.apple.com/documentation/charts/chart3dcontent>
 
 - Swift Charts
 - Chart3DContent Beta
@@ -1227,7 +1227,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/charts/chart3dcontentbuilder
+# <https://developer.apple.com/documentation/charts/chart3dcontentbuilder>
 
 - Swift Charts
 - Chart3DContentBuilder Beta
@@ -1269,7 +1269,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/charts/surfaceplot
+# <https://developer.apple.com/documentation/charts/surfaceplot>
 
 - Swift Charts
 - SurfacePlot Beta
@@ -1291,7 +1291,7 @@ To create a `SurfacePlot`, provide a closure that takes `x` and `z` values as in
 
 Chart3D {
 SurfacePlot(x: "x", y: "y", z: "z") { x, z in
-sin(2 * x) * cos(2 * z)
+sin(2 *x)* cos(2 * z)
 }
 .foregroundStyle(.heightBased)
 }
@@ -1303,12 +1303,12 @@ sin(2 * x) * cos(2 * z)
 
 Chart3D {
 SurfacePlot(x: "x", y: "y", z: "z") { x, z in
-sin(2 * x) * cos(2 * z) * 0.5
+sin(2 *x)* cos(2 *z)* 0.5
 }
 .foregroundStyle(.heightBased)
 
 SurfacePlot(x: "x", y: "y", z: "z") { x, z in
-sin(4 * x) * cos(4 * z) * 0.2 - 1
+sin(4 *x)* cos(4 *z)* 0.2 - 1
 }
 .foregroundStyle(.normalBased)
 }
@@ -1358,7 +1358,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/charts/areamark
+# <https://developer.apple.com/documentation/charts/areamark>
 
 - Swift Charts
 - AreaMark
@@ -1543,7 +1543,7 @@ A sector of a pie or donut chart, which shows how individual categories make up 
 
 ---
 
-# https://developer.apple.com/documentation/charts/linemark
+# <https://developer.apple.com/documentation/charts/linemark>
 
 - Swift Charts
 - LineMark
@@ -1674,7 +1674,7 @@ A sector of a pie or donut chart, which shows how individual categories make up 
 
 ---
 
-# https://developer.apple.com/documentation/charts/pointmark
+# <https://developer.apple.com/documentation/charts/pointmark>
 
 - Swift Charts
 - PointMark
@@ -1840,7 +1840,7 @@ A sector of a pie or donut chart, which shows how individual categories make up 
 
 ---
 
-# https://developer.apple.com/documentation/charts/rectanglemark
+# <https://developer.apple.com/documentation/charts/rectanglemark>
 
 - Swift Charts
 - RectangleMark
@@ -2026,7 +2026,7 @@ A sector of a pie or donut chart, which shows how individual categories make up 
 
 ---
 
-# https://developer.apple.com/documentation/charts/rulemark
+# <https://developer.apple.com/documentation/charts/rulemark>
 
 - Swift Charts
 - RuleMark
@@ -2200,7 +2200,7 @@ A sector of a pie or donut chart, which shows how individual categories make up 
 
 ---
 
-# https://developer.apple.com/documentation/charts/barmark
+# <https://developer.apple.com/documentation/charts/barmark>
 
 - Swift Charts
 - BarMark
@@ -2386,7 +2386,7 @@ A sector of a pie or donut chart, which shows how individual categories make up 
 
 ---
 
-# https://developer.apple.com/documentation/charts/sectormark
+# <https://developer.apple.com/documentation/charts/sectormark>
 
 - Swift Charts
 - SectorMark
@@ -2490,7 +2490,7 @@ Chart content that represents data using bars.
 
 ---
 
-# https://developer.apple.com/documentation/charts/creating-a-data-visualization-dashboard-with-swift-charts
+# <https://developer.apple.com/documentation/charts/creating-a-data-visualization-dashboard-with-swift-charts>
 
 - Swift Charts
 - Creating a data visualization dashboard with Swift Charts
@@ -2600,7 +2600,7 @@ A generic type that represents content conveyed via a chart.
 
 ---
 
-# https://developer.apple.com/documentation/charts/areaplot
+# <https://developer.apple.com/documentation/charts/areaplot>
 
 - Swift Charts
 - AreaPlot
@@ -2713,7 +2713,7 @@ A generic type that represents content conveyed via a chart.
 
 ---
 
-# https://developer.apple.com/documentation/charts/lineplot
+# <https://developer.apple.com/documentation/charts/lineplot>
 
 - Swift Charts
 - LinePlot
@@ -2771,8 +2771,8 @@ LinePlot(x: "x", y: "y = cos(x)") { cos($0) }
 You can plot a parametric function with the constructor with `x`, `y`, and `t`:
 
 Chart {
-LinePlot(x: "x", y: "y", t: "t", domain: 0 ... .pi * 2) {
-t in (x: 10 * cos(5 * t) * cos(t), y: 10 * cos(5 * t) * sin(t))
+LinePlot(x: "x", y: "y", t: "t", domain: 0 ... .pi *2) {
+t in (x: 10* cos(5 *t)* cos(t), y: 10 *cos(5* t) * sin(t))
 }
 }
 .chartXScale(domain: -10 ... 10)
@@ -2843,7 +2843,7 @@ A generic type that represents content conveyed via a chart.
 
 ---
 
-# https://developer.apple.com/documentation/charts/pointplot
+# <https://developer.apple.com/documentation/charts/pointplot>
 
 - Swift Charts
 - PointPlot
@@ -2929,7 +2929,7 @@ A generic type that represents content conveyed via a chart.
 
 ---
 
-# https://developer.apple.com/documentation/charts/rectangleplot
+# <https://developer.apple.com/documentation/charts/rectangleplot>
 
 - Swift Charts
 - RectanglePlot
@@ -3013,7 +3013,7 @@ A generic type that represents content conveyed via a chart.
 
 ---
 
-# https://developer.apple.com/documentation/charts/ruleplot
+# <https://developer.apple.com/documentation/charts/ruleplot>
 
 - Swift Charts
 - RulePlot
@@ -3099,7 +3099,7 @@ A generic type that represents content conveyed via a chart.
 
 ---
 
-# https://developer.apple.com/documentation/charts/barplot
+# <https://developer.apple.com/documentation/charts/barplot>
 
 - Swift Charts
 - BarPlot
@@ -3181,7 +3181,7 @@ A generic type that represents content conveyed via a chart.
 
 ---
 
-# https://developer.apple.com/documentation/charts/sectorplot
+# <https://developer.apple.com/documentation/charts/sectorplot>
 
 - Swift Charts
 - SectorPlot
@@ -3263,7 +3263,7 @@ A generic type that represents content conveyed via a chart.
 
 ---
 
-# https://developer.apple.com/documentation/charts/vectorizedchartcontent
+# <https://developer.apple.com/documentation/charts/vectorizedchartcontent>
 
 - Swift Charts
 - VectorizedChartContent
@@ -3284,57 +3284,57 @@ Usually, `DataElement` has properties to determine visual attributes directly, o
 
 ### Styling marks
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/foregroundstyle(_:))
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/foregroundstyle(>_:))
 
 Represents data using a foreground style.
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/opacity(_:))
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/opacity(>_:))
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/linestyle(_:))
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/linestyle(>_:))
 
 Represents data using line styles.
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/position(by:axis:span:))
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/position(by:axis:span>:))
 
 ### Setting symbol appearance
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/symbol(by:))
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/symbol(by>:))
 
 Represents data using different kinds of symbols.
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/symbolsize(_:)-12tl1)
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/symbolsize(_:)-12tl1>)
 
 Sets the plotting symbol size for the chart content.
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/symbolsize(_:)-3nwop)
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/symbolsize(_:)-3nwop>)
 
 Sets the plotting symbol size for the chart content according to a perceived area.
 
 ### Encoding data into mark characteristics
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/foregroundstyle(by:))
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/foregroundstyle(by>:))
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/linestyle(by:))
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/linestyle(by>:))
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/symbolsize(by:))
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/symbolsize(by>:))
 
 Represents data using symbol sizes.
 
 ### Configuring accessibility
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilityhidden(_:))
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilityhidden(>_:))
 
 Specifies whether to hide this chart content from system accessibility features.
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilityidentifier(_:))
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilityidentifier(>_:))
 
 Adds an identifier string to the chart content.
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilitylabel(_:)-8zoay)
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilitylabel(_:)-8zoay>)
 
 Adds a label to the chart content that describes its contents.
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilityvalue(_:)-2rv8b)
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilityvalue(_:)-2rv8b>)
 
 Adds a description of the value that the chart content contains.
 
@@ -3350,13 +3350,13 @@ Adds a description of the value that the chart content contains.
 
 ### Instance Methods
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilitylabel(_:)-46jbt)
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilitylabel(_:)-46jbt>)
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilitylabel(_:)-5r0pw)
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilitylabel(_:)-5r0pw>)
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilityvalue(_:)-3dei8)
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilityvalue(_:)-3dei8>)
 
-`](https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilityvalue(_:)-pylk)
+`](<https://developer.apple.com/documentation/charts/vectorizedchartcontent/accessibilityvalue(_:)-pylk>)
 
 ## Relationships
 
@@ -3433,7 +3433,7 @@ Chart content that represents a collection of data using a sector of a pie or do
 
 ---
 
-# https://developer.apple.com/documentation/charts/markstackingmethod
+# <https://developer.apple.com/documentation/charts/markstackingmethod>
 
 - Swift Charts
 - MarkStackingMethod
@@ -3504,7 +3504,7 @@ A type-erased plotting shape.
 
 ---
 
-# https://developer.apple.com/documentation/charts/markdimension
+# <https://developer.apple.com/documentation/charts/markdimension>
 
 - Swift Charts
 - MarkDimension
@@ -3586,7 +3586,7 @@ A type-erased plotting shape.
 
 ---
 
-# https://developer.apple.com/documentation/charts/interpolationmethod
+# <https://developer.apple.com/documentation/charts/interpolationmethod>
 
 - Swift Charts
 - InterpolationMethod
@@ -3674,7 +3674,7 @@ A type-erased plotting shape.
 
 ---
 
-# https://developer.apple.com/documentation/charts/basicchartsymbolshape
+# <https://developer.apple.com/documentation/charts/basicchartsymbolshape>
 
 - Swift Charts
 - BasicChartSymbolShape
@@ -3730,7 +3730,7 @@ A type-erased plotting shape.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartsymbolshape
+# <https://developer.apple.com/documentation/charts/chartsymbolshape>
 
 - Swift Charts
 - ChartSymbolShape
@@ -3828,7 +3828,7 @@ A type-erased plotting shape.
 
 ---
 
-# https://developer.apple.com/documentation/charts/anychartsymbolshape
+# <https://developer.apple.com/documentation/charts/anychartsymbolshape>
 
 - Swift Charts
 - AnyChartSymbolShape
@@ -3885,7 +3885,7 @@ A type that can act as a shape for the marks that you add to a chart.
 
 ---
 
-# https://developer.apple.com/documentation/charts/plottablevalue
+# <https://developer.apple.com/documentation/charts/plottablevalue>
 
 - Swift Charts
 - PlottableValue
@@ -3946,7 +3946,7 @@ A type that can serve as data to plot in a chart.
 
 ---
 
-# https://developer.apple.com/documentation/charts/plottable
+# <https://developer.apple.com/documentation/charts/plottable>
 
 - Swift Charts
 - Plottable
@@ -4030,7 +4030,7 @@ Labeled data that you plot in a chart using marks.
 
 ---
 
-# https://developer.apple.com/documentation/charts/scalerange
+# <https://developer.apple.com/documentation/charts/scalerange>
 
 - Swift Charts
 - ScaleRange
@@ -4087,7 +4087,7 @@ The ways you can scale the domain or range of a plot.
 
 ---
 
-# https://developer.apple.com/documentation/charts/positionscalerange
+# <https://developer.apple.com/documentation/charts/positionscalerange>
 
 - Swift Charts
 - PositionScaleRange
@@ -4150,7 +4150,7 @@ The ways you can scale the domain or range of a plot.
 
 ---
 
-# https://developer.apple.com/documentation/charts/plotdimensionscalerange
+# <https://developer.apple.com/documentation/charts/plotdimensionscalerange>
 
 - Swift Charts
 - PlotDimensionScaleRange
@@ -4196,7 +4196,7 @@ The ways you can scale the domain or range of a plot.
 
 ---
 
-# https://developer.apple.com/documentation/charts/scaledomain
+# <https://developer.apple.com/documentation/charts/scaledomain>
 
 - Swift Charts
 - ScaleDomain
@@ -4251,7 +4251,7 @@ The ways you can scale the domain or range of a plot.
 
 ---
 
-# https://developer.apple.com/documentation/charts/automaticscaledomain
+# <https://developer.apple.com/documentation/charts/automaticscaledomain>
 
 - Swift Charts
 - AutomaticScaleDomain
@@ -4300,7 +4300,7 @@ The ways you can scale the domain or range of a plot.
 
 ---
 
-# https://developer.apple.com/documentation/charts/scaletype
+# <https://developer.apple.com/documentation/charts/scaletype>
 
 - Swift Charts
 - ScaleType
@@ -4377,7 +4377,7 @@ A domain that the chart infers from its data.
 
 ---
 
-# https://developer.apple.com/documentation/charts/customizing-axes-in-swift-charts
+# <https://developer.apple.com/documentation/charts/customizing-axes-in-swift-charts>
 
 - Swift Charts
 - Customizing axes in Swift Charts
@@ -4410,7 +4410,7 @@ struct BatteryData {
 let date: Date
 let level: Double
 
-static let data: [BatteryData] = /* Array of BatteryData instances */
+static let data: [BatteryData] = /*Array of BatteryData instances*/
 }
 
 Chart(BatteryData.data, id: \.date) {
@@ -4568,7 +4568,7 @@ A result builder that constructs axis content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartaxiscontent
+# <https://developer.apple.com/documentation/charts/chartaxiscontent>
 
 - Swift Charts
 - ChartAxisContent
@@ -4616,7 +4616,7 @@ A result builder that constructs axis content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/axiscontent
+# <https://developer.apple.com/documentation/charts/axiscontent>
 
 - Swift Charts
 - AxisContent
@@ -4672,7 +4672,7 @@ A result builder that constructs axis content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/axismarks
+# <https://developer.apple.com/documentation/charts/axismarks>
 
 - Swift Charts
 - AxisMarks
@@ -4743,7 +4743,7 @@ A result builder that constructs axis content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/anyaxiscontent
+# <https://developer.apple.com/documentation/charts/anyaxiscontent>
 
 - Swift Charts
 - AnyAxisContent
@@ -4797,7 +4797,7 @@ A result builder that constructs axis content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/axiscontentbuilder
+# <https://developer.apple.com/documentation/charts/axiscontentbuilder>
 
 - Swift Charts
 - AxisContentBuilder
@@ -4853,7 +4853,7 @@ A type-erased element of a chart’s axis.
 
 ---
 
-# https://developer.apple.com/documentation/charts/axismark
+# <https://developer.apple.com/documentation/charts/axismark>
 
 - Swift Charts
 - AxisMark
@@ -4919,7 +4919,7 @@ A result builder that constructs axis marks and overrides default marks.
 
 ---
 
-# https://developer.apple.com/documentation/charts/axistick
+# <https://developer.apple.com/documentation/charts/axistick>
 
 - Swift Charts
 - AxisTick
@@ -4988,7 +4988,7 @@ A result builder that constructs axis marks and overrides default marks.
 
 ---
 
-# https://developer.apple.com/documentation/charts/axisgridline
+# <https://developer.apple.com/documentation/charts/axisgridline>
 
 - Swift Charts
 - AxisGridLine
@@ -5049,7 +5049,7 @@ A result builder that constructs axis marks and overrides default marks.
 
 ---
 
-# https://developer.apple.com/documentation/charts/axisvaluelabel
+# <https://developer.apple.com/documentation/charts/axisvaluelabel>
 
 - Swift Charts
 - AxisValueLabel
@@ -5124,7 +5124,7 @@ A result builder that constructs axis marks and overrides default marks.
 
 ---
 
-# https://developer.apple.com/documentation/charts/axisvalue
+# <https://developer.apple.com/documentation/charts/axisvalue>
 
 - Swift Charts
 - AxisValue
@@ -5186,7 +5186,7 @@ A result builder that constructs axis marks and overrides default marks.
 
 ---
 
-# https://developer.apple.com/documentation/charts/anyaxismark
+# <https://developer.apple.com/documentation/charts/anyaxismark>
 
 - Swift Charts
 - AnyAxisMark
@@ -5244,7 +5244,7 @@ A result builder that constructs axis marks and overrides default marks.
 
 ---
 
-# https://developer.apple.com/documentation/charts/axismarkbuilder
+# <https://developer.apple.com/documentation/charts/axismarkbuilder>
 
 - Swift Charts
 - AxisMarkBuilder
@@ -5304,7 +5304,7 @@ A type-erased axis mark.
 
 ---
 
-# https://developer.apple.com/documentation/charts/annotationcontext
+# <https://developer.apple.com/documentation/charts/annotationcontext>
 
 - Swift Charts
 - AnnotationContext
@@ -5337,7 +5337,7 @@ The position of an annotation.
 
 ---
 
-# https://developer.apple.com/documentation/charts/annotationposition
+# <https://developer.apple.com/documentation/charts/annotationposition>
 
 - Swift Charts
 - AnnotationPosition
@@ -5412,7 +5412,7 @@ Information about an item that you add an annotation to.
 
 ---
 
-# https://developer.apple.com/documentation/charts/annotationoverflowresolution
+# <https://developer.apple.com/documentation/charts/annotationoverflowresolution>
 
 - Swift Charts
 - AnnotationOverflowResolution
@@ -5461,7 +5461,7 @@ The position of an annotation.
 
 ---
 
-# https://developer.apple.com/documentation/charts/numberbins
+# <https://developer.apple.com/documentation/charts/numberbins>
 
 - Swift Charts
 - NumberBins
@@ -5527,7 +5527,7 @@ The range of data that a single bin of a chart represents.
 
 ---
 
-# https://developer.apple.com/documentation/charts/datebins
+# <https://developer.apple.com/documentation/charts/datebins>
 
 - Swift Charts
 - DateBins
@@ -5591,7 +5591,7 @@ The range of data that a single bin of a chart represents.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartbinrange
+# <https://developer.apple.com/documentation/charts/chartbinrange>
 
 - Swift Charts
 - ChartBinRange
@@ -5634,7 +5634,7 @@ A collection of bins for a chart that plots data against dates.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartplotcontent
+# <https://developer.apple.com/documentation/charts/chartplotcontent>
 
 - Swift Charts
 - ChartPlotContent
@@ -5666,7 +5666,7 @@ A proxy that you use to access the scales and plot area of a chart.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartproxy
+# <https://developer.apple.com/documentation/charts/chartproxy>
 
 - Swift Charts
 - ChartProxy
@@ -5779,7 +5779,7 @@ A view that represents a chart’s plot area.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartscrolltargetbehavior
+# <https://developer.apple.com/documentation/charts/chartscrolltargetbehavior>
 
 - Swift Charts
 - ChartScrollTargetBehavior
@@ -5838,7 +5838,7 @@ Contextual information that you can use to determine how to best adjust how char
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartscrolltargetbehaviorcontext
+# <https://developer.apple.com/documentation/charts/chartscrolltargetbehaviorcontext>
 
 - Swift Charts
 - ChartScrollTargetBehaviorContext
@@ -5870,7 +5870,7 @@ A type that configures the scroll behavior of charts.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chart3drenderingstyle
+# <https://developer.apple.com/documentation/charts/chart3drenderingstyle>
 
 - Swift Charts
 - Chart3DRenderingStyle Beta
@@ -5912,393 +5912,267 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/charts/creating-a-chart-using-swift-charts)
-
-
+# <https://developer.apple.com/documentation/charts/creating-a-chart-using-swift-charts>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/visualizing_your_app_s_data)
-
-
+# <https://developer.apple.com/documentation/charts/visualizing_your_app_s_data>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chart)
-
-
+# <https://developer.apple.com/documentation/charts/chart>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent)
-
-
+# <https://developer.apple.com/documentation/charts/chartcontent>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontentbuilder)
-
-
+# <https://developer.apple.com/documentation/charts/chartcontentbuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/plot)
-
-
+# <https://developer.apple.com/documentation/charts/plot>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chart3d)
-
-
+# <https://developer.apple.com/documentation/charts/chart3d>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chart3dcontent)
-
-
+# <https://developer.apple.com/documentation/charts/chart3dcontent>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chart3dcontentbuilder)
-
-
+# <https://developer.apple.com/documentation/charts/chart3dcontentbuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/surfaceplot)
-
-
+# <https://developer.apple.com/documentation/charts/surfaceplot>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/areamark)
-
-
+# <https://developer.apple.com/documentation/charts/areamark>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/linemark)
-
-
+# <https://developer.apple.com/documentation/charts/linemark>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/pointmark)
-
-
+# <https://developer.apple.com/documentation/charts/pointmark>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/rectanglemark)
-
-
+# <https://developer.apple.com/documentation/charts/rectanglemark>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/rulemark)
-
-
+# <https://developer.apple.com/documentation/charts/rulemark>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/barmark)
-
-
+# <https://developer.apple.com/documentation/charts/barmark>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/sectormark)
-
-
+# <https://developer.apple.com/documentation/charts/sectormark>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/creating-a-data-visualization-dashboard-with-swift-charts)
+# <https://developer.apple.com/documentation/charts/creating-a-data-visualization-dashboard-with-swift-charts>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/charts/areaplot)
-
-
+# <https://developer.apple.com/documentation/charts/areaplot>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/lineplot)
-
-
+# <https://developer.apple.com/documentation/charts/lineplot>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/pointplot)
-
-
+# <https://developer.apple.com/documentation/charts/pointplot>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/rectangleplot)
-
-
+# <https://developer.apple.com/documentation/charts/rectangleplot>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/ruleplot)
-
-
+# <https://developer.apple.com/documentation/charts/ruleplot>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/barplot)
-
-
+# <https://developer.apple.com/documentation/charts/barplot>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/sectorplot)
-
-
+# <https://developer.apple.com/documentation/charts/sectorplot>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/vectorizedchartcontent)
-
-
+# <https://developer.apple.com/documentation/charts/vectorizedchartcontent>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/markstackingmethod)
-
-
+# <https://developer.apple.com/documentation/charts/markstackingmethod>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/markdimension)
-
-
+# <https://developer.apple.com/documentation/charts/markdimension>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/interpolationmethod)
-
-
+# <https://developer.apple.com/documentation/charts/interpolationmethod>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/basicchartsymbolshape)
-
-
+# <https://developer.apple.com/documentation/charts/basicchartsymbolshape>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartsymbolshape)
-
-
+# <https://developer.apple.com/documentation/charts/chartsymbolshape>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/anychartsymbolshape)
-
-
+# <https://developer.apple.com/documentation/charts/anychartsymbolshape>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/plottablevalue)
-
-
+# <https://developer.apple.com/documentation/charts/plottablevalue>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/plottable)
-
-
+# <https://developer.apple.com/documentation/charts/plottable>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/scalerange)
-
-
+# <https://developer.apple.com/documentation/charts/scalerange>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/positionscalerange)
-
-
+# <https://developer.apple.com/documentation/charts/positionscalerange>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/plotdimensionscalerange)
-
-
+# <https://developer.apple.com/documentation/charts/plotdimensionscalerange>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/scaledomain)
-
-
+# <https://developer.apple.com/documentation/charts/scaledomain>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/automaticscaledomain)
-
-
+# <https://developer.apple.com/documentation/charts/automaticscaledomain>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/scaletype)
-
-
+# <https://developer.apple.com/documentation/charts/scaletype>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/customizing-axes-in-swift-charts)
-
-
+# <https://developer.apple.com/documentation/charts/customizing-axes-in-swift-charts>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartaxiscontent)
-
-
+# <https://developer.apple.com/documentation/charts/chartaxiscontent>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/axiscontent)
-
-
+# <https://developer.apple.com/documentation/charts/axiscontent>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/axismarks)
-
-
+# <https://developer.apple.com/documentation/charts/axismarks>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/anyaxiscontent)
-
-
+# <https://developer.apple.com/documentation/charts/anyaxiscontent>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/axiscontentbuilder)
-
-
+# <https://developer.apple.com/documentation/charts/axiscontentbuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/axismark)
-
-
+# <https://developer.apple.com/documentation/charts/axismark>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/axistick)
-
-
+# <https://developer.apple.com/documentation/charts/axistick>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/axisgridline)
-
-
+# <https://developer.apple.com/documentation/charts/axisgridline>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/axisvaluelabel)
-
-
+# <https://developer.apple.com/documentation/charts/axisvaluelabel>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/axisvalue)
-
-
+# <https://developer.apple.com/documentation/charts/axisvalue>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/anyaxismark)
-
-
+# <https://developer.apple.com/documentation/charts/anyaxismark>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/axismarkbuilder)
-
-
+# <https://developer.apple.com/documentation/charts/axismarkbuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/annotationcontext)
-
-
+# <https://developer.apple.com/documentation/charts/annotationcontext>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/annotationposition)
-
-
+# <https://developer.apple.com/documentation/charts/annotationposition>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/annotationoverflowresolution)
-
-
+# <https://developer.apple.com/documentation/charts/annotationoverflowresolution>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/numberbins)
-
-
+# <https://developer.apple.com/documentation/charts/numberbins>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/datebins)
-
-
+# <https://developer.apple.com/documentation/charts/datebins>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartbinrange)
-
-
+# <https://developer.apple.com/documentation/charts/chartbinrange>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartplotcontent)
-
-
+# <https://developer.apple.com/documentation/charts/chartplotcontent>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartproxy)
-
-
+# <https://developer.apple.com/documentation/charts/chartproxy>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartscrolltargetbehavior)
-
-
+# <https://developer.apple.com/documentation/charts/chartscrolltargetbehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartscrolltargetbehaviorcontext)
-
-
+# <https://developer.apple.com/documentation/charts/chartscrolltargetbehaviorcontext>)
 
 ---
 
-# https://developer.apple.com/documentation/charts/chart3drenderingstyle)
-
-
+# <https://developer.apple.com/documentation/charts/chart3drenderingstyle>)
 
 ---
 
-# https://developer.apple.com/documentation/charts
+# <https://developer.apple.com/documentation/charts>
 
 Framework
 
@@ -6606,9 +6480,9 @@ Contextual information that you can use to determine how to best adjust how char
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/foregroundstyle(_:)
+# <https://developer.apple.com/documentation/charts/chartcontent/foregroundstyle(>_:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -6642,9 +6516,9 @@ Plots line and area marks with the interpolation method that you specify.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/opacity(_:)
+# <https://developer.apple.com/documentation/charts/chartcontent/opacity(>_:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -6672,9 +6546,9 @@ Plots line and area marks with the interpolation method that you specify.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/cornerradius(_:style:)
+# <https://developer.apple.com/documentation/charts/chartcontent/cornerradius(_:style>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -6715,9 +6589,9 @@ Plots line and area marks with the interpolation method that you specify.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/linestyle(_:)
+# <https://developer.apple.com/documentation/charts/chartcontent/linestyle(>_:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -6753,9 +6627,9 @@ Plots line and area marks with the interpolation method that you specify.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/interpolationmethod(_:)
+# <https://developer.apple.com/documentation/charts/chartcontent/interpolationmethod(>_:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -6793,9 +6667,9 @@ A chart content that adds a shadow to this chart content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/offset(_:)
+# <https://developer.apple.com/documentation/charts/chartcontent/offset(>_:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -6827,9 +6701,9 @@ Aligns this item’s styles with the chart’s plot area.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/offset(x:y:)
+# <https://developer.apple.com/documentation/charts/chartcontent/offset(x:y>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -6868,9 +6742,9 @@ Aligns this item’s styles with the chart’s plot area.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/offset(x:ystart:yend:)
+# <https://developer.apple.com/documentation/charts/chartcontent/offset(x:ystart:yend>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -6918,9 +6792,9 @@ Aligns this item’s styles with the chart’s plot area.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/offset(xstart:xend:y:)
+# <https://developer.apple.com/documentation/charts/chartcontent/offset(xstart:xend:y>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -6968,9 +6842,9 @@ Aligns this item’s styles with the chart’s plot area.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/offset(xstart:xend:ystart:yend:)
+# <https://developer.apple.com/documentation/charts/chartcontent/offset(xstart:xend:ystart:yend>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7023,9 +6897,9 @@ Aligns this item’s styles with the chart’s plot area.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/alignsmarkstyleswithplotarea(_:)
+# <https://developer.apple.com/documentation/charts/chartcontent/alignsmarkstyleswithplotarea(>_:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7061,9 +6935,9 @@ Applies an offset to the chart content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/symbol(_:)
+# <https://developer.apple.com/documentation/charts/chartcontent/symbol(>_:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7095,9 +6969,9 @@ Sets the plotting symbol size for the chart content according to a perceived are
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/symbol(symbol:)
+# <https://developer.apple.com/documentation/charts/chartcontent/symbol(symbol>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7129,7 +7003,7 @@ Sets the plotting symbol size for the chart content according to a perceived are
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/symbolsize(_:)-7s0vk
+# <https://developer.apple.com/documentation/charts/chartcontent/symbolsize(_:)-7s0vk>
 
 -7s0vk#app-main)
 
@@ -7163,7 +7037,7 @@ Sets the plotting symbol size for the chart content according to a perceived are
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/symbolsize(_:)-8dtyt
+# <https://developer.apple.com/documentation/charts/chartcontent/symbolsize(_:)-8dtyt>
 
 -8dtyt#app-main)
 
@@ -7197,9 +7071,9 @@ Sets the plotting symbol size for the chart content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/foregroundstyle(by:)
+# <https://developer.apple.com/documentation/charts/chartcontent/foregroundstyle(by>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7237,9 +7111,9 @@ Represents data using symbol sizes.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/linestyle(by:)
+# <https://developer.apple.com/documentation/charts/chartcontent/linestyle(by>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7273,9 +7147,9 @@ Represents data using symbol sizes.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/position(by:axis:span:)
+# <https://developer.apple.com/documentation/charts/chartcontent/position(by:axis:span>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7332,9 +7206,9 @@ Represents data using symbol sizes.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/symbol(by:)
+# <https://developer.apple.com/documentation/charts/chartcontent/symbol(by>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7368,9 +7242,9 @@ Represents data using symbol sizes.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/symbolsize(by:)
+# <https://developer.apple.com/documentation/charts/chartcontent/symbolsize(by>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7404,7 +7278,7 @@ Represents data using different kinds of symbols.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/annotation(position:alignment:spacing:content:)-65emh
+# <https://developer.apple.com/documentation/charts/chartcontent/annotation(position:alignment:spacing:content:)-65emh>
 
 -65emh#app-main)
 
@@ -7448,7 +7322,7 @@ A view builder that creates the annotation. The builder takes one input which pr
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/annotation(position:alignment:spacing:content:)-26b2f
+# <https://developer.apple.com/documentation/charts/chartcontent/annotation(position:alignment:spacing:content:)-26b2f>
 
 -26b2f#app-main)
 
@@ -7492,9 +7366,9 @@ A view builder that creates the annotation.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/mask(content:)
+# <https://developer.apple.com/documentation/charts/chartcontent/mask(content>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7520,9 +7394,9 @@ Sets a clip shape for the chart content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/clipshape(_:style:)
+# <https://developer.apple.com/documentation/charts/chartcontent/clipshape(_:style>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7557,9 +7431,9 @@ Masks chart content using the alpha channel of the specified content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/accessibilityhidden(_:)
+# <https://developer.apple.com/documentation/charts/chartcontent/accessibilityhidden(>_:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7585,9 +7459,9 @@ Adds a description of the value that the chart content contains.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/accessibilityidentifier(_:)
+# <https://developer.apple.com/documentation/charts/chartcontent/accessibilityidentifier(>_:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -7613,7 +7487,7 @@ Adds a description of the value that the chart content contains.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/accessibilitylabel(_:)-40zjp
+# <https://developer.apple.com/documentation/charts/chartcontent/accessibilitylabel(_:)-40zjp>
 
 -40zjp#app-main)
 
@@ -7641,7 +7515,7 @@ Adds a description of the value that the chart content contains.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/accessibilitylabel(_:)-5gk8d
+# <https://developer.apple.com/documentation/charts/chartcontent/accessibilitylabel(_:)-5gk8d>
 
 -5gk8d#app-main)
 
@@ -7669,7 +7543,7 @@ Adds a description of the value that the chart content contains.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/accessibilitylabel(_:)-28985
+# <https://developer.apple.com/documentation/charts/chartcontent/accessibilitylabel(_:)-28985>
 
 -28985#app-main)
 
@@ -7697,7 +7571,7 @@ Adds a description of the value that the chart content contains.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/accessibilityvalue(_:)-33c0e
+# <https://developer.apple.com/documentation/charts/chartcontent/accessibilityvalue(_:)-33c0e>
 
 -33c0e#app-main)
 
@@ -7725,7 +7599,7 @@ Adds a label to the chart content that describes its contents.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/accessibilityvalue(_:)-4k545
+# <https://developer.apple.com/documentation/charts/chartcontent/accessibilityvalue(_:)-4k545>
 
 -4k545#app-main)
 
@@ -7753,7 +7627,7 @@ Adds a label to the chart content that describes its contents.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/accessibilityvalue(_:)-5g7o4
+# <https://developer.apple.com/documentation/charts/chartcontent/accessibilityvalue(_:)-5g7o4>
 
 -5g7o4#app-main)
 
@@ -7781,7 +7655,7 @@ Adds a label to the chart content that describes its contents.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/body-swift.property
+# <https://developer.apple.com/documentation/charts/chartcontent/body-swift.property>
 
 - Swift Charts
 - ChartContent
@@ -7808,7 +7682,7 @@ The type of chart content contained in the body of this instance.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/body-swift.associatedtype
+# <https://developer.apple.com/documentation/charts/chartcontent/body-swift.associatedtype>
 
 - Swift Charts
 - ChartContent
@@ -7834,7 +7708,7 @@ The content and behavior of the chart content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/anychartcontent
+# <https://developer.apple.com/documentation/charts/anychartcontent>
 
 - Swift Charts
 - AnyChartContent
@@ -7867,7 +7741,7 @@ struct AnyChartContent
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/accessibilitylabel(_:)-9tbjv
+# <https://developer.apple.com/documentation/charts/chartcontent/accessibilitylabel(_:)-9tbjv>
 
 -9tbjv#app-main)
 
@@ -7895,7 +7769,7 @@ Adds a description of the value that the chart content contains.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/accessibilityvalue(_:)-4f8vo
+# <https://developer.apple.com/documentation/charts/chartcontent/accessibilityvalue(_:)-4f8vo>
 
 -4f8vo#app-main)
 
@@ -7923,7 +7797,7 @@ Adds a label to the chart content that describes its contents.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-1kiow
+# <https://developer.apple.com/documentation/charts/chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-1kiow>
 
 -1kiow#app-main)
 
@@ -7972,15 +7846,13 @@ A view builder that creates the annotation. The builder takes one input which pr
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-6w4p3
-
-
+# <https://developer.apple.com/documentation/charts/chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-6w4p3>
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/blur(radius:)
+# <https://developer.apple.com/documentation/charts/chartcontent/blur(radius>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -8018,9 +7890,9 @@ Plots line and area marks with the interpolation method that you specify.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/compositinglayer()
+# <https://developer.apple.com/documentation/charts/chartcontent/compositinglayer()>
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -8040,9 +7912,9 @@ Controls the display order of overlapping chart content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/compositinglayer(style:)
+# <https://developer.apple.com/documentation/charts/chartcontent/compositinglayer(style>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -8062,9 +7934,9 @@ Controls the display order of overlapping chart content.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/shadow(color:radius:x:y:)
+# <https://developer.apple.com/documentation/charts/chartcontent/shadow(color:radius:x:y>:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -8119,9 +7991,9 @@ Plots line and area marks with the interpolation method that you specify.
 
 ---
 
-# https://developer.apple.com/documentation/charts/chartcontent/zindex(_:)
+# <https://developer.apple.com/documentation/charts/chartcontent/zindex(>_:)
 
-#app-main)
+# app-main)
 
 - Swift Charts
 - ChartContent
@@ -8145,7 +8017,7 @@ A relative front-to-back ordering for this view; the default is `0`.
 
 ---
 
-# https://developer.apple.com/documentation/charts/builderconditional
+# <https://developer.apple.com/documentation/charts/builderconditional>
 
 - Swift Charts
 - BuilderConditional
@@ -8182,7 +8054,7 @@ Conforms when `TrueContent` conforms to `ChartContent` and `FalseContent` confor
 
 ---
 
-# https://developer.apple.com/documentation/charts/functionareaplotcontent
+# <https://developer.apple.com/documentation/charts/functionareaplotcontent>
 
 - Swift Charts
 - FunctionAreaPlotContent
@@ -8213,7 +8085,7 @@ An opaque vectorized chart content type.
 
 ---
 
-# https://developer.apple.com/documentation/charts/functionlineplotcontent
+# <https://developer.apple.com/documentation/charts/functionlineplotcontent>
 
 - Swift Charts
 - FunctionLinePlotContent
@@ -8244,7 +8116,7 @@ An opaque vectorized chart content type.
 
 ---
 
-# https://developer.apple.com/documentation/charts/vectorizedareaplotcontent
+# <https://developer.apple.com/documentation/charts/vectorizedareaplotcontent>
 
 - Swift Charts
 - VectorizedAreaPlotContent
@@ -8278,7 +8150,7 @@ Don’t use this type directly. Swift Charts automatically instantiates and cons
 
 ---
 
-# https://developer.apple.com/documentation/charts/vectorizedbarplotcontent
+# <https://developer.apple.com/documentation/charts/vectorizedbarplotcontent>
 
 - Swift Charts
 - VectorizedBarPlotContent
@@ -8306,7 +8178,7 @@ Don’t use this type directly. Swift Charts automatically instantiates and cons
 
 ---
 
-# https://developer.apple.com/documentation/charts/vectorizedlineplotcontent
+# <https://developer.apple.com/documentation/charts/vectorizedlineplotcontent>
 
 - Swift Charts
 - VectorizedLinePlotContent
@@ -8340,7 +8212,7 @@ Don’t use this type directly. Swift Charts automatically instantiates and cons
 
 ---
 
-# https://developer.apple.com/documentation/charts/vectorizedpointplotcontent
+# <https://developer.apple.com/documentation/charts/vectorizedpointplotcontent>
 
 - Swift Charts
 - VectorizedPointPlotContent
@@ -8368,7 +8240,7 @@ Don’t use this type directly. Swift Charts automatically instantiates and cons
 
 ---
 
-# https://developer.apple.com/documentation/charts/vectorizedrectangleplotcontent
+# <https://developer.apple.com/documentation/charts/vectorizedrectangleplotcontent>
 
 - Swift Charts
 - VectorizedRectanglePlotContent
@@ -8396,7 +8268,7 @@ Don’t use this type directly. Swift Charts automatically instantiates and cons
 
 ---
 
-# https://developer.apple.com/documentation/charts/vectorizedruleplotcontent
+# <https://developer.apple.com/documentation/charts/vectorizedruleplotcontent>
 
 - Swift Charts
 - VectorizedRulePlotContent
@@ -8424,7 +8296,7 @@ Don’t use this type directly. Swift Charts automatically instantiates and cons
 
 ---
 
-# https://developer.apple.com/documentation/charts/vectorizedsectorplotcontent
+# <https://developer.apple.com/documentation/charts/vectorizedsectorplotcontent>
 
 - Swift Charts
 - VectorizedSectorPlotContent
@@ -8451,4 +8323,3 @@ Don’t use this type directly. Swift Charts automatically instantiates and cons
 - `VectorizedChartContent`
 
 ---
-

@@ -8,7 +8,7 @@ Availability strings filtered: Yes
 Comprehensive filtering: Yes
 -->
 
-# https://developer.apple.com/documentation/swiftui/
+# <https://developer.apple.com/documentation/swiftui/>
 
 Framework
 
@@ -198,7 +198,7 @@ Measure and improve your app’s responsiveness.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui
+# <https://developer.apple.com/documentation/swiftui>
 
 Framework
 
@@ -388,7 +388,7 @@ Measure and improve your app’s responsiveness.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app
+# <https://developer.apple.com/documentation/swiftui/app>
 
 - SwiftUI
 - App
@@ -516,7 +516,7 @@ Use a scene-based life cycle in SwiftUI while keeping your existing codebase.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view
+# <https://developer.apple.com/documentation/swiftui/view>
 
 - SwiftUI
 - View
@@ -1239,7 +1239,7 @@ A custom parameter attribute that constructs views from closures.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/landmarks-building-an-app-with-liquid-glass
+# <https://developer.apple.com/documentation/swiftui/landmarks-building-an-app-with-liquid-glass>
 
 - SwiftUI
 - Landmarks: Building an app with Liquid Glass Beta
@@ -1368,7 +1368,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app-organization
+# <https://developer.apple.com/documentation/swiftui/app-organization>
 
 Collection
 
@@ -1489,7 +1489,7 @@ Extend your app’s basic functionality to other parts of the system, like by ad
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scenes
+# <https://developer.apple.com/documentation/swiftui/scenes>
 
 Collection
 
@@ -1598,7 +1598,7 @@ Extend your app’s basic functionality to other parts of the system, like by ad
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windows
+# <https://developer.apple.com/documentation/swiftui/windows>
 
 Collection
 
@@ -1895,7 +1895,7 @@ Extend your app’s basic functionality to other parts of the system, like by ad
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersive-spaces
+# <https://developer.apple.com/documentation/swiftui/immersive-spaces>
 
 Collection
 
@@ -2028,7 +2028,7 @@ Extend your app’s basic functionality to other parts of the system, like by ad
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documents
+# <https://developer.apple.com/documentation/swiftui/documents>
 
 Collection
 
@@ -2193,7 +2193,7 @@ Extend your app’s basic functionality to other parts of the system, like by ad
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigation
+# <https://developer.apple.com/documentation/swiftui/navigation>
 
 Collection
 
@@ -2442,7 +2442,7 @@ Extend your app’s basic functionality to other parts of the system, like by ad
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/modal-presentations
+# <https://developer.apple.com/documentation/swiftui/modal-presentations>
 
 Collection
 
@@ -2745,7 +2745,7 @@ Extend your app’s basic functionality to other parts of the system, like by ad
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbars
+# <https://developer.apple.com/documentation/swiftui/toolbars>
 
 Collection
 
@@ -2930,7 +2930,7 @@ Extend your app’s basic functionality to other parts of the system, like by ad
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/search
+# <https://developer.apple.com/documentation/swiftui/search>
 
 Collection
 
@@ -3097,7 +3097,7 @@ Extend your app’s basic functionality to other parts of the system, like by ad
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app-extensions
+# <https://developer.apple.com/documentation/swiftui/app-extensions>
 
 Collection
 
@@ -3238,7 +3238,7 @@ Enable people to search for text or other content within your app.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/model-data
+# <https://developer.apple.com/documentation/swiftui/model-data>
 
 Collection
 
@@ -3367,7 +3367,7 @@ Store data for use across sessions of your app.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environment-values
+# <https://developer.apple.com/documentation/swiftui/environment-values>
 
 Collection
 
@@ -3434,7 +3434,7 @@ Store data for use across sessions of your app.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/preferences
+# <https://developer.apple.com/documentation/swiftui/preferences>
 
 Collection
 
@@ -3495,7 +3495,7 @@ Store data for use across sessions of your app.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/persistent-storage
+# <https://developer.apple.com/documentation/swiftui/persistent-storage>
 
 Collection
 
@@ -3568,7 +3568,7 @@ Indicate configuration preferences from views to their container views.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-fundamentals
+# <https://developer.apple.com/documentation/swiftui/view-fundamentals>
 
 Collection
 
@@ -3713,7 +3713,7 @@ Enhance your views with graphical effects and customized drawings.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-configuration
+# <https://developer.apple.com/documentation/swiftui/view-configuration>
 
 Collection
 
@@ -3858,7 +3858,7 @@ Enhance your views with graphical effects and customized drawings.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-styles
+# <https://developer.apple.com/documentation/swiftui/view-styles>
 
 Collection
 
@@ -4165,7 +4165,7 @@ Enhance your views with graphical effects and customized drawings.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/animations
+# <https://developer.apple.com/documentation/swiftui/animations>
 
 Collection
 
@@ -4482,7 +4482,7 @@ Enhance your views with graphical effects and customized drawings.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/text-input-and-output
+# <https://developer.apple.com/documentation/swiftui/text-input-and-output>
 
 Collection
 
@@ -4847,7 +4847,7 @@ Enhance your views with graphical effects and customized drawings.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/images
+# <https://developer.apple.com/documentation/swiftui/images>
 
 Collection
 
@@ -4984,7 +4984,7 @@ Enhance your views with graphical effects and customized drawings.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controls-and-indicators
+# <https://developer.apple.com/documentation/swiftui/controls-and-indicators>
 
 Collection
 
@@ -5215,7 +5215,7 @@ Enhance your views with graphical effects and customized drawings.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menus-and-commands
+# <https://developer.apple.com/documentation/swiftui/menus-and-commands>
 
 Collection
 
@@ -5388,7 +5388,7 @@ Enhance your views with graphical effects and customized drawings.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/shapes
+# <https://developer.apple.com/documentation/swiftui/shapes>
 
 Collection
 
@@ -5543,7 +5543,7 @@ Enhance your views with graphical effects and customized drawings.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/drawing-and-graphics
+# <https://developer.apple.com/documentation/swiftui/drawing-and-graphics>
 
 Collection
 
@@ -5874,7 +5874,7 @@ Trace and fill built-in and custom shapes with a color, gradient, or other patte
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/layout-fundamentals
+# <https://developer.apple.com/documentation/swiftui/layout-fundamentals>
 
 Collection
 
@@ -6045,7 +6045,7 @@ Enable people to scroll to content that doesn’t fit in the current display.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/layout-adjustments
+# <https://developer.apple.com/documentation/swiftui/layout-adjustments>
 
 Collection
 
@@ -6292,7 +6292,7 @@ Enable people to scroll to content that doesn’t fit in the current display.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/custom-layout
+# <https://developer.apple.com/documentation/swiftui/custom-layout>
 
 Collection
 
@@ -6395,7 +6395,7 @@ Enable people to scroll to content that doesn’t fit in the current display.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/lists
+# <https://developer.apple.com/documentation/swiftui/lists>
 
 Collection
 
@@ -6596,7 +6596,7 @@ Enable people to scroll to content that doesn’t fit in the current display.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tables
+# <https://developer.apple.com/documentation/swiftui/tables>
 
 Collection
 
@@ -6727,7 +6727,7 @@ Enable people to scroll to content that doesn’t fit in the current display.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-groupings
+# <https://developer.apple.com/documentation/swiftui/view-groupings>
 
 Collection
 
@@ -6872,7 +6872,7 @@ Enable people to scroll to content that doesn’t fit in the current display.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scroll-views
+# <https://developer.apple.com/documentation/swiftui/scroll-views>
 
 Collection
 
@@ -7115,7 +7115,7 @@ Present views in different kinds of purpose-driven containers, like forms or con
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gestures
+# <https://developer.apple.com/documentation/swiftui/gestures>
 
 Collection
 
@@ -7332,7 +7332,7 @@ React to system events, like opening a URL.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/input-events
+# <https://developer.apple.com/documentation/swiftui/input-events>
 
 Collection
 
@@ -7595,7 +7595,7 @@ React to system events, like opening a URL.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/clipboard
+# <https://developer.apple.com/documentation/swiftui/clipboard>
 
 Collection
 
@@ -7654,7 +7654,7 @@ React to system events, like opening a URL.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/drag-and-drop
+# <https://developer.apple.com/documentation/swiftui/drag-and-drop>
 
 Collection
 
@@ -7775,7 +7775,7 @@ React to system events, like opening a URL.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/focus
+# <https://developer.apple.com/documentation/swiftui/focus>
 
 Collection
 
@@ -7928,7 +7928,7 @@ React to system events, like opening a URL.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/system-events
+# <https://developer.apple.com/documentation/swiftui/system-events>
 
 Collection
 
@@ -8021,7 +8021,7 @@ Identify and control which visible object responds to user interaction.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/accessibility-fundamentals
+# <https://developer.apple.com/documentation/swiftui/accessibility-fundamentals>
 
 Collection
 
@@ -8096,7 +8096,7 @@ Enable users to navigate to specific user interface elements using rotors.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/accessible-appearance
+# <https://developer.apple.com/documentation/swiftui/accessible-appearance>
 
 Collection
 
@@ -8197,7 +8197,7 @@ Enable users to navigate to specific user interface elements using rotors.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/accessible-controls
+# <https://developer.apple.com/documentation/swiftui/accessible-controls>
 
 Collection
 
@@ -8320,7 +8320,7 @@ Enable users to navigate to specific user interface elements using rotors.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/accessible-descriptions
+# <https://developer.apple.com/documentation/swiftui/accessible-descriptions>
 
 Collection
 
@@ -8443,7 +8443,7 @@ Enable users to navigate to specific user interface elements using rotors.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/accessible-navigation
+# <https://developer.apple.com/documentation/swiftui/accessible-navigation>
 
 Collection
 
@@ -8524,7 +8524,7 @@ Describe interface elements to help people understand what they represent.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/appkit-integration
+# <https://developer.apple.com/documentation/swiftui/appkit-integration>
 
 Collection
 
@@ -8623,7 +8623,7 @@ Use SwiftUI views that other Apple frameworks provide.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/uikit-integration
+# <https://developer.apple.com/documentation/swiftui/uikit-integration>
 
 Collection
 
@@ -8738,7 +8738,7 @@ Use SwiftUI views that other Apple frameworks provide.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/watchkit-integration
+# <https://developer.apple.com/documentation/swiftui/watchkit-integration>
 
 Collection
 
@@ -8793,7 +8793,7 @@ Use SwiftUI views that other Apple frameworks provide.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/technology-specific-views
+# <https://developer.apple.com/documentation/swiftui/technology-specific-views>
 
 Collection
 
@@ -9141,7 +9141,7 @@ Add WatchKit views to your SwiftUI app, or use SwiftUI views in your WatchKit ap
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/previews-in-xcode
+# <https://developer.apple.com/documentation/swiftui/previews-in-xcode>
 
 Collection
 
@@ -9258,7 +9258,7 @@ Measure and improve your app’s responsiveness.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/xcode-library-customization
+# <https://developer.apple.com/documentation/swiftui/xcode-library-customization>
 
 Collection
 
@@ -9297,7 +9297,7 @@ Measure and improve your app’s responsiveness.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/performance-analysis
+# <https://developer.apple.com/documentation/swiftui/performance-analysis>
 
 Collection
 
@@ -9344,329 +9344,227 @@ Expose custom views and modifiers in the Xcode library.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app)
-
-
+# <https://developer.apple.com/documentation/swiftui/app>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view)
-
-
+# <https://developer.apple.com/documentation/swiftui/view>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/landmarks-building-an-app-with-liquid-glass)
+# <https://developer.apple.com/documentation/swiftui/landmarks-building-an-app-with-liquid-glass>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/building-a-document-based-app-with-swiftui)
+# <https://developer.apple.com/documentation/swiftui/building-a-document-based-app-with-swiftui>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app-organization)
-
-
+# <https://developer.apple.com/documentation/swiftui/app-organization>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scenes)
-
-
+# <https://developer.apple.com/documentation/swiftui/scenes>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windows)
-
-
+# <https://developer.apple.com/documentation/swiftui/windows>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersive-spaces)
-
-
+# <https://developer.apple.com/documentation/swiftui/immersive-spaces>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documents)
-
-
+# <https://developer.apple.com/documentation/swiftui/documents>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigation)
-
-
+# <https://developer.apple.com/documentation/swiftui/navigation>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/modal-presentations)
-
-
+# <https://developer.apple.com/documentation/swiftui/modal-presentations>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbars)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbars>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/search)
-
-
+# <https://developer.apple.com/documentation/swiftui/search>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app-extensions)
-
-
+# <https://developer.apple.com/documentation/swiftui/app-extensions>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/model-data)
-
-
+# <https://developer.apple.com/documentation/swiftui/model-data>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environment-values)
-
-
+# <https://developer.apple.com/documentation/swiftui/environment-values>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/preferences)
-
-
+# <https://developer.apple.com/documentation/swiftui/preferences>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/persistent-storage)
-
-
+# <https://developer.apple.com/documentation/swiftui/persistent-storage>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-fundamentals)
-
-
+# <https://developer.apple.com/documentation/swiftui/view-fundamentals>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-configuration)
-
-
+# <https://developer.apple.com/documentation/swiftui/view-configuration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-styles)
-
-
+# <https://developer.apple.com/documentation/swiftui/view-styles>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/animations)
-
-
+# <https://developer.apple.com/documentation/swiftui/animations>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/text-input-and-output)
-
-
+# <https://developer.apple.com/documentation/swiftui/text-input-and-output>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/images)
-
-
+# <https://developer.apple.com/documentation/swiftui/images>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controls-and-indicators)
-
-
+# <https://developer.apple.com/documentation/swiftui/controls-and-indicators>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menus-and-commands)
-
-
+# <https://developer.apple.com/documentation/swiftui/menus-and-commands>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/shapes)
-
-
+# <https://developer.apple.com/documentation/swiftui/shapes>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/drawing-and-graphics)
-
-
+# <https://developer.apple.com/documentation/swiftui/drawing-and-graphics>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/layout-fundamentals)
-
-
+# <https://developer.apple.com/documentation/swiftui/layout-fundamentals>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/layout-adjustments)
-
-
+# <https://developer.apple.com/documentation/swiftui/layout-adjustments>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/custom-layout)
-
-
+# <https://developer.apple.com/documentation/swiftui/custom-layout>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/lists)
-
-
+# <https://developer.apple.com/documentation/swiftui/lists>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tables)
-
-
+# <https://developer.apple.com/documentation/swiftui/tables>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-groupings)
-
-
+# <https://developer.apple.com/documentation/swiftui/view-groupings>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scroll-views)
-
-
+# <https://developer.apple.com/documentation/swiftui/scroll-views>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gestures)
-
-
+# <https://developer.apple.com/documentation/swiftui/gestures>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/input-events)
-
-
+# <https://developer.apple.com/documentation/swiftui/input-events>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/clipboard)
-
-
+# <https://developer.apple.com/documentation/swiftui/clipboard>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/drag-and-drop)
-
-
+# <https://developer.apple.com/documentation/swiftui/drag-and-drop>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/focus)
-
-
+# <https://developer.apple.com/documentation/swiftui/focus>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/system-events)
-
-
+# <https://developer.apple.com/documentation/swiftui/system-events>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/accessibility-fundamentals)
-
-
+# <https://developer.apple.com/documentation/swiftui/accessibility-fundamentals>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/accessible-appearance)
-
-
+# <https://developer.apple.com/documentation/swiftui/accessible-appearance>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/accessible-controls)
-
-
+# <https://developer.apple.com/documentation/swiftui/accessible-controls>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/accessible-descriptions)
-
-
+# <https://developer.apple.com/documentation/swiftui/accessible-descriptions>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/accessible-navigation)
-
-
+# <https://developer.apple.com/documentation/swiftui/accessible-navigation>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/appkit-integration)
-
-
+# <https://developer.apple.com/documentation/swiftui/appkit-integration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/uikit-integration)
-
-
+# <https://developer.apple.com/documentation/swiftui/uikit-integration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/watchkit-integration)
-
-
+# <https://developer.apple.com/documentation/swiftui/watchkit-integration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/technology-specific-views)
-
-
+# <https://developer.apple.com/documentation/swiftui/technology-specific-views>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/previews-in-xcode)
-
-
+# <https://developer.apple.com/documentation/swiftui/previews-in-xcode>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/xcode-library-customization)
-
-
+# <https://developer.apple.com/documentation/swiftui/xcode-library-customization>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/performance-analysis)
-
-
+# <https://developer.apple.com/documentation/swiftui/performance-analysis>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgroup
+# <https://developer.apple.com/documentation/swiftui/documentgroup>
 
 - SwiftUI
 - DocumentGroup
@@ -9793,7 +9691,7 @@ Code along with the WWDC presenter to transform an app with SwiftData.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocument
+# <https://developer.apple.com/documentation/swiftui/filedocument>
 
 - SwiftUI
 - FileDocument
@@ -9868,7 +9766,7 @@ The properties of an open file document.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/referencefiledocument
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument>
 
 - SwiftUI
 - ReferenceFileDocument
@@ -9976,9 +9874,9 @@ The undo manager used to register a view’s undo operations.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(editing:contenttype:editor:preparedocument:)
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(editing:contenttype:editor:preparedocument>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - DocumentGroup
@@ -10063,7 +9961,7 @@ Instantiates a document group for creating and editing documents described by th
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/building-a-document-based-app-with-swiftui
+# <https://developer.apple.com/documentation/swiftui/building-a-document-based-app-with-swiftui>
 
 - SwiftUI
 - Documents
@@ -10219,7 +10117,7 @@ Evolve your document launch experience](https://developer.apple.com/videos/play/
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/building-a-document-based-app-using-swiftdata
+# <https://developer.apple.com/documentation/swiftui/building-a-document-based-app-using-swiftdata>
 
 - SwiftUI
 - Documents
@@ -10253,7 +10151,7 @@ A scene that enables support for opening, creating, and saving documents.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocumentconfiguration
+# <https://developer.apple.com/documentation/swiftui/filedocumentconfiguration>
 
 - SwiftUI
 - FileDocumentConfiguration
@@ -10296,7 +10194,7 @@ A type that you use to serialize documents to and from file.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration
+# <https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration>
 
 - SwiftUI
 - ReferenceFileDocumentConfiguration
@@ -10345,7 +10243,7 @@ The undo manager used to register a view’s undo operations.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/undomanager
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/undomanager>
 
 - SwiftUI
 - EnvironmentValues
@@ -10377,7 +10275,7 @@ The properties of an open reference file document.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/documentconfiguration
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/documentconfiguration>
 
 - SwiftUI
 - EnvironmentValues
@@ -10418,7 +10316,7 @@ configuration?.fileURL?.path ??
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentconfiguration
+# <https://developer.apple.com/documentation/swiftui/documentconfiguration>
 
 - SwiftUI
 - DocumentConfiguration
@@ -10458,7 +10356,7 @@ The configuration of a document in a `DocumentGroup`.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocumentreadconfiguration
+# <https://developer.apple.com/documentation/swiftui/filedocumentreadconfiguration>
 
 - SwiftUI
 - FileDocumentReadConfiguration
@@ -10493,7 +10391,7 @@ The configuration for serializing file contents.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocumentwriteconfiguration
+# <https://developer.apple.com/documentation/swiftui/filedocumentwriteconfiguration>
 
 - SwiftUI
 - FileDocumentWriteConfiguration
@@ -10528,7 +10426,7 @@ The configuration for reading file contents.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/newdocument
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/newdocument>
 
 - SwiftUI
 - EnvironmentValues
@@ -10580,7 +10478,7 @@ An action that presents an existing document.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/newdocumentaction
+# <https://developer.apple.com/documentation/swiftui/newdocumentaction>
 
 - SwiftUI
 - NewDocumentAction
@@ -10651,7 +10549,7 @@ An action that presents an existing document.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/opendocument
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/opendocument>
 
 - SwiftUI
 - EnvironmentValues
@@ -10710,7 +10608,7 @@ An action that presents an existing document.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/opendocumentaction
+# <https://developer.apple.com/documentation/swiftui/opendocumentaction>
 
 - SwiftUI
 - OpenDocumentAction
@@ -10784,7 +10682,7 @@ An action in the environment that presents an existing document.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene
+# <https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene>
 
 - SwiftUI
 - DocumentGroupLaunchScene
@@ -10871,7 +10769,7 @@ A Box that allows setting its Document base not requiring the caller to know the
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentlaunchview
+# <https://developer.apple.com/documentation/swiftui/documentlaunchview>
 
 - SwiftUI
 - DocumentLaunchView
@@ -10999,7 +10897,7 @@ A Box that allows setting its Document base not requiring the caller to know the
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentlaunchgeometryproxy
+# <https://developer.apple.com/documentation/swiftui/documentlaunchgeometryproxy>
 
 - SwiftUI
 - DocumentLaunchGeometryProxy
@@ -11050,7 +10948,7 @@ A Box that allows setting its Document base not requiring the caller to know the
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaultdocumentgrouplaunchactions
+# <https://developer.apple.com/documentation/swiftui/defaultdocumentgrouplaunchactions>
 
 - SwiftUI
 - DefaultDocumentGroupLaunchActions
@@ -11105,7 +11003,7 @@ A Box that allows setting its Document base not requiring the caller to know the
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/newdocumentbutton
+# <https://developer.apple.com/documentation/swiftui/newdocumentbutton>
 
 - SwiftUI
 - NewDocumentButton
@@ -11184,7 +11082,7 @@ A Box that allows setting its Document base not requiring the caller to know the
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentbasebox
+# <https://developer.apple.com/documentation/swiftui/documentbasebox>
 
 - SwiftUI
 - DocumentBaseBox
@@ -11237,7 +11135,7 @@ A button that creates and opens new documents.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/renamebutton
+# <https://developer.apple.com/documentation/swiftui/renamebutton>
 
 - SwiftUI
 - RenameButton
@@ -11306,13 +11204,11 @@ A system button that reads items from the pasteboard and delivers it to a closur
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/renameaction(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/renameaction(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/rename
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/rename>
 
 - SwiftUI
 - EnvironmentValues
@@ -11348,7 +11244,7 @@ An action that activates a standard rename interaction.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/renameaction
+# <https://developer.apple.com/documentation/swiftui/renameaction>
 
 - SwiftUI
 - RenameAction
@@ -11391,177 +11287,129 @@ An action that activates the standard rename interaction.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgroup)
-
-
+# <https://developer.apple.com/documentation/swiftui/documentgroup>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocument)
-
-
+# <https://developer.apple.com/documentation/swiftui/filedocument>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/referencefiledocument)
-
-
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(editing:contenttype:editor:preparedocument:)).
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(editing:contenttype:editor:preparedocument>:))
 
 ).#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/building-a-document-based-app-using-swiftdata)
+# <https://developer.apple.com/documentation/swiftui/building-a-document-based-app-using-swiftdata>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftui/filedocumentconfiguration)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftui/environmentvalues/undomanager)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftui/environmentvalues/documentconfiguration)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgroup).
-
-
+# <https://developer.apple.com/documentation/swiftui/filedocumentconfiguration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentconfiguration)
-
-
+# <https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocumentreadconfiguration)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/undomanager>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocumentwriteconfiguration)
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/documentconfiguration>)
 
+# The page you're looking for can't be found
 
-
----
-
-# https://developer.apple.com/documentation/swiftui/environmentvalues/newdocument)
-
-
+Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/newdocumentaction)
-
-
+# <https://developer.apple.com/documentation/swiftui/documentgroup>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/opendocument)
-
-
+# <https://developer.apple.com/documentation/swiftui/documentconfiguration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/opendocumentaction)
-
-
+# <https://developer.apple.com/documentation/swiftui/filedocumentreadconfiguration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene)
-
-
+# <https://developer.apple.com/documentation/swiftui/filedocumentwriteconfiguration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentlaunchview)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/newdocument>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentlaunchgeometryproxy)
-
-
+# <https://developer.apple.com/documentation/swiftui/newdocumentaction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaultdocumentgrouplaunchactions)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/opendocument>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/newdocumentbutton)
-
-
+# <https://developer.apple.com/documentation/swiftui/opendocumentaction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentbasebox)
-
-
+# <https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/renamebutton)
-
-
+# <https://developer.apple.com/documentation/swiftui/documentlaunchview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/renameaction(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/documentlaunchgeometryproxy>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/rename)
-
-
+# <https://developer.apple.com/documentation/swiftui/defaultdocumentgrouplaunchactions>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/renameaction)
-
-
+# <https://developer.apple.com/documentation/swiftui/newdocumentbutton>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowgroup
+# <https://developer.apple.com/documentation/swiftui/documentbasebox>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftui/renamebutton>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftui/view/renameaction(>_:))
+
+---
+
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/rename>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftui/renameaction>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftui/windowgroup>
 
 - SwiftUI
 - WindowGroup
@@ -11816,7 +11664,7 @@ Sets the style for windows created by this scene.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/window
+# <https://developer.apple.com/documentation/swiftui/window>
 
 - SwiftUI
 - Window
@@ -11936,9 +11784,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/windowstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -11974,9 +11822,9 @@ A specification for the appearance and interaction of a window.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultposition(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/defaultposition(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -12073,9 +11921,9 @@ A type which provides information about display hardware.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentedwindowstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/presentedwindowstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -12097,7 +11945,7 @@ Sets the style for the toolbar in windows created by interacting with this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/customizing-window-styles-and-state-restoration-behavior-in-macos
+# <https://developer.apple.com/documentation/swiftui/customizing-window-styles-and-state-restoration-behavior-in-macos>
 
 - SwiftUI
 - Windows
@@ -12207,7 +12055,7 @@ Compose rich views by reacting to state changes and customize your app’s scene
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/bringing_multiple_windows_to_your_swiftui_app
+# <https://developer.apple.com/documentation/swiftui/bringing_multiple_windows_to_your_swiftui_app>
 
 - SwiftUI
 - Bringing multiple windows to your SwiftUI app
@@ -12232,7 +12080,7 @@ Before you run the sample code project in Xcode:
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/utilitywindow
+# <https://developer.apple.com/documentation/swiftui/utilitywindow>
 
 - SwiftUI
 - UtilityWindow
@@ -12310,7 +12158,7 @@ Sets the style for windows created by this scene.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowstyle
+# <https://developer.apple.com/documentation/swiftui/windowstyle>
 
 - SwiftUI
 - WindowStyle
@@ -12389,9 +12237,9 @@ Sets the style for windows created by this scene.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowtoolbarstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/windowtoolbarstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -12437,9 +12285,9 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowtoolbarlabelstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/windowtoolbarlabelstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -12493,9 +12341,9 @@ A specification for the appearance and behavior of a window’s toolbar.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowtoolbarlabelstyle(fixed:)
+# <https://developer.apple.com/documentation/swiftui/scene/windowtoolbarlabelstyle(fixed>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -12540,7 +12388,7 @@ A specification for the appearance and behavior of a window’s toolbar.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowtoolbarstyle
+# <https://developer.apple.com/documentation/swiftui/windowtoolbarstyle>
 
 - SwiftUI
 - WindowToolbarStyle
@@ -12624,7 +12472,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/supportsmultiplewindows
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/supportsmultiplewindows>
 
 - SwiftUI
 - EnvironmentValues
@@ -12686,7 +12534,7 @@ An action that opens the requested window in place of the window the action is c
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/openwindow
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/openwindow>
 
 - SwiftUI
 - EnvironmentValues
@@ -12759,7 +12607,7 @@ An action that opens the requested window in place of the window the action is c
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/openwindowaction
+# <https://developer.apple.com/documentation/swiftui/openwindowaction>
 
 - SwiftUI
 - OpenWindowAction
@@ -12865,7 +12713,7 @@ An action that opens the requested window in place of the window the action is c
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/pushwindowaction
+# <https://developer.apple.com/documentation/swiftui/pushwindowaction>
 
 - SwiftUI
 - PushWindowAction
@@ -12967,7 +12815,7 @@ An action that presents a window.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/dismisswindow
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/dismisswindow>
 
 - SwiftUI
 - EnvironmentValues
@@ -12993,11 +12841,11 @@ var body: some Scene {
 WindowGroup {
 ContentView()
 }
-#if os(macOS)
+# if os(macOS)
 Window("Auxiliary", id: "auxiliary") {
 AuxiliaryContentView()
 }
-#endif
+# endif
 }
 }
 
@@ -13035,7 +12883,7 @@ Programmatic window dismissal behaviors.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dismisswindowaction
+# <https://developer.apple.com/documentation/swiftui/dismisswindowaction>
 
 - SwiftUI
 - DismissWindowAction
@@ -13061,11 +12909,11 @@ var body: some Scene {
 WindowGroup {
 ContentView()
 }
-#if os(macOS)
+# if os(macOS)
 Window("Auxiliary", id: "auxiliary") {
 AuxiliaryContentView()
 }
-#endif
+# endif
 }
 }
 
@@ -13126,7 +12974,7 @@ Programmatic window dismissal behaviors.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss>
 
 - SwiftUI
 - EnvironmentValues
@@ -13221,7 +13069,7 @@ Conditionally prevents interactive dismissal of presentations like popovers, she
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dismissaction
+# <https://developer.apple.com/documentation/swiftui/dismissaction>
 
 - SwiftUI
 - DismissAction
@@ -13327,7 +13175,7 @@ Conditionally prevents interactive dismissal of presentations like popovers, she
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dismissbehavior
+# <https://developer.apple.com/documentation/swiftui/dismissbehavior>
 
 - SwiftUI
 - DismissBehavior
@@ -13399,9 +13247,9 @@ An action that dismisses a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultsize(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/defaultsize(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -13483,9 +13331,9 @@ A type which defines the size a window should use when zooming.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height:)
+# <https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -13574,9 +13422,9 @@ A type which defines the size a window should use when zooming.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height:depth:)
+# <https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height:depth>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -13654,9 +13502,9 @@ A type which defines the size a window should use when zooming.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultsize(_:in:)
+# <https://developer.apple.com/documentation/swiftui/scene/defaultsize(_:in>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -13725,9 +13573,9 @@ A type which defines the size a window should use when zooming.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height:depth:in:)
+# <https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height:depth:in>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -13810,9 +13658,9 @@ A type which defines the size a window should use when zooming.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowresizability(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/windowresizability(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -13885,7 +13733,7 @@ A type which defines the size a window should use when zooming.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowresizability
+# <https://developer.apple.com/documentation/swiftui/windowresizability>
 
 - SwiftUI
 - WindowResizability
@@ -13968,9 +13816,9 @@ A type which defines the size a window should use when zooming.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowidealsize(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/windowidealsize(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -14034,7 +13882,7 @@ A type which defines the size a window should use when zooming.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowidealsize
+# <https://developer.apple.com/documentation/swiftui/windowidealsize>
 
 - SwiftUI
 - WindowIdealSize
@@ -14112,7 +13960,7 @@ Specifies how windows derived form this scene should determine their size when z
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowlevel
+# <https://developer.apple.com/documentation/swiftui/windowlevel>
 
 - SwiftUI
 - WindowLevel
@@ -14192,9 +14040,9 @@ A type which provides information about display hardware.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowlevel(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/windowlevel(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -14257,7 +14105,7 @@ A type which provides information about display hardware.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowlayoutroot
+# <https://developer.apple.com/documentation/swiftui/windowlayoutroot>
 
 - SwiftUI
 - WindowLayoutRoot
@@ -14316,7 +14164,7 @@ A type which provides information about display hardware.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowplacement
+# <https://developer.apple.com/documentation/swiftui/windowplacement>
 
 - SwiftUI
 - WindowPlacement
@@ -14407,9 +14255,9 @@ A type which provides information about display hardware.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultwindowplacement(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/defaultwindowplacement(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -14523,9 +14371,9 @@ A type which provides information about display hardware.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowidealplacement(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/windowidealplacement(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -14604,7 +14452,7 @@ A type which provides information about display hardware.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowplacementcontext
+# <https://developer.apple.com/documentation/swiftui/windowplacementcontext>
 
 - SwiftUI
 - WindowPlacementContext
@@ -14667,7 +14515,7 @@ A type which provides information about display hardware.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowproxy
+# <https://developer.apple.com/documentation/swiftui/windowproxy>
 
 - SwiftUI
 - WindowProxy
@@ -14726,7 +14574,7 @@ A type which provides information about display hardware.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/displayproxy
+# <https://developer.apple.com/documentation/swiftui/displayproxy>
 
 - SwiftUI
 - DisplayProxy
@@ -14814,7 +14662,7 @@ The proxy for an open window in the app.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowvisibilitytoggle
+# <https://developer.apple.com/documentation/swiftui/windowvisibilitytoggle>
 
 - SwiftUI
 - WindowVisibilityToggle
@@ -14914,9 +14762,9 @@ The visibility of the window toolbar with respect to full screen mode.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultlaunchbehavior(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/defaultlaunchbehavior(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -14994,9 +14842,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/restorationbehavior(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/restorationbehavior(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -15059,7 +14907,7 @@ The visibility of the window toolbar with respect to full screen mode.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scenelaunchbehavior
+# <https://developer.apple.com/documentation/swiftui/scenelaunchbehavior>
 
 - SwiftUI
 - SceneLaunchBehavior
@@ -15147,7 +14995,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scenerestorationbehavior
+# <https://developer.apple.com/documentation/swiftui/scenerestorationbehavior>
 
 - SwiftUI
 - SceneRestorationBehavior
@@ -15224,9 +15072,9 @@ The visibility of the window toolbar with respect to full screen mode.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/persistentsystemoverlays(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/persistentsystemoverlays(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -15289,9 +15137,9 @@ The visibility of the window toolbar with respect to full screen mode.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/windowtoolbarfullscreenvisibility(_:)
+# <https://developer.apple.com/documentation/swiftui/view/windowtoolbarfullscreenvisibility(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -15357,7 +15205,7 @@ The visibility of the window toolbar with respect to full screen mode.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowtoolbarfullscreenvisibility
+# <https://developer.apple.com/documentation/swiftui/windowtoolbarfullscreenvisibility>
 
 - SwiftUI
 - WindowToolbarFullScreenVisibility
@@ -15435,7 +15283,7 @@ Configures the visibility of the window toolbar when the window enters full scre
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowmanagerrole
+# <https://developer.apple.com/documentation/swiftui/windowmanagerrole>
 
 - SwiftUI
 - WindowManagerRole
@@ -15511,9 +15359,9 @@ Configures the behavior of dragging a window by its background.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowmanagerrole(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/windowmanagerrole(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -15571,7 +15419,7 @@ Configures the behavior of dragging a window by its background.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowinteractionbehavior
+# <https://developer.apple.com/documentation/swiftui/windowinteractionbehavior>
 
 - SwiftUI
 - WindowInteractionBehavior
@@ -15657,9 +15505,9 @@ Configures the behavior of dragging a window by its background.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/windowdismissbehavior(_:)
+# <https://developer.apple.com/documentation/swiftui/view/windowdismissbehavior(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -15721,9 +15569,9 @@ Configures the behavior of dragging a window by its background.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/windowfullscreenbehavior(_:)
+# <https://developer.apple.com/documentation/swiftui/view/windowfullscreenbehavior(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -15784,9 +15632,9 @@ Configures the behavior of dragging a window by its background.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/windowminimizebehavior(_:)
+# <https://developer.apple.com/documentation/swiftui/view/windowminimizebehavior(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -15852,9 +15700,9 @@ Configures the behavior of dragging a window by its background.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/windowresizebehavior(_:)
+# <https://developer.apple.com/documentation/swiftui/view/windowresizebehavior(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -15918,9 +15766,9 @@ Configures the behavior of dragging a window by its background.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowbackgrounddragbehavior(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/windowbackgrounddragbehavior(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -15987,9 +15835,9 @@ Configures the resize functionality for the window enclosing `self`.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onvolumeviewpointchange(updatestrategy:initial:_:)
+# <https://developer.apple.com/documentation/swiftui/view/onvolumeviewpointchange(updatestrategy:initial>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -16121,9 +15969,9 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/supportedvolumeviewpoints(_:)
+# <https://developer.apple.com/documentation/swiftui/view/supportedvolumeviewpoints(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -16189,7 +16037,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/volumeviewpointupdatestrategy
+# <https://developer.apple.com/documentation/swiftui/volumeviewpointupdatestrategy>
 
 - SwiftUI
 - VolumeViewpointUpdateStrategy
@@ -16268,7 +16116,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/viewpoint3d
+# <https://developer.apple.com/documentation/swiftui/viewpoint3d>
 
 - SwiftUI
 - Viewpoint3D
@@ -16350,7 +16198,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/squareazimuth
+# <https://developer.apple.com/documentation/swiftui/squareazimuth>
 
 - SwiftUI
 - SquareAzimuth
@@ -16458,7 +16306,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/worldalignmentbehavior
+# <https://developer.apple.com/documentation/swiftui/worldalignmentbehavior>
 
 - SwiftUI
 - WorldAlignmentBehavior
@@ -16545,9 +16393,9 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/volumeworldalignment(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/volumeworldalignment(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -16626,7 +16474,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/worldscalingbehavior
+# <https://developer.apple.com/documentation/swiftui/worldscalingbehavior>
 
 - SwiftUI
 - WorldScalingBehavior
@@ -16714,9 +16562,9 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultworldscaling(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/defaultworldscaling(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -16799,7 +16647,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/worldscalingcompensation
+# <https://developer.apple.com/documentation/swiftui/worldscalingcompensation>
 
 - SwiftUI
 - WorldScalingCompensation
@@ -16885,7 +16733,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/worldtrackinglimitations
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/worldtrackinglimitations>
 
 - SwiftUI
 - EnvironmentValues
@@ -16965,7 +16813,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/worldtrackinglimitation
+# <https://developer.apple.com/documentation/swiftui/worldtrackinglimitation>
 
 - SwiftUI
 - WorldTrackingLimitation
@@ -17063,7 +16911,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/surfacesnappinginfo
+# <https://developer.apple.com/documentation/swiftui/surfacesnappinginfo>
 
 - SwiftUI
 - SurfaceSnappingInfo Beta
@@ -17190,7 +17038,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlactivestate
+# <https://developer.apple.com/documentation/swiftui/controlactivestate>
 
 - SwiftUI
 - ControlActiveState Deprecated
@@ -17232,471 +17080,347 @@ enum ControlActiveState
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowgroup),
-
-
+# <https://developer.apple.com/documentation/swiftui/windowgroup>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/window)
-
-
+# <https://developer.apple.com/documentation/swiftui/window>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowstyle(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/windowstyle(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultposition(_:)).
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/defaultposition(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentedwindowstyle(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/presentedwindowstyle(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/customizing-window-styles-and-state-restoration-behavior-in-macos)
+# <https://developer.apple.com/documentation/swiftui/customizing-window-styles-and-state-restoration-behavior-in-macos>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/bringing_multiple_windows_to_your_swiftui_app)
+# <https://developer.apple.com/documentation/swiftui/bringing_multiple_windows_to_your_swiftui_app>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowgroup)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowgroup>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/utilitywindow)
-
-
+# <https://developer.apple.com/documentation/swiftui/utilitywindow>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowstyle)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowstyle>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowtoolbarstyle(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/windowtoolbarstyle(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowtoolbarlabelstyle(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/windowtoolbarlabelstyle(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowtoolbarlabelstyle(fixed:))
+# <https://developer.apple.com/documentation/swiftui/scene/windowtoolbarlabelstyle(fixed>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowtoolbarstyle)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowtoolbarstyle>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/supportsmultiplewindows)
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/supportsmultiplewindows>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/openwindow)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/openwindow>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/openwindowaction)
-
-
+# <https://developer.apple.com/documentation/swiftui/openwindowaction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/pushwindowaction)
-
-
+# <https://developer.apple.com/documentation/swiftui/pushwindowaction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/dismisswindow)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/dismisswindow>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dismisswindowaction)
-
-
+# <https://developer.apple.com/documentation/swiftui/dismisswindowaction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dismissaction)
-
-
+# <https://developer.apple.com/documentation/swiftui/dismissaction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dismissbehavior)
-
-
+# <https://developer.apple.com/documentation/swiftui/dismissbehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultsize(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/defaultsize(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height:depth:))
+# <https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height:depth>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultsize(_:in:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/defaultsize(_:in>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height:depth:in:))
+# <https://developer.apple.com/documentation/swiftui/scene/defaultsize(width:height:depth:in>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowresizability(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/windowresizability(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowresizability)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowresizability>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowidealsize(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/windowidealsize(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowidealsize)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowidealsize>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultposition(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/defaultposition(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowlevel)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowlevel>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowlevel(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/windowlevel(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowlayoutroot)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowlayoutroot>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowplacement)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowplacement>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultwindowplacement(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/defaultwindowplacement(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowidealplacement(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/windowidealplacement(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowplacementcontext)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowplacementcontext>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowproxy)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowproxy>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/displayproxy)
-
-
+# <https://developer.apple.com/documentation/swiftui/displayproxy>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowvisibilitytoggle)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowvisibilitytoggle>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultlaunchbehavior(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/defaultlaunchbehavior(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/restorationbehavior(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/restorationbehavior(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scenelaunchbehavior)
-
-
+# <https://developer.apple.com/documentation/swiftui/scenelaunchbehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scenerestorationbehavior)
-
-
+# <https://developer.apple.com/documentation/swiftui/scenerestorationbehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/persistentsystemoverlays(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/persistentsystemoverlays(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/windowtoolbarfullscreenvisibility(_:))
+# <https://developer.apple.com/documentation/swiftui/view/windowtoolbarfullscreenvisibility(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowtoolbarfullscreenvisibility)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowtoolbarfullscreenvisibility>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowmanagerrole)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowmanagerrole>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowmanagerrole(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/windowmanagerrole(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/windowinteractionbehavior)
-
-
+# <https://developer.apple.com/documentation/swiftui/windowinteractionbehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/windowdismissbehavior(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/windowdismissbehavior(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/windowfullscreenbehavior(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/windowfullscreenbehavior(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/windowminimizebehavior(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/windowminimizebehavior(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/windowresizebehavior(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/windowresizebehavior(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/windowbackgrounddragbehavior(_:))
+# <https://developer.apple.com/documentation/swiftui/scene/windowbackgrounddragbehavior(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onvolumeviewpointchange(updatestrategy:initial:_:))
+# <https://developer.apple.com/documentation/swiftui/view/onvolumeviewpointchange(updatestrategy:initial>:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/supportedvolumeviewpoints(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/supportedvolumeviewpoints(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/volumeviewpointupdatestrategy)
-
-
+# <https://developer.apple.com/documentation/swiftui/volumeviewpointupdatestrategy>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/viewpoint3d)
-
-
+# <https://developer.apple.com/documentation/swiftui/viewpoint3d>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/squareazimuth)
-
-
+# <https://developer.apple.com/documentation/swiftui/squareazimuth>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/worldalignmentbehavior)
-
-
+# <https://developer.apple.com/documentation/swiftui/worldalignmentbehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/volumeworldalignment(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/volumeworldalignment(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/worldscalingbehavior)
-
-
+# <https://developer.apple.com/documentation/swiftui/worldscalingbehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/defaultworldscaling(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/defaultworldscaling(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/worldscalingcompensation)
-
-
+# <https://developer.apple.com/documentation/swiftui/worldscalingcompensation>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/worldtrackinglimitations)
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/worldtrackinglimitations>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/worldtrackinglimitation)
-
-
+# <https://developer.apple.com/documentation/swiftui/worldtrackinglimitation>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/surfacesnappinginfo)
-
-
+# <https://developer.apple.com/documentation/swiftui/surfacesnappinginfo>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlactivestate)
-
-
+# <https://developer.apple.com/documentation/swiftui/controlactivestate>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationsplitview
+# <https://developer.apple.com/documentation/swiftui/navigationsplitview>
 
 - SwiftUI
 - NavigationSplitView
@@ -17863,25 +17587,19 @@ A view that controls a navigation presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/image
-
-
+# <https://developer.apple.com/documentation/swiftui/image>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/backgroundextensioneffect()
-
-
+# <https://developer.apple.com/documentation/swiftui/view/backgroundextensioneffect()>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/landmarks-applying-a-background-extension-effect
-
-
+# <https://developer.apple.com/documentation/swiftui/landmarks-applying-a-background-extension-effect>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector
+# <https://developer.apple.com/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector>
 
 - SwiftUI
 - Landmarks: Building an app with Liquid Glass
@@ -17943,7 +17661,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars
+# <https://developer.apple.com/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars>
 
 - SwiftUI
 - Landmarks: Building an app with Liquid Glass
@@ -18025,9 +17743,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/glasseffect(_:in:isenabled:)
+# <https://developer.apple.com/documentation/swiftui/view/glasseffect(_:in:isenabled>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -18104,15 +17822,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/glasseffectcontainer
-
-
+# <https://developer.apple.com/documentation/swiftui/glasseffectcontainer>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/glasseffectid(_:in:)
+# <https://developer.apple.com/documentation/swiftui/view/glasseffectid(_:in>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -18145,13 +17861,11 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/landmarks-displaying-custom-activity-badges
-
-
+# <https://developer.apple.com/documentation/swiftui/landmarks-displaying-custom-activity-badges>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/applying-liquid-glass-to-custom-views
+# <https://developer.apple.com/documentation/swiftui/applying-liquid-glass-to-custom-views>
 
 - SwiftUI
 - View styles
@@ -18316,115 +18030,97 @@ A button style that applies glass border artwork based on the button’s context
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationsplitview)
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationsplitview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/image)
-
-
+# <https://developer.apple.com/documentation/swiftui/image>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/backgroundextensioneffect())
-
-
+# <https://developer.apple.com/documentation/swiftui/view/backgroundextensioneffect()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/landmarks-applying-a-background-extension-effect).
-
-
+# <https://developer.apple.com/documentation/swiftui/landmarks-applying-a-background-extension-effect>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector).
+# <https://developer.apple.com/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector>)
 
 .#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars).
+# <https://developer.apple.com/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars>)
 
 .#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/glasseffect(_:in:isenabled:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/glasseffect(_:in:isenabled>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/glasseffectcontainer),
-
-
+# <https://developer.apple.com/documentation/swiftui/glasseffectcontainer>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/glasseffectid(_:in:)).
-
-
+# <https://developer.apple.com/documentation/swiftui/view/glasseffectid(_:in>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/landmarks-displaying-custom-activity-badges).
-
-
+# <https://developer.apple.com/documentation/swiftui/landmarks-displaying-custom-activity-badges>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/applying-liquid-glass-to-custom-views).
+# <https://developer.apple.com/documentation/swiftui/applying-liquid-glass-to-custom-views>)
 
 .#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/landmarks-applying-a-background-extension-effect)
+# <https://developer.apple.com/documentation/swiftui/landmarks-applying-a-background-extension-effect>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/landmarks-displaying-custom-activity-badges)
+# <https://developer.apple.com/documentation/swiftui/landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector>)
 
-# The page you're looking for can't be found.
+---
+
+# <https://developer.apple.com/documentation/swiftui/landmarks-refining-the-system-provided-glass-effect-in-toolbars>)
+
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/uiapplicationdelegateadaptor
+# <https://developer.apple.com/documentation/swiftui/landmarks-displaying-custom-activity-badges>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/swiftui/uiapplicationdelegateadaptor>
 
 - SwiftUI
 - UIApplicationDelegateAdaptor
@@ -18546,7 +18242,7 @@ The user interfaces to show while an app launches in response to different URL s
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/backyard-birds-sample
+# <https://developer.apple.com/documentation/swiftui/backyard-birds-sample>
 
 - SwiftUI
 - App organization
@@ -18673,11 +18369,11 @@ groupID: passGroupID,
 visibleRelationships: showPremiumUpgrade ? .upgrade : .all
 ) {
 PassMarketingContent(showPremiumUpgrade: showPremiumUpgrade)
-#if !os(watchOS)
+# if !os(watchOS)
 .containerBackground(for: .subscriptionStoreFullHeight) {
 SkyBackground()
 }
-#endif
+# endif
 }
 
 ## See Also
@@ -18710,7 +18406,7 @@ A type that represents the structure and behavior of an app.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/food_truck_building_a_swiftui_multiplatform_app
+# <https://developer.apple.com/documentation/swiftui/food_truck_building_a_swiftui_multiplatform_app>
 
 - SwiftUI
 - Food Truck: Building a SwiftUI multiplatform app
@@ -18796,28 +18492,28 @@ proposal: ProposedViewSize(size)
 
 case (_, 2):
 let direction = index == 0 ? -1.0 : 1.0
-let offsetX = minBound * direction * 0.15
-let offsetY = minBound * direction * 0.20
+let offsetX = minBound *direction* 0.15
+let offsetY = minBound *direction* 0.20
 subviews[index].place(
 at: CGPoint(x: center.x + offsetX, y: center.y + offsetY),
 anchor: .center,
-proposal: ProposedViewSize(CGSize(width: size.width * 0.7, height: size.height * 0.7))
+proposal: ProposedViewSize(CGSize(width: size.width *0.7, height: size.height* 0.7))
 )
 case (1, 3):
 subviews[index].place(
 at: center,
 anchor: .center,
-proposal: ProposedViewSize(CGSize(width: size.width * 0.65, height: size.height * 0.65))
+proposal: ProposedViewSize(CGSize(width: size.width *0.65, height: size.height* 0.65))
 )
 
 case (_, 3):
 let direction = index == 0 ? -1.0 : 1.0
-let offsetX = minBound * direction * 0.15
-let offsetY = minBound * direction * 0.23
+let offsetX = minBound *direction* 0.15
+let offsetY = minBound *direction* 0.23
 subviews[index].place(
 at: CGPoint(x: center.x + offsetX, y: center.y + offsetY),
 anchor: .center,
-proposal: ProposedViewSize(CGSize(width: size.width * 0.7, height: size.height * 0.65))
+proposal: ProposedViewSize(CGSize(width: size.width *0.7, height: size.height* 0.65))
 )
 
 ### Display a chart of popular items
@@ -18980,7 +18676,7 @@ await activity.end(nil, dismissalPolicy: .immediate)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/migrating-to-the-swiftui-life-cycle
+# <https://developer.apple.com/documentation/swiftui/migrating-to-the-swiftui-life-cycle>
 
 - SwiftUI
 - App organization
@@ -19093,7 +18789,7 @@ A type that represents the structure and behavior of an app.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/nsapplicationdelegateadaptor
+# <https://developer.apple.com/documentation/swiftui/nsapplicationdelegateadaptor>
 
 - SwiftUI
 - NSApplicationDelegateAdaptor
@@ -19166,7 +18862,7 @@ The underlying delegate.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/wkapplicationdelegateadaptor
+# <https://developer.apple.com/documentation/swiftui/wkapplicationdelegateadaptor>
 
 - SwiftUI
 - WKApplicationDelegateAdaptor
@@ -19217,7 +18913,7 @@ A property wrapper type that you use to create a WatchKit extension delegate.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/wkextensiondelegateadaptor
+# <https://developer.apple.com/documentation/swiftui/wkextensiondelegateadaptor>
 
 - SwiftUI
 - WKExtensionDelegateAdaptor
@@ -19291,7 +18987,7 @@ A property wrapper that is used in `App` to provide a delegate from WatchKit.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/creating-a-tvos-media-catalog-app-in-swiftui
+# <https://developer.apple.com/documentation/swiftui/creating-a-tvos-media-catalog-app-in-swiftui>
 
 - SwiftUI
 - App organization
@@ -19331,7 +19027,7 @@ The `borderless` button style provides the primary lockup style you use in tvOS,
 
 Provide a separate `Image` and `Text` view in the button’s label closure to ensure the correct vertical appearance. Using a `Label` usually results in a horizontal layout, and, depending on the current label style, may not give you the appearance you expect.
 
-Button { /* action */ } label: {
+Button { /*action*/ } label: {
 Image("discovery_portrait")
 .resizable()
 .frame(width: 250, height: 375)
@@ -19342,7 +19038,7 @@ By default, the button style locates the first `Image` within the button’s lab
 
 To ensure the hover effect applies to exactly the right view, you can manually attach it to a particular subview of the button’s label using the `hoverEffect(_:)` modifier. For instance, to ensure an SF Symbols image hovers along with its background, do the following:
 
-Button { /* action */ } label: {
+Button { /*action*/ } label: {
 Image(systemName: "person.circle")
 .font(.title)
 .background(Color.blue.grayscale(0.7))
@@ -19353,7 +19049,7 @@ Text("Shaped")
 
 You can also attach the hover effect to a custom view.
 
-Button { /* action */ } label: {
+Button { /*action*/ } label: {
 CodeSampleArtwork(size: .appIconSize)
 .frame(width: 400, height: 240)
 .hoverEffect(.highlight)
@@ -19364,7 +19060,7 @@ Text("Custom Icon View")
 
 For lockups with more dense information, consider using the `card` button style, which provides a platter and a more subtle motion effect on focus. Providing containers with padding as the button’s label gives you something similar to the search result lockups on the Apple TV app.
 
-Button { /* action */ } label: {
+Button { /*action*/ } label: {
 HStack(alignment: .top, spacing: 10) {
 Image( . . . )
 .resizable()
@@ -19423,7 +19119,7 @@ configuration.title
 }
 }
 
-Button { /* action */ } label: {
+Button { /*action*/ } label: {
 Label("Title at the bottom", image: "discovery_landscape")
 }
 
@@ -19556,19 +19252,19 @@ This makes each product’s page unique, with its defining artwork tinting the c
 In your description view, you may want to display a stack of bordered buttons, and stretch each to the same width. SwiftUI implements bordered buttons by attaching a background to their labels, so increasing the size of the button view isn’t necessarily going to cause the background platter to grow. Instead, you need to specify that the _label content_ is able to expand, and its background then expands as well. Attaching a `frame(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:alignment:)` modifier to the button’s label content achieves this for you.
 
 VStack(spacing: 12) {
-Button { /* action */ } label: {
+Button { /*action*/ } label: {
 Text("Sign Up")
 .font(.body.bold())
 .frame(maxWidth: .infinity)
 }
 
-Button { /* action */ } label: {
+Button { /*action*/ } label: {
 Text("Buy or Rent")
 .font(.body.bold())
 .frame(maxWidth: .infinity)
 }
 
-Button { /* action */ } label: {
+Button { /*action*/ } label: {
 Label("Add to Up Next", systemImage: "plus")
 .font(.body.bold())
 .frame(maxWidth: .infinity)
@@ -19597,8 +19293,8 @@ LazyVGrid(
 columns: Array(repeating: .init(.flexible(), spacing: 40), count: 4),
 spacing: 40
 ) {
-ForEach(/* matching assets, sorted */) { asset in
-Button { /* action */ } label: {
+ForEach(/*matching assets, sorted _/) { asset in
+Button { /_ action _/ } label: {
 asset.landscapeImage
 .resizable()
 .aspectRatio(16 / 9, contentMode: .fit)
@@ -19611,14 +19307,14 @@ Text(asset.title)
 .scrollClipDisabled()
 .searchable(text: $searchTerm)
 .searchSuggestions {
-ForEach(/* keywords matching search term */, id: \.self) { suggestion in
+ForEach(/_ keywords matching search term*/, id: \.self) { suggestion in
 Text(suggestion)
 }
 }
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/worldrecenterphase
+# <https://developer.apple.com/documentation/swiftui/worldrecenterphase>
 
 - SwiftUI
 - WorldRecenterPhase Beta
@@ -19661,75 +19357,61 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/uiapplicationdelegateadaptor).
-
-
+# <https://developer.apple.com/documentation/swiftui/uiapplicationdelegateadaptor>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/backyard-birds-sample)
-
-
+# <https://developer.apple.com/documentation/swiftui/backyard-birds-sample>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/food_truck_building_a_swiftui_multiplatform_app)
+# <https://developer.apple.com/documentation/swiftui/food_truck_building_a_swiftui_multiplatform_app>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/migrating-to-the-swiftui-life-cycle)
+# <https://developer.apple.com/documentation/swiftui/migrating-to-the-swiftui-life-cycle>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftui/uiapplicationdelegateadaptor)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftui/nsapplicationdelegateadaptor)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftui/wkapplicationdelegateadaptor)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftui/wkextensiondelegateadaptor)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftui/creating-a-tvos-media-catalog-app-in-swiftui)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/worldrecenterphase)
-
-
+# <https://developer.apple.com/documentation/swiftui/uiapplicationdelegateadaptor>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/immersionstyle(selection:in:)
+# <https://developer.apple.com/documentation/swiftui/nsapplicationdelegateadaptor>)
 
-#app-main)
+---
+
+# <https://developer.apple.com/documentation/swiftui/wkapplicationdelegateadaptor>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftui/wkextensiondelegateadaptor>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftui/creating-a-tvos-media-catalog-app-in-swiftui>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/swiftui/worldrecenterphase>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftui/scene/immersionstyle(selection:in>:)
+
+# app-main)
 
 - SwiftUI
 - Scene
@@ -19812,7 +19494,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersionstyle/mixed
+# <https://developer.apple.com/documentation/swiftui/immersionstyle/mixed>
 
 - SwiftUI
 - ImmersionStyle
@@ -19854,13 +19536,11 @@ An immersion style that displays unbounded content that partially replaces passt
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersionstyle/full
-
-
+# <https://developer.apple.com/documentation/swiftui/immersionstyle/full>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersionstyle/progressive
+# <https://developer.apple.com/documentation/swiftui/immersionstyle/progressive>
 
 - SwiftUI
 - ImmersionStyle
@@ -19919,7 +19599,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersivespace
+# <https://developer.apple.com/documentation/swiftui/immersivespace>
 
 - SwiftUI
 - ImmersiveSpace
@@ -20099,7 +19779,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersivespacecontentbuilder
+# <https://developer.apple.com/documentation/swiftui/immersivespacecontentbuilder>
 
 - SwiftUI
 - ImmersiveSpaceContentBuilder
@@ -20149,7 +19829,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersionstyle
+# <https://developer.apple.com/documentation/swiftui/immersionstyle>
 
 - SwiftUI
 - ImmersionStyle
@@ -20259,7 +19939,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/immersivespacedisplacement
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/immersivespacedisplacement>
 
 - SwiftUI
 - EnvironmentValues
@@ -20335,7 +20015,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersiveenvironmentbehavior
+# <https://developer.apple.com/documentation/swiftui/immersiveenvironmentbehavior>
 
 - SwiftUI
 - ImmersiveEnvironmentBehavior Beta
@@ -20408,7 +20088,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/progressiveimmersionaspectratio
+# <https://developer.apple.com/documentation/swiftui/progressiveimmersionaspectratio>
 
 - SwiftUI
 - ProgressiveImmersionAspectRatio Beta
@@ -20479,7 +20159,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace>
 
 - SwiftUI
 - EnvironmentValues
@@ -20549,7 +20229,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/openimmersivespaceaction
+# <https://developer.apple.com/documentation/swiftui/openimmersivespaceaction>
 
 - SwiftUI
 - OpenImmersiveSpaceAction
@@ -20642,7 +20322,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/dismissimmersivespace
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/dismissimmersivespace>
 
 - SwiftUI
 - EnvironmentValues
@@ -20706,7 +20386,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dismissimmersivespaceaction
+# <https://developer.apple.com/documentation/swiftui/dismissimmersivespaceaction>
 
 - SwiftUI
 - DismissImmersiveSpaceAction
@@ -20785,9 +20465,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/upperlimbvisibility(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/upperlimbvisibility(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -20825,9 +20505,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/upperlimbvisibility(_:)
+# <https://developer.apple.com/documentation/swiftui/view/upperlimbvisibility(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -20859,9 +20539,9 @@ Note that this modifier only sets a preference and ultimately the system will de
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/immersivecontentbrightness(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/immersivecontentbrightness(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -20901,7 +20581,7 @@ The content brightness of an immersive space.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersivecontentbrightness
+# <https://developer.apple.com/documentation/swiftui/immersivecontentbrightness>
 
 - SwiftUI
 - ImmersiveContentBrightness
@@ -20958,9 +20638,9 @@ Sets the content brightness of an immersive space.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onimmersionchange(initial:_:)
+# <https://developer.apple.com/documentation/swiftui/view/onimmersionchange(initial>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -21017,7 +20697,7 @@ A structure that represents a state of immersion of your app.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersionchangecontext
+# <https://developer.apple.com/documentation/swiftui/immersionchangecontext>
 
 - SwiftUI
 - ImmersionChangeContext
@@ -21063,9 +20743,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/immersiveenvironmentpicker(content:)
+# <https://developer.apple.com/documentation/swiftui/view/immersiveenvironmentpicker(content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -21109,13 +20789,11 @@ Items will be donated to media players (like `AVPlayerViewController`) downstrea
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/remoteimmersivespace
-
-
+# <https://developer.apple.com/documentation/swiftui/remoteimmersivespace>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/remotedeviceidentifier
+# <https://developer.apple.com/documentation/swiftui/remotedeviceidentifier>
 
 - SwiftUI
 - RemoteDeviceIdentifier Beta
@@ -21193,169 +20871,133 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/immersionstyle(selection:in:))
+# <https://developer.apple.com/documentation/swiftui/scene/immersionstyle(selection:in>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersionstyle/mixed)
-
-
+# <https://developer.apple.com/documentation/swiftui/immersionstyle/mixed>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersionstyle/full)
-
-
+# <https://developer.apple.com/documentation/swiftui/immersionstyle/full>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersionstyle/progressive)
-
-
+# <https://developer.apple.com/documentation/swiftui/immersionstyle/progressive>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersivespace)
-
-
+# <https://developer.apple.com/documentation/swiftui/immersivespace>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersivespacecontentbuilder)
-
-
+# <https://developer.apple.com/documentation/swiftui/immersivespacecontentbuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersionstyle)
-
-
+# <https://developer.apple.com/documentation/swiftui/immersionstyle>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/immersivespacedisplacement)
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/immersivespacedisplacement>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersiveenvironmentbehavior)
-
-
+# <https://developer.apple.com/documentation/swiftui/immersiveenvironmentbehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/progressiveimmersionaspectratio)
-
-
+# <https://developer.apple.com/documentation/swiftui/progressiveimmersionaspectratio>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace)
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/openimmersivespaceaction)
-
-
+# <https://developer.apple.com/documentation/swiftui/openimmersivespaceaction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/dismissimmersivespace)
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/dismissimmersivespace>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dismissimmersivespaceaction)
-
-
+# <https://developer.apple.com/documentation/swiftui/dismissimmersivespaceaction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/upperlimbvisibility(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/upperlimbvisibility(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/upperlimbvisibility(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/upperlimbvisibility(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/immersivecontentbrightness(_:))
+# <https://developer.apple.com/documentation/swiftui/scene/immersivecontentbrightness(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersivecontentbrightness)
-
-
+# <https://developer.apple.com/documentation/swiftui/immersivecontentbrightness>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onimmersionchange(initial:_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/onimmersionchange(initial>:_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/immersionchangecontext)
-
-
+# <https://developer.apple.com/documentation/swiftui/immersionchangecontext>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/immersiveenvironmentpicker(content:))
+# <https://developer.apple.com/documentation/swiftui/view/immersiveenvironmentpicker(content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/remoteimmersivespace)
-
-
+# <https://developer.apple.com/documentation/swiftui/remoteimmersivespace>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/remotedeviceidentifier)
-
-
+# <https://developer.apple.com/documentation/swiftui/remotedeviceidentifier>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/remoteimmersivespace).
-
-
+# <https://developer.apple.com/documentation/swiftui/remoteimmersivespace>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene
+# <https://developer.apple.com/documentation/swiftui/scene>
 
 - SwiftUI
 - Scene
@@ -21602,9 +21244,9 @@ A result builder for composing a collection of scenes into a single composite sc
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/commands(content:)
+# <https://developer.apple.com/documentation/swiftui/scene/commands(content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -21658,7 +21300,7 @@ The standard locations that you can place new command groups relative to.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scenebuilder
+# <https://developer.apple.com/documentation/swiftui/scenebuilder>
 
 - SwiftUI
 - SceneBuilder
@@ -21698,7 +21340,7 @@ A part of an app’s user interface with a life cycle managed by the system.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/scenephase
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/scenephase>
 
 - SwiftUI
 - EnvironmentValues
@@ -21726,7 +21368,7 @@ An indication of a scene’s operational state.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scenephase
+# <https://developer.apple.com/documentation/swiftui/scenephase>
 
 - SwiftUI
 - ScenePhase
@@ -21819,7 +21461,7 @@ The current phase of the scene.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/settings
+# <https://developer.apple.com/documentation/swiftui/settings>
 
 - SwiftUI
 - Settings
@@ -21846,11 +21488,11 @@ var body: some Scene {
 WindowGroup {
 ContentView()
 }
-#if os(macOS)
+# if os(macOS)
 Settings {
 SettingsView()
 }
-#endif
+# endif
 }
 }
 
@@ -21919,7 +21561,7 @@ A Settings presentation action stored in a view’s environment.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/settingslink
+# <https://developer.apple.com/documentation/swiftui/settingslink>
 
 - SwiftUI
 - SettingsLink
@@ -21974,7 +21616,7 @@ A Settings presentation action stored in a view’s environment.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/opensettingsaction
+# <https://developer.apple.com/documentation/swiftui/opensettingsaction>
 
 - SwiftUI
 - OpenSettingsAction
@@ -22000,11 +21642,11 @@ var body: some Scene {
 WindowGroup {
 ContentView()
 }
-#if os(macOS)
+# if os(macOS)
 Settings {
 SettingsView()
 }
-#endif
+# endif
 }
 }
 
@@ -22072,7 +21714,7 @@ A Settings presentation action stored in a view’s environment.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/opensettings
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/opensettings>
 
 - SwiftUI
 - EnvironmentValues
@@ -22098,11 +21740,11 @@ var body: some Scene {
 WindowGroup {
 ContentView()
 }
-#if os(macOS)
+# if os(macOS)
 Settings {
 SettingsView()
 }
-#endif
+# endif
 }
 }
 
@@ -22155,7 +21797,7 @@ An action that presents the settings scene for an app.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/building-and-customizing-the-menu-bar-with-swiftui
+# <https://developer.apple.com/documentation/swiftui/building-and-customizing-the-menu-bar-with-swiftui>
 
 - SwiftUI
 - Menus and commands
@@ -22199,11 +21841,11 @@ WindowGroup {
 ContentView()
 }
 
-#if os(macOS)
+# if os(macOS)
 Settings {
 SettingsView()
 }
-#endif
+# endif
 }
 }
 
@@ -22218,11 +21860,11 @@ DocumentGroup(newDocument: MyAppDocument()) { file in
 // ...
 }
 
-#if os(macOS)
+# if os(macOS)
 Settings {
 // ...
 }
-#endif
+# endif
 
 ## Add contextual system-provided menu items
 
@@ -22383,7 +22025,7 @@ List(items, selection: $selection) { item in
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menubarextra
+# <https://developer.apple.com/documentation/swiftui/menubarextra>
 
 - SwiftUI
 - MenuBarExtra
@@ -22487,9 +22129,9 @@ A specification for the appearance and behavior of a menu bar extra scene.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/menubarextrastyle(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/menubarextrastyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -22517,7 +22159,7 @@ A specification for the appearance and behavior of a menu bar extra scene.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menubarextrastyle
+# <https://developer.apple.com/documentation/swiftui/menubarextrastyle>
 
 - SwiftUI
 - MenuBarExtraStyle
@@ -22576,7 +22218,7 @@ Sets the style for menu bar extra created by this scene.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/wknotificationscene
+# <https://developer.apple.com/documentation/swiftui/wknotificationscene>
 
 - SwiftUI
 - WKNotificationScene
@@ -22607,99 +22249,71 @@ Creates a scene that appears in response to receiving a specific category of rem
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene)
-
-
+# <https://developer.apple.com/documentation/swiftui/scene>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documents).
-
-
+# <https://developer.apple.com/documentation/swiftui/documents>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/commands(content:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/commands(content>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scenebuilder)
-
-
+# <https://developer.apple.com/documentation/swiftui/scenebuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/scenephase)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/scenephase>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scenephase)
-
-
+# <https://developer.apple.com/documentation/swiftui/scenephase>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/settings)
-
-
+# <https://developer.apple.com/documentation/swiftui/settings>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/settingslink)
-
-
+# <https://developer.apple.com/documentation/swiftui/settingslink>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/opensettingsaction)
-
-
+# <https://developer.apple.com/documentation/swiftui/opensettingsaction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/opensettings)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/opensettings>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/building-and-customizing-the-menu-bar-with-swiftui)
+# <https://developer.apple.com/documentation/swiftui/building-and-customizing-the-menu-bar-with-swiftui>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menubarextra)
-
-
+# <https://developer.apple.com/documentation/swiftui/menubarextra>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/menubarextrastyle(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/menubarextrastyle(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menubarextrastyle)
-
-
+# <https://developer.apple.com/documentation/swiftui/menubarextrastyle>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/wknotificationscene)
-
-
+# <https://developer.apple.com/documentation/swiftui/wknotificationscene>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationstack
+# <https://developer.apple.com/documentation/swiftui/navigationstack>
 
 - SwiftUI
 - NavigationStack
@@ -22804,7 +22418,7 @@ Associates a destination view with a bound value for use within a navigation sta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabview
+# <https://developer.apple.com/documentation/swiftui/tabview>
 
 - SwiftUI
 - TabView
@@ -23060,9 +22674,9 @@ Sets the style for the tab view within the current environment.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationsplitviewstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/navigationsplitviewstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -23118,127 +22732,87 @@ A view that controls a navigation presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationtitle(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationtitle(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/understanding-the-composition-of-navigation-stack
-
-
+# <https://developer.apple.com/documentation/swiftui/understanding-the-composition-of-navigation-stack>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/bringing-robust-navigation-structure-to-your-swiftui-app
-
-
+# <https://developer.apple.com/documentation/swiftui/bringing-robust-navigation-structure-to-your-swiftui-app>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types
-
-
+# <https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationsplitviewcolumnwidth(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationsplitviewcolumnwidth(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationsplitviewcolumnwidth(min:ideal:max:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationsplitviewcolumnwidth(min:ideal:max>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationsplitviewvisibility
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationsplitviewvisibility>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationlink
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationlink>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationpath
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationpath>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationdestination(for:destination:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationdestination(for:destination>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationdestination(ispresented:destination:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationdestination(ispresented:destination>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationdestination(item:destination:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationdestination(item:destination>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationsplitviewcolumn
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationsplitviewcolumn>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationsubtitle(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationsubtitle(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationdocument(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationdocument(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationdocument(_:preview:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationdocument(_:preview>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationbarbackbuttonhidden(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationbarbackbuttonhidden(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationbartitledisplaymode(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationbartitledisplaymode(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationbaritem
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationbaritem>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/sidebarrowsize
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/sidebarrowsize>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/sidebarrowsize
+# <https://developer.apple.com/documentation/swiftui/sidebarrowsize>
 
 - SwiftUI
 - SidebarRowSize
@@ -23295,13 +22869,11 @@ The current size of sidebar rows.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/enhancing-your-app-content-with-tab-navigation
-
-
+# <https://developer.apple.com/documentation/swiftui/enhancing-your-app-content-with-tab-navigation>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tab
+# <https://developer.apple.com/documentation/swiftui/tab>
 
 - SwiftUI
 - Tab
@@ -23400,7 +22972,7 @@ Sets the style for the tab view within the current environment.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabrole
+# <https://developer.apple.com/documentation/swiftui/tabrole>
 
 - SwiftUI
 - TabRole
@@ -23454,7 +23026,7 @@ Sets the style for the tab view within the current environment.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabsection
+# <https://developer.apple.com/documentation/swiftui/tabsection>
 
 - SwiftUI
 - TabSection
@@ -23523,15 +23095,13 @@ Sets the style for the tab view within the current environment.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabviewstyle(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/tabviewstyle(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabviewsidebarheader(content:)
+# <https://developer.apple.com/documentation/swiftui/view/tabviewsidebarheader(content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -23603,15 +23173,13 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabviewsidebarfooter(content:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/tabviewsidebarfooter(content>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabviewsidebarbottombar(content:)
+# <https://developer.apple.com/documentation/swiftui/view/tabviewsidebarbottombar(content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -23683,13 +23251,11 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/adaptabletabbarplacement
-
-
+# <https://developer.apple.com/documentation/swiftui/adaptabletabbarplacement>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/tabbarplacement
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/tabbarplacement>
 
 - SwiftUI
 - EnvironmentValues
@@ -23741,7 +23307,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabbarplacement
+# <https://developer.apple.com/documentation/swiftui/tabbarplacement>
 
 - SwiftUI
 - TabBarPlacement
@@ -23817,7 +23383,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/istabbarshowingsections
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/istabbarshowingsections>
 
 - SwiftUI
 - EnvironmentValues
@@ -23863,7 +23429,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabbarminimizebehavior
+# <https://developer.apple.com/documentation/swiftui/tabbarminimizebehavior>
 
 - SwiftUI
 - TabBarMinimizeBehavior Beta
@@ -23943,7 +23509,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabviewbottomaccessoryplacement
+# <https://developer.apple.com/documentation/swiftui/tabviewbottomaccessoryplacement>
 
 - SwiftUI
 - TabViewBottomAccessoryPlacement Beta
@@ -24054,9 +23620,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/sectionactions(content:)
+# <https://developer.apple.com/documentation/swiftui/view/sectionactions(content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -24111,7 +23677,7 @@ Type erased tab content.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabplacement
+# <https://developer.apple.com/documentation/swiftui/tabplacement>
 
 - SwiftUI
 - TabPlacement
@@ -24171,7 +23737,7 @@ Type erased tab content.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabcontentbuilder
+# <https://developer.apple.com/documentation/swiftui/tabcontentbuilder>
 
 - SwiftUI
 - TabContentBuilder
@@ -24194,29 +23760,29 @@ A view representation of the content of a builder-based tab view with selection.
 
 ### Type Methods
 
-`](https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(_:))
+`](<https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(>_:))
 
-`](https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(_:_:))
+`](<https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(>_:_:))
 
-`](https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(_:_:_:))
+`](<https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(>_:_:_:))
 
-`](https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(_:_:_:_:))
+`](<https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(>_:_:_:_:))
 
-`](https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(_:_:_:_:_:))
+`](<https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(>_:_:_:_:_:))
 
-`](https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(_:_:_:_:_:_:))
+`](<https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(>_:_:_:_:_:_:))
 
-`](https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(_:_:_:_:_:_:_:))
+`](<https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(>_:_:_:_:_:_:_:))
 
-`](https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(_:_:_:_:_:_:_:_:))
+`](<https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(>_:_:_:_:_:_:_:_:))
 
-`](https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(_:_:_:_:_:_:_:_:_:))
+`](<https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(>_:_:_:_:_:_:_:_:_:))
 
-`](https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:))
+`](<https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildblock(>_:_:_:_:_:_:_:_:_:_:))
 
-`](https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildexpression(_:))
+`](<https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildexpression(>_:))
 
-`](https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildif(_:))
+`](<https://developer.apple.com/documentation/swiftui/tabcontentbuilder/buildif(>_:))
 
 ## See Also
 
@@ -24238,13 +23804,11 @@ Type erased tab content.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabcontent
-
-
+# <https://developer.apple.com/documentation/swiftui/tabcontent>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/anytabcontent
+# <https://developer.apple.com/documentation/swiftui/anytabcontent>
 
 - SwiftUI
 - AnyTabContent
@@ -24287,13 +23851,11 @@ A type that provides content for programmatically selectable tabs in a tab view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabviewcustomization(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/tabviewcustomization(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabviewcustomization
+# <https://developer.apple.com/documentation/swiftui/tabviewcustomization>
 
 - SwiftUI
 - TabViewCustomization
@@ -24408,13 +23970,11 @@ The customization behavior of customizable tab view content.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabcustomizationbehavior
-
-
+# <https://developer.apple.com/documentation/swiftui/tabcustomizationbehavior>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/hsplitview
+# <https://developer.apple.com/documentation/swiftui/hsplitview>
 
 - SwiftUI
 - HSplitView
@@ -24443,7 +24003,7 @@ A layout container that arranges its children in a vertical line and allows the 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/vsplitview
+# <https://developer.apple.com/documentation/swiftui/vsplitview>
 
 - SwiftUI
 - VSplitView
@@ -24472,7 +24032,7 @@ A layout container that arranges its children in a horizontal line and allows th
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationview
+# <https://developer.apple.com/documentation/swiftui/navigationview>
 
 - SwiftUI
 - NavigationView Deprecated
@@ -24538,9 +24098,9 @@ Deprecated
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabitem(_:)
+# <https://developer.apple.com/documentation/swiftui/view/tabitem(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -24606,373 +24166,295 @@ Deprecated
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationstack),
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationstack>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabview).
-
-
+# <https://developer.apple.com/documentation/swiftui/tabview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationsplitviewstyle(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationsplitviewstyle(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationtitle(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationtitle(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/understanding-the-composition-of-navigation-stack)
+# <https://developer.apple.com/documentation/swiftui/understanding-the-composition-of-navigation-stack>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/bringing-robust-navigation-structure-to-your-swiftui-app)
+# <https://developer.apple.com/documentation/swiftui/bringing-robust-navigation-structure-to-your-swiftui-app>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types)
-
-
+# <https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationsplitviewcolumnwidth(_:))
+# <https://developer.apple.com/documentation/swiftui/view/navigationsplitviewcolumnwidth(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationsplitviewcolumnwidth(min:ideal:max:))
+# <https://developer.apple.com/documentation/swiftui/view/navigationsplitviewcolumnwidth(min:ideal:max>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationsplitviewvisibility)
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationsplitviewvisibility>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationlink)
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationlink>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationstack)
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationstack>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationpath)
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationpath>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationdestination(for:destination:))
+# <https://developer.apple.com/documentation/swiftui/view/navigationdestination(for:destination>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationdestination(ispresented:destination:))
+# <https://developer.apple.com/documentation/swiftui/view/navigationdestination(ispresented:destination>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationstack).
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationstack>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationdestination(item:destination:))
+# <https://developer.apple.com/documentation/swiftui/view/navigationdestination(item:destination>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationsplitviewcolumn)
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationsplitviewcolumn>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationsubtitle(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationsubtitle(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationdocument(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationdocument(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationdocument(_:preview:))
+# <https://developer.apple.com/documentation/swiftui/view/navigationdocument(_:preview>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationbarbackbuttonhidden(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationbarbackbuttonhidden(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationbartitledisplaymode(_:))
+# <https://developer.apple.com/documentation/swiftui/view/navigationbartitledisplaymode(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationbaritem)
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationbaritem>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/sidebarrowsize)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/sidebarrowsize>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/sidebarrowsize)
-
-
+# <https://developer.apple.com/documentation/swiftui/sidebarrowsize>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/enhancing-your-app-content-with-tab-navigation)
+# <https://developer.apple.com/documentation/swiftui/enhancing-your-app-content-with-tab-navigation>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabview)
-
-
+# <https://developer.apple.com/documentation/swiftui/tabview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tab)
-
-
+# <https://developer.apple.com/documentation/swiftui/tab>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabrole)
-
-
+# <https://developer.apple.com/documentation/swiftui/tabrole>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabsection)
-
-
+# <https://developer.apple.com/documentation/swiftui/tabsection>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabviewstyle(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/tabviewstyle(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabviewsidebarheader(content:))
+# <https://developer.apple.com/documentation/swiftui/view/tabviewsidebarheader(content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabviewsidebarfooter(content:))
+# <https://developer.apple.com/documentation/swiftui/view/tabviewsidebarfooter(content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabviewsidebarbottombar(content:))
+# <https://developer.apple.com/documentation/swiftui/view/tabviewsidebarbottombar(content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/adaptabletabbarplacement)
-
-
+# <https://developer.apple.com/documentation/swiftui/adaptabletabbarplacement>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/tabbarplacement)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/tabbarplacement>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabbarplacement)
-
-
+# <https://developer.apple.com/documentation/swiftui/tabbarplacement>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/istabbarshowingsections)
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/istabbarshowingsections>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabbarminimizebehavior)
-
-
+# <https://developer.apple.com/documentation/swiftui/tabbarminimizebehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabviewbottomaccessoryplacement)
-
-
+# <https://developer.apple.com/documentation/swiftui/tabviewbottomaccessoryplacement>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/sectionactions(content:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/sectionactions(content>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabplacement)
-
-
+# <https://developer.apple.com/documentation/swiftui/tabplacement>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabcontentbuilder)
-
-
+# <https://developer.apple.com/documentation/swiftui/tabcontentbuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabcontent)
-
-
+# <https://developer.apple.com/documentation/swiftui/tabcontent>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/anytabcontent)
-
-
+# <https://developer.apple.com/documentation/swiftui/anytabcontent>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabviewcustomization(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/tabviewcustomization(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabviewcustomization)
-
-
+# <https://developer.apple.com/documentation/swiftui/tabviewcustomization>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabcustomizationbehavior)
-
-
+# <https://developer.apple.com/documentation/swiftui/tabcustomizationbehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/hsplitview)
-
-
+# <https://developer.apple.com/documentation/swiftui/hsplitview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/vsplitview)
-
-
+# <https://developer.apple.com/documentation/swiftui/vsplitview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/navigationview)
-
-
+# <https://developer.apple.com/documentation/swiftui/navigationview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabitem(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/tabitem(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app/body-swift.property
+# <https://developer.apple.com/documentation/swiftui/app/body-swift.property>
 
 - SwiftUI
 - App
@@ -25014,9 +24496,9 @@ The type of scene representing the content of the app.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app/main()
+# <https://developer.apple.com/documentation/swiftui/app/main()>
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - App
@@ -25047,7 +24529,7 @@ Creates an instance of the app using the body that you define for its content.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/stateobject
+# <https://developer.apple.com/documentation/swiftui/stateobject>
 
 - SwiftUI
 - StateObject
@@ -25204,7 +24686,7 @@ A type of object with a publisher that emits before the object has changed.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/observedobject
+# <https://developer.apple.com/documentation/swiftui/observedobject>
 
 - SwiftUI
 - ObservedObject
@@ -25311,7 +24793,7 @@ A type of object with a publisher that emits before the object has changed.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentobject
+# <https://developer.apple.com/documentation/swiftui/environmentobject>
 
 - SwiftUI
 - EnvironmentObject
@@ -25366,7 +24848,7 @@ Supplies an `ObservableObject` to a view subhierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app/body-swift.associatedtype
+# <https://developer.apple.com/documentation/swiftui/app/body-swift.associatedtype>
 
 - SwiftUI
 - App
@@ -25396,9 +24878,9 @@ The content and behavior of the app.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app/init()
+# <https://developer.apple.com/documentation/swiftui/app/init()>
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - App
@@ -25429,49 +24911,35 @@ Initializes and runs the app.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app/body-swift.property)
-
-
+# <https://developer.apple.com/documentation/swiftui/app/body-swift.property>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app/main())
-
-
+# <https://developer.apple.com/documentation/swiftui/app/main()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/stateobject)
-
-
+# <https://developer.apple.com/documentation/swiftui/stateobject>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/observedobject)
-
-
+# <https://developer.apple.com/documentation/swiftui/observedobject>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentobject)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentobject>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app/body-swift.associatedtype)
-
-
+# <https://developer.apple.com/documentation/swiftui/app/body-swift.associatedtype>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/app/init())
-
-
+# <https://developer.apple.com/documentation/swiftui/app/init()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/declaring-a-custom-view
+# <https://developer.apple.com/documentation/swiftui/declaring-a-custom-view>
 
 - SwiftUI
 - View fundamentals
@@ -25602,7 +25070,7 @@ A custom parameter attribute that constructs views from closures.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/configuring-views
+# <https://developer.apple.com/documentation/swiftui/configuring-views>
 
 - SwiftUI
 - View fundamentals
@@ -25740,7 +25208,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/reducing-view-modifier-maintenance
+# <https://developer.apple.com/documentation/swiftui/reducing-view-modifier-maintenance>
 
 - SwiftUI
 - View fundamentals
@@ -25836,7 +25304,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/displaying-data-in-lists
+# <https://developer.apple.com/documentation/swiftui/displaying-data-in-lists>
 
 - SwiftUI
 - Lists
@@ -26030,7 +25498,7 @@ Sets the style for lists within this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/body-8kl5o
+# <https://developer.apple.com/documentation/swiftui/view/body-8kl5o>
 
 - SwiftUI
 - View
@@ -26095,7 +25563,7 @@ Generate dynamic, interactive previews of your custom views.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/text
+# <https://developer.apple.com/documentation/swiftui/text>
 
 - SwiftUI
 - Text
@@ -26367,9 +25835,9 @@ Sets the style for labels within this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/opacity(_:)
+# <https://developer.apple.com/documentation/swiftui/view/opacity(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -26422,19 +25890,15 @@ Hides this view unconditionally.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-layout
-
-
+# <https://developer.apple.com/documentation/swiftui/view-layout>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-accessibility
-
-
+# <https://developer.apple.com/documentation/swiftui/view-accessibility>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-input-and-events
+# <https://developer.apple.com/documentation/swiftui/view-input-and-events>
 
 Collection
 
@@ -26819,7 +26283,7 @@ Access storage and provide child views with configuration data.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/body-swift.associatedtype
+# <https://developer.apple.com/documentation/swiftui/view/body-swift.associatedtype>
 
 - SwiftUI
 - View
@@ -26855,9 +26319,9 @@ Generate dynamic, interactive previews of your custom views.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/modifier(_:)
+# <https://developer.apple.com/documentation/swiftui/view/modifier(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -26960,7 +26424,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-appearance
+# <https://developer.apple.com/documentation/swiftui/view-appearance>
 
 Collection
 
@@ -27175,7 +26639,7 @@ Configure charts that you declare with Swift Charts.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-text-and-symbols
+# <https://developer.apple.com/documentation/swiftui/view-text-and-symbols>
 
 Collection
 
@@ -27316,7 +26780,7 @@ Configure charts that you declare with Swift Charts.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-auxiliary-views
+# <https://developer.apple.com/documentation/swiftui/view-auxiliary-views>
 
 Collection
 
@@ -27481,7 +26945,7 @@ Configure charts that you declare with Swift Charts.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-chart-view
+# <https://developer.apple.com/documentation/swiftui/view-chart-view>
 
 Collection
 
@@ -27602,7 +27066,7 @@ Add and configure supporting views, like toolbars and context menus.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-style-modifiers
+# <https://developer.apple.com/documentation/swiftui/view-style-modifiers>
 
 Collection
 
@@ -27691,7 +27155,7 @@ Affect the way the system draws a view, for example by scaling or masking a view
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-graphics-and-rendering
+# <https://developer.apple.com/documentation/swiftui/view-graphics-and-rendering>
 
 Collection
 
@@ -27850,13 +27314,11 @@ Tell a view how to arrange itself within a view hierarchy by adjusting its size,
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-search
-
-
+# <https://developer.apple.com/documentation/swiftui/view-search>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-presentation
+# <https://developer.apple.com/documentation/swiftui/view-presentation>
 
 Collection
 
@@ -28111,7 +27573,7 @@ Access storage and provide child views with configuration data.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-state
+# <https://developer.apple.com/documentation/swiftui/view-state>
 
 Collection
 
@@ -28194,7 +27656,7 @@ Define additional views for the view to present under specified conditions.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view-deprecated
+# <https://developer.apple.com/documentation/swiftui/view-deprecated>
 
 Collection
 
@@ -28349,9 +27811,9 @@ Sets the tab bar item associated with this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/accessibilityactions(category:_:)
+# <https://developer.apple.com/documentation/swiftui/view/accessibilityactions(category>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28417,9 +27879,9 @@ Designates an accessibility action category that is provided and named by the sy
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/accessibilitydefaultfocus(_:_:)
+# <https://developer.apple.com/documentation/swiftui/view/accessibilitydefaultfocus(>_:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28470,9 +27932,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/accessibilityscrollstatus(_:isenabled:)
+# <https://developer.apple.com/documentation/swiftui/view/accessibilityscrollstatus(_:isenabled>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28517,9 +27979,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/accessorywidgetgroupstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/accessorywidgetgroupstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28541,15 +28003,13 @@ The shape with which the content views are masked. The available shapes are circ
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/addordertowalletbuttonstyle(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/addordertowalletbuttonstyle(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/addpasstowalletbuttonstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/addpasstowalletbuttonstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28593,9 +28053,9 @@ Provides a task to perform before this view appears
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/allowswindowactivationevents()
+# <https://developer.apple.com/documentation/swiftui/view/allowswindowactivationevents()>
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28622,9 +28082,9 @@ Rectangle()
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/appstoreoffer(ispresented:kind:ondismiss:)
+# <https://developer.apple.com/documentation/swiftui/view/appstoreoffer(ispresented:kind:ondismiss>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28649,9 +28109,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/aspectratio3d(_:contentmode:)
+# <https://developer.apple.com/documentation/swiftui/view/aspectratio3d(_:contentmode>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28706,9 +28166,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/assistiveaccessnavigationicon(_:)
+# <https://developer.apple.com/documentation/swiftui/view/assistiveaccessnavigationicon(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28740,9 +28200,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/assistiveaccessnavigationicon(systemimage:)
+# <https://developer.apple.com/documentation/swiftui/view/assistiveaccessnavigationicon(systemimage>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28774,9 +28234,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/attributedtextformattingdefinition(_:)
+# <https://developer.apple.com/documentation/swiftui/view/attributedtextformattingdefinition(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28826,9 +28286,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/automateddeviceenrollmentaddition(ispresented:)
+# <https://developer.apple.com/documentation/swiftui/view/automateddeviceenrollmentaddition(ispresented>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28887,9 +28347,9 @@ Applies a managed content style to the view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/breakthrougheffect(_:)
+# <https://developer.apple.com/documentation/swiftui/view/breakthrougheffect(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28950,9 +28410,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/buttonsizing(_:)
+# <https://developer.apple.com/documentation/swiftui/view/buttonsizing(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -28972,9 +28432,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/certificatesheet(trust:title:message:help:)
+# <https://developer.apple.com/documentation/swiftui/view/certificatesheet(trust:title:message:help>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29011,21 +28471,17 @@ URL for the “Learn More” button. Uses a default URL if nil.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/chart3dcameraprojection(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/chart3dcameraprojection(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/chart3dpose(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/chart3dpose(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/chart3drenderingstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/chart3drenderingstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29045,15 +28501,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/chartzaxis(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/chartzaxis(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/chartzaxis(content:)
+# <https://developer.apple.com/documentation/swiftui/view/chartzaxis(content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29093,21 +28547,17 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/chartzaxislabel(_:position:alignment:spacing:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/chartzaxislabel(_:position:alignment:spacing>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/chartzscale(domain:range:type:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/chartzscale(domain:range:type>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/chartzscale(domain:type:)
+# <https://developer.apple.com/documentation/swiftui/view/chartzscale(domain:type>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29130,15 +28580,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/chartzscale(range:type:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/chartzscale(range:type>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/chartzselection(range:)
+# <https://developer.apple.com/documentation/swiftui/view/chartzselection(range>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29158,9 +28606,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/chartzselection(value:)
+# <https://developer.apple.com/documentation/swiftui/view/chartzselection(value>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29180,9 +28628,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/contactaccessbuttoncaption(_:)
+# <https://developer.apple.com/documentation/swiftui/view/contactaccessbuttoncaption(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29202,27 +28650,21 @@ Modally present UI which allows the user to select which contacts your app has a
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/contactaccessbuttonstyle(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/contactaccessbuttonstyle(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/containervalue(_:_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/containervalue(>_:_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/contentcaptureprotected(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/contentcaptureprotected(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/contenttoolbar(for:content:)
+# <https://developer.apple.com/documentation/swiftui/view/contenttoolbar(for:content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29285,15 +28727,13 @@ AccountSummaryView()
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/continuitydevicepicker(ispresented:ondidconnect:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/continuitydevicepicker(ispresented:ondidconnect>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/controlwidgetactionhint(_:)
+# <https://developer.apple.com/documentation/swiftui/view/controlwidgetactionhint(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29373,9 +28813,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/controlwidgetstatus(_:)
+# <https://developer.apple.com/documentation/swiftui/view/controlwidgetstatus(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29449,9 +28889,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/currententitlementtask(for:priority:action:)
+# <https://developer.apple.com/documentation/swiftui/view/currententitlementtask(for:priority:action>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29522,21 +28962,17 @@ Declares the view as dependent on a collection of In-App Purchase products and r
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dialogpreventsapptermination(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/dialogpreventsapptermination(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dragconfiguration(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/dragconfiguration(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:id:in:_:)
+# <https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:id:in>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29645,9 +29081,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:id:in:selection:_:)
+# <https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:id:in:selection>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29725,15 +29161,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:in:_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:in>:_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:in:selection:_:)
+# <https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:in:selection>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29805,9 +29239,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dragpreviewsformation(_:)
+# <https://developer.apple.com/documentation/swiftui/view/dragpreviewsformation(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29829,75 +29263,53 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/draggable(_:_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/draggable(>_:_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/draggable(containeritemid:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/draggable(containeritemid>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/draggable(for:id:_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/draggable(for:id>:_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dropconfiguration(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/dropconfiguration(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/droppreviewsformation(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/droppreviewsformation(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/formstyle(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/formstyle(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/gamesynceddirectoryloadingview(directory:finishedloading:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/gamesynceddirectoryloadingview(directory:finishedloading>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/glassbackgroundeffect(_:displaymode:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/glassbackgroundeffect(_:displaymode>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/glassbackgroundeffect(_:in:displaymode:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/glassbackgroundeffect(_:in:displaymode>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/glasseffecttransition(_:isenabled:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/glasseffecttransition(_:isenabled>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/glasseffectunion(id:namespace:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/glasseffectunion(id:namespace>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/groupactivityassociation(_:)
+# <https://developer.apple.com/documentation/swiftui/view/groupactivityassociation(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -29965,9 +29377,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/handgestureshortcut(_:isenabled:)
+# <https://developer.apple.com/documentation/swiftui/view/handgestureshortcut(_:isenabled>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30049,9 +29461,9 @@ Hand gesture shortcuts describe finger and wrist movements that the user can per
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/handpointerbehavior(_:)
+# <https://developer.apple.com/documentation/swiftui/view/handpointerbehavior(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30125,9 +29537,9 @@ A behavior that can be applied to the hand pointer while the user is interacting
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/handlesgamecontrollerevents(matching:)
+# <https://developer.apple.com/documentation/swiftui/view/handlesgamecontrollerevents(matching>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30151,9 +29563,9 @@ SpriteView(scene: MyGameScene())
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/handlesgamecontrollerevents(matching:withoptions:)
+# <https://developer.apple.com/documentation/swiftui/view/handlesgamecontrollerevents(matching:withoptions>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30186,9 +29598,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:objecttype:predicate:trigger:completion:)
+# <https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:objecttype:predicate:trigger:completion>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30251,7 +29663,7 @@ case .success(_):
 authenticated = true
 case .failure(let error):
 // Handle the error here.
-fatalError("*** An error occurred while requesting authentication: \(error) ***")
+fatalError("***An error occurred while requesting authentication: \(error)***")
 }
 
 logger.debug("Authentication Complete.")
@@ -30270,14 +29682,14 @@ let prescription: HKVisionPrescription
 
 do {
 guard let result = try await queryDescriptor.result(for: store).first else {
-print("*** No prescription found. ***")
+print("***No prescription found.***")
 return
 }
 
 prescription = result
 } catch {
 // Handle the error here.
-fatalError("*** An error occurred while reading the most recent vision prescriptions: \(error.localizedDescription) ***")
+fatalError("***An error occurred while reading the most recent vision prescriptions: \(error.localizedDescription)***")
 }
 
 Based on the results, you can then decide whether you need to request authorization for additional samples. Modify the trigger’s value to prompt someone to modify the samples your app has access to read.
@@ -30301,9 +29713,9 @@ Presents a preview of the workout contents as a modal sheet
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:readtypes:trigger:completion:)
+# <https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:readtypes:trigger:completion>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30357,7 +29769,7 @@ case .success(_):
 authenticated = true
 case .failure(let error):
 // Handle the error here.
-fatalError("*** An error occurred while requesting authentication: \(error) ***")
+fatalError("***An error occurred while requesting authentication: \(error)***")
 }
 
 logger.debug("Authentication Complete.")
@@ -30422,9 +29834,9 @@ Presents a preview of the workout contents as a modal sheet
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:sharetypes:readtypes:trigger:completion:)
+# <https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:sharetypes:readtypes:trigger:completion>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30485,7 +29897,7 @@ case .success(_):
 authenticated = true
 case .failure(let error):
 // Handle the error here.
-fatalError("*** An error occurred while requesting authentication: \(error) ***")
+fatalError("***An error occurred while requesting authentication: \(error)***")
 }
 
 logger.debug("Authentication Complete.")
@@ -30552,9 +29964,9 @@ Presents a preview of the workout contents as a modal sheet
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/imageplaygroundpersonalizationpolicy(_:)
+# <https://developer.apple.com/documentation/swiftui/view/imageplaygroundpersonalizationpolicy(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30598,9 +30010,9 @@ Enabled by default when the modifier is not set or when the policy is set to `au
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimage:oncompletion:oncancellation:)
+# <https://developer.apple.com/documentation/swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimage:oncompletion:oncancellation>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30670,15 +30082,13 @@ createdImageURL = url
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimageurl:oncompletion:oncancellation:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimageurl:oncompletion:oncancellation>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/inapppurchaseoptions(_:)
+# <https://developer.apple.com/documentation/swiftui/view/inapppurchaseoptions(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30738,15 +30148,13 @@ Declares the view as dependent on a collection of In-App Purchase products and r
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/journalingsuggestionspicker(ispresented:journalingsuggestiontoken:oncompletion:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/journalingsuggestionspicker(ispresented:journalingsuggestiontoken:oncompletion>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/journalingsuggestionspicker(ispresented:oncompletion:)
+# <https://developer.apple.com/documentation/swiftui/view/journalingsuggestionspicker(ispresented:oncompletion>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30777,9 +30185,9 @@ For more information about the Journaling Suggestions picker, see: doc:presentin
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/labelicontotitlespacing(_:)
+# <https://developer.apple.com/documentation/swiftui/view/labelicontotitlespacing(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30805,9 +30213,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/labelreservediconwidth(_:)
+# <https://developer.apple.com/documentation/swiftui/view/labelreservediconwidth(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30833,9 +30241,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/labeledcontentstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/labeledcontentstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30865,9 +30273,9 @@ A container for attaching a label to a value-bearing view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/labelsvisibility(_:)
+# <https://developer.apple.com/documentation/swiftui/view/labelsvisibility(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30933,9 +30341,9 @@ The visibility of a UI element, chosen automatically based on the platform, curr
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/lineheight(_:)
+# <https://developer.apple.com/documentation/swiftui/view/lineheight(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30961,9 +30369,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/listrowinsets(_:_:)
+# <https://developer.apple.com/documentation/swiftui/view/listrowinsets(>_:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -30977,7 +30385,7 @@ Sets the insets of rows in a list on the specified edges.
 
 nonisolated
 func listRowInsets(
-_ edges: Edge.Set = .all,
+_edges: Edge.Set = .all,
 _ length: CGFloat?
 
 ## Parameters
@@ -31026,9 +30434,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/listsectionindexvisibility(_:)
+# <https://developer.apple.com/documentation/swiftui/view/listsectionindexvisibility(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31080,9 +30488,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/listsectionmargins(_:_:)
+# <https://developer.apple.com/documentation/swiftui/view/listsectionmargins(>_:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31096,7 +30504,7 @@ Set the section margins for the specific edges.
 
 nonisolated
 func listSectionMargins(
-_ edges: Edge.Set = .all,
+_edges: Edge.Set = .all,
 _ length: CGFloat?
 
 ## Parameters
@@ -31129,9 +30537,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/lookaroundviewer(ispresented:initialscene:allowsnavigation:showsroadlabels:pointsofinterest:ondismiss:)
+# <https://developer.apple.com/documentation/swiftui/view/lookaroundviewer(ispresented:initialscene:allowsnavigation:showsroadlabels:pointsofinterest:ondismiss>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31185,9 +30593,9 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/lookaroundviewer(ispresented:scene:allowsnavigation:showsroadlabels:pointsofinterest:ondismiss:)
+# <https://developer.apple.com/documentation/swiftui/view/lookaroundviewer(ispresented:scene:allowsnavigation:showsroadlabels:pointsofinterest:ondismiss>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31240,15 +30648,13 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/managesubscriptionssheet(ispresented:subscriptiongroupid:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/managesubscriptionssheet(ispresented:subscriptiongroupid>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/managedcontentstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/managedcontentstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31288,9 +30694,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/manipulable(coordinatespace:operations:inertia:isenabled:onchanged:)
+# <https://developer.apple.com/documentation/swiftui/view/manipulable(coordinatespace:operations:inertia:isenabled:onchanged>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31341,15 +30747,13 @@ When a person ends the manipulation gesture, the view will
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/manipulable(transform:coordinatespace:operations:inertia:isenabled:onchanged:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/manipulable(transform:coordinatespace:operations:inertia:isenabled:onchanged>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/manipulable(using:)
+# <https://developer.apple.com/documentation/swiftui/view/manipulable(using>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31401,15 +30805,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/manipulationgesture(updating:coordinatespace:operations:inertia:isenabled:onchanged:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/manipulationgesture(updating:coordinatespace:operations:inertia:isenabled:onchanged>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapcamerakeyframeanimator(trigger:keyframes:)
+# <https://developer.apple.com/documentation/swiftui/view/mapcamerakeyframeanimator(trigger:keyframes>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31475,9 +30877,9 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapcontrolvisibility(_:)
+# <https://developer.apple.com/documentation/swiftui/view/mapcontrolvisibility(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31549,9 +30951,9 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapcontrols(_:)
+# <https://developer.apple.com/documentation/swiftui/view/mapcontrols(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31635,9 +31037,9 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapfeatureselectionaccessory(_:)
+# <https://developer.apple.com/documentation/swiftui/view/mapfeatureselectionaccessory(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31691,9 +31093,9 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapfeatureselectioncontent(content:)
+# <https://developer.apple.com/documentation/swiftui/view/mapfeatureselectioncontent(content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31753,9 +31155,9 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapfeatureselectiondisabled(_:)
+# <https://developer.apple.com/documentation/swiftui/view/mapfeatureselectiondisabled(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31813,15 +31215,13 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:arrowedge:)
+# <https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:arrowedge>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31897,9 +31297,9 @@ Performs an action when Map camera framing changes
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(item:displaysmap:attachmentanchor:)
+# <https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(item:displaysmap:attachmentanchor>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -31969,9 +31369,9 @@ Performs an action when Map camera framing changes
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(item:displaysmap:attachmentanchor:arrowedge:)
+# <https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(item:displaysmap:attachmentanchor:arrowedge>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32042,9 +31442,9 @@ Performs an action when Map camera framing changes
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapitemdetailsheet(ispresented:item:displaysmap:)
+# <https://developer.apple.com/documentation/swiftui/view/mapitemdetailsheet(ispresented:item:displaysmap>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32112,9 +31512,9 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapitemdetailsheet(item:displaysmap:)
+# <https://developer.apple.com/documentation/swiftui/view/mapitemdetailsheet(item:displaysmap>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32177,9 +31577,9 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapscope(_:)
+# <https://developer.apple.com/documentation/swiftui/view/mapscope(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32227,9 +31627,9 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/mapstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32277,9 +31677,9 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/matchedtransitionsource(id:in:)
+# <https://developer.apple.com/documentation/swiftui/view/matchedtransitionsource(id:in>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32364,9 +31764,9 @@ A configuration that defines the appearance of a matched transition source.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/matchedtransitionsource(id:in:configuration:)
+# <https://developer.apple.com/documentation/swiftui/view/matchedtransitionsource(id:in:configuration>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32465,9 +31865,9 @@ A configuration that defines the appearance of a matched transition source.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/materialactiveappearance(_:)
+# <https://developer.apple.com/documentation/swiftui/view/materialactiveappearance(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32511,9 +31911,9 @@ The behavior for how materials appear active and inactive.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/multilinetextalignment(strategy:)
+# <https://developer.apple.com/documentation/swiftui/view/multilinetextalignment(strategy>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32539,15 +31939,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationlinkindicatorvisibility(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationlinkindicatorvisibility(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationtransition(_:)
+# <https://developer.apple.com/documentation/swiftui/view/navigationtransition(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32638,9 +32036,9 @@ A configuration that defines the appearance of a matched transition source.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onappintentexecution(_:perform:)
+# <https://developer.apple.com/documentation/swiftui/view/onappintentexecution(_:perform>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32686,15 +32084,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onapplepaycouponcodechange(perform:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/onapplepaycouponcodechange(perform>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onapplepaypaymentmethodchange(perform:)
+# <https://developer.apple.com/documentation/swiftui/view/onapplepaypaymentmethodchange(perform>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32742,9 +32138,9 @@ Provides a task to perform before this view appears
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onapplepayshippingcontactchange(perform:)
+# <https://developer.apple.com/documentation/swiftui/view/onapplepayshippingcontactchange(perform>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32792,9 +32188,9 @@ Provides a task to perform before this view appears
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onapplepayshippingmethodchange(perform:)
+# <https://developer.apple.com/documentation/swiftui/view/onapplepayshippingmethodchange(perform>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32842,27 +32238,21 @@ Provides a task to perform before this view appears
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/oncameracaptureevent(isenabled:defaultsounddisabled:action:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/oncameracaptureevent(isenabled:defaultsounddisabled:action>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/oncameracaptureevent(isenabled:defaultsounddisabled:primaryaction:secondaryaction:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/oncameracaptureevent(isenabled:defaultsounddisabled:primaryaction:secondaryaction>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/ondragsessionupdated(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/ondragsessionupdated(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/ondropsessionupdated(_:)
+# <https://developer.apple.com/documentation/swiftui/view/ondropsessionupdated(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32888,15 +32278,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/ongeometrychange3d(for:of:action:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/ongeometrychange3d(for:of:action>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/oninapppurchasecompletion(perform:)
+# <https://developer.apple.com/documentation/swiftui/view/oninapppurchasecompletion(perform>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -32954,15 +32342,13 @@ Declares the view as dependent on a collection of In-App Purchase products and r
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/oninapppurchasestart(perform:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/oninapppurchasestart(perform>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onmapcamerachange(frequency:_:)
+# <https://developer.apple.com/documentation/swiftui/view/onmapcamerachange(frequency>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33022,9 +32408,9 @@ Presents a map item detail popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onopenurl(prefersinapp:)
+# <https://developer.apple.com/documentation/swiftui/view/onopenurl(prefersinapp>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33052,15 +32438,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onworldrecenter(action:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/onworldrecenter(action>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/paylaterviewaction(_:)
+# <https://developer.apple.com/documentation/swiftui/view/paylaterviewaction(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33104,9 +32488,9 @@ Provides a task to perform before this view appears
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/paylaterviewdisplaystyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/paylaterviewdisplaystyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33150,9 +32534,9 @@ Provides a task to perform before this view appears
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/paywithapplepaybuttondisablecardart()
+# <https://developer.apple.com/documentation/swiftui/view/paywithapplepaybuttondisablecardart()>
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33176,15 +32560,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/paywithapplepaybuttonstyle(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/paywithapplepaybuttonstyle(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/popovertip(_:arrowedge:action:)
+# <https://developer.apple.com/documentation/swiftui/view/popovertip(_:arrowedge:action>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33267,9 +32649,9 @@ Sets the style for a tip’s image.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/posttophotossharedalbumsheet(ispresented:items:photolibrary:defaultalbumidentifier:completion:)
+# <https://developer.apple.com/documentation/swiftui/view/posttophotossharedalbumsheet(ispresented:items:photolibrary:defaultalbumidentifier:completion>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33312,15 +32694,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/preferredwindowclippingmargins(_:_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/preferredwindowclippingmargins(>_:_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationbreakthrougheffect(_:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationbreakthrougheffect(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33366,9 +32746,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationpreventsapptermination(_:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationpreventsapptermination(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33416,9 +32796,9 @@ presentLogin = false
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/productdescription(_:)
+# <https://developer.apple.com/documentation/swiftui/view/productdescription(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33466,15 +32846,13 @@ Declares the view as dependent on a collection of In-App Purchase products and r
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/producticonborder()
-
-
+# <https://developer.apple.com/documentation/swiftui/view/producticonborder()>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/productviewstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/productviewstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33532,9 +32910,9 @@ Declares the view as dependent on a collection of In-App Purchase products and r
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/realityviewcameracontrols(_:)
+# <https://developer.apple.com/documentation/swiftui/view/realityviewcameracontrols(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33564,15 +32942,13 @@ The camera controls for the reality view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/realityviewlayoutbehavior(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/realityviewlayoutbehavior(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/rotation3dlayout(_:)
+# <https://developer.apple.com/documentation/swiftui/view/rotation3dlayout(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33613,9 +32989,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/rotation3dlayout(_:axis:)
+# <https://developer.apple.com/documentation/swiftui/view/rotation3dlayout(_:axis>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33665,9 +33041,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/safeareabar(edge:alignment:spacing:content:)
+# <https://developer.apple.com/documentation/swiftui/view/safeareabar(edge:alignment:spacing:content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33715,9 +33091,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/scaledtofill3d()
+# <https://developer.apple.com/documentation/swiftui/view/scaledtofill3d()>
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33758,9 +33134,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/scaledtofit3d()
+# <https://developer.apple.com/documentation/swiftui/view/scaledtofit3d()>
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33801,9 +33177,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/scrolledgeeffectdisabled(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/scrolledgeeffectdisabled(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33857,9 +33233,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/scrolledgeeffectstyle(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/scrolledgeeffectstyle(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33913,9 +33289,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/scrollinputbehavior(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/scrollinputbehavior(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -33965,9 +33341,9 @@ A type that defines whether input should scroll a view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchtoolbarbehavior(_:)
+# <https://developer.apple.com/documentation/swiftui/view/searchtoolbarbehavior(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34003,9 +33379,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/sectionindexlabel(_:)
+# <https://developer.apple.com/documentation/swiftui/view/sectionindexlabel(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34039,15 +33415,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/signinwithapplebuttonstyle(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/signinwithapplebuttonstyle(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/spatialoverlay(alignment:content:)
+# <https://developer.apple.com/documentation/swiftui/view/spatialoverlay(alignment:content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34089,9 +33463,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/spatialoverlaypreferencevalue(_:alignment:_:)
+# <https://developer.apple.com/documentation/swiftui/view/spatialoverlaypreferencevalue(_:alignment>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34116,9 +33490,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/storebutton(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/storebutton(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34179,9 +33553,9 @@ Declares the view as dependent on a collection of In-App Purchase products and r
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/storeproducttask(for:priority:action:)
+# <https://developer.apple.com/documentation/swiftui/view/storeproducttask(for:priority:action>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34250,15 +33624,13 @@ Declares the view as dependent on a collection of In-App Purchase products and r
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/storeproductstask(for:priority:action:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/storeproductstask(for:priority:action>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionintroductoryoffer(applyoffer:compactjws:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionintroductoryoffer(applyoffer:compactjws>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34299,9 +33671,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionofferviewbuttonvisibility(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionofferviewbuttonvisibility(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34326,9 +33698,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionofferviewdetailaction(_:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionofferviewdetailaction(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34350,9 +33722,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionofferviewstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionofferviewstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34374,9 +33746,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionpromotionaloffer(offer:compactjws:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionpromotionaloffer(offer:compactjws>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34419,9 +33791,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionpromotionaloffer(offer:signature:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionpromotionaloffer(offer:signature>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34488,15 +33860,13 @@ Declares the view as dependent on an In-App Purchase product and returns a modif
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorebuttonlabel(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorebuttonlabel(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolbackground(_:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolbackground(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34546,9 +33916,9 @@ Declares the view as dependent on an In-App Purchase product and returns a modif
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolicon(icon:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolicon(icon>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34606,9 +33976,9 @@ Declares the view as dependent on an In-App Purchase product and returns a modif
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34660,9 +34030,9 @@ Declares the view as dependent on an In-App Purchase product and returns a modif
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:placement:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:placement>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34727,9 +34097,9 @@ Declares the view as dependent on an In-App Purchase product and returns a modif
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34777,15 +34147,13 @@ Declares the view as dependent on an In-App Purchase product and returns a modif
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorepickeritembackground(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorepickeritembackground(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorepickeritembackground(_:in:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorepickeritembackground(_:in>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34850,9 +34218,9 @@ Declares the view as dependent on an In-App Purchase product and returns a modif
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicydestination(for:destination:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicydestination(for:destination>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34918,15 +34286,13 @@ Declares the view as dependent on an In-App Purchase product and returns a modif
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicydestination(url:for:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicydestination(url:for>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34974,9 +34340,9 @@ Declares the view as dependent on an In-App Purchase product and returns a modif
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(_:_:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(>_:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -34992,7 +34358,7 @@ StoreKitSwiftUI
 
 nonisolated
 func subscriptionStorePolicyForegroundStyle(
-_ primary: some ShapeStyle,
+_primary: some ShapeStyle,
 _ secondary: some ShapeStyle
 
 ## Parameters
@@ -35037,9 +34403,9 @@ Declares the view as dependent on an In-App Purchase product and returns a modif
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstoresigninaction(_:)
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstoresigninaction(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35099,9 +34465,9 @@ Declares the view as dependent on an In-App Purchase product and returns a modif
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/symbolcolorrenderingmode(_:)
+# <https://developer.apple.com/documentation/swiftui/view/symbolcolorrenderingmode(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35133,15 +34499,13 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/symbolvariablevaluemode(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/symbolvariablevaluemode(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabbarminimizebehavior(_:)
+# <https://developer.apple.com/documentation/swiftui/view/tabbarminimizebehavior(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35192,9 +34556,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabviewbottomaccessory(content:)
+# <https://developer.apple.com/documentation/swiftui/view/tabviewbottomaccessory(content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35214,21 +34578,17 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:interaction:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:interaction>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/textcontenttype(_:)
+# <https://developer.apple.com/documentation/swiftui/view/textcontenttype(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35293,9 +34653,9 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/textinputformattingcontrolvisibility(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/textinputformattingcontrolvisibility(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35330,9 +34690,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/textrenderer(_:)
+# <https://developer.apple.com/documentation/swiftui/view/textrenderer(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35378,9 +34738,9 @@ A proxy for a text view that custom text renderers use.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/textselectionaffinity(_:)
+# <https://developer.apple.com/documentation/swiftui/view/textselectionaffinity(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35471,9 +34831,9 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tipbackground(_:)
+# <https://developer.apple.com/documentation/swiftui/view/tipbackground(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35513,9 +34873,9 @@ Sets the style for a tip’s image.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tipcornerradius(_:antialiased:)
+# <https://developer.apple.com/documentation/swiftui/view/tipcornerradius(_:antialiased>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35548,9 +34908,9 @@ Sets the style for a tip’s image.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tipimagesize(_:)
+# <https://developer.apple.com/documentation/swiftui/view/tipimagesize(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35580,9 +34940,9 @@ Sets the style for a tip’s image.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tipimagestyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/tipimagestyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35612,9 +34972,9 @@ Sets the given style for TipView within the view hierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tipimagestyle(_:_:)
+# <https://developer.apple.com/documentation/swiftui/view/tipimagestyle(>_:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35628,7 +34988,7 @@ Sets the style for a tip’s image.
 
 nonisolated
 
-_ primary: S1,
+_primary: S1,
 _ secondary: S2
 
 ## See Also
@@ -35647,9 +35007,9 @@ Sets the given style for TipView within the view hierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tipimagestyle(_:_:_:)
+# <https://developer.apple.com/documentation/swiftui/view/tipimagestyle(>_:_:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35663,7 +35023,7 @@ Sets the style for a tip’s image.
 
 nonisolated
 
-_ primary: S1,
+_primary: S1,
 _ secondary: S2,
 _ tertiary: S3
 
@@ -35683,9 +35043,9 @@ Sets the given style for TipView within the view hierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tipviewstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/tipviewstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35729,9 +35089,9 @@ Sets the style for a tip’s image.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbaritemhidden(_:)
+# <https://developer.apple.com/documentation/swiftui/view/toolbaritemhidden(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35776,9 +35136,9 @@ CollaborationButton()
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/transactiontask(_:action:)
+# <https://developer.apple.com/documentation/swiftui/view/transactiontask(_:action>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35885,9 +35245,9 @@ Sets the style to be used by the button. (see `PKIdentityButtonStyle`).
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:)
+# <https://developer.apple.com/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -35987,9 +35347,9 @@ Adds a task to perform before this view appears or when the specified source or 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:)
+# <https://developer.apple.com/documentation/swiftui/view/translationtask(_:action>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -36076,9 +35436,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/translationtask(source:target:action:)
+# <https://developer.apple.com/documentation/swiftui/view/translationtask(source:target:action>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -36162,9 +35522,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/verifyidentitywithwalletbuttonstyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/verifyidentitywithwalletbuttonstyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -36208,9 +35568,9 @@ Provides a task to perform before this view appears
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewbackforwardnavigationgestures(_:)
+# <https://developer.apple.com/documentation/swiftui/view/webviewbackforwardnavigationgestures(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -36228,9 +35588,9 @@ nonisolated
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewcontentbackground(_:)
+# <https://developer.apple.com/documentation/swiftui/view/webviewcontentbackground(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -36258,15 +35618,13 @@ By default, WebViews are opaque, and use the page’s natural background color a
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewcontextmenu(menu:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/webviewcontextmenu(menu>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewelementfullscreenbehavior(_:)
+# <https://developer.apple.com/documentation/swiftui/view/webviewelementfullscreenbehavior(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -36284,9 +35642,9 @@ nonisolated
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewlinkpreviews(_:)
+# <https://developer.apple.com/documentation/swiftui/view/webviewlinkpreviews(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -36304,9 +35662,9 @@ nonisolated
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewmagnificationgestures(_:)
+# <https://developer.apple.com/documentation/swiftui/view/webviewmagnificationgestures(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -36324,9 +35682,9 @@ nonisolated
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewonscrollgeometrychange(for:of:action:)
+# <https://developer.apple.com/documentation/swiftui/view/webviewonscrollgeometrychange(for:of:action>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -36362,15 +35720,13 @@ A closure to run when the transformed data changes.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewscrollinputbehavior(_:for:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/webviewscrollinputbehavior(_:for>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewscrollposition(_:)
+# <https://developer.apple.com/documentation/swiftui/view/webviewscrollposition(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -36390,21 +35746,17 @@ nonisolated
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewtextselection(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/webviewtextselection(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/windowresizeanchor(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/windowresizeanchor(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/workoutpreview(_:ispresented:)
+# <https://developer.apple.com/documentation/swiftui/view/workoutpreview(_:ispresented>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -36459,9 +35811,9 @@ Requests permission to save and read the specified HealthKit data types.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/writingdirection(strategy:)
+# <https://developer.apple.com/documentation/swiftui/view/writingdirection(strategy>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -36487,19 +35839,15 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/writingtoolsaffordancevisibility(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/writingtoolsaffordancevisibility(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/writingtoolsbehavior(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/writingtoolsbehavior(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dynamicviewcontent
+# <https://developer.apple.com/documentation/swiftui/dynamicviewcontent>
 
 - SwiftUI
 - DynamicViewContent
@@ -36572,19 +35920,15 @@ A collection which allows a view to be treated as a collection of its subviews i
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/insettableshape
-
-
+# <https://developer.apple.com/documentation/swiftui/insettableshape>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable
-
-
+# <https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/nsviewrepresentable
+# <https://developer.apple.com/documentation/swiftui/nsviewrepresentable>
 
 - SwiftUI
 - NSViewRepresentable
@@ -36681,13 +36025,11 @@ Contextual information about the state of the system that you use to create and 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/shape
-
-
+# <https://developer.apple.com/documentation/swiftui/shape>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/shapeview
+# <https://developer.apple.com/documentation/swiftui/shapeview>
 
 - SwiftUI
 - ShapeView
@@ -36780,7 +36122,7 @@ A shape provider that fills its shape.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable
+# <https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable>
 
 - SwiftUI
 - UIViewControllerRepresentable
@@ -36868,7 +36210,7 @@ Contextual information about the state of the system that you use to create and 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/uiviewrepresentable
+# <https://developer.apple.com/documentation/swiftui/uiviewrepresentable>
 
 - SwiftUI
 - UIViewRepresentable
@@ -36965,7 +36307,7 @@ Contextual information about the state of the system that you use to create and 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/wkinterfaceobjectrepresentable
+# <https://developer.apple.com/documentation/swiftui/wkinterfaceobjectrepresentable>
 
 - SwiftUI
 - WKInterfaceObjectRepresentable
@@ -37037,13 +36379,11 @@ Contextual information about the state of the system that you use to create and 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/angulargradient
-
-
+# <https://developer.apple.com/documentation/swiftui/angulargradient>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/anyshape
+# <https://developer.apple.com/documentation/swiftui/anyshape>
 
 - SwiftUI
 - AnyShape
@@ -37124,7 +36464,7 @@ A shape provider that fills its shape.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/anyview
+# <https://developer.apple.com/documentation/swiftui/anyview>
 
 - SwiftUI
 - AnyView
@@ -37176,7 +36516,7 @@ A View created from a swift tuple of View values.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/asyncimage
+# <https://developer.apple.com/documentation/swiftui/asyncimage>
 
 - SwiftUI
 - AsyncImage
@@ -37191,14 +36531,14 @@ A view that asynchronously loads and displays an image.
 
 This view uses the shared `URLSession` instance to load an image from the specified URL, and then display it. For example, you can display an icon that’s stored on a server:
 
-AsyncImage(url: URL(string: "https://example.com/icon.png"))
+AsyncImage(url: URL(string: "<https://example.com/icon.png>"))
 .frame(width: 200, height: 200)
 
 Until the image loads, the view displays a standard placeholder that fills the available space. After the load completes successfully, the view updates to display the image. In the example above, the icon is smaller than the frame, and so appears smaller than the placeholder.
 
 You can specify a custom placeholder using `init(url:scale:content:placeholder:)`. With this initializer, you can also use the `content` parameter to manipulate the loaded image. For example, you can add a modifier to make the loaded image resizable:
 
-AsyncImage(url: URL(string: "https://example.com/icon.png")) { image in
+AsyncImage(url: URL(string: "<https://example.com/icon.png>")) { image in
 image.resizable()
 } placeholder: {
 ProgressView()
@@ -37209,7 +36549,7 @@ For this example, SwiftUI shows a `ProgressView` first, and then the image scale
 
 To gain more control over the loading process, use the `init(url:scale:transaction:content:)` initializer, which takes a `content` closure that receives an `AsyncImagePhase` to indicate the state of the loading operation. Return a view that’s appropriate for the current phase:
 
-AsyncImage(url: URL(string: "https://example.com/icon.png")) { phase in
+AsyncImage(url: URL(string: "<https://example.com/icon.png>")) { phase in
 if let image = phase.image {
 image // Displays the loaded image.
 } else if phase.error != nil {
@@ -37249,13 +36589,11 @@ The current phase of the asynchronous image loading operation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/button
-
-
+# <https://developer.apple.com/documentation/swiftui/button>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/buttonbordershape
+# <https://developer.apple.com/documentation/swiftui/buttonbordershape>
 
 - SwiftUI
 - ButtonBorderShape
@@ -37337,7 +36675,7 @@ The options for controlling the repeatability of button actions.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/buttonstyleconfiguration/label-swift.struct
+# <https://developer.apple.com/documentation/swiftui/buttonstyleconfiguration/label-swift.struct>
 
 - SwiftUI
 - ButtonStyleConfiguration
@@ -37368,7 +36706,7 @@ A view that describes the effect of pressing the button.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/canvas
+# <https://developer.apple.com/documentation/swiftui/canvas>
 
 - SwiftUI
 - Canvas
@@ -37452,19 +36790,15 @@ An immediate mode drawing destination, and its current state.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/capsule
-
-
+# <https://developer.apple.com/documentation/swiftui/capsule>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/circle
-
-
+# <https://developer.apple.com/documentation/swiftui/circle>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/color
+# <https://developer.apple.com/documentation/swiftui/color>
 
 - SwiftUI
 - Color
@@ -37498,11 +36832,11 @@ let steelGray = Color(white: 0.4745)
 
 - Create a color instance from another color, like a `UIColor` or an `NSColor`:
 
-#if os(iOS)
+# if os(iOS)
 let linkColor = Color(uiColor: .link)
-#elseif os(macOS)
+# elseif os(macOS)
 let linkColor = Color(nsColor: .linkColor)
-#endif
+# endif
 
 - Use one of a palette of predefined colors, like `black`, `green`, and `purple`.
 
@@ -37720,7 +37054,7 @@ Sets the tint color within this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/colorpicker
+# <https://developer.apple.com/documentation/swiftui/colorpicker>
 
 - SwiftUI
 - ColorPicker
@@ -37770,7 +37104,7 @@ Creates an instance that selects a color.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/containerrelativeshape
+# <https://developer.apple.com/documentation/swiftui/containerrelativeshape>
 
 - SwiftUI
 - ContainerRelativeShape
@@ -37815,7 +37149,7 @@ A shape type that is able to inset itself to produce another shape.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/contentunavailableview
+# <https://developer.apple.com/documentation/swiftui/contentunavailableview>
 
 - SwiftUI
 - ContentUnavailableView
@@ -37897,7 +37231,7 @@ A structure that represents the body of a static placeholder search view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlgroup
+# <https://developer.apple.com/documentation/swiftui/controlgroup>
 
 - SwiftUI
 - ControlGroup
@@ -37975,7 +37309,7 @@ Sets the style for control groups within this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlgroupstyleconfiguration/content-swift.struct
+# <https://developer.apple.com/documentation/swiftui/controlgroupstyleconfiguration/content-swift.struct>
 
 - SwiftUI
 - ControlGroupStyleConfiguration
@@ -38006,7 +37340,7 @@ A view that represents the content of the `ControlGroup`.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlgroupstyleconfiguration/label-swift.struct
+# <https://developer.apple.com/documentation/swiftui/controlgroupstyleconfiguration/label-swift.struct>
 
 - SwiftUI
 - ControlGroupStyleConfiguration
@@ -38037,7 +37371,7 @@ A view that provides the optional label of the `ControlGroup`.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/datepicker
+# <https://developer.apple.com/documentation/swiftui/datepicker>
 
 - SwiftUI
 - DatePicker
@@ -38157,7 +37491,7 @@ The current time zone that views should use when handling dates.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/datepickerstyleconfiguration/label-swift.struct
+# <https://developer.apple.com/documentation/swiftui/datepickerstyleconfiguration/label-swift.struct>
 
 - SwiftUI
 - DatePickerStyleConfiguration
@@ -38192,7 +37526,7 @@ The date components that the user is able to view and edit.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/debugreplaceableview
+# <https://developer.apple.com/documentation/swiftui/debugreplaceableview>
 
 - SwiftUI
 - DebugReplaceableView Beta
@@ -38237,7 +37571,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaultbuttonlabel
+# <https://developer.apple.com/documentation/swiftui/defaultbuttonlabel>
 
 - SwiftUI
 - DefaultButtonLabel Beta
@@ -38288,7 +37622,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaultdateprogresslabel
+# <https://developer.apple.com/documentation/swiftui/defaultdateprogresslabel>
 
 - SwiftUI
 - DefaultDateProgressLabel
@@ -38331,7 +37665,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaultsettingslinklabel
+# <https://developer.apple.com/documentation/swiftui/defaultsettingslinklabel>
 
 - SwiftUI
 - DefaultSettingsLinkLabel
@@ -38356,7 +37690,7 @@ You don’t use this type directly. Instead, the system creates it automatically
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaultsharelinklabel
+# <https://developer.apple.com/documentation/swiftui/defaultsharelinklabel>
 
 - SwiftUI
 - DefaultShareLinkLabel
@@ -38381,7 +37715,7 @@ You don’t use this type directly. Instead, `ShareLink` uses it automatically d
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaulttablabel
+# <https://developer.apple.com/documentation/swiftui/defaulttablabel>
 
 - SwiftUI
 - DefaultTabLabel
@@ -38406,13 +37740,11 @@ You don’t use this type directly. Instead, the system creates it automatically
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaultwindowvisibilitytogglelabel
-
-
+# <https://developer.apple.com/documentation/swiftui/defaultwindowvisibilitytogglelabel>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/disclosuregroup
+# <https://developer.apple.com/documentation/swiftui/disclosuregroup>
 
 - SwiftUI
 - DisclosureGroup
@@ -38484,7 +37816,7 @@ Sets the style for disclosure groups within this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/disclosuregroupstyleconfiguration/content-swift.struct
+# <https://developer.apple.com/documentation/swiftui/disclosuregroupstyleconfiguration/content-swift.struct>
 
 - SwiftUI
 - DisclosureGroupStyleConfiguration
@@ -38515,7 +37847,7 @@ The content of the disclosure group.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/disclosuregroupstyleconfiguration/label-swift.struct
+# <https://developer.apple.com/documentation/swiftui/disclosuregroupstyleconfiguration/label-swift.struct>
 
 - SwiftUI
 - DisclosureGroupStyleConfiguration
@@ -38546,7 +37878,7 @@ The label for the disclosure group.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/divider
+# <https://developer.apple.com/documentation/swiftui/divider>
 
 - SwiftUI
 - Divider
@@ -38591,7 +37923,7 @@ A flexible space that expands along the major axis of its containing stack layou
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/editbutton
+# <https://developer.apple.com/documentation/swiftui/editbutton>
 
 - SwiftUI
 - EditButton
@@ -38663,7 +37995,7 @@ A button that triggers a standard rename action.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/editablecollectioncontent
+# <https://developer.apple.com/documentation/swiftui/editablecollectioncontent>
 
 - SwiftUI
 - EditableCollectionContent
@@ -38710,7 +38042,7 @@ A collection wrapper that iterates over the indices and identifiers of a collect
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/ellipse
+# <https://developer.apple.com/documentation/swiftui/ellipse>
 
 - SwiftUI
 - Ellipse
@@ -38759,7 +38091,7 @@ A capsule shape aligned inside the frame of the view containing it.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/ellipticalgradient
+# <https://developer.apple.com/documentation/swiftui/ellipticalgradient>
 
 - SwiftUI
 - EllipticalGradient
@@ -38874,13 +38206,11 @@ A style appropriate for placeholder text.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/emptyview
-
-
+# <https://developer.apple.com/documentation/swiftui/emptyview>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/equatableview
+# <https://developer.apple.com/documentation/swiftui/equatableview>
 
 - SwiftUI
 - EquatableView
@@ -38929,13 +38259,11 @@ A View created from a swift tuple of View values.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/fillshapeview
-
-
+# <https://developer.apple.com/documentation/swiftui/fillshapeview>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/foreach
+# <https://developer.apple.com/documentation/swiftui/foreach>
 
 - SwiftUI
 - ForEach
@@ -39087,7 +38415,7 @@ A type of view that generates views from an underlying collection of data.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/form
+# <https://developer.apple.com/documentation/swiftui/form>
 
 - SwiftUI
 - Form
@@ -39195,7 +38523,7 @@ Sets a style for labeled content.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/formstyleconfiguration/content-swift.struct
+# <https://developer.apple.com/documentation/swiftui/formstyleconfiguration/content-swift.struct>
 
 - SwiftUI
 - FormStyleConfiguration
@@ -39226,7 +38554,7 @@ A view that is the content of the form.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gauge
+# <https://developer.apple.com/documentation/swiftui/gauge>
 
 - SwiftUI
 - Gauge
@@ -39384,7 +38712,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/currentvaluelabel-swift.struct
+# <https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/currentvaluelabel-swift.struct>
 
 - SwiftUI
 - GaugeStyleConfiguration
@@ -39423,7 +38751,7 @@ A type-erased label describing a specific value of a gauge.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/label-swift.struct
+# <https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/label-swift.struct>
 
 - SwiftUI
 - GaugeStyleConfiguration
@@ -39454,7 +38782,7 @@ A view that describes the purpose of the gauge.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/markedvaluelabel
+# <https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/markedvaluelabel>
 
 - SwiftUI
 - GaugeStyleConfiguration
@@ -39493,7 +38821,7 @@ A type-erased value label of a gauge that contains the current value.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/maximumvaluelabel-swift.struct
+# <https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/maximumvaluelabel-swift.struct>
 
 - SwiftUI
 - GaugeStyleConfiguration
@@ -39532,7 +38860,7 @@ A view that describes the maximum of the range for the current value.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/minimumvaluelabel-swift.struct
+# <https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/minimumvaluelabel-swift.struct>
 
 - SwiftUI
 - GaugeStyleConfiguration
@@ -39571,7 +38899,7 @@ A type-erased value label of a gauge describing the maximum value.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/geometryreader
+# <https://developer.apple.com/documentation/swiftui/geometryreader>
 
 - SwiftUI
 - GeometryReader
@@ -39630,7 +38958,7 @@ A physical metrics converter provides conversion between point values and their 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/geometryreader3d
+# <https://developer.apple.com/documentation/swiftui/geometryreader3d>
 
 - SwiftUI
 - GeometryReader3D
@@ -39691,7 +39019,7 @@ A physical metrics converter provides conversion between point values and their 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/glassbackgroundeffectconfiguration/content-swift.struct
+# <https://developer.apple.com/documentation/swiftui/glassbackgroundeffectconfiguration/content-swift.struct>
 
 - SwiftUI
 - GlassBackgroundEffectConfiguration
@@ -39716,7 +39044,7 @@ struct Content
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/grid
+# <https://developer.apple.com/documentation/swiftui/grid>
 
 - SwiftUI
 - Grid
@@ -39780,11 +39108,11 @@ The grid’s column count grows to handle the row with the largest number of col
 Grid {
 GridRow {
 Text("Row 1")
-ForEach(0..<2) { _ in Color.red }
+ForEach(0..<2) { _in Color.red }
 }
 GridRow {
 Text("Row 2")
-ForEach(0..<5) { _ in Color.green }
+ForEach(0..<5) {_ in Color.green }
 }
 GridRow {
 Text("Row 3")
@@ -39848,7 +39176,7 @@ Overrides the default horizontal alignment of the grid column that the view appe
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gridrow
+# <https://developer.apple.com/documentation/swiftui/gridrow>
 
 - SwiftUI
 - GridRow
@@ -39923,7 +39251,7 @@ Overrides the default horizontal alignment of the grid column that the view appe
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/group
+# <https://developer.apple.com/documentation/swiftui/group>
 
 - SwiftUI
 - Group
@@ -40047,7 +39375,7 @@ Transforms the sections of a given view into a resulting content view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/groupbox
+# <https://developer.apple.com/documentation/swiftui/groupbox>
 
 - SwiftUI
 - GroupBox
@@ -40111,7 +39439,7 @@ Sets the style for group boxes within this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/groupboxstyleconfiguration/content-swift.struct
+# <https://developer.apple.com/documentation/swiftui/groupboxstyleconfiguration/content-swift.struct>
 
 - SwiftUI
 - GroupBoxStyleConfiguration
@@ -40142,13 +39470,11 @@ A view that represents the content of the group box.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/groupboxstyleconfiguration/label-swift.struct
-
-
+# <https://developer.apple.com/documentation/swiftui/groupboxstyleconfiguration/label-swift.struct>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/groupelementsofcontent
+# <https://developer.apple.com/documentation/swiftui/groupelementsofcontent>
 
 - SwiftUI
 - GroupElementsOfContent
@@ -40187,7 +39513,7 @@ Transforms the sections of a given view into a resulting content view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/groupsectionsofcontent
+# <https://developer.apple.com/documentation/swiftui/groupsectionsofcontent>
 
 - SwiftUI
 - GroupSectionsOfContent
@@ -40226,7 +39552,7 @@ Transforms the subviews of a given view into a resulting content view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/hstack
+# <https://developer.apple.com/documentation/swiftui/hstack>
 
 - SwiftUI
 - HStack
@@ -40295,7 +39621,7 @@ A view that arranges its subviews in a vertical line.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/helplink
+# <https://developer.apple.com/documentation/swiftui/helplink>
 
 - SwiftUI
 - HelpLink
@@ -40385,7 +39711,7 @@ A control that requests text input from the user when pressed.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/keyframeanimator
+# <https://developer.apple.com/documentation/swiftui/keyframeanimator>
 
 - SwiftUI
 - KeyframeAnimator
@@ -40460,7 +39786,7 @@ A keyframe that uses a spring function to interpolate to the given value.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/label
+# <https://developer.apple.com/documentation/swiftui/label>
 
 - SwiftUI
 - Label
@@ -40574,7 +39900,7 @@ Sets the style for labels within this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/labelstyleconfiguration/icon-swift.struct
+# <https://developer.apple.com/documentation/swiftui/labelstyleconfiguration/icon-swift.struct>
 
 - SwiftUI
 - LabelStyleConfiguration
@@ -40606,7 +39932,7 @@ A symbolic representation of the labeled item.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/labelstyleconfiguration/title-swift.struct
+# <https://developer.apple.com/documentation/swiftui/labelstyleconfiguration/title-swift.struct>
 
 - SwiftUI
 - LabelStyleConfiguration
@@ -40638,13 +39964,11 @@ A description of the labeled item.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/labeledcontent
-
-
+# <https://developer.apple.com/documentation/swiftui/labeledcontent>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/labeledcontentstyleconfiguration/content-swift.struct
+# <https://developer.apple.com/documentation/swiftui/labeledcontentstyleconfiguration/content-swift.struct>
 
 - SwiftUI
 - LabeledContentStyleConfiguration
@@ -40675,7 +39999,7 @@ The content of the labeled content instance.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/labeledcontentstyleconfiguration/label-swift.struct
+# <https://developer.apple.com/documentation/swiftui/labeledcontentstyleconfiguration/label-swift.struct>
 
 - SwiftUI
 - LabeledContentStyleConfiguration
@@ -40706,7 +40030,7 @@ The label of the labeled content instance.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/labeledcontrolgroupcontent
+# <https://developer.apple.com/documentation/swiftui/labeledcontrolgroupcontent>
 
 - SwiftUI
 - LabeledControlGroupContent
@@ -40729,7 +40053,7 @@ You don’t create this type directly. SwiftUI creates it when you build a `Cont
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/labeledtoolbaritemgroupcontent
+# <https://developer.apple.com/documentation/swiftui/labeledtoolbaritemgroupcontent>
 
 - SwiftUI
 - LabeledToolbarItemGroupContent
@@ -40752,7 +40076,7 @@ You don’t create this type directly. SwiftUI creates it when you build a `Tool
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/lazyhgrid
+# <https://developer.apple.com/documentation/swiftui/lazyhgrid>
 
 - SwiftUI
 - LazyHGrid
@@ -40823,7 +40147,7 @@ A description of a row or a column in a lazy grid.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/lazyhstack
+# <https://developer.apple.com/documentation/swiftui/lazyhstack>
 
 - SwiftUI
 - LazyHStack
@@ -40886,7 +40210,7 @@ A set of view types that may be pinned to the bounds of a scroll view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/lazyvgrid
+# <https://developer.apple.com/documentation/swiftui/lazyvgrid>
 
 - SwiftUI
 - LazyVGrid
@@ -40957,7 +40281,7 @@ A description of a row or a column in a lazy grid.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/lazyvstack
+# <https://developer.apple.com/documentation/swiftui/lazyvstack>
 
 - SwiftUI
 - LazyVStack
@@ -41022,13 +40346,11 @@ A set of view types that may be pinned to the bounds of a scroll view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/lineargradient
-
-
+# <https://developer.apple.com/documentation/swiftui/lineargradient>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/link
+# <https://developer.apple.com/documentation/swiftui/link>
 
 - SwiftUI
 - Link
@@ -41046,11 +40368,11 @@ A control for navigating to a URL.
 Create a link by providing a destination URL and a title. The title tells the user the purpose of the link, and can be a string, a title key that produces a localized string, or a view that acts as a label. The example below creates a link to `example.com` and displays the title string as a link-styled view:
 
 Link("View Our ",
-destination: URL(string: "https://www.example.com/TOS.html")!)
+destination: URL(string: "<https://www.example.com/TOS.html>")!)
 
 When a user taps or clicks a `Link`, the default behavior depends on the contents of the URL. For example, SwiftUI opens a Universal Link in the associated app if possible, or in the user’s default web browser if not. Alternatively, you can override the default behavior by setting the `openURL` environment value with a custom `OpenURLAction`:
 
-Link("Visit Our Site", destination: URL(string: "https://www.example.com")!)
+Link("Visit Our Site", destination: URL(string: "<https://www.example.com>")!)
 .environment(\.openURL, OpenURLAction { url in
 print("Open \(url)")
 return .handled
@@ -41096,7 +40418,7 @@ A button with a standard appearance that opens app-specific help documentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/list
+# <https://developer.apple.com/documentation/swiftui/list>
 
 - SwiftUI
 - List
@@ -41391,7 +40713,7 @@ Sets the style for lists within this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menu
+# <https://developer.apple.com/documentation/swiftui/menu>
 
 - SwiftUI
 - Menu
@@ -41531,7 +40853,7 @@ Sets the style for menus within this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menubutton
+# <https://developer.apple.com/documentation/swiftui/menubutton>
 
 - SwiftUI
 - MenuButton Deprecated
@@ -41582,13 +40904,11 @@ Deprecated
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menustyleconfiguration/content
-
-
+# <https://developer.apple.com/documentation/swiftui/menustyleconfiguration/content>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menustyleconfiguration/label
+# <https://developer.apple.com/documentation/swiftui/menustyleconfiguration/label>
 
 - SwiftUI
 - MenuStyleConfiguration
@@ -41619,7 +40939,7 @@ A type-erased content of a menu.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/meshgradient
+# <https://developer.apple.com/documentation/swiftui/meshgradient>
 
 - SwiftUI
 - MeshGradient
@@ -41771,7 +41091,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/modifiedcontent
+# <https://developer.apple.com/documentation/swiftui/modifiedcontent>
 
 - SwiftUI
 - ModifiedContent
@@ -41983,7 +41303,7 @@ A namespace for various manipulable related types.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/multidatepicker
+# <https://developer.apple.com/documentation/swiftui/multidatepicker>
 
 - SwiftUI
 - MultiDatePicker
@@ -42078,7 +41398,7 @@ The current time zone that views should use when handling dates.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/offsetshape
+# <https://developer.apple.com/documentation/swiftui/offsetshape>
 
 - SwiftUI
 - OffsetShape
@@ -42139,7 +41459,7 @@ A shape with an affine transform applied to it.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/outlinegroup
+# <https://developer.apple.com/documentation/swiftui/outlinegroup>
 
 - SwiftUI
 - OutlineGroup
@@ -42252,7 +41572,7 @@ Sets the style for disclosure groups within this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/outlinesubgroupchildren
+# <https://developer.apple.com/documentation/swiftui/outlinesubgroupchildren>
 
 - SwiftUI
 - OutlineSubgroupChildren
@@ -42277,13 +41597,11 @@ struct OutlineSubgroupChildren
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/pastebutton
-
-
+# <https://developer.apple.com/documentation/swiftui/pastebutton>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/path
+# <https://developer.apple.com/documentation/swiftui/path>
 
 - SwiftUI
 - Path
@@ -42463,13 +41781,11 @@ Adds a rounded rectangle with uneven corners to the path.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/phaseanimator
-
-
+# <https://developer.apple.com/documentation/swiftui/phaseanimator>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/picker
+# <https://developer.apple.com/documentation/swiftui/picker>
 
 - SwiftUI
 - Picker
@@ -42696,13 +42012,11 @@ The selection effect to apply to a palette item.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/placeholdercontentview
-
-
+# <https://developer.apple.com/documentation/swiftui/placeholdercontentview>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentedwindowcontent
+# <https://developer.apple.com/documentation/swiftui/presentedwindowcontent>
 
 - SwiftUI
 - PresentedWindowContent
@@ -42725,7 +42039,7 @@ You don’t create this type directly. `WindowGroup` creates values for you.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/previewmodifiercontent
+# <https://developer.apple.com/documentation/swiftui/previewmodifiercontent>
 
 - SwiftUI
 - PreviewModifierContent
@@ -42768,7 +42082,7 @@ A type that defines an environment in which previews can appear.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/primitivebuttonstyleconfiguration/label-swift.struct
+# <https://developer.apple.com/documentation/swiftui/primitivebuttonstyleconfiguration/label-swift.struct>
 
 - SwiftUI
 - PrimitiveButtonStyleConfiguration
@@ -42799,7 +42113,7 @@ A view that describes the effect of calling the button’s action.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/progressview
+# <https://developer.apple.com/documentation/swiftui/progressview>
 
 - SwiftUI
 - ProgressView
@@ -42963,7 +42277,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/progressviewstyleconfiguration/currentvaluelabel-swift.struct
+# <https://developer.apple.com/documentation/swiftui/progressviewstyleconfiguration/currentvaluelabel-swift.struct>
 
 - SwiftUI
 - ProgressViewStyleConfiguration
@@ -42994,7 +42308,7 @@ A view that describes the current value of a progress view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/progressviewstyleconfiguration/label-swift.struct
+# <https://developer.apple.com/documentation/swiftui/progressviewstyleconfiguration/label-swift.struct>
 
 - SwiftUI
 - ProgressViewStyleConfiguration
@@ -43025,7 +42339,7 @@ A view that describes the task represented by the progress view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/radialgradient
+# <https://developer.apple.com/documentation/swiftui/radialgradient>
 
 - SwiftUI
 - RadialGradient
@@ -43136,7 +42450,7 @@ A style appropriate for placeholder text.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/rectangle
+# <https://developer.apple.com/documentation/swiftui/rectangle>
 
 - SwiftUI
 - Rectangle
@@ -43193,7 +42507,7 @@ Describes the corner radius values of a rounded rectangle with uneven corners.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/rotatedshape
+# <https://developer.apple.com/documentation/swiftui/rotatedshape>
 
 - SwiftUI
 - RotatedShape
@@ -43256,7 +42570,7 @@ A shape with an affine transform applied to it.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/roundedrectangle
+# <https://developer.apple.com/documentation/swiftui/roundedrectangle>
 
 - SwiftUI
 - RoundedRectangle
@@ -43330,7 +42644,7 @@ Describes the corner radius values of a rounded rectangle with uneven corners.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scaledshape
+# <https://developer.apple.com/documentation/swiftui/scaledshape>
 
 - SwiftUI
 - ScaledShape
@@ -43389,7 +42703,7 @@ A shape with an affine transform applied to it.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scrollview
+# <https://developer.apple.com/documentation/swiftui/scrollview>
 
 - SwiftUI
 - ScrollView
@@ -43494,7 +42808,7 @@ A proxy value that supports programmatic scrolling of the scrollable views withi
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scrollviewreader
+# <https://developer.apple.com/documentation/swiftui/scrollviewreader>
 
 - SwiftUI
 - ScrollViewReader
@@ -43576,7 +42890,7 @@ A proxy value that supports programmatic scrolling of the scrollable views withi
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchunavailablecontent/actions
+# <https://developer.apple.com/documentation/swiftui/searchunavailablecontent/actions>
 
 - SwiftUI
 - SearchUnavailableContent
@@ -43615,7 +42929,7 @@ A view that represents the label of a static placeholder search view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchunavailablecontent/description
+# <https://developer.apple.com/documentation/swiftui/searchunavailablecontent/description>
 
 - SwiftUI
 - SearchUnavailableContent
@@ -43654,7 +42968,7 @@ A view that represents the label of a static placeholder search view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchunavailablecontent/label
+# <https://developer.apple.com/documentation/swiftui/searchunavailablecontent/label>
 
 - SwiftUI
 - SearchUnavailableContent
@@ -43693,7 +43007,7 @@ A view that represents the description of a static `ContentUnavailableView.searc
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/section
+# <https://developer.apple.com/documentation/swiftui/section>
 
 - SwiftUI
 - Section
@@ -43781,7 +43095,7 @@ Specifies the contents of a section.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/sectionconfiguration/actions-swift.struct
+# <https://developer.apple.com/documentation/swiftui/sectionconfiguration/actions-swift.struct>
 
 - SwiftUI
 - SectionConfiguration
@@ -43806,7 +43120,7 @@ struct Actions
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/securefield
+# <https://developer.apple.com/documentation/swiftui/securefield>
 
 - SwiftUI
 - SecureField
@@ -43842,9 +43156,9 @@ var body: some View {
 VStack {
 TextField("Username", text: $username)
 .autocorrectionDisabled(true)
-#if !os(macOS)
+# if !os(macOS)
 .textInputAutocapitalization(.never)
-#endif
+# endif
 
 SecureField("Password", text: $password)
 .onSubmit {
@@ -43865,8 +43179,8 @@ TextField(text: $username, prompt: Text("Required")) {
 Text("Username")
 }
 .autocorrectionDisabled(true)
-#if !os(macOS)
-#endif
+# if !os(macOS)
+# endif
 
 SecureField(text: $password, prompt: Text("Required")) {
 Text("Password")
@@ -43921,7 +43235,7 @@ A view that can display and edit long-form text.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/sharelink
+# <https://developer.apple.com/documentation/swiftui/sharelink>
 
 - SwiftUI
 - ShareLink
@@ -43936,17 +43250,17 @@ A view that controls a sharing presentation.
 
 People tap or click on a share link to present a share interface. The link typically uses a system-standard appearance; you only need to supply the content to share:
 
-ShareLink(item: URL(string: "https://developer.apple.com/xcode/swiftui/")!)
+ShareLink(item: URL(string: "<https://developer.apple.com/xcode/swiftui/>")!)
 
 You can control the appearance of the link by providing view content. For example, you can use a `Label` to display a link with a custom icon:
 
-ShareLink(item: URL(string: "https://developer.apple.com/xcode/swiftui/")!) {
+ShareLink(item: URL(string: "<https://developer.apple.com/xcode/swiftui/>")!) {
 Label("Share", image: "MyCustomShareIcon")
 }
 
 If you only wish to customize the link’s title, you can use one of the convenience initializers that takes a string and creates a `Label` for you:
 
-ShareLink("Share URL", item: URL(string: "https://developer.apple.com/xcode/swiftui/")!)
+ShareLink("Share URL", item: URL(string: "<https://developer.apple.com/xcode/swiftui/>")!)
 
 The link can share any content that is `Transferable`. Many framework types, like `URL`, already conform to this protocol. You can also make your own types transferable.
 
@@ -44060,7 +43374,7 @@ A button with a standard appearance that opens app-specific help documentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/slider
+# <https://developer.apple.com/documentation/swiftui/slider>
 
 - SwiftUI
 - Slider
@@ -44164,7 +43478,7 @@ Sets the style for toggles in a view hierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/spacer
+# <https://developer.apple.com/documentation/swiftui/spacer>
 
 - SwiftUI
 - Spacer
@@ -44271,7 +43585,7 @@ A visual element that can be used to separate other content.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/stepper
+# <https://developer.apple.com/documentation/swiftui/stepper>
 
 - SwiftUI
 - Stepper
@@ -44406,7 +43720,7 @@ Sets the style for toggles in a view hierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/strokebordershapeview
+# <https://developer.apple.com/documentation/swiftui/strokebordershapeview>
 
 - SwiftUI
 - StrokeBorderShapeView
@@ -44498,7 +43812,7 @@ A shape provider that fills its shape.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/strokeshapeview
+# <https://developer.apple.com/documentation/swiftui/strokeshapeview>
 
 - SwiftUI
 - StrokeShapeView
@@ -44590,7 +43904,7 @@ A shape provider that fills its shape.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/subscriptionview
+# <https://developer.apple.com/documentation/swiftui/subscriptionview>
 
 - SwiftUI
 - SubscriptionView
@@ -44645,7 +43959,7 @@ A View created from a swift tuple of View values.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/subview
+# <https://developer.apple.com/documentation/swiftui/subview>
 
 - SwiftUI
 - Subview
@@ -44721,7 +44035,7 @@ A key for accessing container values.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/subviewscollection
+# <https://developer.apple.com/documentation/swiftui/subviewscollection>
 
 - SwiftUI
 - SubviewsCollection
@@ -44777,7 +44091,7 @@ A key for accessing container values.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/subviewscollectionslice
+# <https://developer.apple.com/documentation/swiftui/subviewscollectionslice>
 
 - SwiftUI
 - SubviewsCollectionSlice
@@ -44825,7 +44139,7 @@ A key for accessing container values.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabcontentbuilder/content
+# <https://developer.apple.com/documentation/swiftui/tabcontentbuilder/content>
 
 - SwiftUI
 - TabContentBuilder
@@ -44845,7 +44159,7 @@ A view representation of the content of a builder-based tab view with selection.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/table
+# <https://developer.apple.com/documentation/swiftui/table>
 
 - SwiftUI
 - Table
@@ -44947,10 +44261,10 @@ TableColumn("Base price") { purchase in
 Text(purchase.price, format: currencyStyle)
 }
 TableColumn("With 15% tip") { purchase in
-Text(purchase.price * 1.15, format: currencyStyle)
+Text(purchase.price *1.15, format: currencyStyle)
 }
 TableColumn("With 20% tip") { purchase in
-Text(purchase.price * 1.2, format: currencyStyle)
+Text(purchase.price* 1.2, format: currencyStyle)
 }
 TableColumn("With 25% tip") { purchase in
 Text(purchase.price * 1.25, format: currencyStyle)
@@ -44974,12 +44288,12 @@ You can define a single table for use on macOS, iOS, and iPadOS. However, on iPh
 To provide a good user experience in a space-constrained environment, you can customize the first column to show more information when you detect that the `horizontalSizeClass` environment value becomes `UserInterfaceSizeClass.compact`. For example, you can modify the sortable table from above to conditionally show all the information in the first column:
 
 struct CompactableTable: View {
-#if os(iOS)
+# if os(iOS)
 @Environment(\.horizontalSizeClass) private var horizontalSizeClass
 private var isCompact: Bool { horizontalSizeClass == .compact }
-#else
+# else
 private let isCompact = false
-#endif
+# endif
 
 @State private var sortOrder = [KeyPathComparator(\Person.givenName)]
 
@@ -45113,7 +44427,7 @@ Sets the style for tables within this view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/texteditor
+# <https://developer.apple.com/documentation/swiftui/texteditor>
 
 - SwiftUI
 - TextEditor
@@ -45199,7 +44513,7 @@ A control into which people securely enter private text.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/textfield
+# <https://developer.apple.com/documentation/swiftui/textfield>
 
 - SwiftUI
 - TextField
@@ -45372,7 +44686,7 @@ A view that can display and edit long-form text.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/textfieldlink
+# <https://developer.apple.com/documentation/swiftui/textfieldlink>
 
 - SwiftUI
 - TextFieldLink
@@ -45423,7 +44737,7 @@ A button with a standard appearance that opens app-specific help documentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/timelineview
+# <https://developer.apple.com/documentation/swiftui/timelineview>
 
 - SwiftUI
 - TimelineView
@@ -45506,7 +44820,7 @@ A type that provides a sequence of dates for use as a schedule.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toggle
+# <https://developer.apple.com/documentation/swiftui/toggle>
 
 - SwiftUI
 - Toggle
@@ -45652,7 +44966,7 @@ Sets the style for toggles in a view hierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/togglestyleconfiguration/label-swift.struct
+# <https://developer.apple.com/documentation/swiftui/togglestyleconfiguration/label-swift.struct>
 
 - SwiftUI
 - ToggleStyleConfiguration
@@ -45687,7 +45001,7 @@ A view that describes the effect of switching the toggle between states.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/transformedshape
+# <https://developer.apple.com/documentation/swiftui/transformedshape>
 
 - SwiftUI
 - TransformedShape
@@ -45740,7 +45054,7 @@ A shape with a translation offset transform applied to it.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tupleview
+# <https://developer.apple.com/documentation/swiftui/tupleview>
 
 - SwiftUI
 - TupleView
@@ -45789,7 +45103,7 @@ A view that subscribes to a publisher with an action.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/unevenroundedrectangle
+# <https://developer.apple.com/documentation/swiftui/unevenroundedrectangle>
 
 - SwiftUI
 - UnevenRoundedRectangle
@@ -45863,7 +45177,7 @@ Describes the corner radius values of a rounded rectangle with uneven corners.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/vstack
+# <https://developer.apple.com/documentation/swiftui/vstack>
 
 - SwiftUI
 - VStack
@@ -45932,7 +45246,7 @@ A view that arranges its subviews in a horizontal line.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/viewthatfits
+# <https://developer.apple.com/documentation/swiftui/viewthatfits>
 
 - SwiftUI
 - ViewThatFits
@@ -46001,7 +45315,7 @@ Produces a view constrained in the given axes from one of several alternatives p
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/zstack
+# <https://developer.apple.com/documentation/swiftui/zstack>
 
 - SwiftUI
 - ZStack
@@ -46041,8 +45355,8 @@ ForEach(0..<colors.count) {
 Rectangle()
 .fill(colors[$0])
 .frame(width: 100, height: 100)
-.offset(x: CGFloat($0) * 10.0,
-y: CGFloat($0) * 10.0)
+.offset(x: CGFloat($0) *10.0,
+y: CGFloat($0)* 10.0)
 }
 }
 }
@@ -46123,7 +45437,7 @@ The placement of a container background.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/zstackcontent3d
+# <https://developer.apple.com/documentation/swiftui/zstackcontent3d>
 
 - SwiftUI
 - ZStackContent3D
@@ -46162,7 +45476,7 @@ Conforms when `Content` conforms to `View`.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/viewbuilder
+# <https://developer.apple.com/documentation/swiftui/viewbuilder>
 
 - SwiftUI
 - ViewBuilder
@@ -46231,2823 +45545,2313 @@ A type that represents part of your app’s user interface and provides modifier
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/declaring-a-custom-view)
+# <https://developer.apple.com/documentation/swiftui/declaring-a-custom-view>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/configuring-views)
 
+# <https://developer.apple.com/documentation/swiftui/configuring-views>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/reducing-view-modifier-maintenance)
 
+# <https://developer.apple.com/documentation/swiftui/reducing-view-modifier-maintenance>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/displaying-data-in-lists)
 
+# <https://developer.apple.com/documentation/swiftui/displaying-data-in-lists>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/body-8kl5o)
 
+# <https://developer.apple.com/documentation/swiftui/view/body-8kl5o>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/text)
 
+# <https://developer.apple.com/documentation/swiftui/text>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/declaring-a-custom-view).
 
+# <https://developer.apple.com/documentation/swiftui/declaring-a-custom-view>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/configuring-views).
 
+# <https://developer.apple.com/documentation/swiftui/configuring-views>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/opacity(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/opacity(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-layout),
 
+# <https://developer.apple.com/documentation/swiftui/view-layout>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-accessibility)
 
+# <https://developer.apple.com/documentation/swiftui/view-accessibility>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-input-and-events).
 
+# <https://developer.apple.com/documentation/swiftui/view-input-and-events>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/body-swift.associatedtype)
 
+# <https://developer.apple.com/documentation/swiftui/view/body-swift.associatedtype>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/modifier(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/modifier(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-appearance)
 
+# <https://developer.apple.com/documentation/swiftui/view-appearance>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-text-and-symbols)
 
+# <https://developer.apple.com/documentation/swiftui/view-text-and-symbols>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-auxiliary-views)
 
+# <https://developer.apple.com/documentation/swiftui/view-auxiliary-views>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-chart-view)
 
+# <https://developer.apple.com/documentation/swiftui/view-chart-view>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-style-modifiers)
 
+# <https://developer.apple.com/documentation/swiftui/view-style-modifiers>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-layout)
 
+# <https://developer.apple.com/documentation/swiftui/view-layout>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-graphics-and-rendering)
 
+# <https://developer.apple.com/documentation/swiftui/view-graphics-and-rendering>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-input-and-events)
 
+# <https://developer.apple.com/documentation/swiftui/view-input-and-events>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-search)
 
+# <https://developer.apple.com/documentation/swiftui/view-search>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-presentation)
 
+# <https://developer.apple.com/documentation/swiftui/view-presentation>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-state)
 
+# <https://developer.apple.com/documentation/swiftui/view-state>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view-deprecated)
 
+# <https://developer.apple.com/documentation/swiftui/view-deprecated>)
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/accessibilityactions(category:_:))
+# <https://developer.apple.com/documentation/swiftui/view/accessibilityactions(category>:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/accessibilitydefaultfocus(_:_:))
+# <https://developer.apple.com/documentation/swiftui/view/accessibilitydefaultfocus(>_:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/accessibilityscrollstatus(_:isenabled:))
 
+# <https://developer.apple.com/documentation/swiftui/view/accessibilityscrollstatus(_:isenabled>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/accessorywidgetgroupstyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/accessorywidgetgroupstyle(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/addordertowalletbuttonstyle(_:))
+# <https://developer.apple.com/documentation/swiftui/view/addordertowalletbuttonstyle(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/addpasstowalletbuttonstyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/addpasstowalletbuttonstyle(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/allowswindowactivationevents())
+# <https://developer.apple.com/documentation/swiftui/view/allowswindowactivationevents()>)
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/appstoreoffer(ispresented:kind:ondismiss:))
+# <https://developer.apple.com/documentation/swiftui/view/appstoreoffer(ispresented:kind:ondismiss>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/aspectratio3d(_:contentmode:))
 
+# <https://developer.apple.com/documentation/swiftui/view/aspectratio3d(_:contentmode>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/assistiveaccessnavigationicon(_:))
+# <https://developer.apple.com/documentation/swiftui/view/assistiveaccessnavigationicon(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/assistiveaccessnavigationicon(systemimage:))
+# <https://developer.apple.com/documentation/swiftui/view/assistiveaccessnavigationicon(systemimage>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/attributedtextformattingdefinition(_:))
+# <https://developer.apple.com/documentation/swiftui/view/attributedtextformattingdefinition(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/automateddeviceenrollmentaddition(ispresented:))
+# <https://developer.apple.com/documentation/swiftui/view/automateddeviceenrollmentaddition(ispresented>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/breakthrougheffect(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/breakthrougheffect(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/buttonsizing(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/buttonsizing(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/certificatesheet(trust:title:message:help:))
+# <https://developer.apple.com/documentation/swiftui/view/certificatesheet(trust:title:message:help>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/chart3dcameraprojection(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/chart3dcameraprojection(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/chart3dpose(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/chart3dpose(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/chart3drenderingstyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/chart3drenderingstyle(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/chartzaxis(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/chartzaxis(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/chartzaxis(content:))
 
+# <https://developer.apple.com/documentation/swiftui/view/chartzaxis(content>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/chartzaxislabel(_:position:alignment:spacing:))
+# <https://developer.apple.com/documentation/swiftui/view/chartzaxislabel(_:position:alignment:spacing>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/chartzscale(domain:range:type:))
 
+# <https://developer.apple.com/documentation/swiftui/view/chartzscale(domain:range:type>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/chartzscale(domain:type:))
 
+# <https://developer.apple.com/documentation/swiftui/view/chartzscale(domain:type>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/chartzscale(range:type:))
 
+# <https://developer.apple.com/documentation/swiftui/view/chartzscale(range:type>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/chartzselection(range:))
 
+# <https://developer.apple.com/documentation/swiftui/view/chartzselection(range>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/chartzselection(value:))
 
+# <https://developer.apple.com/documentation/swiftui/view/chartzselection(value>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/contactaccessbuttoncaption(_:))
+# <https://developer.apple.com/documentation/swiftui/view/contactaccessbuttoncaption(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/contactaccessbuttonstyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/contactaccessbuttonstyle(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/contactaccesspicker(ispresented:completionhandler:))
+# <https://developer.apple.com/documentation/swiftui/view/contactaccesspicker(ispresented:completionhandler>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/containervalue(_:_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/containervalue(>_:_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/contentcaptureprotected(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/contentcaptureprotected(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/contenttoolbar(for:content:))
 
+# <https://developer.apple.com/documentation/swiftui/view/contenttoolbar(for:content>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/continuitydevicepicker(ispresented:ondidconnect:))
+# <https://developer.apple.com/documentation/swiftui/view/continuitydevicepicker(ispresented:ondidconnect>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/controlwidgetactionhint(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/controlwidgetactionhint(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/controlwidgetstatus(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/controlwidgetstatus(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/currententitlementtask(for:priority:action:))
+# <https://developer.apple.com/documentation/swiftui/view/currententitlementtask(for:priority:action>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dialogpreventsapptermination(_:))
+# <https://developer.apple.com/documentation/swiftui/view/dialogpreventsapptermination(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/documentbrowsercontextmenu(_:))
+# <https://developer.apple.com/documentation/swiftui/view/documentbrowsercontextmenu(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/dragconfiguration(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/dragconfiguration(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:id:in:_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:id:in>:_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:id:in:selection:_:))
+# <https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:id:in:selection>:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:in:_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:in>:_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:in:selection:_:))
+# <https://developer.apple.com/documentation/swiftui/view/dragcontainer(for:in:selection>:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/dragpreviewsformation(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/dragpreviewsformation(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/draggable(_:_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/draggable(>_:_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/draggable(containeritemid:))
 
+# <https://developer.apple.com/documentation/swiftui/view/draggable(containeritemid>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/draggable(for:id:_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/draggable(for:id>:_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/dropconfiguration(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/dropconfiguration(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dropdestination(for:isenabled:action:))
+# <https://developer.apple.com/documentation/swiftui/view/dropdestination(for:isenabled:action>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/droppreviewsformation(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/droppreviewsformation(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/formstyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/formstyle(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/gamesynceddirectoryloadingview(directory:finishedloading:))
+# <https://developer.apple.com/documentation/swiftui/view/gamesynceddirectoryloadingview(directory:finishedloading>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/glassbackgroundeffect(_:displaymode:))
+# <https://developer.apple.com/documentation/swiftui/view/glassbackgroundeffect(_:displaymode>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/glassbackgroundeffect(_:in:displaymode:))
+# <https://developer.apple.com/documentation/swiftui/view/glassbackgroundeffect(_:in:displaymode>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/glasseffectid(_:in:))
 
+# <https://developer.apple.com/documentation/swiftui/view/glasseffectid(_:in>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/glasseffecttransition(_:isenabled:))
+# <https://developer.apple.com/documentation/swiftui/view/glasseffecttransition(_:isenabled>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/glasseffectunion(id:namespace:))
+# <https://developer.apple.com/documentation/swiftui/view/glasseffectunion(id:namespace>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/groupactivityassociation(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/groupactivityassociation(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/handgestureshortcut(_:isenabled:))
+# <https://developer.apple.com/documentation/swiftui/view/handgestureshortcut(_:isenabled>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/handpointerbehavior(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/handpointerbehavior(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/handlesgamecontrollerevents(matching:))
 
+# <https://developer.apple.com/documentation/swiftui/view/handlesgamecontrollerevents(matching>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/handlesgamecontrollerevents(matching:withoptions:))
+# <https://developer.apple.com/documentation/swiftui/view/handlesgamecontrollerevents(matching:withoptions>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:objecttype:predicate:trigger:completion:))
+# <https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:objecttype:predicate:trigger:completion>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:readtypes:trigger:completion:))
+# <https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:readtypes:trigger:completion>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:sharetypes:readtypes:trigger:completion:))
+# <https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:sharetypes:readtypes:trigger:completion>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/imageplaygroundgenerationstyle(_:in:))
+# <https://developer.apple.com/documentation/swiftui/view/imageplaygroundgenerationstyle(_:in>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/imageplaygroundpersonalizationpolicy(_:))
+# <https://developer.apple.com/documentation/swiftui/view/imageplaygroundpersonalizationpolicy(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimage:oncompletion:oncancellation:))
+# <https://developer.apple.com/documentation/swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimage:oncompletion:oncancellation>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimageurl:oncompletion:oncancellation:))
+# <https://developer.apple.com/documentation/swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimageurl:oncompletion:oncancellation>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/imageplaygroundsheet(ispresented:concepts:sourceimage:oncompletion:oncancellation:))
+# <https://developer.apple.com/documentation/swiftui/view/imageplaygroundsheet(ispresented:concepts:sourceimage:oncompletion:oncancellation>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/imageplaygroundsheet(ispresented:concepts:sourceimageurl:oncompletion:oncancellation:))
+# <https://developer.apple.com/documentation/swiftui/view/imageplaygroundsheet(ispresented:concepts:sourceimageurl:oncompletion:oncancellation>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/inapppurchaseoptions(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/inapppurchaseoptions(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/journalingsuggestionspicker(ispresented:journalingsuggestiontoken:oncompletion:))
+# <https://developer.apple.com/documentation/swiftui/view/journalingsuggestionspicker(ispresented:journalingsuggestiontoken:oncompletion>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/journalingsuggestionspicker(ispresented:oncompletion:))
+# <https://developer.apple.com/documentation/swiftui/view/journalingsuggestionspicker(ispresented:oncompletion>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/labelicontotitlespacing(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/labelicontotitlespacing(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/labelreservediconwidth(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/labelreservediconwidth(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/labeledcontentstyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/labeledcontentstyle(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/labelsvisibility(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/labelsvisibility(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/lineheight(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/lineheight(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/listrowinsets(_:_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/listrowinsets(>_:_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/listsectionindexvisibility(_:))
+# <https://developer.apple.com/documentation/swiftui/view/listsectionindexvisibility(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/listsectionmargins(_:_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/listsectionmargins(>_:_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/lookaroundviewer(ispresented:initialscene:allowsnavigation:showsroadlabels:pointsofinterest:ondismiss:))
+# <https://developer.apple.com/documentation/swiftui/view/lookaroundviewer(ispresented:initialscene:allowsnavigation:showsroadlabels:pointsofinterest:ondismiss>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/lookaroundviewer(ispresented:scene:allowsnavigation:showsroadlabels:pointsofinterest:ondismiss:))
+# <https://developer.apple.com/documentation/swiftui/view/lookaroundviewer(ispresented:scene:allowsnavigation:showsroadlabels:pointsofinterest:ondismiss>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/managesubscriptionssheet(ispresented:subscriptiongroupid:))
+# <https://developer.apple.com/documentation/swiftui/view/managesubscriptionssheet(ispresented:subscriptiongroupid>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/managedcontentstyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/managedcontentstyle(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/manipulable(coordinatespace:operations:inertia:isenabled:onchanged:))
 
+# <https://developer.apple.com/documentation/swiftui/view/manipulable(coordinatespace:operations:inertia:isenabled:onchanged>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/manipulable(transform:coordinatespace:operations:inertia:isenabled:onchanged:))
 
+# <https://developer.apple.com/documentation/swiftui/view/manipulable(transform:coordinatespace:operations:inertia:isenabled:onchanged>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/manipulable(using:))
 
+# <https://developer.apple.com/documentation/swiftui/view/manipulable(using>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/manipulationgesture(updating:coordinatespace:operations:inertia:isenabled:onchanged:))
+# <https://developer.apple.com/documentation/swiftui/view/manipulationgesture(updating:coordinatespace:operations:inertia:isenabled:onchanged>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapcamerakeyframeanimator(trigger:keyframes:))
+# <https://developer.apple.com/documentation/swiftui/view/mapcamerakeyframeanimator(trigger:keyframes>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/mapcontrolvisibility(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/mapcontrolvisibility(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/mapcontrols(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/mapcontrols(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapfeatureselectionaccessory(_:))
+# <https://developer.apple.com/documentation/swiftui/view/mapfeatureselectionaccessory(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapfeatureselectioncontent(content:))
+# <https://developer.apple.com/documentation/swiftui/view/mapfeatureselectioncontent(content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapfeatureselectiondisabled(_:))
+# <https://developer.apple.com/documentation/swiftui/view/mapfeatureselectiondisabled(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:))
+# <https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:arrowedge:))
+# <https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:arrowedge>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(item:displaysmap:attachmentanchor:))
+# <https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(item:displaysmap:attachmentanchor>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(item:displaysmap:attachmentanchor:arrowedge:))
+# <https://developer.apple.com/documentation/swiftui/view/mapitemdetailpopover(item:displaysmap:attachmentanchor:arrowedge>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapitemdetailsheet(ispresented:item:displaysmap:))
+# <https://developer.apple.com/documentation/swiftui/view/mapitemdetailsheet(ispresented:item:displaysmap>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/mapitemdetailsheet(item:displaysmap:))
+# <https://developer.apple.com/documentation/swiftui/view/mapitemdetailsheet(item:displaysmap>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/mapscope(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/mapscope(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/mapstyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/mapstyle(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/matchedtransitionsource(id:in:))
+# <https://developer.apple.com/documentation/swiftui/view/matchedtransitionsource(id:in>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/matchedtransitionsource(id:in:configuration:))
+# <https://developer.apple.com/documentation/swiftui/view/matchedtransitionsource(id:in:configuration>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/materialactiveappearance(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/materialactiveappearance(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/multilinetextalignment(strategy:))
+# <https://developer.apple.com/documentation/swiftui/view/multilinetextalignment(strategy>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationlinkindicatorvisibility(_:))
+# <https://developer.apple.com/documentation/swiftui/view/navigationlinkindicatorvisibility(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/navigationtransition(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/navigationtransition(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onappintentexecution(_:perform:))
+# <https://developer.apple.com/documentation/swiftui/view/onappintentexecution(_:perform>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onapplepaycouponcodechange(perform:))
+# <https://developer.apple.com/documentation/swiftui/view/onapplepaycouponcodechange(perform>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onapplepaypaymentmethodchange(perform:))
+# <https://developer.apple.com/documentation/swiftui/view/onapplepaypaymentmethodchange(perform>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onapplepayshippingcontactchange(perform:))
+# <https://developer.apple.com/documentation/swiftui/view/onapplepayshippingcontactchange(perform>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onapplepayshippingmethodchange(perform:))
+# <https://developer.apple.com/documentation/swiftui/view/onapplepayshippingmethodchange(perform>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/oncameracaptureevent(isenabled:defaultsounddisabled:action:))
+# <https://developer.apple.com/documentation/swiftui/view/oncameracaptureevent(isenabled:defaultsounddisabled:action>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/oncameracaptureevent(isenabled:defaultsounddisabled:primaryaction:secondaryaction:))
+# <https://developer.apple.com/documentation/swiftui/view/oncameracaptureevent(isenabled:defaultsounddisabled:primaryaction:secondaryaction>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/ondragsessionupdated(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/ondragsessionupdated(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/ondropsessionupdated(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/ondropsessionupdated(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/ongeometrychange3d(for:of:action:))
+# <https://developer.apple.com/documentation/swiftui/view/ongeometrychange3d(for:of:action>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/oninapppurchasecompletion(perform:))
+# <https://developer.apple.com/documentation/swiftui/view/oninapppurchasecompletion(perform>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/oninapppurchasestart(perform:))
 
+# <https://developer.apple.com/documentation/swiftui/view/oninapppurchasestart(perform>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onmapcamerachange(frequency:_:))
+# <https://developer.apple.com/documentation/swiftui/view/onmapcamerachange(frequency>:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/onopenurl(prefersinapp:))
 
+# <https://developer.apple.com/documentation/swiftui/view/onopenurl(prefersinapp>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/onworldrecenter(action:))
 
+# <https://developer.apple.com/documentation/swiftui/view/onworldrecenter(action>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/paylaterviewaction(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/paylaterviewaction(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/paylaterviewdisplaystyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/paylaterviewdisplaystyle(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/paywithapplepaybuttondisablecardart())
+# <https://developer.apple.com/documentation/swiftui/view/paywithapplepaybuttondisablecardart()>)
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/paywithapplepaybuttonstyle(_:))
+# <https://developer.apple.com/documentation/swiftui/view/paywithapplepaybuttonstyle(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/popovertip(_:arrowedge:action:))
+# <https://developer.apple.com/documentation/swiftui/view/popovertip(_:arrowedge:action>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/posttophotossharedalbumsheet(ispresented:items:photolibrary:defaultalbumidentifier:completion:))
+# <https://developer.apple.com/documentation/swiftui/view/posttophotossharedalbumsheet(ispresented:items:photolibrary:defaultalbumidentifier:completion>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/preferredsubscriptionoffer(_:))
+# <https://developer.apple.com/documentation/swiftui/view/preferredsubscriptionoffer(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/preferredwindowclippingmargins(_:_:))
+# <https://developer.apple.com/documentation/swiftui/view/preferredwindowclippingmargins(>_:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationbreakthrougheffect(_:))
+# <https://developer.apple.com/documentation/swiftui/view/presentationbreakthrougheffect(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationpreventsapptermination(_:))
+# <https://developer.apple.com/documentation/swiftui/view/presentationpreventsapptermination(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/productdescription(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/productdescription(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/producticonborder())
 
+# <https://developer.apple.com/documentation/swiftui/view/producticonborder()>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/productviewstyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/productviewstyle(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/realityviewcameracontrols(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/realityviewcameracontrols(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/realityviewlayoutbehavior(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/realityviewlayoutbehavior(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/rotation3dlayout(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/rotation3dlayout(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/rotation3dlayout(_:axis:))
 
+# <https://developer.apple.com/documentation/swiftui/view/rotation3dlayout(_:axis>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/safeareabar(edge:alignment:spacing:content:))
+# <https://developer.apple.com/documentation/swiftui/view/safeareabar(edge:alignment:spacing:content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/scaledtofill3d())
 
+# <https://developer.apple.com/documentation/swiftui/view/scaledtofill3d()>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/scaledtofit3d())
 
+# <https://developer.apple.com/documentation/swiftui/view/scaledtofit3d()>)
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/scrolledgeeffectdisabled(_:for:))
+# <https://developer.apple.com/documentation/swiftui/view/scrolledgeeffectdisabled(_:for>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/scrolledgeeffectstyle(_:for:))
 
+# <https://developer.apple.com/documentation/swiftui/view/scrolledgeeffectstyle(_:for>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/scrollinputbehavior(_:for:))
 
+# <https://developer.apple.com/documentation/swiftui/view/scrollinputbehavior(_:for>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/searchtoolbarbehavior(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/searchtoolbarbehavior(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/sectionindexlabel(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/sectionindexlabel(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/signinwithapplebuttonstyle(_:))
+# <https://developer.apple.com/documentation/swiftui/view/signinwithapplebuttonstyle(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/spatialoverlay(alignment:content:))
+# <https://developer.apple.com/documentation/swiftui/view/spatialoverlay(alignment:content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/spatialoverlaypreferencevalue(_:alignment:_:))
+# <https://developer.apple.com/documentation/swiftui/view/spatialoverlaypreferencevalue(_:alignment>:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/storebutton(_:for:))
 
+# <https://developer.apple.com/documentation/swiftui/view/storebutton(_:for>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/storeproducttask(for:priority:action:))
+# <https://developer.apple.com/documentation/swiftui/view/storeproducttask(for:priority:action>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/storeproductstask(for:priority:action:))
+# <https://developer.apple.com/documentation/swiftui/view/storeproductstask(for:priority:action>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/subscriptionintroductoryoffer(applyoffer:compactjws:))
 
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionintroductoryoffer(applyoffer:compactjws>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionofferviewbuttonvisibility(_:for:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionofferviewbuttonvisibility(_:for>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionofferviewdetailaction(_:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionofferviewdetailaction(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionofferviewstyle(_:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionofferviewstyle(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionpromotionaloffer(offer:compactjws:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionpromotionaloffer(offer:compactjws>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionpromotionaloffer(offer:signature:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionpromotionaloffer(offer:signature>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstatustask(for:priority:action:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstatustask(for:priority:action>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorebuttonlabel(_:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorebuttonlabel(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolbackground(_:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolbackground(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolicon(icon:))
 
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolicon(icon>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:placement:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:placement>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(_:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstoreoptiongroupstyle(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorepickeritembackground(_:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorepickeritembackground(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorepickeritembackground(_:in:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorepickeritembackground(_:in>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicydestination(for:destination:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicydestination(for:destination>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicydestination(url:for:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicydestination(url:for>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(_:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(_:_:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(>_:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/subscriptionstoresigninaction(_:))
+# <https://developer.apple.com/documentation/swiftui/view/subscriptionstoresigninaction(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/symbolcolorrenderingmode(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/symbolcolorrenderingmode(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/symbolvariablevaluemode(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/symbolvariablevaluemode(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/tabbarminimizebehavior(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/tabbarminimizebehavior(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabviewbottomaccessory(content:))
+# <https://developer.apple.com/documentation/swiftui/view/tabviewbottomaccessory(content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:))
+# <https://developer.apple.com/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:interaction:))
+# <https://developer.apple.com/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:interaction>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/textcontenttype(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/textcontenttype(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/textinputformattingcontrolvisibility(_:for:))
+# <https://developer.apple.com/documentation/swiftui/view/textinputformattingcontrolvisibility(_:for>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/textrenderer(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/textrenderer(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/textselectionaffinity(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/textselectionaffinity(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/tipbackground(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/tipbackground(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tipcornerradius(_:antialiased:))
+# <https://developer.apple.com/documentation/swiftui/view/tipcornerradius(_:antialiased>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/tipimagesize(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/tipimagesize(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/tipimagestyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/tipimagestyle(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/tipimagestyle(_:_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/tipimagestyle(>_:_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/tipimagestyle(_:_:_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/tipimagestyle(>_:_:_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/tipviewstyle(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/tipviewstyle(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/toolbaritemhidden(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/toolbaritemhidden(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/transactionpicker(ispresented:selection:))
+# <https://developer.apple.com/documentation/swiftui/view/transactionpicker(ispresented:selection>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/transactiontask(_:action:))
 
+# <https://developer.apple.com/documentation/swiftui/view/transactiontask(_:action>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:))
+# <https://developer.apple.com/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:))
 
+# <https://developer.apple.com/documentation/swiftui/view/translationtask(_:action>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/translationtask(source:target:action:))
+# <https://developer.apple.com/documentation/swiftui/view/translationtask(source:target:action>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/verifyidentitywithwalletbuttonstyle(_:))
+# <https://developer.apple.com/documentation/swiftui/view/verifyidentitywithwalletbuttonstyle(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewbackforwardnavigationgestures(_:))
+# <https://developer.apple.com/documentation/swiftui/view/webviewbackforwardnavigationgestures(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/webviewcontentbackground(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/webviewcontentbackground(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/webviewcontextmenu(menu:))
 
+# <https://developer.apple.com/documentation/swiftui/view/webviewcontextmenu(menu>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewelementfullscreenbehavior(_:))
+# <https://developer.apple.com/documentation/swiftui/view/webviewelementfullscreenbehavior(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/webviewlinkpreviews(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/webviewlinkpreviews(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewmagnificationgestures(_:))
+# <https://developer.apple.com/documentation/swiftui/view/webviewmagnificationgestures(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewonscrollgeometrychange(for:of:action:))
+# <https://developer.apple.com/documentation/swiftui/view/webviewonscrollgeometrychange(for:of:action>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/webviewscrollinputbehavior(_:for:))
+# <https://developer.apple.com/documentation/swiftui/view/webviewscrollinputbehavior(_:for>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/webviewscrollposition(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/webviewscrollposition(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/webviewtextselection(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/webviewtextselection(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/windowresizeanchor(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/windowresizeanchor(>_:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/workoutpreview(_:ispresented:))
+# <https://developer.apple.com/documentation/swiftui/view/workoutpreview(_:ispresented>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/writingdirection(strategy:))
 
+# <https://developer.apple.com/documentation/swiftui/view/writingdirection(strategy>:))
 
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/writingtoolsaffordancevisibility(_:))
+# <https://developer.apple.com/documentation/swiftui/view/writingtoolsaffordancevisibility(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/writingtoolsbehavior(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/writingtoolsbehavior(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/dynamicviewcontent)
 
+# <https://developer.apple.com/documentation/swiftui/dynamicviewcontent>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/insettableshape)
-
 
+# <https://developer.apple.com/documentation/swiftui/insettableshape>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable)
+# <https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/nsviewrepresentable)
-
 
+# <https://developer.apple.com/documentation/swiftui/nsviewrepresentable>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/shape)
+# <https://developer.apple.com/documentation/swiftui/shape>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/shapeview)
-
 
+# <https://developer.apple.com/documentation/swiftui/shapeview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable)
+# <https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/uiviewrepresentable)
-
 
+# <https://developer.apple.com/documentation/swiftui/uiviewrepresentable>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/wkinterfaceobjectrepresentable)
+# <https://developer.apple.com/documentation/swiftui/wkinterfaceobjectrepresentable>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/angulargradient)
-
 
+# <https://developer.apple.com/documentation/swiftui/angulargradient>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/anyshape)
+# <https://developer.apple.com/documentation/swiftui/anyshape>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/anyview)
-
 
+# <https://developer.apple.com/documentation/swiftui/anyview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/asyncimage)
+# <https://developer.apple.com/documentation/swiftui/asyncimage>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/button)
-
 
+# <https://developer.apple.com/documentation/swiftui/button>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/buttonbordershape)
+# <https://developer.apple.com/documentation/swiftui/buttonbordershape>)
 
-
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/buttonstyleconfiguration/label-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/buttonstyleconfiguration/label-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/canvas)
-
 
+# <https://developer.apple.com/documentation/swiftui/canvas>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/capsule)
+# <https://developer.apple.com/documentation/swiftui/capsule>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/circle)
-
 
+# <https://developer.apple.com/documentation/swiftui/circle>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/color)
+# <https://developer.apple.com/documentation/swiftui/color>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/colorpicker)
-
 
+# <https://developer.apple.com/documentation/swiftui/colorpicker>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/containerrelativeshape)
+# <https://developer.apple.com/documentation/swiftui/containerrelativeshape>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/contentunavailableview)
-
 
+# <https://developer.apple.com/documentation/swiftui/contentunavailableview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlgroup)
+# <https://developer.apple.com/documentation/swiftui/controlgroup>)
 
-
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlgroupstyleconfiguration/content-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/controlgroupstyleconfiguration/content-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlgroupstyleconfiguration/label-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/controlgroupstyleconfiguration/label-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/datepicker)
-
 
+# <https://developer.apple.com/documentation/swiftui/datepicker>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/datepickerstyleconfiguration/label-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/datepickerstyleconfiguration/label-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/debugreplaceableview)
+# <https://developer.apple.com/documentation/swiftui/debugreplaceableview>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/defaultbuttonlabel)
-
 
+# <https://developer.apple.com/documentation/swiftui/defaultbuttonlabel>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaultdateprogresslabel)
+# <https://developer.apple.com/documentation/swiftui/defaultdateprogresslabel>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/defaultsettingslinklabel)
-
 
+# <https://developer.apple.com/documentation/swiftui/defaultsettingslinklabel>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaultsharelinklabel)
+# <https://developer.apple.com/documentation/swiftui/defaultsharelinklabel>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/defaulttablabel)
-
 
+# <https://developer.apple.com/documentation/swiftui/defaulttablabel>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaultwindowvisibilitytogglelabel)
+# <https://developer.apple.com/documentation/swiftui/defaultwindowvisibilitytogglelabel>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/disclosuregroup)
-
 
+# <https://developer.apple.com/documentation/swiftui/disclosuregroup>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/disclosuregroupstyleconfiguration/content-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/disclosuregroupstyleconfiguration/content-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/disclosuregroupstyleconfiguration/label-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/disclosuregroupstyleconfiguration/label-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/divider)
+# <https://developer.apple.com/documentation/swiftui/divider>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/editbutton)
-
 
+# <https://developer.apple.com/documentation/swiftui/editbutton>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/editablecollectioncontent)
+# <https://developer.apple.com/documentation/swiftui/editablecollectioncontent>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/ellipse)
-
 
+# <https://developer.apple.com/documentation/swiftui/ellipse>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/ellipticalgradient)
+# <https://developer.apple.com/documentation/swiftui/ellipticalgradient>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/emptyview)
-
 
+# <https://developer.apple.com/documentation/swiftui/emptyview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/equatableview)
+# <https://developer.apple.com/documentation/swiftui/equatableview>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/fillshapeview)
-
 
+# <https://developer.apple.com/documentation/swiftui/fillshapeview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/foreach)
+# <https://developer.apple.com/documentation/swiftui/foreach>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/form)
-
 
+# <https://developer.apple.com/documentation/swiftui/form>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/formstyleconfiguration/content-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/formstyleconfiguration/content-swift.struct>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/gauge)
-
 
+# <https://developer.apple.com/documentation/swiftui/gauge>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/currentvaluelabel-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/currentvaluelabel-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/label-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/label-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/markedvaluelabel)
+# <https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/markedvaluelabel>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/maximumvaluelabel-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/maximumvaluelabel-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/minimumvaluelabel-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/gaugestyleconfiguration/minimumvaluelabel-swift.struct>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/geometryreader)
-
 
+# <https://developer.apple.com/documentation/swiftui/geometryreader>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/geometryreader3d)
+# <https://developer.apple.com/documentation/swiftui/geometryreader3d>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/glassbackgroundeffectconfiguration/content-swift.struct)
-
 
+# <https://developer.apple.com/documentation/swiftui/glassbackgroundeffectconfiguration/content-swift.struct>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/glasseffectcontainer)
+# <https://developer.apple.com/documentation/swiftui/glasseffectcontainer>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/grid)
-
 
+# <https://developer.apple.com/documentation/swiftui/grid>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gridrow)
+# <https://developer.apple.com/documentation/swiftui/gridrow>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/group)
-
 
+# <https://developer.apple.com/documentation/swiftui/group>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/groupbox)
+# <https://developer.apple.com/documentation/swiftui/groupbox>)
 
-
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/groupboxstyleconfiguration/content-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/groupboxstyleconfiguration/content-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/groupboxstyleconfiguration/label-swift.struct)
-
 
+# <https://developer.apple.com/documentation/swiftui/groupboxstyleconfiguration/label-swift.struct>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/groupelementsofcontent)
+# <https://developer.apple.com/documentation/swiftui/groupelementsofcontent>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/groupsectionsofcontent)
-
 
+# <https://developer.apple.com/documentation/swiftui/groupsectionsofcontent>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/hstack)
+# <https://developer.apple.com/documentation/swiftui/hstack>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/helplink)
-
 
+# <https://developer.apple.com/documentation/swiftui/helplink>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/keyframeanimator)
+# <https://developer.apple.com/documentation/swiftui/keyframeanimator>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/label)
-
 
+# <https://developer.apple.com/documentation/swiftui/label>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/labelstyleconfiguration/icon-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/labelstyleconfiguration/icon-swift.struct>)
 
-
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/labelstyleconfiguration/title-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/labelstyleconfiguration/title-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/labeledcontent)
-
 
+# <https://developer.apple.com/documentation/swiftui/labeledcontent>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/labeledcontentstyleconfiguration/content-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/labeledcontentstyleconfiguration/content-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/labeledcontentstyleconfiguration/label-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/labeledcontentstyleconfiguration/label-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/labeledcontrolgroupcontent)
+# <https://developer.apple.com/documentation/swiftui/labeledcontrolgroupcontent>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/labeledtoolbaritemgroupcontent)
-
 
+# <https://developer.apple.com/documentation/swiftui/labeledtoolbaritemgroupcontent>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/lazyhgrid)
+# <https://developer.apple.com/documentation/swiftui/lazyhgrid>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/lazyhstack)
-
 
+# <https://developer.apple.com/documentation/swiftui/lazyhstack>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/lazyvgrid)
+# <https://developer.apple.com/documentation/swiftui/lazyvgrid>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/lazyvstack)
-
 
+# <https://developer.apple.com/documentation/swiftui/lazyvstack>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/lineargradient)
+# <https://developer.apple.com/documentation/swiftui/lineargradient>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/link)
-
 
+# <https://developer.apple.com/documentation/swiftui/link>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/list)
+# <https://developer.apple.com/documentation/swiftui/list>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/menu)
-
 
+# <https://developer.apple.com/documentation/swiftui/menu>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menubutton)
+# <https://developer.apple.com/documentation/swiftui/menubutton>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/menustyleconfiguration/content)
-
 
+# <https://developer.apple.com/documentation/swiftui/menustyleconfiguration/content>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menustyleconfiguration/label)
+# <https://developer.apple.com/documentation/swiftui/menustyleconfiguration/label>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/meshgradient)
-
 
+# <https://developer.apple.com/documentation/swiftui/meshgradient>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/modifiedcontent)
+# <https://developer.apple.com/documentation/swiftui/modifiedcontent>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/multidatepicker)
-
 
+# <https://developer.apple.com/documentation/swiftui/multidatepicker>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/offsetshape)
+# <https://developer.apple.com/documentation/swiftui/offsetshape>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/outlinegroup)
-
 
+# <https://developer.apple.com/documentation/swiftui/outlinegroup>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/outlinesubgroupchildren)
+# <https://developer.apple.com/documentation/swiftui/outlinesubgroupchildren>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/pastebutton)
-
 
+# <https://developer.apple.com/documentation/swiftui/pastebutton>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/path)
+# <https://developer.apple.com/documentation/swiftui/path>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/phaseanimator)
-
 
+# <https://developer.apple.com/documentation/swiftui/phaseanimator>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/picker)
+# <https://developer.apple.com/documentation/swiftui/picker>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/placeholdercontentview)
-
 
+# <https://developer.apple.com/documentation/swiftui/placeholdercontentview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentedwindowcontent)
+# <https://developer.apple.com/documentation/swiftui/presentedwindowcontent>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/previewmodifiercontent)
-
 
+# <https://developer.apple.com/documentation/swiftui/previewmodifiercontent>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/primitivebuttonstyleconfiguration/label-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/primitivebuttonstyleconfiguration/label-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/progressview)
+# <https://developer.apple.com/documentation/swiftui/progressview>)
 
-
-
 ---
 
-# https://developer.apple.com/documentation/swiftui/progressviewstyleconfiguration/currentvaluelabel-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/progressviewstyleconfiguration/currentvaluelabel-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/progressviewstyleconfiguration/label-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/progressviewstyleconfiguration/label-swift.struct>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-
-# https://developer.apple.com/documentation/swiftui/radialgradient)
-
 
+# <https://developer.apple.com/documentation/swiftui/radialgradient>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/rectangle)
+# <https://developer.apple.com/documentation/swiftui/rectangle>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/rotatedshape)
-
 
+# <https://developer.apple.com/documentation/swiftui/rotatedshape>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/roundedrectangle)
+# <https://developer.apple.com/documentation/swiftui/roundedrectangle>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/scaledshape)
-
 
+# <https://developer.apple.com/documentation/swiftui/scaledshape>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scrollview)
+# <https://developer.apple.com/documentation/swiftui/scrollview>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/scrollviewreader)
-
 
+# <https://developer.apple.com/documentation/swiftui/scrollviewreader>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchunavailablecontent/actions)
+# <https://developer.apple.com/documentation/swiftui/searchunavailablecontent/actions>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/searchunavailablecontent/description)
-
 
+# <https://developer.apple.com/documentation/swiftui/searchunavailablecontent/description>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchunavailablecontent/label)
+# <https://developer.apple.com/documentation/swiftui/searchunavailablecontent/label>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/section)
-
 
+# <https://developer.apple.com/documentation/swiftui/section>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/sectionconfiguration/actions-swift.struct)
+# <https://developer.apple.com/documentation/swiftui/sectionconfiguration/actions-swift.struct>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/securefield)
-
 
+# <https://developer.apple.com/documentation/swiftui/securefield>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/sharelink)
+# <https://developer.apple.com/documentation/swiftui/sharelink>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/slider)
-
 
+# <https://developer.apple.com/documentation/swiftui/slider>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/spacer)
+# <https://developer.apple.com/documentation/swiftui/spacer>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/stepper)
-
 
+# <https://developer.apple.com/documentation/swiftui/stepper>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/strokebordershapeview)
+# <https://developer.apple.com/documentation/swiftui/strokebordershapeview>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/strokeshapeview)
-
 
+# <https://developer.apple.com/documentation/swiftui/strokeshapeview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/subscriptionview)
+# <https://developer.apple.com/documentation/swiftui/subscriptionview>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/subview)
-
 
+# <https://developer.apple.com/documentation/swiftui/subview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/subviewscollection)
+# <https://developer.apple.com/documentation/swiftui/subviewscollection>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/subviewscollectionslice)
-
 
+# <https://developer.apple.com/documentation/swiftui/subviewscollectionslice>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/tabcontentbuilder/content)
+# <https://developer.apple.com/documentation/swiftui/tabcontentbuilder/content>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/table)
-
 
+# <https://developer.apple.com/documentation/swiftui/table>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/texteditor)
+# <https://developer.apple.com/documentation/swiftui/texteditor>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/textfield)
-
 
+# <https://developer.apple.com/documentation/swiftui/textfield>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/textfieldlink)
+# <https://developer.apple.com/documentation/swiftui/textfieldlink>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/timelineview)
-
 
+# <https://developer.apple.com/documentation/swiftui/timelineview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toggle)
+# <https://developer.apple.com/documentation/swiftui/toggle>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/togglestyleconfiguration/label-swift.struct)
-
 
+# <https://developer.apple.com/documentation/swiftui/togglestyleconfiguration/label-swift.struct>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/transformedshape)
+# <https://developer.apple.com/documentation/swiftui/transformedshape>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/tupleview)
-
 
+# <https://developer.apple.com/documentation/swiftui/tupleview>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/unevenroundedrectangle)
+# <https://developer.apple.com/documentation/swiftui/unevenroundedrectangle>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/vstack)
-
 
+# <https://developer.apple.com/documentation/swiftui/vstack>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/viewthatfits)
+# <https://developer.apple.com/documentation/swiftui/viewthatfits>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/zstack)
-
 
+# <https://developer.apple.com/documentation/swiftui/zstack>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/zstackcontent3d)
+# <https://developer.apple.com/documentation/swiftui/zstackcontent3d>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/viewbuilder)
-
 
+# <https://developer.apple.com/documentation/swiftui/viewbuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/adding-a-search-interface-to-your-app
+# <https://developer.apple.com/documentation/swiftui/adding-a-search-interface-to-your-app>
 
 - SwiftUI
 - Search
@@ -49147,7 +47951,7 @@ The placement of a search field in a view hierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/performing-a-search-operation
+# <https://developer.apple.com/documentation/swiftui/performing-a-search-operation>
 
 - SwiftUI
 - Search
@@ -49325,9 +48129,9 @@ The placement of a search field in a view hierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:placement:prompt:)
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:placement:prompt>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -49395,9 +48199,9 @@ The placement of a search field in a view hierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:placement:prompt:token:)
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:placement:prompt:token>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -49468,9 +48272,9 @@ The placement of a search field in a view hierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:editabletokens:placement:prompt:token:)
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:editabletokens:placement:prompt:token>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -49539,7 +48343,7 @@ The placement of a search field in a view hierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchfieldplacement
+# <https://developer.apple.com/documentation/swiftui/searchfieldplacement>
 
 - SwiftUI
 - SearchFieldPlacement
@@ -49634,7 +48438,7 @@ Marks this view as searchable with text and tokens.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/suggesting-search-terms
+# <https://developer.apple.com/documentation/swiftui/suggesting-search-terms>
 
 - SwiftUI
 - Search
@@ -49760,9 +48564,9 @@ The ways that SwiftUI displays search suggestions.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchsuggestions(_:)
+# <https://developer.apple.com/documentation/swiftui/view/searchsuggestions(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -49841,9 +48645,9 @@ The ways that SwiftUI displays search suggestions.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchsuggestions(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/searchsuggestions(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -49917,9 +48721,9 @@ The ways that SwiftUI displays search suggestions.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchcompletion(_:)
+# <https://developer.apple.com/documentation/swiftui/view/searchcompletion(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -49972,9 +48776,9 @@ The ways that SwiftUI displays search suggestions.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:suggestedtokens:placement:prompt:token:)
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:suggestedtokens:placement:prompt:token>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -50049,7 +48853,7 @@ The ways that SwiftUI displays search suggestions.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchsuggestionsplacement
+# <https://developer.apple.com/documentation/swiftui/searchsuggestionsplacement>
 
 - SwiftUI
 - SearchSuggestionsPlacement
@@ -50141,7 +48945,7 @@ Marks this view as searchable with text, tokens, and suggestions.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scoping-a-search-operation
+# <https://developer.apple.com/documentation/swiftui/scoping-a-search-operation>
 
 - SwiftUI
 - Search
@@ -50211,9 +49015,9 @@ The ways that searchable modifiers can show or hide search scopes.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchscopes(_:scopes:)
+# <https://developer.apple.com/documentation/swiftui/view/searchscopes(_:scopes>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -50285,9 +49089,9 @@ The ways that searchable modifiers can show or hide search scopes.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchscopes(_:activation:_:)
+# <https://developer.apple.com/documentation/swiftui/view/searchscopes(_:activation>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -50378,7 +49182,7 @@ The ways that searchable modifiers can show or hide search scopes.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchscopeactivation
+# <https://developer.apple.com/documentation/swiftui/searchscopeactivation>
 
 - SwiftUI
 - SearchScopeActivation
@@ -50423,7 +49227,7 @@ Configures the search scopes for this view with the specified activation strateg
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/managing-search-interface-activation
+# <https://developer.apple.com/documentation/swiftui/managing-search-interface-activation>
 
 - SwiftUI
 - Search
@@ -50603,7 +49407,7 @@ Marks this view as searchable with text, tokens, and suggestions, as well as pro
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/issearching
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/issearching>
 
 - SwiftUI
 - EnvironmentValues
@@ -50682,7 +49486,7 @@ Marks this view as searchable with text, tokens, and suggestions, as well as pro
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/dismisssearch
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/dismisssearch>
 
 - SwiftUI
 - EnvironmentValues
@@ -50803,7 +49607,7 @@ Marks this view as searchable with text, tokens, and suggestions, as well as pro
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dismisssearchaction
+# <https://developer.apple.com/documentation/swiftui/dismisssearchaction>
 
 - SwiftUI
 - DismissSearchAction
@@ -50937,9 +49741,9 @@ Marks this view as searchable with text, tokens, and suggestions, as well as pro
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:ispresented:placement:prompt:)
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:ispresented:placement:prompt>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -51011,9 +49815,9 @@ Marks this view as searchable with text, tokens, and suggestions, as well as pro
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:ispresented:placement:prompt:token:)
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:ispresented:placement:prompt:token>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -51092,9 +49896,9 @@ Marks this view as searchable with text, tokens, and suggestions, as well as pro
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:editabletokens:ispresented:placement:prompt:token:)
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:editabletokens:ispresented:placement:prompt:token>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -51173,9 +49977,9 @@ Marks this view as searchable with text, tokens, and suggestions, as well as pro
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -51258,9 +50062,9 @@ Marks this view as searchable, which configures the display of a search field.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchpresentationtoolbarbehavior(_:)
+# <https://developer.apple.com/documentation/swiftui/view/searchpresentationtoolbarbehavior(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -51296,7 +50100,7 @@ A type that defines how the toolbar behaves when presenting search.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchpresentationtoolbarbehavior
+# <https://developer.apple.com/documentation/swiftui/searchpresentationtoolbarbehavior>
 
 - SwiftUI
 - SearchPresentationToolbarBehavior
@@ -51333,9 +50137,9 @@ Configures the search toolbar presentation behavior for any searchable modifiers
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/findnavigator(ispresented:)
+# <https://developer.apple.com/documentation/swiftui/view/findnavigator(ispresented>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -51403,9 +50207,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/finddisabled(_:)
+# <https://developer.apple.com/documentation/swiftui/view/finddisabled(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -51475,9 +50279,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/replacedisabled(_:)
+# <https://developer.apple.com/documentation/swiftui/view/replacedisabled(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -51547,239 +50351,185 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/findcontext
-
-
+# <https://developer.apple.com/documentation/swiftui/findcontext>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/adding-a-search-interface-to-your-app)
+# <https://developer.apple.com/documentation/swiftui/adding-a-search-interface-to-your-app>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/performing-a-search-operation)
-
-
+# <https://developer.apple.com/documentation/swiftui/performing-a-search-operation>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:placement:prompt:))
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:placement:prompt>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:placement:prompt:token:))
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:placement:prompt:token>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:editabletokens:placement:prompt:token:))
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:editabletokens:placement:prompt:token>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchfieldplacement)
-
-
+# <https://developer.apple.com/documentation/swiftui/searchfieldplacement>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/suggesting-search-terms)
-
-
+# <https://developer.apple.com/documentation/swiftui/suggesting-search-terms>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchsuggestions(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/searchsuggestions(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchsuggestions(_:for:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/searchsuggestions(_:for>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchcompletion(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/searchcompletion(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:suggestedtokens:placement:prompt:token:))
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:suggestedtokens:placement:prompt:token>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchsuggestionsplacement)
-
-
+# <https://developer.apple.com/documentation/swiftui/searchsuggestionsplacement>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scoping-a-search-operation)
-
-
+# <https://developer.apple.com/documentation/swiftui/scoping-a-search-operation>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchscopes(_:scopes:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/searchscopes(_:scopes>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchscopes(_:activation:_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/searchscopes(_:activation>:_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchscopeactivation)
-
-
+# <https://developer.apple.com/documentation/swiftui/searchscopeactivation>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/managing-search-interface-activation)
-
-
+# <https://developer.apple.com/documentation/swiftui/managing-search-interface-activation>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/issearching)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/issearching>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/dismisssearch)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/dismisssearch>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dismisssearchaction)
-
-
+# <https://developer.apple.com/documentation/swiftui/dismisssearchaction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:ispresented:placement:prompt:))
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:ispresented:placement:prompt>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:ispresented:placement:prompt:token:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:ispresented:placement:prompt:token>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:editabletokens:ispresented:placement:prompt:token:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:editabletokens:ispresented:placement:prompt:token>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/searchpresentationtoolbarbehavior(_:))
+# <https://developer.apple.com/documentation/swiftui/view/searchpresentationtoolbarbehavior(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchpresentationtoolbarbehavior)
-
-
+# <https://developer.apple.com/documentation/swiftui/searchpresentationtoolbarbehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/findnavigator(ispresented:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/findnavigator(ispresented>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/finddisabled(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/finddisabled(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/replacedisabled(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/replacedisabled(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/findcontext)
-
-
+# <https://developer.apple.com/documentation/swiftui/findcontext>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/hidden()
-
-
+# <https://developer.apple.com/documentation/swiftui/view/hidden()>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/labelshidden()
-
-
+# <https://developer.apple.com/documentation/swiftui/view/labelshidden()>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/labelsvisibility
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/labelsvisibility>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/menuindicator(_:)
+# <https://developer.apple.com/documentation/swiftui/view/menuindicator(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -51829,19 +50579,15 @@ The menu indicator visibility to apply to controls within a view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/statusbarhidden(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/statusbarhidden(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/persistentsystemoverlays(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/persistentsystemoverlays(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/visibility
+# <https://developer.apple.com/documentation/swiftui/visibility>
 
 - SwiftUI
 - Visibility
@@ -51907,21 +50653,17 @@ Sets the preferred visibility of the non-transient system views overlaying the a
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/disabled(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/disabled(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/isenabled
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/isenabled>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/interactionactivitytrackingtag(_:)
+# <https://developer.apple.com/documentation/swiftui/view/interactionactivitytrackingtag(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -51990,9 +50732,9 @@ Mark the receiver as their content might be invalidated.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/invalidatablecontent(_:)
+# <https://developer.apple.com/documentation/swiftui/view/invalidatablecontent(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -52034,9 +50776,9 @@ Sets a tag that you use for tracking interactivity.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/help(_:)
+# <https://developer.apple.com/documentation/swiftui/view/help(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -52067,13 +50809,11 @@ Slider("Opacity", value: $selectedShape.opacity)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/preferredcolorscheme(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/preferredcolorscheme(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme>
 
 - SwiftUI
 - EnvironmentValues
@@ -52113,7 +50853,7 @@ The possible color schemes, corresponding to the light and dark appearances.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/colorscheme
+# <https://developer.apple.com/documentation/swiftui/colorscheme>
 
 - SwiftUI
 - ColorScheme
@@ -52185,7 +50925,7 @@ The color scheme of this environment.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/colorschemecontrast
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/colorschemecontrast>
 
 - SwiftUI
 - EnvironmentValues
@@ -52221,19 +50961,15 @@ The contrast between the app’s foreground and background colors.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/colorschemecontrast
-
-
+# <https://developer.apple.com/documentation/swiftui/colorschemecontrast>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/preferredsurroundingseffect(_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/preferredsurroundingseffect(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/surroundingseffect
+# <https://developer.apple.com/documentation/swiftui/surroundingseffect>
 
 - SwiftUI
 - SurroundingsEffect
@@ -52300,7 +51036,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/breakthrougheffect
+# <https://developer.apple.com/documentation/swiftui/breakthrougheffect>
 
 - SwiftUI
 - BreakthroughEffect Beta
@@ -52357,9 +51093,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/privacysensitive(_:)
+# <https://developer.apple.com/documentation/swiftui/view/privacysensitive(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -52415,15 +51151,13 @@ The reasons to apply a redaction to data displayed on screen.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/redacted(reason:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/redacted(reason>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/unredacted()
+# <https://developer.apple.com/documentation/swiftui/view/unredacted()>
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -52463,19 +51197,15 @@ The reasons to apply a redaction to data displayed on screen.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/redactionreasons
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/redactionreasons>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/isscenecaptured
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/isscenecaptured>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/redactionreasons
+# <https://developer.apple.com/documentation/swiftui/redactionreasons>
 
 - SwiftUI
 - RedactionReasons
@@ -52550,177 +51280,127 @@ The current capture state.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/hidden())
-
-
+# <https://developer.apple.com/documentation/swiftui/view/hidden()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/labelshidden())
-
-
+# <https://developer.apple.com/documentation/swiftui/view/labelshidden()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/labelsvisibility)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/labelsvisibility>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/labelsvisibility(_:)).
-
-
+# <https://developer.apple.com/documentation/swiftui/view/labelsvisibility(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/menuindicator(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/menuindicator(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/statusbarhidden(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/statusbarhidden(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/persistentsystemoverlays(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/persistentsystemoverlays(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/visibility)
-
-
+# <https://developer.apple.com/documentation/swiftui/visibility>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/disabled(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/disabled(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/isenabled)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/isenabled>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/interactionactivitytrackingtag(_:))
+# <https://developer.apple.com/documentation/swiftui/view/interactionactivitytrackingtag(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/invalidatablecontent(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/invalidatablecontent(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/help(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/help(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/preferredcolorscheme(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/preferredcolorscheme(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/colorscheme)
-
-
+# <https://developer.apple.com/documentation/swiftui/colorscheme>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/colorschemecontrast)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/colorschemecontrast>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/colorschemecontrast)
-
-
+# <https://developer.apple.com/documentation/swiftui/colorschemecontrast>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/preferredsurroundingseffect(_:))
+# <https://developer.apple.com/documentation/swiftui/view/preferredsurroundingseffect(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/surroundingseffect)
-
-
+# <https://developer.apple.com/documentation/swiftui/surroundingseffect>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/breakthrougheffect)
-
-
+# <https://developer.apple.com/documentation/swiftui/breakthrougheffect>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/privacysensitive(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/privacysensitive(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/redacted(reason:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/redacted(reason>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/unredacted())
-
-
+# <https://developer.apple.com/documentation/swiftui/view/unredacted()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/redactionreasons)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/redactionreasons>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/isscenecaptured)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/isscenecaptured>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/redactionreasons)
-
-
+# <https://developer.apple.com/documentation/swiftui/redactionreasons>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/preferencekey
+# <https://developer.apple.com/documentation/swiftui/preferencekey>
 
 - SwiftUI
 - PreferenceKey
@@ -52766,9 +51446,9 @@ Combines a sequence of values by modifying the previously-accumulated value with
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/preference(key:value:)
+# <https://developer.apple.com/documentation/swiftui/view/preference(key:value>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -52793,9 +51473,9 @@ Applies a transformation to a preference value.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/transformpreference(_:_:)
+# <https://developer.apple.com/documentation/swiftui/view/transformpreference(>_:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -52819,9 +51499,9 @@ Sets a value for the given preference.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/anchorpreference(key:value:transform:)
+# <https://developer.apple.com/documentation/swiftui/view/anchorpreference(key:value:transform>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -52863,39 +51543,29 @@ Sets a value for the specified preference key, the value is a function of the ke
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/transformanchorpreference(key:value:transform:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/transformanchorpreference(key:value:transform>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onpreferencechange(_:perform:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/onpreferencechange(_:perform>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/backgroundpreferencevalue(_:_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/backgroundpreferencevalue(>_:_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/backgroundpreferencevalue(_:alignment:_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/backgroundpreferencevalue(_:alignment>:_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/overlaypreferencevalue(_:_:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/overlaypreferencevalue(>_:_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/overlaypreferencevalue(_:alignment:_:)
+# <https://developer.apple.com/documentation/swiftui/view/overlaypreferencevalue(_:alignment>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -52942,97 +51612,87 @@ Reads the specified preference value from the view, using it to produce a second
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/preferencekey)
-
-
+# <https://developer.apple.com/documentation/swiftui/preferencekey>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/preference(key:value:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/preference(key:value>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/navigationtitle(_:)),
-
-
+# <https://developer.apple.com/documentation/swiftui/view/navigationtitle(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/transformpreference(_:_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/transformpreference(>_:_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/anchorpreference(key:value:transform:))
+# <https://developer.apple.com/documentation/swiftui/view/anchorpreference(key:value:transform>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/transformanchorpreference(key:value:transform:))
+# <https://developer.apple.com/documentation/swiftui/view/transformanchorpreference(key:value:transform>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onpreferencechange(_:perform:))
+# <https://developer.apple.com/documentation/swiftui/view/onpreferencechange(_:perform>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/backgroundpreferencevalue(_:_:))
+# <https://developer.apple.com/documentation/swiftui/view/backgroundpreferencevalue(>_:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/backgroundpreferencevalue(_:alignment:_:))
+# <https://developer.apple.com/documentation/swiftui/view/backgroundpreferencevalue(_:alignment>:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/overlaypreferencevalue(_:_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/overlaypreferencevalue(>_:_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/overlaypreferencevalue(_:alignment:_:))
+# <https://developer.apple.com/documentation/swiftui/view/overlaypreferencevalue(_:alignment>:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environment
+# <https://developer.apple.com/documentation/swiftui/environment>
 
 - SwiftUI
 - Environment
@@ -53165,9 +51825,9 @@ A collection of environment values propagated through a view hierarchy.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/environment(_:_:)
+# <https://developer.apple.com/documentation/swiftui/view/environment(>_:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -53235,7 +51895,7 @@ Transforms the environment value of the specified key path with the given functi
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues
+# <https://developer.apple.com/documentation/swiftui/environmentvalues>
 
 - SwiftUI
 - EnvironmentValues
@@ -53932,9 +52592,9 @@ A property wrapper that reads a value from a view’s environment.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/entry()
+# <https://developer.apple.com/documentation/swiftui/entry()>
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Entry()
@@ -54009,7 +52669,7 @@ A key for accessing values in a transaction.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentkey
+# <https://developer.apple.com/documentation/swiftui/environmentkey>
 
 - SwiftUI
 - EnvironmentKey
@@ -54091,9 +52751,9 @@ Creates an environment values, transaction, container values, or focused values 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/environment(_:)
+# <https://developer.apple.com/documentation/swiftui/view/environment(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -54152,9 +52812,9 @@ Transforms the environment value of the specified key path with the given functi
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/transformenvironment(_:transform:)
+# <https://developer.apple.com/documentation/swiftui/view/transformenvironment(_:transform>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -54178,9 +52838,9 @@ Sets the environment value of the specified key path to the given value.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/environment(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/environment(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -54240,9 +52900,9 @@ Transforms the environment value of the specified key path with the given functi
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/environment(_:_:)
+# <https://developer.apple.com/documentation/swiftui/scene/environment(>_:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -54301,9 +52961,9 @@ Transforms the environment value of the specified key path with the given functi
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/transformenvironment(_:transform:)
+# <https://developer.apple.com/documentation/swiftui/scene/transformenvironment(_:transform>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -54327,81 +52987,63 @@ Sets the environment value of the specified key path to the given value.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environment)
-
-
+# <https://developer.apple.com/documentation/swiftui/environment>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/environment(_:_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/environment(>_:_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/entry())
-
-
+# <https://developer.apple.com/documentation/swiftui/entry()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentkey)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentkey>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/environment(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/environment(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/transformenvironment(_:transform:))
+# <https://developer.apple.com/documentation/swiftui/view/transformenvironment(_:transform>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/environment(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/environment(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/environment(_:_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/environment(>_:_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/transformenvironment(_:transform:))
+# <https://developer.apple.com/documentation/swiftui/scene/transformenvironment(_:transform>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/state
-
-
+# <https://developer.apple.com/documentation/swiftui/state>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/binding
+# <https://developer.apple.com/documentation/swiftui/binding>
 
 - SwiftUI
 - Binding
@@ -54537,7 +53179,7 @@ A property wrapper type that supports creating bindings to the mutable propertie
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/managing-user-interface-state
+# <https://developer.apple.com/documentation/swiftui/managing-user-interface-state>
 
 - SwiftUI
 - Model data
@@ -54695,7 +53337,7 @@ A property wrapper type that can read and write a value owned by a source of tru
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/bindable
+# <https://developer.apple.com/documentation/swiftui/bindable>
 
 - SwiftUI
 - Bindable
@@ -54810,7 +53452,7 @@ A property wrapper type that can read and write a value owned by a source of tru
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app
+# <https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app>
 
 - SwiftUI
 - Model data
@@ -55122,7 +53764,7 @@ A type of object with a publisher that emits before the object has changed.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro
+# <https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro>
 
 - SwiftUI
 - Model data
@@ -55339,7 +53981,7 @@ A type of object with a publisher that emits before the object has changed.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/monitoring-model-data-changes-in-your-app
+# <https://developer.apple.com/documentation/swiftui/monitoring-model-data-changes-in-your-app>
 
 - SwiftUI
 - Model data
@@ -55503,9 +54145,9 @@ A type of object with a publisher that emits before the object has changed.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onchange(of:initial:_:)
+# <https://developer.apple.com/documentation/swiftui/view/onchange(of:initial>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -55578,15 +54220,13 @@ Adds an action to perform when this view detects data emitted by the given publi
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onreceive(_:perform:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/onreceive(_:perform>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/environmentobject(_:)
+# <https://developer.apple.com/documentation/swiftui/view/environmentobject(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -55624,9 +54264,9 @@ A property wrapper type for an observable object that a parent or ancestor view 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/environmentobject(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/environmentobject(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -55682,7 +54322,7 @@ A property wrapper type for an observable object that a parent or ancestor view 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dynamicproperty
+# <https://developer.apple.com/documentation/swiftui/dynamicproperty>
 
 - SwiftUI
 - DynamicProperty
@@ -55745,89 +54385,67 @@ Conforms when `SectionIdentifier` conforms to `Hashable` and `Result` conforms t
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/state)
-
-
+# <https://developer.apple.com/documentation/swiftui/state>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/binding)
-
-
+# <https://developer.apple.com/documentation/swiftui/binding>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/binding),
-
-
+# <https://developer.apple.com/documentation/swiftui/binding>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/managing-user-interface-state)
-
-
+# <https://developer.apple.com/documentation/swiftui/managing-user-interface-state>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/bindable)
-
-
+# <https://developer.apple.com/documentation/swiftui/bindable>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app)
-
-
+# <https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro)
+# <https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/monitoring-model-data-changes-in-your-app)
+# <https://developer.apple.com/documentation/swiftui/monitoring-model-data-changes-in-your-app>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onchange(of:initial:_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/onchange(of:initial>:_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onreceive(_:perform:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/onreceive(_:perform>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/environmentobject(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/environmentobject(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/environmentobject(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/environmentobject(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dynamicproperty)
-
-
+# <https://developer.apple.com/documentation/swiftui/dynamicproperty>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/widget
+# <https://developer.apple.com/documentation/swiftui/widget>
 
 - SwiftUI
 - Widget
@@ -55931,7 +54549,7 @@ An empty widget configuration.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/widgetbundle
+# <https://developer.apple.com/documentation/swiftui/widgetbundle>
 
 - SwiftUI
 - WidgetBundle
@@ -56023,7 +54641,7 @@ An empty widget configuration.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/limitedavailabilityconfiguration
+# <https://developer.apple.com/documentation/swiftui/limitedavailabilityconfiguration>
 
 - SwiftUI
 - LimitedAvailabilityConfiguration
@@ -56085,7 +54703,7 @@ An empty widget configuration.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/widgetconfiguration
+# <https://developer.apple.com/documentation/swiftui/widgetconfiguration>
 
 - SwiftUI
 - WidgetConfiguration
@@ -56218,7 +54836,7 @@ An empty widget configuration.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/emptywidgetconfiguration
+# <https://developer.apple.com/documentation/swiftui/emptywidgetconfiguration>
 
 - SwiftUI
 - EmptyWidgetConfiguration
@@ -56286,7 +54904,7 @@ A type that describes a widget’s content.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlwidget
+# <https://developer.apple.com/documentation/swiftui/controlwidget>
 
 - SwiftUI
 - ControlWidget
@@ -56394,7 +55012,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlwidgetconfiguration
+# <https://developer.apple.com/documentation/swiftui/controlwidgetconfiguration>
 
 - SwiftUI
 - ControlWidgetConfiguration
@@ -56496,7 +55114,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/emptycontrolwidgetconfiguration
+# <https://developer.apple.com/documentation/swiftui/emptycontrolwidgetconfiguration>
 
 - SwiftUI
 - EmptyControlWidgetConfiguration
@@ -56566,7 +55184,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlwidgetconfigurationbuilder
+# <https://developer.apple.com/documentation/swiftui/controlwidgetconfigurationbuilder>
 
 - SwiftUI
 - ControlWidgetConfigurationBuilder
@@ -56646,7 +55264,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlwidgettemplate
+# <https://developer.apple.com/documentation/swiftui/controlwidgettemplate>
 
 - SwiftUI
 - ControlWidgetTemplate
@@ -56748,7 +55366,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/emptycontrolwidgettemplate
+# <https://developer.apple.com/documentation/swiftui/emptycontrolwidgettemplate>
 
 - SwiftUI
 - EmptyControlWidgetTemplate
@@ -56818,7 +55436,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlwidgettemplatebuilder
+# <https://developer.apple.com/documentation/swiftui/controlwidgettemplatebuilder>
 
 - SwiftUI
 - ControlWidgetTemplateBuilder
@@ -56910,9 +55528,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/widgetlabel(_:)
+# <https://developer.apple.com/documentation/swiftui/view/widgetlabel(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -56958,9 +55576,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/widgetlabel(label:)
+# <https://developer.apple.com/documentation/swiftui/view/widgetlabel(label>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -57037,9 +55655,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/widgetaccentable(_:)
+# <https://developer.apple.com/documentation/swiftui/view/widgetaccentable(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -57086,9 +55704,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dynamicisland(verticalplacement:)
+# <https://developer.apple.com/documentation/swiftui/view/dynamicisland(verticalplacement>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -57114,107 +55732,77 @@ A view with the specified vertical placement.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/widget)
-
-
+# <https://developer.apple.com/documentation/swiftui/widget>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/widgetbundle)
-
-
+# <https://developer.apple.com/documentation/swiftui/widgetbundle>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/limitedavailabilityconfiguration)
-
-
+# <https://developer.apple.com/documentation/swiftui/limitedavailabilityconfiguration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/widgetconfiguration)
-
-
+# <https://developer.apple.com/documentation/swiftui/widgetconfiguration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/emptywidgetconfiguration)
-
-
+# <https://developer.apple.com/documentation/swiftui/emptywidgetconfiguration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlwidget)
-
-
+# <https://developer.apple.com/documentation/swiftui/controlwidget>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlwidgetconfiguration)
-
-
+# <https://developer.apple.com/documentation/swiftui/controlwidgetconfiguration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/emptycontrolwidgetconfiguration)
-
-
+# <https://developer.apple.com/documentation/swiftui/emptycontrolwidgetconfiguration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlwidgetconfigurationbuilder)
-
-
+# <https://developer.apple.com/documentation/swiftui/controlwidgetconfigurationbuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlwidgettemplate)
-
-
+# <https://developer.apple.com/documentation/swiftui/controlwidgettemplate>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/emptycontrolwidgettemplate)
-
-
+# <https://developer.apple.com/documentation/swiftui/emptycontrolwidgettemplate>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/controlwidgettemplatebuilder)
-
-
+# <https://developer.apple.com/documentation/swiftui/controlwidgettemplatebuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/widgetlabel(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/widgetlabel(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/widgetlabel(label:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/widgetlabel(label>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/widgetaccentable(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/widgetaccentable(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dynamicisland(verticalplacement:))
+# <https://developer.apple.com/documentation/swiftui/view/dynamicisland(verticalplacement>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dialogseverity
+# <https://developer.apple.com/documentation/swiftui/dialogseverity>
 
 - SwiftUI
 - DialogSeverity
@@ -57255,9 +55843,9 @@ A severity that indicates extra attention should be given to the dialog, for exa
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)
+# <https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -57340,9 +55928,9 @@ An attachment anchor for a popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/sheet(item:ondismiss:content:)
+# <https://developer.apple.com/documentation/swiftui/view/sheet(item:ondismiss:content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -57432,9 +56020,9 @@ An attachment anchor for a popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fullscreencover(ispresented:ondismiss:content:)
+# <https://developer.apple.com/documentation/swiftui/view/fullscreencover(ispresented:ondismiss:content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -57515,9 +56103,9 @@ An attachment anchor for a popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fullscreencover(item:ondismiss:content:)
+# <https://developer.apple.com/documentation/swiftui/view/fullscreencover(item:ondismiss:content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -57600,9 +56188,9 @@ An attachment anchor for a popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/popover(item:attachmentanchor:arrowedge:content:)
+# <https://developer.apple.com/documentation/swiftui/view/popover(item:attachmentanchor:arrowedge:content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -57680,9 +56268,9 @@ An attachment anchor for a popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/popover(ispresented:attachmentanchor:arrowedge:content:)
+# <https://developer.apple.com/documentation/swiftui/view/popover(ispresented:attachmentanchor:arrowedge:content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -57757,7 +56345,7 @@ An attachment anchor for a popover.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/popoverattachmentanchor
+# <https://developer.apple.com/documentation/swiftui/popoverattachmentanchor>
 
 - SwiftUI
 - PopoverAttachmentAnchor
@@ -57798,9 +56386,9 @@ Presents a popover when a given condition is true.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationcompactadaptation(horizontal:vertical:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationcompactadaptation(horizontal:vertical>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -57875,9 +56463,9 @@ Contextual information about a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationcompactadaptation(_:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationcompactadaptation(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -57944,7 +56532,7 @@ Contextual information about a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationadaptation
+# <https://developer.apple.com/documentation/swiftui/presentationadaptation>
 
 - SwiftUI
 - PresentationAdaptation
@@ -58016,9 +56604,9 @@ Contextual information about a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationsizing(_:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationsizing(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -58096,7 +56684,7 @@ Contextual information about a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationsizing
+# <https://developer.apple.com/documentation/swiftui/presentationsizing>
 
 - SwiftUI
 - PresentationSizing
@@ -58201,7 +56789,7 @@ Contextual information about a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationsizingroot
+# <https://developer.apple.com/documentation/swiftui/presentationsizingroot>
 
 - SwiftUI
 - PresentationSizingRoot
@@ -58244,7 +56832,7 @@ Contextual information about a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationsizingcontext
+# <https://developer.apple.com/documentation/swiftui/presentationsizingcontext>
 
 - SwiftUI
 - PresentationSizingContext
@@ -58285,9 +56873,9 @@ A proxy to a view provided to the presentation with a defined presentation size.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationdetents(_:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationdetents(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -58349,9 +56937,9 @@ A behavior that you can use to influence how a presentation responds to swipe ge
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationdetents(_:selection:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationdetents(_:selection>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -58422,9 +57010,9 @@ A behavior that you can use to influence how a presentation responds to swipe ge
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationcontentinteraction(_:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationcontentinteraction(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -58491,9 +57079,9 @@ A behavior that you can use to influence how a presentation responds to swipe ge
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationdragindicator(_:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationdragindicator(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -58556,7 +57144,7 @@ A behavior that you can use to influence how a presentation responds to swipe ge
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationdetent
+# <https://developer.apple.com/documentation/swiftui/presentationdetent>
 
 - SwiftUI
 - PresentationDetent
@@ -58624,7 +57212,7 @@ A behavior that you can use to influence how a presentation responds to swipe ge
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/custompresentationdetent
+# <https://developer.apple.com/documentation/swiftui/custompresentationdetent>
 
 - SwiftUI
 - CustomPresentationDetent
@@ -58704,7 +57292,7 @@ A behavior that you can use to influence how a presentation responds to swipe ge
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationcontentinteraction
+# <https://developer.apple.com/documentation/swiftui/presentationcontentinteraction>
 
 - SwiftUI
 - PresentationContentInteraction
@@ -58767,9 +57355,9 @@ The definition of a custom detent with a calculated height.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationcornerradius(_:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationcornerradius(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -58824,9 +57412,9 @@ The kinds of interaction available to views behind a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationbackground(_:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationbackground(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -58886,9 +57474,9 @@ The kinds of interaction available to views behind a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationbackground(alignment:content:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationbackground(alignment:content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -58956,9 +57544,9 @@ The kinds of interaction available to views behind a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationbackgroundinteraction(_:)
+# <https://developer.apple.com/documentation/swiftui/view/presentationbackgroundinteraction(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -59017,7 +57605,7 @@ The kinds of interaction available to views behind a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationbackgroundinteraction
+# <https://developer.apple.com/documentation/swiftui/presentationbackgroundinteraction>
 
 - SwiftUI
 - PresentationBackgroundInteraction
@@ -59073,7 +57661,7 @@ Controls whether people can interact with the view behind a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/alertscene
+# <https://developer.apple.com/documentation/swiftui/alertscene>
 
 - SwiftUI
 - AlertScene
@@ -59161,9 +57749,9 @@ Presents an alert with a message when an error is present.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:)
+# <https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -59250,9 +57838,9 @@ Presents an alert with a message when an error is present.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:presenting:actions:)
+# <https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:presenting:actions>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -59362,9 +57950,9 @@ Presents an alert with a message when an error is present.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/alert(ispresented:error:actions:)
+# <https://developer.apple.com/documentation/swiftui/view/alert(ispresented:error:actions>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -59452,9 +58040,9 @@ Presents an alert with a message when an error is present.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:message:)
+# <https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:message>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -59549,9 +58137,9 @@ Presents an alert with a message when an error is present.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:presenting:actions:message:)
+# <https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:presenting:actions:message>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -59669,9 +58257,9 @@ Presents an alert with a message when an error is present.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/alert(ispresented:error:actions:message:)
+# <https://developer.apple.com/documentation/swiftui/view/alert(ispresented:error:actions:message>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -59765,9 +58353,9 @@ Presents an alert with a message using the given data to produce the alert’s c
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:)
+# <https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -59846,9 +58434,9 @@ Presents a confirmation dialog when a dismiss action has been triggered.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)
+# <https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -59952,9 +58540,9 @@ Presents a confirmation dialog when a dismiss action has been triggered.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dismissalconfirmationdialog(_:shouldpresent:actions:)
+# <https://developer.apple.com/documentation/swiftui/view/dismissalconfirmationdialog(_:shouldpresent:actions>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -60039,9 +58627,9 @@ Presents a confirmation dialog using data to produce the dialog’s content and 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:message:)
+# <https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:message>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -60126,9 +58714,9 @@ Presents a confirmation dialog when a dismiss action has been triggered.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)
+# <https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -60239,9 +58827,9 @@ Presents a confirmation dialog when a dismiss action has been triggered.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dismissalconfirmationdialog(_:shouldpresent:actions:message:)
+# <https://developer.apple.com/documentation/swiftui/view/dismissalconfirmationdialog(_:shouldpresent:actions:message>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -60330,9 +58918,9 @@ Presents a confirmation dialog with a message using data to produce the dialog�
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dialogicon(_:)
+# <https://developer.apple.com/documentation/swiftui/view/dialogicon(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -60396,9 +58984,9 @@ Enables user suppression of dialogs and alerts presented within `self`, with a c
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/dialogicon(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/dialogicon(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -60465,9 +59053,9 @@ Enables user suppression of dialogs and alerts presented within `self`, with a c
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dialogseverity(_:)
+# <https://developer.apple.com/documentation/swiftui/view/dialogseverity(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -60505,9 +59093,9 @@ Enables user suppression of dialogs and alerts presented within `self`, with a c
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/dialogseverity(_:)
+# <https://developer.apple.com/documentation/swiftui/scene/dialogseverity(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -60574,9 +59162,9 @@ Enables user suppression of dialogs and alerts presented within `self`, with a c
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dialogsuppressiontoggle(issuppressed:)
+# <https://developer.apple.com/documentation/swiftui/view/dialogsuppressiontoggle(issuppressed>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -60649,9 +59237,9 @@ Enables user suppression of dialogs and alerts presented within `self`, with a c
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/dialogsuppressiontoggle(issuppressed:)
+# <https://developer.apple.com/documentation/swiftui/scene/dialogsuppressiontoggle(issuppressed>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -60724,9 +59312,9 @@ Enables user suppression of dialogs and alerts presented within `self`, with a c
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dialogsuppressiontoggle(_:issuppressed:)
+# <https://developer.apple.com/documentation/swiftui/view/dialogsuppressiontoggle(_:issuppressed>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -60807,9 +59395,9 @@ Enables user suppression of an alert with a custom suppression message.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:)
+# <https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -60883,9 +59471,9 @@ On macOS, configures the `fileExporter` with a label for the file name field.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:documents:contenttype:oncompletion:)
+# <https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:documents:contenttype:oncompletion>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -60954,9 +59542,9 @@ On macOS, configures the `fileExporter` with a label for the file name field.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation:)
+# <https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61032,9 +59620,9 @@ On macOS, configures the `fileExporter` with a label for the file name field.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:documents:contenttypes:oncompletion:oncancellation:)
+# <https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:documents:contenttypes:oncompletion:oncancellation>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61105,9 +59693,9 @@ On macOS, configures the `fileExporter` with a label for the file name field.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileexporterfilenamelabel(_:)
+# <https://developer.apple.com/documentation/swiftui/view/fileexporterfilenamelabel(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61155,9 +59743,9 @@ Presents a system interface allowing the user to export a collection of items to
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filemover(ispresented:file:oncompletion:)
+# <https://developer.apple.com/documentation/swiftui/view/filemover(ispresented:file:oncompletion>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61204,9 +59792,9 @@ Presents a system dialog for allowing the user to move a collection of existing 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filemover(ispresented:file:oncompletion:oncancellation:)
+# <https://developer.apple.com/documentation/swiftui/view/filemover(ispresented:file:oncompletion:oncancellation>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61285,9 +59873,9 @@ Presents a system dialog for allowing the user to move a collection of existing 
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogbrowseroptions(_:)
+# <https://developer.apple.com/documentation/swiftui/view/filedialogbrowseroptions(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61333,9 +59921,9 @@ The way that file dialogs present the file system.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogconfirmationlabel(_:)
+# <https://developer.apple.com/documentation/swiftui/view/filedialogconfirmationlabel(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61381,9 +59969,9 @@ The way that file dialogs present the file system.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogcustomizationid(_:)
+# <https://developer.apple.com/documentation/swiftui/view/filedialogcustomizationid(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61433,9 +60021,9 @@ The way that file dialogs present the file system.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogdefaultdirectory(_:)
+# <https://developer.apple.com/documentation/swiftui/view/filedialogdefaultdirectory(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61481,9 +60069,9 @@ The way that file dialogs present the file system.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogimportsunresolvedaliases(_:)
+# <https://developer.apple.com/documentation/swiftui/view/filedialogimportsunresolvedaliases(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61533,9 +60121,9 @@ The way that file dialogs present the file system.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogmessage(_:)
+# <https://developer.apple.com/documentation/swiftui/view/filedialogmessage(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61581,9 +60169,9 @@ The way that file dialogs present the file system.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogurlenabled(_:)
+# <https://developer.apple.com/documentation/swiftui/view/filedialogurlenabled(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61629,7 +60217,7 @@ The way that file dialogs present the file system.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedialogbrowseroptions
+# <https://developer.apple.com/documentation/swiftui/filedialogbrowseroptions>
 
 - SwiftUI
 - FileDialogBrowserOptions
@@ -61698,9 +60286,9 @@ On macOS, configures the the `fileImporter` or `fileMover` to conditionally disa
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/inspector(ispresented:content:)
+# <https://developer.apple.com/documentation/swiftui/view/inspector(ispresented:content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61748,9 +60336,9 @@ Sets a flexible, preferred width for the inspector in a trailing-column presenta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/inspectorcolumnwidth(_:)
+# <https://developer.apple.com/documentation/swiftui/view/inspectorcolumnwidth(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61793,9 +60381,9 @@ Sets a flexible, preferred width for the inspector in a trailing-column presenta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/inspectorcolumnwidth(min:ideal:max:)
+# <https://developer.apple.com/documentation/swiftui/view/inspectorcolumnwidth(min:ideal:max>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61851,7 +60439,7 @@ Sets a fixed, preferred width for the inspector containing this view when presen
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/ispresented
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/ispresented>
 
 - SwiftUI
 - EnvironmentValues
@@ -61897,9 +60485,9 @@ Conditionally prevents interactive dismissal of presentations like popovers, she
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/interactivedismissdisabled(_:)
+# <https://developer.apple.com/documentation/swiftui/view/interactivedismissdisabled(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -61981,7 +60569,7 @@ An action that dismisses a presentation.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/alert
+# <https://developer.apple.com/documentation/swiftui/alert>
 
 - SwiftUI
 - Alert Deprecated
@@ -62073,7 +60661,7 @@ Deprecated
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/actionsheet
+# <https://developer.apple.com/documentation/swiftui/actionsheet>
 
 - SwiftUI
 - ActionSheet Deprecated
@@ -62130,645 +60718,583 @@ Deprecated
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/dialogseverity)
-
-
+# <https://developer.apple.com/documentation/swiftui/dialogseverity>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:))
+# <https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/sheet(item:ondismiss:content:))
+# <https://developer.apple.com/documentation/swiftui/view/sheet(item:ondismiss:content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fullscreencover(ispresented:ondismiss:content:))
+# <https://developer.apple.com/documentation/swiftui/view/fullscreencover(ispresented:ondismiss:content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fullscreencover(item:ondismiss:content:))
+# <https://developer.apple.com/documentation/swiftui/view/fullscreencover(item:ondismiss:content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/popover(item:attachmentanchor:arrowedge:content:))
+# <https://developer.apple.com/documentation/swiftui/view/popover(item:attachmentanchor:arrowedge:content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/popover(ispresented:attachmentanchor:arrowedge:content:))
+# <https://developer.apple.com/documentation/swiftui/view/popover(ispresented:attachmentanchor:arrowedge:content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/popoverattachmentanchor)
-
-
+# <https://developer.apple.com/documentation/swiftui/popoverattachmentanchor>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationcompactadaptation(horizontal:vertical:))
+# <https://developer.apple.com/documentation/swiftui/view/presentationcompactadaptation(horizontal:vertical>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationcompactadaptation(_:))
+# <https://developer.apple.com/documentation/swiftui/view/presentationcompactadaptation(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationadaptation)
-
-
+# <https://developer.apple.com/documentation/swiftui/presentationadaptation>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationsizing(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/presentationsizing(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationsizing)
-
-
+# <https://developer.apple.com/documentation/swiftui/presentationsizing>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationsizingroot)
-
-
+# <https://developer.apple.com/documentation/swiftui/presentationsizingroot>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationsizingcontext)
-
-
+# <https://developer.apple.com/documentation/swiftui/presentationsizingcontext>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationdetents(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/presentationdetents(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationdetents(_:selection:))
+# <https://developer.apple.com/documentation/swiftui/view/presentationdetents(_:selection>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationcontentinteraction(_:))
+# <https://developer.apple.com/documentation/swiftui/view/presentationcontentinteraction(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationdragindicator(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/presentationdragindicator(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationdetent)
-
-
+# <https://developer.apple.com/documentation/swiftui/presentationdetent>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/custompresentationdetent)
-
-
+# <https://developer.apple.com/documentation/swiftui/custompresentationdetent>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationcontentinteraction)
-
-
+# <https://developer.apple.com/documentation/swiftui/presentationcontentinteraction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationcornerradius(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/presentationcornerradius(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationbackground(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/presentationbackground(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationbackground(alignment:content:))
+# <https://developer.apple.com/documentation/swiftui/view/presentationbackground(alignment:content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/presentationbackgroundinteraction(_:))
+# <https://developer.apple.com/documentation/swiftui/view/presentationbackgroundinteraction(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/presentationbackgroundinteraction)
-
-
+# <https://developer.apple.com/documentation/swiftui/presentationbackgroundinteraction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/alertscene)
-
-
+# <https://developer.apple.com/documentation/swiftui/alertscene>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:presenting:actions:))
+# <https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:presenting:actions>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/alert(ispresented:error:actions:))
+# <https://developer.apple.com/documentation/swiftui/view/alert(ispresented:error:actions>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:message:))
+# <https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:message>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:presenting:actions:message:))
+# <https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:presenting:actions:message>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/alert(ispresented:error:actions:message:))
+# <https://developer.apple.com/documentation/swiftui/view/alert(ispresented:error:actions:message>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:))
+# <https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:))
+# <https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dismissalconfirmationdialog(_:shouldpresent:actions:))
+# <https://developer.apple.com/documentation/swiftui/view/dismissalconfirmationdialog(_:shouldpresent:actions>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:message:))
+# <https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:message>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:))
+# <https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dismissalconfirmationdialog(_:shouldpresent:actions:message:))
+# <https://developer.apple.com/documentation/swiftui/view/dismissalconfirmationdialog(_:shouldpresent:actions:message>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dialogicon(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/dialogicon(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/dialogicon(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/dialogicon(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dialogseverity(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/dialogseverity(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/dialogseverity(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/scene/dialogseverity(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dialogsuppressiontoggle(issuppressed:))
+# <https://developer.apple.com/documentation/swiftui/view/dialogsuppressiontoggle(issuppressed>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/dialogsuppressiontoggle(issuppressed:))
+# <https://developer.apple.com/documentation/swiftui/scene/dialogsuppressiontoggle(issuppressed>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/dialogsuppressiontoggle(_:issuppressed:))
+# <https://developer.apple.com/documentation/swiftui/view/dialogsuppressiontoggle(_:issuppressed>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:))
+# <https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:documents:contenttype:oncompletion:))
+# <https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:documents:contenttype:oncompletion>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation:))
+# <https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:documents:contenttypes:oncompletion:oncancellation:))
+# <https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:documents:contenttypes:oncompletion:oncancellation>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:item:contenttypes:defaultfilename:oncompletion:oncancellation:))
+# <https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:item:contenttypes:defaultfilename:oncompletion:oncancellation>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:items:contenttypes:oncompletion:oncancellation:))
+# <https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:items:contenttypes:oncompletion:oncancellation>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileexporterfilenamelabel(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/fileexporterfilenamelabel(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:))
+# <https://developer.apple.com/documentation/swiftui/view/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileimporter(ispresented:allowedcontenttypes:oncompletion:))
+# <https://developer.apple.com/documentation/swiftui/view/fileimporter(ispresented:allowedcontenttypes:oncompletion>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:oncancellation:))
+# <https://developer.apple.com/documentation/swiftui/view/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:oncancellation>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filemover(ispresented:file:oncompletion:))
+# <https://developer.apple.com/documentation/swiftui/view/filemover(ispresented:file:oncompletion>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filemover(ispresented:files:oncompletion:))
+# <https://developer.apple.com/documentation/swiftui/view/filemover(ispresented:files:oncompletion>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filemover(ispresented:file:oncompletion:oncancellation:))
+# <https://developer.apple.com/documentation/swiftui/view/filemover(ispresented:file:oncompletion:oncancellation>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filemover(ispresented:files:oncompletion:oncancellation:))
+# <https://developer.apple.com/documentation/swiftui/view/filemover(ispresented:files:oncompletion:oncancellation>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogbrowseroptions(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/filedialogbrowseroptions(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogconfirmationlabel(_:))
+# <https://developer.apple.com/documentation/swiftui/view/filedialogconfirmationlabel(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogcustomizationid(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/filedialogcustomizationid(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogdefaultdirectory(_:))
+# <https://developer.apple.com/documentation/swiftui/view/filedialogdefaultdirectory(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogimportsunresolvedaliases(_:))
+# <https://developer.apple.com/documentation/swiftui/view/filedialogimportsunresolvedaliases(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogmessage(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/filedialogmessage(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/filedialogurlenabled(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/filedialogurlenabled(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedialogbrowseroptions)
-
-
+# <https://developer.apple.com/documentation/swiftui/filedialogbrowseroptions>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/inspector(ispresented:content:))
+# <https://developer.apple.com/documentation/swiftui/view/inspector(ispresented:content>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/inspectorcolumnwidth(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/inspectorcolumnwidth(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/inspectorcolumnwidth(min:ideal:max:))
+# <https://developer.apple.com/documentation/swiftui/view/inspectorcolumnwidth(min:ideal:max>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/ispresented)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/ispresented>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/interactivedismissdisabled(_:))
+# <https://developer.apple.com/documentation/swiftui/view/interactivedismissdisabled(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/alert)
-
-
+# <https://developer.apple.com/documentation/swiftui/alert>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/actionsheet)
-
-
+# <https://developer.apple.com/documentation/swiftui/actionsheet>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbar(content:)
+# <https://developer.apple.com/documentation/swiftui/view/toolbar(content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -62874,9 +61400,9 @@ A toolbar item that represents a system component.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbar(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/toolbar(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -62949,7 +61475,7 @@ The placement of a toolbar.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbaritem
+# <https://developer.apple.com/documentation/swiftui/toolbaritem>
 
 - SwiftUI
 - ToolbarItem
@@ -63017,7 +61543,7 @@ A toolbar item that represents a system component.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbaritemgroup
+# <https://developer.apple.com/documentation/swiftui/toolbaritemgroup>
 
 - SwiftUI
 - ToolbarItemGroup
@@ -63084,7 +61610,7 @@ A toolbar item that represents a system component.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbaritemplacement
+# <https://developer.apple.com/documentation/swiftui/toolbaritemplacement>
 
 - SwiftUI
 - ToolbarItemPlacement
@@ -63237,7 +61763,7 @@ A toolbar item that represents a system component.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarcontent
+# <https://developer.apple.com/documentation/swiftui/toolbarcontent>
 
 - SwiftUI
 - ToolbarContent
@@ -63340,7 +61866,7 @@ A toolbar item that represents a system component.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarcontentbuilder
+# <https://developer.apple.com/documentation/swiftui/toolbarcontentbuilder>
 
 - SwiftUI
 - ToolbarContentBuilder
@@ -63428,7 +61954,7 @@ A toolbar item that represents a system component.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarspacer
+# <https://developer.apple.com/documentation/swiftui/toolbarspacer>
 
 - SwiftUI
 - ToolbarSpacer Beta
@@ -63520,7 +62046,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaulttoolbaritem
+# <https://developer.apple.com/documentation/swiftui/defaulttoolbaritem>
 
 - SwiftUI
 - DefaultToolbarItem Beta
@@ -63593,13 +62119,11 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbar(id:content:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/toolbar(id:content>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/customizabletoolbarcontent
+# <https://developer.apple.com/documentation/swiftui/customizabletoolbarcontent>
 
 - SwiftUI
 - CustomizableToolbarContent
@@ -63673,7 +62197,7 @@ The behavior of a search field in a toolbar.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarcustomizationbehavior
+# <https://developer.apple.com/documentation/swiftui/toolbarcustomizationbehavior>
 
 - SwiftUI
 - ToolbarCustomizationBehavior
@@ -63737,13 +62261,11 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarcustomizationoptions
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbarcustomizationoptions>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchtoolbarbehavior
+# <https://developer.apple.com/documentation/swiftui/searchtoolbarbehavior>
 
 - SwiftUI
 - SearchToolbarBehavior Beta
@@ -63807,21 +62329,17 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbar(removing:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/toolbar(removing>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbardefaultitemkind
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbardefaultitemkind>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbarvisibility(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/toolbarvisibility(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -63892,9 +62410,9 @@ The placement of a toolbar.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbarbackgroundvisibility(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/toolbarbackgroundvisibility(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -63962,7 +62480,7 @@ The placement of a toolbar.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarplacement
+# <https://developer.apple.com/documentation/swiftui/toolbarplacement>
 
 - SwiftUI
 - ToolbarPlacement
@@ -64029,7 +62547,7 @@ Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/contenttoolbarplacement
+# <https://developer.apple.com/documentation/swiftui/contenttoolbarplacement>
 
 - SwiftUI
 - ContentToolbarPlacement
@@ -64071,9 +62589,9 @@ The placement of a toolbar.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbarrole(_:)
+# <https://developer.apple.com/documentation/swiftui/view/toolbarrole(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -64116,7 +62634,7 @@ The purpose of content that populates the toolbar.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarrole
+# <https://developer.apple.com/documentation/swiftui/toolbarrole>
 
 - SwiftUI
 - ToolbarRole
@@ -64181,9 +62699,9 @@ Configures the semantic role for the content populating the toolbar.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbarbackground(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/toolbarbackground(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -64276,9 +62794,9 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbarcolorscheme(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/toolbarcolorscheme(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -64374,9 +62892,9 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbarforegroundstyle(_:for:)
+# <https://developer.apple.com/documentation/swiftui/view/toolbarforegroundstyle(_:for>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -64436,7 +62954,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/toolbarlabelstyle
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/toolbarlabelstyle>
 
 - SwiftUI
 - EnvironmentValues
@@ -64484,7 +63002,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarlabelstyle
+# <https://developer.apple.com/documentation/swiftui/toolbarlabelstyle>
 
 - SwiftUI
 - ToolbarLabelStyle
@@ -64559,7 +63077,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/spacersizing
+# <https://developer.apple.com/documentation/swiftui/spacersizing>
 
 - SwiftUI
 - SpacerSizing Beta
@@ -64645,9 +63163,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbartitledisplaymode(_:)
+# <https://developer.apple.com/documentation/swiftui/view/toolbartitledisplaymode(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -64682,15 +63200,13 @@ A type that defines the behavior of title of a toolbar.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbartitledisplaymode
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbartitledisplaymode>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbartitlemenu(content:)
+# <https://developer.apple.com/documentation/swiftui/view/toolbartitlemenu(content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -64739,7 +63255,7 @@ The title menu of a toolbar.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbartitlemenu
+# <https://developer.apple.com/documentation/swiftui/toolbartitlemenu>
 
 - SwiftUI
 - ToolbarTitleMenu
@@ -64796,9 +63312,9 @@ Configure the title menu of a toolbar.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/ornament(visibility:attachmentanchor:contentalignment:ornament:)
+# <https://developer.apple.com/documentation/swiftui/view/ornament(visibility:attachmentanchor:contentalignment:ornament>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -64851,7 +63367,7 @@ An attachment anchor for an ornament.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/ornamentattachmentanchor
+# <https://developer.apple.com/documentation/swiftui/ornamentattachmentanchor>
 
 - SwiftUI
 - OrnamentAttachmentAnchor
@@ -64895,221 +63411,159 @@ Presents an ornament.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbar(content:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/toolbar(content>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbar(_:for:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/toolbar(_:for>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbaritem)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbaritem>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbaritemgroup)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbaritemgroup>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbaritemplacement)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbaritemplacement>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarcontent)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbarcontent>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarcontentbuilder)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbarcontentbuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarspacer)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbarspacer>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/defaulttoolbaritem)
-
-
+# <https://developer.apple.com/documentation/swiftui/defaulttoolbaritem>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbar(id:content:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/toolbar(id:content>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/customizabletoolbarcontent)
-
-
+# <https://developer.apple.com/documentation/swiftui/customizabletoolbarcontent>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarcustomizationbehavior)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbarcustomizationbehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarcustomizationoptions)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbarcustomizationoptions>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/searchtoolbarbehavior)
-
-
+# <https://developer.apple.com/documentation/swiftui/searchtoolbarbehavior>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbar(removing:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/toolbar(removing>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbardefaultitemkind)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbardefaultitemkind>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbarvisibility(_:for:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/toolbarvisibility(_:for>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbarbackgroundvisibility(_:for:))
+# <https://developer.apple.com/documentation/swiftui/view/toolbarbackgroundvisibility(_:for>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarplacement)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbarplacement>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/contenttoolbarplacement)
-
-
+# <https://developer.apple.com/documentation/swiftui/contenttoolbarplacement>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbarrole(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/toolbarrole(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarrole)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbarrole>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbarbackground(_:for:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/toolbarbackground(_:for>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbarcolorscheme(_:for:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/toolbarcolorscheme(_:for>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbarforegroundstyle(_:for:))
+# <https://developer.apple.com/documentation/swiftui/view/toolbarforegroundstyle(_:for>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/toolbarlabelstyle)
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/toolbarlabelstyle>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarlabelstyle)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbarlabelstyle>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/spacersizing)
-
-
+# <https://developer.apple.com/documentation/swiftui/spacersizing>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbartitledisplaymode(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/toolbartitledisplaymode(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbartitledisplaymode)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbartitledisplaymode>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/toolbartitlemenu(content:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/toolbartitlemenu(content>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbartitlemenu)
-
-
+# <https://developer.apple.com/documentation/swiftui/toolbartitlemenu>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/ornament(visibility:attachmentanchor:contentalignment:ornament:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/ornament(visibility:attachmentanchor:contentalignment:ornament>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/ornamentattachmentanchor)
-
-
+# <https://developer.apple.com/documentation/swiftui/ornamentattachmentanchor>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/viewmodifier
+# <https://developer.apple.com/documentation/swiftui/viewmodifier>
 
 - SwiftUI
 - ViewModifier
@@ -65266,7 +63720,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/emptymodifier
+# <https://developer.apple.com/documentation/swiftui/emptymodifier>
 
 - SwiftUI
 - EmptyModifier
@@ -65299,11 +63753,11 @@ Text("Hello, World!")
 }
 
 var modifier: some ViewModifier {
-#if DEBUG
+# if DEBUG
 return EmphasizedLayout()
-#else
+# else
 return EmptyModifier()
-#endif
+# endif
 }
 }
 
@@ -65373,7 +63827,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentalmodifier
+# <https://developer.apple.com/documentation/swiftui/environmentalmodifier>
 
 - SwiftUI
 - EnvironmentalModifier
@@ -65450,7 +63904,7 @@ Beta
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulablemodifier
+# <https://developer.apple.com/documentation/swiftui/manipulablemodifier>
 
 - SwiftUI
 - ManipulableModifier Beta
@@ -65522,7 +63976,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulablerespondermodifier
+# <https://developer.apple.com/documentation/swiftui/manipulablerespondermodifier>
 
 - SwiftUI
 - ManipulableResponderModifier Beta
@@ -65595,7 +64049,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulabletransformbindingmodifier
+# <https://developer.apple.com/documentation/swiftui/manipulabletransformbindingmodifier>
 
 - SwiftUI
 - ManipulableTransformBindingModifier Beta
@@ -65667,7 +64121,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulationgeometrymodifier
+# <https://developer.apple.com/documentation/swiftui/manipulationgeometrymodifier>
 
 - SwiftUI
 - ManipulationGeometryModifier Beta
@@ -65740,7 +64194,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulationgesturemodifier
+# <https://developer.apple.com/documentation/swiftui/manipulationgesturemodifier>
 
 - SwiftUI
 - ManipulationGestureModifier Beta
@@ -65812,7 +64266,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulationusinggesturestatemodifier
+# <https://developer.apple.com/documentation/swiftui/manipulationusinggesturestatemodifier>
 
 - SwiftUI
 - ManipulationUsingGestureStateModifier Beta
@@ -65884,7 +64338,7 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulable
+# <https://developer.apple.com/documentation/swiftui/manipulable>
 
 - SwiftUI
 - Manipulable Beta
@@ -65978,9 +64432,9 @@ Learn more about using Apple's beta software
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onappear(perform:)
+# <https://developer.apple.com/documentation/swiftui/view/onappear(perform>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -66024,9 +64478,9 @@ Adds a task to perform before this view appears or when a specified value change
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/ondisappear(perform:)
+# <https://developer.apple.com/documentation/swiftui/view/ondisappear(perform>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -66066,9 +64520,9 @@ Adds a task to perform before this view appears or when a specified value change
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/task(priority:_:)
+# <https://developer.apple.com/documentation/swiftui/view/task(priority>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -66108,7 +64562,7 @@ Use this modifier to perform an asynchronous task with a lifetime that matches t
 
 Use the `await` keyword inside the task to wait for an asynchronous call to complete, or to wait on the values of an `AsyncSequence` instance. For example, you can modify a `Text` view to start a task that loads content from a remote resource:
 
-let url = URL(string: "https://example.com")!
+let url = URL(string: "<https://example.com>")!
 @State private var message = "Loading..."
 
 var body: some View {
@@ -66140,9 +64594,9 @@ Adds a task to perform before this view appears or when a specified value change
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/task(id:priority:_:)
+# <https://developer.apple.com/documentation/swiftui/view/task(id:priority>:_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -66224,9 +64678,9 @@ Adds an asynchronous task to perform before this view appears.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/id(_:)
+# <https://developer.apple.com/documentation/swiftui/view/id(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -66254,9 +64708,9 @@ Prevents the view from updating its child view when its new value is the same as
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tag(_:includeoptional:)
+# <https://developer.apple.com/documentation/swiftui/view/tag(_:includeoptional>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -66323,117 +64777,83 @@ Prevents the view from updating its child view when its new value is the same as
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/equatable()
-
-
+# <https://developer.apple.com/documentation/swiftui/view/equatable()>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/viewmodifier)
-
-
+# <https://developer.apple.com/documentation/swiftui/viewmodifier>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/emptymodifier)
-
-
+# <https://developer.apple.com/documentation/swiftui/emptymodifier>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentalmodifier)
-
-
+# <https://developer.apple.com/documentation/swiftui/environmentalmodifier>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulablemodifier)
-
-
+# <https://developer.apple.com/documentation/swiftui/manipulablemodifier>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulablerespondermodifier)
-
-
+# <https://developer.apple.com/documentation/swiftui/manipulablerespondermodifier>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulabletransformbindingmodifier)
-
-
+# <https://developer.apple.com/documentation/swiftui/manipulabletransformbindingmodifier>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulationgeometrymodifier)
-
-
+# <https://developer.apple.com/documentation/swiftui/manipulationgeometrymodifier>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulationgesturemodifier)
-
-
+# <https://developer.apple.com/documentation/swiftui/manipulationgesturemodifier>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulationusinggesturestatemodifier)
+# <https://developer.apple.com/documentation/swiftui/manipulationusinggesturestatemodifier>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/manipulable)
-
-
+# <https://developer.apple.com/documentation/swiftui/manipulable>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/onappear(perform:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/onappear(perform>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/ondisappear(perform:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/ondisappear(perform>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/task(priority:_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/task(priority>:_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/task(id:priority:_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/task(id:priority>:_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/id(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/id(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/tag(_:includeoptional:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/tag(_:includeoptional>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/equatable())
-
-
+# <https://developer.apple.com/documentation/swiftui/view/equatable()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/fetchrequest
+# <https://developer.apple.com/documentation/swiftui/fetchrequest>
 
 - SwiftUI
 - FetchRequest
@@ -66536,7 +64956,7 @@ A collection of results retrieved from a Core Data persistent store, grouped int
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/fetchedresults
+# <https://developer.apple.com/documentation/swiftui/fetchedresults>
 
 - SwiftUI
 - FetchedResults
@@ -66635,7 +65055,7 @@ A collection of results retrieved from a Core Data persistent store, grouped int
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/restoring_your_app_s_state_with_swiftui
+# <https://developer.apple.com/documentation/swiftui/restoring_your_app_s_state_with_swiftui>
 
 - SwiftUI
 - Restoring Your App’s State with SwiftUI
@@ -66740,9 +65160,9 @@ Restoring Your App’s State
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/defaultappstorage(_:)
+# <https://developer.apple.com/documentation/swiftui/view/defaultappstorage(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -66784,13 +65204,11 @@ A property wrapper type that reads and writes to persisted, per-scene storage.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/appstorage
-
-
+# <https://developer.apple.com/documentation/swiftui/appstorage>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scenestorage
+# <https://developer.apple.com/documentation/swiftui/scenestorage>
 
 - SwiftUI
 - SceneStorage
@@ -66865,7 +65283,7 @@ A property wrapper type that reflects a value from `UserDefaults` and invalidate
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/loading_and_displaying_a_large_data_feed
+# <https://developer.apple.com/documentation/swiftui/loading_and_displaying_a_large_data_feed>
 
 - SwiftUI
 - Loading and Displaying a Large Data Feed
@@ -66999,7 +65417,7 @@ Use batch processes to manage large data changes.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/managedobjectcontext
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/managedobjectcontext>
 
 - SwiftUI
 - EnvironmentValues
@@ -67037,7 +65455,7 @@ A collection of results retrieved from a Core Data persistent store, grouped int
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/sectionedfetchrequest
+# <https://developer.apple.com/documentation/swiftui/sectionedfetchrequest>
 
 - SwiftUI
 - SectionedFetchRequest
@@ -67139,7 +65557,7 @@ A collection of results retrieved from a Core Data persistent store, grouped int
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/sectionedfetchresults
+# <https://developer.apple.com/documentation/swiftui/sectionedfetchresults>
 
 - SwiftUI
 - SectionedFetchResults
@@ -67256,75 +65674,61 @@ A property wrapper type that retrieves entities, grouped into sections, from a C
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/fetchrequest)
-
-
+# <https://developer.apple.com/documentation/swiftui/fetchrequest>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/fetchedresults)
-
-
+# <https://developer.apple.com/documentation/swiftui/fetchedresults>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/restoring_your_app_s_state_with_swiftui)
+# <https://developer.apple.com/documentation/swiftui/restoring_your_app_s_state_with_swiftui>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/defaultappstorage(_:))
-
-
+# <https://developer.apple.com/documentation/swiftui/view/defaultappstorage(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/appstorage)
-
-
+# <https://developer.apple.com/documentation/swiftui/appstorage>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scenestorage)
-
-
+# <https://developer.apple.com/documentation/swiftui/scenestorage>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/loading_and_displaying_a_large_data_feed)
+# <https://developer.apple.com/documentation/swiftui/loading_and_displaying_a_large_data_feed>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/managedobjectcontext)
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/managedobjectcontext>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/sectionedfetchrequest)
-
-
+# <https://developer.apple.com/documentation/swiftui/sectionedfetchrequest>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/sectionedfetchresults)
-
-
+# <https://developer.apple.com/documentation/swiftui/sectionedfetchresults>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/contextmenu(menuitems:)
+# <https://developer.apple.com/documentation/swiftui/view/contextmenu(menuitems>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -67389,15 +65793,13 @@ Adds an item-based context menu to a view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/populating-swiftui-menus-with-adaptive-controls
-
-
+# <https://developer.apple.com/documentation/swiftui/populating-swiftui-menus-with-adaptive-controls>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/menustyle(_:)
+# <https://developer.apple.com/documentation/swiftui/view/menustyle(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -67435,9 +65837,9 @@ A control for presenting a menu of actions.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/contextmenu(menuitems:preview:)
+# <https://developer.apple.com/documentation/swiftui/view/contextmenu(menuitems:preview>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - View
@@ -67504,15 +65906,13 @@ Adds an item-based context menu to a view.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/contextmenu(forselectiontype:menu:primaryaction:)
-
-
+# <https://developer.apple.com/documentation/swiftui/view/contextmenu(forselectiontype:menu:primaryaction>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/commandsremoved()
+# <https://developer.apple.com/documentation/swiftui/scene/commandsremoved()>
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -67576,9 +65976,9 @@ The standard locations that you can place new command groups relative to.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/commandsreplaced(content:)
+# <https://developer.apple.com/documentation/swiftui/scene/commandsreplaced(content>:)
 
-#app-main)
+# app-main)
 
 - SwiftUI
 - Scene
@@ -67658,13 +66058,11 @@ The standard locations that you can place new command groups relative to.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/commands
-
-
+# <https://developer.apple.com/documentation/swiftui/commands>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/commandmenu
+# <https://developer.apple.com/documentation/swiftui/commandmenu>
 
 - SwiftUI
 - CommandMenu
@@ -67727,1173 +66125,782 @@ The standard locations that you can place new command groups relative to.
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/commandgroup
+# <https://developer.apple.com/documentation/swiftui/commandgroup>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/commandsbuilder
 
+# <https://developer.apple.com/documentation/swiftui/commandsbuilder>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/commandgroupplacement
-
 
+# <https://developer.apple.com/documentation/swiftui/commandgroupplacement>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/sidebarcommands
+# <https://developer.apple.com/documentation/swiftui/sidebarcommands>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/texteditingcommands
 
+# <https://developer.apple.com/documentation/swiftui/texteditingcommands>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/textformattingcommands
-
 
+# <https://developer.apple.com/documentation/swiftui/textformattingcommands>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarcommands
+# <https://developer.apple.com/documentation/swiftui/toolbarcommands>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/importfromdevicescommands
 
+# <https://developer.apple.com/documentation/swiftui/importfromdevicescommands>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/inspectorcommands
-
 
+# <https://developer.apple.com/documentation/swiftui/inspectorcommands>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/emptycommands
+# <https://developer.apple.com/documentation/swiftui/emptycommands>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/environmentvalues/menuindicatorvisibility
 
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/menuindicatorvisibility>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/menuactiondismissbehavior(_:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/menuactiondismissbehavior(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menuactiondismissbehavior
+# <https://developer.apple.com/documentation/swiftui/menuactiondismissbehavior>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/menuorder(_:)
 
+# <https://developer.apple.com/documentation/swiftui/view/menuorder(>_:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/environmentvalues/menuorder
-
 
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/menuorder>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menuorder
+# <https://developer.apple.com/documentation/swiftui/menuorder>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/pulldownbutton
 
+# <https://developer.apple.com/documentation/swiftui/pulldownbutton>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/contextmenu
-
 
+# <https://developer.apple.com/documentation/swiftui/contextmenu>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/contextmenu(menuitems:))
+# <https://developer.apple.com/documentation/swiftui/view/contextmenu(menuitems>:))
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/populating-swiftui-menus-with-adaptive-controls)
 
+# <https://developer.apple.com/documentation/swiftui/populating-swiftui-menus-with-adaptive-controls>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/menustyle(_:))
-
 
+# <https://developer.apple.com/documentation/swiftui/view/menustyle(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/contextmenu(menuitems:preview:))
+# <https://developer.apple.com/documentation/swiftui/view/contextmenu(menuitems:preview>:))
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/contextmenu(forselectiontype:menu:primaryaction:))
 
+# <https://developer.apple.com/documentation/swiftui/view/contextmenu(forselectiontype:menu:primaryaction>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/scene/commandsremoved())
-
 
+# <https://developer.apple.com/documentation/swiftui/scene/commandsremoved()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/scene/commandsreplaced(content:))
+# <https://developer.apple.com/documentation/swiftui/scene/commandsreplaced(content>:))
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/commands)
 
+# <https://developer.apple.com/documentation/swiftui/commands>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/commandmenu)
-
 
+# <https://developer.apple.com/documentation/swiftui/commandmenu>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/commandgroup)
+# <https://developer.apple.com/documentation/swiftui/commandgroup>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/commandsbuilder)
 
+# <https://developer.apple.com/documentation/swiftui/commandsbuilder>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/commandgroupplacement)
-
 
+# <https://developer.apple.com/documentation/swiftui/commandgroupplacement>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/sidebarcommands)
+# <https://developer.apple.com/documentation/swiftui/sidebarcommands>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/texteditingcommands)
 
+# <https://developer.apple.com/documentation/swiftui/texteditingcommands>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/textformattingcommands)
-
 
+# <https://developer.apple.com/documentation/swiftui/textformattingcommands>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/toolbarcommands)
+# <https://developer.apple.com/documentation/swiftui/toolbarcommands>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/importfromdevicescommands)
 
+# <https://developer.apple.com/documentation/swiftui/importfromdevicescommands>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/inspectorcommands)
-
 
+# <https://developer.apple.com/documentation/swiftui/inspectorcommands>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/emptycommands)
+# <https://developer.apple.com/documentation/swiftui/emptycommands>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/environmentvalues/menuindicatorvisibility)
 
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/menuindicatorvisibility>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/menuactiondismissbehavior(_:))
-
 
+# <https://developer.apple.com/documentation/swiftui/view/menuactiondismissbehavior(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menuactiondismissbehavior)
+# <https://developer.apple.com/documentation/swiftui/menuactiondismissbehavior>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/menuorder(_:))
 
+# <https://developer.apple.com/documentation/swiftui/view/menuorder(>_:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/environmentvalues/menuorder)
-
 
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/menuorder>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/menuorder)
+# <https://developer.apple.com/documentation/swiftui/menuorder>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/pulldownbutton)
 
+# <https://developer.apple.com/documentation/swiftui/pulldownbutton>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/contextmenu)
-
 
+# <https://developer.apple.com/documentation/swiftui/contextmenu>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/add_rich_graphics_to_your_swiftui_app
+# <https://developer.apple.com/documentation/swiftui/add_rich_graphics_to_your_swiftui_app>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/graphicscontext
 
+# <https://developer.apple.com/documentation/swiftui/graphicscontext>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/tint(_:)
 
+# <https://developer.apple.com/documentation/swiftui/view/tint(>_:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/border(_:width:)
 
+# <https://developer.apple.com/documentation/swiftui/view/border(_:width>:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/foregroundstyle(_:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/foregroundstyle(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/foregroundstyle(_:_:)
+# <https://developer.apple.com/documentation/swiftui/view/foregroundstyle(>_:_:)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/foregroundstyle(_:_:_:)
 
+# <https://developer.apple.com/documentation/swiftui/view/foregroundstyle(>_:_:_:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/backgroundstyle(_:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/backgroundstyle(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/backgroundstyle
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/backgroundstyle>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/shapestyle
 
+# <https://developer.apple.com/documentation/swiftui/shapestyle>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/anyshapestyle
-
 
+# <https://developer.apple.com/documentation/swiftui/anyshapestyle>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/gradient
+# <https://developer.apple.com/documentation/swiftui/gradient>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/anygradient
 
+# <https://developer.apple.com/documentation/swiftui/anygradient>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/shadowstyle
-
 
+# <https://developer.apple.com/documentation/swiftui/shadowstyle>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/glass
+# <https://developer.apple.com/documentation/swiftui/glass>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/brightness(_:)
 
+# <https://developer.apple.com/documentation/swiftui/view/brightness(>_:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/contrast(_:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/contrast(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/colorinvert()
+# <https://developer.apple.com/documentation/swiftui/view/colorinvert()>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/colormultiply(_:)
 
+# <https://developer.apple.com/documentation/swiftui/view/colormultiply(>_:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/saturation(_:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/saturation(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/grayscale(_:)
+# <https://developer.apple.com/documentation/swiftui/view/grayscale(>_:)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/huerotation(_:)
 
+# <https://developer.apple.com/documentation/swiftui/view/huerotation(>_:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/luminancetoalpha()
-
 
+# <https://developer.apple.com/documentation/swiftui/view/luminancetoalpha()>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/environmentvalues/materialactiveappearance
+# <https://developer.apple.com/documentation/swiftui/environmentvalues/materialactiveappearance>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/materialactiveappearance
 
+# <https://developer.apple.com/documentation/swiftui/materialactiveappearance>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/scaledtofill()
-
 
+# <https://developer.apple.com/documentation/swiftui/view/scaledtofill()>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/scaledtofit()
+# <https://developer.apple.com/documentation/swiftui/view/scaledtofit()>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/scaleeffect(_:anchor:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/scaleeffect(_:anchor>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/scaleeffect(x:y:anchor:)
+# <https://developer.apple.com/documentation/swiftui/view/scaleeffect(x:y:anchor>:)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/scaleeffect(x:y:z:anchor:)
 
+# <https://developer.apple.com/documentation/swiftui/view/scaleeffect(x:y:z:anchor>:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/aspectratio(_:contentmode:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/aspectratio(_:contentmode>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/rotationeffect(_:anchor:)
+# <https://developer.apple.com/documentation/swiftui/view/rotationeffect(_:anchor>:)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/rotation3deffect(_:axis:anchor:anchorz:perspective:)
 
+# <https://developer.apple.com/documentation/swiftui/view/rotation3deffect(_:axis:anchor:anchorz:perspective>:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/perspectiverotationeffect(_:axis:anchor:anchorz:perspective:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/perspectiverotationeffect(_:axis:anchor:anchorz:perspective>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/rotation3deffect(_:anchor:)
+# <https://developer.apple.com/documentation/swiftui/view/rotation3deffect(_:anchor>:)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/rotation3deffect(_:axis:anchor:)
 
+# <https://developer.apple.com/documentation/swiftui/view/rotation3deffect(_:axis:anchor>:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/transformeffect(_:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/transformeffect(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/transform3deffect(_:)
+# <https://developer.apple.com/documentation/swiftui/view/transform3deffect(>_:)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/projectioneffect(_:)
 
+# <https://developer.apple.com/documentation/swiftui/view/projectioneffect(>_:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/projectiontransform
-
 
+# <https://developer.apple.com/documentation/swiftui/projectiontransform>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/contentmode
+# <https://developer.apple.com/documentation/swiftui/contentmode>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/mask(alignment:_:)
 
+# <https://developer.apple.com/documentation/swiftui/view/mask(alignment>:_:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/clipped(antialiased:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/clipped(antialiased>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/clipshape(_:style:)
+# <https://developer.apple.com/documentation/swiftui/view/clipshape(_:style>:)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/blur(radius:opaque:)
 
+# <https://developer.apple.com/documentation/swiftui/view/blur(radius:opaque>:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/shadow(color:radius:x:y:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/shadow(color:radius:x:y>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/colormatrix
+# <https://developer.apple.com/documentation/swiftui/colormatrix>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/visualeffect(_:)
 
+# <https://developer.apple.com/documentation/swiftui/view/visualeffect(>_:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/visualeffect3d(_:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/visualeffect3d(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/visualeffect
+# <https://developer.apple.com/documentation/swiftui/visualeffect>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/emptyvisualeffect
 
+# <https://developer.apple.com/documentation/swiftui/emptyvisualeffect>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/blendmode(_:)
 
+# <https://developer.apple.com/documentation/swiftui/view/blendmode(>_:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/compositinggroup()
 
+# <https://developer.apple.com/documentation/swiftui/view/compositinggroup()>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/drawinggroup(opaque:colormode:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/drawinggroup(opaque:colormode>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/blendmode
+# <https://developer.apple.com/documentation/swiftui/blendmode>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/colorrenderingmode
 
+# <https://developer.apple.com/documentation/swiftui/colorrenderingmode>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/compositorcontent
-
 
+# <https://developer.apple.com/documentation/swiftui/compositorcontent>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/compositorcontentbuilder
+# <https://developer.apple.com/documentation/swiftui/compositorcontentbuilder>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/geometryproxy
 
+# <https://developer.apple.com/documentation/swiftui/geometryproxy>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/geometryproxy3d
-
 
+# <https://developer.apple.com/documentation/swiftui/geometryproxy3d>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/coordinatespace(_:)
+# <https://developer.apple.com/documentation/swiftui/view/coordinatespace(>_:)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/coordinatespace
 
+# <https://developer.apple.com/documentation/swiftui/coordinatespace>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/coordinatespaceprotocol
-
 
+# <https://developer.apple.com/documentation/swiftui/coordinatespaceprotocol>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/physicalmetric
+# <https://developer.apple.com/documentation/swiftui/physicalmetric>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/physicalmetricsconverter
 
+# <https://developer.apple.com/documentation/swiftui/physicalmetricsconverter>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/ongeometrychange(for:of:action:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/ongeometrychange(for:of:action>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/view/coloreffect(_:isenabled:)
+# <https://developer.apple.com/documentation/swiftui/view/coloreffect(_:isenabled>:)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/distortioneffect(_:maxsampleoffset:isenabled:)
 
+# <https://developer.apple.com/documentation/swiftui/view/distortioneffect(_:maxsampleoffset:isenabled>:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/layereffect(_:maxsampleoffset:isenabled:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/layereffect(_:maxsampleoffset:isenabled>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/shader
+# <https://developer.apple.com/documentation/swiftui/shader>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/shaderfunction
 
+# <https://developer.apple.com/documentation/swiftui/shaderfunction>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/shaderlibrary
-
 
+# <https://developer.apple.com/documentation/swiftui/shaderlibrary>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/document
+# <https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/document>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/$document
 
+# <https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/$document>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/fileurl
-
 
+# <https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/fileurl>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/iseditable
+# <https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/iseditable>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/document)
-
 
+# <https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/document>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/$document)
+# <https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/$document>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/fileurl)
 
+# <https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/fileurl>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/iseditable)
-
 
+# <https://developer.apple.com/documentation/swiftui/filedocumentconfiguration/iseditable>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/document
+# <https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/document>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/$document
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/$document>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/fileurl
-
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/fileurl>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/iseditable
+# <https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/iseditable>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/document)
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/document>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/$document)
-
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/$document>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/fileurl)
+# <https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/fileurl>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/iseditable)
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocumentconfiguration/iseditable>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocument/readablecontenttypes
-
 
+# <https://developer.apple.com/documentation/swiftui/filedocument/readablecontenttypes>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocument/writablecontenttypes
+# <https://developer.apple.com/documentation/swiftui/filedocument/writablecontenttypes>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocument/init(configuration:)
 
+# <https://developer.apple.com/documentation/swiftui/filedocument/init(configuration>:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocument/filewrapper(configuration:)
-
 
+# <https://developer.apple.com/documentation/swiftui/filedocument/filewrapper(configuration>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocument/readconfiguration
+# <https://developer.apple.com/documentation/swiftui/filedocument/readconfiguration>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocument/writeconfiguration
 
+# <https://developer.apple.com/documentation/swiftui/filedocument/writeconfiguration>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocument/readablecontenttypes).
-
 
+# <https://developer.apple.com/documentation/swiftui/filedocument/readablecontenttypes>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocument/writablecontenttypes).
+# <https://developer.apple.com/documentation/swiftui/filedocument/writablecontenttypes>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocument/init(configuration:))
 
+# <https://developer.apple.com/documentation/swiftui/filedocument/init(configuration>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocument/filewrapper(configuration:))
-
 
+# <https://developer.apple.com/documentation/swiftui/filedocument/filewrapper(configuration>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/filedocument/readablecontenttypes)
+# <https://developer.apple.com/documentation/swiftui/filedocument/readablecontenttypes>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocument/readconfiguration)
 
+# <https://developer.apple.com/documentation/swiftui/filedocument/readconfiguration>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocument/writablecontenttypes)
 
+# <https://developer.apple.com/documentation/swiftui/filedocument/writablecontenttypes>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocument/writeconfiguration)
 
+# <https://developer.apple.com/documentation/swiftui/filedocument/writeconfiguration>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(editing:migrationplan:editor:preparedocument:)
-
 
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(editing:migrationplan:editor:preparedocument>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(editing:migrationplan:editor:preparedocument:))
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(editing:migrationplan:editor:preparedocument>:))
 
-
-
 ---
-
-# https://developer.apple.com/documentation/SwiftUI/Bindable
 
+# <https://developer.apple.com/documentation/SwiftUI/Bindable>
 
-
 ---
-
-# https://developer.apple.com/documentation/SwiftUI/View/modelContainer(_:)
-
 
+# <https://developer.apple.com/documentation/SwiftUI/View/modelContainer(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/modelContext
+# <https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/modelContext>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/SwiftUI/DocumentGroup
 
+# <https://developer.apple.com/documentation/SwiftUI/DocumentGroup>
 
-
 ---
-
-# https://developer.apple.com/documentation/SwiftUI/Bindable),
-
 
+# <https://developer.apple.com/documentation/SwiftUI/Bindable>)
 
 ---
 
-# https://developer.apple.com/documentation/SwiftUI/View/modelContainer(_:)),
+# <https://developer.apple.com/documentation/SwiftUI/View/modelContainer(>_:))
 
-
-
 ---
-
-# https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/modelContext)
 
+# <https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/modelContext>)
 
-
 ---
-
-# https://developer.apple.com/documentation/SwiftUI/DocumentGroup)
-
 
+# <https://developer.apple.com/documentation/SwiftUI/DocumentGroup>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(newdocument:editor:)
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(newdocument:editor>:)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(viewing:viewer:)
 
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(viewing:viewer>:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(viewing:contenttype:viewer:)
-
 
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(viewing:contenttype:viewer>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(viewing:migrationplan:viewer:)
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(viewing:migrationplan:viewer>:)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocument).
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(newdocument:editor:))
-
 
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(newdocument:editor>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(viewing:viewer:))
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(viewing:viewer>:))
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(editing:contenttype:editor:preparedocument:))
 
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(editing:contenttype:editor:preparedocument>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(viewing:contenttype:viewer:))
-
 
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(viewing:contenttype:viewer>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(viewing:migrationplan:viewer:))
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(viewing:migrationplan:viewer>:))
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(newdocument:editor:)-4toe2
 
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(newdocument:editor:)-4toe2>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:backgroundstyle:_:backgroundaccessoryview:overlayaccessoryview:)-2d13c
-
 
+# <https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:backgroundstyle:_:backgroundaccessoryview:overlayaccessoryview:)-2d13c>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:)-2iefz
+# <https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:)-2iefz>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:backgroundaccessoryview:)-1valf
-
 
+# <https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:backgroundaccessoryview:)-1valf>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:overlayaccessoryview:)-1143c
+# <https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:overlayaccessoryview:)-1143c>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/offset(x:y:)
 
+# <https://developer.apple.com/documentation/swiftui/view/offset(x:y>:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:)
-
 
+# <https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:backgroundaccessoryview:overlayaccessoryview:)-1re6d
+# <https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:backgroundaccessoryview:overlayaccessoryview:)-1re6d>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocumentreadconfiguration/file
 
+# <https://developer.apple.com/documentation/swiftui/filedocumentreadconfiguration/file>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/documentgroup/init(newdocument:editor:)-4toe2)
-
 
+# <https://developer.apple.com/documentation/swiftui/documentgroup/init(newdocument:editor:)-4toe2>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:backgroundstyle:_:backgroundaccessoryview:overlayaccessoryview:)-2d13c).
+# <https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:backgroundstyle:_:backgroundaccessoryview:overlayaccessoryview:)-2d13c>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:)-2iefz)
 
+# <https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:)-2iefz>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:backgroundaccessoryview:)-1valf)
-
 
+# <https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:backgroundaccessoryview:)-1valf>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:overlayaccessoryview:)-1143c)
+# <https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:overlayaccessoryview:)-1143c>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/offset(x:y:))
 
+# <https://developer.apple.com/documentation/swiftui/view/offset(x:y>:))
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:)).
-
 
+# <https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:backgroundaccessoryview:overlayaccessoryview:)-1re6d).
+# <https://developer.apple.com/documentation/swiftui/documentgrouplaunchscene/init(_:_:background:backgroundaccessoryview:overlayaccessoryview:)-1re6d>)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/filedocumentreadconfiguration/file)
 
+# <https://developer.apple.com/documentation/swiftui/filedocumentreadconfiguration/file>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocument/readablecontenttypes
-
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument/readablecontenttypes>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/referencefiledocument/writablecontenttypes
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument/writablecontenttypes>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocument/init(configuration:)
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument/init(configuration>:)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocument/snapshot(contenttype:)
-
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument/snapshot(contenttype>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/referencefiledocument/filewrapper(snapshot:configuration:)
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument/filewrapper(snapshot:configuration>:)
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocument/readconfiguration
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument/readconfiguration>
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocument/snapshot
-
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument/snapshot>
 
 ---
 
-# https://developer.apple.com/documentation/swiftui/referencefiledocument/writeconfiguration
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument/writeconfiguration>
 
-
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocument/readablecontenttypes).
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument/readablecontenttypes>)
 
-
 ---
-
-# https://developer.apple.com/documentation/swiftui/referencefiledocument/writablecontenttypes).
 
+# <https://developer.apple.com/documentation/swiftui/referencefiledocument/writablecontenttypes>)
 
-
 ---
-

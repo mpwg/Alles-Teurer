@@ -2,10 +2,12 @@
 
 Generate Mermaid diagrams for visualizing code structure and relationships.
 
-## Common Diagram Types:
+## Common Diagram Types
 
 ### 1. Entity Relationship Diagrams
+
 For database schemas and data models:
+
 ```
 erDiagram
     CUSTOMER ||--o{ ORDER : places
@@ -13,7 +15,9 @@ erDiagram
 ```
 
 ### 2. Flow Charts
+
 For process and logic flow:
+
 ```
 flowchart TD
     A[Start] --> B{Decision}
@@ -22,7 +26,9 @@ flowchart TD
 ```
 
 ### 3. Sequence Diagrams
+
 For interaction flows:
+
 ```
 sequenceDiagram
     Client->>Server: Request
@@ -32,7 +38,9 @@ sequenceDiagram
 ```
 
 ### 4. Class Diagrams
+
 For object-oriented design:
+
 ```
 classDiagram
     class Animal {
@@ -42,7 +50,8 @@ classDiagram
     }
 ```
 
-## Process:
+## Process
+
 1. Analyze source files (SQL, code, docs)
 2. Extract entities and relationships
 3. Generate appropriate diagram type
@@ -50,10 +59,12 @@ classDiagram
 5. Validate syntax with mermaid compiler
 6. Save to specified location
 
-## Validation:
+## Validation
+
 Run `npx -p @mermaid-js/mermaid-cli mmdc -i <input>.md -o test.md`
 
-## Best Practices:
+## Best Practices
+
 - Keep diagrams focused and readable
 - Use consistent naming conventions
 - Group related entities

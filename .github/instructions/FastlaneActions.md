@@ -8,11 +8,12 @@ Availability strings filtered: Yes
 Code blocks only: No
 -->
 
-# https://docs.fastlane.tools/actions/
+# <https://docs.fastlane.tools/actions/>
 
 - Docs »
 - Actions »
 - Available Actions
+
 - ```
 
 * * *

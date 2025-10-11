@@ -8,7 +8,7 @@ Availability strings filtered: Yes
 Code blocks only: No
 -->
 
-# https://developer.apple.com/documentation/VisualIntelligence
+# <https://developer.apple.com/documentation/VisualIntelligence>
 
 Framework
 
@@ -46,7 +46,7 @@ Create your first app intent that makes your app available in system experiences
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/integrating-your-app-with-visual-intelligence
+# <https://developer.apple.com/documentation/visualintelligence/integrating-your-app-with-visual-intelligence>
 
 - Visual Intelligence
 - Integrating your app with visual intelligence
@@ -179,7 +179,7 @@ A type that represents a scene that visual intelligence captures, like a screens
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor>
 
 - Visual Intelligence
 - SemanticContentDescriptor
@@ -242,23 +242,23 @@ Enable people to find app content that matches their surroundings or objects ons
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/integrating-your-app-with-visual-intelligence)
+# <https://developer.apple.com/documentation/visualintelligence/integrating-your-app-with-visual-intelligence>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/visualintelligence>
 
 Framework
 
@@ -296,7 +296,7 @@ Create your first app intent that makes your app available in system experiences
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/pixelbuffer
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/pixelbuffer>
 
 - Visual Intelligence
 - SemanticContentDescriptor
@@ -324,7 +324,7 @@ A list of labels that visual intelligence uses to classify items onscreen or vis
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/defaultresolverspecification
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/defaultresolverspecification>
 
 - Visual Intelligence
 - SemanticContentDescriptor
@@ -350,7 +350,7 @@ static var defaultResolverSpecification: some ResolverSpecification { get }
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/specification
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/specification>
 
 - Visual Intelligence
 - SemanticContentDescriptor
@@ -376,7 +376,7 @@ A default implementation of an internal type that the App Intents framework uses
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/valuetype
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/valuetype>
 
 - Visual Intelligence
 - SemanticContentDescriptor
@@ -402,7 +402,7 @@ A default implementation of an internal type that the App Intents framework uses
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/unwrappedtype
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/unwrappedtype>
 
 - Visual Intelligence
 - SemanticContentDescriptor
@@ -428,55 +428,55 @@ A default implementation of an internal type that the App Intents framework uses
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/labels)
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/labels>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/pixelbuffer)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/defaultresolverspecification)
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/pixelbuffer>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/specification)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/valuetype)
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/defaultresolverspecification>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/unwrappedtype)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/labels
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/specification>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/valuetype>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/unwrappedtype>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor/labels>
 
 - Visual Intelligence
 - SemanticContentDescriptor
@@ -508,13 +508,12 @@ The pixel buffer that visual intelligence captures.
 
 ---
 
-# https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor).
+# <https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor>)
 
 .#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
-

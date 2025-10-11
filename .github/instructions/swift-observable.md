@@ -16,9 +16,9 @@ Update your existing app to leverage the benefits of Observation in Swift.
 
 Starting with iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10, SwiftUI provides support for Observation, a Swift-specific implementation of the observer design pattern. Adopting Observation provides your app with the following benefits:
 
-> *   Tracking optionals and collections of objects, which isn't possible when using `ObservableObject`.
-> *   Using existing data flow primitives like `State` and `Environment` instead of object-based equivalents such as `StateObject` and `EnvironmentObject`.
-> *   Updating views based on changes to the observable properties that a view's body reads instead of any property changes that occur to an observable object, which can help improve your app's performance.
+> * Tracking optionals and collections of objects, which isn't possible when using `ObservableObject`.
+> * Using existing data flow primitives like `State` and `Environment` instead of object-based equivalents such as `StateObject` and `EnvironmentObject`.
+> * Updating views based on changes to the observable properties that a view's body reads instead of any property changes that occur to an observable object, which can help improve your app's performance.
 
 To take advantage of these benefits in your app, you'll discover how to replace existing source code that relies on `ObservableObject` with code that leverages the `@Observable()` macro.
 
@@ -29,6 +29,7 @@ To take advantage of these benefits in your app, you'll discover how to replace 
 To adopt Observation in an existing app, begin by replacing `ObservableObject` in your data model type with the `@Observable()` macro. The `@Observable()` macro generates source code at compile time that adds observation support to the type.
 
 **BEFORE**
+
 ```swift
 // BEFORE
 import SwiftUI
@@ -39,6 +40,7 @@ class Library: ObservableObject {
 ```
 
 **AFTER**
+
 ```swift
 // AFTER
 import SwiftUI
@@ -52,6 +54,7 @@ class Library {
 Then remove the `@Published` property wrapper from observable properties. Observation doesn't require a property wrapper to make a property observable. Instead, the accessibility of the property in relationship to an observer, such as a view, determines whether a property is observable.
 
 **BEFORE**
+
 ```swift
 // BEFORE
 @Observable
@@ -61,6 +64,7 @@ class Library {
 ```
 
 **AFTER**
+
 ```swift
 // AFTER
 @Observable
@@ -88,6 +92,7 @@ You may notice slight behavioral differences in your app based on the tracking m
 After applying the `@Observable()` macro, you can update your data flow primitives. Although `StateObject` and `EnvironmentObject` support types using the `@Observable()` macro for incremental migration, you should replace them with `State` and `Environment` to fully adopt Observation.
 
 **BEFORE**
+
 ```swift
 // BEFORE
 @main
@@ -104,6 +109,7 @@ struct BookReaderApp: App {
 ```
 
 **AFTER**
+
 ```swift
 // AFTER
 @main
@@ -122,6 +128,7 @@ struct BookReaderApp: App {
 Similarly, replace `@EnvironmentObject` with the `@Environment` property wrapper.
 
 **BEFORE**
+
 ```swift
 // BEFORE
 struct LibraryView: View {
@@ -136,6 +143,7 @@ struct LibraryView: View {
 ```
 
 **AFTER**
+
 ```swift
 // AFTER
 struct LibraryView: View {
@@ -156,6 +164,7 @@ struct LibraryView: View {
 To complete the migration, change other data model types to support Observation by replacing `ObservableObject` with the `@Observable()` macro and removing `@Published`.
 
 **BEFORE**
+
 ```swift
 // BEFORE
 class Book: ObservableObject, Identifiable {
@@ -165,6 +174,7 @@ class Book: ObservableObject, Identifiable {
 ```
 
 **AFTER**
+
 ```swift
 // AFTER
 @Observable
@@ -177,6 +187,7 @@ class Book: Identifiable {
 Next, remove the `@ObservedObject` property wrapper. SwiftUI automatically tracks any observable properties that a view's body reads directly.
 
 **BEFORE**
+
 ```swift
 // BEFORE
 struct BookView: View {
@@ -199,6 +210,7 @@ struct BookView: View {
 ```
 
 **AFTER**
+
 ```swift
 // AFTER
 struct BookView: View {
@@ -223,6 +235,7 @@ struct BookView: View {
 If a view needs a binding to an observable type, replace `@ObservedObject` with the `@Bindable` property wrapper.
 
 **BEFORE**
+
 ```swift
 // BEFORE
 struct BookEditView: View {
@@ -247,6 +260,7 @@ struct BookEditView: View {
 ```
 
 **AFTER**
+
 ```swift
 // AFTER
 struct BookEditView: View {

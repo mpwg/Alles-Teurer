@@ -8,7 +8,7 @@ Availability strings filtered: Yes
 Code blocks only: No
 -->
 
-# https://developer.apple.com/documentation/FoundationModels
+# <https://developer.apple.com/documentation/FoundationModels>
 
 Framework
 
@@ -112,7 +112,7 @@ Feedback appropriate for logging or attaching to Feedback Assistant.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool
+# <https://developer.apple.com/documentation/foundationmodels/tool>
 
 - Foundation Models
 - Tool
@@ -215,7 +215,7 @@ Make gameplay more lively with AI generated dialog and encounters personalized t
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/generating-content-and-performing-tasks-with-foundation-models
+# <https://developer.apple.com/documentation/foundationmodels/generating-content-and-performing-tasks-with-foundation-models>
 
 - Foundation Models
 - Generating content and performing tasks with Foundation Models
@@ -393,7 +393,7 @@ A type that represents the use case for prompting.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/improving-the-safety-of-generative-model-output
+# <https://developer.apple.com/documentation/foundationmodels/improving-the-safety-of-generative-model-output>
 
 - Foundation Models
 - Improving the safety of generative model output
@@ -637,7 +637,7 @@ A type that represents the use case for prompting.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/support-languages-and-locales-with-foundation-models
+# <https://developer.apple.com/documentation/foundationmodels/support-languages-and-locales-with-foundation-models>
 
 - Foundation Models
 - Support languages and locales with Foundation Models
@@ -679,7 +679,7 @@ var age: Int
 var profile: String
 }
 
-#Playground {
+# Playground {
 let response = try await LanguageModelSession().respond(
 to: "Generate a rescue cat",
 generating: CatProfile.self
@@ -751,7 +751,7 @@ A type that represents the use case for prompting.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/adding-intelligent-app-features-with-generative-models
+# <https://developer.apple.com/documentation/foundationmodels/adding-intelligent-app-features-with-generative-models>
 
 - Foundation Models
 - Adding intelligent app features with generative models
@@ -804,7 +804,7 @@ A type that represents the use case for prompting.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel>
 
 - Foundation Models
 - SystemLanguageModel
@@ -945,7 +945,7 @@ Build robust apps with guided generation and tool calling by adopting the Founda
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase>
 
 - Foundation Models
 - SystemLanguageModel
@@ -1011,7 +1011,7 @@ An on-device large language model capable of text generation tasks.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession>
 
 - Foundation Models
 - LanguageModelSession
@@ -1179,7 +1179,7 @@ An error that occurs while a system language model is calling a tool.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/instructions
+# <https://developer.apple.com/documentation/foundationmodels/instructions>
 
 - Foundation Models
 - Instructions
@@ -1259,7 +1259,7 @@ Options that control how the model generates its response to a prompt.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/prompt
+# <https://developer.apple.com/documentation/foundationmodels/prompt>
 
 - Foundation Models
 - Prompt
@@ -1339,7 +1339,7 @@ Options that control how the model generates its response to a prompt.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript
+# <https://developer.apple.com/documentation/foundationmodels/transcript>
 
 - Foundation Models
 - Transcript
@@ -1443,7 +1443,7 @@ Options that control how the model generates its response to a prompt.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/generationoptions
+# <https://developer.apple.com/documentation/foundationmodels/generationoptions>
 
 - Foundation Models
 - GenerationOptions
@@ -1524,7 +1524,7 @@ A transcript that documents interactions with a language model. Transcripts cont
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/generating-swift-data-structures-with-guided-generation
+# <https://developer.apple.com/documentation/foundationmodels/generating-swift-data-structures-with-guided-generation>
 
 - Foundation Models
 - Generating Swift data structures with guided generation
@@ -1624,7 +1624,7 @@ A type that the model uses when responding to prompts.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/generable
+# <https://developer.apple.com/documentation/foundationmodels/generable>
 
 - Foundation Models
 - Generable
@@ -1738,7 +1738,7 @@ Create robust apps by describing output you want programmatically.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/expanding-generation-with-tool-calling
+# <https://developer.apple.com/documentation/foundationmodels/expanding-generation-with-tool-calling>
 
 - Foundation Models
 - Expanding generation with tool calling
@@ -1905,7 +1905,7 @@ A tool that a model can call to gather information at runtime or perform side ef
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/generate-dynamic-game-content-with-guided-generation-and-tools
+# <https://developer.apple.com/documentation/foundationmodels/generate-dynamic-game-content-with-guided-generation-and-tools>
 
 - Foundation Models
 - Generate dynamic game content with guided generation and tools
@@ -1936,7 +1936,7 @@ A tool that a model can call to gather information at runtime or perform side ef
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelfeedback
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelfeedback>
 
 - Foundation Models
 - LanguageModelFeedback
@@ -1990,125 +1990,107 @@ Logs and serializes data that includes session information that you attach when 
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/tool>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/generating-content-and-performing-tasks-with-foundation-models)
+# <https://developer.apple.com/documentation/foundationmodels/generating-content-and-performing-tasks-with-foundation-models>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/improving-the-safety-of-generative-model-output)
+# <https://developer.apple.com/documentation/foundationmodels/improving-the-safety-of-generative-model-output>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/support-languages-and-locales-with-foundation-models)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/adding-intelligent-app-features-with-generative-models)
+# <https://developer.apple.com/documentation/foundationmodels/support-languages-and-locales-with-foundation-models>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel)
-
-
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession)
+# <https://developer.apple.com/documentation/foundationmodels/adding-intelligent-app-features-with-generative-models>)
 
-
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/instructions)
-
-
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/prompt)
-
-
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/transcript)
-
-
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/generationoptions)
-
-
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/generating-swift-data-structures-with-guided-generation)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/generable)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/expanding-generation-with-tool-calling)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/generate-dynamic-game-content-with-guided-generation-and-tools)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession>)
 
-# The page you're looking for can't be found.
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/instructions>)
+
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/prompt>)
+
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/transcript>)
+
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/generationoptions>)
+
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/generating-swift-data-structures-with-guided-generation>)
+
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelfeedback)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/generable>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels
+# <https://developer.apple.com/documentation/foundationmodels/expanding-generation-with-tool-calling>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/generate-dynamic-game-content-with-guided-generation-and-tools>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelfeedback>)
+
+---
+
+# <https://developer.apple.com/documentation/foundationmodels>
 
 Framework
 
@@ -2212,7 +2194,7 @@ Feedback appropriate for logging or attaching to Feedback Assistant.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/default
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/default>
 
 - Foundation Models
 - SystemLanguageModel
@@ -2236,7 +2218,7 @@ The base model is a generic model that is useful for a wide variety of applicati
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:options:)-b2re
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:options:)-b2re>
 
 -b2re#app-main)
 
@@ -2277,9 +2259,9 @@ Generating content and performing tasks with Foundation Models
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/exceededcontextwindowsize(_:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/exceededcontextwindowsize(>_:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -2350,63 +2332,61 @@ A refusal produced by a language model.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/expanding-generation-with-tool-calling).
+# <https://developer.apple.com/documentation/foundationmodels/expanding-generation-with-tool-calling>)
 
 .#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/default)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/default>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:options:)-b2re)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:options:)-b2re>)
 
 -b2re)#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/generating-swift-data-structures-with-guided-generation).
+# <https://developer.apple.com/documentation/foundationmodels/generating-swift-data-structures-with-guided-generation>)
 
 .#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/exceededcontextwindowsize(_:)).
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/exceededcontextwindowsize(>_:))
 
 ).#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession).
-
-
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/supportslocale(_:)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/supportslocale(>_:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - SystemLanguageModel
@@ -2428,7 +2408,7 @@ Use this method over `supportedLanguages` to check whether the given locale qual
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/supportedlanguages
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/supportedlanguages>
 
 - Foundation Models
 - SystemLanguageModel
@@ -2450,9 +2430,9 @@ To check if a given locale is considered supported by the model, use `supportsLo
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:options:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:options>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -2515,9 +2495,9 @@ Options that control how the model generates its response to a prompt.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/unsupportedlanguageorlocale(_:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/unsupportedlanguageorlocale(>_:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -2582,51 +2562,49 @@ A refusal produced by a language model.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/supportslocale(_:))
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/supportslocale(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/supportedlanguages)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/supportedlanguages>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:options:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:options>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession),
-
-
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/unsupportedlanguageorlocale(_:)).
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/unsupportedlanguageorlocale(>_:))
 
 ).#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase/general
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase/general>
 
 - Foundation Models
 - SystemLanguageModel
@@ -2659,7 +2637,7 @@ Enhance the experience in your app by prompting an on-device large language mode
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/categorizing-and-organizing-data-with-content-tags
+# <https://developer.apple.com/documentation/foundationmodels/categorizing-and-organizing-data-with-content-tags>
 
 - Foundation Models
 - SystemLanguageModel.UseCase
@@ -2775,7 +2753,7 @@ A use case for content tagging.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase/contenttagging
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase/contenttagging>
 
 - Foundation Models
 - SystemLanguageModel
@@ -2806,33 +2784,33 @@ Identify topics, actions, objects, and emotions in input text with a content tag
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase/general)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase/general>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/categorizing-and-organizing-data-with-content-tags)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase/contenttagging)
+# <https://developer.apple.com/documentation/foundationmodels/categorizing-and-organizing-data-with-content-tags>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions:)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase/contenttagging>)
 
-#app-main)
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions>:)
+
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -2880,9 +2858,9 @@ Details you provide that define the model’s intended behavior on prompts.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/prewarm(promptprefix:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/prewarm(promptprefix>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -2904,7 +2882,7 @@ If you know a prefix for the future prompt, passing it to prewarm will allow the
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/isresponding
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/isresponding>
 
 - Foundation Models
 - LanguageModelSession
@@ -2934,7 +2912,7 @@ A full history of interactions, including user inputs and model responses.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/transcript
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/transcript>
 
 - Foundation Models
 - LanguageModelSession
@@ -2962,9 +2940,9 @@ A Boolean value that indicates a response is being generated.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(options:prompt:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(options:prompt>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -3022,9 +3000,9 @@ Options that control how the model generates its response to a prompt.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(generating:includeschemainprompt:options:prompt:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(generating:includeschemainprompt:options:prompt>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -3096,9 +3074,9 @@ Options that control how the model generates its response to a prompt.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(schema:includeschemainprompt:options:prompt:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(schema:includeschemainprompt:options:prompt>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -3170,9 +3148,9 @@ Options that control how the model generates its response to a prompt.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:generating:includeschemainprompt:options:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:generating:includeschemainprompt:options>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -3245,9 +3223,9 @@ Options that control how the model generates its response to a prompt.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:schema:includeschemainprompt:options:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:schema:includeschemainprompt:options>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -3320,7 +3298,7 @@ Options that control how the model generates its response to a prompt.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/response
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/response>
 
 - Foundation Models
 - LanguageModelSession
@@ -3374,9 +3352,9 @@ Options that control how the model generates its response to a prompt.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:options:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:options>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -3438,9 +3416,9 @@ A type that can be converted to generated content.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:generating:includeschemainprompt:options:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:generating:includeschemainprompt:options>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -3515,9 +3493,9 @@ A type that can be converted to generated content.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:schema:includeschemainprompt:options:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:schema:includeschemainprompt:options>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -3593,9 +3571,9 @@ A type that can be converted to generated content.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(options:prompt:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(options:prompt>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -3656,9 +3634,9 @@ A type that can be converted to generated content.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(generating:includeschemainprompt:options:prompt:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(generating:includeschemainprompt:options:prompt>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -3728,9 +3706,9 @@ A type that can be converted to generated content.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(schema:includeschemainprompt:options:prompt:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(schema:includeschemainprompt:options:prompt>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -3805,7 +3783,7 @@ A type that can be converted to generated content.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/responsestream
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/responsestream>
 
 - Foundation Models
 - LanguageModelSession
@@ -3866,7 +3844,7 @@ A type that can be converted to generated content.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/generatedcontent
+# <https://developer.apple.com/documentation/foundationmodels/generatedcontent>
 
 - Foundation Models
 - GeneratedContent
@@ -4009,7 +3987,7 @@ A type that can be converted to generated content.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/convertiblefromgeneratedcontent
+# <https://developer.apple.com/documentation/foundationmodels/convertiblefromgeneratedcontent>
 
 - Foundation Models
 - ConvertibleFromGeneratedContent
@@ -4076,7 +4054,7 @@ A type that can be converted to generated content.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/convertibletogeneratedcontent
+# <https://developer.apple.com/documentation/foundationmodels/convertibletogeneratedcontent>
 
 - Foundation Models
 - ConvertibleToGeneratedContent
@@ -4144,7 +4122,7 @@ A type that can be initialized from generated content.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror>
 
 - Foundation Models
 - LanguageModelSession
@@ -4243,7 +4221,7 @@ An error that occurs while a system language model is calling a tool.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/toolcallerror
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/toolcallerror>
 
 - Foundation Models
 - LanguageModelSession
@@ -4306,227 +4284,225 @@ An error that occurs while generating a response.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:instructions>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:transcript:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/init(model:tools:transcript>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/prewarm(promptprefix:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/prewarm(promptprefix>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/isresponding)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/isresponding>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/transcript)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(options:prompt:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/transcript>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(options:prompt>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(generating:includeschemainprompt:options:prompt:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(generating:includeschemainprompt:options:prompt>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(schema:includeschemainprompt:options:prompt:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(schema:includeschemainprompt:options:prompt>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:generating:includeschemainprompt:options:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:generating:includeschemainprompt:options>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:schema:includeschemainprompt:options:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/respond(to:schema:includeschemainprompt:options>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/response)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/response>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:options:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:options>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:generating:includeschemainprompt:options:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:generating:includeschemainprompt:options>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:schema:includeschemainprompt:options:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(to:schema:includeschemainprompt:options>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(options:prompt:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(options:prompt>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(generating:includeschemainprompt:options:prompt:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(generating:includeschemainprompt:options:prompt>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(schema:includeschemainprompt:options:prompt:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/streamresponse(schema:includeschemainprompt:options:prompt>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/responsestream)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/responsestream>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/generatedcontent)
-
-
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/convertiblefromgeneratedcontent)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/convertibletogeneratedcontent)
+# <https://developer.apple.com/documentation/foundationmodels/generatedcontent>)
 
-# The page you're looking for can't be found.
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/convertiblefromgeneratedcontent>)
+
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:))
+# <https://developer.apple.com/documentation/foundationmodels/convertibletogeneratedcontent>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/toolcallerror)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/loading-and-using-a-custom-adapter-with-foundation-models
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/toolcallerror>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/loading-and-using-a-custom-adapter-with-foundation-models>
 
 - Foundation Models
 - SystemLanguageModel
@@ -4747,7 +4723,7 @@ Specializes the system language model for custom use cases.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum>
 
 - Foundation Models
 - SystemLanguageModel
@@ -4800,9 +4776,9 @@ The availability of the language model.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/init(usecase:guardrails:)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/init(usecase:guardrails>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - SystemLanguageModel
@@ -4833,7 +4809,7 @@ Guardrails flag sensitive content from model input and output.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/guardrails
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/guardrails>
 
 - Foundation Models
 - SystemLanguageModel
@@ -4890,9 +4866,9 @@ A type that represents the use case for prompting.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/init(adapter:guardrails:)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/init(adapter:guardrails>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - SystemLanguageModel
@@ -4927,7 +4903,7 @@ Specializes the system language model for custom use cases.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/adapter
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/adapter>
 
 - Foundation Models
 - SystemLanguageModel
@@ -5007,7 +4983,7 @@ Creates the base version of the model with an adapter.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/isavailable
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/isavailable>
 
 - Foundation Models
 - SystemLanguageModel
@@ -5035,7 +5011,7 @@ The availability status for a specific system language model.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.property
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.property>
 
 - Foundation Models
 - SystemLanguageModel
@@ -5063,87 +5039,87 @@ The availability status for a specific system language model.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/loading-and-using-a-custom-adapter-with-foundation-models)
+# <https://developer.apple.com/documentation/foundationmodels/loading-and-using-a-custom-adapter-with-foundation-models>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase/contenttagging).
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/usecase/contenttagging>)
 
 .#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.enum>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/init(usecase:guardrails:))
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/init(usecase:guardrails>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/guardrails)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/guardrails>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/init(adapter:guardrails:))
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/init(adapter:guardrails>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/adapter)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/adapter>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/isavailable)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.property)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/isavailable>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/call(arguments:)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/availability-swift.property>)
 
-#app-main)
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/foundationmodels/tool/call(arguments>:)
+
+# app-main)
 
 - Foundation Models
 - Tool
@@ -5179,7 +5155,7 @@ The output that this tool produces for the language model to reason about in sub
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/promptrepresentable
+# <https://developer.apple.com/documentation/foundationmodels/promptrepresentable>
 
 - Foundation Models
 - PromptRepresentable
@@ -5226,7 +5202,7 @@ A type that represents a prompt builder.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/output
+# <https://developer.apple.com/documentation/foundationmodels/tool/output>
 
 - Foundation Models
 - Tool
@@ -5258,7 +5234,7 @@ The arguments that this tool should accept.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/arguments
+# <https://developer.apple.com/documentation/foundationmodels/tool/arguments>
 
 - Foundation Models
 - Tool
@@ -5294,7 +5270,7 @@ The output that this tool produces for the language model to reason about in sub
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/description
+# <https://developer.apple.com/documentation/foundationmodels/tool/description>
 
 - Foundation Models
 - Tool
@@ -5330,7 +5306,7 @@ A schema for the parameters this tool accepts.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/includesschemaininstructions
+# <https://developer.apple.com/documentation/foundationmodels/tool/includesschemaininstructions>
 
 - Foundation Models
 - Tool
@@ -5376,7 +5352,7 @@ A schema for the parameters this tool accepts.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/name
+# <https://developer.apple.com/documentation/foundationmodels/tool/name>
 
 - Foundation Models
 - Tool
@@ -5418,7 +5394,7 @@ A schema for the parameters this tool accepts.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/parameters
+# <https://developer.apple.com/documentation/foundationmodels/tool/parameters>
 
 - Foundation Models
 - Tool
@@ -5460,67 +5436,53 @@ A unique name for the tool, such as “get\_weather”, “toggleDarkMode”, or
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/call(arguments:))
-
-
+# <https://developer.apple.com/documentation/foundationmodels/tool/call(arguments>:))
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/convertiblefromgeneratedcontent),
+# <https://developer.apple.com/documentation/foundationmodels/convertiblefromgeneratedcontent>)
 
 ,#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/promptrepresentable),
-
-
+# <https://developer.apple.com/documentation/foundationmodels/promptrepresentable>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/output)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/tool/output>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/arguments)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/tool/arguments>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/description)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/tool/description>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/includesschemaininstructions)
+# <https://developer.apple.com/documentation/foundationmodels/tool/includesschemaininstructions>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/name)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/tool/name>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/tool/parameters)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/tool/parameters>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/promptbuilder
+# <https://developer.apple.com/documentation/foundationmodels/promptbuilder>
 
 - Foundation Models
 - PromptBuilder
@@ -5566,9 +5528,9 @@ A protocol that represents a prompt.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/prompt/init(_:)
+# <https://developer.apple.com/documentation/foundationmodels/prompt/init(>_:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - Prompt
@@ -5594,37 +5556,31 @@ A protocol that represents a prompt.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/promptbuilder)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/promptbuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/improving-the-safety-of-generative-model-output).
+# <https://developer.apple.com/documentation/foundationmodels/improving-the-safety-of-generative-model-output>)
 
 .#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/prompt/init(_:))
-
-
+# <https://developer.apple.com/documentation/foundationmodels/prompt/init(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/promptrepresentable)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/promptrepresentable>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/instructions/init(_:)
+# <https://developer.apple.com/documentation/foundationmodels/instructions/init(>_:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - Instructions
@@ -5650,7 +5606,7 @@ Conforming types represent instructions.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/instructionsbuilder
+# <https://developer.apple.com/documentation/foundationmodels/instructionsbuilder>
 
 - Foundation Models
 - InstructionsBuilder
@@ -5696,7 +5652,7 @@ Conforming types represent instructions.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/instructionsrepresentable
+# <https://developer.apple.com/documentation/foundationmodels/instructionsrepresentable>
 
 - Foundation Models
 - InstructionsRepresentable
@@ -5743,27 +5699,21 @@ A type that represents an instructions builder.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/instructions/init(_:))
-
-
+# <https://developer.apple.com/documentation/foundationmodels/instructions/init(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/instructionsbuilder)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/instructionsbuilder>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/instructionsrepresentable)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/instructionsrepresentable>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/guardrailviolation(_:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/guardrailviolation(>_:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -5828,9 +5778,9 @@ A refusal produced by a language model.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/refusal(_:_:)
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/refusal(>_:_:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - LanguageModelSession
@@ -5895,7 +5845,7 @@ A refusal produced by a language model.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/guardrails/permissivecontenttransformations
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/guardrails/permissivecontenttransformations>
 
 - Foundation Models
 - SystemLanguageModel
@@ -5930,43 +5880,41 @@ Default guardrails. This mode ensures that unsafe content in prompts and respon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/guardrailviolation(_:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/guardrailviolation(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/refusal(_:_:))
+# <https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/refusal(>_:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/guardrails/permissivecontenttransformations)
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/guardrails/permissivecontenttransformations>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel):
-
-
+# <https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/init(entries:)
+# <https://developer.apple.com/documentation/foundationmodels/transcript/init(entries>:)
 
-#app-main)
+# app-main)
 
 - Foundation Models
 - Transcript
@@ -5998,7 +5946,7 @@ The types of segments that may be included in a transcript entry.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/entry
+# <https://developer.apple.com/documentation/foundationmodels/transcript/entry>
 
 - Foundation Models
 - Transcript
@@ -6057,7 +6005,7 @@ The types of segments that may be included in a transcript entry.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/segment
+# <https://developer.apple.com/documentation/foundationmodels/transcript/segment>
 
 - Foundation Models
 - Transcript
@@ -6106,7 +6054,7 @@ An entry in a transcript.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/instructions
+# <https://developer.apple.com/documentation/foundationmodels/transcript/instructions>
 
 - Foundation Models
 - Transcript
@@ -6195,7 +6143,7 @@ A tool output provided
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/prompt
+# <https://developer.apple.com/documentation/foundationmodels/transcript/prompt>
 
 - Foundation Models
 - Transcript
@@ -6288,7 +6236,7 @@ A tool output provided
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/response
+# <https://developer.apple.com/documentation/foundationmodels/transcript/response>
 
 - Foundation Models
 - Transcript
@@ -6371,7 +6319,7 @@ A tool output provided
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/responseformat
+# <https://developer.apple.com/documentation/foundationmodels/transcript/responseformat>
 
 - Foundation Models
 - Transcript
@@ -6453,7 +6401,7 @@ A tool output provided
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/structuredsegment
+# <https://developer.apple.com/documentation/foundationmodels/transcript/structuredsegment>
 
 - Foundation Models
 - Transcript
@@ -6536,7 +6484,7 @@ A tool output provided
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/textsegment
+# <https://developer.apple.com/documentation/foundationmodels/transcript/textsegment>
 
 - Foundation Models
 - Transcript
@@ -6613,7 +6561,7 @@ A tool output provided
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/toolcall
+# <https://developer.apple.com/documentation/foundationmodels/transcript/toolcall>
 
 - Foundation Models
 - Transcript
@@ -6696,7 +6644,7 @@ A tool output provided
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/toolcalls
+# <https://developer.apple.com/documentation/foundationmodels/transcript/toolcalls>
 
 - Foundation Models
 - Transcript
@@ -6769,7 +6717,7 @@ A tool output provided
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/tooldefinition
+# <https://developer.apple.com/documentation/foundationmodels/transcript/tooldefinition>
 
 - Foundation Models
 - Transcript
@@ -6851,7 +6799,7 @@ A tool output provided
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/tooloutput
+# <https://developer.apple.com/documentation/foundationmodels/transcript/tooloutput>
 
 - Foundation Models
 - Transcript
@@ -6934,27 +6882,18 @@ A definition of a tool.
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/init(entries:))
-
-
+# <https://developer.apple.com/documentation/foundationmodels/transcript/init(entries>:))
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/entry)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/transcript/entry>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/segment)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/transcript/segment>)
 
 ---
 
-# https://developer.apple.com/documentation/foundationmodels/transcript/instructions)
-
-
+# <https://developer.apple.com/documentation/foundationmodels/transcript/instructions>)
 
 ---
-

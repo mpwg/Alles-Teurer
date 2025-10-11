@@ -8,7 +8,7 @@ Availability strings filtered: Yes
 Comprehensive filtering: Yes
 -->
 
-# https://developer.apple.com/documentation/swiftdata/
+# <https://developer.apple.com/documentation/swiftdata/>
 
 Framework
 
@@ -208,7 +208,7 @@ A type that describes a data store error.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata
+# <https://developer.apple.com/documentation/swiftdata>
 
 Framework
 
@@ -408,9 +408,9 @@ A type that describes a data store error.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/model()
+# <https://developer.apple.com/documentation/swiftdata/model()>
 
-#app-main)
+# app-main)
 
 - SwiftData
 - Model()
@@ -474,9 +474,9 @@ Tells SwiftData not to persist the annotated property when managing the owning c
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/attribute(_:originalname:hashmodifier:)
+# <https://developer.apple.com/documentation/swiftdata/attribute(_:originalname:hashmodifier>:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - Attribute(\_:originalName:hashModifier:)
@@ -559,9 +559,9 @@ Tells SwiftData not to persist the annotated property when managing the owning c
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:)
+# <https://developer.apple.com/documentation/swiftdata/relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier>:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - Relationship(\_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)
@@ -677,7 +677,7 @@ Tells SwiftData not to persist the annotated property when managing the owning c
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext
+# <https://developer.apple.com/documentation/swiftdata/modelcontext>
 
 - SwiftData
 - ModelContext
@@ -896,9 +896,9 @@ Types you use to access model attributes and perform storage-related tasks in a 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/query()
+# <https://developer.apple.com/documentation/swiftdata/query()>
 
-#app-main)
+# app-main)
 
 - SwiftData
 - Query()
@@ -934,7 +934,7 @@ A type that describes the criteria, sort order, and any additional configuration
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches
+# <https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches>
 
 - SwiftData
 - Preserving your app’s model data across launches
@@ -1111,7 +1111,7 @@ Add flexibility to your models using class inheritance.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app
+# <https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app>
 
 - SwiftData
 - Adding and editing persistent data in your app
@@ -1319,7 +1319,7 @@ Add flexibility to your models using class inheritance.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/adopting-inheritance-in-swiftdata
+# <https://developer.apple.com/documentation/swiftdata/adopting-inheritance-in-swiftdata>
 
 - SwiftData
 - Adopting inheritance in SwiftData
@@ -1469,7 +1469,7 @@ _trips = Query(filter: searchPredicate, sort: \.startDate, order: .forward)
 }
 
 var body: some View {
-/* View body contents */
+/*View body contents*/
 }
 }
 
@@ -1564,7 +1564,7 @@ Learn about important changes to SwiftData.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/index(_:)-7d4z0
+# <https://developer.apple.com/documentation/swiftdata/index(_:)-7d4z0>
 
 -7d4z0#app-main)
 
@@ -1611,7 +1611,7 @@ Tells SwiftData not to persist the annotated property when managing the owning c
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes
+# <https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes>
 
 - SwiftData
 - Defining data relationships with enumerations and model classes
@@ -1749,9 +1749,9 @@ Tells SwiftData not to persist the annotated property when managing the owning c
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/transient()
+# <https://developer.apple.com/documentation/swiftdata/transient()>
 
-#app-main)
+# app-main)
 
 - SwiftData
 - Transient()
@@ -1820,7 +1820,7 @@ Specifies the options that SwiftData needs to manage the annotated property as a
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer>
 
 - SwiftData
 - ModelContainer
@@ -1975,7 +1975,7 @@ Types you use to access model attributes and perform storage-related tasks in a 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/fetching-and-filtering-time-based-model-changes
+# <https://developer.apple.com/documentation/swiftdata/fetching-and-filtering-time-based-model-changes>
 
 - SwiftData
 - Fetching and filtering time-based model changes
@@ -2119,7 +2119,7 @@ Types you use to access model attributes and perform storage-related tasks in a 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historydescriptor
+# <https://developer.apple.com/documentation/swiftdata/historydescriptor>
 
 - SwiftData
 - HistoryDescriptor
@@ -2182,7 +2182,7 @@ Types you use to access model attributes and perform storage-related tasks in a 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/deleting-persistent-data-from-your-app
+# <https://developer.apple.com/documentation/swiftdata/deleting-persistent-data-from-your-app>
 
 - SwiftData
 - Deleting persistent data from your app
@@ -2383,7 +2383,7 @@ Types you use to access model attributes and perform storage-related tasks in a 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/reverting-data-changes-using-the-undo-manager
+# <https://developer.apple.com/documentation/swiftdata/reverting-data-changes-using-the-undo-manager>
 
 - SwiftData
 - Reverting data changes using the undo manager
@@ -2454,7 +2454,7 @@ Types you use to access model attributes and perform storage-related tasks in a 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/syncing-model-data-across-a-persons-devices
+# <https://developer.apple.com/documentation/swiftdata/syncing-model-data-across-a-persons-devices>
 
 - SwiftData
 - Syncing model data across a person’s devices
@@ -2515,7 +2515,7 @@ Follow these steps to ensure proper CloudKit schema initialization:
 let config = ModelConfiguration()
 
 do {
-#if DEBUG
+# if DEBUG
 // Use an autorelease pool to make sure Swift deallocates the persistent
 // container before setting up the SwiftData stack.
 try autoreleasepool {
@@ -2541,7 +2541,7 @@ try container.persistentStoreCoordinator.remove(store)
 }
 }
 }
-#endif
+# endif
 modelContainer = try ModelContainer(for: Trip.self, Accommodation.self,
 configurations: config)
 } catch {
@@ -2606,7 +2606,7 @@ Types you use to access model attributes and perform storage-related tasks in a 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/concurrencysupport
+# <https://developer.apple.com/documentation/swiftdata/concurrencysupport>
 
 Collection
 
@@ -2679,7 +2679,7 @@ Add the required capabilities and define a compatible schema to enable SwiftData
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/filtering-and-sorting-persistent-data
+# <https://developer.apple.com/documentation/swiftdata/filtering-and-sorting-persistent-data>
 
 - SwiftData
 - Filtering and sorting persistent data
@@ -2802,7 +2802,7 @@ _selectedIdMap = selectedIdMap
 let predicate = Quake.predicate(searchText: searchText, searchDate: searchDate)
 switch sortParameter {
 case .time: _quakes = Query(filter: predicate, sort: \.time, order: sortOrder)
-case .magnitude: _quakes = Query(filter: predicate, sort: \.magnitude, order: sortOrder)
+case .magnitude:_quakes = Query(filter: predicate, sort: \.magnitude, order: sortOrder)
 }
 }
 
@@ -2828,7 +2828,7 @@ A type that describes the criteria, sort order, and any additional configuration
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/additionalquerymacros
+# <https://developer.apple.com/documentation/swiftdata/additionalquerymacros>
 
 Collection
 
@@ -2889,7 +2889,7 @@ A type that describes the criteria, sort order, and any additional configuration
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/query
+# <https://developer.apple.com/documentation/swiftdata/query>
 
 - SwiftData
 - Query
@@ -2970,7 +2970,7 @@ A type that describes the criteria, sort order, and any additional configuration
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/fetchdescriptor
+# <https://developer.apple.com/documentation/swiftdata/fetchdescriptor>
 
 - SwiftData
 - FetchDescriptor
@@ -3083,7 +3083,7 @@ A type that fetches models using the specified criteria, and manages those model
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/maintaining-a-local-copy-of-server-data
+# <https://developer.apple.com/documentation/swiftdata/maintaining-a-local-copy-of-server-data>
 
 - SwiftData
 - Maintaining a local copy of server data
@@ -3256,7 +3256,7 @@ A document type that uses SwiftData to manage its storage.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaultstore
+# <https://developer.apple.com/documentation/swiftdata/defaultstore>
 
 - SwiftData
 - DefaultStore
@@ -3350,13 +3350,11 @@ A document type that uses SwiftData to manage its storage.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/datastore
-
-
+# <https://developer.apple.com/documentation/swiftdata/datastore>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/datastorebatching
+# <https://developer.apple.com/documentation/swiftdata/datastorebatching>
 
 - SwiftData
 - DataStoreBatching
@@ -3419,7 +3417,7 @@ A document type that uses SwiftData to manage its storage.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historyproviding
+# <https://developer.apple.com/documentation/swiftdata/historyproviding>
 
 - SwiftData
 - HistoryProviding
@@ -3486,7 +3484,7 @@ A document type that uses SwiftData to manage its storage.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modeldocument
+# <https://developer.apple.com/documentation/swiftdata/modeldocument>
 
 - SwiftData
 - ModelDocument
@@ -3533,7 +3531,7 @@ Code along with the WWDC presenter to transform an app with SwiftData.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historychange
+# <https://developer.apple.com/documentation/swiftdata/historychange>
 
 - SwiftData
 - HistoryChange
@@ -3607,67 +3605,47 @@ An interface that enables a custom data store to delete items from the history o
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historydelete
-
-
+# <https://developer.apple.com/documentation/swiftdata/historydelete>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historyinsert
-
-
+# <https://developer.apple.com/documentation/swiftdata/historyinsert>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historytoken
-
-
+# <https://developer.apple.com/documentation/swiftdata/historytoken>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historytransaction
-
-
+# <https://developer.apple.com/documentation/swiftdata/historytransaction>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historyupdate
-
-
+# <https://developer.apple.com/documentation/swiftdata/historyupdate>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historytombstone
-
-
+# <https://developer.apple.com/documentation/swiftdata/historytombstone>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaulthistoryinsert
-
-
+# <https://developer.apple.com/documentation/swiftdata/defaulthistoryinsert>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaulthistoryupdate
-
-
+# <https://developer.apple.com/documentation/swiftdata/defaulthistoryupdate>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaulthistorydelete
-
-
+# <https://developer.apple.com/documentation/swiftdata/defaulthistorydelete>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaulthistorytoken
-
-
+# <https://developer.apple.com/documentation/swiftdata/defaulthistorytoken>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaulthistorytransaction
+# <https://developer.apple.com/documentation/swiftdata/defaulthistorytransaction>
 
 - SwiftData
 - DefaultHistoryTransaction
@@ -3771,7 +3749,7 @@ An interface that enables a custom data store to delete items from the history o
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/datastoresnapshotcodingkey
+# <https://developer.apple.com/documentation/swiftdata/datastoresnapshotcodingkey>
 
 - SwiftData
 - DataStoreSnapshotCodingKey
@@ -3834,7 +3812,7 @@ Creates a new instance from the specified integer.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/swiftdataerror
+# <https://developer.apple.com/documentation/swiftdata/swiftdataerror>
 
 - SwiftData
 - SwiftDataError
@@ -3931,7 +3909,7 @@ A type that describes a data store error.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/datastoreerror
+# <https://developer.apple.com/documentation/swiftdata/datastoreerror>
 
 - SwiftData
 - DataStoreError
@@ -3993,301 +3971,231 @@ A type that describes a SwiftData error.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/model())
-
-
+# <https://developer.apple.com/documentation/swiftdata/model()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/attribute(_:originalname:hashmodifier:))
+# <https://developer.apple.com/documentation/swiftdata/attribute(_:originalname:hashmodifier>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:))
+# <https://developer.apple.com/documentation/swiftdata/relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/query())
-
-
+# <https://developer.apple.com/documentation/swiftdata/query()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches)
-
-
+# <https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app)
+# <https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/adopting-inheritance-in-swiftdata)
+# <https://developer.apple.com/documentation/swiftdata/adopting-inheritance-in-swiftdata>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftdata/unique(_:))
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftdata/index(_:)-74ia2)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftdata/index(_:)-7d4z0)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/transient())
-
-
+# <https://developer.apple.com/documentation/swiftdata/unique(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer)
-
-
+# <https://developer.apple.com/documentation/swiftdata/index(_:)-74ia2>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/fetching-and-filtering-time-based-model-changes)
+# <https://developer.apple.com/documentation/swiftdata/index(_:)-7d4z0>)
 
-# The page you're looking for can't be found.
+---
+
+# <https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes>)
+
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historydescriptor)
-
-
+# <https://developer.apple.com/documentation/swiftdata/transient()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/deleting-persistent-data-from-your-app)
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer>)
 
-# The page you're looking for can't be found.
+---
+
+# <https://developer.apple.com/documentation/swiftdata/fetching-and-filtering-time-based-model-changes>)
+
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/reverting-data-changes-using-the-undo-manager)
+# <https://developer.apple.com/documentation/swiftdata/historydescriptor>)
 
-# The page you're looking for can't be found.
+---
+
+# <https://developer.apple.com/documentation/swiftdata/deleting-persistent-data-from-your-app>)
+
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/syncing-model-data-across-a-persons-devices)
+# <https://developer.apple.com/documentation/swiftdata/reverting-data-changes-using-the-undo-manager>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftdata/concurrencysupport)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftdata/filtering-and-sorting-persistent-data)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/additionalquerymacros)
+# <https://developer.apple.com/documentation/swiftdata/syncing-model-data-across-a-persons-devices>)
 
+# The page you're looking for can't be found
 
-
----
-
-# https://developer.apple.com/documentation/swiftdata/query)
-
-
+Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/fetchdescriptor)
-
-
+# <https://developer.apple.com/documentation/swiftdata/concurrencysupport>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/maintaining-a-local-copy-of-server-data)
+# <https://developer.apple.com/documentation/swiftdata/filtering-and-sorting-persistent-data>)
 
+# The page you're looking for can't be found
 
-
----
-
-# https://developer.apple.com/documentation/swiftdata/defaultstore)
-
-
+Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/datastore)
-
-
+# <https://developer.apple.com/documentation/swiftdata/additionalquerymacros>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/datastorebatching)
-
-
+# <https://developer.apple.com/documentation/swiftdata/query>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historyproviding)
-
-
+# <https://developer.apple.com/documentation/swiftdata/fetchdescriptor>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modeldocument)
-
-
+# <https://developer.apple.com/documentation/swiftdata/maintaining-a-local-copy-of-server-data>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historychange)
-
-
+# <https://developer.apple.com/documentation/swiftdata/defaultstore>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historydelete)
-
-
+# <https://developer.apple.com/documentation/swiftdata/datastore>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historyinsert)
-
-
+# <https://developer.apple.com/documentation/swiftdata/datastorebatching>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historytoken)
-
-
+# <https://developer.apple.com/documentation/swiftdata/historyproviding>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historytransaction)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modeldocument>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historyupdate)
-
-
+# <https://developer.apple.com/documentation/swiftdata/historychange>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historytombstone)
-
-
+# <https://developer.apple.com/documentation/swiftdata/historydelete>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaulthistoryinsert)
-
-
+# <https://developer.apple.com/documentation/swiftdata/historyinsert>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaulthistoryupdate)
-
-
+# <https://developer.apple.com/documentation/swiftdata/historytoken>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaulthistorydelete)
-
-
+# <https://developer.apple.com/documentation/swiftdata/historytransaction>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaulthistorytoken)
-
-
+# <https://developer.apple.com/documentation/swiftdata/historyupdate>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaulthistorytransaction)
-
-
+# <https://developer.apple.com/documentation/swiftdata/historytombstone>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/datastoresnapshotcodingkey)
-
-
+# <https://developer.apple.com/documentation/swiftdata/defaulthistoryinsert>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/swiftdataerror)
-
-
+# <https://developer.apple.com/documentation/swiftdata/defaulthistoryupdate>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/datastoreerror)
-
-
+# <https://developer.apple.com/documentation/swiftdata/defaulthistorydelete>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option
+# <https://developer.apple.com/documentation/swiftdata/defaulthistorytoken>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/defaulthistorytransaction>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/datastoresnapshotcodingkey>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/swiftdataerror>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/datastoreerror>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option>
 
 - SwiftData
 - Schema
@@ -4352,7 +4260,7 @@ Ensures the property’s value is unique across all models of the same type.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum>
 
 - SwiftData
 - Schema
@@ -4440,7 +4348,7 @@ The raw type that can be used to represent all values of the conforming type.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/nullify
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/nullify>
 
 - SwiftData
 - Schema
@@ -4476,41 +4384,33 @@ A rule that doesn’t make changes to any related models.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/RemoteImage
-
-
+# <https://developer.apple.com/documentation/swiftdata/RemoteImage>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option).
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum).
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum>)
 
 .#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/nullify).
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/nullify>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes).
-
-
+# <https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option>
 
 - SwiftData
 - Schema
@@ -4570,13 +4470,11 @@ Track changes to this property but do not persist
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option).
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/persistentmodel
+# <https://developer.apple.com/documentation/swiftdata/persistentmodel>
 
 - SwiftData
 - PersistentModel
@@ -4629,7 +4527,7 @@ Restricted-use symbols that the framework requires for macro expansion and other
 
 ### Type Methods
 
-`](https://developer.apple.com/documentation/swiftdata/persistentmodel/createbackingdata())
+`](<https://developer.apple.com/documentation/swiftdata/persistentmodel/createbackingdata()>)
 
 ## Relationships
 
@@ -4670,25 +4568,23 @@ An interface for describing the evolution of a schema and how to migrate between
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/persistentmodel)
-
-
+# <https://developer.apple.com/documentation/swiftdata/persistentmodel>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches).
+# <https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches>)
 
 .#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/save()
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/save()>
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -4726,7 +4622,7 @@ Discards pending inserts and deletes, restores changed models to their most rece
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/autosaveenabled
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/autosaveenabled>
 
 - SwiftData
 - ModelContext
@@ -4768,9 +4664,9 @@ Discards pending inserts and deletes, restores changed models to their most rece
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/insert(_:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/insert(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -4804,9 +4700,9 @@ The array of inserted models that the context is yet to persist.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/delete(_:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/delete(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -4842,9 +4738,9 @@ Removes each model satisfying the given predicate from the persistent storage du
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/delete(model:where:includesubclasses:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/delete(model:where:includesubclasses>:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -4891,7 +4787,7 @@ Removes the specified model from the persistent storage during the next save ope
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/haschanges
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/haschanges>
 
 - SwiftData
 - ModelContext
@@ -4917,9 +4813,9 @@ The array of registered models that have unsaved changes.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/rollback()
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/rollback()>
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -4951,9 +4847,9 @@ Runs the provided closure, and once it finishes, writes any pending inserts, cha
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/fetch(_:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/fetch(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -5001,9 +4897,9 @@ Returns the typed model for the specified identifier.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/fetch(_:batchsize:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/fetch(_:batchsize>:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -5061,9 +4957,9 @@ Returns the typed model for the specified identifier.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/fetchcount(_:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/fetchcount(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -5111,9 +5007,9 @@ Returns the typed model for the specified identifier.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/fetchidentifiers(_:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/fetchidentifiers(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -5145,9 +5041,9 @@ Returns a collection of persistent identifiers, in batches, where each identifie
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/fetchidentifiers(_:batchsize:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/fetchidentifiers(_:batchsize>:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -5189,7 +5085,7 @@ Returns an array of persistent identifiers, where each identifier represents a s
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/willsave
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/willsave>
 
 - SwiftData
 - ModelContext
@@ -5221,7 +5117,7 @@ Describes the data in the user info dictionary of a notification sent by a model
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/didsave
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/didsave>
 
 - SwiftData
 - ModelContext
@@ -5255,13 +5151,11 @@ Describes the data in the user info dictionary of a notification sent by a model
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/init(_:)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/init(>_:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/fetchresultscollection
+# <https://developer.apple.com/documentation/swiftdata/fetchresultscollection>
 
 - SwiftData
 - FetchResultsCollection
@@ -5339,9 +5233,9 @@ Returns the typed model for the specified identifier.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/enumerate(_:batchsize:allowescapingmutations:block:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/enumerate(_:batchsize:allowescapingmutations:block>:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -5402,9 +5296,9 @@ Returns the typed model for the specified identifier.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/model(for:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/model(for>:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -5452,9 +5346,9 @@ Returns the typed model for the specified identifier.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/registeredmodel(for:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/registeredmodel(for>:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -5502,9 +5396,9 @@ Returns the persistent model for the specified identifier.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/transaction(block:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/transaction(block>:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -5542,7 +5436,7 @@ Discards pending inserts and deletes, restores changed models to their most rece
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/container
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/container>
 
 - SwiftData
 - ModelContext
@@ -5564,9 +5458,9 @@ The property provides a reference to the model container you specify when callin
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/processpendingchanges()
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/processpendingchanges()>
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -5596,7 +5490,7 @@ The object that provides undo support for the context.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/undomanager
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/undomanager>
 
 - SwiftData
 - ModelContext
@@ -5630,7 +5524,7 @@ Tells the undo manager to record any changes made to the context’s registered 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/notificationkey
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/notificationkey>
 
 - SwiftData
 - ModelContext
@@ -5711,9 +5605,9 @@ A notification that posts when the context finishes processing pending inserts, 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/==(_:_:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/==(>_:_:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -5743,19 +5637,15 @@ Equality is the inverse of inequality. For any values `a` and `b`, `a == b` impl
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/debugdescription
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/debugdescription>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/author
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/author>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/editingstate
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/editingstate>
 
 - SwiftData
 - ModelContext
@@ -5771,9 +5661,9 @@ var editingState: EditingState
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/deletehistory(_:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/deletehistory(>_:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContext
@@ -5787,7 +5677,7 @@ Swift 5.9+
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/equatable-implementations
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/equatable-implementations>
 
 Collection
 
@@ -5807,269 +5697,205 @@ Returns a Boolean value indicating whether two values are not equal.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/save()).
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/save()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/autosaveenabled).
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/autosaveenabled>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/insert(_:))
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/insert(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/delete(_:))
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/delete(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/delete(model:where:includesubclasses:)).
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/delete(model:where:includesubclasses>:))
 
 ).#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/haschanges)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/haschanges>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/rollback())
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/rollback()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/fetch(_:))
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/fetch(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/fetch(_:batchsize:))
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/fetch(_:batchsize>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/fetchcount(_:))
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/fetchcount(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/fetchidentifiers(_:))
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/fetchidentifiers(>_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/fetchidentifiers(_:batchsize:))
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/fetchidentifiers(_:batchsize>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/willsave)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/willsave>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/didsave)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/didsave>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/init(_:))
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/init(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/fetchresultscollection)
-
-
+# <https://developer.apple.com/documentation/swiftdata/fetchresultscollection>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/enumerate(_:batchsize:allowescapingmutations:block:))
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/enumerate(_:batchsize:allowescapingmutations:block>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/model(for:))
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/model(for>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/registeredmodel(for:))
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/registeredmodel(for>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/insertedmodelsarray)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/insertedmodelsarray>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/changedmodelsarray)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/changedmodelsarray>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/deletedmodelsarray)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/deletedmodelsarray>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/delete(model:where:includesubclasses:))
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/delete(model:where:includesubclasses>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/autosaveenabled)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/autosaveenabled>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/save())
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/save()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/transaction(block:))
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/transaction(block>:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/container)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/container>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/processpendingchanges())
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/processpendingchanges()>)
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/undomanager)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/undomanager>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/notificationkey)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/notificationkey>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/==(_:_:))
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/==(>_:_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/debugdescription)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/debugdescription>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/author)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/author>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/editingstate)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/editingstate>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/deletehistory(_:))
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/deletehistory(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/fetchhistory(_:))
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/fetchhistory(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/equatable-implementations)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/equatable-implementations>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/BucketListItem
-
-
+# <https://developer.apple.com/documentation/swiftdata/BucketListItem>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/Animal
-
-
+# <https://developer.apple.com/documentation/swiftdata/Animal>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/unique
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/unique>
 
 - SwiftData
 - Schema
@@ -6115,13 +5941,11 @@ Transforms the property’s value between an in-memory form and a persisted form
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/unique).
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/unique>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelconfiguration
+# <https://developer.apple.com/documentation/swiftdata/modelconfiguration>
 
 - SwiftData
 - ModelConfiguration
@@ -6275,21 +6099,17 @@ An interface for describing the evolution of a schema and how to migrate between
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelconfiguration)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelconfiguration>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext).
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelactor()
+# <https://developer.apple.com/documentation/swiftdata/modelactor()>
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelActor()
@@ -6314,7 +6134,7 @@ An interface for providing mutually-exclusive access to the attributes of a conf
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelactor
+# <https://developer.apple.com/documentation/swiftdata/modelactor>
 
 - SwiftData
 - ModelActor
@@ -6375,7 +6195,7 @@ Converts a Swift actor into a model actor by generating boilerplate code that fu
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaultserialmodelexecutor
+# <https://developer.apple.com/documentation/swiftdata/defaultserialmodelexecutor>
 
 - SwiftData
 - DefaultSerialModelExecutor
@@ -6426,7 +6246,7 @@ An interface for performing storage-related tasks using an isolated model contex
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/serialmodelexecutor
+# <https://developer.apple.com/documentation/swiftdata/serialmodelexecutor>
 
 - SwiftData
 - SerialModelExecutor
@@ -6469,7 +6289,7 @@ An interface for performing storage-related tasks using an isolated model contex
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelexecutor
+# <https://developer.apple.com/documentation/swiftdata/modelexecutor>
 
 - SwiftData
 - ModelExecutor
@@ -6522,37 +6342,27 @@ An interface for performing serial storage-related tasks using an isolated model
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelactor())
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelactor()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelactor)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelactor>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/defaultserialmodelexecutor)
-
-
+# <https://developer.apple.com/documentation/swiftdata/defaultserialmodelexecutor>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/serialmodelexecutor)
-
-
+# <https://developer.apple.com/documentation/swiftdata/serialmodelexecutor>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelexecutor)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelexecutor>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/persistentmodel/persistentmodelid
+# <https://developer.apple.com/documentation/swiftdata/persistentmodel/persistentmodelid>
 
 - SwiftData
 - PersistentModel
@@ -6582,61 +6392,55 @@ A type that describes the aggregate identity of a SwiftData model.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/preservevalueondeletion
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/preservevalueondeletion>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/persistentmodel/persistentmodelid)
+# <https://developer.apple.com/documentation/swiftdata/persistentmodel/persistentmodelid>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/preservevalueondeletion)
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/preservevalueondeletion>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/cascade
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/cascade>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app).
+# <https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app>)
 
 .#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/cascade)
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/cascade>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/nullify)
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/nullify>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historydescriptor/init(predicate:)
+# <https://developer.apple.com/documentation/swiftdata/historydescriptor/init(predicate>:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - HistoryDescriptor
@@ -6658,7 +6462,7 @@ Initializes a new history descriptor with the provided predicate and sort descri
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historydescriptor/fetchlimit
+# <https://developer.apple.com/documentation/swiftdata/historydescriptor/fetchlimit>
 
 - SwiftData
 - HistoryDescriptor
@@ -6688,7 +6492,7 @@ The sort descriptor to use to sort the returned history data.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historydescriptor/predicate
+# <https://developer.apple.com/documentation/swiftdata/historydescriptor/predicate>
 
 - SwiftData
 - HistoryDescriptor
@@ -6714,93 +6518,71 @@ The sort descriptor to use to sort the returned history data.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historydescriptor/init(predicate:))
+# <https://developer.apple.com/documentation/swiftdata/historydescriptor/init(predicate>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historydescriptor/init(predicate:sortby:))
+# <https://developer.apple.com/documentation/swiftdata/historydescriptor/init(predicate:sortby>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historydescriptor/fetchlimit)
-
-
+# <https://developer.apple.com/documentation/swiftdata/historydescriptor/fetchlimit>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historydescriptor/predicate)
-
-
+# <https://developer.apple.com/documentation/swiftdata/historydescriptor/predicate>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/historydescriptor/sortby)
-
-
+# <https://developer.apple.com/documentation/swiftdata/historydescriptor/sortby>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer/maincontext
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer/maincontext>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer/maincontext)
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer/maincontext>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer).
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer/deletealldata()
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer/deletealldata()>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/delete(_:)).
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/delete(>_:))
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontext/save());
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontext/save()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum).)
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum>).)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer/deletealldata()).
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer/deletealldata()>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schemamigrationplan
+# <https://developer.apple.com/documentation/swiftdata/schemamigrationplan>
 
 - SwiftData
 - SchemaMigrationPlan
@@ -6865,7 +6647,7 @@ An object that maps model classes to data in the model store, and helps with the
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer/init(for:migrationplan:configurations:)-8s4ts
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer/init(for:migrationplan:configurations:)-8s4ts>
 
 -8s4ts#app-main)
 
@@ -6933,7 +6715,7 @@ An interface for describing the evolution of a schema and how to migrate between
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer/init(for:migrationplan:configurations:)-qof9
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer/init(for:migrationplan:configurations:)-qof9>
 
 -qof9#app-main)
 
@@ -7001,13 +6783,11 @@ An interface for describing the evolution of a schema and how to migrate between
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer/schema
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer/schema>
 
 - SwiftData
 - ModelContainer
@@ -7039,7 +6819,7 @@ The plan that describes the evolution of your app’s schema and how to migrate 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer/configurations
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer/configurations>
 
 - SwiftData
 - ModelContainer
@@ -7071,7 +6851,7 @@ The plan that describes the evolution of your app’s schema and how to migrate 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer/migrationplan
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer/migrationplan>
 
 - SwiftData
 - ModelContainer
@@ -7103,9 +6883,9 @@ The configurations that describe how to manage the persisted data for specific g
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer/==(_:_:)
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer/==(>_:_:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - ModelContainer
@@ -7135,7 +6915,7 @@ Equality is the inverse of inequality. For any values `a` and `b`, `a == b` impl
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer/init(for:configurations:)-621ei
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer/init(for:configurations:)-621ei>
 
 -621ei#app-main)
 
@@ -7156,21 +6936,17 @@ configurations: any DataStoreConfiguration...
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/modelcontainer/erase()
-
-
+# <https://developer.apple.com/documentation/swiftdata/modelcontainer/erase()>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/==(_:_:)
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/==(>_:_:)
 
-#app-main)
+# app-main)
 
 - SwiftData
 - Schema
@@ -7202,13 +6978,11 @@ Equality is the inverse of inequality. For any values `a` and `b`, `a == b` impl
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/init(from:)
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/init(from>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/debugdescription
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/debugdescription>
 
 - SwiftData
 - Schema
@@ -7247,7 +7021,7 @@ The conversion of `p` to a string in the assignment to `s` uses the `Point` type
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/hashvalue
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/hashvalue>
 
 - SwiftData
 - Schema
@@ -7271,25 +7045,19 @@ Hash values are not guaranteed to be equal across different executions of your p
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/encode(to:)
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/encode(to>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/hash(into:)
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/hash(into>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/unique
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/unique>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/equatable-implementations
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/equatable-implementations>
 
 Collection
 
@@ -7315,91 +7083,87 @@ Returns a Boolean value indicating whether two values are not equal.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema)
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship)
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/==(_:_:))
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/==(>_:_:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/init(from:))
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/init(from>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/debugdescription)
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/debugdescription>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/hashvalue)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/encode(to:))
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/hashvalue>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/encode(to>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/hash(into:))
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/hash(into>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/unique)
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/unique>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/option/equatable-implementations)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/deny
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/option/equatable-implementations>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/deny>
 
 - SwiftData
 - Schema
@@ -7439,7 +7203,7 @@ A rule that nullifies the related model’s reference to the deleted model.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/noaction
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/noaction>
 
 - SwiftData
 - Schema
@@ -7479,13 +7243,11 @@ A rule that nullifies the related model’s reference to the deleted model.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/init(rawvalue:)
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/init(rawvalue>:)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/rawvalue-swift.property
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/rawvalue-swift.property>
 
 - SwiftData
 - Schema
@@ -7520,7 +7282,7 @@ print(selectedSize == PaperSize(rawValue: selectedSize.rawValue)!)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/rawvalue-swift.typealias
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/rawvalue-swift.typealias>
 
 - SwiftData
 - Schema
@@ -7544,7 +7306,7 @@ Every distinct value of the conforming type has a corresponding unique value of 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/equatable-implementations
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/equatable-implementations>
 
 Collection
 
@@ -7570,7 +7332,7 @@ Returns a Boolean value indicating whether two values are not equal.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/rawrepresentable-implementations
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/rawrepresentable-implementations>
 
 Collection
 
@@ -7610,7 +7372,7 @@ Encodes this value into the given encoder, when the type’s `RawValue` is `Stri
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/keypath
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/keypath>
 
 - SwiftData
 - Schema
@@ -7645,7 +7407,7 @@ Describes the rule to apply when deleting a model containing references to other
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/destination
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/destination>
 
 - SwiftData
 - Schema
@@ -7680,7 +7442,7 @@ Describes the rule to apply when deleting a model containing references to other
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/inversename
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/inversename>
 
 - SwiftData
 - Schema
@@ -7715,13 +7477,11 @@ Describes the rule to apply when deleting a model containing references to other
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/inversekeypath
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/inversekeypath>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.property
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.property>
 
 - SwiftData
 - Schema
@@ -7756,7 +7516,7 @@ Describes the rule to apply when deleting a model containing references to other
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/istoonerelationship
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/istoonerelationship>
 
 - SwiftData
 - Schema
@@ -7791,113 +7551,105 @@ Describes the rule to apply when deleting a model containing references to other
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/deny)
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/deny>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/noaction)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/init(rawvalue:))
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/noaction>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/init(rawvalue>:))
 
 )#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/rawvalue-swift.property)
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/rawvalue-swift.property>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/rawvalue-swift.typealias)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/equatable-implementations)
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/rawvalue-swift.typealias>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/rawrepresentable-implementations)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/keypath)
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/equatable-implementations>)
 
-
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/destination)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/inversename)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/inversekeypath)
-
-
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.property)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/istoonerelationship)
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum/rawrepresentable-implementations>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/keypath>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/destination>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/inversename>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/inversekeypath>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.property>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/istoonerelationship>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/relationship/deleterule-swift.enum>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute>
 
 - SwiftData
 - Schema
@@ -8014,7 +7766,7 @@ An object that describes an attribute that derives its value by composing other 
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/allowscloudencryption
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/allowscloudencryption>
 
 - SwiftData
 - Schema
@@ -8056,7 +7808,7 @@ Transforms the property’s value between an in-memory form and a persisted form
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/externalstorage
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/externalstorage>
 
 - SwiftData
 - Schema
@@ -8098,7 +7850,7 @@ Transforms the property’s value between an in-memory form and a persisted form
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/spotlight
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/spotlight>
 
 - SwiftData
 - Schema
@@ -8140,13 +7892,11 @@ Transforms the property’s value between an in-memory form and a persisted form
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/transformable(by:)-9d4xh
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/transformable(by:)-9d4xh>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/transformable(by:)-lunz
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/transformable(by:)-lunz>
 
 -lunz#app-main)
 
@@ -8190,13 +7940,11 @@ Transforms the property’s value between an in-memory form and a persisted form
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/ephemeral
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/ephemeral>
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/customdebugstringconvertible-implementations
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/customdebugstringconvertible-implementations>
 
 Collection
 
@@ -8224,7 +7972,7 @@ A textual representation of this instance, suitable for debugging.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/decodable-implementations
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/decodable-implementations>
 
 Collection
 
@@ -8252,7 +8000,7 @@ Creates a new instance by decoding from the given decoder.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/encodable-implementations
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/encodable-implementations>
 
 Collection
 
@@ -8280,7 +8028,7 @@ Encodes this value into the given encoder.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/equatable-implementations
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/equatable-implementations>
 
 Collection
 
@@ -8308,7 +8056,7 @@ Returns a Boolean value indicating whether two values are equal.
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/hashable-implementations
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/hashable-implementations>
 
 Collection
 
@@ -8342,107 +8090,102 @@ Hashes the essential components of this value by feeding them into the given has
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute)
-
-
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute>)
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/allowscloudencryption)
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/allowscloudencryption>)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/externalstorage)
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/externalstorage>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/spotlight)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/unique)
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/spotlight>)
 
+# The page you're looking for can't be found
 
+Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/transformable(by:)-9d4xh)
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/unique>)
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/transformable(by:)-9d4xh>)
 
 -9d4xh)#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/transformable(by:)-lunz)
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/transformable(by:)-lunz>)
 
 -lunz)#app-main)
 
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/ephemeral)
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/ephemeral>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/customdebugstringconvertible-implementations)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/decodable-implementations)
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/customdebugstringconvertible-implementations>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/encodable-implementations)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/equatable-implementations)
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/decodable-implementations>)
 
-# The page you're looking for can't be found.
-
-Search developer.apple.comSearch Icon
-
----
-
-# https://developer.apple.com/documentation/swiftdata/schema/attribute/option/hashable-implementations)
-
-# The page you're looking for can't be found.
+# The page you're looking for can't be found
 
 Search developer.apple.comSearch Icon
 
 ---
 
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/encodable-implementations>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/equatable-implementations>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
+
+# <https://developer.apple.com/documentation/swiftdata/schema/attribute/option/hashable-implementations>)
+
+# The page you're looking for can't be found
+
+Search developer.apple.comSearch Icon
+
+---
