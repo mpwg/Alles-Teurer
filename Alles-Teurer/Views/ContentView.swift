@@ -11,17 +11,31 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(FamilySharingSettings.self) private var familySharingSettings
-    @State private var productViewModel: ProductViewModel
+    @State private var productViewModel: ProductViewModel?
     @State private var showingAddPurchaseSheet = false
     @State private var showingSettings = false
     @State private var columnVisibility = NavigationSplitViewVisibility.all
-    
-    init(modelContext: ModelContext) {
-        let viewModel = ProductViewModel(modelContext: modelContext)
-        _productViewModel = State(initialValue: viewModel)
-    }
 
     var body: some View {
+        Group {
+            if let productViewModel = productViewModel {
+                contentView(productViewModel: productViewModel)
+            } else {
+                ProgressView("Lade Daten...")
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
+        }
+        .task {
+            if productViewModel == nil {
+                productViewModel = ProductViewModel(modelContext: modelContext)
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private func contentView(productViewModel: ProductViewModel) -> some View {
+        @Bindable var viewModel = productViewModel
+        
         VStack(spacing: 0) {
             // Restart notification banner
             if familySharingSettings.restartRequired {
@@ -44,21 +58,21 @@ struct ContentView: View {
             }
             
             NavigationSplitView(columnVisibility: $columnVisibility) {
-            if productViewModel.filteredProducts.isEmpty {
+            if viewModel.filteredProducts.isEmpty {
                 ContentUnavailableView {
-                    if !productViewModel.hasProducts {
+                    if !viewModel.hasProducts {
                         Label("Keine Produkte", systemImage: "cart")
                     } else {
                         Label("Keine Suchergebnisse", systemImage: "magnifyingglass")
                     }
                 } description: {
-                    if !productViewModel.hasProducts {
+                    if !viewModel.hasProducts {
                         Text("Fügen Sie Ihren ersten Einkauf hinzu oder laden Sie Beispieldaten in den Einstellungen.")
                     } else {
                         Text("Versuchen Sie es mit einem anderen Suchbegriff.")
                     }
                 } actions: {
-                    if !productViewModel.hasProducts {
+                    if !viewModel.hasProducts {
                         VStack(spacing: 12) {
                             Button {
                                 showingAddPurchaseSheet = true
@@ -77,7 +91,7 @@ struct ContentView: View {
                     }
                 }
                 .navigationTitle("Alles Teurer 🛒")
-                .searchable(text: $productViewModel.searchText, prompt: "Produkt suchen...")
+                .searchable(text: $viewModel.searchText, prompt: "Produkt suchen...")
                 .toolbar {
                 #if os(iOS)
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -117,22 +131,22 @@ struct ContentView: View {
                     #endif
                 }
             } else {
-                List(productViewModel.filteredProducts, selection: $productViewModel.selectedProduct) { product in
+                List(viewModel.filteredProducts, selection: $viewModel.selectedProduct) { product in
                     ProductRowView(product: product)
                         .tag(product)
                         .swipeActions(edge: .trailing, allowsFullSwipe: false) {
                             Button("Löschen", role: .destructive) {
-                                productViewModel.deleteProduct(product)
+                                viewModel.deleteProduct(product)
                             }
                         }
                         .contextMenu {
                             Button("Löschen", role: .destructive) {
-                                productViewModel.deleteProduct(product)
+                                viewModel.deleteProduct(product)
                             }
                         }
                 }
                 .navigationTitle("Alles Teurer 🛒")
-                .searchable(text: $productViewModel.searchText, prompt: "Produkt suchen...")
+                .searchable(text: $viewModel.searchText, prompt: "Produkt suchen...")
                 .toolbar {
                 #if os(iOS)
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -189,7 +203,7 @@ struct ContentView: View {
                 }
             }
         } content: {
-            if let selectedProduct = productViewModel.selectedProduct {
+            if let selectedProduct = viewModel.selectedProduct {
                 ProductDetailView(product: selectedProduct, viewModel: productViewModel)
             } else {
                 ContentUnavailableView {
@@ -199,7 +213,7 @@ struct ContentView: View {
                 }
             }
         } detail: {
-            if let selectedProduct = productViewModel.selectedProduct {
+            if let selectedProduct = viewModel.selectedProduct {
                 PurchaseListView(product: selectedProduct, productViewModel: productViewModel, modelContext: modelContext)
             } else {
                 ContentUnavailableView {
@@ -226,8 +240,8 @@ struct ContentView: View {
 #Preview {
     let config = SwiftData.ModelConfiguration(isStoredInMemoryOnly: true)
     let container = try! SwiftData.ModelContainer(for: Product.self, configurations: config)
-    let context = container.mainContext
     
-    return ContentView(modelContext: context)
+    return ContentView()
         .modelContainer(container)
+        .environment(FamilySharingSettings.shared)
 }

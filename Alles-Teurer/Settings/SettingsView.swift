@@ -309,4 +309,5 @@ struct SettingsView: View {
 #Preview {
     SettingsView()
         .modelContainer(for: [Product.self, Purchase.self], inMemory: true)
+        .environment(FamilySharingSettings.shared)
 }
