@@ -156,15 +156,7 @@ struct ContentView: View {
                         } label: {
                             Label("Einstellungen", systemImage: "gearshape")
                         }
-                        
-                        Button {
-                            withAnimation {
-                                columnVisibility = columnVisibility == .all ? .doubleColumn : .all
-                            }
-                        } label: {
-                            Label("Seitenleiste", systemImage: columnVisibility == .all ? "sidebar.right" : "sidebar.left")
-                        }
-                        
+
                         EditButton()
                     }
                 }
@@ -183,15 +175,7 @@ struct ContentView: View {
                         Label("Einkauf hinzufügen", systemImage: "plus")
                     }
                 }
-                ToolbarItem(placement: .automatic) {
-                    Button {
-                        withAnimation {
-                            columnVisibility = columnVisibility == .all ? .doubleColumn : .all
-                        }
-                    } label: {
-                        Label("Seitenleiste", systemImage: columnVisibility == .all ? "sidebar.right" : "sidebar.left")
-                    }
-                }
+                
                 ToolbarItem(placement: .automatic) {
                     Button {
                         showingSettings = true
@@ -237,11 +221,34 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    let config = SwiftData.ModelConfiguration(isStoredInMemoryOnly: true)
-    let container = try! SwiftData.ModelContainer(for: Product.self, configurations: config)
-    
-    return ContentView()
-        .modelContainer(container)
-        .environment(FamilySharingSettings.shared)
+#Preview("Keine Produkte") {
+    do {
+        let config = SwiftData.ModelConfiguration(isStoredInMemoryOnly: true)
+        let container = try SwiftData.ModelContainer(for: Product.self, configurations: config)
+        
+        return ContentView()
+            .modelContainer(container)
+            .environment(FamilySharingSettings.shared)
+    } catch {
+        return Text("Failed to create preview: \(error.localizedDescription)")
+    }
 }
+
+#Preview("Mit Produkten") {
+    do {
+        let config = SwiftData.ModelConfiguration(isStoredInMemoryOnly: true)
+        let container = try SwiftData.ModelContainer(for: Product.self, configurations: config)
+        let context = container.mainContext
+        
+        // Add sample data
+        TestData.createSampleData(in: context)
+        
+        return ContentView()
+            .modelContainer(container)
+            .environment(FamilySharingSettings.shared)
+    } catch {
+        return Text("Failed to create preview: \(error.localizedDescription)")
+    }
+}
+
+

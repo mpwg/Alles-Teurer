@@ -97,4 +97,12 @@ class FamilySharingSettings {
             )
         }
     }
+    
+    // MARK: - Persistence
+    
+    /// Explicitly save all settings to UserDefaults
+    func saveSettings() {
+        userDefaults.synchronize()
+        print("💾 Family sharing settings saved")
+    }
 }
