@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 import Charts
 
 extension Calendar {
@@ -17,35 +18,18 @@ extension Calendar {
 
 struct ProductDetailView: View {
     let product: Product
+    let viewModel: ProductViewModel
     
     private var purchases: [Purchase] {
-        product.purchases?.sorted(by: { $0.date < $1.date }) ?? []
+        viewModel.purchases(for: product)
     }
     
     private var priceStats: (min: Double, max: Double, avg: Double, median: Double) {
-        guard !purchases.isEmpty else { return (0, 0, 0, 0) }
-        let prices = purchases.map(\.pricePerQuantity).sorted()
-        let min = prices.first ?? 0
-        let max = prices.last ?? 0
-        let avg = prices.reduce(0, +) / Double(prices.count)
-        let median = prices.count % 2 == 0 
-            ? (prices[prices.count/2-1] + prices[prices.count/2]) / 2
-            : prices[prices.count/2]
-        return (min, max, avg, median)
+        viewModel.priceStats(for: product)
     }
     
     private var shopAnalysis: [(shop: String, count: Int, avgPrice: Double, minPrice: Double, maxPrice: Double)] {
-        let shopGroups = Dictionary(grouping: purchases, by: \.shopName)
-        return shopGroups.map { shop, purchaseList in
-            let prices = purchaseList.map(\.pricePerQuantity)
-            return (
-                shop: shop,
-                count: purchaseList.count,
-                avgPrice: prices.reduce(0, +) / Double(prices.count),
-                minPrice: prices.min() ?? 0,
-                maxPrice: prices.max() ?? 0
-            )
-        }.sorted(by: { $0.avgPrice < $1.avgPrice })
+        viewModel.shopAnalysis(for: product)
     }
     
     var body: some View {
@@ -80,14 +64,14 @@ struct ProductDetailView: View {
         .toolbar {
             #if os(iOS)
             ToolbarItem(placement: .navigationBarTrailing) {
-                NavigationLink(destination: PurchaseListView(product: product)) {
+                NavigationLink(destination: PurchaseListView(product: product, productViewModel: viewModel, modelContext: viewModel.modelContext)) {
                     Image(systemName: "list.bullet")
                         .accessibilityLabel("Einkaufsliste anzeigen")
                 }
             }
             #else
             ToolbarItem(placement: .primaryAction) {
-                NavigationLink(destination: PurchaseListView(product: product)) {
+                NavigationLink(destination: PurchaseListView(product: product, productViewModel: viewModel, modelContext: viewModel.modelContext)) {
                     Image(systemName: "list.bullet")
                         .accessibilityLabel("Einkaufsliste anzeigen")
                 }
@@ -98,57 +82,45 @@ struct ProductDetailView: View {
     
     private var headerSection: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text(product.normalizedName)
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            
-            // Key Metrics Grid
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 4), spacing: 16) {
-                metricCard("Bester Preis", value: product.bestPriceFormatted, 
-                          subtitle: "bei \(product.bestPriceStore)", color: .green, icon: "arrow.down.circle.fill")
+            // Primary Price Cards (Prominent)
+            HStack(spacing: 12) {
+                PrimaryMetricCard(
+                    title: "Bester Preis", 
+                    value: product.bestPriceFormatted, 
+                    subtitle: "bei \(product.bestPriceStore)", 
+                    color: .green, 
+                    icon: "arrow.down.circle.fill"
+                )
                 
-                metricCard("Teuerster Preis", value: product.highestPriceFormatted, 
-                          subtitle: "bei \(product.highestPriceStore)", color: .red, icon: "arrow.up.circle.fill")
-                
-                let savingsAmount = product.priceDifference
-                metricCard("Mögliche Ersparnis", value: savingsAmount.formatted(.currency(code: "EUR")), 
-                          subtitle: "\(Int((savingsAmount / product.bestPricePerQuantity) * 100))%", color: .orange, icon: "minus.circle.fill")
-                
-                metricCard("Einkäufe", value: "\(purchases.count)", 
-                          subtitle: "Transaktionen", color: .blue, icon: "cart.fill")
-            }
-        }
-    }
-    
-    private func metricCard(_ title: String, value: String, subtitle: String, color: Color, icon: String) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Image(systemName: icon)
-                    .foregroundColor(color)
-                    .font(.title3)
-                Spacer()
+                PrimaryMetricCard(
+                    title: "Teuerster Preis", 
+                    value: product.highestPriceFormatted, 
+                    subtitle: "bei \(product.highestPriceStore)", 
+                    color: .red, 
+                    icon: "arrow.up.circle.fill"
+                )
             }
             
-            Text(value)
-                .font(.title2)
-                .fontWeight(.bold)
-                .foregroundColor(color)
-            
-            Text(title)
-                .font(.caption)
-                .foregroundColor(.primary)
-            
-            Text(subtitle)
-                .font(.caption2)
-                .foregroundColor(.secondary)
+            // Secondary Metrics Grid (2 columns for better mobile layout)
+            let savingsAmount = product.priceDifference
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 12) {
+                SecondaryMetricCard(
+                    title: "Mögliche Ersparnis", 
+                    value: savingsAmount.formatted(.currency(code: "EUR")), 
+                    subtitle: "\(Int((savingsAmount / product.bestPricePerQuantity) * 100))%", 
+                    color: .orange, 
+                    icon: "minus.circle.fill"
+                )
+                
+                SecondaryMetricCard(
+                    title: "Einkäufe", 
+                    value: "\(purchases.count)", 
+                    subtitle: "Transaktionen", 
+                    color: .blue, 
+                    icon: "cart.fill"
+                )
+            }
         }
-        .padding()
-        #if os(iOS)
-        .background(Color(.systemGray6))
-        #else
-        .background(Color(NSColor.controlBackgroundColor))
-        #endif
-        .cornerRadius(12)
     }
     
     private var priceTimelineChart: some View {
@@ -212,42 +184,15 @@ struct ProductDetailView: View {
             chartHeader("Statistische Analyse", icon: "function", color: .purple)
             
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 16) {
-                statisticBox("Durchschnitt", value: priceStats.avg, color: .orange)
-                statisticBox("Median", value: priceStats.median, color: .purple)
-                statisticBox("Standardabweichung", 
-                           value: calculateStandardDeviation(), color: .indigo)
-                statisticBox("Variationskoeffizient", 
-                           value: (calculateStandardDeviation() / priceStats.avg) * 100, 
+                StatisticCard(title: "Durchschnitt", value: priceStats.avg, color: .orange)
+                StatisticCard(title: "Median", value: priceStats.median, color: .purple)
+                StatisticCard(title: "Standardabweichung", 
+                           value: viewModel.calculateStandardDeviation(for: product), color: .indigo)
+                StatisticCard(title: "Variationskoeffizient", 
+                           value: (viewModel.calculateStandardDeviation(for: product) / priceStats.avg) * 100, 
                            isPercentage: true, color: .pink)
             }
         }
-    }
-    
-    private func statisticBox(_ title: String, value: Double, isPercentage: Bool = false, color: Color) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(title)
-                .font(.caption)
-                .foregroundColor(.secondary)
-            
-            if isPercentage {
-                Text("\(value, format: .number.precision(.fractionLength(1)))%")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundColor(color)
-            } else {
-                Text(value.formatted(.currency(code: "EUR")))
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundColor(color)
-            }
-        }
-        .padding()
-        #if os(iOS)
-        .background(Color(.systemGray6))
-        #else
-        .background(Color(NSColor.controlBackgroundColor))
-        #endif
-        .cornerRadius(8)
     }
     
     private var shopComparisonChart: some View {
@@ -296,7 +241,7 @@ struct ProductDetailView: View {
         VStack(alignment: .leading, spacing: 12) {
             chartHeader("Preisverteilung", icon: "chart.bar.fill", color: .teal)
             
-            let priceRanges = createPriceRanges()
+            let priceRanges = viewModel.createPriceRanges(for: product)
             
             Chart(priceRanges, id: \.range) { rangeData in
                 BarMark(
@@ -326,7 +271,7 @@ struct ProductDetailView: View {
         VStack(alignment: .leading, spacing: 12) {
             chartHeader("Monatliche Ausgaben", icon: "calendar", color: .mint)
             
-            let monthlyData = createMonthlyData()
+            let monthlyData = viewModel.createMonthlyData(for: product)
             
             Chart(monthlyData, id: \.month) { monthData in
                 AreaMark(
@@ -375,57 +320,15 @@ struct ProductDetailView: View {
                 .fontWeight(.semibold)
         }
     }
-    
-    private func calculateStandardDeviation() -> Double {
-        guard !purchases.isEmpty else { return 0 }
-        let prices = purchases.map(\.pricePerQuantity)
-        let mean = priceStats.avg
-        let squaredDiffs = prices.map { pow($0 - mean, 2) }
-        let variance = squaredDiffs.reduce(0, +) / Double(prices.count)
-        return sqrt(variance)
-    }
-    
-    private func createPriceRanges() -> [(range: String, count: Int)] {
-        guard !purchases.isEmpty else { return [] }
-        
-        let prices = purchases.map(\.pricePerQuantity)
-        let minPrice = prices.min() ?? 0
-        let maxPrice = prices.max() ?? 0
-        let rangeSize = (maxPrice - minPrice) / 5
-        
-        var ranges: [(range: String, count: Int)] = []
-        
-        for i in 0..<5 {
-            let start = minPrice + Double(i) * rangeSize
-            let end = minPrice + Double(i + 1) * rangeSize
-            let count = prices.filter { $0 >= start && $0 < (i == 4 ? end + 0.01 : end) }.count
-            
-            ranges.append((
-                range: "\(start.formatted(.currency(code: "EUR"))) - \(end.formatted(.currency(code: "EUR")))",
-                count: count
-            ))
-        }
-        
-        return ranges
-    }
-    
-    private func createMonthlyData() -> [(month: Date, totalSpent: Double)] {
-        let calendar = Calendar.current
-        let monthlyGroups = Dictionary(grouping: purchases) { purchase in
-            calendar.startOfMonth(for: purchase.date)
-        }
-        
-        return monthlyGroups.map { month, purchaseList in
-            let totalSpent = purchaseList.map { $0.totalPrice }.reduce(0, +)
-            return (month: month, totalSpent: totalSpent)
-        }.sorted(by: { $0.month < $1.month })
-    }
 }
 
-
-
 #Preview {
+    let config = SwiftData.ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! SwiftData.ModelContainer(for: Product.self, configurations: config)
+    let context = container.mainContext
+    let viewModel = ProductViewModel(modelContext: context)
+    
     NavigationStack {
-        ProductDetailView(product: TestData.sampleProducts[0])
+        ProductDetailView(product: TestData.sampleProducts[0], viewModel: viewModel)
     }
 }

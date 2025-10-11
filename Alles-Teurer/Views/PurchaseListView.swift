@@ -6,46 +6,21 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct PurchaseListView: View {
     let product: Product
-    @State private var sortOption: PurchaseSortOption = .dateNewest
+    let productViewModel: ProductViewModel
+    @State private var purchaseViewModel: PurchaseViewModel
     
-    enum PurchaseSortOption: String, CaseIterable {
-        case dateNewest = "Datum (neueste)"
-        case dateOldest = "Datum (älteste)"
-        case priceHighest = "Preis/Einheit (höchste)"
-        case priceLowest = "Preis/Einheit (niedrigste)"
-        case totalPriceHighest = "Gesamtpreis (höchste)"
-        case totalPriceLowest = "Gesamtpreis (niedrigste)"
-        case quantityHighest = "Menge (höchste)"
-        case quantityLowest = "Menge (niedrigste)"
-        case shopName = "Geschäft (A-Z)"
+    init(product: Product, productViewModel: ProductViewModel, modelContext: ModelContext) {
+        self.product = product
+        self.productViewModel = productViewModel
+        _purchaseViewModel = State(initialValue: PurchaseViewModel(modelContext: modelContext, productViewModel: productViewModel))
     }
     
     var sortedPurchases: [Purchase] {
-        let purchases = product.purchases ?? []
-        
-        switch sortOption {
-        case .dateNewest:
-            return purchases.sorted { $0.date > $1.date }
-        case .dateOldest:
-            return purchases.sorted { $0.date < $1.date }
-        case .priceHighest:
-            return purchases.sorted { $0.pricePerQuantity > $1.pricePerQuantity }
-        case .priceLowest:
-            return purchases.sorted { $0.pricePerQuantity < $1.pricePerQuantity }
-        case .totalPriceHighest:
-            return purchases.sorted { $0.totalPrice > $1.totalPrice }
-        case .totalPriceLowest:
-            return purchases.sorted { $0.totalPrice < $1.totalPrice }
-        case .quantityHighest:
-            return purchases.sorted { $0.quantity > $1.quantity }
-        case .quantityLowest:
-            return purchases.sorted { $0.quantity < $1.quantity }
-        case .shopName:
-            return purchases.sorted { $0.shopName < $1.shopName }
-        }
+        purchaseViewModel.sortedPurchases(for: product)
     }
     
     var body: some View {
@@ -79,8 +54,8 @@ struct PurchaseListView: View {
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     
-                    Picker("Sortierung", selection: $sortOption) {
-                        ForEach(PurchaseSortOption.allCases, id: \.self) { option in
+                    Picker("Sortierung", selection: $purchaseViewModel.sortOption) {
+                        ForEach(PurchaseViewModel.PurchaseSortOption.allCases, id: \.self) { option in
                             Text(option.rawValue).tag(option)
                         }
                     }
@@ -192,7 +167,12 @@ struct PurchaseRowView: View {
 }
 
 #Preview {
+    let config = SwiftData.ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! SwiftData.ModelContainer(for: Product.self, configurations: config)
+    let context = container.mainContext
+    let productViewModel = ProductViewModel(modelContext: context)
+    
     NavigationStack {
-        PurchaseListView(product: TestData.sampleProducts[0])
+        PurchaseListView(product: TestData.sampleProducts[0], productViewModel: productViewModel, modelContext: context)
     }
 }

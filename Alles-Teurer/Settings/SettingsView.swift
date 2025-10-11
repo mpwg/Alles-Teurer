@@ -279,6 +279,11 @@ struct SettingsView: View {
     private func addSampleData() {
         withAnimation {
             TestData.createSampleData(in: modelContext)
+            do {
+                try modelContext.save()
+            } catch {
+                print("Error saving sample data: \(error)")
+            }
         }
     }
     
@@ -309,4 +314,5 @@ struct SettingsView: View {
 #Preview {
     SettingsView()
         .modelContainer(for: [Product.self, Purchase.self], inMemory: true)
+        .environment(FamilySharingSettings.shared)
 }
