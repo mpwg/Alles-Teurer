@@ -20,67 +20,214 @@
 
     },
     "Abbrechen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
     },
     "Aktivieren" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enable"
+          }
+        }
+      }
     },
     "Alle Daten löschen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete All Data"
+          }
+        }
+      }
     },
     "Alle Daten löschen?" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete All Data?"
+          }
+        }
+      }
     },
     "Alle löschen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete All"
+          }
+        }
+      }
     },
     "Alles Teurer 🛒" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price Tracker 🛒"
+          }
+        }
+      }
     },
     "Anzahl" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Count"
+          }
+        }
+      }
     },
     "Ausgaben" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Expenses"
+          }
+        }
+      }
     },
     "bei %@" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "at %@"
+          }
+        }
+      }
     },
     "Beispieldaten hinzufügen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Sample Data"
+          }
+        }
+      }
     },
     "Bester Preis" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Best Price"
+          }
+        }
+      }
     },
     "Bester Preis:" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Best Price:"
+          }
+        }
+      }
     },
     "Build-Typ" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Build Type"
+          }
+        }
+      }
     },
     "cm" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "cm"
+          }
+        }
+      }
     },
     "Daten mit der Familie über iCloud teilen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share Data with Family via iCloud"
+          }
+        }
+      }
     },
     "Datenmanagement" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data Management"
+          }
+        }
+      }
     },
     "Datum" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date"
+          }
+        }
+      }
     },
     "Deaktivieren" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disable"
+          }
+        }
+      }
     },
     "Debug- und Release-Builds verwenden separate Datenbanken, um Entwicklungsdaten von Produktionsdaten zu trennen." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug and Release builds use separate databases to isolate development data from production data."
+          }
+        }
+      }
     },
     "Die Familien-Synchronisation wird aktiviert. Ihre Daten werden über iCloud mit Familienmitgliedern geteilt. Die App muss neu gestartet werden, damit die Änderung wirksam wird." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Family sync will be enabled. Your data will be shared with family members via iCloud. The app must be restarted for the change to take effect."
+          }
+        }
+      }
     },
     "Die Familien-Synchronisation wird deaktiviert. Ihre Daten werden nur noch lokal gespeichert. Die App muss neu gestartet werden, damit die Änderung wirksam wird." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Family sync will be disabled. Your data will only be stored locally. The app must be restarted for the change to take effect."
+          }
+        }
+      }
     },
     "Diese Aktion löscht alle %lld Produkte und %lld Einkäufe unwiderruflich. Diese Aktion kann nicht rückgängig gemacht werden." : {
       "localizations" : {
@@ -89,104 +236,320 @@
             "state" : "new",
             "value" : "Diese Aktion löscht alle %1$lld Produkte und %2$lld Einkäufe unwiderruflich. Diese Aktion kann nicht rückgängig gemacht werden."
           }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This action will permanently delete all %1$lld products and %2$lld purchases. This action cannot be undone."
+          }
         }
       }
     },
     "Diese Aktion löscht alle Produkte und Einkäufe unwiderruflich." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This action will permanently delete all products and purchases."
+          }
+        }
+      }
     },
     "Durchschnitt" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Average"
+          }
+        }
+      }
     },
     "Durchschnittspreis" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Average Price"
+          }
+        }
+      }
     },
     "Einheit" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unit"
+          }
+        }
+      }
     },
     "Einkauf hinzufügen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Purchase"
+          }
+        }
+      }
     },
     "Einkäufe" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchases"
+          }
+        }
+      }
     },
     "Einkaufshistorie" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchase History"
+          }
+        }
+      }
     },
     "Einkaufsliste anzeigen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Shopping List"
+          }
+        }
+      }
     },
     "Einstellungen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        }
+      }
     },
     "Ersten Einkauf hinzufügen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add First Purchase"
+          }
+        }
+      }
     },
     "Familien-Synchronisation" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Family Sync"
+          }
+        }
+      }
     },
     "Fertig" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        }
+      }
     },
     "Fügen Sie Beispieldaten hinzu, um die App auszuprobieren, oder löschen Sie alle vorhandenen Daten." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add sample data to try out the app, or delete all existing data."
+          }
+        }
+      }
     },
     "Fügen Sie Ihren ersten Einkauf hinzu oder laden Sie Beispieldaten in den Einstellungen." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add your first purchase or load sample data in Settings."
+          }
+        }
+      }
     },
     "Für dieses Produkt sind noch keine Einkäufe gespeichert." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No purchases recorded for this product yet."
+          }
+        }
+      }
     },
     "g" : {
 
     },
     "Gesamtpreis" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total Price"
+          }
+        }
+      }
     },
     "Geschäft" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Store"
+          }
+        }
+      }
     },
     "Geschäft eingeben" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter Store"
+          }
+        }
+      }
     },
     "iCloud ist nicht verfügbar. Bitte melden Sie sich in den Systemeinstellungen bei iCloud an und versuchen Sie es erneut." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iCloud is not available. Please sign in to iCloud in System Settings and try again."
+          }
+        }
+      }
     },
     "iCloud ist nicht verfügbar. Melden Sie sich bei iCloud an, um Daten mit der Familie zu teilen." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iCloud is not available. Sign in to iCloud to share data with family."
+          }
+        }
+      }
     },
     "Kaufdatum" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchase Date"
+          }
+        }
+      }
     },
     "Keine Einkäufe" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Purchases"
+          }
+        }
+      }
     },
     "Keine Produkte" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Products"
+          }
+        }
+      }
     },
     "Keine Suchergebnisse" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Search Results"
+          }
+        }
+      }
     },
     "kg" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kg"
+          }
+        }
+      }
     },
     "l" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "l"
+          }
+        }
+      }
     },
     "Lade Daten..." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading Data..."
+          }
+        }
+      }
     },
     "Löschen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        }
+      }
     },
     "m" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "m"
+          }
+        }
+      }
     },
     "Max" : {
 
     },
     "Menge" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quantity"
+          }
+        }
+      }
     },
     "Min" : {
 
@@ -195,103 +558,327 @@
 
     },
     "Monat" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Month"
+          }
+        }
+      }
     },
     "Neustart erforderlich" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restart Required"
+          }
+        }
+      }
     },
     "OK" : {
 
     },
     "Preis" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price"
+          }
+        }
+      }
     },
     "Preis pro %@" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price per %@"
+          }
+        }
+      }
     },
     "Preis/Einheit" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price/Unit"
+          }
+        }
+      }
     },
     "Preisbereich" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price Range"
+          }
+        }
+      }
     },
     "Produkt" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product"
+          }
+        }
+      }
     },
     "Produkt auswählen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select Product"
+          }
+        }
+      }
     },
     "Produkt bearbeiten" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit Product"
+          }
+        }
+      }
     },
     "Produkt suchen..." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search Products..."
+          }
+        }
+      }
     },
     "Produkte" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Products"
+          }
+        }
+      }
     },
     "Produktname" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product Name"
+          }
+        }
+      }
     },
     "Produktname eingeben" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter Product Name"
+          }
+        }
+      }
     },
     "Produktname im Geschäft" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product Name in Store"
+          }
+        }
+      }
     },
     "Schließen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close"
+          }
+        }
+      }
     },
     "Shop" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Store"
+          }
+        }
+      }
     },
     "Sortieren:" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sort:"
+          }
+        }
+      }
     },
     "Sortierung" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sort"
+          }
+        }
+      }
     },
     "Später" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Later"
+          }
+        }
+      }
     },
     "Speichern" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        }
+      }
     },
     "Statistiken" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Statistics"
+          }
+        }
+      }
     },
     "Stk" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "pcs"
+          }
+        }
+      }
     },
     "Synchronisation" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sync"
+          }
+        }
+      }
     },
     "Teuerster Preis" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Highest Price"
+          }
+        }
+      }
     },
     "Teuerster Preis:" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Highest Price:"
+          }
+        }
+      }
     },
     "Versuchen Sie es mit einem anderen Suchbegriff." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try a different search term."
+          }
+        }
+      }
     },
     "Vorschläge aus der Datenbank:" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suggestions from Database:"
+          }
+        }
+      }
     },
     "Wählen Sie ein Produkt aus der Liste aus, um Details anzuzeigen." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select a product from the list to view details."
+          }
+        }
+      }
     },
     "Wählen Sie ein Produkt aus, um die Einkaufshistorie anzuzeigen." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select a product to view purchase history."
+          }
+        }
+      }
     },
     "Wenn aktiviert, werden Ihre Einkaufsdaten über iCloud mit Familienmitgliedern geteilt. Stellen Sie sicher, dass alle Familienmitglieder bei iCloud angemeldet sind." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When enabled, your shopping data will be shared with family members via iCloud. Make sure all family members are signed in to iCloud."
+          }
+        }
+      }
     },
     "Wie das Produkt im Geschäft heißt" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What the product is called in the store"
+          }
+        }
+      }
     },
     "Zu den Einstellungen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go to Settings"
+          }
+        }
+      }
     }
   },
   "version" : "1.1"
