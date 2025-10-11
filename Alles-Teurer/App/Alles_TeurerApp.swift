@@ -16,7 +16,7 @@ struct Alles_TeurerApp: App {
     var body: some Scene {
         WindowGroup {
             if let container = modelContainer {
-                ContentView()
+                ContentView(modelContext: container.mainContext)
                     .environment(familySharingSettings)
                     .modelContainer(container)
             } else {
