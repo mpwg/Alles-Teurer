@@ -217,6 +217,12 @@ struct ContentView: View {
             SettingsView()
                 .environment(familySharingSettings)
         }
+        .onChange(of: showingSettings) { oldValue, newValue in
+            // Reload products when settings sheet is dismissed
+            if oldValue && !newValue {
+                productViewModel.loadProducts()
+            }
+        }
         }
     }
 }

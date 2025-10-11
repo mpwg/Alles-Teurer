@@ -82,57 +82,45 @@ struct ProductDetailView: View {
     
     private var headerSection: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text(product.normalizedName)
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            
-            // Key Metrics Grid
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 4), spacing: 16) {
-                metricCard("Bester Preis", value: product.bestPriceFormatted, 
-                          subtitle: "bei \(product.bestPriceStore)", color: .green, icon: "arrow.down.circle.fill")
+            // Primary Price Cards (Prominent)
+            HStack(spacing: 12) {
+                PrimaryMetricCard(
+                    title: "Bester Preis", 
+                    value: product.bestPriceFormatted, 
+                    subtitle: "bei \(product.bestPriceStore)", 
+                    color: .green, 
+                    icon: "arrow.down.circle.fill"
+                )
                 
-                metricCard("Teuerster Preis", value: product.highestPriceFormatted, 
-                          subtitle: "bei \(product.highestPriceStore)", color: .red, icon: "arrow.up.circle.fill")
-                
-                let savingsAmount = product.priceDifference
-                metricCard("Mögliche Ersparnis", value: savingsAmount.formatted(.currency(code: "EUR")), 
-                          subtitle: "\(Int((savingsAmount / product.bestPricePerQuantity) * 100))%", color: .orange, icon: "minus.circle.fill")
-                
-                metricCard("Einkäufe", value: "\(purchases.count)", 
-                          subtitle: "Transaktionen", color: .blue, icon: "cart.fill")
-            }
-        }
-    }
-    
-    private func metricCard(_ title: String, value: String, subtitle: String, color: Color, icon: String) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Image(systemName: icon)
-                    .foregroundColor(color)
-                    .font(.title3)
-                Spacer()
+                PrimaryMetricCard(
+                    title: "Teuerster Preis", 
+                    value: product.highestPriceFormatted, 
+                    subtitle: "bei \(product.highestPriceStore)", 
+                    color: .red, 
+                    icon: "arrow.up.circle.fill"
+                )
             }
             
-            Text(value)
-                .font(.title2)
-                .fontWeight(.bold)
-                .foregroundColor(color)
-            
-            Text(title)
-                .font(.caption)
-                .foregroundColor(.primary)
-            
-            Text(subtitle)
-                .font(.caption2)
-                .foregroundColor(.secondary)
+            // Secondary Metrics Grid (2 columns for better mobile layout)
+            let savingsAmount = product.priceDifference
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 12) {
+                SecondaryMetricCard(
+                    title: "Mögliche Ersparnis", 
+                    value: savingsAmount.formatted(.currency(code: "EUR")), 
+                    subtitle: "\(Int((savingsAmount / product.bestPricePerQuantity) * 100))%", 
+                    color: .orange, 
+                    icon: "minus.circle.fill"
+                )
+                
+                SecondaryMetricCard(
+                    title: "Einkäufe", 
+                    value: "\(purchases.count)", 
+                    subtitle: "Transaktionen", 
+                    color: .blue, 
+                    icon: "cart.fill"
+                )
+            }
         }
-        .padding()
-        #if os(iOS)
-        .background(Color(.systemGray6))
-        #else
-        .background(Color(NSColor.controlBackgroundColor))
-        #endif
-        .cornerRadius(12)
     }
     
     private var priceTimelineChart: some View {
@@ -196,42 +184,15 @@ struct ProductDetailView: View {
             chartHeader("Statistische Analyse", icon: "function", color: .purple)
             
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 16) {
-                statisticBox("Durchschnitt", value: priceStats.avg, color: .orange)
-                statisticBox("Median", value: priceStats.median, color: .purple)
-                statisticBox("Standardabweichung", 
+                StatisticCard(title: "Durchschnitt", value: priceStats.avg, color: .orange)
+                StatisticCard(title: "Median", value: priceStats.median, color: .purple)
+                StatisticCard(title: "Standardabweichung", 
                            value: viewModel.calculateStandardDeviation(for: product), color: .indigo)
-                statisticBox("Variationskoeffizient", 
+                StatisticCard(title: "Variationskoeffizient", 
                            value: (viewModel.calculateStandardDeviation(for: product) / priceStats.avg) * 100, 
                            isPercentage: true, color: .pink)
             }
         }
-    }
-    
-    private func statisticBox(_ title: String, value: Double, isPercentage: Bool = false, color: Color) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(title)
-                .font(.caption)
-                .foregroundColor(.secondary)
-            
-            if isPercentage {
-                Text("\(value, format: .number.precision(.fractionLength(1)))%")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundColor(color)
-            } else {
-                Text(value.formatted(.currency(code: "EUR")))
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundColor(color)
-            }
-        }
-        .padding()
-        #if os(iOS)
-        .background(Color(.systemGray6))
-        #else
-        .background(Color(NSColor.controlBackgroundColor))
-        #endif
-        .cornerRadius(8)
     }
     
     private var shopComparisonChart: some View {
