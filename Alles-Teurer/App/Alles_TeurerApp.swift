@@ -38,6 +38,14 @@ struct Alles_TeurerApp: App {
                 saveIfNeeded()
             }
         }
+        
+        #if os(macOS)
+        Settings {
+            SettingsView()
+                .environment(familySharingSettings)
+                .modelContainer(modelContainer ?? createEmptyContainer())
+        }
+        #endif
     }
     
     @MainActor
@@ -76,6 +84,15 @@ struct Alles_TeurerApp: App {
                 print("Error saving: \(error)")
             }
         }
+    }
+    
+    private func createEmptyContainer() -> ModelContainer {
+        let schema = Schema([
+            Product.self,
+            Purchase.self,
+        ])
+        let config = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
+        return try! ModelContainer(for: schema, configurations: [config])
     }
 }
 

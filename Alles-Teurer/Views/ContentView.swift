@@ -90,12 +90,14 @@ struct ContentView: View {
                             }
                             .buttonStyle(.borderedProminent)
                             
+                            #if os(iOS)
                             Button {
                                 showingSettings = true
                             } label: {
                                 Label("Zu den Einstellungen", systemImage: "gearshape")
                             }
                             .buttonStyle(.bordered)
+                            #endif
                         }
                     }
                 }
@@ -141,14 +143,6 @@ struct ContentView: View {
                             showingAddPurchaseSheet = true
                         } label: {
                             Label("Einkauf hinzufügen", systemImage: "plus")
-                        }
-                    }
-                  
-                    ToolbarItem(placement: .automatic) {
-                        Button {
-                            showingSettings = true
-                        } label: {
-                            Label("Einstellungen", systemImage: "gearshape")
                         }
                     }
                     #endif
@@ -214,14 +208,6 @@ struct ContentView: View {
                         Label("Einkauf hinzufügen", systemImage: "plus")
                     }
                 }
-                
-                ToolbarItem(placement: .automatic) {
-                    Button {
-                        showingSettings = true
-                    } label: {
-                        Label("Einstellungen", systemImage: "gearshape")
-                    }
-                }
                 #endif
                 }
             }
@@ -260,10 +246,12 @@ struct ContentView: View {
                 )
             )
         }
+        #if os(iOS)
         .sheet(isPresented: $showingSettings) {
             SettingsView()
                 .environment(familySharingSettings)
         }
+        #endif
         .onChange(of: showingSettings) { oldValue, newValue in
             // Reload products when settings sheet is dismissed
             if oldValue && !newValue {

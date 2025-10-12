@@ -11,10 +11,13 @@ import CloudKit
 
 struct SettingsView: View {
     @Environment(\.modelContext) private var modelContext
-    @Environment(\.dismiss) private var dismiss
     @Environment(FamilySharingSettings.self) private var familySharingSettings
     @Query private var products: [Product]
     @Query private var purchases: [Purchase]
+    
+    #if os(iOS)
+    @Environment(\.dismiss) private var dismiss
+    #endif
     
     @State private var showingDeleteAllConfirmation = false
     @State private var showingFamilySharingAlert = false
@@ -22,11 +25,13 @@ struct SettingsView: View {
     @State private var cloudKitAvailable = false
     
     var body: some View {
+        #if os(macOS)
+        settingsContent
+            .frame(minWidth: 500, minHeight: 600)
+        #else
         NavigationStack {
             settingsContent
         }
-        #if os(macOS)
-        .frame(minWidth: 500, minHeight: 600)
         #endif
     }
     
@@ -210,8 +215,8 @@ struct SettingsView: View {
         .scrollContentBackground(.hidden)
         .background(Color(NSColor.windowBackgroundColor))
         #endif
-        .navigationTitle("Einstellungen")
         #if os(iOS)
+        .navigationTitle("Einstellungen")
         .navigationBarTitleDisplayMode(.large)
         #endif
         .toolbar {
@@ -220,26 +225,6 @@ struct SettingsView: View {
                 Button("Fertig") {
                     dismiss()
                 }
-            }
-            #else
-            ToolbarItem(placement: .cancellationAction) {
-                Button {
-                    dismiss()
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundStyle(.secondary)
-                        .font(.title2)
-                }
-                .buttonStyle(.plain)
-                .help("Schließen")
-            }
-            
-            ToolbarItem(placement: .primaryAction) {
-                Button("Fertig") {
-                    dismiss()
-                }
-                .buttonStyle(.borderedProminent)
-                .keyboardShortcut(.return, modifiers: .command)
             }
             #endif
         }
@@ -312,7 +297,9 @@ struct SettingsView: View {
             }
         }
         
+        #if os(iOS)
         dismiss()
+        #endif
     }
 }
 
