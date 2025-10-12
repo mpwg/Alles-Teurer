@@ -82,7 +82,5 @@ struct Alles_TeurerApp: App {
             }
         }
     }
-
-
 }
 
