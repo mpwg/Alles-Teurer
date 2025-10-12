@@ -4,13 +4,42 @@
     "" : {
 
     },
+    "%@ %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
+    "%@/%@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@/%2$@"
+          }
+        }
+      }
+    },
     "%@%%" : {
 
     },
     "%lld" : {
 
     },
+    "%lld Artikel" : {
+
+    },
+    "%lld Einkäufe wurden gespeichert" : {
+
+    },
     "%lld%%" : {
+
+    },
+    "•" : {
 
     },
     "0.00" : {
@@ -89,6 +118,12 @@
         }
       }
     },
+    "Artikel bearbeiten" : {
+
+    },
+    "Artikel werden erkannt und extrahiert" : {
+
+    },
     "Ausgaben" : {
       "localizations" : {
         "en" : {
@@ -119,6 +154,18 @@
         }
       }
     },
+    "Beleg fotografieren oder auswählen" : {
+
+    },
+    "Beleg scannen" : {
+
+    },
+    "Beleg wird analysiert..." : {
+
+    },
+    "Berechnung" : {
+
+    },
     "Bester Preis" : {
       "localizations" : {
         "en" : {
@@ -138,6 +185,9 @@
           }
         }
       }
+    },
+    "Bitte versuchen Sie ein anderes Foto oder fügen Sie Artikel manuell hinzu" : {
+
     },
     "Build-Typ" : {
       "localizations" : {
@@ -355,6 +405,9 @@
         }
       }
     },
+    "Fehler" : {
+
+    },
     "Fertig" : {
       "localizations" : {
         "en" : {
@@ -364,6 +417,12 @@
           }
         }
       }
+    },
+    "Foto aufnehmen" : {
+
+    },
+    "Foto wählen" : {
+
     },
     "Fügen Sie Beispieldaten hinzu, um die App auszuprobieren, oder löschen Sie alle vorhandenen Daten." : {
       "localizations" : {
@@ -398,6 +457,9 @@
     "g" : {
 
     },
+    "Gesamt: %@" : {
+
+    },
     "Gesamtpreis" : {
       "localizations" : {
         "en" : {
@@ -428,6 +490,12 @@
         }
       }
     },
+    "Geschäftsname" : {
+
+    },
+    "Gespeichert" : {
+
+    },
     "iCloud ist nicht verfügbar. Bitte melden Sie sich in den Systemeinstellungen bei iCloud an und versuchen Sie es erneut." : {
       "localizations" : {
         "en" : {
@@ -457,6 +525,9 @@
           }
         }
       }
+    },
+    "Keine Artikel erkannt" : {
+
     },
     "Keine Einkäufe" : {
       "localizations" : {
@@ -551,6 +622,9 @@
         }
       }
     },
+    "Menge & Preis" : {
+
+    },
     "Min" : {
 
     },
@@ -599,6 +673,12 @@
           }
         }
       }
+    },
+    "Preis pro Einheit" : {
+
+    },
+    "Preis pro Einheit:" : {
+
     },
     "Preis/Einheit" : {
       "localizations" : {
@@ -669,6 +749,9 @@
           }
         }
       }
+    },
+    "Produktinformation" : {
+
     },
     "Produktname" : {
       "localizations" : {
@@ -869,6 +952,9 @@
           }
         }
       }
+    },
+    "z.B. kg, l, Stk" : {
+
     },
     "Zu den Einstellungen" : {
       "localizations" : {

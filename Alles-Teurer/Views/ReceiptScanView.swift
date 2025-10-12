@@ -18,6 +18,7 @@ struct ReceiptScanView: View {
     @State private var editingItem: DetectedPurchaseItem?
     @State private var showingCamera = false
     @State private var showingSaveConfirmation = false
+    @State private var selectedImage: Image?
     
     var body: some View {
         NavigationStack {
@@ -35,12 +36,14 @@ struct ReceiptScanView: View {
                     
                     // Detected Items List
                     detectedItemsList
-                } else if viewModel.scannedImage != nil {
+                } else if selectedImage != nil {
                     emptyStateView
                 }
             }
             .navigationTitle("Beleg scannen")
+            #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
+            #endif
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Abbrechen") {
@@ -94,9 +97,9 @@ struct ReceiptScanView: View {
     
     private var photoSelectionSection: some View {
         VStack(spacing: 16) {
-            if let image = viewModel.scannedImage {
+            if let image = selectedImage {
                 // Show selected image
-                Image(uiImage: image)
+                image
                     .resizable()
                     .scaledToFit()
                     .frame(maxHeight: 200)
@@ -140,8 +143,13 @@ struct ReceiptScanView: View {
             }
         }
         .padding()
-        .onChange(of: viewModel.selectedPhotoItem) { _, _ in
+        .onChange(of: viewModel.selectedPhotoItem) { oldValue, newValue in
             Task {
+                // Load the image for display
+                if let item = newValue {
+                    selectedImage = try? await item.loadTransferable(type: Image.self)
+                }
+                // Process the receipt
                 await viewModel.loadSelectedPhoto()
             }
         }
@@ -210,7 +218,11 @@ struct ReceiptScanView: View {
             }
         }
         .padding()
+        #if os(iOS)
         .background(Color(.systemGroupedBackground))
+        #else
+        .background(Color(nsColor: .controlBackgroundColor))
+        #endif
     }
     
     // MARK: - Detected Items List
@@ -319,60 +331,210 @@ struct EditDetectedItemSheet: View {
     
     var body: some View {
         NavigationStack {
-            Form {
-                Section("Produktinformation") {
-                    TextField("Produktname", text: $editedItem.productName)
+            #if os(iOS)
+            iosFormContent
+            #else
+            macosFormContent
+            #endif
+        }
+    }
+    
+    // MARK: - iOS Content
+    
+    #if os(iOS)
+    private var iosFormContent: some View {
+        Form {
+            Section("Produktinformation") {
+                TextField("Produktname", text: $editedItem.productName)
+                    .textFieldStyle(.plain)
+            }
+            
+            Section("Menge & Preis") {
+                HStack {
+                    Text("Menge")
+                    Spacer()
+                    TextField("Menge", value: $editedItem.quantity, format: .number)
+                        .keyboardType(.decimalPad)
+                        .multilineTextAlignment(.trailing)
+                        .frame(width: 100)
                 }
                 
-                Section("Menge & Preis") {
-                    HStack {
-                        Text("Menge")
-                        Spacer()
-                        TextField("Menge", value: $editedItem.quantity, format: .number)
-                            .keyboardType(.decimalPad)
-                            .multilineTextAlignment(.trailing)
-                            .frame(width: 100)
-                    }
-                    
+                HStack {
+                    Text("Einheit")
+                    Spacer()
                     TextField("Einheit", text: $editedItem.unit)
-                    
-                    HStack {
-                        Text("Gesamtpreis")
-                        Spacer()
-                        TextField("Preis", value: $editedItem.totalPrice, format: .currency(code: "EUR"))
-                            .keyboardType(.decimalPad)
-                            .multilineTextAlignment(.trailing)
-                            .frame(width: 100)
-                    }
+                        .multilineTextAlignment(.trailing)
+                        .frame(width: 100)
                 }
                 
-                Section {
-                    HStack {
-                        Text("Preis pro Einheit")
-                        Spacer()
-                        Text(editedItem.pricePerUnit, format: .currency(code: "EUR"))
-                            .foregroundStyle(.secondary)
-                    }
+                HStack {
+                    Text("Gesamtpreis")
+                    Spacer()
+                    TextField("Preis", value: $editedItem.totalPrice, format: .currency(code: "EUR"))
+                        .keyboardType(.decimalPad)
+                        .multilineTextAlignment(.trailing)
+                        .frame(width: 120)
                 }
             }
-            .navigationTitle("Artikel bearbeiten")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Abbrechen") {
-                        dismiss()
-                    }
-                }
-                
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Speichern") {
-                        onSave(editedItem)
-                        dismiss()
-                    }
+            
+            Section {
+                HStack {
+                    Text("Preis pro Einheit")
+                    Spacer()
+                    Text(editedItem.pricePerUnit, format: .currency(code: "EUR"))
+                        .foregroundStyle(.secondary)
                 }
             }
         }
+        .navigationTitle("Artikel bearbeiten")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .cancellationAction) {
+                Button("Abbrechen") {
+                    dismiss()
+                }
+            }
+            
+            ToolbarItem(placement: .confirmationAction) {
+                Button("Speichern") {
+                    onSave(editedItem)
+                    dismiss()
+                }
+                .buttonStyle(.borderedProminent)
+            }
+        }
     }
+    #endif
+    
+    // MARK: - macOS Content
+    
+    #if os(macOS)
+    private var macosFormContent: some View {
+        VStack(spacing: 0) {
+            // Header
+            HStack {
+                Text("Artikel bearbeiten")
+                    .font(.headline)
+                Spacer()
+            }
+            .padding()
+            .background(Color(nsColor: .controlBackgroundColor))
+            
+            Divider()
+            
+            // Form Content
+            ScrollView {
+                VStack(alignment: .leading, spacing: 24) {
+                    // Product Information
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("Produktinformation")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.secondary)
+                        
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("Produktname")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                            TextField("Produktname eingeben", text: $editedItem.productName)
+                                .textFieldStyle(.roundedBorder)
+                        }
+                    }
+                    
+                    Divider()
+                    
+                    // Quantity & Price
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("Menge & Preis")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.secondary)
+                        
+                        HStack(spacing: 16) {
+                            // Quantity
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text("Menge")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                TextField("Menge", value: $editedItem.quantity, format: .number)
+                                    .textFieldStyle(.roundedBorder)
+                                    .frame(width: 100)
+                            }
+                            
+                            // Unit
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text("Einheit")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                TextField("z.B. kg, l, Stk", text: $editedItem.unit)
+                                    .textFieldStyle(.roundedBorder)
+                                    .frame(width: 100)
+                            }
+                            
+                            Spacer()
+                        }
+                        
+                        // Total Price
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("Gesamtpreis")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                            TextField("Preis", value: $editedItem.totalPrice, format: .currency(code: "EUR"))
+                                .textFieldStyle(.roundedBorder)
+                                .frame(width: 150)
+                        }
+                    }
+                    
+                    Divider()
+                    
+                    // Calculated Price
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("Berechnung")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.secondary)
+                        
+                        HStack {
+                            Text("Preis pro Einheit:")
+                                .font(.body)
+                            Spacer()
+                            Text(editedItem.pricePerUnit, format: .currency(code: "EUR"))
+                                .font(.body)
+                                .fontWeight(.semibold)
+                                .foregroundStyle(.blue)
+                        }
+                        .padding(12)
+                        .background(Color.blue.opacity(0.1))
+                        .cornerRadius(8)
+                    }
+                }
+                .padding(20)
+            }
+            .frame(minWidth: 400, minHeight: 300)
+            
+            Divider()
+            
+            // Action Buttons
+            HStack {
+                Spacer()
+                
+                Button("Abbrechen") {
+                    dismiss()
+                }
+                .keyboardShortcut(.cancelAction)
+                
+                Button("Speichern") {
+                    onSave(editedItem)
+                    dismiss()
+                }
+                .keyboardShortcut(.defaultAction)
+                .buttonStyle(.borderedProminent)
+            }
+            .padding()
+            .background(Color(nsColor: .controlBackgroundColor))
+        }
+    }
+    #endif
 }
 
 // MARK: - Preview

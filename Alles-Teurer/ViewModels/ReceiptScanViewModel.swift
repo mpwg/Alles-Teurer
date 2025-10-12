@@ -9,13 +9,23 @@ import SwiftUI
 import SwiftData
 import PhotosUI
 
+#if canImport(UIKit)
+import UIKit
+#elseif canImport(AppKit)
+import AppKit
+#endif
+
 /// Represents a detected purchase item from a receipt scan
 struct DetectedPurchaseItem: Identifiable {
     let id = UUID()
     var productName: String
+    var normalizedName: String? // For LLM-normalized names
     var quantity: Double
     var unit: String
     var totalPrice: Double
+    var shopName: String? // Store shop name per item for flexibility
+    var date: Date? // Store date per item for flexibility
+    
     var pricePerUnit: Double {
         guard quantity > 0 else { return 0 }
         return totalPrice / quantity
@@ -36,7 +46,6 @@ class ReceiptScanViewModel {
     var isProcessing: Bool = false
     var errorMessage: String?
     var selectedPhotoItem: PhotosPickerItem?
-    var scannedImage: UIImage?
     
     // MARK: - Photo Selection
     
@@ -49,13 +58,18 @@ class ReceiptScanViewModel {
         errorMessage = nil
         
         do {
-            if let data = try await item.loadTransferable(type: Data.self),
-               let image = UIImage(data: data) {
-                scannedImage = image
-                await processReceiptImage(image)
+            // Extract the image data
+            guard let imageData = try await item.loadTransferable(type: Data.self) else {
+                throw ReceiptScanError.invalidImage
             }
+            
+            // Process the receipt with the recognition service
+            try await processReceiptImage(imageData: imageData)
+            
+        } catch let error as ReceiptRecognitionError {
+            errorMessage = error.localizedDescription
         } catch {
-            errorMessage = "Fehler beim Laden des Fotos: \(error.localizedDescription)"
+            errorMessage = "Fehler beim Laden des Bildes: \(error.localizedDescription)"
         }
         
         isProcessing = false
@@ -63,44 +77,41 @@ class ReceiptScanViewModel {
     
     // MARK: - Receipt Processing
     
-    /// Process receipt image using Visual Intelligence
-    /// TODO: Implement actual Visual Intelligence API integration
+    /// Process receipt image using Vision + Foundation Models
     @MainActor
-    private func processReceiptImage(_ image: UIImage) async {
-        // Simulate processing delay
-        try? await Task.sleep(for: .seconds(2))
+    private func processReceiptImage(imageData: Data) async throws {
+        // Convert Data to CGImage
+        guard let cgImage = createCGImage(from: imageData) else {
+            throw ReceiptScanError.invalidImage
+        }
         
-        // Mock data for UI development
-        // In production, this would call Visual Intelligence API
-        shopName = "Hofer"
-        receiptDate = Date()
+        // Create recognition service (will need ModelContext for real usage)
+        let service = ReceiptRecognitionService(modelContext: nil)
         
-        detectedItems = [
-            DetectedPurchaseItem(
-                productName: "Milch 3,5%",
-                quantity: 1.0,
-                unit: "l",
-                totalPrice: 1.29
-            ),
-            DetectedPurchaseItem(
-                productName: "Vollkornbrot",
-                quantity: 500,
-                unit: "g",
-                totalPrice: 2.49
-            ),
-            DetectedPurchaseItem(
-                productName: "Bio Eier",
-                quantity: 10,
-                unit: "Stk",
-                totalPrice: 3.99
-            ),
-            DetectedPurchaseItem(
-                productName: "Bananen",
-                quantity: 1.2,
-                unit: "kg",
-                totalPrice: 2.16
-            )
-        ]
+        // Extract purchases from the receipt
+        let extractedItems = try await service.extractPurchases(from: cgImage)
+        
+        // Update UI with extracted data
+        if let firstItem = extractedItems.first {
+            shopName = firstItem.shopName ?? "Unbekannt"
+            receiptDate = firstItem.date ?? Date()
+        }
+        
+        detectedItems = extractedItems
+    }
+    
+    /// Create a CGImage from image data (cross-platform)
+    private func createCGImage(from data: Data) -> CGImage? {
+        #if canImport(UIKit)
+        guard let uiImage = UIKit.UIImage(data: data) else { return nil }
+        return uiImage.cgImage
+        #elseif canImport(AppKit)
+        guard let nsImage = AppKit.NSImage(data: data) else { return nil }
+        var imageRect = CGRect(x: 0, y: 0, width: nsImage.size.width, height: nsImage.size.height)
+        return nsImage.cgImage(forProposedRect: &imageRect, context: nil, hints: nil)
+        #else
+        return nil
+        #endif
     }
     
     // MARK: - Item Management
@@ -150,11 +161,13 @@ class ReceiptScanViewModel {
         }
         
         for item in detectedItems {
+            // Use normalized name if available, otherwise use product name
+            let normalizedName = item.normalizedName ?? item.productName
+            
             // Find or create product
-            let itemName = item.productName
             let descriptor = FetchDescriptor<Product>(
                 predicate: #Predicate { product in
-                    product.normalizedName == itemName
+                    product.normalizedName == normalizedName
                 }
             )
             
@@ -166,7 +179,7 @@ class ReceiptScanViewModel {
             } else {
                 // Create new product with initial price data
                 product = Product(
-                    normalizedName: item.productName,
+                    normalizedName: normalizedName,
                     bestPricePerQuantity: item.pricePerUnit,
                     bestPriceStore: shopName,
                     highestPricePerQuantity: item.pricePerUnit,
@@ -205,7 +218,6 @@ class ReceiptScanViewModel {
         isProcessing = false
         errorMessage = nil
         selectedPhotoItem = nil
-        scannedImage = nil
     }
     
     // MARK: - Validation
@@ -221,6 +233,19 @@ class ReceiptScanViewModel {
             case .noItems:
                 return "Keine Artikel erkannt"
             }
+        }
+    }
+}
+
+// MARK: - ReceiptScanError
+
+enum ReceiptScanError: LocalizedError {
+    case invalidImage
+    
+    var errorDescription: String? {
+        switch self {
+        case .invalidImage:
+            return "Das Bild konnte nicht geladen werden"
         }
     }
 }
