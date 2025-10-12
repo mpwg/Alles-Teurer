@@ -7,18 +7,9 @@
 
 import SwiftUI
 import SwiftData
-import RevenueCat
 
 @main
 struct Alles_TeurerApp: App {
-
-
-    init() {
-        Purchases.logLevel = .debug
-        Purchases.configure(withAPIKey: "test_PFTZTjGCCslkeWCUxmWBaynCIre")
-    }
-
-
     @State private var familySharingSettings = FamilySharingSettings.shared
     @State private var modelContainer: ModelContainer?
     @Environment(\.scenePhase) private var scenePhase
