@@ -97,6 +97,8 @@ struct SettingsView: View {
             Section {
                 #if os(macOS)
                 VStack(alignment: .leading, spacing: 8) {
+                    #if DEBUG
+
                     if products.isEmpty {
                         Button("Beispieldaten hinzufügen") {
                             addSampleData()
@@ -104,7 +106,7 @@ struct SettingsView: View {
                         .buttonStyle(.bordered)
                         .controlSize(.large)
                     }
-                    
+                    #endif
                     Button("Alle Daten löschen", role: .destructive) {
                         showingDeleteAllConfirmation = true
                     }
@@ -114,12 +116,14 @@ struct SettingsView: View {
                 }
                 .padding(.vertical, 8)
                 #else
+                #if DEBUG
                 if products.isEmpty {
                     Button("Beispieldaten hinzufügen") {
                         addSampleData()
                     }
                 }
-                
+                #endif
+
                 Button("Alle Daten löschen", role: .destructive) {
                     showingDeleteAllConfirmation = true
                 }
@@ -275,7 +279,7 @@ struct SettingsView: View {
             cloudKitAvailable = await familySharingSettings.checkCloudKitAvailability()
         }
     }
-    
+    #if DEBUG
     private func addSampleData() {
         withAnimation {
             TestData.createSampleData(in: modelContext)
@@ -286,7 +290,8 @@ struct SettingsView: View {
             }
         }
     }
-    
+    #endif
+
     private func deleteAllData() {
         withAnimation {
             // Delete all products (this will also delete all purchases due to cascade delete rule)

@@ -166,6 +166,7 @@ struct PurchaseRowView: View {
     }
 }
 
+#if DEBUG
 #Preview {
     let config = SwiftData.ModelConfiguration(isStoredInMemoryOnly: true)
     let container = try! SwiftData.ModelContainer(for: Product.self, configurations: config)
@@ -176,3 +177,4 @@ struct PurchaseRowView: View {
         PurchaseListView(product: TestData.sampleProducts[0], productViewModel: productViewModel, modelContext: context)
     }
 }
+#endif

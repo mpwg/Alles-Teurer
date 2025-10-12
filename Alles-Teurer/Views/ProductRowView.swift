@@ -95,7 +95,10 @@ struct ProductRowView: View {
     }
 }
 
+
+#if DEBUG
 #Preview {
     ProductRowView(product: TestData.sampleProducts[0])
         .padding()
 }
+#endif

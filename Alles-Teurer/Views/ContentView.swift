@@ -71,7 +71,12 @@ struct ContentView: View {
                     }
                 } description: {
                     if !viewModel.hasProducts {
+                        #if DEBUG
                         Text("Fügen Sie Ihren ersten Einkauf hinzu oder laden Sie Beispieldaten in den Einstellungen.")
+                        #else
+                        Text("Fügen Sie Ihren ersten Einkauf hinzu.")
+
+                        #endif
                     } else {
                         Text("Versuchen Sie es mit einem anderen Suchbegriff.")
                     }
@@ -385,6 +390,8 @@ struct ContentView: View {
     }
 }
 
+#if DEBUG
+
 #Preview("Keine Produkte") {
     do {
         let config = SwiftData.ModelConfiguration(isStoredInMemoryOnly: true)
@@ -415,4 +422,4 @@ struct ContentView: View {
     }
 }
 
-
+#endif
