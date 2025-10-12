@@ -248,7 +248,12 @@ struct ContentView: View {
             AddPurchaseSheet(productViewModel: productViewModel, modelContext: modelContext)
         }
         .sheet(isPresented: $showingReceiptScan) {
-            ReceiptScanView()
+            ReceiptScanView(
+                purchaseViewModel: PurchaseViewModel(
+                    modelContext: modelContext,
+                    productViewModel: productViewModel
+                )
+            )
         }
         .sheet(isPresented: $showingSettings) {
             SettingsView()

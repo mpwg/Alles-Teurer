@@ -35,6 +35,10 @@ struct DetectedPurchaseItem: Identifiable {
 /// View model for receipt scanning and purchase extraction
 @Observable
 class ReceiptScanViewModel {
+    // MARK: - Dependencies
+    var modelContext: ModelContext?
+    var purchaseViewModel: PurchaseViewModel?
+    
     // MARK: - Receipt Information
     var shopName: String = ""
     var receiptDate: Date = Date()
@@ -46,6 +50,7 @@ class ReceiptScanViewModel {
     var isProcessing: Bool = false
     var errorMessage: String?
     var selectedPhotoItem: PhotosPickerItem?
+    var saveSuccessful: Bool = false
     
     // MARK: - Photo Selection
     
@@ -85,11 +90,17 @@ class ReceiptScanViewModel {
             throw ReceiptScanError.invalidImage
         }
         
-        // Create recognition service (will need ModelContext for real usage)
-        let service = ReceiptRecognitionService(modelContext: nil)
+        // Get product suggestions from PurchaseViewModel for better mapping
+        let productSuggestions = purchaseViewModel?.productSuggestions ?? []
         
-        // Extract purchases from the receipt
-        let extractedItems = try await service.extractPurchases(from: cgImage)
+        // Create recognition service with ModelContext for database access
+        let service = ReceiptRecognitionService(modelContext: modelContext)
+        
+        // Extract purchases from the receipt with product suggestions
+        let extractedItems = try await service.extractPurchases(
+            from: cgImage,
+            existingProductSuggestions: productSuggestions
+        )
         
         // Update UI with extracted data
         if let firstItem = extractedItems.first {
@@ -160,11 +171,12 @@ class ReceiptScanViewModel {
             throw ValidationError.noItems
         }
         
+        // Each detected item represents one line from the receipt = one Purchase
         for item in detectedItems {
-            // Use normalized name if available, otherwise use product name
+            // Use normalized name from LLM (which was mapped to existing products if possible)
             let normalizedName = item.normalizedName ?? item.productName
             
-            // Find or create product
+            // Find or create product using the LLM-normalized name
             let descriptor = FetchDescriptor<Product>(
                 predicate: #Predicate { product in
                     product.normalizedName == normalizedName
@@ -175,6 +187,7 @@ class ReceiptScanViewModel {
             let products = try context.fetch(descriptor)
             
             if let existingProduct = products.first {
+                // Use existing product that LLM matched
                 product = existingProduct
             } else {
                 // Create new product with initial price data
@@ -189,23 +202,46 @@ class ReceiptScanViewModel {
                 context.insert(product)
             }
             
-            // Create purchase
+            // Create purchase for this receipt line
             let purchase = Purchase(
                 shopName: shopName,
                 date: receiptDate,
                 totalPrice: item.totalPrice,
                 quantity: item.quantity,
-                actualProductName: item.productName,
+                actualProductName: item.productName, // Original name from receipt
                 unit: item.unit
             )
             
             // Link purchase to product
             purchase.product = product
             
+            // Update product's best/worst prices
+            updateProductPrices(product, newPurchase: purchase)
+            
             context.insert(purchase)
         }
         
         try context.save()
+        saveSuccessful = true
+    }
+    
+    /// Update product's best and worst prices when adding a new purchase
+    private func updateProductPrices(_ product: Product, newPurchase: Purchase) {
+        let pricePerUnit = newPurchase.pricePerQuantity
+        
+        // Check if this is a new best price
+        if pricePerUnit < product.bestPricePerQuantity {
+            product.bestPricePerQuantity = pricePerUnit
+            product.bestPriceStore = newPurchase.shopName
+        }
+        
+        // Check if this is a new worst price
+        if pricePerUnit > product.highestPricePerQuantity {
+            product.highestPricePerQuantity = pricePerUnit
+            product.highestPriceStore = newPurchase.shopName
+        }
+        
+        product.lastUpdated = Date()
     }
     
     // MARK: - Reset

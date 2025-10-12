@@ -30,10 +30,15 @@ final class ReceiptRecognitionService {
     // MARK: - Public Methods
     
     /// Extracts purchase items from a receipt image
-    /// - Parameter cgImage: The receipt image to process
+    /// - Parameters:
+    ///   - cgImage: The receipt image to process
+    ///   - existingProductSuggestions: Optional array of existing product names to help LLM map items
     /// - Returns: Array of detected purchase items
     /// - Throws: ReceiptRecognitionError for various failure cases
-    func extractPurchases(from cgImage: CGImage) async throws -> [DetectedPurchaseItem] {
+    func extractPurchases(
+        from cgImage: CGImage,
+        existingProductSuggestions: [String] = []
+    ) async throws -> [DetectedPurchaseItem] {
         logger.info("Starting receipt recognition process")
         
         // Check if Foundation Models are available
@@ -48,14 +53,18 @@ final class ReceiptRecognitionService {
         // Step 2: Load existing normalized names for consistency
         let existingNormalizedNames = await getExistingNormalizedNames()
         
-        // Step 3: Use Foundation Models to parse structured data
+        // Step 3: Combine with provided suggestions for better mapping
+        let allProductSuggestions = Array(Set(existingNormalizedNames).union(Set(existingProductSuggestions)))
+        logger.info("Using \(allProductSuggestions.count) product suggestions for LLM mapping")
+        
+        // Step 4: Use Foundation Models to parse structured data
         let receiptData = try await parseReceiptWithFoundationModels(
             extractedText,
-            existingNormalizedNames: existingNormalizedNames
+            existingNormalizedNames: allProductSuggestions
         )
         logger.info("Successfully parsed receipt with \(receiptData.lineItems.count) items")
         
-        // Step 4: Convert to DetectedPurchaseItem objects
+        // Step 5: Convert to DetectedPurchaseItem objects (each line = one Purchase)
         var items: [DetectedPurchaseItem] = []
         
         for item in receiptData.lineItems {
@@ -71,7 +80,7 @@ final class ReceiptRecognitionService {
             items.append(detectedItem)
         }
         
-        logger.info("Created \(items.count) DetectedPurchaseItem objects")
+        logger.info("Created \(items.count) DetectedPurchaseItem objects (one per receipt line)")
         return items
     }
     
@@ -117,15 +126,12 @@ final class ReceiptRecognitionService {
     
     private func parseReceiptWithFoundationModels(
         _ text: String,
-        existingNormalizedNames: Set<String>
+        existingNormalizedNames: [String]
     ) async throws -> ParsedReceiptData {
         logger.info("Using Foundation Models to parse receipt data")
         
-        // Combine common product types with existing names for context
-        let commonTypes = getCommonAustrianProducts()
-        let existingNames = Array(existingNormalizedNames).sorted()
-        let allExamples = (commonTypes + existingNames).prefix(50) // Limit to avoid token overflow
-        let examplesList = allExamples.joined(separator: ", ")
+        // Use provided existing names (already includes common products + database products)
+        let examplesList = existingNormalizedNames.prefix(50).joined(separator: ", ")
         
         // Create comprehensive instructions for parsing AND normalization
         let instructions = """
@@ -133,16 +139,21 @@ final class ReceiptRecognitionService {
         
         Deine Aufgabe ist es, strukturierte Daten aus Rechnungstexten zu extrahieren UND gleichzeitig die Produktnamen zu normalisieren.
         
+        WICHTIG: Jede Zeile auf dem Kassenbon wird zu einem separaten Purchase (Einkauf) im System.
+        
         EXTRAKTION - Befolge diese Regeln:
-        - Extrahiere ALLE Produkte/Artikel aus der Rechnung
-        - Ignoriere Rabatte, Pfand, MwSt. und Gesamtsummen
+        - Extrahiere JEDE einzelne Zeile/Position als separaten Artikel
+        - Jede Zeile = Ein Purchase = Ein Produkt-Eintrag
+        - Ignoriere nur: Rabatte, Pfand, MwSt., Zwischensummen und Gesamtsummen
         - Verwende deutsche/österreichische Produktnamen wie sie auf der Rechnung stehen
-        - Extrahiere Einzelpreise, nicht Gesamtsummen
+        - Extrahiere Einzelpreise (Preis pro Artikel/Position)
         - Erkenne Mengenangaben (kg, g, l, ml, Stk) und extrahiere sie separat
         - Standard-Einheit ist "Stk" wenn keine angegeben ist
         - Standard-Menge ist 1.0 wenn keine angegeben ist
         
-        NORMALISIERUNG - Für jeden Produktnamen:
+        NORMALISIERUNG UND MAPPING - Für jeden Produktnamen:
+        - ERSTE PRIORITÄT: Mappe zu einem der bereits verwendeten Produktnamen wenn möglich
+        - Wenn der Artikel zu einem bestehenden Produkt passt, verwende EXAKT denselben normalizedName
         - Entferne ALLE Markennamen (Ja natürlich, Clever, SPAR, BILLA, Hofer, Lidl, etc.)
         - Entferne ALLE Mengenangaben (diese werden separat extrahiert)
         - Entferne Packungsarten (Dose, Flasche, Becher, Tüte, Packung, etc.)
@@ -150,17 +161,21 @@ final class ReceiptRecognitionService {
         - Behalte nur den essentiellen Produkttyp
         - Verwende österreichische Begriffe: "Topfen" (nicht Quark), "Paradeiser" (nicht Tomaten), "Erdäpfel" (nicht Kartoffeln)
         - Verwende einheitliche Schreibweise: erste Buchstabe groß, Rest klein
-        - Bevorzuge bereits verwendete Begriffe für Konsistenz
         
-        BEREITS VERWENDETE NORMALISIERTE NAMEN (verwende diese wenn möglich):
+        BEREITS IM SYSTEM VERWENDETE PRODUKTE (BEVORZUGE DIESE):
         \(examplesList)
         
-        BEISPIELE für Normalisierung:
-        "Ja natürlich Bio Joghurt Natur 500g" → normalizedName: "Joghurt", quantity: 0.5, unit: "kg"
-        "Clever Erdäpfel mehlig 2kg" → normalizedName: "Erdäpfel", quantity: 2.0, unit: "kg"
-        "SPAR Premium Grana Padano gerieben" → normalizedName: "Grana Padano", quantity: 1.0, unit: "Stk"
-        "Bio Faschiertes gemischt 500g" → normalizedName: "Faschiertes", quantity: 0.5, unit: "kg"
-        "Paprika rot 3 Stk." → normalizedName: "Paprika", quantity: 3.0, unit: "Stk"
+        BEISPIELE für Normalisierung und Mapping:
+        - "Ja natürlich Bio Joghurt Natur 500g" → normalizedName: "Joghurt" (wenn "Joghurt" existiert), quantity: 0.5, unit: "kg"
+        - "Clever Erdäpfel mehlig 2kg" → normalizedName: "Erdäpfel" (wenn "Erdäpfel" existiert), quantity: 2.0, unit: "kg"
+        - "SPAR Premium Grana Padano gerieben" → normalizedName: "Grana Padano", quantity: 1.0, unit: "Stk"
+        - "Bio Faschiertes gemischt 500g" → normalizedName: "Faschiertes" (wenn existiert), quantity: 0.5, unit: "kg"
+        - "Paprika rot 3 Stk." → normalizedName: "Paprika" (wenn existiert), quantity: 3.0, unit: "Stk"
+        
+        MAPPING-STRATEGIE:
+        - Prüfe zuerst, ob das Produkt zu einem bestehenden passt (z.B. "Vollmilch 3.5%" → "Milch")
+        - Verwende EXAKT den bestehenden Namen für Konsistenz
+        - Nur wenn kein Match möglich ist, erstelle einen neuen normalisierten Namen
         """
         
         let session = LanguageModelSession(instructions: instructions)
@@ -186,23 +201,23 @@ final class ReceiptRecognitionService {
     // MARK: - Helper Methods
     
     /// Retrieves existing normalized product names from the database for LLM context
-    private func getExistingNormalizedNames() async -> Set<String> {
+    private func getExistingNormalizedNames() async -> [String] {
         guard let modelContext = modelContext else {
             logger.warning("No ModelContext available, using default product types only")
-            return Set()
+            return getCommonAustrianProducts()
         }
         
         do {
             let descriptor = FetchDescriptor<Product>()
             let allProducts = try modelContext.fetch(descriptor)
             
-            let normalizedNames = Set(allProducts.map { $0.normalizedName })
+            let normalizedNames = allProducts.map { $0.normalizedName }
             
             logger.info("Loaded \(normalizedNames.count) existing normalized names from database")
             return normalizedNames
         } catch {
             logger.error("Failed to load existing normalized names: \(error)")
-            return Set()
+            return getCommonAustrianProducts()
         }
     }
     

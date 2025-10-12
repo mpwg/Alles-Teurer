@@ -13,6 +13,8 @@ struct ReceiptScanView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
     
+    let purchaseViewModel: PurchaseViewModel
+    
     @State private var viewModel = ReceiptScanViewModel()
     @State private var showingEditSheet = false
     @State private var editingItem: DetectedPurchaseItem?
@@ -89,6 +91,11 @@ struct ReceiptScanView: View {
                 }
             } message: {
                 Text("\(viewModel.detectedItems.count) Einkäufe wurden gespeichert")
+            }
+            .onAppear {
+                // Inject dependencies when view appears
+                viewModel.modelContext = modelContext
+                viewModel.purchaseViewModel = purchaseViewModel
             }
         }
     }
@@ -540,8 +547,14 @@ struct EditDetectedItemSheet: View {
 // MARK: - Preview
 
 #Preview {
-    NavigationStack {
-        ReceiptScanView()
-            .modelContainer(for: [Product.self, Purchase.self], inMemory: true)
+    let config = ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! ModelContainer(for: Product.self, Purchase.self, configurations: config)
+    let context = ModelContext(container)
+    let productViewModel = ProductViewModel(modelContext: context)
+    let purchaseViewModel = PurchaseViewModel(modelContext: context, productViewModel: productViewModel)
+    
+    return NavigationStack {
+        ReceiptScanView(purchaseViewModel: purchaseViewModel)
+            .modelContainer(container)
     }
 }
