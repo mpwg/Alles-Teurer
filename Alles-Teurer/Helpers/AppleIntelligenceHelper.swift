@@ -27,8 +27,8 @@ final class AppleIntelligenceHelper {
     // MARK: - Public Methods
     
     /// Returns the current availability status of Foundation Models
-    /// - Returns: ModelAvailabilityStatus enum value
-    func getModelStatus() -> ModelAvailabilityStatus {
+    /// - Returns: SystemLanguageModel.Availability enum value
+    func getModelStatus() -> SystemLanguageModel.Availability {
         return systemModel.availability
     }
     
@@ -44,27 +44,16 @@ final class AppleIntelligenceHelper {
         switch systemModel.availability {
         case .available:
             return "Apple Intelligence ist verfügbar"
-        case .unavailable(let reason):
-            return statusDescription(for: reason)
+        case .unavailable(.deviceNotEligible):
+            return "Gerät unterstützt Apple Intelligence nicht"
+        case .unavailable(.appleIntelligenceNotEnabled):
+            return "Apple Intelligence ist nicht aktiviert"
+        case .unavailable(.modelNotReady):
+            return "Modell wird geladen..."
+        case .unavailable:
+            return "Nicht verfügbar"
         @unknown default:
             return "Status unbekannt"
-        }
-    }
-    
-    // MARK: - Private Methods
-    
-    private func statusDescription(for reason: ModelAvailabilityStatus.UnavailabilityReason) -> String {
-        switch reason {
-        case .deviceNotCapable:
-            return "Gerät unterstützt Apple Intelligence nicht"
-        case .notEnabled:
-            return "Apple Intelligence ist nicht aktiviert"
-        case .notLoaded:
-            return "Modell wird geladen..."
-        case .internalError:
-            return "Interner Fehler beim Laden des Modells"
-        @unknown default:
-            return "Nicht verfügbar (Unbekannter Grund)"
         }
     }
 }

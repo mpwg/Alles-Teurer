@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import FoundationModels
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
@@ -15,6 +16,8 @@ struct ContentView: View {
     @State private var showingAddPurchaseSheet = false
     @State private var showingReceiptScan = false
     @State private var showingSettings = false
+    @State private var showingAppleIntelligenceError = false
+    @State private var appleIntelligenceErrorMessage = ""
     @State private var columnVisibility = NavigationSplitViewVisibility.all
 
     var body: some View {
@@ -107,7 +110,7 @@ struct ContentView: View {
                     ToolbarItem(placement: .navigationBarLeading) {
                         HStack(spacing: 16) {
                             Button {
-                                showingReceiptScan = true
+                                handleReceiptScanTap()
                             } label: {
                                 Label("Beleg scannen", systemImage: "doc.text.viewfinder")
                             }
@@ -122,7 +125,7 @@ struct ContentView: View {
                     #else
                     ToolbarItem(placement: .automatic) {
                         Button {
-                            showingReceiptScan = true
+                            handleReceiptScanTap()
                         } label: {
                             Label("Beleg scannen", systemImage: "doc.text.viewfinder")
                         }
@@ -178,7 +181,7 @@ struct ContentView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack(spacing: 16) {
                         Button {
-                            showingReceiptScan = true
+                            handleReceiptScanTap()
                         } label: {
                             Label("Beleg scannen", systemImage: "doc.text.viewfinder")
                         }
@@ -193,7 +196,7 @@ struct ContentView: View {
                 #else
                 ToolbarItem(placement: .automatic) {
                     Button {
-                        showingReceiptScan = true
+                        handleReceiptScanTap()
                     } label: {
                         Label("Beleg scannen", systemImage: "doc.text.viewfinder")
                     }
@@ -263,7 +266,117 @@ struct ContentView: View {
                 productViewModel.loadProducts()
             }
         }
+        .alert("Apple Intelligence erforderlich", isPresented: $showingAppleIntelligenceError) {
+            Button("Mehr erfahren") {
+                if let url = URL(string: "https://support.apple.com/121115") {
+                    #if os(iOS)
+                    UIApplication.shared.open(url)
+                    #else
+                    NSWorkspace.shared.open(url)
+                    #endif
+                }
+            }
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(appleIntelligenceErrorMessage)
         }
+        }
+    }
+    
+    // MARK: - Helper Methods
+    
+    /// Checks Apple Intelligence availability before showing receipt scan
+    private func handleReceiptScanTap() {
+        let helper = AppleIntelligenceHelper.shared
+        let status = helper.getModelStatus()
+        
+        switch status {
+        case .available:
+            // All good, show the receipt scan view
+            showingReceiptScan = true
+            
+        case .unavailable(.deviceNotEligible):
+            appleIntelligenceErrorMessage = getDeviceNotEligibleMessage()
+            showingAppleIntelligenceError = true
+            
+        case .unavailable(.appleIntelligenceNotEnabled):
+            appleIntelligenceErrorMessage = getNotEnabledMessage()
+            showingAppleIntelligenceError = true
+            
+        case .unavailable(.modelNotReady):
+            appleIntelligenceErrorMessage = getModelNotReadyMessage()
+            showingAppleIntelligenceError = true
+            
+        case .unavailable:
+            appleIntelligenceErrorMessage = getGenericUnavailableMessage()
+            showingAppleIntelligenceError = true
+        
+        @unknown default:
+            appleIntelligenceErrorMessage = """
+            Ein unbekannter Fehler ist aufgetreten beim Überprüfen der Apple Intelligence Verfügbarkeit.
+            
+            Bitte versuchen Sie es später erneut.
+            """
+            showingAppleIntelligenceError = true
+        }
+    }
+    
+    /// Device not eligible error message
+    private func getDeviceNotEligibleMessage() -> String {
+        return """
+        Ihr Gerät unterstützt Apple Intelligence nicht.
+        
+        Apple Intelligence erfordert:
+        • iPhone 15 Pro oder neuer
+        • iPad mit M1 Chip oder neuer
+        • Mac mit Apple Silicon (M1 oder neuer)
+        
+        Die Belegscanner-Funktion ist auf diesem Gerät nicht verfügbar.
+        """
+    }
+    
+    /// Apple Intelligence not enabled error message
+    private func getNotEnabledMessage() -> String {
+        return """
+        Apple Intelligence ist nicht aktiviert.
+        
+        So aktivieren Sie Apple Intelligence:
+        
+        1. Öffnen Sie die Einstellungen-App
+        2. Tippen Sie auf "Apple Intelligence & Siri"
+        3. Aktivieren Sie "Apple Intelligence"
+        
+        Nach der Aktivierung werden die benötigten Modelle automatisch heruntergeladen.
+        
+        Weitere Informationen finden Sie unter dem Link "Mehr erfahren".
+        """
+    }
+    
+    /// Model not ready error message
+    private func getModelNotReadyMessage() -> String {
+        return """
+        Apple Intelligence Modelle werden geladen...
+        
+        Die Foundation Models werden gerade heruntergeladen oder installiert. Dies kann einige Minuten dauern.
+        
+        Bitte stellen Sie sicher, dass:
+        • Sie mit WLAN verbunden sind
+        • Ihr Gerät ausreichend Speicherplatz hat (ca. 4 GB erforderlich)
+        • Ihr Gerät an eine Stromquelle angeschlossen ist
+        
+        Die Belegscanner-Funktion ist verfügbar, sobald der Download abgeschlossen ist.
+        """
+    }
+    
+    /// Generic unavailable error message
+    private func getGenericUnavailableMessage() -> String {
+        return """
+        Apple Intelligence ist derzeit nicht verfügbar.
+        
+        Bitte überprüfen Sie die Einstellungen und versuchen Sie es später erneut.
+        
+        Weitere Informationen finden Sie unter dem Link "Mehr erfahren".
+        """
     }
 }
 
