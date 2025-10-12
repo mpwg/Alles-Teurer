@@ -13,6 +13,7 @@ struct ContentView: View {
     @Environment(FamilySharingSettings.self) private var familySharingSettings
     @State private var productViewModel: ProductViewModel?
     @State private var showingAddPurchaseSheet = false
+    @State private var showingReceiptScan = false
     @State private var showingSettings = false
     @State private var columnVisibility = NavigationSplitViewVisibility.all
 
@@ -101,18 +102,32 @@ struct ContentView: View {
                             } label: {
                                 Label("Einstellungen", systemImage: "gearshape")
                             }
-                            
-
                         }
                     }
                     ToolbarItem(placement: .navigationBarLeading) {
-                        Button {
-                            showingAddPurchaseSheet = true
-                        } label: {
-                            Label("Einkauf hinzufügen", systemImage: "plus")
+                        HStack(spacing: 16) {
+                            Button {
+                                showingReceiptScan = true
+                            } label: {
+                                Label("Beleg scannen", systemImage: "doc.text.viewfinder")
+                            }
+                            
+                            Button {
+                                showingAddPurchaseSheet = true
+                            } label: {
+                                Label("Einkauf hinzufügen", systemImage: "plus")
+                            }
                         }
                     }
                     #else
+                    ToolbarItem(placement: .automatic) {
+                        Button {
+                            showingReceiptScan = true
+                        } label: {
+                            Label("Beleg scannen", systemImage: "doc.text.viewfinder")
+                        }
+                    }
+                    
                     ToolbarItem(placement: .automatic) {
                         Button {
                             showingAddPurchaseSheet = true
@@ -161,13 +176,29 @@ struct ContentView: View {
                     }
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
-                        showingAddPurchaseSheet = true
-                    } label: {
-                        Label("Einkauf hinzufügen", systemImage: "plus")
+                    HStack(spacing: 16) {
+                        Button {
+                            showingReceiptScan = true
+                        } label: {
+                            Label("Beleg scannen", systemImage: "doc.text.viewfinder")
+                        }
+                        
+                        Button {
+                            showingAddPurchaseSheet = true
+                        } label: {
+                            Label("Einkauf hinzufügen", systemImage: "plus")
+                        }
                     }
                 }
                 #else
+                ToolbarItem(placement: .automatic) {
+                    Button {
+                        showingReceiptScan = true
+                    } label: {
+                        Label("Beleg scannen", systemImage: "doc.text.viewfinder")
+                    }
+                }
+                
                 ToolbarItem(placement: .automatic) {
                     Button {
                         showingAddPurchaseSheet = true
@@ -213,12 +244,21 @@ struct ContentView: View {
         .sheet(isPresented: $showingAddPurchaseSheet) {
             AddPurchaseSheet(productViewModel: productViewModel, modelContext: modelContext)
         }
+        .sheet(isPresented: $showingReceiptScan) {
+            ReceiptScanView()
+        }
         .sheet(isPresented: $showingSettings) {
             SettingsView()
                 .environment(familySharingSettings)
         }
         .onChange(of: showingSettings) { oldValue, newValue in
             // Reload products when settings sheet is dismissed
+            if oldValue && !newValue {
+                productViewModel.loadProducts()
+            }
+        }
+        .onChange(of: showingReceiptScan) { oldValue, newValue in
+            // Reload products when receipt scan is dismissed
             if oldValue && !newValue {
                 productViewModel.loadProducts()
             }
