@@ -77,6 +77,8 @@ struct EditProductSheet: View {
     }
 }
 
+#if DEBUG
 #Preview {
     EditProductSheet(product: TestData.sampleProducts[0])
 }
+#endif

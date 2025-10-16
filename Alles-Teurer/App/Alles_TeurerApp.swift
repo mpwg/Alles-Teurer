@@ -7,21 +7,16 @@
 
 import SwiftUI
 import SwiftData
-import RevenueCat
 
 @main
 struct Alles_TeurerApp: App {
-
-
-    init() {
-        Purchases.logLevel = .debug
-        Purchases.configure(withAPIKey: "test_PFTZTjGCCslkeWCUxmWBaynCIre")
-    }
-
-
     @State private var familySharingSettings = FamilySharingSettings.shared
     @State private var modelContainer: ModelContainer?
     @Environment(\.scenePhase) private var scenePhase
+    
+    #if os(macOS)
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    #endif
     
     var body: some Scene {
         WindowGroup {
@@ -43,6 +38,22 @@ struct Alles_TeurerApp: App {
                 saveIfNeeded()
             }
         }
+        
+        #if os(macOS)
+        Settings {
+            if let container = modelContainer {
+                SettingsView()
+                    .environment(familySharingSettings)
+                    .modelContainer(container)
+            } else {
+                ProgressView("Lade Daten...")
+                    .frame(minWidth: 500, minHeight: 600)
+                    .task {
+                        await createModelContainer()
+                    }
+            }
+        }
+        #endif
     }
     
     @MainActor
@@ -84,3 +95,12 @@ struct Alles_TeurerApp: App {
     }
 }
 
+#if os(macOS)
+import AppKit
+
+class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
+}
+#endif

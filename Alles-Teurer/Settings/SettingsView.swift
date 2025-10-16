@@ -11,10 +11,13 @@ import CloudKit
 
 struct SettingsView: View {
     @Environment(\.modelContext) private var modelContext
-    @Environment(\.dismiss) private var dismiss
     @Environment(FamilySharingSettings.self) private var familySharingSettings
     @Query private var products: [Product]
     @Query private var purchases: [Purchase]
+    
+    #if os(iOS)
+    @Environment(\.dismiss) private var dismiss
+    #endif
     
     @State private var showingDeleteAllConfirmation = false
     @State private var showingFamilySharingAlert = false
@@ -22,11 +25,13 @@ struct SettingsView: View {
     @State private var cloudKitAvailable = false
     
     var body: some View {
+        #if os(macOS)
+        settingsContent
+            .frame(minWidth: 500, minHeight: 600)
+        #else
         NavigationStack {
             settingsContent
         }
-        #if os(macOS)
-        .frame(minWidth: 500, minHeight: 600)
         #endif
     }
     
@@ -97,6 +102,8 @@ struct SettingsView: View {
             Section {
                 #if os(macOS)
                 VStack(alignment: .leading, spacing: 8) {
+                    #if DEBUG
+
                     if products.isEmpty {
                         Button("Beispieldaten hinzufügen") {
                             addSampleData()
@@ -104,7 +111,7 @@ struct SettingsView: View {
                         .buttonStyle(.bordered)
                         .controlSize(.large)
                     }
-                    
+                    #endif
                     Button("Alle Daten löschen", role: .destructive) {
                         showingDeleteAllConfirmation = true
                     }
@@ -114,12 +121,14 @@ struct SettingsView: View {
                 }
                 .padding(.vertical, 8)
                 #else
+                #if DEBUG
                 if products.isEmpty {
                     Button("Beispieldaten hinzufügen") {
                         addSampleData()
                     }
                 }
-                
+                #endif
+
                 Button("Alle Daten löschen", role: .destructive) {
                     showingDeleteAllConfirmation = true
                 }
@@ -206,8 +215,8 @@ struct SettingsView: View {
         .scrollContentBackground(.hidden)
         .background(Color(NSColor.windowBackgroundColor))
         #endif
-        .navigationTitle("Einstellungen")
         #if os(iOS)
+        .navigationTitle("Einstellungen")
         .navigationBarTitleDisplayMode(.large)
         #endif
         .toolbar {
@@ -216,26 +225,6 @@ struct SettingsView: View {
                 Button("Fertig") {
                     dismiss()
                 }
-            }
-            #else
-            ToolbarItem(placement: .cancellationAction) {
-                Button {
-                    dismiss()
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundStyle(.secondary)
-                        .font(.title2)
-                }
-                .buttonStyle(.plain)
-                .help("Schließen")
-            }
-            
-            ToolbarItem(placement: .primaryAction) {
-                Button("Fertig") {
-                    dismiss()
-                }
-                .buttonStyle(.borderedProminent)
-                .keyboardShortcut(.return, modifiers: .command)
             }
             #endif
         }
@@ -275,7 +264,7 @@ struct SettingsView: View {
             cloudKitAvailable = await familySharingSettings.checkCloudKitAvailability()
         }
     }
-    
+    #if DEBUG
     private func addSampleData() {
         withAnimation {
             TestData.createSampleData(in: modelContext)
@@ -286,7 +275,8 @@ struct SettingsView: View {
             }
         }
     }
-    
+    #endif
+
     private func deleteAllData() {
         withAnimation {
             // Delete all products (this will also delete all purchases due to cascade delete rule)
@@ -307,7 +297,9 @@ struct SettingsView: View {
             }
         }
         
+        #if os(iOS)
         dismiss()
+        #endif
     }
 }
 

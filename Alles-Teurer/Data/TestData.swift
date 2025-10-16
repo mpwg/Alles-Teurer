@@ -5,6 +5,7 @@
 //  Created by Matthias Wallner-Géhri on 10.10.25.
 //
 
+#if DEBUG
 import Foundation
 import SwiftData
 
@@ -700,3 +701,5 @@ struct TestData {
         }
     }
 }
+
+#endif

@@ -6,15 +6,8 @@
 	objectVersion = 90;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		40D961502E9BF1CF003BC192 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 40D9614F2E9BF1CF003BC192 /* RevenueCat */; };
-		40D961522E9BF1CF003BC192 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40D961512E9BF1CF003BC192 /* RevenueCatUI */; };
-		40D961552E9BF1F9003BC192 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D961542E9BF1F9003BC192 /* StoreKit.framework */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		402A9C3E2E991EC8002EC888 /* Alles-Teurer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alles-Teurer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		40D961542E9BF1F9003BC192 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -42,9 +35,6 @@
 		402A9C3B2E991EC8002EC888 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
-				40D961552E9BF1F9003BC192 /* StoreKit.framework in Frameworks */,
-				40D961522E9BF1CF003BC192 /* RevenueCatUI in Frameworks */,
-				40D961502E9BF1CF003BC192 /* RevenueCat in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -54,7 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				402A9C402E991EC8002EC888 /* Alles-Teurer */,
-				40D961532E9BF1F9003BC192 /* Frameworks */,
 				402A9C3F2E991EC8002EC888 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,14 +54,6 @@
 				402A9C3E2E991EC8002EC888 /* Alles-Teurer.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		40D961532E9BF1F9003BC192 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				40D961542E9BF1F9003BC192 /* StoreKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,10 +73,6 @@
 				402A9C402E991EC8002EC888 /* Alles-Teurer */,
 			);
 			name = "Alles-Teurer";
-			packageProductDependencies = (
-				40D9614F2E9BF1CF003BC192 /* RevenueCat */,
-				40D961512E9BF1CF003BC192 /* RevenueCatUI */,
-			);
 			productName = "Alles-Teurer";
 			productReference = 402A9C3E2E991EC8002EC888 /* Alles-Teurer.app */;
 			productType = "com.apple.product-type.application";
@@ -127,7 +104,6 @@
 			mainGroup = 402A9C352E991EC8002EC888;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				40D9614E2E9BF1CF003BC192 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */,
 			);
 			preferredProjectObjectVersion = 90;
 			productRefGroup = 402A9C3F2E991EC8002EC888 /* Products */;
@@ -207,7 +183,7 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -270,7 +246,7 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -421,30 +397,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		40D9614E2E9BF1CF003BC192 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RevenueCat/purchases-ios-spm.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.43.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		40D9614F2E9BF1CF003BC192 /* RevenueCat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 40D9614E2E9BF1CF003BC192 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
-			productName = RevenueCat;
-		};
-		40D961512E9BF1CF003BC192 /* RevenueCatUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 40D9614E2E9BF1CF003BC192 /* XCRemoteSwiftPackageReference "purchases-ios-spm" */;
-			productName = RevenueCatUI;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 402A9C362E991EC8002EC888 /* Project object */;
 }

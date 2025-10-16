@@ -322,6 +322,8 @@ struct ProductDetailView: View {
     }
 }
 
+#if DEBUG
+
 #Preview {
     let config = SwiftData.ModelConfiguration(isStoredInMemoryOnly: true)
     let container = try! SwiftData.ModelContainer(for: Product.self, configurations: config)
@@ -332,3 +334,4 @@ struct ProductDetailView: View {
         ProductDetailView(product: TestData.sampleProducts[0], viewModel: viewModel)
     }
 }
+#endif  
