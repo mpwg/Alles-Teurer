@@ -1021,17 +1021,6 @@
         }
       }
     },
-    "Schließen" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Close"
-          }
-        }
-      }
-    },
     "Shop" : {
       "localizations" : {
         "en" : {
