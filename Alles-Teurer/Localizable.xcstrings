@@ -11,6 +11,12 @@
             "state" : "new",
             "value" : "%1$@ %2$@"
           }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
         }
       }
     },
@@ -21,23 +27,64 @@
             "state" : "new",
             "value" : "%1$@/%2$@"
           }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@/%2$@"
+          }
         }
       }
     },
     "%@%%" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%%"
+          }
+        }
+      }
     },
     "%lld" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
     },
     "%lld Artikel" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Items"
+          }
+        }
+      }
     },
     "%lld Einkäufe wurden gespeichert" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Purchases Saved"
+          }
+        }
+      }
     },
     "%lld%%" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%%"
+          }
+        }
+      }
     },
     "•" : {
 
@@ -119,13 +166,34 @@
       }
     },
     "Apple Intelligence erforderlich" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence Required"
+          }
+        }
+      }
     },
     "Artikel bearbeiten" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit Items"
+          }
+        }
+      }
     },
     "Artikel werden erkannt und extrahiert" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Items are being recognized and extracted"
+          }
+        }
+      }
     },
     "Ausgaben" : {
       "localizations" : {
@@ -158,16 +226,44 @@
       }
     },
     "Beleg fotografieren oder auswählen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Take Photo or Select Receipt"
+          }
+        }
+      }
     },
     "Beleg scannen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan Receipt"
+          }
+        }
+      }
     },
     "Beleg wird analysiert..." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Analyzing Receipt..."
+          }
+        }
+      }
     },
     "Berechnung" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculation"
+          }
+        }
+      }
     },
     "Bester Preis" : {
       "localizations" : {
@@ -190,7 +286,14 @@
       }
     },
     "Bitte versuchen Sie ein anderes Foto oder fügen Sie Artikel manuell hinzu" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please try a different photo or add items manually"
+          }
+        }
+      }
     },
     "Build-Typ" : {
       "localizations" : {
@@ -409,7 +512,14 @@
       }
     },
     "Fehler" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        }
+      }
     },
     "Fertig" : {
       "localizations" : {
@@ -422,10 +532,24 @@
       }
     },
     "Foto aufnehmen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Take Photo"
+          }
+        }
+      }
     },
     "Foto wählen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose Photo"
+          }
+        }
+      }
     },
     "Fügen Sie Beispieldaten hinzu, um die App auszuprobieren, oder löschen Sie alle vorhandenen Daten." : {
       "localizations" : {
@@ -448,7 +572,14 @@
       }
     },
     "Fügen Sie Ihren ersten Einkauf hinzu." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add your first purchase."
+          }
+        }
+      }
     },
     "Für dieses Produkt sind noch keine Einkäufe gespeichert." : {
       "localizations" : {
@@ -461,10 +592,24 @@
       }
     },
     "g" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "g"
+          }
+        }
+      }
     },
     "Gesamt: %@" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total: %@"
+          }
+        }
+      }
     },
     "Gesamtpreis" : {
       "localizations" : {
@@ -497,10 +642,24 @@
       }
     },
     "Geschäftsname" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Store Name"
+          }
+        }
+      }
     },
     "Gespeichert" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved"
+          }
+        }
+      }
     },
     "iCloud ist nicht verfügbar. Bitte melden Sie sich in den Systemeinstellungen bei iCloud an und versuchen Sie es erneut." : {
       "localizations" : {
@@ -533,7 +692,14 @@
       }
     },
     "Keine Artikel erkannt" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Items Detected"
+          }
+        }
+      }
     },
     "Keine Einkäufe" : {
       "localizations" : {
@@ -616,10 +782,24 @@
       }
     },
     "Max" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Max"
+          }
+        }
+      }
     },
     "Mehr erfahren" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Learn More"
+          }
+        }
+      }
     },
     "Menge" : {
       "localizations" : {
@@ -632,13 +812,34 @@
       }
     },
     "Menge & Preis" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quantity & Price"
+          }
+        }
+      }
     },
     "Min" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        }
+      }
     },
     "ml" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ml"
+          }
+        }
+      }
     },
     "Monat" : {
       "localizations" : {
@@ -661,7 +862,14 @@
       }
     },
     "OK" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
     },
     "Preis" : {
       "localizations" : {
@@ -684,10 +892,24 @@
       }
     },
     "Preis pro Einheit" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price per Unit"
+          }
+        }
+      }
     },
     "Preis pro Einheit:" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price per Unit:"
+          }
+        }
+      }
     },
     "Preis/Einheit" : {
       "localizations" : {
@@ -760,7 +982,14 @@
       }
     },
     "Produktinformation" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product Information"
+          }
+        }
+      }
     },
     "Produktname" : {
       "localizations" : {
@@ -788,17 +1017,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Product Name in Store"
-          }
-        }
-      }
-    },
-    "Schließen" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Close"
           }
         }
       }
@@ -964,7 +1182,14 @@
       }
     },
     "z.B. kg, l, Stk" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e.g. kg, l, pcs"
+          }
+        }
+      }
     },
     "Zu den Einstellungen" : {
       "localizations" : {
