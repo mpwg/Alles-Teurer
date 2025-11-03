@@ -157,8 +157,13 @@ class BackupRestoreService {
     
     /// Restores data from a backup file
     static func restoreBackup(from url: URL, modelContext: ModelContext, replaceExisting: Bool = false) throws {
-        // Verify file extension
-        guard url.pathExtension == "AllesTeurerBackup" else {
+        // Verify file extension (case-insensitive)
+        let pathExtension = url.pathExtension.lowercased()
+        let expectedExtension = "allesteurerbackup"
+        
+        guard pathExtension == expectedExtension else {
+            print("❌ Invalid file extension: '\(url.pathExtension)' (expected '\(expectedExtension)')")
+            print("   Full path: \(url.path)")
             throw BackupError.invalidFileFormat
         }
         
@@ -270,5 +275,6 @@ class BackupRestoreService {
 extension UTType {
     nonisolated static var allesTeurerBackup: UTType {
         UTType(exportedAs: "eu.mpwg.alles-teurer.backup", conformingTo: .data)
-    
+        
+    }
 }
