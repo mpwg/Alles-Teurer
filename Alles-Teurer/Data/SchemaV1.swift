@@ -10,7 +10,7 @@ import SwiftData
 
 /// Schema Version 1: Original schema using Double for prices and quantities
 enum SchemaV1: VersionedSchema {
-    static var versionIdentifier = Schema.Version(1, 0, 0)
+    static let versionIdentifier = Schema.Version(1, 0, 0)
     
     static var models: [any PersistentModel.Type] {
         [ProductV1.self, PurchaseV1.self]
