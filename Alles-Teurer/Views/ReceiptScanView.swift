@@ -9,6 +9,10 @@ import SwiftUI
 import SwiftData
 import PhotosUI
 
+#if canImport(UIKit)
+import UIKit
+#endif
+
 struct ReceiptScanView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
@@ -92,6 +96,14 @@ struct ReceiptScanView: View {
             } message: {
                 Text("\(viewModel.detectedItems.count) Einkäufe wurden gespeichert")
             }
+            #if os(iOS)
+            .fullScreenCover(isPresented: $showingCamera) {
+                ImagePicker(sourceType: .camera) { image in
+                    handleCapturedImage(image)
+                }
+                .ignoresSafeArea()
+            }
+            #endif
             .onAppear {
                 // Inject dependencies when view appears
                 viewModel.modelContext = modelContext
@@ -277,6 +289,46 @@ struct ReceiptScanView: View {
     }
     
     // MARK: - Actions
+    
+    #if os(iOS)
+    private func handleCapturedImage(_ image: UIImage) {
+        selectedImage = Image(uiImage: image)
+        
+        Task {
+            guard let imageData = image.jpegData(compressionQuality: 0.8) else {
+                viewModel.errorMessage = "Fehler beim Verarbeiten des Bildes"
+                return
+            }
+            
+            viewModel.isProcessing = true
+            
+            do {
+                guard let cgImage = image.cgImage else {
+                    throw ReceiptScanError.invalidImage
+                }
+                
+                let productSuggestions = purchaseViewModel.productSuggestions
+                let service = ReceiptRecognitionService(modelContext: modelContext)
+                
+                let extractedItems = try await service.extractPurchases(
+                    from: cgImage,
+                    existingProductSuggestions: productSuggestions
+                )
+                
+                if let firstItem = extractedItems.first {
+                    viewModel.shopName = firstItem.shopName ?? "Unbekannt"
+                    viewModel.receiptDate = firstItem.date ?? Date()
+                }
+                
+                viewModel.detectedItems = extractedItems
+            } catch {
+                viewModel.errorMessage = "Fehler beim Verarbeiten: \(error.localizedDescription)"
+            }
+            
+            viewModel.isProcessing = false
+        }
+    }
+    #endif
     
     private func saveAllPurchases() {
         do {
@@ -543,6 +595,60 @@ struct EditDetectedItemSheet: View {
     }
     #endif
 }
+
+// MARK: - Image Picker (UIKit Wrapper)
+
+#if os(iOS)
+struct ImagePicker: UIViewControllerRepresentable {
+    enum SourceType {
+        case camera
+        case photoLibrary
+        
+        var uiKitType: UIImagePickerController.SourceType {
+            switch self {
+            case .camera: return .camera
+            case .photoLibrary: return .photoLibrary
+            }
+        }
+    }
+    
+    let sourceType: SourceType
+    let onImagePicked: (UIImage) -> Void
+    @Environment(\.dismiss) private var dismiss
+    
+    func makeUIViewController(context: Context) -> UIImagePickerController {
+        let picker = UIImagePickerController()
+        picker.sourceType = sourceType.uiKitType
+        picker.delegate = context.coordinator
+        return picker
+    }
+    
+    func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    
+    class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+        let parent: ImagePicker
+        
+        init(_ parent: ImagePicker) {
+            self.parent = parent
+        }
+        
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            if let image = info[.originalImage] as? UIImage {
+                parent.onImagePicked(image)
+            }
+            parent.dismiss()
+        }
+        
+        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+            parent.dismiss()
+        }
+    }
+}
+#endif
 
 // MARK: - Preview
 
