@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: "daily"
       
-  - package-ecosystem: "daily" # See documentation for possible values
+  - package-ecosystem: "github-actions" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "github-actions"
+      interval: "daily"
