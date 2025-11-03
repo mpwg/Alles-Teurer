@@ -54,6 +54,32 @@ class ReceiptScanViewModel {
     
     // MARK: - Photo Selection
     
+    /// Handle photo selection from camera or library
+    @MainActor
+    func loadPhoto(from item: PhotosPickerItem?) async {
+        guard let item = item else { return }
+        
+        isProcessing = true
+        errorMessage = nil
+        
+        do {
+            // Extract the image data
+            guard let imageData = try await item.loadTransferable(type: Data.self) else {
+                throw ReceiptScanError.invalidImage
+            }
+            
+            // Process the receipt with the recognition service
+            try await processReceiptImage(imageData: imageData)
+            
+        } catch let error as ReceiptRecognitionError {
+            errorMessage = error.localizedDescription
+        } catch {
+            errorMessage = "Fehler beim Laden des Bildes: \(error.localizedDescription)"
+        }
+        
+        isProcessing = false
+    }
+    
     /// Handle photo selection from PhotosPicker
     @MainActor
     func loadSelectedPhoto() async {

@@ -9,6 +9,10 @@ import SwiftUI
 import SwiftData
 import PhotosUI
 
+#if canImport(UIKit)
+import UIKit
+#endif
+
 struct ReceiptScanView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
@@ -21,6 +25,11 @@ struct ReceiptScanView: View {
     @State private var showingCamera = false
     @State private var showingSaveConfirmation = false
     @State private var selectedImage: Image?
+    
+    #if os(iOS)
+    @StateObject private var cameraPermission = CameraPermissionHelper()
+    @State private var showingPermissionDeniedAlert = false
+    #endif
     
     var body: some View {
         NavigationStack {
@@ -92,6 +101,22 @@ struct ReceiptScanView: View {
             } message: {
                 Text("\(viewModel.detectedItems.count) Einkäufe wurden gespeichert")
             }
+            #if os(iOS)
+            .fullScreenCover(isPresented: $showingCamera) {
+                ImagePicker(sourceType: .camera) { image in
+                    handleCapturedImage(image)
+                }
+                .ignoresSafeArea()
+            }
+            .alert("Kamerazugriff benötigt", isPresented: $showingPermissionDeniedAlert) {
+                Button("Einstellungen öffnen") {
+                    cameraPermission.openSettings()
+                }
+                Button("Abbrechen", role: .cancel) {}
+            } message: {
+                Text("Um Belege zu fotografieren, benötigt die App Zugriff auf Ihre Kamera. Bitte aktivieren Sie den Kamerazugriff in den Einstellungen unter:\n\nEinstellungen → Alles Teurer → Kamera")
+            }
+            #endif
             .onAppear {
                 // Inject dependencies when view appears
                 viewModel.modelContext = modelContext
@@ -127,12 +152,13 @@ struct ReceiptScanView: View {
                         // Camera Button (iOS only)
                         #if os(iOS)
                         Button {
-                            showingCamera = true
+                            handleCameraButtonTap()
                         } label: {
                             Label("Foto aufnehmen", systemImage: "camera")
                                 .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(.borderedProminent)
+                        .disabled(!cameraPermission.isCameraAvailable)
                         #endif
                         
                         // Photo Library Button
@@ -277,6 +303,71 @@ struct ReceiptScanView: View {
     }
     
     // MARK: - Actions
+    
+    #if os(iOS)
+    /// Handle camera button tap - check permissions first
+    private func handleCameraButtonTap() {
+        Task {
+            // Check current status
+            cameraPermission.checkPermissionStatus()
+            
+            switch cameraPermission.permissionStatus {
+            case .authorized:
+                // Permission already granted, show camera
+                showingCamera = true
+                
+            case .notDetermined:
+                // Request permission for the first time
+                let granted = await cameraPermission.requestPermission()
+                if granted {
+                    showingCamera = true
+                } else {
+                    showingPermissionDeniedAlert = true
+                }
+                
+            case .denied, .restricted:
+                // Permission denied or restricted, show alert
+                showingPermissionDeniedAlert = true
+                
+            @unknown default:
+                showingPermissionDeniedAlert = true
+            }
+        }
+    }
+    
+    private func handleCapturedImage(_ image: UIImage) {
+        selectedImage = Image(uiImage: image)
+        
+        Task {
+            viewModel.isProcessing = true
+            
+            do {
+                guard let cgImage = image.cgImage else {
+                    throw ReceiptScanError.invalidImage
+                }
+                
+                let productSuggestions = purchaseViewModel.productSuggestions
+                let service = ReceiptRecognitionService(modelContext: modelContext)
+                
+                let extractedItems = try await service.extractPurchases(
+                    from: cgImage,
+                    existingProductSuggestions: productSuggestions
+                )
+                
+                if let firstItem = extractedItems.first {
+                    viewModel.shopName = firstItem.shopName ?? "Unbekannt"
+                    viewModel.receiptDate = firstItem.date ?? Date()
+                }
+                
+                viewModel.detectedItems = extractedItems
+            } catch {
+                viewModel.errorMessage = "Fehler beim Verarbeiten: \(error.localizedDescription)"
+            }
+            
+            viewModel.isProcessing = false
+        }
+    }
+    #endif
     
     private func saveAllPurchases() {
         do {
@@ -543,6 +634,77 @@ struct EditDetectedItemSheet: View {
     }
     #endif
 }
+
+// MARK: - Image Picker (UIKit Wrapper)
+
+#if os(iOS)
+/// UIImagePickerController wrapper configured for highest quality image capture
+/// - Uses rear camera for better resolution
+/// - Captures at full resolution without compression (.current preset)
+/// - No editing to preserve original image quality
+struct ImagePicker: UIViewControllerRepresentable {
+    enum SourceType {
+        case camera
+        case photoLibrary
+        
+        var uiKitType: UIImagePickerController.SourceType {
+            switch self {
+            case .camera: return .camera
+            case .photoLibrary: return .photoLibrary
+            }
+        }
+    }
+    
+    let sourceType: SourceType
+    let onImagePicked: (UIImage) -> Void
+    @Environment(\.dismiss) private var dismiss
+    
+    func makeUIViewController(context: Context) -> UIImagePickerController {
+        let picker = UIImagePickerController()
+        picker.sourceType = sourceType.uiKitType
+        picker.delegate = context.coordinator
+        
+        // Configure for highest quality capture
+        if sourceType.uiKitType == .camera {
+            picker.cameraCaptureMode = .photo
+            picker.cameraDevice = .rear // Use rear camera for better quality
+            
+            // Set highest quality - this affects the compression and resolution
+            picker.imageExportPreset = .current  // Use original quality without compression
+
+            // Allow editing to ensure proper framing if needed
+            picker.allowsEditing = false // Keep original full resolution
+        }
+        
+        return picker
+    }
+    
+    func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    
+    class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+        let parent: ImagePicker
+        
+        init(_ parent: ImagePicker) {
+            self.parent = parent
+        }
+        
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            if let image = info[.originalImage] as? UIImage {
+                parent.onImagePicked(image)
+            }
+            parent.dismiss()
+        }
+        
+        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+            parent.dismiss()
+        }
+    }
+}
+#endif
 
 // MARK: - Preview
 

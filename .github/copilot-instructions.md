@@ -120,3 +120,95 @@ var productSuggestions: [String] {
 - Pre-allocated capacity for suggestion arrays
 - Efficient @Query usage with proper sort descriptors
 - Background CloudKit availability checks with async/await
+
+## Build and Test Automation (XcodeBuildMCP)
+
+**ALWAYS use XcodeBuildMCP tools for building, running, and testing this project.**
+
+### Initial Setup
+
+Before any build/run operation:
+
+1. **Discover tools for the workflow**:
+
+   ```
+   mcp_xcodebuildmcp_discover_tools({
+     task_description: "Build and run iOS app on iPhone simulator using Alles-Teurer.xcodeproj"
+   })
+   ```
+
+2. **Discover project files**:
+   ```
+   mcp_xcodebuildmcp_discover_projs({
+     workspaceRoot: "/Users/mat/code/Alles-Teurer"
+   })
+   ```
+
+### Building and Running
+
+**For iOS Simulator** (preferred for development):
+
+```
+mcp_xcodebuildmcp_build_run_sim({
+  projectPath: "/Users/mat/code/Alles-Teurer/Alles-Teurer.xcodeproj",
+  scheme: "Alles-Teurer",
+  simulatorName: "iPhone 17",
+  preferXcodebuild: true
+})
+```
+
+**Available Simulators**: Check with `mcp_xcodebuildmcp_list_sims()`
+
+- iPhone 17, iPhone 17 Pro, iPhone 17 Pro Max
+- iPhone 16, iPhone 16 Pro, iPhone 16 Pro Max
+- iPad Pro (M4/M5), iPad Air (M3)
+
+**For Physical Device**:
+
+- Physical iPhone available: "Matthias' iPhone 15 Pro Max"
+
+### Testing
+
+```
+mcp_xcodebuildmcp_test_sim({
+  projectPath: "/Users/mat/code/Alles-Teurer/Alles-Teurer.xcodeproj",
+  scheme: "Alles-Teurer",
+  simulatorName: "iPhone 17"
+})
+```
+
+### Cleaning Build Artifacts
+
+```
+mcp_xcodebuildmcp_clean({
+  projectPath: "/Users/mat/code/Alles-Teurer/Alles-Teurer.xcodeproj",
+  scheme: "Alles-Teurer",
+  platform: "iOS Simulator"
+})
+```
+
+### Debugging and Logging
+
+After launching app, capture logs:
+
+```
+mcp_xcodebuildmcp_launch_app_logs_sim({
+  simulatorUuid: "SIMULATOR_UUID",
+  bundleId: "eu.mpwg.Alles-Teurer"
+})
+```
+
+### Build Troubleshooting
+
+1. **Use `preferXcodebuild: true`** if incremental builds fail
+2. **Check build settings**: `mcp_xcodebuildmcp_show_build_settings()`
+3. **List available schemes**: `mcp_xcodebuildmcp_list_schemes()`
+4. **Clean before rebuilding** if experiencing strange issues
+
+### Mandatory Usage Rules
+
+- ❌ **NEVER** use `xcodebuild` commands directly in terminal
+- ❌ **NEVER** use Xcode GUI commands like "Product > Run"
+- ✅ **ALWAYS** use MCP tools for all Xcode operations
+- ✅ **ALWAYS** specify `preferXcodebuild: true` for reliability
+- ✅ **ALWAYS** use project file path, not workspace (this project uses .xcodeproj)
