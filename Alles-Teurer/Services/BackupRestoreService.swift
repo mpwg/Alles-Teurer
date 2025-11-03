@@ -8,8 +8,9 @@
 import Foundation
 import SwiftData
 import UniformTypeIdentifiers
+import Compression
 
-/// Service for backing up and restoring data in JSON5 format
+/// Service for backing up and restoring data in compressed JSON5 format
 @MainActor
 class BackupRestoreService {
     
@@ -89,24 +90,82 @@ class BackupRestoreService {
     static func exportBackup(products: [Product], purchases: [Purchase]) throws -> URL {
         let backupData = try createBackup(products: products, purchases: purchases)
         
+        // Compress the data
+        let compressedData = try compress(data: backupData)
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd_HHmmss"
         let dateString = dateFormatter.string(from: Date())
-        let filename = "AllesTeurer_Backup_\(dateString).json"
+        let filename = "AllesTeurer_Backup_\(dateString).AllesTeurerBackup"
         
         let temporaryDirectory = FileManager.default.temporaryDirectory
         let fileURL = temporaryDirectory.appendingPathComponent(filename)
         
-        try backupData.write(to: fileURL)
+        try compressedData.write(to: fileURL)
         
         return fileURL
+    }
+    
+    // MARK: - Compression
+    
+    /// Compresses data using LZFSE algorithm
+    private static func compress(data: Data) throws -> Data {
+        let sourceBuffer = [UInt8](data)
+        let destinationBufferSize = data.count
+        var destinationBuffer = [UInt8](repeating: 0, count: destinationBufferSize)
+        
+        let compressedSize = compression_encode_buffer(
+            &destinationBuffer,
+            destinationBufferSize,
+            sourceBuffer,
+            sourceBuffer.count,
+            nil,
+            COMPRESSION_LZFSE
+        )
+        
+        guard compressedSize > 0 else {
+            throw BackupError.compressionFailed
+        }
+        
+        return Data(destinationBuffer.prefix(compressedSize))
+    }
+    
+    /// Decompresses data using LZFSE algorithm
+    private static func decompress(data: Data) throws -> Data {
+        let sourceBuffer = [UInt8](data)
+        // Estimate decompressed size (assuming max 10x compression ratio)
+        let estimatedSize = data.count * 10
+        var destinationBuffer = [UInt8](repeating: 0, count: estimatedSize)
+        
+        let decompressedSize = compression_decode_buffer(
+            &destinationBuffer,
+            estimatedSize,
+            sourceBuffer,
+            sourceBuffer.count,
+            nil,
+            COMPRESSION_LZFSE
+        )
+        
+        guard decompressedSize > 0 else {
+            throw BackupError.decompressionFailed
+        }
+        
+        return Data(destinationBuffer.prefix(decompressedSize))
     }
     
     // MARK: - Restore
     
     /// Restores data from a backup file
     static func restoreBackup(from url: URL, modelContext: ModelContext, replaceExisting: Bool = false) throws {
-        let data = try Data(contentsOf: url)
+        // Verify file extension
+        guard url.pathExtension == "AllesTeurerBackup" else {
+            throw BackupError.invalidFileFormat
+        }
+        
+        let compressedData = try Data(contentsOf: url)
+        
+        // Decompress the data
+        let data = try decompress(data: compressedData)
         
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
@@ -181,26 +240,35 @@ class BackupRestoreService {
     
     enum BackupError: LocalizedError {
         case invalidFormat
+        case invalidFileFormat
         case incompatibleVersion
         case noDataToBackup
+        case compressionFailed
+        case decompressionFailed
         
         var errorDescription: String? {
             switch self {
             case .invalidFormat:
                 return "Die Backup-Datei hat ein ungültiges Format."
+            case .invalidFileFormat:
+                return "Nur .AllesTeurerBackup Dateien können wiederhergestellt werden."
             case .incompatibleVersion:
                 return "Die Backup-Version ist nicht kompatibel."
             case .noDataToBackup:
                 return "Keine Daten zum Sichern vorhanden."
+            case .compressionFailed:
+                return "Fehler beim Komprimieren der Backup-Datei."
+            case .decompressionFailed:
+                return "Fehler beim Dekomprimieren der Backup-Datei."
             }
         }
     }
 }
 
-// MARK: - UTType Extension for JSON5
+// MARK: - UTType Extension for AllesTeurerBackup
 
 extension UTType {
-    static var json5: UTType {
-        UTType(importedAs: "public.json")
-    }
+    nonisolated static var allesTeurerBackup: UTType {
+        UTType(exportedAs: "eu.mpwg.alles-teurer.backup", conformingTo: .data)
+    
 }

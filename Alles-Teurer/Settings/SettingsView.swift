@@ -13,7 +13,8 @@ import UniformTypeIdentifiers
 // MARK: - Backup Document
 
 struct BackupDocument: FileDocument {
-    static var readableContentTypes: [UTType] { [.json] }
+    static var readableContentTypes: [UTType] { [.allesTeurerBackup] }
+    static var writableContentTypes: [UTType] { [.allesTeurerBackup] }
     
     let fileURL: URL
     
@@ -26,7 +27,7 @@ struct BackupDocument: FileDocument {
             throw CocoaError(.fileReadCorruptFile)
         }
         // For reading, we'd need to save to a temporary location
-        let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent("temp_backup.json")
+        let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent("temp_backup.AllesTeurerBackup")
         try data.write(to: tempURL)
         self.fileURL = tempURL
     }
@@ -340,7 +341,7 @@ struct SettingsView: View {
         .fileExporter(
             isPresented: $showingExportPicker,
             document: exportedBackupURL.map { BackupDocument(fileURL: $0) },
-            contentType: .json,
+            contentType: .allesTeurerBackup,
             defaultFilename: "AllesTeurer_Backup_\(Date().formatted(date: .numeric, time: .omitted).replacingOccurrences(of: "/", with: "-"))"
         ) { result in
             switch result {
@@ -354,7 +355,7 @@ struct SettingsView: View {
         }
         .fileImporter(
             isPresented: $showingImportPicker,
-            allowedContentTypes: [.json],
+            allowedContentTypes: [.allesTeurerBackup],
             allowsMultipleSelection: false
         ) { result in
             switch result {

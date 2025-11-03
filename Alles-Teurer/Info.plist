@@ -10,7 +10,27 @@
 		</array>
 		<key>ITSAppUsesNonExemptEncryption</key>
 		<false/>
-		<key>NSCameraUsageDescription</key>
-		<string>Die App benötigt Zugriff auf die Kamera, um Kassenbons zu fotografieren und die Einkäufe automatisch zu erkennen. Dies spart Ihnen Zeit bei der Eingabe von Produkten und Preisen.</string>
-	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Die App benötigt Zugriff auf die Kamera, um Kassenbons zu fotografieren und die Einkäufe automatisch zu erkennen. Dies spart Ihnen Zeit bei der Eingabe von Produkten und Preisen.</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Alles Teurer Backup</string>
+			<key>UTTypeIdentifier</key>
+			<string>eu.mpwg.alles-teurer.backup</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>AllesTeurerBackup</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
 </plist>
