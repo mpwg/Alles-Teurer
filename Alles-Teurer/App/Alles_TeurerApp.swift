@@ -58,25 +58,44 @@ struct Alles_TeurerApp: App {
     
     @MainActor
     private func createModelContainer() async {
-        let schema = Schema([
-            Product.self,
-            Purchase.self,
-        ])
-        
         let modelConfiguration = familySharingSettings.getModelConfiguration()
         
+        // Try to create container without migration plan first (for fresh installs or V2 databases)
         do {
-            modelContainer = try ModelContainer(for: schema, configurations: [modelConfiguration])
+            modelContainer = try ModelContainer(
+                for: Product.self, Purchase.self,
+                configurations: modelConfiguration
+            )
             familySharingSettings.restartRequired = false
+            print("✅ ModelContainer created successfully")
         } catch {
-            print("Could not create ModelContainer: \(error)")
-            // Fallback to local storage if CloudKit fails
-            let fallbackConfig = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+            print("⚠️ Standard container creation failed: \(error)")
+            print("🔄 Attempting to create container with migration support...")
+            
+            // If that fails, try with migration plan (for V1 databases that need migration)
             do {
-                modelContainer = try ModelContainer(for: schema, configurations: [fallbackConfig])
-                familySharingSettings.isFamilySharingEnabled = false
+                modelContainer = try ModelContainer(
+                    for: Product.self, Purchase.self,
+                    migrationPlan: AllesTeurerMigrationPlan.self,
+                    configurations: modelConfiguration
+                )
+                familySharingSettings.restartRequired = false
+                print("✅ ModelContainer created successfully with migration support")
             } catch {
-                fatalError("Could not create fallback ModelContainer: \(error)")
+                print("❌ Could not create ModelContainer with migration: \(error)")
+                
+                // Final fallback: Local storage without CloudKit
+                let fallbackConfig = ModelConfiguration(isStoredInMemoryOnly: false)
+                do {
+                    modelContainer = try ModelContainer(
+                        for: Product.self, Purchase.self,
+                        configurations: fallbackConfig
+                    )
+                    familySharingSettings.isFamilySharingEnabled = false
+                    print("⚠️ Fallback ModelContainer created (family sharing disabled)")
+                } catch {
+                    fatalError("❌ Could not create fallback ModelContainer: \(error)")
+                }
             }
         }
     }
