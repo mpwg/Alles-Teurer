@@ -245,8 +245,8 @@ struct ReceiptScanView: View {
                 
                 Spacer()
                 
-                let total = viewModel.detectedItems.reduce(0.0) { $0 + $1.totalPrice }
-                Text("Gesamt: \(total, format: .currency(code: "EUR"))")
+                let total = viewModel.detectedItems.reduce(Decimal(0)) { $0 + $1.totalPrice }
+                Text("Gesamt: \(NSDecimalNumber(decimal: total).doubleValue, format: .currency(code: "EUR"))")
                     .font(.headline)
             }
         }

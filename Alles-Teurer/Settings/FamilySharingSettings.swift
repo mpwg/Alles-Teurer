@@ -73,8 +73,6 @@ class FamilySharingSettings {
     
     // Get the appropriate model configuration based on family sharing settings
     func getModelConfiguration() -> ModelConfiguration {
-        let schema = Schema([Product.self, Purchase.self])
-        
         #if DEBUG
         let containerSuffix = "-debug"
         #else
@@ -84,7 +82,6 @@ class FamilySharingSettings {
         if isFamilySharingEnabled {
             // CloudKit configuration for family sharing
             return ModelConfiguration(
-                schema: schema,
                 isStoredInMemoryOnly: false,
                 cloudKitDatabase: .automatic
             )
@@ -92,7 +89,6 @@ class FamilySharingSettings {
             // Local storage only with different database files for debug/release
             return ModelConfiguration(
                 "AllesTeurer\(containerSuffix)",
-                schema: schema,
                 isStoredInMemoryOnly: false
             )
         }

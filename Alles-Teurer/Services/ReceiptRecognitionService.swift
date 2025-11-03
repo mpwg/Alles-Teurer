@@ -71,9 +71,9 @@ final class ReceiptRecognitionService {
             let detectedItem = DetectedPurchaseItem(
                 productName: item.productName,
                 normalizedName: item.normalizedName,
-                quantity: item.quantityDouble ?? 1.0,
+                quantity: Decimal(item.quantityDouble ?? 1.0),
                 unit: item.unit ?? "Stk",
-                totalPrice: item.priceDouble,
+                totalPrice: Decimal(item.priceDouble),
                 shopName: receiptData.shopName,
                 date: receiptData.date
             )

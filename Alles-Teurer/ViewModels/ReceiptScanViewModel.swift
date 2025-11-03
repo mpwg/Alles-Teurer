@@ -20,13 +20,13 @@ struct DetectedPurchaseItem: Identifiable {
     let id = UUID()
     var productName: String
     var normalizedName: String? // For LLM-normalized names
-    var quantity: Double
+    var quantity: Decimal
     var unit: String
-    var totalPrice: Double
+    var totalPrice: Decimal
     var shopName: String? // Store shop name per item for flexibility
     var date: Date? // Store date per item for flexibility
     
-    var pricePerUnit: Double {
+    var pricePerUnit: Decimal {
         guard quantity > 0 else { return 0 }
         return totalPrice / quantity
     }
@@ -166,9 +166,9 @@ class ReceiptScanViewModel {
     /// Update an item's details
     func updateItem(_ item: DetectedPurchaseItem, 
                    name: String? = nil,
-                   quantity: Double? = nil,
+                   quantity: Decimal? = nil,
                    unit: String? = nil,
-                   totalPrice: Double? = nil) {
+                   totalPrice: Decimal? = nil) {
         guard let index = detectedItems.firstIndex(where: { $0.id == item.id }) else { return }
         
         if let name = name {

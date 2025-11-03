@@ -12,13 +12,13 @@ import SwiftData
 final class Purchase {
     var shopName: String = ""
     var date: Date = Date()
-    var totalPrice: Double = 0.0 // Total price paid
-    var quantity: Double = 0.0 // Quantity purchased
+    var totalPrice: Decimal = 0.0 // Total price paid
+    var quantity: Decimal = 0.0 // Quantity purchased
     var actualProductName: String = "" // Name as it appears in the shop
     var unit: String = ""
     var product: Product?
     
-    init(shopName: String, date: Date, totalPrice: Double, quantity: Double, actualProductName: String, unit: String) {
+    init(shopName: String, date: Date, totalPrice: Decimal, quantity: Decimal, actualProductName: String, unit: String) {
         self.shopName = shopName
         self.date = date
         self.totalPrice = totalPrice
@@ -27,23 +27,24 @@ final class Purchase {
         self.unit = unit
     }
     
-    var pricePerQuantity: Double {
+    var pricePerQuantity: Decimal {
         return quantity > 0 ? totalPrice / quantity : 0
     }
     
     var totalPriceFormatted: String {
-        return String(format: "€%.2f", totalPrice)
+        return String(format: "€%.2f", NSDecimalNumber(decimal: totalPrice).doubleValue)
     }
     
     var pricePerQuantityFormatted: String {
-        return String(format: "€%.2f/%@", pricePerQuantity, unit)
+        return String(format: "€%.2f/%@", NSDecimalNumber(decimal: pricePerQuantity).doubleValue, unit)
     }
     
     var quantityFormatted: String {
-        if quantity.truncatingRemainder(dividingBy: 1) == 0 {
-            return String(format: "%.0f %@", quantity, unit)
+        let doubleValue = NSDecimalNumber(decimal: quantity).doubleValue
+        if doubleValue.truncatingRemainder(dividingBy: 1) == 0 {
+            return String(format: "%.0f %@", doubleValue, unit)
         } else {
-            return String(format: "%.2f %@", quantity, unit)
+            return String(format: "%.2f %@", doubleValue, unit)
         }
     }
     
