@@ -19,8 +19,8 @@ final class PurchaseViewModel {
     // For adding new purchases
     var productName: String = ""
     var shopName: String = ""
-    var totalPrice: Double = 0.0
-    var quantity: Double = 1.0
+    var totalPrice: Decimal = 0.0
+    var quantity: Decimal = 1.0
     var actualProductName: String = ""
     var unit: String = "Stk"
     var purchaseDate: Date = Date()
@@ -226,9 +226,9 @@ final class PurchaseViewModel {
     private func updateProductPrices(_ product: Product) {
         guard let purchases = product.purchases, !purchases.isEmpty else { return }
         
-        var bestPrice = Double.infinity
+        var bestPrice = Decimal.greatestFiniteMagnitude
         var bestStore = ""
-        var worstPrice = 0.0
+        var worstPrice = Decimal.zero
         var worstStore = ""
         
         for purchase in purchases {
