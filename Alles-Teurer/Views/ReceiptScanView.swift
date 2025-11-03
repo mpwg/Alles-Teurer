@@ -339,11 +339,6 @@ struct ReceiptScanView: View {
         selectedImage = Image(uiImage: image)
         
         Task {
-            guard let imageData = image.jpegData(compressionQuality: 0.8) else {
-                viewModel.errorMessage = "Fehler beim Verarbeiten des Bildes"
-                return
-            }
-            
             viewModel.isProcessing = true
             
             do {
@@ -643,6 +638,10 @@ struct EditDetectedItemSheet: View {
 // MARK: - Image Picker (UIKit Wrapper)
 
 #if os(iOS)
+/// UIImagePickerController wrapper configured for highest quality image capture
+/// - Uses rear camera for better resolution
+/// - Captures at full resolution without compression (.current preset)
+/// - No editing to preserve original image quality
 struct ImagePicker: UIViewControllerRepresentable {
     enum SourceType {
         case camera
@@ -664,6 +663,19 @@ struct ImagePicker: UIViewControllerRepresentable {
         let picker = UIImagePickerController()
         picker.sourceType = sourceType.uiKitType
         picker.delegate = context.coordinator
+        
+        // Configure for highest quality capture
+        if sourceType.uiKitType == .camera {
+            picker.cameraCaptureMode = .photo
+            picker.cameraDevice = .rear // Use rear camera for better quality
+            
+            // Set highest quality - this affects the compression and resolution
+            picker.imageExportPreset = .current  // Use original quality without compression
+
+            // Allow editing to ensure proper framing if needed
+            picker.allowsEditing = false // Keep original full resolution
+        }
+        
         return picker
     }
     

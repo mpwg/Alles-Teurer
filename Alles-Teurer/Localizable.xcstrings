@@ -492,7 +492,14 @@
       }
     },
     "Einstellungen öffnen" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Settings"
+          }
+        }
+      }
     },
     "Ersten Einkauf hinzufügen" : {
       "localizations" : {
@@ -685,7 +692,14 @@
       }
     },
     "Kamerazugriff benötigt" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera Access Required"
+          }
+        }
+      }
     },
     "Kaufdatum" : {
       "localizations" : {
@@ -1128,7 +1142,14 @@
       }
     },
     "Um Belege zu fotografieren, benötigt die App Zugriff auf Ihre Kamera. Bitte aktivieren Sie den Kamerazugriff in den Einstellungen unter:\n\nEinstellungen → Alles Teurer → Kamera" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To photograph receipts, the app needs access to your camera. Please enable camera access in settings under:\n\nSettings → Alles Teurer → Camera"
+          }
+        }
+      }
     },
     "Versuchen Sie es mit einem anderen Suchbegriff." : {
       "localizations" : {
