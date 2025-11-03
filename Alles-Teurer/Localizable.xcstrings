@@ -145,6 +145,22 @@
         }
       }
     },
+    "Alle vorhandenen Daten (%lld Produkte und %lld Einkäufe) werden durch die Backup-Daten ersetzt. Diese Aktion kann nicht rückgängig gemacht werden." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Alle vorhandenen Daten (%1$lld Produkte und %2$lld Einkäufe) werden durch die Backup-Daten ersetzt. Diese Aktion kann nicht rückgängig gemacht werden."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All existing data (%1$lld products and %2$lld purchases) will be replaced with the backup data. This action cannot be undone."
+          }
+        }
+      }
+    },
     "Alles Teurer 🛒" : {
       "localizations" : {
         "en" : {
@@ -201,6 +217,56 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Expenses"
+          }
+        }
+      }
+    },
+    "Backup & Wiederherstellung" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup & Restore"
+          }
+        }
+      }
+    },
+    "Backup erfolgreich" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup Successful"
+          }
+        }
+      }
+    },
+    "Backup erstellen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create Backup"
+          }
+        }
+      }
+    },
+    "Backup wiederherstellen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore Backup"
+          }
+        }
+      }
+    },
+    "Backup wiederherstellen?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore Backup?"
           }
         }
       }
@@ -411,6 +477,26 @@
         }
       }
     },
+    "Die Backup-Datei hat ein ungültiges Format." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The backup file has an invalid format."
+          }
+        }
+      }
+    },
+    "Die Backup-Version ist nicht kompatibel." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The backup version is not compatible."
+          }
+        }
+      }
+    },
     "Durchschnitt" : {
       "localizations" : {
         "en" : {
@@ -497,6 +583,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Open Settings"
+          }
+        }
+      }
+    },
+    "Exportieren Sie Ihre Daten als JSON-Datei zum Sichern oder Übertragen. Die Wiederherstellung ersetzt alle vorhandenen Daten." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Export your data as a JSON file for backup or transfer. Restore will replace all existing data."
           }
         }
       }
@@ -691,6 +787,26 @@
         }
       }
     },
+    "Ihre Daten wurden erfolgreich gesichert." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your data has been backed up successfully."
+          }
+        }
+      }
+    },
+    "Ihre Daten wurden erfolgreich wiederhergestellt." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your data has been restored successfully."
+          }
+        }
+      }
+    },
     "Kamerazugriff benötigt" : {
       "localizations" : {
         "en" : {
@@ -727,6 +843,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No Purchases"
+          }
+        }
+      }
+    },
+    "Keine Daten zum Sichern vorhanden." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No data available to backup."
           }
         }
       }
@@ -1211,6 +1337,26 @@
         }
       }
     },
+    "Wiederherstellen" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore"
+          }
+        }
+      }
+    },
+    "Wiederherstellung erfolgreich" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore Successful"
+          }
+        }
+      }
+    },
     "z.B. kg, l, Stk" : {
       "localizations" : {
         "en" : {
@@ -1227,6 +1373,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Go to Settings"
+          }
+        }
+      }
+    },
+    "Zugriff auf die Datei wurde verweigert." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Access to the file was denied."
           }
         }
       }

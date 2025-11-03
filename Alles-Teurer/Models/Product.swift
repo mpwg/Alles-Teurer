@@ -11,9 +11,9 @@ import SwiftData
 @Model
 final class Product {
     var normalizedName: String = ""
-    var bestPricePerQuantity: Double = 0.0
+    var bestPricePerQuantity: Decimal = 0.0
     var bestPriceStore: String = ""
-    var highestPricePerQuantity: Double = 0.0
+    var highestPricePerQuantity: Decimal = 0.0
     var highestPriceStore: String = ""
     var unit: String = "" // "l", "kg", "stück", etc.
     var lastUpdated: Date = Date()
@@ -21,7 +21,7 @@ final class Product {
     @Relationship(deleteRule: .cascade, inverse: \Purchase.product)
     var purchases: [Purchase]? = []
     
-    init(normalizedName: String, bestPricePerQuantity: Double, bestPriceStore: String, highestPricePerQuantity: Double, highestPriceStore: String, unit: String) {
+    init(normalizedName: String, bestPricePerQuantity: Decimal, bestPriceStore: String, highestPricePerQuantity: Decimal, highestPriceStore: String, unit: String) {
         self.normalizedName = normalizedName
         self.bestPricePerQuantity = bestPricePerQuantity
         self.bestPriceStore = bestPriceStore
@@ -33,18 +33,18 @@ final class Product {
     }
     
     var bestPriceFormatted: String {
-        return String(format: "€%.2f/%@", bestPricePerQuantity, unit)
+        return String(format: "€%.2f/%@", NSDecimalNumber(decimal: bestPricePerQuantity).doubleValue, unit)
     }
     
     var highestPriceFormatted: String {
-        return String(format: "€%.2f/%@", highestPricePerQuantity, unit)
+        return String(format: "€%.2f/%@", NSDecimalNumber(decimal: highestPricePerQuantity).doubleValue, unit)
     }
     
-    var priceDifference: Double {
+    var priceDifference: Decimal {
         return highestPricePerQuantity - bestPricePerQuantity
     }
     
     var priceDifferenceFormatted: String {
-        return String(format: "+€%.2f/%@", priceDifference, unit)
+        return String(format: "+€%.2f/%@", NSDecimalNumber(decimal: priceDifference).doubleValue, unit)
     }
 }
