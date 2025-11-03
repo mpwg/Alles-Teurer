@@ -41,14 +41,15 @@ final class ProductViewModel {
     }
     
     /// Calculate price statistics for a product
-    func priceStats(for product: Product) -> (min: Double, max: Double, avg: Double, median: Double) {
+    func priceStats(for product: Product) -> (min: Decimal, max: Decimal, avg: Decimal, median: Decimal) {
         let purchases = purchases(for: product)
         guard !purchases.isEmpty else { return (0, 0, 0, 0) }
         
         let prices = purchases.map(\.pricePerQuantity).sorted()
         let min = prices.first ?? 0
         let max = prices.last ?? 0
-        let avg = prices.reduce(0, +) / Double(prices.count)
+        let sum = prices.reduce(Decimal(0), +)
+        let avg = sum / Decimal(prices.count)
         let median = prices.count % 2 == 0
             ? (prices[prices.count/2-1] + prices[prices.count/2]) / 2
             : prices[prices.count/2]
@@ -57,16 +58,17 @@ final class ProductViewModel {
     }
     
     /// Analyze shop data for a product
-    func shopAnalysis(for product: Product) -> [(shop: String, count: Int, avgPrice: Double, minPrice: Double, maxPrice: Double)] {
+    func shopAnalysis(for product: Product) -> [(shop: String, count: Int, avgPrice: Decimal, minPrice: Decimal, maxPrice: Decimal)] {
         let purchases = purchases(for: product)
         let shopGroups = Dictionary(grouping: purchases, by: \.shopName)
         
         return shopGroups.map { shop, purchaseList in
             let prices = purchaseList.map(\.pricePerQuantity)
+            let sum = prices.reduce(Decimal(0), +)
             return (
                 shop: shop,
                 count: purchaseList.count,
-                avgPrice: prices.reduce(0, +) / Double(prices.count),
+                avgPrice: sum / Decimal(prices.count),
                 minPrice: prices.min() ?? 0,
                 maxPrice: prices.max() ?? 0
             )
@@ -74,16 +76,19 @@ final class ProductViewModel {
     }
     
     /// Calculate standard deviation for product prices
-    func calculateStandardDeviation(for product: Product) -> Double {
+    func calculateStandardDeviation(for product: Product) -> Decimal {
         let purchases = purchases(for: product)
         guard !purchases.isEmpty else { return 0 }
         
         let prices = purchases.map(\.pricePerQuantity)
         let stats = priceStats(for: product)
         let mean = stats.avg
-        let squaredDiffs = prices.map { pow($0 - mean, 2) }
-        let variance = squaredDiffs.reduce(0, +) / Double(prices.count)
-        return sqrt(variance)
+        let squaredDiffs = prices.map { price in
+            let diff = price - mean
+            return diff * diff
+        }
+        let variance = squaredDiffs.reduce(Decimal(0), +) / Decimal(prices.count)
+        return Decimal(sqrt(NSDecimalNumber(decimal: variance).doubleValue))
     }
     
     /// Create price ranges for distribution chart
@@ -99,12 +104,14 @@ final class ProductViewModel {
         var ranges: [(range: String, count: Int)] = []
         
         for i in 0..<5 {
-            let start = minPrice + Double(i) * rangeSize
-            let end = minPrice + Double(i + 1) * rangeSize
-            let count = prices.filter { $0 >= start && $0 < (i == 4 ? end + 0.01 : end) }.count
+            let start = minPrice + Decimal(i) * rangeSize
+            let end = minPrice + Decimal(i + 1) * rangeSize
+            let count = prices.filter { $0 >= start && $0 < (i == 4 ? end + Decimal(0.01) : end) }.count
             
+            let nsStart = NSDecimalNumber(decimal: start).doubleValue
+            let nsEnd = NSDecimalNumber(decimal: end).doubleValue
             ranges.append((
-                range: "\(start.formatted(.currency(code: "EUR"))) - \(end.formatted(.currency(code: "EUR")))",
+                range: "\(nsStart.formatted(.currency(code: "EUR"))) - \(nsEnd.formatted(.currency(code: "EUR")))",
                 count: count
             ))
         }
@@ -113,7 +120,7 @@ final class ProductViewModel {
     }
     
     /// Create monthly spending data
-    func createMonthlyData(for product: Product) -> [(month: Date, totalSpent: Double)] {
+    func createMonthlyData(for product: Product) -> [(month: Date, totalSpent: Decimal)] {
         let purchases = purchases(for: product)
         let calendar = Calendar.current
         let monthlyGroups = Dictionary(grouping: purchases) { purchase in
@@ -121,7 +128,7 @@ final class ProductViewModel {
         }
         
         return monthlyGroups.map { month, purchaseList in
-            let totalSpent = purchaseList.map { $0.totalPrice }.reduce(0, +)
+            let totalSpent = purchaseList.map { $0.totalPrice }.reduce(Decimal(0), +)
             return (month: month, totalSpent: totalSpent)
         }.sorted(by: { $0.month < $1.month })
     }

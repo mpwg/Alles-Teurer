@@ -24,11 +24,11 @@ struct ProductDetailView: View {
         viewModel.purchases(for: product)
     }
     
-    private var priceStats: (min: Double, max: Double, avg: Double, median: Double) {
+    private var priceStats: (min: Decimal, max: Decimal, avg: Decimal, median: Decimal) {
         viewModel.priceStats(for: product)
     }
     
-    private var shopAnalysis: [(shop: String, count: Int, avgPrice: Double, minPrice: Double, maxPrice: Double)] {
+    private var shopAnalysis: [(shop: String, count: Int, avgPrice: Decimal, minPrice: Decimal, maxPrice: Decimal)] {
         viewModel.shopAnalysis(for: product)
     }
     
@@ -103,11 +103,15 @@ struct ProductDetailView: View {
             
             // Secondary Metrics Grid (2 columns for better mobile layout)
             let savingsAmount = product.priceDifference
+            let savingsPercentage = product.bestPricePerQuantity > 0 
+                ? Int((NSDecimalNumber(decimal: savingsAmount).doubleValue / NSDecimalNumber(decimal: product.bestPricePerQuantity).doubleValue) * 100)
+                : 0
+            
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 12) {
                 SecondaryMetricCard(
                     title: "Mögliche Ersparnis", 
-                    value: savingsAmount.formatted(.currency(code: "EUR")), 
-                    subtitle: "\(Int((savingsAmount / product.bestPricePerQuantity) * 100))%", 
+                    value: NSDecimalNumber(decimal: savingsAmount).doubleValue.formatted(.currency(code: "EUR")), 
+                    subtitle: "\(savingsPercentage)%", 
                     color: .orange, 
                     icon: "minus.circle.fill"
                 )
@@ -130,31 +134,31 @@ struct ProductDetailView: View {
             Chart(purchases) { purchase in
                 LineMark(
                     x: .value("Datum", purchase.date),
-                    y: .value("Preis", purchase.pricePerQuantity)
+                    y: .value("Preis", NSDecimalNumber(decimal: purchase.pricePerQuantity).doubleValue)
                 )
                 .foregroundStyle(.blue)
                 .lineStyle(StrokeStyle(lineWidth: 3))
                 
                 PointMark(
                     x: .value("Datum", purchase.date),
-                    y: .value("Preis", purchase.pricePerQuantity)
+                    y: .value("Preis", NSDecimalNumber(decimal: purchase.pricePerQuantity).doubleValue)
                 )
                 .foregroundStyle(purchase.pricePerQuantity == priceStats.min ? .green : 
                                purchase.pricePerQuantity == priceStats.max ? .red : .blue)
                 .symbolSize(100)
                 
                 // Best price line
-                RuleMark(y: .value("Bester Preis", priceStats.min))
+                RuleMark(y: .value("Bester Preis", NSDecimalNumber(decimal: priceStats.min).doubleValue))
                     .foregroundStyle(.green)
                     .lineStyle(StrokeStyle(lineWidth: 2, dash: [5, 3]))
                 
                 // Worst price line
-                RuleMark(y: .value("Teuerster Preis", priceStats.max))
+                RuleMark(y: .value("Teuerster Preis", NSDecimalNumber(decimal: priceStats.max).doubleValue))
                     .foregroundStyle(.red)
                     .lineStyle(StrokeStyle(lineWidth: 2, dash: [5, 3]))
                 
                 // Average line
-                RuleMark(y: .value("Durchschnitt", priceStats.avg))
+                RuleMark(y: .value("Durchschnitt", NSDecimalNumber(decimal: priceStats.avg).doubleValue))
                     .foregroundStyle(.orange)
                     .lineStyle(StrokeStyle(lineWidth: 1, dash: [2, 2]))
             }
@@ -183,13 +187,17 @@ struct ProductDetailView: View {
         VStack(alignment: .leading, spacing: 12) {
             chartHeader("Statistische Analyse", icon: "function", color: .purple)
             
+            let stdDev = viewModel.calculateStandardDeviation(for: product)
+            let avgValue = priceStats.avg
+            let variationCoefficient = avgValue > 0 ? (NSDecimalNumber(decimal: stdDev).doubleValue / NSDecimalNumber(decimal: avgValue).doubleValue) * 100 : 0
+            
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 16) {
-                StatisticCard(title: "Durchschnitt", value: priceStats.avg, color: .orange)
-                StatisticCard(title: "Median", value: priceStats.median, color: .purple)
+                StatisticCard(title: "Durchschnitt", value: NSDecimalNumber(decimal: priceStats.avg).doubleValue, color: .orange)
+                StatisticCard(title: "Median", value: NSDecimalNumber(decimal: priceStats.median).doubleValue, color: .purple)
                 StatisticCard(title: "Standardabweichung", 
-                           value: viewModel.calculateStandardDeviation(for: product), color: .indigo)
+                           value: NSDecimalNumber(decimal: stdDev).doubleValue, color: .indigo)
                 StatisticCard(title: "Variationskoeffizient", 
-                           value: (viewModel.calculateStandardDeviation(for: product) / priceStats.avg) * 100, 
+                           value: variationCoefficient, 
                            isPercentage: true, color: .pink)
             }
         }
@@ -202,7 +210,7 @@ struct ProductDetailView: View {
             Chart(shopAnalysis, id: \.shop) { shopData in
                 BarMark(
                     x: .value("Shop", shopData.shop),
-                    y: .value("Durchschnittspreis", shopData.avgPrice)
+                    y: .value("Durchschnittspreis", NSDecimalNumber(decimal: shopData.avgPrice).doubleValue)
                 )
                 .foregroundStyle(shopData.shop == product.bestPriceStore ? .green :
                                shopData.shop == product.highestPriceStore ? .red : .blue)
@@ -210,8 +218,8 @@ struct ProductDetailView: View {
                 
                 BarMark(
                     x: .value("Shop", shopData.shop),
-                    yStart: .value("Min", shopData.minPrice),
-                    yEnd: .value("Max", shopData.maxPrice)
+                    yStart: .value("Min", NSDecimalNumber(decimal: shopData.minPrice).doubleValue),
+                    yEnd: .value("Max", NSDecimalNumber(decimal: shopData.maxPrice).doubleValue)
                 )
                 .foregroundStyle(.gray)
                 .opacity(0.3)
@@ -276,14 +284,14 @@ struct ProductDetailView: View {
             Chart(monthlyData, id: \.month) { monthData in
                 AreaMark(
                     x: .value("Monat", monthData.month),
-                    y: .value("Ausgaben", monthData.totalSpent)
+                    y: .value("Ausgaben", NSDecimalNumber(decimal: monthData.totalSpent).doubleValue)
                 )
                 .foregroundStyle(.mint.gradient)
                 .opacity(0.6)
                 
                 LineMark(
                     x: .value("Monat", monthData.month),
-                    y: .value("Ausgaben", monthData.totalSpent)
+                    y: .value("Ausgaben", NSDecimalNumber(decimal: monthData.totalSpent).doubleValue)
                 )
                 .foregroundStyle(.mint)
                 .lineStyle(StrokeStyle(lineWidth: 3))

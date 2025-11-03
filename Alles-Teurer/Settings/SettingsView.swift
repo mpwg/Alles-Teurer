@@ -8,6 +8,37 @@
 import SwiftUI
 import SwiftData
 import CloudKit
+import UniformTypeIdentifiers
+
+// MARK: - Backup Document
+
+struct BackupDocument: FileDocument {
+    static var readableContentTypes: [UTType] { [.allesTeurerBackup] }
+    static var writableContentTypes: [UTType] { [.allesTeurerBackup] }
+    
+    let fileURL: URL
+    
+    init(fileURL: URL) {
+        self.fileURL = fileURL
+    }
+    
+    init(configuration: ReadConfiguration) throws {
+        guard let data = configuration.file.regularFileContents else {
+            throw CocoaError(.fileReadCorruptFile)
+        }
+        // For reading, we'd need to save to a temporary location
+        let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent("temp_backup.AllesTeurerBackup")
+        try data.write(to: tempURL)
+        self.fileURL = tempURL
+    }
+    
+    func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
+        let data = try Data(contentsOf: fileURL)
+        return FileWrapper(regularFileWithContents: data)
+    }
+}
+
+// MARK: - Settings View
 
 struct SettingsView: View {
     @Environment(\.modelContext) private var modelContext
@@ -23,6 +54,17 @@ struct SettingsView: View {
     @State private var showingFamilySharingAlert = false
     @State private var pendingFamilySharingValue = false
     @State private var cloudKitAvailable = false
+    
+    // Backup/Restore states
+    @State private var showingExportPicker = false
+    @State private var showingImportPicker = false
+    @State private var showingRestoreConfirmation = false
+    @State private var showingBackupSuccess = false
+    @State private var showingRestoreSuccess = false
+    @State private var showingError = false
+    @State private var errorMessage = ""
+    @State private var selectedBackupURL: URL?
+    @State private var exportedBackupURL: URL?
     
     var body: some View {
         #if os(macOS)
@@ -97,6 +139,39 @@ struct SettingsView: View {
                 } else {
                     Text("iCloud ist nicht verfügbar. Melden Sie sich bei iCloud an, um Daten mit der Familie zu teilen.")
                 }
+            }
+            
+            Section {
+                #if os(macOS)
+                VStack(alignment: .leading, spacing: 8) {
+                    Button("Backup erstellen") {
+                        exportBackup()
+                    }
+                    .buttonStyle(.bordered)
+                    .controlSize(.large)
+                    .disabled(products.isEmpty && purchases.isEmpty)
+                    
+                    Button("Backup wiederherstellen") {
+                        showingImportPicker = true
+                    }
+                    .buttonStyle(.bordered)
+                    .controlSize(.large)
+                }
+                .padding(.vertical, 8)
+                #else
+                Button("Backup erstellen") {
+                    exportBackup()
+                }
+                .disabled(products.isEmpty && purchases.isEmpty)
+                
+                Button("Backup wiederherstellen") {
+                    showingImportPicker = true
+                }
+                #endif
+            } header: {
+                Text("Backup & Wiederherstellung")
+            } footer: {
+                Text("Exportieren Sie Ihre Daten als JSON-Datei zum Sichern oder Übertragen. Die Wiederherstellung ersetzt alle vorhandenen Daten.")
             }
             
             Section {
@@ -263,7 +338,103 @@ struct SettingsView: View {
             // Check CloudKit availability when view appears
             cloudKitAvailable = await familySharingSettings.checkCloudKitAvailability()
         }
+        .fileExporter(
+            isPresented: $showingExportPicker,
+            document: exportedBackupURL.map { BackupDocument(fileURL: $0) },
+            contentType: .allesTeurerBackup,
+            defaultFilename: "AllesTeurer_Backup_\(Date().formatted(date: .numeric, time: .omitted).replacingOccurrences(of: "/", with: "-"))"
+        ) { result in
+            switch result {
+            case .success:
+                showingBackupSuccess = true
+            case .failure(let error):
+                errorMessage = error.localizedDescription
+                showingError = true
+            }
+            exportedBackupURL = nil
+        }
+        .fileImporter(
+            isPresented: $showingImportPicker,
+            allowedContentTypes: [.allesTeurerBackup],
+            allowsMultipleSelection: false
+        ) { result in
+            switch result {
+            case .success(let urls):
+                if let url = urls.first {
+                    selectedBackupURL = url
+                    showingRestoreConfirmation = true
+                }
+            case .failure(let error):
+                errorMessage = error.localizedDescription
+                showingError = true
+            }
+        }
+        .alert("Backup erfolgreich", isPresented: $showingBackupSuccess) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text("Ihre Daten wurden erfolgreich gesichert.")
+        }
+        .alert("Wiederherstellung erfolgreich", isPresented: $showingRestoreSuccess) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text("Ihre Daten wurden erfolgreich wiederhergestellt.")
+        }
+        .alert("Fehler", isPresented: $showingError) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(errorMessage)
+        }
+        .alert("Backup wiederherstellen?", isPresented: $showingRestoreConfirmation) {
+            Button("Abbrechen", role: .cancel) {
+                selectedBackupURL = nil
+            }
+            Button("Wiederherstellen", role: .destructive) {
+                restoreBackup()
+            }
+        } message: {
+            Text("Alle vorhandenen Daten (\(products.count) Produkte und \(purchases.count) Einkäufe) werden durch die Backup-Daten ersetzt. Diese Aktion kann nicht rückgängig gemacht werden.")
+        }
     }
+    
+    // MARK: - Backup/Restore Methods
+    
+    private func exportBackup() {
+        do {
+            let backupURL = try BackupRestoreService.exportBackup(products: products, purchases: purchases)
+            exportedBackupURL = backupURL
+            showingExportPicker = true
+        } catch {
+            errorMessage = error.localizedDescription
+            showingError = true
+        }
+    }
+    
+    private func restoreBackup() {
+        guard let url = selectedBackupURL else { return }
+        
+        // Ensure we have access to the security-scoped resource
+        guard url.startAccessingSecurityScopedResource() else {
+            errorMessage = "Zugriff auf die Datei wurde verweigert."
+            showingError = true
+            return
+        }
+        
+        defer {
+            url.stopAccessingSecurityScopedResource()
+        }
+        
+        do {
+            try BackupRestoreService.restoreBackup(from: url, modelContext: modelContext, replaceExisting: true)
+            selectedBackupURL = nil
+            showingRestoreSuccess = true
+        } catch {
+            errorMessage = error.localizedDescription
+            showingError = true
+        }
+    }
+    
+    // MARK: - Data Management Methods
+    
     #if DEBUG
     private func addSampleData() {
         withAnimation {
