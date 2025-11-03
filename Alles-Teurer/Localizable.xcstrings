@@ -491,6 +491,9 @@
         }
       }
     },
+    "Einstellungen öffnen" : {
+
+    },
     "Ersten Einkauf hinzufügen" : {
       "localizations" : {
         "en" : {
@@ -680,6 +683,9 @@
           }
         }
       }
+    },
+    "Kamerazugriff benötigt" : {
+
     },
     "Kaufdatum" : {
       "localizations" : {
@@ -1120,6 +1126,9 @@
           }
         }
       }
+    },
+    "Um Belege zu fotografieren, benötigt die App Zugriff auf Ihre Kamera. Bitte aktivieren Sie den Kamerazugriff in den Einstellungen unter:\n\nEinstellungen → Alles Teurer → Kamera" : {
+
     },
     "Versuchen Sie es mit einem anderen Suchbegriff." : {
       "localizations" : {

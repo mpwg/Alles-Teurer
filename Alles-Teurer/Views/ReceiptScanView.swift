@@ -26,6 +26,11 @@ struct ReceiptScanView: View {
     @State private var showingSaveConfirmation = false
     @State private var selectedImage: Image?
     
+    #if os(iOS)
+    @StateObject private var cameraPermission = CameraPermissionHelper()
+    @State private var showingPermissionDeniedAlert = false
+    #endif
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
@@ -103,6 +108,14 @@ struct ReceiptScanView: View {
                 }
                 .ignoresSafeArea()
             }
+            .alert("Kamerazugriff benötigt", isPresented: $showingPermissionDeniedAlert) {
+                Button("Einstellungen öffnen") {
+                    cameraPermission.openSettings()
+                }
+                Button("Abbrechen", role: .cancel) {}
+            } message: {
+                Text("Um Belege zu fotografieren, benötigt die App Zugriff auf Ihre Kamera. Bitte aktivieren Sie den Kamerazugriff in den Einstellungen unter:\n\nEinstellungen → Alles Teurer → Kamera")
+            }
             #endif
             .onAppear {
                 // Inject dependencies when view appears
@@ -139,12 +152,13 @@ struct ReceiptScanView: View {
                         // Camera Button (iOS only)
                         #if os(iOS)
                         Button {
-                            showingCamera = true
+                            handleCameraButtonTap()
                         } label: {
                             Label("Foto aufnehmen", systemImage: "camera")
                                 .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(.borderedProminent)
+                        .disabled(!cameraPermission.isCameraAvailable)
                         #endif
                         
                         // Photo Library Button
@@ -291,6 +305,36 @@ struct ReceiptScanView: View {
     // MARK: - Actions
     
     #if os(iOS)
+    /// Handle camera button tap - check permissions first
+    private func handleCameraButtonTap() {
+        Task {
+            // Check current status
+            cameraPermission.checkPermissionStatus()
+            
+            switch cameraPermission.permissionStatus {
+            case .authorized:
+                // Permission already granted, show camera
+                showingCamera = true
+                
+            case .notDetermined:
+                // Request permission for the first time
+                let granted = await cameraPermission.requestPermission()
+                if granted {
+                    showingCamera = true
+                } else {
+                    showingPermissionDeniedAlert = true
+                }
+                
+            case .denied, .restricted:
+                // Permission denied or restricted, show alert
+                showingPermissionDeniedAlert = true
+                
+            @unknown default:
+                showingPermissionDeniedAlert = true
+            }
+        }
+    }
+    
     private func handleCapturedImage(_ image: UIImage) {
         selectedImage = Image(uiImage: image)
         

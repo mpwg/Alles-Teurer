@@ -11,6 +11,6 @@
 		<key>ITSAppUsesNonExemptEncryption</key>
 		<false/>
 		<key>NSCameraUsageDescription</key>
-		<string>Die Kamera wird benötigt, um Kassenbons zu fotografieren und automatisch auszulesen.</string>
+		<string>Die App benötigt Zugriff auf die Kamera, um Kassenbons zu fotografieren und die Einkäufe automatisch zu erkennen. Dies spart Ihnen Zeit bei der Eingabe von Produkten und Preisen.</string>
 	</dict>
 </plist>
